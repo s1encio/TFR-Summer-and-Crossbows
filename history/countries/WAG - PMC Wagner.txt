@@ -2,13 +2,20 @@
 
 oob = "WAG_2020"
 
+### Relations with Russia ###
+# Wagner is a Russian puppet, with military access both ways.
+# This must run BEFORE set_politics: becoming a puppet switches the
+# subject to the overlord's ideology, so politics are set again below.
+SOV = {
+	puppet = WAG
+	give_military_access = WAG
+}
+give_military_access = SOV
+
 set_research_slots = 2
 set_convoys = 0
 set_stability = 0.5
 set_war_support = 0.7
-
-recruit_character = WAG_yevgeny_prigozhin
-recruit_character = WAG_dmitriy_utkin
 
 set_technology = {
 	## Infantry ##
@@ -83,10 +90,5 @@ set_popularities = {
 	nationalist = 100
 }
 
-### Relations with Russia ###
-# Wagner is a Russian puppet, with military access both ways
-SOV = {
-	puppet = WAG
-	give_military_access = WAG
-}
-give_military_access = SOV
+recruit_character = WAG_yevgeny_prigozhin
+recruit_character = WAG_dmitriy_utkin
