@@ -14,4 +14,20 @@ characters = {
 			traits = { }
 		}
 	}
+	WAG_dmitriy_utkin = {
+		name = WAG_dmitriy_utkin
+		portraits = {
+			army = {
+				large = "gfx/leaders/WAG/WAG_dmitriy_utkin.png"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
 }

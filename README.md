@@ -3,7 +3,10 @@
 A submod for **The Fire Rises** (Hearts of Iron IV, 1.19).
 
 ## Contents so far
-- **PMC "Wagner"** (`WAG`) – new raw country, led by Yevgeny Prigozhin (no spirits/focuses yet).
+- **PMC "Wagner"** (`WAG`) – new raw country, led by Yevgeny Prigozhin (no spirits/focuses yet), Wagner emblem flag.
+- Russian puppet with military access both ways.
+- Division **PMC Wagner 1** (template "PMC Wagner"), fully equipped with Russian-made equipment.
+- General **Dmitriy Utkin** (all stats 4).
 - **Molkino** – new small state (ID 1494, province 14992) in Krasnodar Krai, carved out of Krasnodar province 3734.
 
 ## Notes for updating
