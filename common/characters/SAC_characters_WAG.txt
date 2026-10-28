@@ -1,0 +1,17 @@
+characters = {
+	WAG_yevgeny_prigozhin = {
+		name = WAG_yevgeny_prigozhin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WAG/WAG_yevgeny_prigozhin.png"
+			}
+			army = {
+				large = "gfx/leaders/WAG/WAG_yevgeny_prigozhin.png"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			traits = { }
+		}
+	}
+}

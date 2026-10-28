@@ -1,0 +1,2 @@
+# TFR: Summer and Crossbows - new country tags
+WAG = "countries/PMC Wagner.txt"
