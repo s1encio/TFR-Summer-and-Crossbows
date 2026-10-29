@@ -14,6 +14,11 @@ ideas = {
 				surrender_limit = 1.0
 				war_support_factor = 0.50
 				stability_factor = 0.25
+				# no limits on sending volunteers
+				send_volunteers_tension = -1.0
+				send_volunteer_size = 100
+				send_volunteer_divisions_required = -1.0
+				air_volunteer_cap = 1000
 			}
 		}
 
