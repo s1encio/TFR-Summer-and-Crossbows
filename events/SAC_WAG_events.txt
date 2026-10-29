@@ -1,0 +1,29 @@
+add_namespace = sac_wag
+
+# Orchestra (focus WAG_orchestra) - text to be written later
+country_event = {
+	id = sac_wag.1
+	title = sac_wag.1.t
+	desc = sac_wag.1.d
+	picture = GFX_russians_army_streets
+
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wag.1.a
+	}
+}
+
+# A Call from Moscow (focus WAG_call_from_moscow) - text to be written later
+country_event = {
+	id = sac_wag.2
+	title = sac_wag.2.t
+	desc = sac_wag.2.d
+	picture = GFX_SOV_kremlin_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wag.2.a
+	}
+}

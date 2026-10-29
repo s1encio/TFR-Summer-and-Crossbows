@@ -1,0 +1,169 @@
+WAG_moscow_arms_category = {
+	WAG_order_small_arms = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 1000 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_order_support_equipment = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_order_trucks = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_order_apcs = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 50
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = light_mechanized_equipment_2 amount = 50 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_order_atgms = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 35
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 100 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_order_sp_artillery = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 50
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = modern_tank_artillery_equipment_1 amount = 25 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_order_mlrs = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 40
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = motorized_rocket_equipment_1 amount = 20 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_order_spaa = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 40
+		days_re_enable = 30
+		available = {
+			country_exists = SOV
+			NOT = { has_war_with = SOV }
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = { type = spaa_equipment_1 amount = 12 producer = SOV }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+}
+
+WAG_ira_category = {
+	# Pro-Russian propaganda: Ukraine and European countries
+	WAG_ira_propaganda_campaign = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 25
+		days_re_enable = 120
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { tag = ROOT }
+				NOT = { tag = SOV }
+				NOT = { is_subject_of = SOV }
+				NOT = { is_in_faction_with = SOV }
+				OR = {
+					tag = UKR
+					capital_scope = { is_on_continent = europe }
+				}
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	# Praise Putin: United Russia (Russia's authoritarian democrats) gains popularity
+	WAG_ira_praise_putin = {
+		icon = GFX_decision_SOV_consolidate_russian_society
+		cost = 40
+		days_re_enable = 150
+
+		available = {
+			country_exists = SOV
+		}
+
+		complete_effect = {
+			SOV = {
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.02
+				}
+			}
+			add_war_support = 0.03
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+}

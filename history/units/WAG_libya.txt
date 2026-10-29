@@ -1,0 +1,43 @@
+# Loaded by focus WAG_send_troops_to_libya
+division_template = {
+	name = "PMC Wagner Expeditionary"
+	override_model = SOV_wagner_entity
+
+	regiments = {
+		special_forces = { x = 0 y = 0 }
+		special_forces = { x = 0 y = 1 }
+		special_forces = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		motorized_rocket_brigade = { x = 2 y = 0 }
+		motorized_rocket_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "PMC Wagner 2"
+		location = 14992
+		division_template = "PMC Wagner Expeditionary"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_3 = { owner = "SOV" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { light_mechanized_equipment_2 = { owner = "SOV" } }
+		force_equipment_variants = { motorized_rocket_equipment_1 = { owner = "SOV" } }
+	}
+	division = {
+		name = "PMC Wagner 3"
+		location = 14992
+		division_template = "PMC Wagner Expeditionary"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+		force_equipment_variants = { infantry_equipment_3 = { owner = "SOV" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { light_mechanized_equipment_2 = { owner = "SOV" } }
+		force_equipment_variants = { motorized_rocket_equipment_1 = { owner = "SOV" } }
+	}
+}
