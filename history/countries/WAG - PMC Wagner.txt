@@ -2,6 +2,10 @@
 
 oob = "WAG_2020"
 
+# Manpower pool so PMC Wagner 1 starts (and stays) at full strength.
+# TFR does the same for its small factions (Taliban, Hezbollah, ...).
+add_manpower = 10000
+
 ### Relations with Russia ###
 # Wagner is a Russian puppet, with military access both ways.
 # This must run BEFORE set_politics: becoming a puppet switches the
