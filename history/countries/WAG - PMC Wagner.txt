@@ -90,5 +90,9 @@ set_popularities = {
 	nationalist = 100
 }
 
+add_ideas = {
+	WAG_private_military_company
+}
+
 recruit_character = WAG_yevgeny_prigozhin
 recruit_character = WAG_dmitriy_utkin
