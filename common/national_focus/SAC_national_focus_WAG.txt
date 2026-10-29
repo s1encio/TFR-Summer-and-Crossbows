@@ -1,0 +1,98 @@
+focus_tree = {
+	id = WAG_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = WAG
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 50 y = 1200 }
+
+	focus = {
+		id = WAG_orchestra
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		x = 2
+		y = 0
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_organise_weapon_supply
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_orchestra
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_orchestra }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_internet_research_agency
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_orchestra
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_orchestra }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_request_aircraft_from_mod
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_organise_weapon_supply
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_organise_weapon_supply }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_send_troops_to_libya
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_internet_research_agency
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_internet_research_agency }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_call_from_moscow
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_orchestra
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = WAG_request_aircraft_from_mod }
+		prerequisite = { focus = WAG_send_troops_to_libya }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+}
