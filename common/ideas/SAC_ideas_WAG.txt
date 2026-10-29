@@ -19,6 +19,7 @@ ideas = {
 				send_volunteer_size = 100
 				send_volunteer_divisions_required = -1.0
 				air_volunteer_cap = 1000
+				custom_modifier_tooltip = WAG_pmc_manpower_tt
 			}
 		}
 

@@ -114,7 +114,7 @@ WAG_moscow_arms_category = {
 }
 
 WAG_ira_category = {
-	# Pro-Russian propaganda: Ukraine and European countries
+	# Pro-Russian propaganda: EU and NATO countries only
 	WAG_ira_propaganda_campaign = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		cost = 25
@@ -128,8 +128,19 @@ WAG_ira_category = {
 				NOT = { is_subject_of = SOV }
 				NOT = { is_in_faction_with = SOV }
 				OR = {
-					tag = UKR
-					capital_scope = { is_on_continent = europe }
+					# EU member (TFR's own EU check)
+					is_EU_member = yes
+					# NATO: TFR's NATO is the faction created by the USA (Britain may lead it later)
+					is_in_faction_with = USA
+					is_in_faction_with = ENG
+					AND = {
+						tag = USA
+						is_faction_leader = yes
+					}
+					AND = {
+						tag = ENG
+						is_faction_leader = yes
+					}
 				}
 			}
 		}

@@ -82,7 +82,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAG_send_troops_to_libya
+		id = WAG_import_oil_from_syria
 		icon = GFX_goal_unknown  # placeholder, real icon later
 		relative_position_id = WAG_internet_research_agency
 		x = 0
@@ -91,8 +91,12 @@ focus_tree = {
 		prerequisite = { focus = WAG_internet_research_agency }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			load_oob = "WAG_libya"
-			custom_effect_tooltip = WAG_libya_troops_tt
+			1494 = {
+				add_resource = {
+					type = oil
+					amount = 30
+				}
+			}
 		}
 	}
 
@@ -104,7 +108,7 @@ focus_tree = {
 		y = 3
 		cost = 5
 		prerequisite = { focus = WAG_request_aircraft_from_mod }
-		prerequisite = { focus = WAG_send_troops_to_libya }
+		prerequisite = { focus = WAG_import_oil_from_syria }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			country_event = { id = sac_wag.2 }

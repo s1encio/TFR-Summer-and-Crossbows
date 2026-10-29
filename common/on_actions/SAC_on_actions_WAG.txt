@@ -1,0 +1,11 @@
+on_actions = {
+	# Private Military Company spirit: +300 manpower every month
+	on_monthly_WAG = {
+		effect = {
+			if = {
+				limit = { has_idea = WAG_private_military_company }
+				add_manpower = 300
+			}
+		}
+	}
+}
