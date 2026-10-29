@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_idea_WAG_private_military_company"
 		texturefile = "gfx/interface/ideas/WAG/WAG_private_military_company.png"
 	}
+	spriteType = {
+		name = "GFX_idea_WAG_best_in_hell"
+		texturefile = "gfx/interface/ideas/WAG/WAG_best_in_hell.png"
+	}
 }

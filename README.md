@@ -3,7 +3,7 @@
 A submod for **The Fire Rises** (Hearts of Iron IV, 1.19).
 
 ## Contents so far
-- **PMC "Wagner"** (`WAG`) – new raw country, led by Yevgeny Prigozhin , Wagner emblem flag, national spirit "Private Military Company".
+- **PMC "Wagner"** (`WAG`) – new raw country, led by Yevgeny Prigozhin , Wagner emblem flag, national spirits "Private Military Company" and "Best in Hell".
 - Russian puppet with military access both ways.
 - Division **PMC Wagner 1** (template "PMC Wagner"), fully equipped with Russian-made equipment.
 - General **Dmitriy Utkin** (all stats 4).
