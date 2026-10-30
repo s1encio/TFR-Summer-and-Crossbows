@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_WAG_orchestra"
+		texturefile = "gfx/interface/goals/WAG/WAG_orchestra.png"
+	}
+}
