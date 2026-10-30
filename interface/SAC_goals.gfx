@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_focus_WAG_orchestra"
 		texturefile = "gfx/interface/goals/WAG/WAG_orchestra.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_WAG_organise_weapon_supply"
+		texturefile = "gfx/interface/goals/WAG/WAG_organise_weapon_supply.png"
+	}
 }

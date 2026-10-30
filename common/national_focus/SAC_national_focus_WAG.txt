@@ -26,7 +26,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_organise_weapon_supply
-		icon = GFX_goal_unknown  # placeholder, real icon later
+		icon = GFX_focus_WAG_organise_weapon_supply
 		relative_position_id = WAG_orchestra
 		x = -1
 		y = 1
