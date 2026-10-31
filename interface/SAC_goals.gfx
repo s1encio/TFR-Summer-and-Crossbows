@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_focus_WAG_request_aircraft_from_mod"
 		texturefile = "gfx/interface/goals/WAG/WAG_request_aircraft_from_mod.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_WAG_internet_research_agency"
+		texturefile = "gfx/interface/goals/WAG/WAG_internet_research_agency.png"
+	}
 }
