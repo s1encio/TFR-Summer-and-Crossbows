@@ -117,7 +117,7 @@ WAG_ira_category = {
 	# Pro-Russian propaganda, one decision per region (EU and NATO members only)
 	WAG_ira_propaganda_baltics = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -151,7 +151,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_central_europe = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -189,7 +189,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_balkans = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -227,7 +227,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_benelux = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -261,7 +261,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_france = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -295,7 +295,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_germany = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -329,7 +329,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_italy = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -359,7 +359,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_uk = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -391,7 +391,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_spain = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
@@ -425,7 +425,7 @@ WAG_ira_category = {
 
 	WAG_ira_propaganda_scandinavia = {
 		icon = GFX_decision_generic_propaganda_campaigns
-		cost = 25
+		cost = 35
 		days_re_enable = 120
 
 		available = {
