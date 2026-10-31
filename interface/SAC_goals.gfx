@@ -19,4 +19,8 @@ spriteTypes = {
 		name = "GFX_focus_WAG_import_oil_from_libya"
 		texturefile = "gfx/interface/goals/WAG/WAG_import_oil_from_libya.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_WAG_call_from_moscow"
+		texturefile = "gfx/interface/goals/WAG/WAG_call_from_moscow.png"
+	}
 }

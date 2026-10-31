@@ -102,7 +102,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_call_from_moscow
-		icon = GFX_goal_unknown  # placeholder, real icon later
+		icon = GFX_focus_WAG_call_from_moscow
 		relative_position_id = WAG_orchestra
 		x = 0
 		y = 3
