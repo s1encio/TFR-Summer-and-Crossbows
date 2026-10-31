@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = WAG_orchestra
 		icon = GFX_focus_WAG_orchestra
-		x = 2
+		x = 12   # centres the tree on screen; all other focuses are placed relative to this one
 		y = 0
 		cost = 5
 		ai_will_do = { factor = 1 }
