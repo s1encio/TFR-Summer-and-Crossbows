@@ -82,8 +82,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAG_import_oil_from_syria
-		icon = GFX_goal_unknown  # placeholder, real icon later
+		id = WAG_import_oil_from_libya
+		icon = GFX_focus_WAG_import_oil_from_libya
 		relative_position_id = WAG_internet_research_agency
 		x = 0
 		y = 1
@@ -108,7 +108,7 @@ focus_tree = {
 		y = 3
 		cost = 5
 		prerequisite = { focus = WAG_request_aircraft_from_mod }
-		prerequisite = { focus = WAG_import_oil_from_syria }
+		prerequisite = { focus = WAG_import_oil_from_libya }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			country_event = { id = sac_wag.2 }
