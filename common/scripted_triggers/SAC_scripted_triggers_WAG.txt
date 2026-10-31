@@ -1,0 +1,24 @@
+# Country scope: a valid target for Wagner's propaganda decisions.
+# Must be an EU or NATO member and not aligned with Russia.
+WAG_ira_valid_target = {
+	exists = yes
+	NOT = { tag = WAG }
+	NOT = { tag = SOV }
+	NOT = { is_subject_of = SOV }
+	NOT = { is_in_faction_with = SOV }
+	OR = {
+		# EU member (TFR's own EU check)
+		is_EU_member = yes
+		# NATO: TFR's NATO is the faction created by the USA (Britain may lead it later)
+		is_in_faction_with = USA
+		is_in_faction_with = ENG
+		AND = {
+			tag = USA
+			is_faction_leader = yes
+		}
+		AND = {
+			tag = ENG
+			is_faction_leader = yes
+		}
+	}
+}

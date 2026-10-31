@@ -114,39 +114,243 @@ WAG_moscow_arms_category = {
 }
 
 WAG_ira_category = {
-	# Pro-Russian propaganda: EU and NATO countries only
-	WAG_ira_propaganda_campaign = {
+	# Pro-Russian propaganda, one decision per region (EU and NATO members only)
+	WAG_ira_propaganda_baltics = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		cost = 25
 		days_re_enable = 120
 
-		target_trigger = {
-			FROM = {
-				exists = yes
-				NOT = { tag = ROOT }
-				NOT = { tag = SOV }
-				NOT = { is_subject_of = SOV }
-				NOT = { is_in_faction_with = SOV }
+		available = {
+			any_country = {
+				WAG_ira_valid_target = yes
 				OR = {
-					# EU member (TFR's own EU check)
-					is_EU_member = yes
-					# NATO: TFR's NATO is the faction created by the USA (Britain may lead it later)
-					is_in_faction_with = USA
-					is_in_faction_with = ENG
-					AND = {
-						tag = USA
-						is_faction_leader = yes
-					}
-					AND = {
-						tag = ENG
-						is_faction_leader = yes
-					}
+					tag = EST
+					tag = LAT
+					tag = LIT
 				}
 			}
 		}
 
 		complete_effect = {
-			FROM = {
+			every_country = {
+				limit = {
+					WAG_ira_valid_target = yes
+					OR = {
+						tag = EST
+						tag = LAT
+						tag = LIT
+					}
+				}
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_ira_propaganda_central_europe = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 25
+		days_re_enable = 120
+
+		available = {
+			any_country = {
+				WAG_ira_valid_target = yes
+				OR = {
+					tag = PLD
+					tag = POL
+					tag = CZE
+					tag = SLO
+					tag = HUN
+				}
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					WAG_ira_valid_target = yes
+					OR = {
+						tag = PLD
+						tag = POL
+						tag = CZE
+						tag = SLO
+						tag = HUN
+					}
+				}
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_ira_propaganda_france = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 25
+		days_re_enable = 120
+
+		available = {
+			any_country = {
+				WAG_ira_valid_target = yes
+				OR = {
+					tag = FRA
+					tag = FAF
+					tag = FPR
+				}
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					WAG_ira_valid_target = yes
+					OR = {
+						tag = FRA
+						tag = FAF
+						tag = FPR
+					}
+				}
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_ira_propaganda_germany = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 25
+		days_re_enable = 120
+
+		available = {
+			any_country = {
+				WAG_ira_valid_target = yes
+				OR = {
+					tag = GER
+					tag = WGR
+					tag = DDR
+				}
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					WAG_ira_valid_target = yes
+					OR = {
+						tag = GER
+						tag = WGR
+						tag = DDR
+					}
+				}
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_ira_propaganda_uk = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 25
+		days_re_enable = 120
+
+		available = {
+			any_country = {
+				WAG_ira_valid_target = yes
+				OR = {
+					tag = ENG
+					tag = UK2
+				}
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					WAG_ira_valid_target = yes
+					OR = {
+						tag = ENG
+						tag = UK2
+					}
+				}
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_ira_propaganda_spain = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 25
+		days_re_enable = 120
+
+		available = {
+			any_country = {
+				WAG_ira_valid_target = yes
+				OR = {
+					tag = SPR
+					tag = SNS
+					tag = PRS
+				}
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					WAG_ira_valid_target = yes
+					OR = {
+						tag = SPR
+						tag = SNS
+						tag = PRS
+					}
+				}
+				add_stability = -0.05
+				add_war_support = -0.05
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_ira_propaganda_scandinavia = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 25
+		days_re_enable = 120
+
+		available = {
+			any_country = {
+				WAG_ira_valid_target = yes
+				OR = {
+					tag = DEN
+					tag = NOR
+					tag = SWE
+					tag = FIN
+					tag = ICE
+				}
+			}
+		}
+
+		complete_effect = {
+			every_country = {
+				limit = {
+					WAG_ira_valid_target = yes
+					OR = {
+						tag = DEN
+						tag = NOR
+						tag = SWE
+						tag = FIN
+						tag = ICE
+					}
+				}
 				add_stability = -0.05
 				add_war_support = -0.05
 			}
