@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_focus_WAG_organise_weapon_supply"
 		texturefile = "gfx/interface/goals/WAG/WAG_organise_weapon_supply.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_WAG_request_aircraft_from_mod"
+		texturefile = "gfx/interface/goals/WAG/WAG_request_aircraft_from_mod.png"
+	}
 }
