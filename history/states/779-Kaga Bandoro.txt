@@ -1,0 +1,23 @@
+state={
+	id=779
+	name="STATE_779"
+
+	history={
+		owner = CPC
+		add_core_of = CAR
+		add_core_of = CPC
+		victory_points = { 15004 1 }
+		victory_points = { 15003 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		15003 15004
+	}
+	manpower=180427
+	buildings_max_level_factor=1.000
+	state_category = village
+	local_supplies=0.000
+}

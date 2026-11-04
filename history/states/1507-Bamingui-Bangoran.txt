@@ -1,0 +1,23 @@
+state={
+	id=1507
+	name="STATE_1507"
+
+	history={
+		owner = CPC
+		add_core_of = CAR
+		add_core_of = CPC
+		victory_points = { 1974 1 }
+		victory_points = { 15014 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		15014 1974 15015
+	}
+	manpower=64438
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	local_supplies=0.000
+}

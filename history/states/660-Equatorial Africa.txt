@@ -1,0 +1,27 @@
+state={
+	id=660
+	name="STATE_660"
+
+	history={
+		owner = CPC
+		add_core_of = CAR
+		add_core_of = CPC
+		victory_points = { 14585 1 }
+		victory_points = { 15007 1 }
+		victory_points = { 15006 2 }
+		buildings = {
+			infrastructure = 1
+		}
+		CAR = {
+			set_province_controller = 15007
+		}
+	}
+
+	provinces={
+		15006 15007 14585
+	}
+	manpower=425292
+	buildings_max_level_factor=1.000
+	state_category = rural
+	local_supplies=0.000
+}

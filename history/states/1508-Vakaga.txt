@@ -1,0 +1,23 @@
+state={
+	id=1508
+	name="STATE_1508"
+
+	history={
+		owner = CPC
+		add_core_of = CAR
+		add_core_of = CPC
+		victory_points = { 14484 1 }
+		victory_points = { 15016 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		15016 14484
+	}
+	manpower=77326
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	local_supplies=0.000
+}
