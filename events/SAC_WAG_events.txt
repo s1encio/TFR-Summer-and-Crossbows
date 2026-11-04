@@ -25,5 +25,9 @@ country_event = {
 
 	option = {
 		name = sac_wag.2.a
+		load_focus_tree = {
+			tree = WAG_car_focus_tree
+			keep_completed = no
+		}
 	}
 }

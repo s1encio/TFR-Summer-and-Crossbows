@@ -1,0 +1,181 @@
+# Wagner in the Central African Republic.
+# Not picked at game start: loaded when Wagner clicks OK on the "A Call from Moscow" event (sac_wag.2).
+focus_tree = {
+	id = WAG_car_focus_tree
+
+	country = {
+		factor = 0
+	}
+
+	default = no
+	continuous_focus_position = { x = 50 y = 1200 }
+
+	focus = {
+		id = WAG_car_transport_troops
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		x = 12
+		y = 0
+		cost = 5
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_operation_aibolit
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_transport_troops
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_transport_troops }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_expand_wagner
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_operation_aibolit
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_operation_aibolit }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_lancet_drone
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_expand_wagner
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_expand_wagner }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_sam_sites
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_lancet_drone
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_lancet_drone }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_strike_chad_logistics
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_operation_aibolit
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_operation_aibolit }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_fortify_capital
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_strike_chad_logistics
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_strike_chad_logistics }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_psychological_warfare
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_fortify_capital
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_fortify_capital }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_train_local_soldiers
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_operation_aibolit
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_operation_aibolit }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_sudan_participation
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_train_local_soldiers
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_train_local_soldiers }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_fight_saboteurs
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_sudan_participation
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_sudan_participation }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+	focus = {
+		id = WAG_car_stabilise_country
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_psychological_warfare
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_sam_sites }
+		prerequisite = { focus = WAG_car_psychological_warfare }
+		prerequisite = { focus = WAG_car_fight_saboteurs }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			# effects later
+		}
+	}
+
+}
