@@ -1,0 +1,35 @@
+﻿# Loaded by focus WAG_car_expand_wagner: two elite divisions at the Wagner Airbase (uses the existing "PMC Wagner" template)
+units = {
+	division = {
+		name = "PMC Wagner 2"
+		location = 15017
+		division_template = "PMC Wagner"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_3 = { owner = "SOV" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { light_mechanized_equipment_2 = { owner = "SOV" } }
+		force_equipment_variants = { modern_tank_artillery_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { spaa_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { motorized_rocket_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { anti_tank_equipment_2 = { owner = "SOV" } }
+	}
+	division = {
+		name = "PMC Wagner 3"
+		location = 15017
+		division_template = "PMC Wagner"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+		force_equipment_variants = { infantry_equipment_3 = { owner = "SOV" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { light_mechanized_equipment_2 = { owner = "SOV" } }
+		force_equipment_variants = { modern_tank_artillery_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { spaa_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { motorized_rocket_equipment_1 = { owner = "SOV" } }
+		force_equipment_variants = { anti_tank_equipment_2 = { owner = "SOV" } }
+	}
+}

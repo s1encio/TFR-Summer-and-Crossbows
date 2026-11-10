@@ -39,5 +39,38 @@ ideas = {
 				heat_attrition_factor = -0.15
 			}
 		}
+
+		# Strike the Logistic Lines with Chad: given to CPC and Chad for 365 days
+		WAG_logistics_disrupted = {
+			picture = disorganized_army
+			allowed = {
+				OR = { original_tag = CPC original_tag = CHA }
+			}
+			modifier = {
+				attrition = 0.30
+			}
+		}
+
+		# Give Local Soldiers Better Training: given to the CAR government
+		WAG_wagner_trained_army = {
+			picture = UKR_russia_trained_security_force_idea
+			allowed = { original_tag = CAR }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.075
+				army_defence_factor = 0.075
+				army_org_factor = 0.30
+			}
+		}
+
+		# Fight against Saboteurs: +15% attack against French forces
+		WAG_counter_sabotage = {
+			picture = SOV_counter_extremist_divison_idea
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			targeted_modifier = { tag = FRA attack_bonus_against = 0.15 }
+			targeted_modifier = { tag = FAF attack_bonus_against = 0.15 }
+			targeted_modifier = { tag = FPR attack_bonus_against = 0.15 }
+		}
 	}
 }

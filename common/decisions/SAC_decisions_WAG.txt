@@ -483,4 +483,78 @@ WAG_ira_category = {
 
 		ai_will_do = { factor = 1 }
 	}
+
+	# Unlocked by Psychological Warfare (CAR tree)
+	WAG_ira_disinfo_central_africa = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 35
+		days_re_enable = 120
+		visible = { has_completed_focus = WAG_car_psychological_warfare }
+		available = { country_exists = CPC }
+		complete_effect = {
+			CPC = { add_war_support = -0.10 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_ira_encourage_defections = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		cost = 35
+		days_re_enable = 120
+		visible = { has_completed_focus = WAG_car_psychological_warfare }
+		available = { country_exists = CPC }
+		complete_effect = {
+			CPC = { add_manpower = -2000 }
+			add_manpower = 2000
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+WAG_car_war_category = {
+	WAG_car_airlift_supplies = {
+		icon = GFX_decision_generic_air
+		cost = 25
+		days_re_enable = 60
+		available = { country_exists = CAR }
+		complete_effect = {
+			CAR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 500 producer = SOV }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 producer = SOV }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_car_raid_rebel_positions = {
+		icon = GFX_decision_generic_military
+		cost = 40
+		days_re_enable = 90
+		available = { country_exists = CPC }
+		complete_effect = {
+			CPC = {
+				add_manpower = -1000
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -300 }
+				add_war_support = -0.03
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	WAG_car_expand_airbase = {
+		icon = GFX_decision_generic_military_support
+		cost = 50
+		fire_only_once = yes
+		available = { has_full_control_of_state = 1509 }
+		complete_effect = {
+			1509 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }

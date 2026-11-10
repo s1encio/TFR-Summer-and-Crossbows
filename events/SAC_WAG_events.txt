@@ -31,3 +31,87 @@ country_event = {
 		}
 	}
 }
+
+# Stabilise the Country (CAR tree) - text to be written later
+country_event = {
+	id = sac_wag.3
+	title = sac_wag.3.t
+	desc = sac_wag.3.d
+	picture = GFX_russians_army_streets
+
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wag.3.a
+	}
+}
+
+# Sent to Sudan by Ask for Participation of Sudan (FROM = Wagner)
+country_event = {
+	id = sac_wag.10
+	title = sac_wag.10.t
+	desc = sac_wag.10.d
+	picture = GFX_russians_army_streets
+
+	is_triggered_only = yes
+
+	# Send troops to the CAR government
+	option = {
+		name = sac_wag.10.a
+		ai_chance = { factor = 70 }
+		if = {
+			limit = { country_exists = CAR }
+			CAR = {
+				division_template = {
+					name = "Sudanese Expeditionary Brigade"
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Sudanese Expeditionary Brigade 1\" division_template = \"Sudanese Expeditionary Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						owner = CAR
+					}
+					create_unit = {
+						division = "name = \"Sudanese Expeditionary Brigade 2\" division_template = \"Sudanese Expeditionary Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						owner = CAR
+					}
+				}
+			}
+		}
+		FROM = { country_event = { id = sac_wag.11 days = 1 } }
+	}
+
+	# Refuse
+	option = {
+		name = sac_wag.10.b
+		ai_chance = { factor = 30 }
+		FROM = { country_event = { id = sac_wag.12 days = 1 } }
+	}
+}
+
+# Sudan agrees
+country_event = {
+	id = sac_wag.11
+	title = sac_wag.11.t
+	desc = sac_wag.11.d
+	picture = GFX_russians_army_streets
+	is_triggered_only = yes
+	option = { name = sac_wag.11.a }
+}
+
+# Sudan refuses
+country_event = {
+	id = sac_wag.12
+	title = sac_wag.12.t
+	desc = sac_wag.12.d
+	picture = GFX_russians_army_streets
+	is_triggered_only = yes
+	option = { name = sac_wag.12.a }
+}
