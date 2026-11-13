@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_WAG_orchestra_event"
+		texturefile = "gfx/event_pictures/WAG_orchestra_event.png"
+	}
+}

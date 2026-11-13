@@ -1,11 +1,11 @@
 add_namespace = sac_wag
 
-# Orchestra (focus WAG_orchestra) - text to be written later
+# Orchestra (focus WAG_orchestra): background on the company
 country_event = {
 	id = sac_wag.1
 	title = sac_wag.1.t
 	desc = sac_wag.1.d
-	picture = GFX_russians_army_streets
+	picture = GFX_WAG_orchestra_event
 
 	is_triggered_only = yes
 

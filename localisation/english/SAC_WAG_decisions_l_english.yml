@@ -44,8 +44,14 @@
  WAG_unlock_moscow_arms_tt: "Unlocks §YWeapons from Moscow§! decisions: order Russian-made equipment for political power."
  WAG_unlock_ira_tt: "Unlocks §YInternet Research Agency§! decisions: regional propaganda campaigns against EU and NATO countries, and praising United Russia online."
  sac_wag.1.t: "Orchestra"
- sac_wag.1.d: ""
- sac_wag.1.a: "OK"
+ sac_wag.1.d: "Its fighters call themselves \"musicians\", and the company itself \"the Orchestra\". Officially it does not exist: Russian law does not allow private military companies, and the Kremlin denies any connection to it. Yet for six years PMC \"Wagner\" has turned up wherever Moscow wanted results without Russian flags on the ground.
+
+The group takes its name from the call sign of its commander, Dmitriy Utkin, a former officer of a GRU special forces brigade. It first appeared in 2014, in Crimea and then in the fighting in Donbas. Its men train at a base near Molkino in Krasnodar Krai, beside a regular army special forces unit. The money is widely said to come from the businessman Yevgeny Prigozhin, who has always denied any link.
+
+From 2015 Wagner fought for the Syrian government, taking part in the battles for Palmyra and earning a share of the oil and gas fields it helped retake. In February 2018 a Wagner-led column attacking near Deir ez-Zor was struck by American forces, with heavy losses. Since then the company has spread across Africa: advisers in Sudan, instructors and bodyguards for the government of the Central African Republic from 2018, fighters for Khalifa Haftar's offensive on Tripoli in 2019, and a short, costly campaign against insurgents in Mozambique the same year. Mining concessions, oil deals and security contracts follow wherever it goes.
+
+Now, in 2020, the Orchestra is tuning up for its next performance."
+ sac_wag.1.a: "Let the music play."
  sac_wag.2.t: "A Call from Moscow"
  sac_wag.2.d: ""
  sac_wag.2.a: "OK"
