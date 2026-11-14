@@ -27,4 +27,8 @@ spriteTypes = {
 		name = "GFX_focus_WAG_car_transport_troops"
 		texturefile = "gfx/interface/goals/WAG/WAG_car_transport_troops.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_WAG_car_operation_aibolit"
+		texturefile = "gfx/interface/goals/WAG/WAG_car_operation_aibolit.png"
+	}
 }
