@@ -115,3 +115,75 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = sac_wag.12.a }
 }
+
+# Mali coup (TFR event mali.1 sets MLI_Civil_war_flag): the rebel coalition in the CAR
+# receives three new divisions. Hidden, fires once, a day or so after the coup.
+country_event = {
+	id = sac_wag.20
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = CPC
+		country_exists = MLI
+		MLI = { has_country_flag = MLI_Civil_war_flag }
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		division_template = {
+			name = "Coalition Assault Group"
+			regiments = {
+				special_forces = { x = 0 y = 0 }
+				special_forces = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+			}
+			support = {
+				anti_tank = { x = 0 y = 0 }
+				anti_air = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+			}
+		}
+		if = {
+			limit = { capital_scope = { is_controlled_by = ROOT } }
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Coalition Assault Group 1\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = no
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Coalition Assault Group 2\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = no
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Coalition Assault Group 3\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = no
+					owner = ROOT
+				}
+			}
+		}
+		else = {
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Coalition Assault Group 1\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = no
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Coalition Assault Group 2\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = no
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Coalition Assault Group 3\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+					allow_spawning_on_enemy_provs = no
+					owner = ROOT
+				}
+			}
+		}
+	}
+}
