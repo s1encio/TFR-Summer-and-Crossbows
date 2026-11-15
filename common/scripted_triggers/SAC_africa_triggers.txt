@@ -10,7 +10,7 @@ SAC_can_see_africa_panel = {
 	}
 }
 
-# War in a country: it is at war AND (in a civil war, OR fighting a neighbouring enemy such as a rebel faction, OR enemies hold part of its land)
+# War in a country: it is at war AND (in a civil war, OR fighting a neighbour such as a rebel faction, OR fighting another African country, OR enemies hold part of its land)
 SAC_africa_cw_AO = {
 	country_exists = ANG
 	ANG = {
@@ -18,6 +18,7 @@ SAC_africa_cw_AO = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -29,6 +30,7 @@ SAC_africa_cw_BF = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -40,6 +42,7 @@ SAC_africa_cw_BI = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -51,6 +54,7 @@ SAC_africa_cw_BJ = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -62,6 +66,7 @@ SAC_africa_cw_BW = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -73,6 +78,7 @@ SAC_africa_cw_CD = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -84,6 +90,7 @@ SAC_africa_cw_CF = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -95,6 +102,7 @@ SAC_africa_cw_CG = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -106,6 +114,7 @@ SAC_africa_cw_CI = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -117,6 +126,7 @@ SAC_africa_cw_CM = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -128,6 +138,7 @@ SAC_africa_cw_DJ = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -139,6 +150,7 @@ SAC_africa_cw_DZ = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -150,6 +162,7 @@ SAC_africa_cw_EG = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -161,6 +174,7 @@ SAC_africa_cw_EH = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -172,6 +186,7 @@ SAC_africa_cw_ER = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -183,6 +198,7 @@ SAC_africa_cw_ET = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -194,6 +210,7 @@ SAC_africa_cw_GA = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -205,6 +222,7 @@ SAC_africa_cw_GH = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -216,6 +234,7 @@ SAC_africa_cw_GM = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -227,6 +246,7 @@ SAC_africa_cw_GN = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -238,6 +258,7 @@ SAC_africa_cw_GQ = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -249,6 +270,7 @@ SAC_africa_cw_GW = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -260,6 +282,7 @@ SAC_africa_cw_KE = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -271,6 +294,7 @@ SAC_africa_cw_LR = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -282,6 +306,7 @@ SAC_africa_cw_LS = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -293,6 +318,7 @@ SAC_africa_cw_LY = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -304,6 +330,7 @@ SAC_africa_cw_MA = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -315,6 +342,7 @@ SAC_africa_cw_MG = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -326,6 +354,7 @@ SAC_africa_cw_ML = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -337,6 +366,7 @@ SAC_africa_cw_MR = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -348,6 +378,7 @@ SAC_africa_cw_MW = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -359,6 +390,7 @@ SAC_africa_cw_MZ = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -370,6 +402,7 @@ SAC_africa_cw_NA = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -381,6 +414,7 @@ SAC_africa_cw_NE = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -392,6 +426,7 @@ SAC_africa_cw_NG = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -403,6 +438,7 @@ SAC_africa_cw_RW = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -414,6 +450,7 @@ SAC_africa_cw_SD = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -425,6 +462,7 @@ SAC_africa_cw_SL = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -436,6 +474,7 @@ SAC_africa_cw_SN = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -447,6 +486,7 @@ SAC_africa_cw_SO = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -458,6 +498,7 @@ SAC_africa_cw_SS = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -469,6 +510,7 @@ SAC_africa_cw_SZ = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -480,6 +522,7 @@ SAC_africa_cw_TD = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -491,6 +534,7 @@ SAC_africa_cw_TG = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -502,6 +546,7 @@ SAC_africa_cw_TN = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -513,6 +558,7 @@ SAC_africa_cw_TZ = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -524,6 +570,7 @@ SAC_africa_cw_UG = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -535,6 +582,7 @@ SAC_africa_cw_ZA = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -546,6 +594,7 @@ SAC_africa_cw_ZM = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}
@@ -557,6 +606,7 @@ SAC_africa_cw_ZW = {
 		OR = {
 			has_civil_war = yes
 			any_enemy_country = { is_neighbor_of = PREV }
+			any_enemy_country = { capital_scope = { is_on_continent = africa } }
 			any_owned_state = { NOT = { is_controlled_by = PREV } }
 		}
 	}

@@ -3,45 +3,45 @@
 # Powers: SOV = Russia incl. Wagner, PRC = China, EUR = Europe (France), USA = United States
 
 SAC_africa_init = {
-	set_global_variable = { AFR_DZ_SOV = 45 }
+	set_global_variable = { AFR_DZ_SOV = 50 }
 	set_global_variable = { AFR_DZ_PRC = 30 }
-	set_global_variable = { AFR_DZ_EUR = 25 }
+	set_global_variable = { AFR_DZ_EUR = 30 }
 	set_global_variable = { AFR_DZ_USA = 10 }
-	set_global_variable = { AFR_AO_SOV = 15 }
-	set_global_variable = { AFR_AO_PRC = 50 }
+	set_global_variable = { AFR_AO_SOV = 20 }
+	set_global_variable = { AFR_AO_PRC = 60 }
 	set_global_variable = { AFR_AO_EUR = 15 }
 	set_global_variable = { AFR_AO_USA = 20 }
 	set_global_variable = { AFR_BJ_SOV = 5 }
 	set_global_variable = { AFR_BJ_PRC = 25 }
-	set_global_variable = { AFR_BJ_EUR = 45 }
+	set_global_variable = { AFR_BJ_EUR = 50 }
 	set_global_variable = { AFR_BJ_USA = 15 }
 	set_global_variable = { AFR_BW_SOV = 5 }
-	set_global_variable = { AFR_BW_PRC = 20 }
-	set_global_variable = { AFR_BW_EUR = 25 }
-	set_global_variable = { AFR_BW_USA = 30 }
-	set_global_variable = { AFR_BF_SOV = 10 }
+	set_global_variable = { AFR_BW_PRC = 25 }
+	set_global_variable = { AFR_BW_EUR = 20 }
+	set_global_variable = { AFR_BW_USA = 35 }
+	set_global_variable = { AFR_BF_SOV = 5 }
 	set_global_variable = { AFR_BF_PRC = 15 }
-	set_global_variable = { AFR_BF_EUR = 50 }
-	set_global_variable = { AFR_BF_USA = 15 }
+	set_global_variable = { AFR_BF_EUR = 55 }
+	set_global_variable = { AFR_BF_USA = 20 }
 	set_global_variable = { AFR_BI_SOV = 10 }
-	set_global_variable = { AFR_BI_PRC = 30 }
-	set_global_variable = { AFR_BI_EUR = 20 }
+	set_global_variable = { AFR_BI_PRC = 35 }
+	set_global_variable = { AFR_BI_EUR = 15 }
 	set_global_variable = { AFR_BI_USA = 10 }
 	set_global_variable = { AFR_CM_SOV = 10 }
-	set_global_variable = { AFR_CM_PRC = 30 }
+	set_global_variable = { AFR_CM_PRC = 40 }
 	set_global_variable = { AFR_CM_EUR = 45 }
-	set_global_variable = { AFR_CM_USA = 20 }
-	set_global_variable = { AFR_CF_SOV = 60 }
-	set_global_variable = { AFR_CF_PRC = 15 }
+	set_global_variable = { AFR_CM_USA = 25 }
+	set_global_variable = { AFR_CF_SOV = 55 }
+	set_global_variable = { AFR_CF_PRC = 10 }
 	set_global_variable = { AFR_CF_EUR = 30 }
 	set_global_variable = { AFR_CF_USA = 10 }
 	set_global_variable = { AFR_TD_SOV = 10 }
 	set_global_variable = { AFR_TD_PRC = 20 }
-	set_global_variable = { AFR_TD_EUR = 55 }
-	set_global_variable = { AFR_TD_USA = 20 }
-	set_global_variable = { AFR_CG_SOV = 20 }
-	set_global_variable = { AFR_CG_PRC = 40 }
-	set_global_variable = { AFR_CG_EUR = 35 }
+	set_global_variable = { AFR_TD_EUR = 60 }
+	set_global_variable = { AFR_TD_USA = 25 }
+	set_global_variable = { AFR_CG_SOV = 10 }
+	set_global_variable = { AFR_CG_PRC = 45 }
+	set_global_variable = { AFR_CG_EUR = 40 }
 	set_global_variable = { AFR_CG_USA = 5 }
 	set_global_variable = { AFR_CI_SOV = 5 }
 	set_global_variable = { AFR_CI_PRC = 25 }
@@ -53,155 +53,155 @@ SAC_africa_init = {
 	set_global_variable = { AFR_CD_USA = 25 }
 	set_global_variable = { AFR_DJ_SOV = 5 }
 	set_global_variable = { AFR_DJ_PRC = 40 }
-	set_global_variable = { AFR_DJ_EUR = 35 }
-	set_global_variable = { AFR_DJ_USA = 35 }
+	set_global_variable = { AFR_DJ_EUR = 40 }
+	set_global_variable = { AFR_DJ_USA = 45 }
 	set_global_variable = { AFR_EG_SOV = 35 }
 	set_global_variable = { AFR_EG_PRC = 30 }
-	set_global_variable = { AFR_EG_EUR = 20 }
-	set_global_variable = { AFR_EG_USA = 40 }
+	set_global_variable = { AFR_EG_EUR = 25 }
+	set_global_variable = { AFR_EG_USA = 45 }
 	set_global_variable = { AFR_GQ_SOV = 10 }
-	set_global_variable = { AFR_GQ_PRC = 35 }
+	set_global_variable = { AFR_GQ_PRC = 40 }
 	set_global_variable = { AFR_GQ_EUR = 20 }
 	set_global_variable = { AFR_GQ_USA = 25 }
-	set_global_variable = { AFR_ER_SOV = 20 }
+	set_global_variable = { AFR_ER_SOV = 25 }
 	set_global_variable = { AFR_ER_PRC = 30 }
 	set_global_variable = { AFR_ER_EUR = 10 }
 	set_global_variable = { AFR_ER_USA = 5 }
-	set_global_variable = { AFR_ET_SOV = 15 }
-	set_global_variable = { AFR_ET_PRC = 50 }
+	set_global_variable = { AFR_ET_SOV = 10 }
+	set_global_variable = { AFR_ET_PRC = 60 }
 	set_global_variable = { AFR_ET_EUR = 15 }
-	set_global_variable = { AFR_ET_USA = 30 }
+	set_global_variable = { AFR_ET_USA = 35 }
 	set_global_variable = { AFR_GA_SOV = 5 }
 	set_global_variable = { AFR_GA_PRC = 30 }
-	set_global_variable = { AFR_GA_EUR = 50 }
-	set_global_variable = { AFR_GA_USA = 10 }
+	set_global_variable = { AFR_GA_EUR = 55 }
+	set_global_variable = { AFR_GA_USA = 15 }
 	set_global_variable = { AFR_GM_SOV = 5 }
-	set_global_variable = { AFR_GM_PRC = 20 }
-	set_global_variable = { AFR_GM_EUR = 25 }
+	set_global_variable = { AFR_GM_PRC = 25 }
+	set_global_variable = { AFR_GM_EUR = 30 }
 	set_global_variable = { AFR_GM_USA = 15 }
 	set_global_variable = { AFR_GH_SOV = 5 }
-	set_global_variable = { AFR_GH_PRC = 30 }
+	set_global_variable = { AFR_GH_PRC = 40 }
 	set_global_variable = { AFR_GH_EUR = 20 }
-	set_global_variable = { AFR_GH_USA = 30 }
+	set_global_variable = { AFR_GH_USA = 35 }
 	set_global_variable = { AFR_GN_SOV = 20 }
-	set_global_variable = { AFR_GN_PRC = 40 }
-	set_global_variable = { AFR_GN_EUR = 25 }
+	set_global_variable = { AFR_GN_PRC = 45 }
+	set_global_variable = { AFR_GN_EUR = 30 }
 	set_global_variable = { AFR_GN_USA = 10 }
 	set_global_variable = { AFR_GW_SOV = 5 }
 	set_global_variable = { AFR_GW_PRC = 15 }
-	set_global_variable = { AFR_GW_EUR = 30 }
+	set_global_variable = { AFR_GW_EUR = 35 }
 	set_global_variable = { AFR_GW_USA = 5 }
 	set_global_variable = { AFR_KE_SOV = 5 }
-	set_global_variable = { AFR_KE_PRC = 40 }
+	set_global_variable = { AFR_KE_PRC = 45 }
 	set_global_variable = { AFR_KE_EUR = 30 }
-	set_global_variable = { AFR_KE_USA = 45 }
+	set_global_variable = { AFR_KE_USA = 50 }
 	set_global_variable = { AFR_LS_SOV = 5 }
 	set_global_variable = { AFR_LS_PRC = 25 }
 	set_global_variable = { AFR_LS_EUR = 15 }
 	set_global_variable = { AFR_LS_USA = 20 }
 	set_global_variable = { AFR_LR_SOV = 5 }
 	set_global_variable = { AFR_LR_PRC = 20 }
-	set_global_variable = { AFR_LR_EUR = 15 }
-	set_global_variable = { AFR_LR_USA = 40 }
+	set_global_variable = { AFR_LR_EUR = 10 }
+	set_global_variable = { AFR_LR_USA = 45 }
 	set_global_variable = { AFR_LY_SOV = 45 }
 	set_global_variable = { AFR_LY_PRC = 10 }
 	set_global_variable = { AFR_LY_EUR = 35 }
 	set_global_variable = { AFR_LY_USA = 25 }
-	set_global_variable = { AFR_MG_SOV = 25 }
-	set_global_variable = { AFR_MG_PRC = 30 }
+	set_global_variable = { AFR_MG_SOV = 30 }
+	set_global_variable = { AFR_MG_PRC = 35 }
 	set_global_variable = { AFR_MG_EUR = 40 }
 	set_global_variable = { AFR_MG_USA = 10 }
 	set_global_variable = { AFR_MW_SOV = 5 }
-	set_global_variable = { AFR_MW_PRC = 30 }
-	set_global_variable = { AFR_MW_EUR = 25 }
+	set_global_variable = { AFR_MW_PRC = 35 }
+	set_global_variable = { AFR_MW_EUR = 20 }
 	set_global_variable = { AFR_MW_USA = 25 }
-	set_global_variable = { AFR_ML_SOV = 25 }
+	set_global_variable = { AFR_ML_SOV = 15 }
 	set_global_variable = { AFR_ML_PRC = 20 }
-	set_global_variable = { AFR_ML_EUR = 55 }
+	set_global_variable = { AFR_ML_EUR = 60 }
 	set_global_variable = { AFR_ML_USA = 15 }
 	set_global_variable = { AFR_MR_SOV = 5 }
 	set_global_variable = { AFR_MR_PRC = 25 }
-	set_global_variable = { AFR_MR_EUR = 35 }
+	set_global_variable = { AFR_MR_EUR = 45 }
 	set_global_variable = { AFR_MR_USA = 20 }
 	set_global_variable = { AFR_MA_SOV = 10 }
-	set_global_variable = { AFR_MA_PRC = 15 }
-	set_global_variable = { AFR_MA_EUR = 50 }
+	set_global_variable = { AFR_MA_PRC = 20 }
+	set_global_variable = { AFR_MA_EUR = 55 }
 	set_global_variable = { AFR_MA_USA = 45 }
-	set_global_variable = { AFR_MZ_SOV = 30 }
-	set_global_variable = { AFR_MZ_PRC = 40 }
+	set_global_variable = { AFR_MZ_SOV = 35 }
+	set_global_variable = { AFR_MZ_PRC = 45 }
 	set_global_variable = { AFR_MZ_EUR = 20 }
 	set_global_variable = { AFR_MZ_USA = 15 }
 	set_global_variable = { AFR_NA_SOV = 5 }
 	set_global_variable = { AFR_NA_PRC = 40 }
-	set_global_variable = { AFR_NA_EUR = 20 }
+	set_global_variable = { AFR_NA_EUR = 25 }
 	set_global_variable = { AFR_NA_USA = 15 }
 	set_global_variable = { AFR_NE_SOV = 5 }
 	set_global_variable = { AFR_NE_PRC = 20 }
-	set_global_variable = { AFR_NE_EUR = 50 }
-	set_global_variable = { AFR_NE_USA = 40 }
+	set_global_variable = { AFR_NE_EUR = 55 }
+	set_global_variable = { AFR_NE_USA = 50 }
 	set_global_variable = { AFR_NG_SOV = 10 }
-	set_global_variable = { AFR_NG_PRC = 40 }
+	set_global_variable = { AFR_NG_PRC = 45 }
 	set_global_variable = { AFR_NG_EUR = 25 }
 	set_global_variable = { AFR_NG_USA = 35 }
 	set_global_variable = { AFR_RW_SOV = 5 }
-	set_global_variable = { AFR_RW_PRC = 25 }
+	set_global_variable = { AFR_RW_PRC = 30 }
 	set_global_variable = { AFR_RW_EUR = 10 }
 	set_global_variable = { AFR_RW_USA = 40 }
 	set_global_variable = { AFR_SN_SOV = 5 }
-	set_global_variable = { AFR_SN_PRC = 25 }
+	set_global_variable = { AFR_SN_PRC = 30 }
 	set_global_variable = { AFR_SN_EUR = 55 }
 	set_global_variable = { AFR_SN_USA = 25 }
 	set_global_variable = { AFR_SL_SOV = 5 }
-	set_global_variable = { AFR_SL_PRC = 35 }
-	set_global_variable = { AFR_SL_EUR = 25 }
+	set_global_variable = { AFR_SL_PRC = 40 }
+	set_global_variable = { AFR_SL_EUR = 20 }
 	set_global_variable = { AFR_SL_USA = 25 }
 	set_global_variable = { AFR_SO_SOV = 5 }
 	set_global_variable = { AFR_SO_PRC = 15 }
 	set_global_variable = { AFR_SO_EUR = 25 }
-	set_global_variable = { AFR_SO_USA = 40 }
+	set_global_variable = { AFR_SO_USA = 50 }
 	set_global_variable = { AFR_ZA_SOV = 25 }
-	set_global_variable = { AFR_ZA_PRC = 40 }
-	set_global_variable = { AFR_ZA_EUR = 25 }
+	set_global_variable = { AFR_ZA_PRC = 45 }
+	set_global_variable = { AFR_ZA_EUR = 30 }
 	set_global_variable = { AFR_ZA_USA = 30 }
-	set_global_variable = { AFR_SS_SOV = 5 }
-	set_global_variable = { AFR_SS_PRC = 40 }
+	set_global_variable = { AFR_SS_SOV = 10 }
+	set_global_variable = { AFR_SS_PRC = 45 }
 	set_global_variable = { AFR_SS_EUR = 10 }
 	set_global_variable = { AFR_SS_USA = 35 }
-	set_global_variable = { AFR_SD_SOV = 45 }
-	set_global_variable = { AFR_SD_PRC = 35 }
+	set_global_variable = { AFR_SD_SOV = 50 }
+	set_global_variable = { AFR_SD_PRC = 40 }
 	set_global_variable = { AFR_SD_EUR = 10 }
-	set_global_variable = { AFR_SD_USA = 25 }
+	set_global_variable = { AFR_SD_USA = 20 }
 	set_global_variable = { AFR_SZ_SOV = 0 }
 	set_global_variable = { AFR_SZ_PRC = 0 }
 	set_global_variable = { AFR_SZ_EUR = 20 }
-	set_global_variable = { AFR_SZ_USA = 35 }
+	set_global_variable = { AFR_SZ_USA = 40 }
 	set_global_variable = { AFR_TZ_SOV = 5 }
-	set_global_variable = { AFR_TZ_PRC = 45 }
+	set_global_variable = { AFR_TZ_PRC = 50 }
 	set_global_variable = { AFR_TZ_EUR = 20 }
 	set_global_variable = { AFR_TZ_USA = 20 }
 	set_global_variable = { AFR_TG_SOV = 5 }
 	set_global_variable = { AFR_TG_PRC = 25 }
-	set_global_variable = { AFR_TG_EUR = 45 }
+	set_global_variable = { AFR_TG_EUR = 50 }
 	set_global_variable = { AFR_TG_USA = 15 }
 	set_global_variable = { AFR_TN_SOV = 5 }
 	set_global_variable = { AFR_TN_PRC = 15 }
-	set_global_variable = { AFR_TN_EUR = 55 }
-	set_global_variable = { AFR_TN_USA = 30 }
+	set_global_variable = { AFR_TN_EUR = 60 }
+	set_global_variable = { AFR_TN_USA = 35 }
 	set_global_variable = { AFR_UG_SOV = 10 }
-	set_global_variable = { AFR_UG_PRC = 35 }
+	set_global_variable = { AFR_UG_PRC = 40 }
 	set_global_variable = { AFR_UG_EUR = 15 }
-	set_global_variable = { AFR_UG_USA = 40 }
+	set_global_variable = { AFR_UG_USA = 45 }
 	set_global_variable = { AFR_EH_SOV = 0 }
 	set_global_variable = { AFR_EH_PRC = 0 }
 	set_global_variable = { AFR_EH_EUR = 0 }
 	set_global_variable = { AFR_EH_USA = 0 }
 	set_global_variable = { AFR_ZM_SOV = 5 }
-	set_global_variable = { AFR_ZM_PRC = 50 }
+	set_global_variable = { AFR_ZM_PRC = 60 }
 	set_global_variable = { AFR_ZM_EUR = 15 }
 	set_global_variable = { AFR_ZM_USA = 15 }
-	set_global_variable = { AFR_ZW_SOV = 15 }
-	set_global_variable = { AFR_ZW_PRC = 50 }
-	set_global_variable = { AFR_ZW_EUR = 10 }
+	set_global_variable = { AFR_ZW_SOV = 25 }
+	set_global_variable = { AFR_ZW_PRC = 55 }
+	set_global_variable = { AFR_ZW_EUR = 5 }
 	set_global_variable = { AFR_ZW_USA = 5 }
 	SAC_africa_recalc = yes
 }
@@ -3211,4 +3211,456 @@ SAC_afr_do_mil_ZW = {
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+
+# Civil war sides: the government plus every enemy fighting it (neighbours, African enemies, or occupiers). Stored on ROOT.
+SAC_africa_build_sides_AO = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = ANG }
+		set_variable = { AFR_gov = ANG }
+		add_to_array = { AFR_sides = ANG }
+		ANG = { every_enemy_country = { limit = { OR = { is_neighbor_of = ANG capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = ANG } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_BF = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = VOL }
+		set_variable = { AFR_gov = VOL }
+		add_to_array = { AFR_sides = VOL }
+		VOL = { every_enemy_country = { limit = { OR = { is_neighbor_of = VOL capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = VOL } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_BI = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = BRD }
+		set_variable = { AFR_gov = BRD }
+		add_to_array = { AFR_sides = BRD }
+		BRD = { every_enemy_country = { limit = { OR = { is_neighbor_of = BRD capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = BRD } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_BJ = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = DAH }
+		set_variable = { AFR_gov = DAH }
+		add_to_array = { AFR_sides = DAH }
+		DAH = { every_enemy_country = { limit = { OR = { is_neighbor_of = DAH capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = DAH } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_BW = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = BOT }
+		set_variable = { AFR_gov = BOT }
+		add_to_array = { AFR_sides = BOT }
+		BOT = { every_enemy_country = { limit = { OR = { is_neighbor_of = BOT capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = BOT } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_CD = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = COG }
+		set_variable = { AFR_gov = COG }
+		add_to_array = { AFR_sides = COG }
+		COG = { every_enemy_country = { limit = { OR = { is_neighbor_of = COG capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = COG } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_CF = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = CAR }
+		set_variable = { AFR_gov = CAR }
+		add_to_array = { AFR_sides = CAR }
+		CAR = { every_enemy_country = { limit = { OR = { is_neighbor_of = CAR capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = CAR } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_CG = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = RCG }
+		set_variable = { AFR_gov = RCG }
+		add_to_array = { AFR_sides = RCG }
+		RCG = { every_enemy_country = { limit = { OR = { is_neighbor_of = RCG capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = RCG } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_CI = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = IVO }
+		set_variable = { AFR_gov = IVO }
+		add_to_array = { AFR_sides = IVO }
+		IVO = { every_enemy_country = { limit = { OR = { is_neighbor_of = IVO capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = IVO } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_CM = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = CMR }
+		set_variable = { AFR_gov = CMR }
+		add_to_array = { AFR_sides = CMR }
+		CMR = { every_enemy_country = { limit = { OR = { is_neighbor_of = CMR capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = CMR } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_DJ = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = DJI }
+		set_variable = { AFR_gov = DJI }
+		add_to_array = { AFR_sides = DJI }
+		DJI = { every_enemy_country = { limit = { OR = { is_neighbor_of = DJI capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = DJI } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_DZ = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = ALG }
+		set_variable = { AFR_gov = ALG }
+		add_to_array = { AFR_sides = ALG }
+		ALG = { every_enemy_country = { limit = { OR = { is_neighbor_of = ALG capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = ALG } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_EG = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = EGY }
+		set_variable = { AFR_gov = EGY }
+		add_to_array = { AFR_sides = EGY }
+		EGY = { every_enemy_country = { limit = { OR = { is_neighbor_of = EGY capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = EGY } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_EH = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = WES }
+		set_variable = { AFR_gov = WES }
+		add_to_array = { AFR_sides = WES }
+		WES = { every_enemy_country = { limit = { OR = { is_neighbor_of = WES capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = WES } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_ER = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = ERI }
+		set_variable = { AFR_gov = ERI }
+		add_to_array = { AFR_sides = ERI }
+		ERI = { every_enemy_country = { limit = { OR = { is_neighbor_of = ERI capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = ERI } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_ET = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = ETH }
+		set_variable = { AFR_gov = ETH }
+		add_to_array = { AFR_sides = ETH }
+		ETH = { every_enemy_country = { limit = { OR = { is_neighbor_of = ETH capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = ETH } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_GA = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = GAB }
+		set_variable = { AFR_gov = GAB }
+		add_to_array = { AFR_sides = GAB }
+		GAB = { every_enemy_country = { limit = { OR = { is_neighbor_of = GAB capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = GAB } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_GH = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = GHA }
+		set_variable = { AFR_gov = GHA }
+		add_to_array = { AFR_sides = GHA }
+		GHA = { every_enemy_country = { limit = { OR = { is_neighbor_of = GHA capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = GHA } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_GM = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = GAM }
+		set_variable = { AFR_gov = GAM }
+		add_to_array = { AFR_sides = GAM }
+		GAM = { every_enemy_country = { limit = { OR = { is_neighbor_of = GAM capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = GAM } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_GN = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = GNA }
+		set_variable = { AFR_gov = GNA }
+		add_to_array = { AFR_sides = GNA }
+		GNA = { every_enemy_country = { limit = { OR = { is_neighbor_of = GNA capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = GNA } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_GQ = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = EQG }
+		set_variable = { AFR_gov = EQG }
+		add_to_array = { AFR_sides = EQG }
+		EQG = { every_enemy_country = { limit = { OR = { is_neighbor_of = EQG capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = EQG } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_GW = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = GNB }
+		set_variable = { AFR_gov = GNB }
+		add_to_array = { AFR_sides = GNB }
+		GNB = { every_enemy_country = { limit = { OR = { is_neighbor_of = GNB capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = GNB } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_KE = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = KEN }
+		set_variable = { AFR_gov = KEN }
+		add_to_array = { AFR_sides = KEN }
+		KEN = { every_enemy_country = { limit = { OR = { is_neighbor_of = KEN capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = KEN } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_LR = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = LIB }
+		set_variable = { AFR_gov = LIB }
+		add_to_array = { AFR_sides = LIB }
+		LIB = { every_enemy_country = { limit = { OR = { is_neighbor_of = LIB capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = LIB } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_LS = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = LES }
+		set_variable = { AFR_gov = LES }
+		add_to_array = { AFR_sides = LES }
+		LES = { every_enemy_country = { limit = { OR = { is_neighbor_of = LES capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = LES } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_LY = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = LBA }
+		set_variable = { AFR_gov = LBA }
+		add_to_array = { AFR_sides = LBA }
+		LBA = { every_enemy_country = { limit = { OR = { is_neighbor_of = LBA capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = LBA } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_MA = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = MOR }
+		set_variable = { AFR_gov = MOR }
+		add_to_array = { AFR_sides = MOR }
+		MOR = { every_enemy_country = { limit = { OR = { is_neighbor_of = MOR capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = MOR } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_MG = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = MAD }
+		set_variable = { AFR_gov = MAD }
+		add_to_array = { AFR_sides = MAD }
+		MAD = { every_enemy_country = { limit = { OR = { is_neighbor_of = MAD capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = MAD } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_ML = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = MLI }
+		set_variable = { AFR_gov = MLI }
+		add_to_array = { AFR_sides = MLI }
+		MLI = { every_enemy_country = { limit = { OR = { is_neighbor_of = MLI capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = MLI } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_MR = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = MRT }
+		set_variable = { AFR_gov = MRT }
+		add_to_array = { AFR_sides = MRT }
+		MRT = { every_enemy_country = { limit = { OR = { is_neighbor_of = MRT capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = MRT } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_MW = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = MLW }
+		set_variable = { AFR_gov = MLW }
+		add_to_array = { AFR_sides = MLW }
+		MLW = { every_enemy_country = { limit = { OR = { is_neighbor_of = MLW capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = MLW } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_MZ = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = MZB }
+		set_variable = { AFR_gov = MZB }
+		add_to_array = { AFR_sides = MZB }
+		MZB = { every_enemy_country = { limit = { OR = { is_neighbor_of = MZB capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = MZB } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_NA = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = NMB }
+		set_variable = { AFR_gov = NMB }
+		add_to_array = { AFR_sides = NMB }
+		NMB = { every_enemy_country = { limit = { OR = { is_neighbor_of = NMB capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = NMB } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_NE = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = NGR }
+		set_variable = { AFR_gov = NGR }
+		add_to_array = { AFR_sides = NGR }
+		NGR = { every_enemy_country = { limit = { OR = { is_neighbor_of = NGR capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = NGR } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_NG = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = NGA }
+		set_variable = { AFR_gov = NGA }
+		add_to_array = { AFR_sides = NGA }
+		NGA = { every_enemy_country = { limit = { OR = { is_neighbor_of = NGA capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = NGA } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_RW = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = RWA }
+		set_variable = { AFR_gov = RWA }
+		add_to_array = { AFR_sides = RWA }
+		RWA = { every_enemy_country = { limit = { OR = { is_neighbor_of = RWA capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = RWA } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_SD = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = SUD }
+		set_variable = { AFR_gov = SUD }
+		add_to_array = { AFR_sides = SUD }
+		SUD = { every_enemy_country = { limit = { OR = { is_neighbor_of = SUD capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = SUD } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_SL = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = SIE }
+		set_variable = { AFR_gov = SIE }
+		add_to_array = { AFR_sides = SIE }
+		SIE = { every_enemy_country = { limit = { OR = { is_neighbor_of = SIE capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = SIE } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_SN = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = SEN }
+		set_variable = { AFR_gov = SEN }
+		add_to_array = { AFR_sides = SEN }
+		SEN = { every_enemy_country = { limit = { OR = { is_neighbor_of = SEN capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = SEN } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_SO = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = SOM }
+		set_variable = { AFR_gov = SOM }
+		add_to_array = { AFR_sides = SOM }
+		SOM = { every_enemy_country = { limit = { OR = { is_neighbor_of = SOM capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = SOM } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_SS = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = SSD }
+		set_variable = { AFR_gov = SSD }
+		add_to_array = { AFR_sides = SSD }
+		SSD = { every_enemy_country = { limit = { OR = { is_neighbor_of = SSD capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = SSD } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_SZ = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = SWZ }
+		set_variable = { AFR_gov = SWZ }
+		add_to_array = { AFR_sides = SWZ }
+		SWZ = { every_enemy_country = { limit = { OR = { is_neighbor_of = SWZ capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = SWZ } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_TD = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = CHA }
+		set_variable = { AFR_gov = CHA }
+		add_to_array = { AFR_sides = CHA }
+		CHA = { every_enemy_country = { limit = { OR = { is_neighbor_of = CHA capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = CHA } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_TG = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = TOG }
+		set_variable = { AFR_gov = TOG }
+		add_to_array = { AFR_sides = TOG }
+		TOG = { every_enemy_country = { limit = { OR = { is_neighbor_of = TOG capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = TOG } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_TN = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = TUN }
+		set_variable = { AFR_gov = TUN }
+		add_to_array = { AFR_sides = TUN }
+		TUN = { every_enemy_country = { limit = { OR = { is_neighbor_of = TUN capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = TUN } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_TZ = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = TZN }
+		set_variable = { AFR_gov = TZN }
+		add_to_array = { AFR_sides = TZN }
+		TZN = { every_enemy_country = { limit = { OR = { is_neighbor_of = TZN capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = TZN } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_UG = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = UGA }
+		set_variable = { AFR_gov = UGA }
+		add_to_array = { AFR_sides = UGA }
+		UGA = { every_enemy_country = { limit = { OR = { is_neighbor_of = UGA capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = UGA } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_ZA = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = SAF }
+		set_variable = { AFR_gov = SAF }
+		add_to_array = { AFR_sides = SAF }
+		SAF = { every_enemy_country = { limit = { OR = { is_neighbor_of = SAF capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = SAF } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_ZM = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = ZAM }
+		set_variable = { AFR_gov = ZAM }
+		add_to_array = { AFR_sides = ZAM }
+		ZAM = { every_enemy_country = { limit = { OR = { is_neighbor_of = ZAM capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = ZAM } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
+}
+SAC_africa_build_sides_ZW = {
+	clear_array = AFR_sides
+	clear_variable = AFR_gov
+	if = { limit = { country_exists = ZIM }
+		set_variable = { AFR_gov = ZIM }
+		add_to_array = { AFR_sides = ZIM }
+		ZIM = { every_enemy_country = { limit = { OR = { is_neighbor_of = ZIM capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = ZIM } } } add_to_array = { ROOT.AFR_sides = THIS } } }
+	}
 }

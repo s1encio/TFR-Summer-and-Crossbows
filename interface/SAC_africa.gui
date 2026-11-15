@@ -442,11 +442,16 @@ guiTypes = {
 		instantTextBoxType = { name = "SAC_africa_sel_lead_text" position = { x = 568 y = 118 } font = "hoi_16mbs" text = "[SAC_africa_sel_lead]" maxWidth = 266 maxHeight = 18 }
 		instantTextBoxType = { name = "SAC_africa_sel_info_text" position = { x = 568 y = 144 } font = "hoi_16mbs" text = "[SAC_africa_sel_info]" maxWidth = 266 maxHeight = 80 }
 		buttonType = { name = "SAC_africa_tab_inv" position = { x = 556 y = 240 } quadTextureSprite = "GFX_SAC_africa_tab" clicksound = click_default }
-		buttonType = { name = "SAC_africa_tab_mil" position = { x = 714 y = 240 } quadTextureSprite = "GFX_SAC_africa_tab" clicksound = click_default }
 		iconType = { name = "SAC_africa_tab_inv_active" position = { x = 556 y = 240 } spriteType = "GFX_SAC_africa_tab_active" alwaystransparent = yes }
-		iconType = { name = "SAC_africa_tab_mil_active" position = { x = 714 y = 240 } spriteType = "GFX_SAC_africa_tab_active" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_tab_inv_text" position = { x = 556 y = 246 } font = "hoi_16mbs" text = "SAC_africa_tab_inv" maxWidth = 132 maxHeight = 18 format = centre alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_tab_mil_text" position = { x = 714 y = 246 } font = "hoi_16mbs" text = "SAC_africa_tab_mil" maxWidth = 132 maxHeight = 18 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_tab_inv_text" position = { x = 556 y = 246 } font = "hoi_16mbs" text = "SAC_africa_tab_inv" maxWidth = 92 maxHeight = 18 format = centre alwaystransparent = yes }
+		buttonType = { name = "SAC_africa_tab_mil" position = { x = 655 y = 240 } quadTextureSprite = "GFX_SAC_africa_tab" clicksound = click_default }
+		iconType = { name = "SAC_africa_tab_mil_active" position = { x = 655 y = 240 } spriteType = "GFX_SAC_africa_tab_active" alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_tab_mil_text" position = { x = 655 y = 246 } font = "hoi_16mbs" text = "SAC_africa_tab_mil" maxWidth = 92 maxHeight = 18 format = centre alwaystransparent = yes }
+		buttonType = { name = "SAC_africa_tab_cw" position = { x = 754 y = 240 } quadTextureSprite = "GFX_SAC_africa_tab" clicksound = click_default }
+		iconType = { name = "SAC_africa_tab_cw_active" position = { x = 754 y = 240 } spriteType = "GFX_SAC_africa_tab_active" alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_tab_cw_text" position = { x = 754 y = 246 } font = "hoi_16mbs" text = "SAC_africa_tab_cw" maxWidth = 92 maxHeight = 18 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_sides_hint" position = { x = 565 y = 280 } font = "hoi_16mbs" text = "SAC_africa_sides_hint" maxWidth = 272 maxHeight = 18 }
+		gridboxType = { name = "SAC_africa_sides_grid" position = { x = 565 y = 302 } size = { width = 272 height = 320 } slotsize = { width = 272 height = 60 } max_slots_horizontal = 1 add_horizontal = no }
 		buttonType = { name = "SAC_africa_act_infra" position = { x = 565 y = 284 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_infra_tt" clicksound = click_default }
 		instantTextBoxType = { name = "SAC_africa_act_infra_title" position = { x = 577 y = 291 } font = "hoi_20bp" text = "SAC_africa_act_infra" maxWidth = 250 maxHeight = 20 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_infra_cost" position = { x = 577 y = 312 } font = "hoi_16mbs" text = "SAC_africa_act_infra_cost" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
@@ -465,5 +470,18 @@ guiTypes = {
 		buttonType = { name = "SAC_africa_act_mil" position = { x = 565 y = 404 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_mil_tt" clicksound = click_default }
 		instantTextBoxType = { name = "SAC_africa_act_mil_title" position = { x = 577 y = 411 } font = "hoi_20bp" text = "SAC_africa_act_mil" maxWidth = 250 maxHeight = 20 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_mil_cost" position = { x = 577 y = 432 } font = "hoi_16mbs" text = "SAC_africa_act_mil_cost" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
+	}
+
+	containerWindowType = {
+		name = "SAC_africa_side_entry"
+		size = { width = 272 height = 56 }
+		clipping = no
+		iconType = { name = "SAC_africa_side_bg" position = { x = 0 y = 0 } spriteType = "GFX_SAC_africa_side_bg" }
+		iconType = { name = "SAC_africa_side_flag" position = { x = 10 y = 14 } quadTextureSprite = "GFX_flag_small2" }
+		instantTextBoxType = { name = "SAC_africa_side_name" position = { x = 56 y = 7 } font = "hoi_16mbs" text = "[This.GetName]" maxWidth = 130 maxHeight = 20 fixedsize = yes }
+		instantTextBoxType = { name = "SAC_africa_side_gov" position = { x = 56 y = 28 } font = "hoi_16mbs" text = "SAC_africa_side_gov" maxWidth = 130 maxHeight = 18 }
+		instantTextBoxType = { name = "SAC_africa_side_reb" position = { x = 56 y = 28 } font = "hoi_16mbs" text = "SAC_africa_side_reb" maxWidth = 130 maxHeight = 18 }
+		buttonType = { name = "SAC_africa_side_support" position = { x = 190 y = 6 } quadTextureSprite = "GFX_SAC_africa_small_btn" buttonText = "SAC_africa_side_support" buttonFont = "hoi_16mbs" pdx_tooltip = "SAC_africa_side_support_tt" clicksound = click_default }
+		instantTextBoxType = { name = "SAC_africa_side_mine" position = { x = 186 y = 36 } font = "hoi_16mbs" text = "SAC_africa_side_mine" maxWidth = 84 maxHeight = 18 format = centre }
 	}
 }

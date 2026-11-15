@@ -35,6 +35,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/WAG_africa/africa_infobox.png"
 	}
 	SpriteType = {
+		name = "GFX_SAC_africa_small_btn"
+		texturefile = "gfx/interface/WAG_africa/africa_small_btn.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_side_bg"
+		texturefile = "gfx/interface/WAG_africa/africa_side_bg.png"
+	}
+	SpriteType = {
 		name = "GFX_SAC_africa_AO_0"
 		texturefile = "gfx/interface/WAG_africa/afr_AO_0.png"
 		noOfFrames = 3
