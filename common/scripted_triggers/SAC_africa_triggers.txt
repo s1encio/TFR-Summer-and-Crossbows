@@ -1,0 +1,10 @@
+# Countries that can open the Africa panel
+SAC_can_see_africa_panel = {
+	OR = {
+		tag = WAG
+		tag = SOV
+		tag = PRC
+		tag = FRA
+		tag = USA
+	}
+}

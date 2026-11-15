@@ -1,0 +1,343 @@
+guiTypes = {
+	containerWindowType = {
+		name = "SAC_africa_button_window"
+		# Position of the Africa button: measured from the top-right corner of the screen
+		position = { x = -52 y = 110 }
+		size = { width = 40 height = 40 }
+		orientation = UPPER_RIGHT
+		buttonType = {
+			name = "SAC_africa_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_SAC_africa_button"
+			pdx_tooltip = "SAC_africa_button_tt"
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "SAC_africa_panel_window"
+		position = { x = -521 y = 110 }
+		size = { width = 461 height = 560 }
+		orientation = UPPER_RIGHT
+		moveable = yes
+		click_to_front = yes
+		show_sound = menu_open_window
+		hide_sound = menu_close_window
+		clipping = no
+		background = { name = "SAC_africa_bg" quadTextureSprite = "GFX_tiled_bg" }
+		instantTextBoxType = { name = "SAC_africa_title" position = { x = 0 y = 14 } font = "hoi_20bp" text = "SAC_africa_title" maxWidth = 461 maxHeight = 24 format = centre }
+		buttonType = { name = "SAC_africa_close" position = { x = -44 y = 12 } spriteType = "GFX_NV_btn_close" clicksound = click_close pdx_tooltip = "CLOSE" orientation = UPPER_RIGHT }
+		iconType = { name = "SAC_africa_map" position = { x = 22 y = 52 } spriteType = "GFX_SAC_africa_map" }
+		# South Africa
+		iconType = { name = "afr_ZA_0" position = { x = 226 y = 399 } quadTextureSprite = "GFX_SAC_africa_ZA" frame = 1 pdx_tooltip = "SAC_africa_ZA_tt" }
+		iconType = { name = "afr_ZA_1" position = { x = 226 y = 399 } quadTextureSprite = "GFX_SAC_africa_ZA" frame = 2 pdx_tooltip = "SAC_africa_ZA_tt" }
+		iconType = { name = "afr_ZA_2" position = { x = 226 y = 399 } quadTextureSprite = "GFX_SAC_africa_ZA" frame = 3 pdx_tooltip = "SAC_africa_ZA_tt" }
+		iconType = { name = "afr_ZA_3" position = { x = 226 y = 399 } quadTextureSprite = "GFX_SAC_africa_ZA" frame = 4 pdx_tooltip = "SAC_africa_ZA_tt" }
+		iconType = { name = "afr_ZA_4" position = { x = 226 y = 399 } quadTextureSprite = "GFX_SAC_africa_ZA" frame = 5 pdx_tooltip = "SAC_africa_ZA_tt" }
+		# Algeria
+		iconType = { name = "afr_DZ_0" position = { x = 80 y = 56 } quadTextureSprite = "GFX_SAC_africa_DZ" frame = 1 pdx_tooltip = "SAC_africa_DZ_tt" }
+		iconType = { name = "afr_DZ_1" position = { x = 80 y = 56 } quadTextureSprite = "GFX_SAC_africa_DZ" frame = 2 pdx_tooltip = "SAC_africa_DZ_tt" }
+		iconType = { name = "afr_DZ_2" position = { x = 80 y = 56 } quadTextureSprite = "GFX_SAC_africa_DZ" frame = 3 pdx_tooltip = "SAC_africa_DZ_tt" }
+		iconType = { name = "afr_DZ_3" position = { x = 80 y = 56 } quadTextureSprite = "GFX_SAC_africa_DZ" frame = 4 pdx_tooltip = "SAC_africa_DZ_tt" }
+		iconType = { name = "afr_DZ_4" position = { x = 80 y = 56 } quadTextureSprite = "GFX_SAC_africa_DZ" frame = 5 pdx_tooltip = "SAC_africa_DZ_tt" }
+		# DR Congo
+		iconType = { name = "afr_CD_0" position = { x = 202 y = 240 } quadTextureSprite = "GFX_SAC_africa_CD" frame = 1 pdx_tooltip = "SAC_africa_CD_tt" }
+		iconType = { name = "afr_CD_1" position = { x = 202 y = 240 } quadTextureSprite = "GFX_SAC_africa_CD" frame = 2 pdx_tooltip = "SAC_africa_CD_tt" }
+		iconType = { name = "afr_CD_2" position = { x = 202 y = 240 } quadTextureSprite = "GFX_SAC_africa_CD" frame = 3 pdx_tooltip = "SAC_africa_CD_tt" }
+		iconType = { name = "afr_CD_3" position = { x = 202 y = 240 } quadTextureSprite = "GFX_SAC_africa_CD" frame = 4 pdx_tooltip = "SAC_africa_CD_tt" }
+		iconType = { name = "afr_CD_4" position = { x = 202 y = 240 } quadTextureSprite = "GFX_SAC_africa_CD" frame = 5 pdx_tooltip = "SAC_africa_CD_tt" }
+		# Mali
+		iconType = { name = "afr_ML_0" position = { x = 59 y = 126 } quadTextureSprite = "GFX_SAC_africa_ML" frame = 1 pdx_tooltip = "SAC_africa_ML_tt" }
+		iconType = { name = "afr_ML_1" position = { x = 59 y = 126 } quadTextureSprite = "GFX_SAC_africa_ML" frame = 2 pdx_tooltip = "SAC_africa_ML_tt" }
+		iconType = { name = "afr_ML_2" position = { x = 59 y = 126 } quadTextureSprite = "GFX_SAC_africa_ML" frame = 3 pdx_tooltip = "SAC_africa_ML_tt" }
+		iconType = { name = "afr_ML_3" position = { x = 59 y = 126 } quadTextureSprite = "GFX_SAC_africa_ML" frame = 4 pdx_tooltip = "SAC_africa_ML_tt" }
+		iconType = { name = "afr_ML_4" position = { x = 59 y = 126 } quadTextureSprite = "GFX_SAC_africa_ML" frame = 5 pdx_tooltip = "SAC_africa_ML_tt" }
+		# Morocco
+		iconType = { name = "afr_MA_0" position = { x = 32 y = 63 } quadTextureSprite = "GFX_SAC_africa_MA" frame = 1 pdx_tooltip = "SAC_africa_MA_tt" }
+		iconType = { name = "afr_MA_1" position = { x = 32 y = 63 } quadTextureSprite = "GFX_SAC_africa_MA" frame = 2 pdx_tooltip = "SAC_africa_MA_tt" }
+		iconType = { name = "afr_MA_2" position = { x = 32 y = 63 } quadTextureSprite = "GFX_SAC_africa_MA" frame = 3 pdx_tooltip = "SAC_africa_MA_tt" }
+		iconType = { name = "afr_MA_3" position = { x = 32 y = 63 } quadTextureSprite = "GFX_SAC_africa_MA" frame = 4 pdx_tooltip = "SAC_africa_MA_tt" }
+		iconType = { name = "afr_MA_4" position = { x = 32 y = 63 } quadTextureSprite = "GFX_SAC_africa_MA" frame = 5 pdx_tooltip = "SAC_africa_MA_tt" }
+		# Sudan
+		iconType = { name = "afr_SD_0" position = { x = 257 y = 142 } quadTextureSprite = "GFX_SAC_africa_SD" frame = 1 pdx_tooltip = "SAC_africa_SD_tt" }
+		iconType = { name = "afr_SD_1" position = { x = 257 y = 142 } quadTextureSprite = "GFX_SAC_africa_SD" frame = 2 pdx_tooltip = "SAC_africa_SD_tt" }
+		iconType = { name = "afr_SD_2" position = { x = 257 y = 142 } quadTextureSprite = "GFX_SAC_africa_SD" frame = 3 pdx_tooltip = "SAC_africa_SD_tt" }
+		iconType = { name = "afr_SD_3" position = { x = 257 y = 142 } quadTextureSprite = "GFX_SAC_africa_SD" frame = 4 pdx_tooltip = "SAC_africa_SD_tt" }
+		iconType = { name = "afr_SD_4" position = { x = 257 y = 142 } quadTextureSprite = "GFX_SAC_africa_SD" frame = 5 pdx_tooltip = "SAC_africa_SD_tt" }
+		# Libya
+		iconType = { name = "afr_LY_0" position = { x = 185 y = 78 } quadTextureSprite = "GFX_SAC_africa_LY" frame = 1 pdx_tooltip = "SAC_africa_LY_tt" }
+		iconType = { name = "afr_LY_1" position = { x = 185 y = 78 } quadTextureSprite = "GFX_SAC_africa_LY" frame = 2 pdx_tooltip = "SAC_africa_LY_tt" }
+		iconType = { name = "afr_LY_2" position = { x = 185 y = 78 } quadTextureSprite = "GFX_SAC_africa_LY" frame = 3 pdx_tooltip = "SAC_africa_LY_tt" }
+		iconType = { name = "afr_LY_3" position = { x = 185 y = 78 } quadTextureSprite = "GFX_SAC_africa_LY" frame = 4 pdx_tooltip = "SAC_africa_LY_tt" }
+		iconType = { name = "afr_LY_4" position = { x = 185 y = 78 } quadTextureSprite = "GFX_SAC_africa_LY" frame = 5 pdx_tooltip = "SAC_africa_LY_tt" }
+		# Niger
+		iconType = { name = "afr_NE_0" position = { x = 132 y = 134 } quadTextureSprite = "GFX_SAC_africa_NE" frame = 1 pdx_tooltip = "SAC_africa_NE_tt" }
+		iconType = { name = "afr_NE_1" position = { x = 132 y = 134 } quadTextureSprite = "GFX_SAC_africa_NE" frame = 2 pdx_tooltip = "SAC_africa_NE_tt" }
+		iconType = { name = "afr_NE_2" position = { x = 132 y = 134 } quadTextureSprite = "GFX_SAC_africa_NE" frame = 3 pdx_tooltip = "SAC_africa_NE_tt" }
+		iconType = { name = "afr_NE_3" position = { x = 132 y = 134 } quadTextureSprite = "GFX_SAC_africa_NE" frame = 4 pdx_tooltip = "SAC_africa_NE_tt" }
+		iconType = { name = "afr_NE_4" position = { x = 132 y = 134 } quadTextureSprite = "GFX_SAC_africa_NE" frame = 5 pdx_tooltip = "SAC_africa_NE_tt" }
+		# Mozambique
+		iconType = { name = "afr_MZ_0" position = { x = 306 y = 332 } quadTextureSprite = "GFX_SAC_africa_MZ" frame = 1 pdx_tooltip = "SAC_africa_MZ_tt" }
+		iconType = { name = "afr_MZ_1" position = { x = 306 y = 332 } quadTextureSprite = "GFX_SAC_africa_MZ" frame = 2 pdx_tooltip = "SAC_africa_MZ_tt" }
+		iconType = { name = "afr_MZ_2" position = { x = 306 y = 332 } quadTextureSprite = "GFX_SAC_africa_MZ" frame = 3 pdx_tooltip = "SAC_africa_MZ_tt" }
+		iconType = { name = "afr_MZ_3" position = { x = 306 y = 332 } quadTextureSprite = "GFX_SAC_africa_MZ" frame = 4 pdx_tooltip = "SAC_africa_MZ_tt" }
+		iconType = { name = "afr_MZ_4" position = { x = 306 y = 332 } quadTextureSprite = "GFX_SAC_africa_MZ" frame = 5 pdx_tooltip = "SAC_africa_MZ_tt" }
+		# Ethiopia
+		iconType = { name = "afr_ET_0" position = { x = 322 y = 185 } quadTextureSprite = "GFX_SAC_africa_ET" frame = 1 pdx_tooltip = "SAC_africa_ET_tt" }
+		iconType = { name = "afr_ET_1" position = { x = 322 y = 185 } quadTextureSprite = "GFX_SAC_africa_ET" frame = 2 pdx_tooltip = "SAC_africa_ET_tt" }
+		iconType = { name = "afr_ET_2" position = { x = 322 y = 185 } quadTextureSprite = "GFX_SAC_africa_ET" frame = 3 pdx_tooltip = "SAC_africa_ET_tt" }
+		iconType = { name = "afr_ET_3" position = { x = 322 y = 185 } quadTextureSprite = "GFX_SAC_africa_ET" frame = 4 pdx_tooltip = "SAC_africa_ET_tt" }
+		iconType = { name = "afr_ET_4" position = { x = 322 y = 185 } quadTextureSprite = "GFX_SAC_africa_ET" frame = 5 pdx_tooltip = "SAC_africa_ET_tt" }
+		# Chad
+		iconType = { name = "afr_TD_0" position = { x = 209 y = 135 } quadTextureSprite = "GFX_SAC_africa_TD" frame = 1 pdx_tooltip = "SAC_africa_TD_tt" }
+		iconType = { name = "afr_TD_1" position = { x = 209 y = 135 } quadTextureSprite = "GFX_SAC_africa_TD" frame = 2 pdx_tooltip = "SAC_africa_TD_tt" }
+		iconType = { name = "afr_TD_2" position = { x = 209 y = 135 } quadTextureSprite = "GFX_SAC_africa_TD" frame = 3 pdx_tooltip = "SAC_africa_TD_tt" }
+		iconType = { name = "afr_TD_3" position = { x = 209 y = 135 } quadTextureSprite = "GFX_SAC_africa_TD" frame = 4 pdx_tooltip = "SAC_africa_TD_tt" }
+		iconType = { name = "afr_TD_4" position = { x = 209 y = 135 } quadTextureSprite = "GFX_SAC_africa_TD" frame = 5 pdx_tooltip = "SAC_africa_TD_tt" }
+		# Angola
+		iconType = { name = "afr_AO_0" position = { x = 199 y = 297 } quadTextureSprite = "GFX_SAC_africa_AO" frame = 1 pdx_tooltip = "SAC_africa_AO_tt" }
+		iconType = { name = "afr_AO_1" position = { x = 199 y = 297 } quadTextureSprite = "GFX_SAC_africa_AO" frame = 2 pdx_tooltip = "SAC_africa_AO_tt" }
+		iconType = { name = "afr_AO_2" position = { x = 199 y = 297 } quadTextureSprite = "GFX_SAC_africa_AO" frame = 3 pdx_tooltip = "SAC_africa_AO_tt" }
+		iconType = { name = "afr_AO_3" position = { x = 199 y = 297 } quadTextureSprite = "GFX_SAC_africa_AO" frame = 4 pdx_tooltip = "SAC_africa_AO_tt" }
+		iconType = { name = "afr_AO_4" position = { x = 199 y = 297 } quadTextureSprite = "GFX_SAC_africa_AO" frame = 5 pdx_tooltip = "SAC_africa_AO_tt" }
+		# Namibia
+		iconType = { name = "afr_NA_0" position = { x = 199 y = 369 } quadTextureSprite = "GFX_SAC_africa_NA" frame = 1 pdx_tooltip = "SAC_africa_NA_tt" }
+		iconType = { name = "afr_NA_1" position = { x = 199 y = 369 } quadTextureSprite = "GFX_SAC_africa_NA" frame = 2 pdx_tooltip = "SAC_africa_NA_tt" }
+		iconType = { name = "afr_NA_2" position = { x = 199 y = 369 } quadTextureSprite = "GFX_SAC_africa_NA" frame = 3 pdx_tooltip = "SAC_africa_NA_tt" }
+		iconType = { name = "afr_NA_3" position = { x = 199 y = 369 } quadTextureSprite = "GFX_SAC_africa_NA" frame = 4 pdx_tooltip = "SAC_africa_NA_tt" }
+		iconType = { name = "afr_NA_4" position = { x = 199 y = 369 } quadTextureSprite = "GFX_SAC_africa_NA" frame = 5 pdx_tooltip = "SAC_africa_NA_tt" }
+		# Mauritania
+		iconType = { name = "afr_MR_0" position = { x = 32 y = 113 } quadTextureSprite = "GFX_SAC_africa_MR" frame = 1 pdx_tooltip = "SAC_africa_MR_tt" }
+		iconType = { name = "afr_MR_1" position = { x = 32 y = 113 } quadTextureSprite = "GFX_SAC_africa_MR" frame = 2 pdx_tooltip = "SAC_africa_MR_tt" }
+		iconType = { name = "afr_MR_2" position = { x = 32 y = 113 } quadTextureSprite = "GFX_SAC_africa_MR" frame = 3 pdx_tooltip = "SAC_africa_MR_tt" }
+		iconType = { name = "afr_MR_3" position = { x = 32 y = 113 } quadTextureSprite = "GFX_SAC_africa_MR" frame = 4 pdx_tooltip = "SAC_africa_MR_tt" }
+		iconType = { name = "afr_MR_4" position = { x = 32 y = 113 } quadTextureSprite = "GFX_SAC_africa_MR" frame = 5 pdx_tooltip = "SAC_africa_MR_tt" }
+		# Somalia
+		iconType = { name = "afr_SO_0" position = { x = 368 y = 201 } quadTextureSprite = "GFX_SAC_africa_SO" frame = 1 pdx_tooltip = "SAC_africa_SO_tt" }
+		iconType = { name = "afr_SO_1" position = { x = 368 y = 201 } quadTextureSprite = "GFX_SAC_africa_SO" frame = 2 pdx_tooltip = "SAC_africa_SO_tt" }
+		iconType = { name = "afr_SO_2" position = { x = 368 y = 201 } quadTextureSprite = "GFX_SAC_africa_SO" frame = 3 pdx_tooltip = "SAC_africa_SO_tt" }
+		iconType = { name = "afr_SO_3" position = { x = 368 y = 201 } quadTextureSprite = "GFX_SAC_africa_SO" frame = 4 pdx_tooltip = "SAC_africa_SO_tt" }
+		iconType = { name = "afr_SO_4" position = { x = 368 y = 201 } quadTextureSprite = "GFX_SAC_africa_SO" frame = 5 pdx_tooltip = "SAC_africa_SO_tt" }
+		# Egypt
+		iconType = { name = "afr_EG_0" position = { x = 274 y = 87 } quadTextureSprite = "GFX_SAC_africa_EG" frame = 1 pdx_tooltip = "SAC_africa_EG_tt" }
+		iconType = { name = "afr_EG_1" position = { x = 274 y = 87 } quadTextureSprite = "GFX_SAC_africa_EG" frame = 2 pdx_tooltip = "SAC_africa_EG_tt" }
+		iconType = { name = "afr_EG_2" position = { x = 274 y = 87 } quadTextureSprite = "GFX_SAC_africa_EG" frame = 3 pdx_tooltip = "SAC_africa_EG_tt" }
+		iconType = { name = "afr_EG_3" position = { x = 274 y = 87 } quadTextureSprite = "GFX_SAC_africa_EG" frame = 4 pdx_tooltip = "SAC_africa_EG_tt" }
+		iconType = { name = "afr_EG_4" position = { x = 274 y = 87 } quadTextureSprite = "GFX_SAC_africa_EG" frame = 5 pdx_tooltip = "SAC_africa_EG_tt" }
+		# Tanzania
+		iconType = { name = "afr_TZ_0" position = { x = 301 y = 277 } quadTextureSprite = "GFX_SAC_africa_TZ" frame = 1 pdx_tooltip = "SAC_africa_TZ_tt" }
+		iconType = { name = "afr_TZ_1" position = { x = 301 y = 277 } quadTextureSprite = "GFX_SAC_africa_TZ" frame = 2 pdx_tooltip = "SAC_africa_TZ_tt" }
+		iconType = { name = "afr_TZ_2" position = { x = 301 y = 277 } quadTextureSprite = "GFX_SAC_africa_TZ" frame = 3 pdx_tooltip = "SAC_africa_TZ_tt" }
+		iconType = { name = "afr_TZ_3" position = { x = 301 y = 277 } quadTextureSprite = "GFX_SAC_africa_TZ" frame = 4 pdx_tooltip = "SAC_africa_TZ_tt" }
+		iconType = { name = "afr_TZ_4" position = { x = 301 y = 277 } quadTextureSprite = "GFX_SAC_africa_TZ" frame = 5 pdx_tooltip = "SAC_africa_TZ_tt" }
+		# Zambia
+		iconType = { name = "afr_ZM_0" position = { x = 258 y = 318 } quadTextureSprite = "GFX_SAC_africa_ZM" frame = 1 pdx_tooltip = "SAC_africa_ZM_tt" }
+		iconType = { name = "afr_ZM_1" position = { x = 258 y = 318 } quadTextureSprite = "GFX_SAC_africa_ZM" frame = 2 pdx_tooltip = "SAC_africa_ZM_tt" }
+		iconType = { name = "afr_ZM_2" position = { x = 258 y = 318 } quadTextureSprite = "GFX_SAC_africa_ZM" frame = 3 pdx_tooltip = "SAC_africa_ZM_tt" }
+		iconType = { name = "afr_ZM_3" position = { x = 258 y = 318 } quadTextureSprite = "GFX_SAC_africa_ZM" frame = 4 pdx_tooltip = "SAC_africa_ZM_tt" }
+		iconType = { name = "afr_ZM_4" position = { x = 258 y = 318 } quadTextureSprite = "GFX_SAC_africa_ZM" frame = 5 pdx_tooltip = "SAC_africa_ZM_tt" }
+		# Nigeria
+		iconType = { name = "afr_NG_0" position = { x = 146 y = 190 } quadTextureSprite = "GFX_SAC_africa_NG" frame = 1 pdx_tooltip = "SAC_africa_NG_tt" }
+		iconType = { name = "afr_NG_1" position = { x = 146 y = 190 } quadTextureSprite = "GFX_SAC_africa_NG" frame = 2 pdx_tooltip = "SAC_africa_NG_tt" }
+		iconType = { name = "afr_NG_2" position = { x = 146 y = 190 } quadTextureSprite = "GFX_SAC_africa_NG" frame = 3 pdx_tooltip = "SAC_africa_NG_tt" }
+		iconType = { name = "afr_NG_3" position = { x = 146 y = 190 } quadTextureSprite = "GFX_SAC_africa_NG" frame = 4 pdx_tooltip = "SAC_africa_NG_tt" }
+		iconType = { name = "afr_NG_4" position = { x = 146 y = 190 } quadTextureSprite = "GFX_SAC_africa_NG" frame = 5 pdx_tooltip = "SAC_africa_NG_tt" }
+		# Central African Republic
+		iconType = { name = "afr_CF_0" position = { x = 214 y = 207 } quadTextureSprite = "GFX_SAC_africa_CF" frame = 1 pdx_tooltip = "SAC_africa_CF_tt" }
+		iconType = { name = "afr_CF_1" position = { x = 214 y = 207 } quadTextureSprite = "GFX_SAC_africa_CF" frame = 2 pdx_tooltip = "SAC_africa_CF_tt" }
+		iconType = { name = "afr_CF_2" position = { x = 214 y = 207 } quadTextureSprite = "GFX_SAC_africa_CF" frame = 3 pdx_tooltip = "SAC_africa_CF_tt" }
+		iconType = { name = "afr_CF_3" position = { x = 214 y = 207 } quadTextureSprite = "GFX_SAC_africa_CF" frame = 4 pdx_tooltip = "SAC_africa_CF_tt" }
+		iconType = { name = "afr_CF_4" position = { x = 214 y = 207 } quadTextureSprite = "GFX_SAC_africa_CF" frame = 5 pdx_tooltip = "SAC_africa_CF_tt" }
+		# South Sudan
+		iconType = { name = "afr_SS_0" position = { x = 271 y = 200 } quadTextureSprite = "GFX_SAC_africa_SS" frame = 1 pdx_tooltip = "SAC_africa_SS_tt" }
+		iconType = { name = "afr_SS_1" position = { x = 271 y = 200 } quadTextureSprite = "GFX_SAC_africa_SS" frame = 2 pdx_tooltip = "SAC_africa_SS_tt" }
+		iconType = { name = "afr_SS_2" position = { x = 271 y = 200 } quadTextureSprite = "GFX_SAC_africa_SS" frame = 3 pdx_tooltip = "SAC_africa_SS_tt" }
+		iconType = { name = "afr_SS_3" position = { x = 271 y = 200 } quadTextureSprite = "GFX_SAC_africa_SS" frame = 4 pdx_tooltip = "SAC_africa_SS_tt" }
+		iconType = { name = "afr_SS_4" position = { x = 271 y = 200 } quadTextureSprite = "GFX_SAC_africa_SS" frame = 5 pdx_tooltip = "SAC_africa_SS_tt" }
+		# Madagascar
+		iconType = { name = "afr_MG_0" position = { x = 382 y = 341 } quadTextureSprite = "GFX_SAC_africa_MG" frame = 1 pdx_tooltip = "SAC_africa_MG_tt" }
+		iconType = { name = "afr_MG_1" position = { x = 382 y = 341 } quadTextureSprite = "GFX_SAC_africa_MG" frame = 2 pdx_tooltip = "SAC_africa_MG_tt" }
+		iconType = { name = "afr_MG_2" position = { x = 382 y = 341 } quadTextureSprite = "GFX_SAC_africa_MG" frame = 3 pdx_tooltip = "SAC_africa_MG_tt" }
+		iconType = { name = "afr_MG_3" position = { x = 382 y = 341 } quadTextureSprite = "GFX_SAC_africa_MG" frame = 4 pdx_tooltip = "SAC_africa_MG_tt" }
+		iconType = { name = "afr_MG_4" position = { x = 382 y = 341 } quadTextureSprite = "GFX_SAC_africa_MG" frame = 5 pdx_tooltip = "SAC_africa_MG_tt" }
+		# Cameroon
+		iconType = { name = "afr_CM_0" position = { x = 180 y = 195 } quadTextureSprite = "GFX_SAC_africa_CM" frame = 1 pdx_tooltip = "SAC_africa_CM_tt" }
+		iconType = { name = "afr_CM_1" position = { x = 180 y = 195 } quadTextureSprite = "GFX_SAC_africa_CM" frame = 2 pdx_tooltip = "SAC_africa_CM_tt" }
+		iconType = { name = "afr_CM_2" position = { x = 180 y = 195 } quadTextureSprite = "GFX_SAC_africa_CM" frame = 3 pdx_tooltip = "SAC_africa_CM_tt" }
+		iconType = { name = "afr_CM_3" position = { x = 180 y = 195 } quadTextureSprite = "GFX_SAC_africa_CM" frame = 4 pdx_tooltip = "SAC_africa_CM_tt" }
+		iconType = { name = "afr_CM_4" position = { x = 180 y = 195 } quadTextureSprite = "GFX_SAC_africa_CM" frame = 5 pdx_tooltip = "SAC_africa_CM_tt" }
+		# Botswana
+		iconType = { name = "afr_BW_0" position = { x = 247 y = 374 } quadTextureSprite = "GFX_SAC_africa_BW" frame = 1 pdx_tooltip = "SAC_africa_BW_tt" }
+		iconType = { name = "afr_BW_1" position = { x = 247 y = 374 } quadTextureSprite = "GFX_SAC_africa_BW" frame = 2 pdx_tooltip = "SAC_africa_BW_tt" }
+		iconType = { name = "afr_BW_2" position = { x = 247 y = 374 } quadTextureSprite = "GFX_SAC_africa_BW" frame = 3 pdx_tooltip = "SAC_africa_BW_tt" }
+		iconType = { name = "afr_BW_3" position = { x = 247 y = 374 } quadTextureSprite = "GFX_SAC_africa_BW" frame = 4 pdx_tooltip = "SAC_africa_BW_tt" }
+		iconType = { name = "afr_BW_4" position = { x = 247 y = 374 } quadTextureSprite = "GFX_SAC_africa_BW" frame = 5 pdx_tooltip = "SAC_africa_BW_tt" }
+		# Kenya
+		iconType = { name = "afr_KE_0" position = { x = 327 y = 239 } quadTextureSprite = "GFX_SAC_africa_KE" frame = 1 pdx_tooltip = "SAC_africa_KE_tt" }
+		iconType = { name = "afr_KE_1" position = { x = 327 y = 239 } quadTextureSprite = "GFX_SAC_africa_KE" frame = 2 pdx_tooltip = "SAC_africa_KE_tt" }
+		iconType = { name = "afr_KE_2" position = { x = 327 y = 239 } quadTextureSprite = "GFX_SAC_africa_KE" frame = 3 pdx_tooltip = "SAC_africa_KE_tt" }
+		iconType = { name = "afr_KE_3" position = { x = 327 y = 239 } quadTextureSprite = "GFX_SAC_africa_KE" frame = 4 pdx_tooltip = "SAC_africa_KE_tt" }
+		iconType = { name = "afr_KE_4" position = { x = 327 y = 239 } quadTextureSprite = "GFX_SAC_africa_KE" frame = 5 pdx_tooltip = "SAC_africa_KE_tt" }
+		# Republic of the Congo
+		iconType = { name = "afr_CG_0" position = { x = 195 y = 250 } quadTextureSprite = "GFX_SAC_africa_CG" frame = 1 pdx_tooltip = "SAC_africa_CG_tt" }
+		iconType = { name = "afr_CG_1" position = { x = 195 y = 250 } quadTextureSprite = "GFX_SAC_africa_CG" frame = 2 pdx_tooltip = "SAC_africa_CG_tt" }
+		iconType = { name = "afr_CG_2" position = { x = 195 y = 250 } quadTextureSprite = "GFX_SAC_africa_CG" frame = 3 pdx_tooltip = "SAC_africa_CG_tt" }
+		iconType = { name = "afr_CG_3" position = { x = 195 y = 250 } quadTextureSprite = "GFX_SAC_africa_CG" frame = 4 pdx_tooltip = "SAC_africa_CG_tt" }
+		iconType = { name = "afr_CG_4" position = { x = 195 y = 250 } quadTextureSprite = "GFX_SAC_africa_CG" frame = 5 pdx_tooltip = "SAC_africa_CG_tt" }
+		# Western Sahara
+		iconType = { name = "afr_EH_0" position = { x = 32 y = 110 } quadTextureSprite = "GFX_SAC_africa_EH" frame = 1 pdx_tooltip = "SAC_africa_EH_tt" }
+		iconType = { name = "afr_EH_1" position = { x = 32 y = 110 } quadTextureSprite = "GFX_SAC_africa_EH" frame = 2 pdx_tooltip = "SAC_africa_EH_tt" }
+		iconType = { name = "afr_EH_2" position = { x = 32 y = 110 } quadTextureSprite = "GFX_SAC_africa_EH" frame = 3 pdx_tooltip = "SAC_africa_EH_tt" }
+		iconType = { name = "afr_EH_3" position = { x = 32 y = 110 } quadTextureSprite = "GFX_SAC_africa_EH" frame = 4 pdx_tooltip = "SAC_africa_EH_tt" }
+		iconType = { name = "afr_EH_4" position = { x = 32 y = 110 } quadTextureSprite = "GFX_SAC_africa_EH" frame = 5 pdx_tooltip = "SAC_africa_EH_tt" }
+		# Zimbabwe
+		iconType = { name = "afr_ZW_0" position = { x = 277 y = 362 } quadTextureSprite = "GFX_SAC_africa_ZW" frame = 1 pdx_tooltip = "SAC_africa_ZW_tt" }
+		iconType = { name = "afr_ZW_1" position = { x = 277 y = 362 } quadTextureSprite = "GFX_SAC_africa_ZW" frame = 2 pdx_tooltip = "SAC_africa_ZW_tt" }
+		iconType = { name = "afr_ZW_2" position = { x = 277 y = 362 } quadTextureSprite = "GFX_SAC_africa_ZW" frame = 3 pdx_tooltip = "SAC_africa_ZW_tt" }
+		iconType = { name = "afr_ZW_3" position = { x = 277 y = 362 } quadTextureSprite = "GFX_SAC_africa_ZW" frame = 4 pdx_tooltip = "SAC_africa_ZW_tt" }
+		iconType = { name = "afr_ZW_4" position = { x = 277 y = 362 } quadTextureSprite = "GFX_SAC_africa_ZW" frame = 5 pdx_tooltip = "SAC_africa_ZW_tt" }
+		# Burkina Faso
+		iconType = { name = "afr_BF_0" position = { x = 99 y = 183 } quadTextureSprite = "GFX_SAC_africa_BF" frame = 1 pdx_tooltip = "SAC_africa_BF_tt" }
+		iconType = { name = "afr_BF_1" position = { x = 99 y = 183 } quadTextureSprite = "GFX_SAC_africa_BF" frame = 2 pdx_tooltip = "SAC_africa_BF_tt" }
+		iconType = { name = "afr_BF_2" position = { x = 99 y = 183 } quadTextureSprite = "GFX_SAC_africa_BF" frame = 3 pdx_tooltip = "SAC_africa_BF_tt" }
+		iconType = { name = "afr_BF_3" position = { x = 99 y = 183 } quadTextureSprite = "GFX_SAC_africa_BF" frame = 4 pdx_tooltip = "SAC_africa_BF_tt" }
+		iconType = { name = "afr_BF_4" position = { x = 99 y = 183 } quadTextureSprite = "GFX_SAC_africa_BF" frame = 5 pdx_tooltip = "SAC_africa_BF_tt" }
+		# Guinea
+		iconType = { name = "afr_GN_0" position = { x = 43 y = 197 } quadTextureSprite = "GFX_SAC_africa_GN" frame = 1 pdx_tooltip = "SAC_africa_GN_tt" }
+		iconType = { name = "afr_GN_1" position = { x = 43 y = 197 } quadTextureSprite = "GFX_SAC_africa_GN" frame = 2 pdx_tooltip = "SAC_africa_GN_tt" }
+		iconType = { name = "afr_GN_2" position = { x = 43 y = 197 } quadTextureSprite = "GFX_SAC_africa_GN" frame = 3 pdx_tooltip = "SAC_africa_GN_tt" }
+		iconType = { name = "afr_GN_3" position = { x = 43 y = 197 } quadTextureSprite = "GFX_SAC_africa_GN" frame = 4 pdx_tooltip = "SAC_africa_GN_tt" }
+		iconType = { name = "afr_GN_4" position = { x = 43 y = 197 } quadTextureSprite = "GFX_SAC_africa_GN" frame = 5 pdx_tooltip = "SAC_africa_GN_tt" }
+		# Côte d'Ivoire
+		iconType = { name = "afr_CI_0" position = { x = 81 y = 209 } quadTextureSprite = "GFX_SAC_africa_CI" frame = 1 pdx_tooltip = "SAC_africa_CI_tt" }
+		iconType = { name = "afr_CI_1" position = { x = 81 y = 209 } quadTextureSprite = "GFX_SAC_africa_CI" frame = 2 pdx_tooltip = "SAC_africa_CI_tt" }
+		iconType = { name = "afr_CI_2" position = { x = 81 y = 209 } quadTextureSprite = "GFX_SAC_africa_CI" frame = 3 pdx_tooltip = "SAC_africa_CI_tt" }
+		iconType = { name = "afr_CI_3" position = { x = 81 y = 209 } quadTextureSprite = "GFX_SAC_africa_CI" frame = 4 pdx_tooltip = "SAC_africa_CI_tt" }
+		iconType = { name = "afr_CI_4" position = { x = 81 y = 209 } quadTextureSprite = "GFX_SAC_africa_CI" frame = 5 pdx_tooltip = "SAC_africa_CI_tt" }
+		# Eritrea
+		iconType = { name = "afr_ER_0" position = { x = 342 y = 166 } quadTextureSprite = "GFX_SAC_africa_ER" frame = 1 pdx_tooltip = "SAC_africa_ER_tt" }
+		iconType = { name = "afr_ER_1" position = { x = 342 y = 166 } quadTextureSprite = "GFX_SAC_africa_ER" frame = 2 pdx_tooltip = "SAC_africa_ER_tt" }
+		iconType = { name = "afr_ER_2" position = { x = 342 y = 166 } quadTextureSprite = "GFX_SAC_africa_ER" frame = 3 pdx_tooltip = "SAC_africa_ER_tt" }
+		iconType = { name = "afr_ER_3" position = { x = 342 y = 166 } quadTextureSprite = "GFX_SAC_africa_ER" frame = 4 pdx_tooltip = "SAC_africa_ER_tt" }
+		iconType = { name = "afr_ER_4" position = { x = 342 y = 166 } quadTextureSprite = "GFX_SAC_africa_ER" frame = 5 pdx_tooltip = "SAC_africa_ER_tt" }
+		# Gabon
+		iconType = { name = "afr_GA_0" position = { x = 181 y = 258 } quadTextureSprite = "GFX_SAC_africa_GA" frame = 1 pdx_tooltip = "SAC_africa_GA_tt" }
+		iconType = { name = "afr_GA_1" position = { x = 181 y = 258 } quadTextureSprite = "GFX_SAC_africa_GA" frame = 2 pdx_tooltip = "SAC_africa_GA_tt" }
+		iconType = { name = "afr_GA_2" position = { x = 181 y = 258 } quadTextureSprite = "GFX_SAC_africa_GA" frame = 3 pdx_tooltip = "SAC_africa_GA_tt" }
+		iconType = { name = "afr_GA_3" position = { x = 181 y = 258 } quadTextureSprite = "GFX_SAC_africa_GA" frame = 4 pdx_tooltip = "SAC_africa_GA_tt" }
+		iconType = { name = "afr_GA_4" position = { x = 181 y = 258 } quadTextureSprite = "GFX_SAC_africa_GA" frame = 5 pdx_tooltip = "SAC_africa_GA_tt" }
+		# Uganda
+		iconType = { name = "afr_UG_0" position = { x = 302 y = 246 } quadTextureSprite = "GFX_SAC_africa_UG" frame = 1 pdx_tooltip = "SAC_africa_UG_tt" }
+		iconType = { name = "afr_UG_1" position = { x = 302 y = 246 } quadTextureSprite = "GFX_SAC_africa_UG" frame = 2 pdx_tooltip = "SAC_africa_UG_tt" }
+		iconType = { name = "afr_UG_2" position = { x = 302 y = 246 } quadTextureSprite = "GFX_SAC_africa_UG" frame = 3 pdx_tooltip = "SAC_africa_UG_tt" }
+		iconType = { name = "afr_UG_3" position = { x = 302 y = 246 } quadTextureSprite = "GFX_SAC_africa_UG" frame = 4 pdx_tooltip = "SAC_africa_UG_tt" }
+		iconType = { name = "afr_UG_4" position = { x = 302 y = 246 } quadTextureSprite = "GFX_SAC_africa_UG" frame = 5 pdx_tooltip = "SAC_africa_UG_tt" }
+		# Tunisia
+		iconType = { name = "afr_TN_0" position = { x = 174 y = 54 } quadTextureSprite = "GFX_SAC_africa_TN" frame = 1 pdx_tooltip = "SAC_africa_TN_tt" }
+		iconType = { name = "afr_TN_1" position = { x = 174 y = 54 } quadTextureSprite = "GFX_SAC_africa_TN" frame = 2 pdx_tooltip = "SAC_africa_TN_tt" }
+		iconType = { name = "afr_TN_2" position = { x = 174 y = 54 } quadTextureSprite = "GFX_SAC_africa_TN" frame = 3 pdx_tooltip = "SAC_africa_TN_tt" }
+		iconType = { name = "afr_TN_3" position = { x = 174 y = 54 } quadTextureSprite = "GFX_SAC_africa_TN" frame = 4 pdx_tooltip = "SAC_africa_TN_tt" }
+		iconType = { name = "afr_TN_4" position = { x = 174 y = 54 } quadTextureSprite = "GFX_SAC_africa_TN" frame = 5 pdx_tooltip = "SAC_africa_TN_tt" }
+		# Ghana
+		iconType = { name = "afr_GH_0" position = { x = 112 y = 206 } quadTextureSprite = "GFX_SAC_africa_GH" frame = 1 pdx_tooltip = "SAC_africa_GH_tt" }
+		iconType = { name = "afr_GH_1" position = { x = 112 y = 206 } quadTextureSprite = "GFX_SAC_africa_GH" frame = 2 pdx_tooltip = "SAC_africa_GH_tt" }
+		iconType = { name = "afr_GH_2" position = { x = 112 y = 206 } quadTextureSprite = "GFX_SAC_africa_GH" frame = 3 pdx_tooltip = "SAC_africa_GH_tt" }
+		iconType = { name = "afr_GH_3" position = { x = 112 y = 206 } quadTextureSprite = "GFX_SAC_africa_GH" frame = 4 pdx_tooltip = "SAC_africa_GH_tt" }
+		iconType = { name = "afr_GH_4" position = { x = 112 y = 206 } quadTextureSprite = "GFX_SAC_africa_GH" frame = 5 pdx_tooltip = "SAC_africa_GH_tt" }
+		# Senegal
+		iconType = { name = "afr_SN_0" position = { x = 29 y = 174 } quadTextureSprite = "GFX_SAC_africa_SN" frame = 1 pdx_tooltip = "SAC_africa_SN_tt" }
+		iconType = { name = "afr_SN_1" position = { x = 29 y = 174 } quadTextureSprite = "GFX_SAC_africa_SN" frame = 2 pdx_tooltip = "SAC_africa_SN_tt" }
+		iconType = { name = "afr_SN_2" position = { x = 29 y = 174 } quadTextureSprite = "GFX_SAC_africa_SN" frame = 3 pdx_tooltip = "SAC_africa_SN_tt" }
+		iconType = { name = "afr_SN_3" position = { x = 29 y = 174 } quadTextureSprite = "GFX_SAC_africa_SN" frame = 4 pdx_tooltip = "SAC_africa_SN_tt" }
+		iconType = { name = "afr_SN_4" position = { x = 29 y = 174 } quadTextureSprite = "GFX_SAC_africa_SN" frame = 5 pdx_tooltip = "SAC_africa_SN_tt" }
+		# Malawi
+		iconType = { name = "afr_MW_0" position = { x = 320 y = 325 } quadTextureSprite = "GFX_SAC_africa_MW" frame = 1 pdx_tooltip = "SAC_africa_MW_tt" }
+		iconType = { name = "afr_MW_1" position = { x = 320 y = 325 } quadTextureSprite = "GFX_SAC_africa_MW" frame = 2 pdx_tooltip = "SAC_africa_MW_tt" }
+		iconType = { name = "afr_MW_2" position = { x = 320 y = 325 } quadTextureSprite = "GFX_SAC_africa_MW" frame = 3 pdx_tooltip = "SAC_africa_MW_tt" }
+		iconType = { name = "afr_MW_3" position = { x = 320 y = 325 } quadTextureSprite = "GFX_SAC_africa_MW" frame = 4 pdx_tooltip = "SAC_africa_MW_tt" }
+		iconType = { name = "afr_MW_4" position = { x = 320 y = 325 } quadTextureSprite = "GFX_SAC_africa_MW" frame = 5 pdx_tooltip = "SAC_africa_MW_tt" }
+		# Benin
+		iconType = { name = "afr_BJ_0" position = { x = 135 y = 199 } quadTextureSprite = "GFX_SAC_africa_BJ" frame = 1 pdx_tooltip = "SAC_africa_BJ_tt" }
+		iconType = { name = "afr_BJ_1" position = { x = 135 y = 199 } quadTextureSprite = "GFX_SAC_africa_BJ" frame = 2 pdx_tooltip = "SAC_africa_BJ_tt" }
+		iconType = { name = "afr_BJ_2" position = { x = 135 y = 199 } quadTextureSprite = "GFX_SAC_africa_BJ" frame = 3 pdx_tooltip = "SAC_africa_BJ_tt" }
+		iconType = { name = "afr_BJ_3" position = { x = 135 y = 199 } quadTextureSprite = "GFX_SAC_africa_BJ" frame = 4 pdx_tooltip = "SAC_africa_BJ_tt" }
+		iconType = { name = "afr_BJ_4" position = { x = 135 y = 199 } quadTextureSprite = "GFX_SAC_africa_BJ" frame = 5 pdx_tooltip = "SAC_africa_BJ_tt" }
+		# Liberia
+		iconType = { name = "afr_LR_0" position = { x = 64 y = 221 } quadTextureSprite = "GFX_SAC_africa_LR" frame = 1 pdx_tooltip = "SAC_africa_LR_tt" }
+		iconType = { name = "afr_LR_1" position = { x = 64 y = 221 } quadTextureSprite = "GFX_SAC_africa_LR" frame = 2 pdx_tooltip = "SAC_africa_LR_tt" }
+		iconType = { name = "afr_LR_2" position = { x = 64 y = 221 } quadTextureSprite = "GFX_SAC_africa_LR" frame = 3 pdx_tooltip = "SAC_africa_LR_tt" }
+		iconType = { name = "afr_LR_3" position = { x = 64 y = 221 } quadTextureSprite = "GFX_SAC_africa_LR" frame = 4 pdx_tooltip = "SAC_africa_LR_tt" }
+		iconType = { name = "afr_LR_4" position = { x = 64 y = 221 } quadTextureSprite = "GFX_SAC_africa_LR" frame = 5 pdx_tooltip = "SAC_africa_LR_tt" }
+		# Togo
+		iconType = { name = "afr_TG_0" position = { x = 130 y = 206 } quadTextureSprite = "GFX_SAC_africa_TG" frame = 1 pdx_tooltip = "SAC_africa_TG_tt" }
+		iconType = { name = "afr_TG_1" position = { x = 130 y = 206 } quadTextureSprite = "GFX_SAC_africa_TG" frame = 2 pdx_tooltip = "SAC_africa_TG_tt" }
+		iconType = { name = "afr_TG_2" position = { x = 130 y = 206 } quadTextureSprite = "GFX_SAC_africa_TG" frame = 3 pdx_tooltip = "SAC_africa_TG_tt" }
+		iconType = { name = "afr_TG_3" position = { x = 130 y = 206 } quadTextureSprite = "GFX_SAC_africa_TG" frame = 4 pdx_tooltip = "SAC_africa_TG_tt" }
+		iconType = { name = "afr_TG_4" position = { x = 130 y = 206 } quadTextureSprite = "GFX_SAC_africa_TG" frame = 5 pdx_tooltip = "SAC_africa_TG_tt" }
+		# Sierra Leone
+		iconType = { name = "afr_SL_0" position = { x = 54 y = 213 } quadTextureSprite = "GFX_SAC_africa_SL" frame = 1 pdx_tooltip = "SAC_africa_SL_tt" }
+		iconType = { name = "afr_SL_1" position = { x = 54 y = 213 } quadTextureSprite = "GFX_SAC_africa_SL" frame = 2 pdx_tooltip = "SAC_africa_SL_tt" }
+		iconType = { name = "afr_SL_2" position = { x = 54 y = 213 } quadTextureSprite = "GFX_SAC_africa_SL" frame = 3 pdx_tooltip = "SAC_africa_SL_tt" }
+		iconType = { name = "afr_SL_3" position = { x = 54 y = 213 } quadTextureSprite = "GFX_SAC_africa_SL" frame = 4 pdx_tooltip = "SAC_africa_SL_tt" }
+		iconType = { name = "afr_SL_4" position = { x = 54 y = 213 } quadTextureSprite = "GFX_SAC_africa_SL" frame = 5 pdx_tooltip = "SAC_africa_SL_tt" }
+		# Equatorial Guinea
+		iconType = { name = "afr_GQ_0" position = { x = 180 y = 249 } quadTextureSprite = "GFX_SAC_africa_GQ" frame = 1 pdx_tooltip = "SAC_africa_GQ_tt" }
+		iconType = { name = "afr_GQ_1" position = { x = 180 y = 249 } quadTextureSprite = "GFX_SAC_africa_GQ" frame = 2 pdx_tooltip = "SAC_africa_GQ_tt" }
+		iconType = { name = "afr_GQ_2" position = { x = 180 y = 249 } quadTextureSprite = "GFX_SAC_africa_GQ" frame = 3 pdx_tooltip = "SAC_africa_GQ_tt" }
+		iconType = { name = "afr_GQ_3" position = { x = 180 y = 249 } quadTextureSprite = "GFX_SAC_africa_GQ" frame = 4 pdx_tooltip = "SAC_africa_GQ_tt" }
+		iconType = { name = "afr_GQ_4" position = { x = 180 y = 249 } quadTextureSprite = "GFX_SAC_africa_GQ" frame = 5 pdx_tooltip = "SAC_africa_GQ_tt" }
+		# Guinea-Bissau
+		iconType = { name = "afr_GW_0" position = { x = 34 y = 197 } quadTextureSprite = "GFX_SAC_africa_GW" frame = 1 pdx_tooltip = "SAC_africa_GW_tt" }
+		iconType = { name = "afr_GW_1" position = { x = 34 y = 197 } quadTextureSprite = "GFX_SAC_africa_GW" frame = 2 pdx_tooltip = "SAC_africa_GW_tt" }
+		iconType = { name = "afr_GW_2" position = { x = 34 y = 197 } quadTextureSprite = "GFX_SAC_africa_GW" frame = 3 pdx_tooltip = "SAC_africa_GW_tt" }
+		iconType = { name = "afr_GW_3" position = { x = 34 y = 197 } quadTextureSprite = "GFX_SAC_africa_GW" frame = 4 pdx_tooltip = "SAC_africa_GW_tt" }
+		iconType = { name = "afr_GW_4" position = { x = 34 y = 197 } quadTextureSprite = "GFX_SAC_africa_GW" frame = 5 pdx_tooltip = "SAC_africa_GW_tt" }
+		# Lesotho
+		iconType = { name = "afr_LS_0" position = { x = 288 y = 437 } quadTextureSprite = "GFX_SAC_africa_LS" frame = 1 pdx_tooltip = "SAC_africa_LS_tt" }
+		iconType = { name = "afr_LS_1" position = { x = 288 y = 437 } quadTextureSprite = "GFX_SAC_africa_LS" frame = 2 pdx_tooltip = "SAC_africa_LS_tt" }
+		iconType = { name = "afr_LS_2" position = { x = 288 y = 437 } quadTextureSprite = "GFX_SAC_africa_LS" frame = 3 pdx_tooltip = "SAC_africa_LS_tt" }
+		iconType = { name = "afr_LS_3" position = { x = 288 y = 437 } quadTextureSprite = "GFX_SAC_africa_LS" frame = 4 pdx_tooltip = "SAC_africa_LS_tt" }
+		iconType = { name = "afr_LS_4" position = { x = 288 y = 437 } quadTextureSprite = "GFX_SAC_africa_LS" frame = 5 pdx_tooltip = "SAC_africa_LS_tt" }
+		# Burundi
+		iconType = { name = "afr_BI_0" position = { x = 299 y = 284 } quadTextureSprite = "GFX_SAC_africa_BI" frame = 1 pdx_tooltip = "SAC_africa_BI_tt" }
+		iconType = { name = "afr_BI_1" position = { x = 299 y = 284 } quadTextureSprite = "GFX_SAC_africa_BI" frame = 2 pdx_tooltip = "SAC_africa_BI_tt" }
+		iconType = { name = "afr_BI_2" position = { x = 299 y = 284 } quadTextureSprite = "GFX_SAC_africa_BI" frame = 3 pdx_tooltip = "SAC_africa_BI_tt" }
+		iconType = { name = "afr_BI_3" position = { x = 299 y = 284 } quadTextureSprite = "GFX_SAC_africa_BI" frame = 4 pdx_tooltip = "SAC_africa_BI_tt" }
+		iconType = { name = "afr_BI_4" position = { x = 299 y = 284 } quadTextureSprite = "GFX_SAC_africa_BI" frame = 5 pdx_tooltip = "SAC_africa_BI_tt" }
+		# Rwanda
+		iconType = { name = "afr_RW_0" position = { x = 298 y = 277 } quadTextureSprite = "GFX_SAC_africa_RW" frame = 1 pdx_tooltip = "SAC_africa_RW_tt" }
+		iconType = { name = "afr_RW_1" position = { x = 298 y = 277 } quadTextureSprite = "GFX_SAC_africa_RW" frame = 2 pdx_tooltip = "SAC_africa_RW_tt" }
+		iconType = { name = "afr_RW_2" position = { x = 298 y = 277 } quadTextureSprite = "GFX_SAC_africa_RW" frame = 3 pdx_tooltip = "SAC_africa_RW_tt" }
+		iconType = { name = "afr_RW_3" position = { x = 298 y = 277 } quadTextureSprite = "GFX_SAC_africa_RW" frame = 4 pdx_tooltip = "SAC_africa_RW_tt" }
+		iconType = { name = "afr_RW_4" position = { x = 298 y = 277 } quadTextureSprite = "GFX_SAC_africa_RW" frame = 5 pdx_tooltip = "SAC_africa_RW_tt" }
+		# Djibouti
+		iconType = { name = "afr_DJ_0" position = { x = 373 y = 197 } quadTextureSprite = "GFX_SAC_africa_DJ" frame = 1 pdx_tooltip = "SAC_africa_DJ_tt" }
+		iconType = { name = "afr_DJ_1" position = { x = 373 y = 197 } quadTextureSprite = "GFX_SAC_africa_DJ" frame = 2 pdx_tooltip = "SAC_africa_DJ_tt" }
+		iconType = { name = "afr_DJ_2" position = { x = 373 y = 197 } quadTextureSprite = "GFX_SAC_africa_DJ" frame = 3 pdx_tooltip = "SAC_africa_DJ_tt" }
+		iconType = { name = "afr_DJ_3" position = { x = 373 y = 197 } quadTextureSprite = "GFX_SAC_africa_DJ" frame = 4 pdx_tooltip = "SAC_africa_DJ_tt" }
+		iconType = { name = "afr_DJ_4" position = { x = 373 y = 197 } quadTextureSprite = "GFX_SAC_africa_DJ" frame = 5 pdx_tooltip = "SAC_africa_DJ_tt" }
+		# The Gambia
+		iconType = { name = "afr_GM_0" position = { x = 33 y = 191 } quadTextureSprite = "GFX_SAC_africa_GM" frame = 1 pdx_tooltip = "SAC_africa_GM_tt" }
+		iconType = { name = "afr_GM_1" position = { x = 33 y = 191 } quadTextureSprite = "GFX_SAC_africa_GM" frame = 2 pdx_tooltip = "SAC_africa_GM_tt" }
+		iconType = { name = "afr_GM_2" position = { x = 33 y = 191 } quadTextureSprite = "GFX_SAC_africa_GM" frame = 3 pdx_tooltip = "SAC_africa_GM_tt" }
+		iconType = { name = "afr_GM_3" position = { x = 33 y = 191 } quadTextureSprite = "GFX_SAC_africa_GM" frame = 4 pdx_tooltip = "SAC_africa_GM_tt" }
+		iconType = { name = "afr_GM_4" position = { x = 33 y = 191 } quadTextureSprite = "GFX_SAC_africa_GM" frame = 5 pdx_tooltip = "SAC_africa_GM_tt" }
+		# Eswatini
+		iconType = { name = "afr_SZ_0" position = { x = 309 y = 420 } quadTextureSprite = "GFX_SAC_africa_SZ" frame = 1 pdx_tooltip = "SAC_africa_SZ_tt" }
+		iconType = { name = "afr_SZ_1" position = { x = 309 y = 420 } quadTextureSprite = "GFX_SAC_africa_SZ" frame = 2 pdx_tooltip = "SAC_africa_SZ_tt" }
+		iconType = { name = "afr_SZ_2" position = { x = 309 y = 420 } quadTextureSprite = "GFX_SAC_africa_SZ" frame = 3 pdx_tooltip = "SAC_africa_SZ_tt" }
+		iconType = { name = "afr_SZ_3" position = { x = 309 y = 420 } quadTextureSprite = "GFX_SAC_africa_SZ" frame = 4 pdx_tooltip = "SAC_africa_SZ_tt" }
+		iconType = { name = "afr_SZ_4" position = { x = 309 y = 420 } quadTextureSprite = "GFX_SAC_africa_SZ" frame = 5 pdx_tooltip = "SAC_africa_SZ_tt" }
+		iconType = { name = "SAC_africa_leg_icon_0" position = { x = 22 y = 495 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 1 }
+		instantTextBoxType = { name = "SAC_africa_leg_text_0" position = { x = 40 y = 493 } font = "hoi_16mbs" text = "SAC_africa_leg_none" maxWidth = 100 maxHeight = 18 }
+		iconType = { name = "SAC_africa_leg_icon_1" position = { x = 117 y = 495 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 2 }
+		instantTextBoxType = { name = "SAC_africa_leg_text_1" position = { x = 135 y = 493 } font = "hoi_16mbs" text = "SAC_africa_leg_SOV" maxWidth = 100 maxHeight = 18 }
+		iconType = { name = "SAC_africa_leg_icon_2" position = { x = 202 y = 495 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 3 }
+		instantTextBoxType = { name = "SAC_africa_leg_text_2" position = { x = 220 y = 493 } font = "hoi_16mbs" text = "SAC_africa_leg_PRC" maxWidth = 100 maxHeight = 18 }
+		iconType = { name = "SAC_africa_leg_icon_3" position = { x = 287 y = 495 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 4 }
+		instantTextBoxType = { name = "SAC_africa_leg_text_3" position = { x = 305 y = 493 } font = "hoi_16mbs" text = "SAC_africa_leg_EUR" maxWidth = 100 maxHeight = 18 }
+		iconType = { name = "SAC_africa_leg_icon_4" position = { x = 372 y = 495 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 5 }
+		instantTextBoxType = { name = "SAC_africa_leg_text_4" position = { x = 390 y = 493 } font = "hoi_16mbs" text = "SAC_africa_leg_USA" maxWidth = 100 maxHeight = 18 }
+		instantTextBoxType = { name = "SAC_africa_hint" position = { x = 0 y = 519 } font = "hoi_16mbs" text = "SAC_africa_hint" maxWidth = 461 maxHeight = 18 format = centre }
+	}
+}

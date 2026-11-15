@@ -1,0 +1,462 @@
+# Africa influence system (display only for now).
+# Values are 0-100 per power. Call SAC_africa_recalc after changing any value.
+# Powers: SOV = Russia incl. Wagner, PRC = China, EUR = Europe (France), USA = United States
+
+SAC_africa_init = {
+	set_global_variable = { AFR_DZ_SOV = 45 }
+	set_global_variable = { AFR_DZ_PRC = 30 }
+	set_global_variable = { AFR_DZ_EUR = 25 }
+	set_global_variable = { AFR_DZ_USA = 10 }
+	set_global_variable = { AFR_AO_SOV = 15 }
+	set_global_variable = { AFR_AO_PRC = 50 }
+	set_global_variable = { AFR_AO_EUR = 15 }
+	set_global_variable = { AFR_AO_USA = 20 }
+	set_global_variable = { AFR_BJ_SOV = 5 }
+	set_global_variable = { AFR_BJ_PRC = 25 }
+	set_global_variable = { AFR_BJ_EUR = 45 }
+	set_global_variable = { AFR_BJ_USA = 15 }
+	set_global_variable = { AFR_BW_SOV = 5 }
+	set_global_variable = { AFR_BW_PRC = 20 }
+	set_global_variable = { AFR_BW_EUR = 25 }
+	set_global_variable = { AFR_BW_USA = 30 }
+	set_global_variable = { AFR_BF_SOV = 10 }
+	set_global_variable = { AFR_BF_PRC = 15 }
+	set_global_variable = { AFR_BF_EUR = 50 }
+	set_global_variable = { AFR_BF_USA = 15 }
+	set_global_variable = { AFR_BI_SOV = 10 }
+	set_global_variable = { AFR_BI_PRC = 30 }
+	set_global_variable = { AFR_BI_EUR = 20 }
+	set_global_variable = { AFR_BI_USA = 10 }
+	set_global_variable = { AFR_CM_SOV = 10 }
+	set_global_variable = { AFR_CM_PRC = 30 }
+	set_global_variable = { AFR_CM_EUR = 45 }
+	set_global_variable = { AFR_CM_USA = 20 }
+	set_global_variable = { AFR_CF_SOV = 60 }
+	set_global_variable = { AFR_CF_PRC = 15 }
+	set_global_variable = { AFR_CF_EUR = 30 }
+	set_global_variable = { AFR_CF_USA = 10 }
+	set_global_variable = { AFR_TD_SOV = 10 }
+	set_global_variable = { AFR_TD_PRC = 20 }
+	set_global_variable = { AFR_TD_EUR = 55 }
+	set_global_variable = { AFR_TD_USA = 20 }
+	set_global_variable = { AFR_CG_SOV = 20 }
+	set_global_variable = { AFR_CG_PRC = 40 }
+	set_global_variable = { AFR_CG_EUR = 35 }
+	set_global_variable = { AFR_CG_USA = 5 }
+	set_global_variable = { AFR_CI_SOV = 5 }
+	set_global_variable = { AFR_CI_PRC = 25 }
+	set_global_variable = { AFR_CI_EUR = 60 }
+	set_global_variable = { AFR_CI_USA = 15 }
+	set_global_variable = { AFR_CD_SOV = 10 }
+	set_global_variable = { AFR_CD_PRC = 45 }
+	set_global_variable = { AFR_CD_EUR = 20 }
+	set_global_variable = { AFR_CD_USA = 25 }
+	set_global_variable = { AFR_DJ_SOV = 5 }
+	set_global_variable = { AFR_DJ_PRC = 40 }
+	set_global_variable = { AFR_DJ_EUR = 35 }
+	set_global_variable = { AFR_DJ_USA = 35 }
+	set_global_variable = { AFR_EG_SOV = 35 }
+	set_global_variable = { AFR_EG_PRC = 30 }
+	set_global_variable = { AFR_EG_EUR = 20 }
+	set_global_variable = { AFR_EG_USA = 40 }
+	set_global_variable = { AFR_GQ_SOV = 10 }
+	set_global_variable = { AFR_GQ_PRC = 35 }
+	set_global_variable = { AFR_GQ_EUR = 20 }
+	set_global_variable = { AFR_GQ_USA = 25 }
+	set_global_variable = { AFR_ER_SOV = 20 }
+	set_global_variable = { AFR_ER_PRC = 30 }
+	set_global_variable = { AFR_ER_EUR = 10 }
+	set_global_variable = { AFR_ER_USA = 5 }
+	set_global_variable = { AFR_ET_SOV = 15 }
+	set_global_variable = { AFR_ET_PRC = 50 }
+	set_global_variable = { AFR_ET_EUR = 15 }
+	set_global_variable = { AFR_ET_USA = 30 }
+	set_global_variable = { AFR_GA_SOV = 5 }
+	set_global_variable = { AFR_GA_PRC = 30 }
+	set_global_variable = { AFR_GA_EUR = 50 }
+	set_global_variable = { AFR_GA_USA = 10 }
+	set_global_variable = { AFR_GM_SOV = 5 }
+	set_global_variable = { AFR_GM_PRC = 20 }
+	set_global_variable = { AFR_GM_EUR = 25 }
+	set_global_variable = { AFR_GM_USA = 15 }
+	set_global_variable = { AFR_GH_SOV = 5 }
+	set_global_variable = { AFR_GH_PRC = 30 }
+	set_global_variable = { AFR_GH_EUR = 20 }
+	set_global_variable = { AFR_GH_USA = 30 }
+	set_global_variable = { AFR_GN_SOV = 20 }
+	set_global_variable = { AFR_GN_PRC = 40 }
+	set_global_variable = { AFR_GN_EUR = 25 }
+	set_global_variable = { AFR_GN_USA = 10 }
+	set_global_variable = { AFR_GW_SOV = 5 }
+	set_global_variable = { AFR_GW_PRC = 15 }
+	set_global_variable = { AFR_GW_EUR = 30 }
+	set_global_variable = { AFR_GW_USA = 5 }
+	set_global_variable = { AFR_KE_SOV = 5 }
+	set_global_variable = { AFR_KE_PRC = 40 }
+	set_global_variable = { AFR_KE_EUR = 30 }
+	set_global_variable = { AFR_KE_USA = 45 }
+	set_global_variable = { AFR_LS_SOV = 5 }
+	set_global_variable = { AFR_LS_PRC = 25 }
+	set_global_variable = { AFR_LS_EUR = 15 }
+	set_global_variable = { AFR_LS_USA = 20 }
+	set_global_variable = { AFR_LR_SOV = 5 }
+	set_global_variable = { AFR_LR_PRC = 20 }
+	set_global_variable = { AFR_LR_EUR = 15 }
+	set_global_variable = { AFR_LR_USA = 40 }
+	set_global_variable = { AFR_LY_SOV = 45 }
+	set_global_variable = { AFR_LY_PRC = 10 }
+	set_global_variable = { AFR_LY_EUR = 35 }
+	set_global_variable = { AFR_LY_USA = 25 }
+	set_global_variable = { AFR_MG_SOV = 25 }
+	set_global_variable = { AFR_MG_PRC = 30 }
+	set_global_variable = { AFR_MG_EUR = 40 }
+	set_global_variable = { AFR_MG_USA = 10 }
+	set_global_variable = { AFR_MW_SOV = 5 }
+	set_global_variable = { AFR_MW_PRC = 30 }
+	set_global_variable = { AFR_MW_EUR = 25 }
+	set_global_variable = { AFR_MW_USA = 25 }
+	set_global_variable = { AFR_ML_SOV = 25 }
+	set_global_variable = { AFR_ML_PRC = 20 }
+	set_global_variable = { AFR_ML_EUR = 55 }
+	set_global_variable = { AFR_ML_USA = 15 }
+	set_global_variable = { AFR_MR_SOV = 5 }
+	set_global_variable = { AFR_MR_PRC = 25 }
+	set_global_variable = { AFR_MR_EUR = 35 }
+	set_global_variable = { AFR_MR_USA = 20 }
+	set_global_variable = { AFR_MA_SOV = 10 }
+	set_global_variable = { AFR_MA_PRC = 15 }
+	set_global_variable = { AFR_MA_EUR = 50 }
+	set_global_variable = { AFR_MA_USA = 45 }
+	set_global_variable = { AFR_MZ_SOV = 30 }
+	set_global_variable = { AFR_MZ_PRC = 40 }
+	set_global_variable = { AFR_MZ_EUR = 20 }
+	set_global_variable = { AFR_MZ_USA = 15 }
+	set_global_variable = { AFR_NA_SOV = 5 }
+	set_global_variable = { AFR_NA_PRC = 40 }
+	set_global_variable = { AFR_NA_EUR = 20 }
+	set_global_variable = { AFR_NA_USA = 15 }
+	set_global_variable = { AFR_NE_SOV = 5 }
+	set_global_variable = { AFR_NE_PRC = 20 }
+	set_global_variable = { AFR_NE_EUR = 50 }
+	set_global_variable = { AFR_NE_USA = 40 }
+	set_global_variable = { AFR_NG_SOV = 10 }
+	set_global_variable = { AFR_NG_PRC = 40 }
+	set_global_variable = { AFR_NG_EUR = 25 }
+	set_global_variable = { AFR_NG_USA = 35 }
+	set_global_variable = { AFR_RW_SOV = 5 }
+	set_global_variable = { AFR_RW_PRC = 25 }
+	set_global_variable = { AFR_RW_EUR = 10 }
+	set_global_variable = { AFR_RW_USA = 40 }
+	set_global_variable = { AFR_SN_SOV = 5 }
+	set_global_variable = { AFR_SN_PRC = 25 }
+	set_global_variable = { AFR_SN_EUR = 55 }
+	set_global_variable = { AFR_SN_USA = 25 }
+	set_global_variable = { AFR_SL_SOV = 5 }
+	set_global_variable = { AFR_SL_PRC = 35 }
+	set_global_variable = { AFR_SL_EUR = 25 }
+	set_global_variable = { AFR_SL_USA = 25 }
+	set_global_variable = { AFR_SO_SOV = 5 }
+	set_global_variable = { AFR_SO_PRC = 15 }
+	set_global_variable = { AFR_SO_EUR = 25 }
+	set_global_variable = { AFR_SO_USA = 40 }
+	set_global_variable = { AFR_ZA_SOV = 25 }
+	set_global_variable = { AFR_ZA_PRC = 40 }
+	set_global_variable = { AFR_ZA_EUR = 25 }
+	set_global_variable = { AFR_ZA_USA = 30 }
+	set_global_variable = { AFR_SS_SOV = 5 }
+	set_global_variable = { AFR_SS_PRC = 40 }
+	set_global_variable = { AFR_SS_EUR = 10 }
+	set_global_variable = { AFR_SS_USA = 35 }
+	set_global_variable = { AFR_SD_SOV = 45 }
+	set_global_variable = { AFR_SD_PRC = 35 }
+	set_global_variable = { AFR_SD_EUR = 10 }
+	set_global_variable = { AFR_SD_USA = 25 }
+	set_global_variable = { AFR_SZ_SOV = 0 }
+	set_global_variable = { AFR_SZ_PRC = 0 }
+	set_global_variable = { AFR_SZ_EUR = 20 }
+	set_global_variable = { AFR_SZ_USA = 35 }
+	set_global_variable = { AFR_TZ_SOV = 5 }
+	set_global_variable = { AFR_TZ_PRC = 45 }
+	set_global_variable = { AFR_TZ_EUR = 20 }
+	set_global_variable = { AFR_TZ_USA = 20 }
+	set_global_variable = { AFR_TG_SOV = 5 }
+	set_global_variable = { AFR_TG_PRC = 25 }
+	set_global_variable = { AFR_TG_EUR = 45 }
+	set_global_variable = { AFR_TG_USA = 15 }
+	set_global_variable = { AFR_TN_SOV = 5 }
+	set_global_variable = { AFR_TN_PRC = 15 }
+	set_global_variable = { AFR_TN_EUR = 55 }
+	set_global_variable = { AFR_TN_USA = 30 }
+	set_global_variable = { AFR_UG_SOV = 10 }
+	set_global_variable = { AFR_UG_PRC = 35 }
+	set_global_variable = { AFR_UG_EUR = 15 }
+	set_global_variable = { AFR_UG_USA = 40 }
+	set_global_variable = { AFR_EH_SOV = 0 }
+	set_global_variable = { AFR_EH_PRC = 0 }
+	set_global_variable = { AFR_EH_EUR = 0 }
+	set_global_variable = { AFR_EH_USA = 0 }
+	set_global_variable = { AFR_ZM_SOV = 5 }
+	set_global_variable = { AFR_ZM_PRC = 50 }
+	set_global_variable = { AFR_ZM_EUR = 15 }
+	set_global_variable = { AFR_ZM_USA = 15 }
+	set_global_variable = { AFR_ZW_SOV = 15 }
+	set_global_variable = { AFR_ZW_PRC = 50 }
+	set_global_variable = { AFR_ZW_EUR = 10 }
+	set_global_variable = { AFR_ZW_USA = 5 }
+	SAC_africa_recalc = yes
+}
+
+# Dominant power per country: 0 neutral, 1 Russia, 2 China, 3 Europe, 4 USA
+# A power dominates if it is strictly ahead of all others and has at least 20 influence.
+SAC_africa_recalc = {
+	set_global_variable = { AFR_DZ_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_DZ_SOV > 19 } check_variable = { global.AFR_DZ_SOV > global.AFR_DZ_PRC } check_variable = { global.AFR_DZ_SOV > global.AFR_DZ_EUR } check_variable = { global.AFR_DZ_SOV > global.AFR_DZ_USA } } set_global_variable = { AFR_DZ_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_DZ_PRC > 19 } check_variable = { global.AFR_DZ_PRC > global.AFR_DZ_SOV } check_variable = { global.AFR_DZ_PRC > global.AFR_DZ_EUR } check_variable = { global.AFR_DZ_PRC > global.AFR_DZ_USA } } set_global_variable = { AFR_DZ_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_DZ_EUR > 19 } check_variable = { global.AFR_DZ_EUR > global.AFR_DZ_SOV } check_variable = { global.AFR_DZ_EUR > global.AFR_DZ_PRC } check_variable = { global.AFR_DZ_EUR > global.AFR_DZ_USA } } set_global_variable = { AFR_DZ_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_DZ_USA > 19 } check_variable = { global.AFR_DZ_USA > global.AFR_DZ_SOV } check_variable = { global.AFR_DZ_USA > global.AFR_DZ_PRC } check_variable = { global.AFR_DZ_USA > global.AFR_DZ_EUR } } set_global_variable = { AFR_DZ_dom = 4 } }
+	set_global_variable = { AFR_AO_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_AO_SOV > 19 } check_variable = { global.AFR_AO_SOV > global.AFR_AO_PRC } check_variable = { global.AFR_AO_SOV > global.AFR_AO_EUR } check_variable = { global.AFR_AO_SOV > global.AFR_AO_USA } } set_global_variable = { AFR_AO_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_AO_PRC > 19 } check_variable = { global.AFR_AO_PRC > global.AFR_AO_SOV } check_variable = { global.AFR_AO_PRC > global.AFR_AO_EUR } check_variable = { global.AFR_AO_PRC > global.AFR_AO_USA } } set_global_variable = { AFR_AO_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_AO_EUR > 19 } check_variable = { global.AFR_AO_EUR > global.AFR_AO_SOV } check_variable = { global.AFR_AO_EUR > global.AFR_AO_PRC } check_variable = { global.AFR_AO_EUR > global.AFR_AO_USA } } set_global_variable = { AFR_AO_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_AO_USA > 19 } check_variable = { global.AFR_AO_USA > global.AFR_AO_SOV } check_variable = { global.AFR_AO_USA > global.AFR_AO_PRC } check_variable = { global.AFR_AO_USA > global.AFR_AO_EUR } } set_global_variable = { AFR_AO_dom = 4 } }
+	set_global_variable = { AFR_BJ_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_BJ_SOV > 19 } check_variable = { global.AFR_BJ_SOV > global.AFR_BJ_PRC } check_variable = { global.AFR_BJ_SOV > global.AFR_BJ_EUR } check_variable = { global.AFR_BJ_SOV > global.AFR_BJ_USA } } set_global_variable = { AFR_BJ_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_BJ_PRC > 19 } check_variable = { global.AFR_BJ_PRC > global.AFR_BJ_SOV } check_variable = { global.AFR_BJ_PRC > global.AFR_BJ_EUR } check_variable = { global.AFR_BJ_PRC > global.AFR_BJ_USA } } set_global_variable = { AFR_BJ_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_BJ_EUR > 19 } check_variable = { global.AFR_BJ_EUR > global.AFR_BJ_SOV } check_variable = { global.AFR_BJ_EUR > global.AFR_BJ_PRC } check_variable = { global.AFR_BJ_EUR > global.AFR_BJ_USA } } set_global_variable = { AFR_BJ_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_BJ_USA > 19 } check_variable = { global.AFR_BJ_USA > global.AFR_BJ_SOV } check_variable = { global.AFR_BJ_USA > global.AFR_BJ_PRC } check_variable = { global.AFR_BJ_USA > global.AFR_BJ_EUR } } set_global_variable = { AFR_BJ_dom = 4 } }
+	set_global_variable = { AFR_BW_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_BW_SOV > 19 } check_variable = { global.AFR_BW_SOV > global.AFR_BW_PRC } check_variable = { global.AFR_BW_SOV > global.AFR_BW_EUR } check_variable = { global.AFR_BW_SOV > global.AFR_BW_USA } } set_global_variable = { AFR_BW_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_BW_PRC > 19 } check_variable = { global.AFR_BW_PRC > global.AFR_BW_SOV } check_variable = { global.AFR_BW_PRC > global.AFR_BW_EUR } check_variable = { global.AFR_BW_PRC > global.AFR_BW_USA } } set_global_variable = { AFR_BW_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_BW_EUR > 19 } check_variable = { global.AFR_BW_EUR > global.AFR_BW_SOV } check_variable = { global.AFR_BW_EUR > global.AFR_BW_PRC } check_variable = { global.AFR_BW_EUR > global.AFR_BW_USA } } set_global_variable = { AFR_BW_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_BW_USA > 19 } check_variable = { global.AFR_BW_USA > global.AFR_BW_SOV } check_variable = { global.AFR_BW_USA > global.AFR_BW_PRC } check_variable = { global.AFR_BW_USA > global.AFR_BW_EUR } } set_global_variable = { AFR_BW_dom = 4 } }
+	set_global_variable = { AFR_BF_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_BF_SOV > 19 } check_variable = { global.AFR_BF_SOV > global.AFR_BF_PRC } check_variable = { global.AFR_BF_SOV > global.AFR_BF_EUR } check_variable = { global.AFR_BF_SOV > global.AFR_BF_USA } } set_global_variable = { AFR_BF_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_BF_PRC > 19 } check_variable = { global.AFR_BF_PRC > global.AFR_BF_SOV } check_variable = { global.AFR_BF_PRC > global.AFR_BF_EUR } check_variable = { global.AFR_BF_PRC > global.AFR_BF_USA } } set_global_variable = { AFR_BF_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_BF_EUR > 19 } check_variable = { global.AFR_BF_EUR > global.AFR_BF_SOV } check_variable = { global.AFR_BF_EUR > global.AFR_BF_PRC } check_variable = { global.AFR_BF_EUR > global.AFR_BF_USA } } set_global_variable = { AFR_BF_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_BF_USA > 19 } check_variable = { global.AFR_BF_USA > global.AFR_BF_SOV } check_variable = { global.AFR_BF_USA > global.AFR_BF_PRC } check_variable = { global.AFR_BF_USA > global.AFR_BF_EUR } } set_global_variable = { AFR_BF_dom = 4 } }
+	set_global_variable = { AFR_BI_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_BI_SOV > 19 } check_variable = { global.AFR_BI_SOV > global.AFR_BI_PRC } check_variable = { global.AFR_BI_SOV > global.AFR_BI_EUR } check_variable = { global.AFR_BI_SOV > global.AFR_BI_USA } } set_global_variable = { AFR_BI_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_BI_PRC > 19 } check_variable = { global.AFR_BI_PRC > global.AFR_BI_SOV } check_variable = { global.AFR_BI_PRC > global.AFR_BI_EUR } check_variable = { global.AFR_BI_PRC > global.AFR_BI_USA } } set_global_variable = { AFR_BI_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_BI_EUR > 19 } check_variable = { global.AFR_BI_EUR > global.AFR_BI_SOV } check_variable = { global.AFR_BI_EUR > global.AFR_BI_PRC } check_variable = { global.AFR_BI_EUR > global.AFR_BI_USA } } set_global_variable = { AFR_BI_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_BI_USA > 19 } check_variable = { global.AFR_BI_USA > global.AFR_BI_SOV } check_variable = { global.AFR_BI_USA > global.AFR_BI_PRC } check_variable = { global.AFR_BI_USA > global.AFR_BI_EUR } } set_global_variable = { AFR_BI_dom = 4 } }
+	set_global_variable = { AFR_CM_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_CM_SOV > 19 } check_variable = { global.AFR_CM_SOV > global.AFR_CM_PRC } check_variable = { global.AFR_CM_SOV > global.AFR_CM_EUR } check_variable = { global.AFR_CM_SOV > global.AFR_CM_USA } } set_global_variable = { AFR_CM_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_CM_PRC > 19 } check_variable = { global.AFR_CM_PRC > global.AFR_CM_SOV } check_variable = { global.AFR_CM_PRC > global.AFR_CM_EUR } check_variable = { global.AFR_CM_PRC > global.AFR_CM_USA } } set_global_variable = { AFR_CM_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_CM_EUR > 19 } check_variable = { global.AFR_CM_EUR > global.AFR_CM_SOV } check_variable = { global.AFR_CM_EUR > global.AFR_CM_PRC } check_variable = { global.AFR_CM_EUR > global.AFR_CM_USA } } set_global_variable = { AFR_CM_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_CM_USA > 19 } check_variable = { global.AFR_CM_USA > global.AFR_CM_SOV } check_variable = { global.AFR_CM_USA > global.AFR_CM_PRC } check_variable = { global.AFR_CM_USA > global.AFR_CM_EUR } } set_global_variable = { AFR_CM_dom = 4 } }
+	set_global_variable = { AFR_CF_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_CF_SOV > 19 } check_variable = { global.AFR_CF_SOV > global.AFR_CF_PRC } check_variable = { global.AFR_CF_SOV > global.AFR_CF_EUR } check_variable = { global.AFR_CF_SOV > global.AFR_CF_USA } } set_global_variable = { AFR_CF_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_CF_PRC > 19 } check_variable = { global.AFR_CF_PRC > global.AFR_CF_SOV } check_variable = { global.AFR_CF_PRC > global.AFR_CF_EUR } check_variable = { global.AFR_CF_PRC > global.AFR_CF_USA } } set_global_variable = { AFR_CF_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_CF_EUR > 19 } check_variable = { global.AFR_CF_EUR > global.AFR_CF_SOV } check_variable = { global.AFR_CF_EUR > global.AFR_CF_PRC } check_variable = { global.AFR_CF_EUR > global.AFR_CF_USA } } set_global_variable = { AFR_CF_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_CF_USA > 19 } check_variable = { global.AFR_CF_USA > global.AFR_CF_SOV } check_variable = { global.AFR_CF_USA > global.AFR_CF_PRC } check_variable = { global.AFR_CF_USA > global.AFR_CF_EUR } } set_global_variable = { AFR_CF_dom = 4 } }
+	set_global_variable = { AFR_TD_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_TD_SOV > 19 } check_variable = { global.AFR_TD_SOV > global.AFR_TD_PRC } check_variable = { global.AFR_TD_SOV > global.AFR_TD_EUR } check_variable = { global.AFR_TD_SOV > global.AFR_TD_USA } } set_global_variable = { AFR_TD_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_TD_PRC > 19 } check_variable = { global.AFR_TD_PRC > global.AFR_TD_SOV } check_variable = { global.AFR_TD_PRC > global.AFR_TD_EUR } check_variable = { global.AFR_TD_PRC > global.AFR_TD_USA } } set_global_variable = { AFR_TD_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_TD_EUR > 19 } check_variable = { global.AFR_TD_EUR > global.AFR_TD_SOV } check_variable = { global.AFR_TD_EUR > global.AFR_TD_PRC } check_variable = { global.AFR_TD_EUR > global.AFR_TD_USA } } set_global_variable = { AFR_TD_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_TD_USA > 19 } check_variable = { global.AFR_TD_USA > global.AFR_TD_SOV } check_variable = { global.AFR_TD_USA > global.AFR_TD_PRC } check_variable = { global.AFR_TD_USA > global.AFR_TD_EUR } } set_global_variable = { AFR_TD_dom = 4 } }
+	set_global_variable = { AFR_CG_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_CG_SOV > 19 } check_variable = { global.AFR_CG_SOV > global.AFR_CG_PRC } check_variable = { global.AFR_CG_SOV > global.AFR_CG_EUR } check_variable = { global.AFR_CG_SOV > global.AFR_CG_USA } } set_global_variable = { AFR_CG_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_CG_PRC > 19 } check_variable = { global.AFR_CG_PRC > global.AFR_CG_SOV } check_variable = { global.AFR_CG_PRC > global.AFR_CG_EUR } check_variable = { global.AFR_CG_PRC > global.AFR_CG_USA } } set_global_variable = { AFR_CG_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_CG_EUR > 19 } check_variable = { global.AFR_CG_EUR > global.AFR_CG_SOV } check_variable = { global.AFR_CG_EUR > global.AFR_CG_PRC } check_variable = { global.AFR_CG_EUR > global.AFR_CG_USA } } set_global_variable = { AFR_CG_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_CG_USA > 19 } check_variable = { global.AFR_CG_USA > global.AFR_CG_SOV } check_variable = { global.AFR_CG_USA > global.AFR_CG_PRC } check_variable = { global.AFR_CG_USA > global.AFR_CG_EUR } } set_global_variable = { AFR_CG_dom = 4 } }
+	set_global_variable = { AFR_CI_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_CI_SOV > 19 } check_variable = { global.AFR_CI_SOV > global.AFR_CI_PRC } check_variable = { global.AFR_CI_SOV > global.AFR_CI_EUR } check_variable = { global.AFR_CI_SOV > global.AFR_CI_USA } } set_global_variable = { AFR_CI_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_CI_PRC > 19 } check_variable = { global.AFR_CI_PRC > global.AFR_CI_SOV } check_variable = { global.AFR_CI_PRC > global.AFR_CI_EUR } check_variable = { global.AFR_CI_PRC > global.AFR_CI_USA } } set_global_variable = { AFR_CI_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_CI_EUR > 19 } check_variable = { global.AFR_CI_EUR > global.AFR_CI_SOV } check_variable = { global.AFR_CI_EUR > global.AFR_CI_PRC } check_variable = { global.AFR_CI_EUR > global.AFR_CI_USA } } set_global_variable = { AFR_CI_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_CI_USA > 19 } check_variable = { global.AFR_CI_USA > global.AFR_CI_SOV } check_variable = { global.AFR_CI_USA > global.AFR_CI_PRC } check_variable = { global.AFR_CI_USA > global.AFR_CI_EUR } } set_global_variable = { AFR_CI_dom = 4 } }
+	set_global_variable = { AFR_CD_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_CD_SOV > 19 } check_variable = { global.AFR_CD_SOV > global.AFR_CD_PRC } check_variable = { global.AFR_CD_SOV > global.AFR_CD_EUR } check_variable = { global.AFR_CD_SOV > global.AFR_CD_USA } } set_global_variable = { AFR_CD_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_CD_PRC > 19 } check_variable = { global.AFR_CD_PRC > global.AFR_CD_SOV } check_variable = { global.AFR_CD_PRC > global.AFR_CD_EUR } check_variable = { global.AFR_CD_PRC > global.AFR_CD_USA } } set_global_variable = { AFR_CD_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_CD_EUR > 19 } check_variable = { global.AFR_CD_EUR > global.AFR_CD_SOV } check_variable = { global.AFR_CD_EUR > global.AFR_CD_PRC } check_variable = { global.AFR_CD_EUR > global.AFR_CD_USA } } set_global_variable = { AFR_CD_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_CD_USA > 19 } check_variable = { global.AFR_CD_USA > global.AFR_CD_SOV } check_variable = { global.AFR_CD_USA > global.AFR_CD_PRC } check_variable = { global.AFR_CD_USA > global.AFR_CD_EUR } } set_global_variable = { AFR_CD_dom = 4 } }
+	set_global_variable = { AFR_DJ_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_DJ_SOV > 19 } check_variable = { global.AFR_DJ_SOV > global.AFR_DJ_PRC } check_variable = { global.AFR_DJ_SOV > global.AFR_DJ_EUR } check_variable = { global.AFR_DJ_SOV > global.AFR_DJ_USA } } set_global_variable = { AFR_DJ_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_DJ_PRC > 19 } check_variable = { global.AFR_DJ_PRC > global.AFR_DJ_SOV } check_variable = { global.AFR_DJ_PRC > global.AFR_DJ_EUR } check_variable = { global.AFR_DJ_PRC > global.AFR_DJ_USA } } set_global_variable = { AFR_DJ_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_DJ_EUR > 19 } check_variable = { global.AFR_DJ_EUR > global.AFR_DJ_SOV } check_variable = { global.AFR_DJ_EUR > global.AFR_DJ_PRC } check_variable = { global.AFR_DJ_EUR > global.AFR_DJ_USA } } set_global_variable = { AFR_DJ_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_DJ_USA > 19 } check_variable = { global.AFR_DJ_USA > global.AFR_DJ_SOV } check_variable = { global.AFR_DJ_USA > global.AFR_DJ_PRC } check_variable = { global.AFR_DJ_USA > global.AFR_DJ_EUR } } set_global_variable = { AFR_DJ_dom = 4 } }
+	set_global_variable = { AFR_EG_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_EG_SOV > 19 } check_variable = { global.AFR_EG_SOV > global.AFR_EG_PRC } check_variable = { global.AFR_EG_SOV > global.AFR_EG_EUR } check_variable = { global.AFR_EG_SOV > global.AFR_EG_USA } } set_global_variable = { AFR_EG_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_EG_PRC > 19 } check_variable = { global.AFR_EG_PRC > global.AFR_EG_SOV } check_variable = { global.AFR_EG_PRC > global.AFR_EG_EUR } check_variable = { global.AFR_EG_PRC > global.AFR_EG_USA } } set_global_variable = { AFR_EG_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_EG_EUR > 19 } check_variable = { global.AFR_EG_EUR > global.AFR_EG_SOV } check_variable = { global.AFR_EG_EUR > global.AFR_EG_PRC } check_variable = { global.AFR_EG_EUR > global.AFR_EG_USA } } set_global_variable = { AFR_EG_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_EG_USA > 19 } check_variable = { global.AFR_EG_USA > global.AFR_EG_SOV } check_variable = { global.AFR_EG_USA > global.AFR_EG_PRC } check_variable = { global.AFR_EG_USA > global.AFR_EG_EUR } } set_global_variable = { AFR_EG_dom = 4 } }
+	set_global_variable = { AFR_GQ_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_GQ_SOV > 19 } check_variable = { global.AFR_GQ_SOV > global.AFR_GQ_PRC } check_variable = { global.AFR_GQ_SOV > global.AFR_GQ_EUR } check_variable = { global.AFR_GQ_SOV > global.AFR_GQ_USA } } set_global_variable = { AFR_GQ_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_GQ_PRC > 19 } check_variable = { global.AFR_GQ_PRC > global.AFR_GQ_SOV } check_variable = { global.AFR_GQ_PRC > global.AFR_GQ_EUR } check_variable = { global.AFR_GQ_PRC > global.AFR_GQ_USA } } set_global_variable = { AFR_GQ_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_GQ_EUR > 19 } check_variable = { global.AFR_GQ_EUR > global.AFR_GQ_SOV } check_variable = { global.AFR_GQ_EUR > global.AFR_GQ_PRC } check_variable = { global.AFR_GQ_EUR > global.AFR_GQ_USA } } set_global_variable = { AFR_GQ_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_GQ_USA > 19 } check_variable = { global.AFR_GQ_USA > global.AFR_GQ_SOV } check_variable = { global.AFR_GQ_USA > global.AFR_GQ_PRC } check_variable = { global.AFR_GQ_USA > global.AFR_GQ_EUR } } set_global_variable = { AFR_GQ_dom = 4 } }
+	set_global_variable = { AFR_ER_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_ER_SOV > 19 } check_variable = { global.AFR_ER_SOV > global.AFR_ER_PRC } check_variable = { global.AFR_ER_SOV > global.AFR_ER_EUR } check_variable = { global.AFR_ER_SOV > global.AFR_ER_USA } } set_global_variable = { AFR_ER_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_ER_PRC > 19 } check_variable = { global.AFR_ER_PRC > global.AFR_ER_SOV } check_variable = { global.AFR_ER_PRC > global.AFR_ER_EUR } check_variable = { global.AFR_ER_PRC > global.AFR_ER_USA } } set_global_variable = { AFR_ER_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_ER_EUR > 19 } check_variable = { global.AFR_ER_EUR > global.AFR_ER_SOV } check_variable = { global.AFR_ER_EUR > global.AFR_ER_PRC } check_variable = { global.AFR_ER_EUR > global.AFR_ER_USA } } set_global_variable = { AFR_ER_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_ER_USA > 19 } check_variable = { global.AFR_ER_USA > global.AFR_ER_SOV } check_variable = { global.AFR_ER_USA > global.AFR_ER_PRC } check_variable = { global.AFR_ER_USA > global.AFR_ER_EUR } } set_global_variable = { AFR_ER_dom = 4 } }
+	set_global_variable = { AFR_ET_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_ET_SOV > 19 } check_variable = { global.AFR_ET_SOV > global.AFR_ET_PRC } check_variable = { global.AFR_ET_SOV > global.AFR_ET_EUR } check_variable = { global.AFR_ET_SOV > global.AFR_ET_USA } } set_global_variable = { AFR_ET_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_ET_PRC > 19 } check_variable = { global.AFR_ET_PRC > global.AFR_ET_SOV } check_variable = { global.AFR_ET_PRC > global.AFR_ET_EUR } check_variable = { global.AFR_ET_PRC > global.AFR_ET_USA } } set_global_variable = { AFR_ET_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_ET_EUR > 19 } check_variable = { global.AFR_ET_EUR > global.AFR_ET_SOV } check_variable = { global.AFR_ET_EUR > global.AFR_ET_PRC } check_variable = { global.AFR_ET_EUR > global.AFR_ET_USA } } set_global_variable = { AFR_ET_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_ET_USA > 19 } check_variable = { global.AFR_ET_USA > global.AFR_ET_SOV } check_variable = { global.AFR_ET_USA > global.AFR_ET_PRC } check_variable = { global.AFR_ET_USA > global.AFR_ET_EUR } } set_global_variable = { AFR_ET_dom = 4 } }
+	set_global_variable = { AFR_GA_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_GA_SOV > 19 } check_variable = { global.AFR_GA_SOV > global.AFR_GA_PRC } check_variable = { global.AFR_GA_SOV > global.AFR_GA_EUR } check_variable = { global.AFR_GA_SOV > global.AFR_GA_USA } } set_global_variable = { AFR_GA_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_GA_PRC > 19 } check_variable = { global.AFR_GA_PRC > global.AFR_GA_SOV } check_variable = { global.AFR_GA_PRC > global.AFR_GA_EUR } check_variable = { global.AFR_GA_PRC > global.AFR_GA_USA } } set_global_variable = { AFR_GA_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_GA_EUR > 19 } check_variable = { global.AFR_GA_EUR > global.AFR_GA_SOV } check_variable = { global.AFR_GA_EUR > global.AFR_GA_PRC } check_variable = { global.AFR_GA_EUR > global.AFR_GA_USA } } set_global_variable = { AFR_GA_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_GA_USA > 19 } check_variable = { global.AFR_GA_USA > global.AFR_GA_SOV } check_variable = { global.AFR_GA_USA > global.AFR_GA_PRC } check_variable = { global.AFR_GA_USA > global.AFR_GA_EUR } } set_global_variable = { AFR_GA_dom = 4 } }
+	set_global_variable = { AFR_GM_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_GM_SOV > 19 } check_variable = { global.AFR_GM_SOV > global.AFR_GM_PRC } check_variable = { global.AFR_GM_SOV > global.AFR_GM_EUR } check_variable = { global.AFR_GM_SOV > global.AFR_GM_USA } } set_global_variable = { AFR_GM_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_GM_PRC > 19 } check_variable = { global.AFR_GM_PRC > global.AFR_GM_SOV } check_variable = { global.AFR_GM_PRC > global.AFR_GM_EUR } check_variable = { global.AFR_GM_PRC > global.AFR_GM_USA } } set_global_variable = { AFR_GM_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_GM_EUR > 19 } check_variable = { global.AFR_GM_EUR > global.AFR_GM_SOV } check_variable = { global.AFR_GM_EUR > global.AFR_GM_PRC } check_variable = { global.AFR_GM_EUR > global.AFR_GM_USA } } set_global_variable = { AFR_GM_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_GM_USA > 19 } check_variable = { global.AFR_GM_USA > global.AFR_GM_SOV } check_variable = { global.AFR_GM_USA > global.AFR_GM_PRC } check_variable = { global.AFR_GM_USA > global.AFR_GM_EUR } } set_global_variable = { AFR_GM_dom = 4 } }
+	set_global_variable = { AFR_GH_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_GH_SOV > 19 } check_variable = { global.AFR_GH_SOV > global.AFR_GH_PRC } check_variable = { global.AFR_GH_SOV > global.AFR_GH_EUR } check_variable = { global.AFR_GH_SOV > global.AFR_GH_USA } } set_global_variable = { AFR_GH_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_GH_PRC > 19 } check_variable = { global.AFR_GH_PRC > global.AFR_GH_SOV } check_variable = { global.AFR_GH_PRC > global.AFR_GH_EUR } check_variable = { global.AFR_GH_PRC > global.AFR_GH_USA } } set_global_variable = { AFR_GH_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_GH_EUR > 19 } check_variable = { global.AFR_GH_EUR > global.AFR_GH_SOV } check_variable = { global.AFR_GH_EUR > global.AFR_GH_PRC } check_variable = { global.AFR_GH_EUR > global.AFR_GH_USA } } set_global_variable = { AFR_GH_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_GH_USA > 19 } check_variable = { global.AFR_GH_USA > global.AFR_GH_SOV } check_variable = { global.AFR_GH_USA > global.AFR_GH_PRC } check_variable = { global.AFR_GH_USA > global.AFR_GH_EUR } } set_global_variable = { AFR_GH_dom = 4 } }
+	set_global_variable = { AFR_GN_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_GN_SOV > 19 } check_variable = { global.AFR_GN_SOV > global.AFR_GN_PRC } check_variable = { global.AFR_GN_SOV > global.AFR_GN_EUR } check_variable = { global.AFR_GN_SOV > global.AFR_GN_USA } } set_global_variable = { AFR_GN_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_GN_PRC > 19 } check_variable = { global.AFR_GN_PRC > global.AFR_GN_SOV } check_variable = { global.AFR_GN_PRC > global.AFR_GN_EUR } check_variable = { global.AFR_GN_PRC > global.AFR_GN_USA } } set_global_variable = { AFR_GN_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_GN_EUR > 19 } check_variable = { global.AFR_GN_EUR > global.AFR_GN_SOV } check_variable = { global.AFR_GN_EUR > global.AFR_GN_PRC } check_variable = { global.AFR_GN_EUR > global.AFR_GN_USA } } set_global_variable = { AFR_GN_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_GN_USA > 19 } check_variable = { global.AFR_GN_USA > global.AFR_GN_SOV } check_variable = { global.AFR_GN_USA > global.AFR_GN_PRC } check_variable = { global.AFR_GN_USA > global.AFR_GN_EUR } } set_global_variable = { AFR_GN_dom = 4 } }
+	set_global_variable = { AFR_GW_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_GW_SOV > 19 } check_variable = { global.AFR_GW_SOV > global.AFR_GW_PRC } check_variable = { global.AFR_GW_SOV > global.AFR_GW_EUR } check_variable = { global.AFR_GW_SOV > global.AFR_GW_USA } } set_global_variable = { AFR_GW_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_GW_PRC > 19 } check_variable = { global.AFR_GW_PRC > global.AFR_GW_SOV } check_variable = { global.AFR_GW_PRC > global.AFR_GW_EUR } check_variable = { global.AFR_GW_PRC > global.AFR_GW_USA } } set_global_variable = { AFR_GW_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_GW_EUR > 19 } check_variable = { global.AFR_GW_EUR > global.AFR_GW_SOV } check_variable = { global.AFR_GW_EUR > global.AFR_GW_PRC } check_variable = { global.AFR_GW_EUR > global.AFR_GW_USA } } set_global_variable = { AFR_GW_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_GW_USA > 19 } check_variable = { global.AFR_GW_USA > global.AFR_GW_SOV } check_variable = { global.AFR_GW_USA > global.AFR_GW_PRC } check_variable = { global.AFR_GW_USA > global.AFR_GW_EUR } } set_global_variable = { AFR_GW_dom = 4 } }
+	set_global_variable = { AFR_KE_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_KE_SOV > 19 } check_variable = { global.AFR_KE_SOV > global.AFR_KE_PRC } check_variable = { global.AFR_KE_SOV > global.AFR_KE_EUR } check_variable = { global.AFR_KE_SOV > global.AFR_KE_USA } } set_global_variable = { AFR_KE_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_KE_PRC > 19 } check_variable = { global.AFR_KE_PRC > global.AFR_KE_SOV } check_variable = { global.AFR_KE_PRC > global.AFR_KE_EUR } check_variable = { global.AFR_KE_PRC > global.AFR_KE_USA } } set_global_variable = { AFR_KE_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_KE_EUR > 19 } check_variable = { global.AFR_KE_EUR > global.AFR_KE_SOV } check_variable = { global.AFR_KE_EUR > global.AFR_KE_PRC } check_variable = { global.AFR_KE_EUR > global.AFR_KE_USA } } set_global_variable = { AFR_KE_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_KE_USA > 19 } check_variable = { global.AFR_KE_USA > global.AFR_KE_SOV } check_variable = { global.AFR_KE_USA > global.AFR_KE_PRC } check_variable = { global.AFR_KE_USA > global.AFR_KE_EUR } } set_global_variable = { AFR_KE_dom = 4 } }
+	set_global_variable = { AFR_LS_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_LS_SOV > 19 } check_variable = { global.AFR_LS_SOV > global.AFR_LS_PRC } check_variable = { global.AFR_LS_SOV > global.AFR_LS_EUR } check_variable = { global.AFR_LS_SOV > global.AFR_LS_USA } } set_global_variable = { AFR_LS_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_LS_PRC > 19 } check_variable = { global.AFR_LS_PRC > global.AFR_LS_SOV } check_variable = { global.AFR_LS_PRC > global.AFR_LS_EUR } check_variable = { global.AFR_LS_PRC > global.AFR_LS_USA } } set_global_variable = { AFR_LS_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_LS_EUR > 19 } check_variable = { global.AFR_LS_EUR > global.AFR_LS_SOV } check_variable = { global.AFR_LS_EUR > global.AFR_LS_PRC } check_variable = { global.AFR_LS_EUR > global.AFR_LS_USA } } set_global_variable = { AFR_LS_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_LS_USA > 19 } check_variable = { global.AFR_LS_USA > global.AFR_LS_SOV } check_variable = { global.AFR_LS_USA > global.AFR_LS_PRC } check_variable = { global.AFR_LS_USA > global.AFR_LS_EUR } } set_global_variable = { AFR_LS_dom = 4 } }
+	set_global_variable = { AFR_LR_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_LR_SOV > 19 } check_variable = { global.AFR_LR_SOV > global.AFR_LR_PRC } check_variable = { global.AFR_LR_SOV > global.AFR_LR_EUR } check_variable = { global.AFR_LR_SOV > global.AFR_LR_USA } } set_global_variable = { AFR_LR_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_LR_PRC > 19 } check_variable = { global.AFR_LR_PRC > global.AFR_LR_SOV } check_variable = { global.AFR_LR_PRC > global.AFR_LR_EUR } check_variable = { global.AFR_LR_PRC > global.AFR_LR_USA } } set_global_variable = { AFR_LR_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_LR_EUR > 19 } check_variable = { global.AFR_LR_EUR > global.AFR_LR_SOV } check_variable = { global.AFR_LR_EUR > global.AFR_LR_PRC } check_variable = { global.AFR_LR_EUR > global.AFR_LR_USA } } set_global_variable = { AFR_LR_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_LR_USA > 19 } check_variable = { global.AFR_LR_USA > global.AFR_LR_SOV } check_variable = { global.AFR_LR_USA > global.AFR_LR_PRC } check_variable = { global.AFR_LR_USA > global.AFR_LR_EUR } } set_global_variable = { AFR_LR_dom = 4 } }
+	set_global_variable = { AFR_LY_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_LY_SOV > 19 } check_variable = { global.AFR_LY_SOV > global.AFR_LY_PRC } check_variable = { global.AFR_LY_SOV > global.AFR_LY_EUR } check_variable = { global.AFR_LY_SOV > global.AFR_LY_USA } } set_global_variable = { AFR_LY_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_LY_PRC > 19 } check_variable = { global.AFR_LY_PRC > global.AFR_LY_SOV } check_variable = { global.AFR_LY_PRC > global.AFR_LY_EUR } check_variable = { global.AFR_LY_PRC > global.AFR_LY_USA } } set_global_variable = { AFR_LY_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_LY_EUR > 19 } check_variable = { global.AFR_LY_EUR > global.AFR_LY_SOV } check_variable = { global.AFR_LY_EUR > global.AFR_LY_PRC } check_variable = { global.AFR_LY_EUR > global.AFR_LY_USA } } set_global_variable = { AFR_LY_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_LY_USA > 19 } check_variable = { global.AFR_LY_USA > global.AFR_LY_SOV } check_variable = { global.AFR_LY_USA > global.AFR_LY_PRC } check_variable = { global.AFR_LY_USA > global.AFR_LY_EUR } } set_global_variable = { AFR_LY_dom = 4 } }
+	set_global_variable = { AFR_MG_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_MG_SOV > 19 } check_variable = { global.AFR_MG_SOV > global.AFR_MG_PRC } check_variable = { global.AFR_MG_SOV > global.AFR_MG_EUR } check_variable = { global.AFR_MG_SOV > global.AFR_MG_USA } } set_global_variable = { AFR_MG_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_MG_PRC > 19 } check_variable = { global.AFR_MG_PRC > global.AFR_MG_SOV } check_variable = { global.AFR_MG_PRC > global.AFR_MG_EUR } check_variable = { global.AFR_MG_PRC > global.AFR_MG_USA } } set_global_variable = { AFR_MG_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_MG_EUR > 19 } check_variable = { global.AFR_MG_EUR > global.AFR_MG_SOV } check_variable = { global.AFR_MG_EUR > global.AFR_MG_PRC } check_variable = { global.AFR_MG_EUR > global.AFR_MG_USA } } set_global_variable = { AFR_MG_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_MG_USA > 19 } check_variable = { global.AFR_MG_USA > global.AFR_MG_SOV } check_variable = { global.AFR_MG_USA > global.AFR_MG_PRC } check_variable = { global.AFR_MG_USA > global.AFR_MG_EUR } } set_global_variable = { AFR_MG_dom = 4 } }
+	set_global_variable = { AFR_MW_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_MW_SOV > 19 } check_variable = { global.AFR_MW_SOV > global.AFR_MW_PRC } check_variable = { global.AFR_MW_SOV > global.AFR_MW_EUR } check_variable = { global.AFR_MW_SOV > global.AFR_MW_USA } } set_global_variable = { AFR_MW_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_MW_PRC > 19 } check_variable = { global.AFR_MW_PRC > global.AFR_MW_SOV } check_variable = { global.AFR_MW_PRC > global.AFR_MW_EUR } check_variable = { global.AFR_MW_PRC > global.AFR_MW_USA } } set_global_variable = { AFR_MW_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_MW_EUR > 19 } check_variable = { global.AFR_MW_EUR > global.AFR_MW_SOV } check_variable = { global.AFR_MW_EUR > global.AFR_MW_PRC } check_variable = { global.AFR_MW_EUR > global.AFR_MW_USA } } set_global_variable = { AFR_MW_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_MW_USA > 19 } check_variable = { global.AFR_MW_USA > global.AFR_MW_SOV } check_variable = { global.AFR_MW_USA > global.AFR_MW_PRC } check_variable = { global.AFR_MW_USA > global.AFR_MW_EUR } } set_global_variable = { AFR_MW_dom = 4 } }
+	set_global_variable = { AFR_ML_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_ML_SOV > 19 } check_variable = { global.AFR_ML_SOV > global.AFR_ML_PRC } check_variable = { global.AFR_ML_SOV > global.AFR_ML_EUR } check_variable = { global.AFR_ML_SOV > global.AFR_ML_USA } } set_global_variable = { AFR_ML_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_ML_PRC > 19 } check_variable = { global.AFR_ML_PRC > global.AFR_ML_SOV } check_variable = { global.AFR_ML_PRC > global.AFR_ML_EUR } check_variable = { global.AFR_ML_PRC > global.AFR_ML_USA } } set_global_variable = { AFR_ML_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_ML_EUR > 19 } check_variable = { global.AFR_ML_EUR > global.AFR_ML_SOV } check_variable = { global.AFR_ML_EUR > global.AFR_ML_PRC } check_variable = { global.AFR_ML_EUR > global.AFR_ML_USA } } set_global_variable = { AFR_ML_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_ML_USA > 19 } check_variable = { global.AFR_ML_USA > global.AFR_ML_SOV } check_variable = { global.AFR_ML_USA > global.AFR_ML_PRC } check_variable = { global.AFR_ML_USA > global.AFR_ML_EUR } } set_global_variable = { AFR_ML_dom = 4 } }
+	set_global_variable = { AFR_MR_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_MR_SOV > 19 } check_variable = { global.AFR_MR_SOV > global.AFR_MR_PRC } check_variable = { global.AFR_MR_SOV > global.AFR_MR_EUR } check_variable = { global.AFR_MR_SOV > global.AFR_MR_USA } } set_global_variable = { AFR_MR_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_MR_PRC > 19 } check_variable = { global.AFR_MR_PRC > global.AFR_MR_SOV } check_variable = { global.AFR_MR_PRC > global.AFR_MR_EUR } check_variable = { global.AFR_MR_PRC > global.AFR_MR_USA } } set_global_variable = { AFR_MR_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_MR_EUR > 19 } check_variable = { global.AFR_MR_EUR > global.AFR_MR_SOV } check_variable = { global.AFR_MR_EUR > global.AFR_MR_PRC } check_variable = { global.AFR_MR_EUR > global.AFR_MR_USA } } set_global_variable = { AFR_MR_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_MR_USA > 19 } check_variable = { global.AFR_MR_USA > global.AFR_MR_SOV } check_variable = { global.AFR_MR_USA > global.AFR_MR_PRC } check_variable = { global.AFR_MR_USA > global.AFR_MR_EUR } } set_global_variable = { AFR_MR_dom = 4 } }
+	set_global_variable = { AFR_MA_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_MA_SOV > 19 } check_variable = { global.AFR_MA_SOV > global.AFR_MA_PRC } check_variable = { global.AFR_MA_SOV > global.AFR_MA_EUR } check_variable = { global.AFR_MA_SOV > global.AFR_MA_USA } } set_global_variable = { AFR_MA_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_MA_PRC > 19 } check_variable = { global.AFR_MA_PRC > global.AFR_MA_SOV } check_variable = { global.AFR_MA_PRC > global.AFR_MA_EUR } check_variable = { global.AFR_MA_PRC > global.AFR_MA_USA } } set_global_variable = { AFR_MA_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_MA_EUR > 19 } check_variable = { global.AFR_MA_EUR > global.AFR_MA_SOV } check_variable = { global.AFR_MA_EUR > global.AFR_MA_PRC } check_variable = { global.AFR_MA_EUR > global.AFR_MA_USA } } set_global_variable = { AFR_MA_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_MA_USA > 19 } check_variable = { global.AFR_MA_USA > global.AFR_MA_SOV } check_variable = { global.AFR_MA_USA > global.AFR_MA_PRC } check_variable = { global.AFR_MA_USA > global.AFR_MA_EUR } } set_global_variable = { AFR_MA_dom = 4 } }
+	set_global_variable = { AFR_MZ_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_MZ_SOV > 19 } check_variable = { global.AFR_MZ_SOV > global.AFR_MZ_PRC } check_variable = { global.AFR_MZ_SOV > global.AFR_MZ_EUR } check_variable = { global.AFR_MZ_SOV > global.AFR_MZ_USA } } set_global_variable = { AFR_MZ_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_MZ_PRC > 19 } check_variable = { global.AFR_MZ_PRC > global.AFR_MZ_SOV } check_variable = { global.AFR_MZ_PRC > global.AFR_MZ_EUR } check_variable = { global.AFR_MZ_PRC > global.AFR_MZ_USA } } set_global_variable = { AFR_MZ_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_MZ_EUR > 19 } check_variable = { global.AFR_MZ_EUR > global.AFR_MZ_SOV } check_variable = { global.AFR_MZ_EUR > global.AFR_MZ_PRC } check_variable = { global.AFR_MZ_EUR > global.AFR_MZ_USA } } set_global_variable = { AFR_MZ_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_MZ_USA > 19 } check_variable = { global.AFR_MZ_USA > global.AFR_MZ_SOV } check_variable = { global.AFR_MZ_USA > global.AFR_MZ_PRC } check_variable = { global.AFR_MZ_USA > global.AFR_MZ_EUR } } set_global_variable = { AFR_MZ_dom = 4 } }
+	set_global_variable = { AFR_NA_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_NA_SOV > 19 } check_variable = { global.AFR_NA_SOV > global.AFR_NA_PRC } check_variable = { global.AFR_NA_SOV > global.AFR_NA_EUR } check_variable = { global.AFR_NA_SOV > global.AFR_NA_USA } } set_global_variable = { AFR_NA_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_NA_PRC > 19 } check_variable = { global.AFR_NA_PRC > global.AFR_NA_SOV } check_variable = { global.AFR_NA_PRC > global.AFR_NA_EUR } check_variable = { global.AFR_NA_PRC > global.AFR_NA_USA } } set_global_variable = { AFR_NA_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_NA_EUR > 19 } check_variable = { global.AFR_NA_EUR > global.AFR_NA_SOV } check_variable = { global.AFR_NA_EUR > global.AFR_NA_PRC } check_variable = { global.AFR_NA_EUR > global.AFR_NA_USA } } set_global_variable = { AFR_NA_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_NA_USA > 19 } check_variable = { global.AFR_NA_USA > global.AFR_NA_SOV } check_variable = { global.AFR_NA_USA > global.AFR_NA_PRC } check_variable = { global.AFR_NA_USA > global.AFR_NA_EUR } } set_global_variable = { AFR_NA_dom = 4 } }
+	set_global_variable = { AFR_NE_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_NE_SOV > 19 } check_variable = { global.AFR_NE_SOV > global.AFR_NE_PRC } check_variable = { global.AFR_NE_SOV > global.AFR_NE_EUR } check_variable = { global.AFR_NE_SOV > global.AFR_NE_USA } } set_global_variable = { AFR_NE_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_NE_PRC > 19 } check_variable = { global.AFR_NE_PRC > global.AFR_NE_SOV } check_variable = { global.AFR_NE_PRC > global.AFR_NE_EUR } check_variable = { global.AFR_NE_PRC > global.AFR_NE_USA } } set_global_variable = { AFR_NE_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_NE_EUR > 19 } check_variable = { global.AFR_NE_EUR > global.AFR_NE_SOV } check_variable = { global.AFR_NE_EUR > global.AFR_NE_PRC } check_variable = { global.AFR_NE_EUR > global.AFR_NE_USA } } set_global_variable = { AFR_NE_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_NE_USA > 19 } check_variable = { global.AFR_NE_USA > global.AFR_NE_SOV } check_variable = { global.AFR_NE_USA > global.AFR_NE_PRC } check_variable = { global.AFR_NE_USA > global.AFR_NE_EUR } } set_global_variable = { AFR_NE_dom = 4 } }
+	set_global_variable = { AFR_NG_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_NG_SOV > 19 } check_variable = { global.AFR_NG_SOV > global.AFR_NG_PRC } check_variable = { global.AFR_NG_SOV > global.AFR_NG_EUR } check_variable = { global.AFR_NG_SOV > global.AFR_NG_USA } } set_global_variable = { AFR_NG_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_NG_PRC > 19 } check_variable = { global.AFR_NG_PRC > global.AFR_NG_SOV } check_variable = { global.AFR_NG_PRC > global.AFR_NG_EUR } check_variable = { global.AFR_NG_PRC > global.AFR_NG_USA } } set_global_variable = { AFR_NG_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_NG_EUR > 19 } check_variable = { global.AFR_NG_EUR > global.AFR_NG_SOV } check_variable = { global.AFR_NG_EUR > global.AFR_NG_PRC } check_variable = { global.AFR_NG_EUR > global.AFR_NG_USA } } set_global_variable = { AFR_NG_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_NG_USA > 19 } check_variable = { global.AFR_NG_USA > global.AFR_NG_SOV } check_variable = { global.AFR_NG_USA > global.AFR_NG_PRC } check_variable = { global.AFR_NG_USA > global.AFR_NG_EUR } } set_global_variable = { AFR_NG_dom = 4 } }
+	set_global_variable = { AFR_RW_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_RW_SOV > 19 } check_variable = { global.AFR_RW_SOV > global.AFR_RW_PRC } check_variable = { global.AFR_RW_SOV > global.AFR_RW_EUR } check_variable = { global.AFR_RW_SOV > global.AFR_RW_USA } } set_global_variable = { AFR_RW_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_RW_PRC > 19 } check_variable = { global.AFR_RW_PRC > global.AFR_RW_SOV } check_variable = { global.AFR_RW_PRC > global.AFR_RW_EUR } check_variable = { global.AFR_RW_PRC > global.AFR_RW_USA } } set_global_variable = { AFR_RW_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_RW_EUR > 19 } check_variable = { global.AFR_RW_EUR > global.AFR_RW_SOV } check_variable = { global.AFR_RW_EUR > global.AFR_RW_PRC } check_variable = { global.AFR_RW_EUR > global.AFR_RW_USA } } set_global_variable = { AFR_RW_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_RW_USA > 19 } check_variable = { global.AFR_RW_USA > global.AFR_RW_SOV } check_variable = { global.AFR_RW_USA > global.AFR_RW_PRC } check_variable = { global.AFR_RW_USA > global.AFR_RW_EUR } } set_global_variable = { AFR_RW_dom = 4 } }
+	set_global_variable = { AFR_SN_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_SN_SOV > 19 } check_variable = { global.AFR_SN_SOV > global.AFR_SN_PRC } check_variable = { global.AFR_SN_SOV > global.AFR_SN_EUR } check_variable = { global.AFR_SN_SOV > global.AFR_SN_USA } } set_global_variable = { AFR_SN_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_SN_PRC > 19 } check_variable = { global.AFR_SN_PRC > global.AFR_SN_SOV } check_variable = { global.AFR_SN_PRC > global.AFR_SN_EUR } check_variable = { global.AFR_SN_PRC > global.AFR_SN_USA } } set_global_variable = { AFR_SN_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_SN_EUR > 19 } check_variable = { global.AFR_SN_EUR > global.AFR_SN_SOV } check_variable = { global.AFR_SN_EUR > global.AFR_SN_PRC } check_variable = { global.AFR_SN_EUR > global.AFR_SN_USA } } set_global_variable = { AFR_SN_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_SN_USA > 19 } check_variable = { global.AFR_SN_USA > global.AFR_SN_SOV } check_variable = { global.AFR_SN_USA > global.AFR_SN_PRC } check_variable = { global.AFR_SN_USA > global.AFR_SN_EUR } } set_global_variable = { AFR_SN_dom = 4 } }
+	set_global_variable = { AFR_SL_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_SL_SOV > 19 } check_variable = { global.AFR_SL_SOV > global.AFR_SL_PRC } check_variable = { global.AFR_SL_SOV > global.AFR_SL_EUR } check_variable = { global.AFR_SL_SOV > global.AFR_SL_USA } } set_global_variable = { AFR_SL_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_SL_PRC > 19 } check_variable = { global.AFR_SL_PRC > global.AFR_SL_SOV } check_variable = { global.AFR_SL_PRC > global.AFR_SL_EUR } check_variable = { global.AFR_SL_PRC > global.AFR_SL_USA } } set_global_variable = { AFR_SL_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_SL_EUR > 19 } check_variable = { global.AFR_SL_EUR > global.AFR_SL_SOV } check_variable = { global.AFR_SL_EUR > global.AFR_SL_PRC } check_variable = { global.AFR_SL_EUR > global.AFR_SL_USA } } set_global_variable = { AFR_SL_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_SL_USA > 19 } check_variable = { global.AFR_SL_USA > global.AFR_SL_SOV } check_variable = { global.AFR_SL_USA > global.AFR_SL_PRC } check_variable = { global.AFR_SL_USA > global.AFR_SL_EUR } } set_global_variable = { AFR_SL_dom = 4 } }
+	set_global_variable = { AFR_SO_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_SO_SOV > 19 } check_variable = { global.AFR_SO_SOV > global.AFR_SO_PRC } check_variable = { global.AFR_SO_SOV > global.AFR_SO_EUR } check_variable = { global.AFR_SO_SOV > global.AFR_SO_USA } } set_global_variable = { AFR_SO_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_SO_PRC > 19 } check_variable = { global.AFR_SO_PRC > global.AFR_SO_SOV } check_variable = { global.AFR_SO_PRC > global.AFR_SO_EUR } check_variable = { global.AFR_SO_PRC > global.AFR_SO_USA } } set_global_variable = { AFR_SO_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_SO_EUR > 19 } check_variable = { global.AFR_SO_EUR > global.AFR_SO_SOV } check_variable = { global.AFR_SO_EUR > global.AFR_SO_PRC } check_variable = { global.AFR_SO_EUR > global.AFR_SO_USA } } set_global_variable = { AFR_SO_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_SO_USA > 19 } check_variable = { global.AFR_SO_USA > global.AFR_SO_SOV } check_variable = { global.AFR_SO_USA > global.AFR_SO_PRC } check_variable = { global.AFR_SO_USA > global.AFR_SO_EUR } } set_global_variable = { AFR_SO_dom = 4 } }
+	set_global_variable = { AFR_ZA_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_ZA_SOV > 19 } check_variable = { global.AFR_ZA_SOV > global.AFR_ZA_PRC } check_variable = { global.AFR_ZA_SOV > global.AFR_ZA_EUR } check_variable = { global.AFR_ZA_SOV > global.AFR_ZA_USA } } set_global_variable = { AFR_ZA_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_ZA_PRC > 19 } check_variable = { global.AFR_ZA_PRC > global.AFR_ZA_SOV } check_variable = { global.AFR_ZA_PRC > global.AFR_ZA_EUR } check_variable = { global.AFR_ZA_PRC > global.AFR_ZA_USA } } set_global_variable = { AFR_ZA_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_ZA_EUR > 19 } check_variable = { global.AFR_ZA_EUR > global.AFR_ZA_SOV } check_variable = { global.AFR_ZA_EUR > global.AFR_ZA_PRC } check_variable = { global.AFR_ZA_EUR > global.AFR_ZA_USA } } set_global_variable = { AFR_ZA_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_ZA_USA > 19 } check_variable = { global.AFR_ZA_USA > global.AFR_ZA_SOV } check_variable = { global.AFR_ZA_USA > global.AFR_ZA_PRC } check_variable = { global.AFR_ZA_USA > global.AFR_ZA_EUR } } set_global_variable = { AFR_ZA_dom = 4 } }
+	set_global_variable = { AFR_SS_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_SS_SOV > 19 } check_variable = { global.AFR_SS_SOV > global.AFR_SS_PRC } check_variable = { global.AFR_SS_SOV > global.AFR_SS_EUR } check_variable = { global.AFR_SS_SOV > global.AFR_SS_USA } } set_global_variable = { AFR_SS_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_SS_PRC > 19 } check_variable = { global.AFR_SS_PRC > global.AFR_SS_SOV } check_variable = { global.AFR_SS_PRC > global.AFR_SS_EUR } check_variable = { global.AFR_SS_PRC > global.AFR_SS_USA } } set_global_variable = { AFR_SS_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_SS_EUR > 19 } check_variable = { global.AFR_SS_EUR > global.AFR_SS_SOV } check_variable = { global.AFR_SS_EUR > global.AFR_SS_PRC } check_variable = { global.AFR_SS_EUR > global.AFR_SS_USA } } set_global_variable = { AFR_SS_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_SS_USA > 19 } check_variable = { global.AFR_SS_USA > global.AFR_SS_SOV } check_variable = { global.AFR_SS_USA > global.AFR_SS_PRC } check_variable = { global.AFR_SS_USA > global.AFR_SS_EUR } } set_global_variable = { AFR_SS_dom = 4 } }
+	set_global_variable = { AFR_SD_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_SD_SOV > 19 } check_variable = { global.AFR_SD_SOV > global.AFR_SD_PRC } check_variable = { global.AFR_SD_SOV > global.AFR_SD_EUR } check_variable = { global.AFR_SD_SOV > global.AFR_SD_USA } } set_global_variable = { AFR_SD_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_SD_PRC > 19 } check_variable = { global.AFR_SD_PRC > global.AFR_SD_SOV } check_variable = { global.AFR_SD_PRC > global.AFR_SD_EUR } check_variable = { global.AFR_SD_PRC > global.AFR_SD_USA } } set_global_variable = { AFR_SD_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_SD_EUR > 19 } check_variable = { global.AFR_SD_EUR > global.AFR_SD_SOV } check_variable = { global.AFR_SD_EUR > global.AFR_SD_PRC } check_variable = { global.AFR_SD_EUR > global.AFR_SD_USA } } set_global_variable = { AFR_SD_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_SD_USA > 19 } check_variable = { global.AFR_SD_USA > global.AFR_SD_SOV } check_variable = { global.AFR_SD_USA > global.AFR_SD_PRC } check_variable = { global.AFR_SD_USA > global.AFR_SD_EUR } } set_global_variable = { AFR_SD_dom = 4 } }
+	set_global_variable = { AFR_SZ_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_SZ_SOV > 19 } check_variable = { global.AFR_SZ_SOV > global.AFR_SZ_PRC } check_variable = { global.AFR_SZ_SOV > global.AFR_SZ_EUR } check_variable = { global.AFR_SZ_SOV > global.AFR_SZ_USA } } set_global_variable = { AFR_SZ_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_SZ_PRC > 19 } check_variable = { global.AFR_SZ_PRC > global.AFR_SZ_SOV } check_variable = { global.AFR_SZ_PRC > global.AFR_SZ_EUR } check_variable = { global.AFR_SZ_PRC > global.AFR_SZ_USA } } set_global_variable = { AFR_SZ_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_SZ_EUR > 19 } check_variable = { global.AFR_SZ_EUR > global.AFR_SZ_SOV } check_variable = { global.AFR_SZ_EUR > global.AFR_SZ_PRC } check_variable = { global.AFR_SZ_EUR > global.AFR_SZ_USA } } set_global_variable = { AFR_SZ_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_SZ_USA > 19 } check_variable = { global.AFR_SZ_USA > global.AFR_SZ_SOV } check_variable = { global.AFR_SZ_USA > global.AFR_SZ_PRC } check_variable = { global.AFR_SZ_USA > global.AFR_SZ_EUR } } set_global_variable = { AFR_SZ_dom = 4 } }
+	set_global_variable = { AFR_TZ_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_TZ_SOV > 19 } check_variable = { global.AFR_TZ_SOV > global.AFR_TZ_PRC } check_variable = { global.AFR_TZ_SOV > global.AFR_TZ_EUR } check_variable = { global.AFR_TZ_SOV > global.AFR_TZ_USA } } set_global_variable = { AFR_TZ_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_TZ_PRC > 19 } check_variable = { global.AFR_TZ_PRC > global.AFR_TZ_SOV } check_variable = { global.AFR_TZ_PRC > global.AFR_TZ_EUR } check_variable = { global.AFR_TZ_PRC > global.AFR_TZ_USA } } set_global_variable = { AFR_TZ_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_TZ_EUR > 19 } check_variable = { global.AFR_TZ_EUR > global.AFR_TZ_SOV } check_variable = { global.AFR_TZ_EUR > global.AFR_TZ_PRC } check_variable = { global.AFR_TZ_EUR > global.AFR_TZ_USA } } set_global_variable = { AFR_TZ_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_TZ_USA > 19 } check_variable = { global.AFR_TZ_USA > global.AFR_TZ_SOV } check_variable = { global.AFR_TZ_USA > global.AFR_TZ_PRC } check_variable = { global.AFR_TZ_USA > global.AFR_TZ_EUR } } set_global_variable = { AFR_TZ_dom = 4 } }
+	set_global_variable = { AFR_TG_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_TG_SOV > 19 } check_variable = { global.AFR_TG_SOV > global.AFR_TG_PRC } check_variable = { global.AFR_TG_SOV > global.AFR_TG_EUR } check_variable = { global.AFR_TG_SOV > global.AFR_TG_USA } } set_global_variable = { AFR_TG_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_TG_PRC > 19 } check_variable = { global.AFR_TG_PRC > global.AFR_TG_SOV } check_variable = { global.AFR_TG_PRC > global.AFR_TG_EUR } check_variable = { global.AFR_TG_PRC > global.AFR_TG_USA } } set_global_variable = { AFR_TG_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_TG_EUR > 19 } check_variable = { global.AFR_TG_EUR > global.AFR_TG_SOV } check_variable = { global.AFR_TG_EUR > global.AFR_TG_PRC } check_variable = { global.AFR_TG_EUR > global.AFR_TG_USA } } set_global_variable = { AFR_TG_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_TG_USA > 19 } check_variable = { global.AFR_TG_USA > global.AFR_TG_SOV } check_variable = { global.AFR_TG_USA > global.AFR_TG_PRC } check_variable = { global.AFR_TG_USA > global.AFR_TG_EUR } } set_global_variable = { AFR_TG_dom = 4 } }
+	set_global_variable = { AFR_TN_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_TN_SOV > 19 } check_variable = { global.AFR_TN_SOV > global.AFR_TN_PRC } check_variable = { global.AFR_TN_SOV > global.AFR_TN_EUR } check_variable = { global.AFR_TN_SOV > global.AFR_TN_USA } } set_global_variable = { AFR_TN_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_TN_PRC > 19 } check_variable = { global.AFR_TN_PRC > global.AFR_TN_SOV } check_variable = { global.AFR_TN_PRC > global.AFR_TN_EUR } check_variable = { global.AFR_TN_PRC > global.AFR_TN_USA } } set_global_variable = { AFR_TN_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_TN_EUR > 19 } check_variable = { global.AFR_TN_EUR > global.AFR_TN_SOV } check_variable = { global.AFR_TN_EUR > global.AFR_TN_PRC } check_variable = { global.AFR_TN_EUR > global.AFR_TN_USA } } set_global_variable = { AFR_TN_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_TN_USA > 19 } check_variable = { global.AFR_TN_USA > global.AFR_TN_SOV } check_variable = { global.AFR_TN_USA > global.AFR_TN_PRC } check_variable = { global.AFR_TN_USA > global.AFR_TN_EUR } } set_global_variable = { AFR_TN_dom = 4 } }
+	set_global_variable = { AFR_UG_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_UG_SOV > 19 } check_variable = { global.AFR_UG_SOV > global.AFR_UG_PRC } check_variable = { global.AFR_UG_SOV > global.AFR_UG_EUR } check_variable = { global.AFR_UG_SOV > global.AFR_UG_USA } } set_global_variable = { AFR_UG_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_UG_PRC > 19 } check_variable = { global.AFR_UG_PRC > global.AFR_UG_SOV } check_variable = { global.AFR_UG_PRC > global.AFR_UG_EUR } check_variable = { global.AFR_UG_PRC > global.AFR_UG_USA } } set_global_variable = { AFR_UG_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_UG_EUR > 19 } check_variable = { global.AFR_UG_EUR > global.AFR_UG_SOV } check_variable = { global.AFR_UG_EUR > global.AFR_UG_PRC } check_variable = { global.AFR_UG_EUR > global.AFR_UG_USA } } set_global_variable = { AFR_UG_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_UG_USA > 19 } check_variable = { global.AFR_UG_USA > global.AFR_UG_SOV } check_variable = { global.AFR_UG_USA > global.AFR_UG_PRC } check_variable = { global.AFR_UG_USA > global.AFR_UG_EUR } } set_global_variable = { AFR_UG_dom = 4 } }
+	set_global_variable = { AFR_EH_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_EH_SOV > 19 } check_variable = { global.AFR_EH_SOV > global.AFR_EH_PRC } check_variable = { global.AFR_EH_SOV > global.AFR_EH_EUR } check_variable = { global.AFR_EH_SOV > global.AFR_EH_USA } } set_global_variable = { AFR_EH_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_EH_PRC > 19 } check_variable = { global.AFR_EH_PRC > global.AFR_EH_SOV } check_variable = { global.AFR_EH_PRC > global.AFR_EH_EUR } check_variable = { global.AFR_EH_PRC > global.AFR_EH_USA } } set_global_variable = { AFR_EH_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_EH_EUR > 19 } check_variable = { global.AFR_EH_EUR > global.AFR_EH_SOV } check_variable = { global.AFR_EH_EUR > global.AFR_EH_PRC } check_variable = { global.AFR_EH_EUR > global.AFR_EH_USA } } set_global_variable = { AFR_EH_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_EH_USA > 19 } check_variable = { global.AFR_EH_USA > global.AFR_EH_SOV } check_variable = { global.AFR_EH_USA > global.AFR_EH_PRC } check_variable = { global.AFR_EH_USA > global.AFR_EH_EUR } } set_global_variable = { AFR_EH_dom = 4 } }
+	set_global_variable = { AFR_ZM_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_ZM_SOV > 19 } check_variable = { global.AFR_ZM_SOV > global.AFR_ZM_PRC } check_variable = { global.AFR_ZM_SOV > global.AFR_ZM_EUR } check_variable = { global.AFR_ZM_SOV > global.AFR_ZM_USA } } set_global_variable = { AFR_ZM_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_ZM_PRC > 19 } check_variable = { global.AFR_ZM_PRC > global.AFR_ZM_SOV } check_variable = { global.AFR_ZM_PRC > global.AFR_ZM_EUR } check_variable = { global.AFR_ZM_PRC > global.AFR_ZM_USA } } set_global_variable = { AFR_ZM_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_ZM_EUR > 19 } check_variable = { global.AFR_ZM_EUR > global.AFR_ZM_SOV } check_variable = { global.AFR_ZM_EUR > global.AFR_ZM_PRC } check_variable = { global.AFR_ZM_EUR > global.AFR_ZM_USA } } set_global_variable = { AFR_ZM_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_ZM_USA > 19 } check_variable = { global.AFR_ZM_USA > global.AFR_ZM_SOV } check_variable = { global.AFR_ZM_USA > global.AFR_ZM_PRC } check_variable = { global.AFR_ZM_USA > global.AFR_ZM_EUR } } set_global_variable = { AFR_ZM_dom = 4 } }
+	set_global_variable = { AFR_ZW_dom = 0 }
+	if = { limit = { check_variable = { global.AFR_ZW_SOV > 19 } check_variable = { global.AFR_ZW_SOV > global.AFR_ZW_PRC } check_variable = { global.AFR_ZW_SOV > global.AFR_ZW_EUR } check_variable = { global.AFR_ZW_SOV > global.AFR_ZW_USA } } set_global_variable = { AFR_ZW_dom = 1 } }
+	if = { limit = { check_variable = { global.AFR_ZW_PRC > 19 } check_variable = { global.AFR_ZW_PRC > global.AFR_ZW_SOV } check_variable = { global.AFR_ZW_PRC > global.AFR_ZW_EUR } check_variable = { global.AFR_ZW_PRC > global.AFR_ZW_USA } } set_global_variable = { AFR_ZW_dom = 2 } }
+	if = { limit = { check_variable = { global.AFR_ZW_EUR > 19 } check_variable = { global.AFR_ZW_EUR > global.AFR_ZW_SOV } check_variable = { global.AFR_ZW_EUR > global.AFR_ZW_PRC } check_variable = { global.AFR_ZW_EUR > global.AFR_ZW_USA } } set_global_variable = { AFR_ZW_dom = 3 } }
+	if = { limit = { check_variable = { global.AFR_ZW_USA > 19 } check_variable = { global.AFR_ZW_USA > global.AFR_ZW_SOV } check_variable = { global.AFR_ZW_USA > global.AFR_ZW_PRC } check_variable = { global.AFR_ZW_USA > global.AFR_ZW_EUR } } set_global_variable = { AFR_ZW_dom = 4 } }
+}

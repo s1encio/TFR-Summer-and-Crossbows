@@ -1,0 +1,12 @@
+on_actions = {
+	# Set 2020 starting influence in Africa once per campaign
+	on_startup = {
+		effect = {
+			if = {
+				limit = { NOT = { has_global_flag = SAC_africa_initialised } }
+				set_global_flag = SAC_africa_initialised
+				SAC_africa_init = yes
+			}
+		}
+	}
+}
