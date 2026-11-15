@@ -39,4 +39,8 @@ spriteTypes = {
 		name = "GFX_focus_WAG_car_lancet_drone"
 		texturefile = "gfx/interface/goals/WAG/WAG_car_lancet_drone.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_WAG_car_sam_sites"
+		texturefile = "gfx/interface/goals/WAG/WAG_car_sam_sites.png"
+	}
 }
