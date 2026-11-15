@@ -59,7 +59,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = { has_full_control_of_state = 1509 }
+		available = { has_full_control_of_state = 1518 }
 		prerequisite = { focus = WAG_car_expand_wagner }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -68,7 +68,7 @@ focus_tree = {
 				suicide_drone_tech2 = 1
 				popup = yes
 			}
-			1509 = {
+			1518 = {
 				add_building_construction = {
 					type = rocket_site
 					level = 1
@@ -86,7 +86,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		available = { has_full_control_of_state = 1509 }
+		available = { has_full_control_of_state = 1518 }
 		prerequisite = { focus = WAG_car_lancet_drone }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -97,7 +97,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1509 = {
+			1518 = {
 				add_building_construction = {
 					type = anti_air_building
 					level = 2

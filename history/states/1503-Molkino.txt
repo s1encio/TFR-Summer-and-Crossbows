@@ -1,13 +1,13 @@
 state={
-	id=1494
-	name="STATE_1494"
+	id=1503
+	name="STATE_1503"
 
 	history={
 		owner = WAG
 		add_core_of = WAG
 		add_core_of = SOV
 		victory_points = {
-			14992 1
+			15079 1
 		}
 		buildings = {
 			infrastructure = 3
@@ -15,7 +15,7 @@ state={
 	}
 
 	provinces={
-		14992
+		15079
 	}
 	manpower=8000
 	buildings_max_level_factor=1.000

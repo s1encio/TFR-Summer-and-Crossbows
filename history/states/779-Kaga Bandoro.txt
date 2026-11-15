@@ -6,15 +6,15 @@ state={
 		owner = CPC
 		add_core_of = CAR
 		add_core_of = CPC
-		victory_points = { 15004 1 }
-		victory_points = { 15003 2 }
+		victory_points = { 15091 1 }
+		victory_points = { 15090 2 }
 		buildings = {
 			infrastructure = 1
 		}
 	}
 
 	provinces={
-		15003 15004
+		15090 15091
 	}
 	manpower=180427
 	buildings_max_level_factor=1.000

@@ -23,7 +23,7 @@
 units = {
 	division = {
 		name = "PMC Wagner 1"
-		location = 14992
+		location = 15079
 		division_template = "PMC Wagner"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0

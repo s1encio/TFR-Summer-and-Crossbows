@@ -7,18 +7,18 @@ state={
 		add_core_of = CAR
 		add_core_of = CPC
 		victory_points = { 14585 1 }
-		victory_points = { 15007 1 }
-		victory_points = { 15006 2 }
+		victory_points = { 15094 1 }
+		victory_points = { 15093 2 }
 		buildings = {
 			infrastructure = 1
 		}
 		CAR = {
-			set_province_controller = 15007
+			set_province_controller = 15094
 		}
 	}
 
 	provinces={
-		15006 15007 14585
+		15093 15094 14585
 	}
 	manpower=425292
 	buildings_max_level_factor=1.000

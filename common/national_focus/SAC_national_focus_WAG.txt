@@ -71,7 +71,7 @@ focus_tree = {
 				add_equipment_to_stockpile = { type = CAS_equipment_2 amount = 10 producer = SOV }
 				add_equipment_to_stockpile = { type = fighter_equipment_2 amount = 5 producer = SOV }
 			}
-			1494 = {
+			1503 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -91,7 +91,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_internet_research_agency }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			1494 = {
+			1503 = {
 				add_resource = {
 					type = oil
 					amount = 30

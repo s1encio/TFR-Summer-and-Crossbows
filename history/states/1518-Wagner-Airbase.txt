@@ -1,11 +1,11 @@
 state={
-	id=1509
-	name="STATE_1509"
+	id=1518
+	name="STATE_1518"
 
 	history={
 		owner = WAG
 		add_core_of = CAR
-		victory_points = { 15017 1 }
+		victory_points = { 15104 1 }
 		buildings = {
 			infrastructure = 2
 			air_base = 2
@@ -13,7 +13,7 @@ state={
 	}
 
 	provinces={
-		15017
+		15104
 	}
 	manpower=500
 	buildings_max_level_factor=1.000

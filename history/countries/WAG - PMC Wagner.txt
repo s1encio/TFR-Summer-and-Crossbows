@@ -1,4 +1,4 @@
-﻿capital = 1494
+﻿capital = 1503
 
 # Manpower pool BEFORE the starting units are created, so PMC Wagner 1
 # spawns at full strength and keeps its maximum experience (a division

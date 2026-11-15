@@ -1,22 +1,24 @@
 state={
-	id=1508
-	name="STATE_1508"
+	id=1515
+	name="STATE_1515"
 
 	history={
 		owner = CPC
 		add_core_of = CAR
 		add_core_of = CPC
-		victory_points = { 14484 1 }
-		victory_points = { 15016 2 }
+		victory_points = { 14587 1 }
+		victory_points = { 5084 2 }
+		victory_points = { 15099 1 }
+		victory_points = { 15100 1 }
 		buildings = {
 			infrastructure = 1
 		}
 	}
 
 	provinces={
-		15016 14484
+		5084 14587 15099 15100
 	}
-	manpower=77326
+	manpower=141764
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	local_supplies=0.000

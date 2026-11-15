@@ -545,9 +545,9 @@ WAG_car_war_category = {
 		icon = GFX_decision_generic_military_support
 		cost = 50
 		fire_only_once = yes
-		available = { has_full_control_of_state = 1509 }
+		available = { has_full_control_of_state = 1518 }
 		complete_effect = {
-			1509 = {
+			1518 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
