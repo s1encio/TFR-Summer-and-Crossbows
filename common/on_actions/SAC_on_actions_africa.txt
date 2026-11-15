@@ -1,11 +1,15 @@
 on_actions = {
-	# Set 2020 starting influence in Africa once per campaign
+	# Set 2020 starting influence in Africa once per campaign.
+	# on_startup has no country scope, so the setup runs inside a country scope.
 	on_startup = {
 		effect = {
 			if = {
-				limit = { NOT = { has_global_flag = SAC_africa_initialised } }
-				set_global_flag = SAC_africa_initialised
-				SAC_africa_init = yes
+				limit = { NOT = { has_global_flag = SAC_africa_init_v2 } }
+				set_global_flag = SAC_africa_init_v2
+				random_country = {
+					limit = { exists = yes }
+					SAC_africa_init = yes
+				}
 			}
 		}
 	}
