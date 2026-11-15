@@ -10,275 +10,555 @@ SAC_can_see_africa_panel = {
 	}
 }
 
-# Civil war per country: HOI4 civil war, or the government is at war with one of its rebel factions
+# War in a country: it is at war AND (in a civil war, OR fighting a neighbouring enemy such as a rebel faction, OR enemies hold part of its land)
 SAC_africa_cw_AO = {
-	OR = {
-		AND = { country_exists = ANG ANG = { has_civil_war = yes } }
+	country_exists = ANG
+	ANG = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_BF = {
-	OR = {
-		AND = { country_exists = VOL VOL = { has_civil_war = yes } }
+	country_exists = VOL
+	VOL = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_BI = {
-	OR = {
-		AND = { country_exists = BRD BRD = { has_civil_war = yes } }
+	country_exists = BRD
+	BRD = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_BJ = {
-	OR = {
-		AND = { country_exists = DAH DAH = { has_civil_war = yes } }
-		AND = { country_exists = DAH country_exists = EBN DAH = { has_war_with = EBN } }
+	country_exists = DAH
+	DAH = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_BW = {
-	OR = {
-		AND = { country_exists = BOT BOT = { has_civil_war = yes } }
+	country_exists = BOT
+	BOT = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_CD = {
-	OR = {
-		AND = { country_exists = COG COG = { has_civil_war = yes } }
-		AND = { country_exists = COG country_exists = M23 COG = { has_war_with = M23 } }
-		AND = { country_exists = COG country_exists = DRO COG = { has_war_with = DRO } }
+	country_exists = COG
+	COG = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_CF = {
-	OR = {
-		AND = { country_exists = CAR CAR = { has_civil_war = yes } }
-		AND = { country_exists = CAR country_exists = CPC CAR = { has_war_with = CPC } }
+	country_exists = CAR
+	CAR = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_CG = {
-	OR = {
-		AND = { country_exists = RCG RCG = { has_civil_war = yes } }
-		AND = { country_exists = RCG country_exists = RCO RCG = { has_war_with = RCO } }
+	country_exists = RCG
+	RCG = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_CI = {
-	OR = {
-		AND = { country_exists = IVO IVO = { has_civil_war = yes } }
+	country_exists = IVO
+	IVO = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_CM = {
-	OR = {
-		AND = { country_exists = CMR CMR = { has_civil_war = yes } }
-		AND = { country_exists = CMR country_exists = AMB CMR = { has_war_with = AMB } }
+	country_exists = CMR
+	CMR = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_DJ = {
-	OR = {
-		AND = { country_exists = DJI DJI = { has_civil_war = yes } }
+	country_exists = DJI
+	DJI = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_DZ = {
-	OR = {
-		AND = { country_exists = ALG ALG = { has_civil_war = yes } }
-		AND = { country_exists = ALG country_exists = AG1 ALG = { has_war_with = AG1 } }
-		AND = { country_exists = ALG country_exists = AG2 ALG = { has_war_with = AG2 } }
-		AND = { country_exists = ALG country_exists = AG3 ALG = { has_war_with = AG3 } }
+	country_exists = ALG
+	ALG = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_EG = {
-	OR = {
-		AND = { country_exists = EGY EGY = { has_civil_war = yes } }
+	country_exists = EGY
+	EGY = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_EH = {
-	OR = {
-		AND = { country_exists = WES WES = { has_civil_war = yes } }
+	country_exists = WES
+	WES = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_ER = {
-	OR = {
-		AND = { country_exists = ERI ERI = { has_civil_war = yes } }
+	country_exists = ERI
+	ERI = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_ET = {
-	OR = {
-		AND = { country_exists = ETH ETH = { has_civil_war = yes } }
-		AND = { country_exists = ETH country_exists = TDF ETH = { has_war_with = TDF } }
-		AND = { country_exists = ETH country_exists = ORO ETH = { has_war_with = ORO } }
+	country_exists = ETH
+	ETH = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_GA = {
-	OR = {
-		AND = { country_exists = GAB GAB = { has_civil_war = yes } }
+	country_exists = GAB
+	GAB = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_GH = {
-	OR = {
-		AND = { country_exists = GHA GHA = { has_civil_war = yes } }
+	country_exists = GHA
+	GHA = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_GM = {
-	OR = {
-		AND = { country_exists = GAM GAM = { has_civil_war = yes } }
+	country_exists = GAM
+	GAM = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_GN = {
-	OR = {
-		AND = { country_exists = GNA GNA = { has_civil_war = yes } }
+	country_exists = GNA
+	GNA = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_GQ = {
-	OR = {
-		AND = { country_exists = EQG EQG = { has_civil_war = yes } }
+	country_exists = EQG
+	EQG = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_GW = {
-	OR = {
-		AND = { country_exists = GNB GNB = { has_civil_war = yes } }
+	country_exists = GNB
+	GNB = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_KE = {
-	OR = {
-		AND = { country_exists = KEN KEN = { has_civil_war = yes } }
+	country_exists = KEN
+	KEN = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_LR = {
-	OR = {
-		AND = { country_exists = LIB LIB = { has_civil_war = yes } }
+	country_exists = LIB
+	LIB = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_LS = {
-	OR = {
-		AND = { country_exists = LES LES = { has_civil_war = yes } }
+	country_exists = LES
+	LES = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_LY = {
-	OR = {
-		AND = { country_exists = LBA LBA = { has_civil_war = yes } }
-		AND = { country_exists = LBA country_exists = HRL LBA = { has_war_with = HRL } }
-		AND = { country_exists = LBA country_exists = AAS LBA = { has_war_with = AAS } }
+	country_exists = LBA
+	LBA = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_MA = {
-	OR = {
-		AND = { country_exists = MOR MOR = { has_civil_war = yes } }
+	country_exists = MOR
+	MOR = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_MG = {
-	OR = {
-		AND = { country_exists = MAD MAD = { has_civil_war = yes } }
+	country_exists = MAD
+	MAD = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_ML = {
-	OR = {
-		AND = { country_exists = MLI MLI = { has_civil_war = yes } }
-		AND = { country_exists = MLI MLI = { has_country_flag = MLI_Civil_war_flag } }
+	country_exists = MLI
+	MLI = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_MR = {
-	OR = {
-		AND = { country_exists = MRT MRT = { has_civil_war = yes } }
+	country_exists = MRT
+	MRT = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_MW = {
-	OR = {
-		AND = { country_exists = MLW MLW = { has_civil_war = yes } }
+	country_exists = MLW
+	MLW = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_MZ = {
-	OR = {
-		AND = { country_exists = MZB MZB = { has_civil_war = yes } }
+	country_exists = MZB
+	MZB = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_NA = {
-	OR = {
-		AND = { country_exists = NMB NMB = { has_civil_war = yes } }
+	country_exists = NMB
+	NMB = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_NE = {
-	OR = {
-		AND = { country_exists = NGR NGR = { has_civil_war = yes } }
+	country_exists = NGR
+	NGR = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_NG = {
-	OR = {
-		AND = { country_exists = NGA NGA = { has_civil_war = yes } }
-		AND = { country_exists = NGA country_exists = BIA NGA = { has_war_with = BIA } }
-		AND = { country_exists = NGA country_exists = AQI NGA = { has_war_with = AQI } }
+	country_exists = NGA
+	NGA = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_RW = {
-	OR = {
-		AND = { country_exists = RWA RWA = { has_civil_war = yes } }
+	country_exists = RWA
+	RWA = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_SD = {
-	OR = {
-		AND = { country_exists = SUD SUD = { has_civil_war = yes } }
-		AND = { country_exists = SUD country_exists = RSF SUD = { has_war_with = RSF } }
+	country_exists = SUD
+	SUD = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_SL = {
-	OR = {
-		AND = { country_exists = SIE SIE = { has_civil_war = yes } }
+	country_exists = SIE
+	SIE = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_SN = {
-	OR = {
-		AND = { country_exists = SEN SEN = { has_civil_war = yes } }
+	country_exists = SEN
+	SEN = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_SO = {
-	OR = {
-		AND = { country_exists = SOM SOM = { has_civil_war = yes } }
-		AND = { country_exists = SOM country_exists = SHB SOM = { has_war_with = SHB } }
-		AND = { country_exists = SOM country_exists = SML SOM = { has_war_with = SML } }
+	country_exists = SOM
+	SOM = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_SS = {
-	OR = {
-		AND = { country_exists = SSD SSD = { has_civil_war = yes } }
+	country_exists = SSD
+	SSD = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_SZ = {
-	OR = {
-		AND = { country_exists = SWZ SWZ = { has_civil_war = yes } }
+	country_exists = SWZ
+	SWZ = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_TD = {
-	OR = {
-		AND = { country_exists = CHA CHA = { has_civil_war = yes } }
+	country_exists = CHA
+	CHA = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_TG = {
-	OR = {
-		AND = { country_exists = TOG TOG = { has_civil_war = yes } }
+	country_exists = TOG
+	TOG = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_TN = {
-	OR = {
-		AND = { country_exists = TUN TUN = { has_civil_war = yes } }
+	country_exists = TUN
+	TUN = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_TZ = {
-	OR = {
-		AND = { country_exists = TZN TZN = { has_civil_war = yes } }
+	country_exists = TZN
+	TZN = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_UG = {
-	OR = {
-		AND = { country_exists = UGA UGA = { has_civil_war = yes } }
+	country_exists = UGA
+	UGA = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_ZA = {
-	OR = {
-		AND = { country_exists = SAF SAF = { has_civil_war = yes } }
-		AND = { country_exists = SAF country_exists = CFF SAF = { has_war_with = CFF } }
+	country_exists = SAF
+	SAF = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_ZM = {
-	OR = {
-		AND = { country_exists = ZAM ZAM = { has_civil_war = yes } }
+	country_exists = ZAM
+	ZAM = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 SAC_africa_cw_ZW = {
-	OR = {
-		AND = { country_exists = ZIM ZIM = { has_civil_war = yes } }
+	country_exists = ZIM
+	ZIM = {
+		has_war = yes
+		OR = {
+			has_civil_war = yes
+			any_enemy_country = { is_neighbor_of = PREV }
+			any_owned_state = { NOT = { is_controlled_by = PREV } }
+		}
 	}
 }
 
