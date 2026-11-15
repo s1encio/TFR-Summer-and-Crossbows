@@ -30,7 +30,7 @@
  SAC_africa_side_support:0 "Support"
  SAC_africa_side_ideo:0 "§g[This.GetRulingIdeology]§!"
  SAC_africa_side_mine:0 "§GYour side§!"
- SAC_africa_side_support_tt:0 "§YSupport this side§!\nSends §Y500§! infantry equipment to them.\n\nCost: £pol_power §Y25§!  ·  §Y500§! infantry equipment\nYour influence in this country: §G+4§!\nTheir opinion of you: §G+10§!\nCooldown: §Y30 days§! per country.\n\n§gOnly sides of the §Ysame ideology group§! as your government can be supported (for example conservative with conservative). Not available for yourself, for a side you are at war with, or while on cooldown.§!"
+ SAC_africa_side_support_tt:0 "§YSupport this side§!\nSends §Y500§! infantry equipment to them.\n\nCost: £pol_power §Y25§!  ·  §Y500§! infantry equipment\nYour influence in this country: §G+4§!\nTheir opinion of you: §G+10§!\nCooldown: §Y30 days§! per country.\n\n§RYou cannot switch sides:§! once you support a side in this war, you can only keep supporting that side (as long as it exists).\n§gNot available for yourself, for a side you are at war with, or while on cooldown.§!"
  SAC_africa_act_infra:0 "Build Infrastructure"
  SAC_africa_act_infra_cost:0 "£pol_power §Y25§!   §G+3§! influence"
  SAC_africa_act_infra_tt:0 "§YBuild Infrastructure§!\nRoads and rail links. Adds §Y1§! level of infrastructure.\n\nCost: £pol_power §Y25§!\nYour influence in this country: §G+3§!\nTheir opinion of you: §G+10§!\nCooldown: §Y30 days§! per country (shown on the button).\n\n§gNot available if the country does not exist, you are at war with it, or the action is on cooldown. If the state has no free slot, a new building slot is added.§!"
