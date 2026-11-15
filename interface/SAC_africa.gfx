@@ -12,306 +12,2176 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SAC_africa_legend"
 		texturefile = "gfx/interface/WAG_africa/africa_legend.png"
-		noOfFrames = 5
+		noOfFrames = 6
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_ZA"
-		texturefile = "gfx/interface/WAG_africa/afr_ZA.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_tab"
+		texturefile = "gfx/interface/WAG_africa/africa_tab.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_tab_active"
+		texturefile = "gfx/interface/WAG_africa/africa_tab_active.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_action"
+		texturefile = "gfx/interface/WAG_africa/africa_action.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_infobox"
+		texturefile = "gfx/interface/WAG_africa/africa_infobox.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_AO_0"
+		texturefile = "gfx/interface/WAG_africa/afr_AO_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_DZ"
-		texturefile = "gfx/interface/WAG_africa/afr_DZ.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_AO_1"
+		texturefile = "gfx/interface/WAG_africa/afr_AO_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_CD"
-		texturefile = "gfx/interface/WAG_africa/afr_CD.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_AO_2"
+		texturefile = "gfx/interface/WAG_africa/afr_AO_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_ML"
-		texturefile = "gfx/interface/WAG_africa/afr_ML.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_AO_3"
+		texturefile = "gfx/interface/WAG_africa/afr_AO_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_MA"
-		texturefile = "gfx/interface/WAG_africa/afr_MA.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_AO_4"
+		texturefile = "gfx/interface/WAG_africa/afr_AO_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_SD"
-		texturefile = "gfx/interface/WAG_africa/afr_SD.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_AO_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_AO_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_AO_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_AO_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BF_0"
+		texturefile = "gfx/interface/WAG_africa/afr_BF_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_LY"
-		texturefile = "gfx/interface/WAG_africa/afr_LY.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BF_1"
+		texturefile = "gfx/interface/WAG_africa/afr_BF_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_NE"
-		texturefile = "gfx/interface/WAG_africa/afr_NE.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BF_2"
+		texturefile = "gfx/interface/WAG_africa/afr_BF_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_MZ"
-		texturefile = "gfx/interface/WAG_africa/afr_MZ.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BF_3"
+		texturefile = "gfx/interface/WAG_africa/afr_BF_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_ET"
-		texturefile = "gfx/interface/WAG_africa/afr_ET.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BF_4"
+		texturefile = "gfx/interface/WAG_africa/afr_BF_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_TD"
-		texturefile = "gfx/interface/WAG_africa/afr_TD.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BF_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_BF_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BF_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_BF_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BI_0"
+		texturefile = "gfx/interface/WAG_africa/afr_BI_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_AO"
-		texturefile = "gfx/interface/WAG_africa/afr_AO.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BI_1"
+		texturefile = "gfx/interface/WAG_africa/afr_BI_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_NA"
-		texturefile = "gfx/interface/WAG_africa/afr_NA.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BI_2"
+		texturefile = "gfx/interface/WAG_africa/afr_BI_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_MR"
-		texturefile = "gfx/interface/WAG_africa/afr_MR.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BI_3"
+		texturefile = "gfx/interface/WAG_africa/afr_BI_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_SO"
-		texturefile = "gfx/interface/WAG_africa/afr_SO.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BI_4"
+		texturefile = "gfx/interface/WAG_africa/afr_BI_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_EG"
-		texturefile = "gfx/interface/WAG_africa/afr_EG.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BI_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_BI_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BI_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_BI_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BJ_0"
+		texturefile = "gfx/interface/WAG_africa/afr_BJ_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_TZ"
-		texturefile = "gfx/interface/WAG_africa/afr_TZ.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BJ_1"
+		texturefile = "gfx/interface/WAG_africa/afr_BJ_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_ZM"
-		texturefile = "gfx/interface/WAG_africa/afr_ZM.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BJ_2"
+		texturefile = "gfx/interface/WAG_africa/afr_BJ_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_NG"
-		texturefile = "gfx/interface/WAG_africa/afr_NG.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BJ_3"
+		texturefile = "gfx/interface/WAG_africa/afr_BJ_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_CF"
-		texturefile = "gfx/interface/WAG_africa/afr_CF.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BJ_4"
+		texturefile = "gfx/interface/WAG_africa/afr_BJ_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_SS"
-		texturefile = "gfx/interface/WAG_africa/afr_SS.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BJ_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_BJ_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BJ_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_BJ_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BW_0"
+		texturefile = "gfx/interface/WAG_africa/afr_BW_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_MG"
-		texturefile = "gfx/interface/WAG_africa/afr_MG.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BW_1"
+		texturefile = "gfx/interface/WAG_africa/afr_BW_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_CM"
-		texturefile = "gfx/interface/WAG_africa/afr_CM.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BW_2"
+		texturefile = "gfx/interface/WAG_africa/afr_BW_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_BW"
-		texturefile = "gfx/interface/WAG_africa/afr_BW.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BW_3"
+		texturefile = "gfx/interface/WAG_africa/afr_BW_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_KE"
-		texturefile = "gfx/interface/WAG_africa/afr_KE.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BW_4"
+		texturefile = "gfx/interface/WAG_africa/afr_BW_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_CG"
-		texturefile = "gfx/interface/WAG_africa/afr_CG.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_BW_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_BW_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_BW_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_BW_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CD_0"
+		texturefile = "gfx/interface/WAG_africa/afr_CD_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_EH"
-		texturefile = "gfx/interface/WAG_africa/afr_EH.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CD_1"
+		texturefile = "gfx/interface/WAG_africa/afr_CD_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_ZW"
-		texturefile = "gfx/interface/WAG_africa/afr_ZW.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CD_2"
+		texturefile = "gfx/interface/WAG_africa/afr_CD_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_BF"
-		texturefile = "gfx/interface/WAG_africa/afr_BF.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CD_3"
+		texturefile = "gfx/interface/WAG_africa/afr_CD_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_GN"
-		texturefile = "gfx/interface/WAG_africa/afr_GN.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CD_4"
+		texturefile = "gfx/interface/WAG_africa/afr_CD_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_CI"
-		texturefile = "gfx/interface/WAG_africa/afr_CI.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CD_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_CD_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CD_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_CD_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CF_0"
+		texturefile = "gfx/interface/WAG_africa/afr_CF_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_ER"
-		texturefile = "gfx/interface/WAG_africa/afr_ER.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CF_1"
+		texturefile = "gfx/interface/WAG_africa/afr_CF_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_GA"
-		texturefile = "gfx/interface/WAG_africa/afr_GA.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CF_2"
+		texturefile = "gfx/interface/WAG_africa/afr_CF_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_UG"
-		texturefile = "gfx/interface/WAG_africa/afr_UG.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CF_3"
+		texturefile = "gfx/interface/WAG_africa/afr_CF_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_TN"
-		texturefile = "gfx/interface/WAG_africa/afr_TN.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CF_4"
+		texturefile = "gfx/interface/WAG_africa/afr_CF_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_GH"
-		texturefile = "gfx/interface/WAG_africa/afr_GH.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CF_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_CF_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CF_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_CF_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CG_0"
+		texturefile = "gfx/interface/WAG_africa/afr_CG_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_SN"
-		texturefile = "gfx/interface/WAG_africa/afr_SN.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CG_1"
+		texturefile = "gfx/interface/WAG_africa/afr_CG_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_MW"
-		texturefile = "gfx/interface/WAG_africa/afr_MW.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CG_2"
+		texturefile = "gfx/interface/WAG_africa/afr_CG_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_BJ"
-		texturefile = "gfx/interface/WAG_africa/afr_BJ.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CG_3"
+		texturefile = "gfx/interface/WAG_africa/afr_CG_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_LR"
-		texturefile = "gfx/interface/WAG_africa/afr_LR.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CG_4"
+		texturefile = "gfx/interface/WAG_africa/afr_CG_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_TG"
-		texturefile = "gfx/interface/WAG_africa/afr_TG.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CG_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_CG_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CG_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_CG_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CI_0"
+		texturefile = "gfx/interface/WAG_africa/afr_CI_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_SL"
-		texturefile = "gfx/interface/WAG_africa/afr_SL.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CI_1"
+		texturefile = "gfx/interface/WAG_africa/afr_CI_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_GQ"
-		texturefile = "gfx/interface/WAG_africa/afr_GQ.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CI_2"
+		texturefile = "gfx/interface/WAG_africa/afr_CI_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_GW"
-		texturefile = "gfx/interface/WAG_africa/afr_GW.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CI_3"
+		texturefile = "gfx/interface/WAG_africa/afr_CI_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_LS"
-		texturefile = "gfx/interface/WAG_africa/afr_LS.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CI_4"
+		texturefile = "gfx/interface/WAG_africa/afr_CI_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_BI"
-		texturefile = "gfx/interface/WAG_africa/afr_BI.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CI_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_CI_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CI_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_CI_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CM_0"
+		texturefile = "gfx/interface/WAG_africa/afr_CM_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_RW"
-		texturefile = "gfx/interface/WAG_africa/afr_RW.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CM_1"
+		texturefile = "gfx/interface/WAG_africa/afr_CM_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_DJ"
-		texturefile = "gfx/interface/WAG_africa/afr_DJ.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CM_2"
+		texturefile = "gfx/interface/WAG_africa/afr_CM_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_GM"
-		texturefile = "gfx/interface/WAG_africa/afr_GM.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CM_3"
+		texturefile = "gfx/interface/WAG_africa/afr_CM_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
 	}
 	SpriteType = {
-		name = "GFX_SAC_africa_SZ"
-		texturefile = "gfx/interface/WAG_africa/afr_SZ.png"
-		noOfFrames = 5
+		name = "GFX_SAC_africa_CM_4"
+		texturefile = "gfx/interface/WAG_africa/afr_CM_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
 		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CM_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_CM_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_CM_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_CM_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DJ_0"
+		texturefile = "gfx/interface/WAG_africa/afr_DJ_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DJ_1"
+		texturefile = "gfx/interface/WAG_africa/afr_DJ_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DJ_2"
+		texturefile = "gfx/interface/WAG_africa/afr_DJ_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DJ_3"
+		texturefile = "gfx/interface/WAG_africa/afr_DJ_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DJ_4"
+		texturefile = "gfx/interface/WAG_africa/afr_DJ_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DJ_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_DJ_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DJ_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_DJ_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DZ_0"
+		texturefile = "gfx/interface/WAG_africa/afr_DZ_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DZ_1"
+		texturefile = "gfx/interface/WAG_africa/afr_DZ_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DZ_2"
+		texturefile = "gfx/interface/WAG_africa/afr_DZ_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DZ_3"
+		texturefile = "gfx/interface/WAG_africa/afr_DZ_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DZ_4"
+		texturefile = "gfx/interface/WAG_africa/afr_DZ_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DZ_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_DZ_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_DZ_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_DZ_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EG_0"
+		texturefile = "gfx/interface/WAG_africa/afr_EG_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EG_1"
+		texturefile = "gfx/interface/WAG_africa/afr_EG_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EG_2"
+		texturefile = "gfx/interface/WAG_africa/afr_EG_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EG_3"
+		texturefile = "gfx/interface/WAG_africa/afr_EG_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EG_4"
+		texturefile = "gfx/interface/WAG_africa/afr_EG_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EG_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_EG_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EG_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_EG_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EH_0"
+		texturefile = "gfx/interface/WAG_africa/afr_EH_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EH_1"
+		texturefile = "gfx/interface/WAG_africa/afr_EH_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EH_2"
+		texturefile = "gfx/interface/WAG_africa/afr_EH_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EH_3"
+		texturefile = "gfx/interface/WAG_africa/afr_EH_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EH_4"
+		texturefile = "gfx/interface/WAG_africa/afr_EH_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EH_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_EH_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_EH_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_EH_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ER_0"
+		texturefile = "gfx/interface/WAG_africa/afr_ER_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ER_1"
+		texturefile = "gfx/interface/WAG_africa/afr_ER_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ER_2"
+		texturefile = "gfx/interface/WAG_africa/afr_ER_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ER_3"
+		texturefile = "gfx/interface/WAG_africa/afr_ER_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ER_4"
+		texturefile = "gfx/interface/WAG_africa/afr_ER_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ER_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_ER_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ER_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_ER_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ET_0"
+		texturefile = "gfx/interface/WAG_africa/afr_ET_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ET_1"
+		texturefile = "gfx/interface/WAG_africa/afr_ET_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ET_2"
+		texturefile = "gfx/interface/WAG_africa/afr_ET_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ET_3"
+		texturefile = "gfx/interface/WAG_africa/afr_ET_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ET_4"
+		texturefile = "gfx/interface/WAG_africa/afr_ET_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ET_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_ET_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ET_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_ET_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GA_0"
+		texturefile = "gfx/interface/WAG_africa/afr_GA_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GA_1"
+		texturefile = "gfx/interface/WAG_africa/afr_GA_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GA_2"
+		texturefile = "gfx/interface/WAG_africa/afr_GA_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GA_3"
+		texturefile = "gfx/interface/WAG_africa/afr_GA_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GA_4"
+		texturefile = "gfx/interface/WAG_africa/afr_GA_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GA_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_GA_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GA_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_GA_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GH_0"
+		texturefile = "gfx/interface/WAG_africa/afr_GH_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GH_1"
+		texturefile = "gfx/interface/WAG_africa/afr_GH_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GH_2"
+		texturefile = "gfx/interface/WAG_africa/afr_GH_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GH_3"
+		texturefile = "gfx/interface/WAG_africa/afr_GH_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GH_4"
+		texturefile = "gfx/interface/WAG_africa/afr_GH_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GH_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_GH_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GH_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_GH_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GM_0"
+		texturefile = "gfx/interface/WAG_africa/afr_GM_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GM_1"
+		texturefile = "gfx/interface/WAG_africa/afr_GM_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GM_2"
+		texturefile = "gfx/interface/WAG_africa/afr_GM_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GM_3"
+		texturefile = "gfx/interface/WAG_africa/afr_GM_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GM_4"
+		texturefile = "gfx/interface/WAG_africa/afr_GM_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GM_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_GM_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GM_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_GM_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GN_0"
+		texturefile = "gfx/interface/WAG_africa/afr_GN_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GN_1"
+		texturefile = "gfx/interface/WAG_africa/afr_GN_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GN_2"
+		texturefile = "gfx/interface/WAG_africa/afr_GN_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GN_3"
+		texturefile = "gfx/interface/WAG_africa/afr_GN_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GN_4"
+		texturefile = "gfx/interface/WAG_africa/afr_GN_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GN_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_GN_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GN_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_GN_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GQ_0"
+		texturefile = "gfx/interface/WAG_africa/afr_GQ_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GQ_1"
+		texturefile = "gfx/interface/WAG_africa/afr_GQ_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GQ_2"
+		texturefile = "gfx/interface/WAG_africa/afr_GQ_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GQ_3"
+		texturefile = "gfx/interface/WAG_africa/afr_GQ_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GQ_4"
+		texturefile = "gfx/interface/WAG_africa/afr_GQ_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GQ_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_GQ_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GQ_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_GQ_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GW_0"
+		texturefile = "gfx/interface/WAG_africa/afr_GW_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GW_1"
+		texturefile = "gfx/interface/WAG_africa/afr_GW_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GW_2"
+		texturefile = "gfx/interface/WAG_africa/afr_GW_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GW_3"
+		texturefile = "gfx/interface/WAG_africa/afr_GW_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GW_4"
+		texturefile = "gfx/interface/WAG_africa/afr_GW_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GW_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_GW_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_GW_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_GW_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_KE_0"
+		texturefile = "gfx/interface/WAG_africa/afr_KE_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_KE_1"
+		texturefile = "gfx/interface/WAG_africa/afr_KE_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_KE_2"
+		texturefile = "gfx/interface/WAG_africa/afr_KE_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_KE_3"
+		texturefile = "gfx/interface/WAG_africa/afr_KE_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_KE_4"
+		texturefile = "gfx/interface/WAG_africa/afr_KE_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_KE_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_KE_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_KE_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_KE_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LR_0"
+		texturefile = "gfx/interface/WAG_africa/afr_LR_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LR_1"
+		texturefile = "gfx/interface/WAG_africa/afr_LR_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LR_2"
+		texturefile = "gfx/interface/WAG_africa/afr_LR_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LR_3"
+		texturefile = "gfx/interface/WAG_africa/afr_LR_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LR_4"
+		texturefile = "gfx/interface/WAG_africa/afr_LR_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LR_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_LR_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LR_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_LR_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LS_0"
+		texturefile = "gfx/interface/WAG_africa/afr_LS_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LS_1"
+		texturefile = "gfx/interface/WAG_africa/afr_LS_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LS_2"
+		texturefile = "gfx/interface/WAG_africa/afr_LS_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LS_3"
+		texturefile = "gfx/interface/WAG_africa/afr_LS_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LS_4"
+		texturefile = "gfx/interface/WAG_africa/afr_LS_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LS_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_LS_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LS_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_LS_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LY_0"
+		texturefile = "gfx/interface/WAG_africa/afr_LY_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LY_1"
+		texturefile = "gfx/interface/WAG_africa/afr_LY_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LY_2"
+		texturefile = "gfx/interface/WAG_africa/afr_LY_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LY_3"
+		texturefile = "gfx/interface/WAG_africa/afr_LY_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LY_4"
+		texturefile = "gfx/interface/WAG_africa/afr_LY_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LY_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_LY_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_LY_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_LY_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MA_0"
+		texturefile = "gfx/interface/WAG_africa/afr_MA_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MA_1"
+		texturefile = "gfx/interface/WAG_africa/afr_MA_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MA_2"
+		texturefile = "gfx/interface/WAG_africa/afr_MA_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MA_3"
+		texturefile = "gfx/interface/WAG_africa/afr_MA_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MA_4"
+		texturefile = "gfx/interface/WAG_africa/afr_MA_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MA_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_MA_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MA_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_MA_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MG_0"
+		texturefile = "gfx/interface/WAG_africa/afr_MG_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MG_1"
+		texturefile = "gfx/interface/WAG_africa/afr_MG_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MG_2"
+		texturefile = "gfx/interface/WAG_africa/afr_MG_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MG_3"
+		texturefile = "gfx/interface/WAG_africa/afr_MG_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MG_4"
+		texturefile = "gfx/interface/WAG_africa/afr_MG_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MG_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_MG_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MG_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_MG_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ML_0"
+		texturefile = "gfx/interface/WAG_africa/afr_ML_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ML_1"
+		texturefile = "gfx/interface/WAG_africa/afr_ML_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ML_2"
+		texturefile = "gfx/interface/WAG_africa/afr_ML_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ML_3"
+		texturefile = "gfx/interface/WAG_africa/afr_ML_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ML_4"
+		texturefile = "gfx/interface/WAG_africa/afr_ML_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ML_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_ML_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ML_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_ML_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MR_0"
+		texturefile = "gfx/interface/WAG_africa/afr_MR_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MR_1"
+		texturefile = "gfx/interface/WAG_africa/afr_MR_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MR_2"
+		texturefile = "gfx/interface/WAG_africa/afr_MR_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MR_3"
+		texturefile = "gfx/interface/WAG_africa/afr_MR_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MR_4"
+		texturefile = "gfx/interface/WAG_africa/afr_MR_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MR_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_MR_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MR_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_MR_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MW_0"
+		texturefile = "gfx/interface/WAG_africa/afr_MW_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MW_1"
+		texturefile = "gfx/interface/WAG_africa/afr_MW_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MW_2"
+		texturefile = "gfx/interface/WAG_africa/afr_MW_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MW_3"
+		texturefile = "gfx/interface/WAG_africa/afr_MW_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MW_4"
+		texturefile = "gfx/interface/WAG_africa/afr_MW_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MW_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_MW_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MW_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_MW_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MZ_0"
+		texturefile = "gfx/interface/WAG_africa/afr_MZ_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MZ_1"
+		texturefile = "gfx/interface/WAG_africa/afr_MZ_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MZ_2"
+		texturefile = "gfx/interface/WAG_africa/afr_MZ_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MZ_3"
+		texturefile = "gfx/interface/WAG_africa/afr_MZ_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MZ_4"
+		texturefile = "gfx/interface/WAG_africa/afr_MZ_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MZ_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_MZ_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_MZ_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_MZ_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NA_0"
+		texturefile = "gfx/interface/WAG_africa/afr_NA_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NA_1"
+		texturefile = "gfx/interface/WAG_africa/afr_NA_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NA_2"
+		texturefile = "gfx/interface/WAG_africa/afr_NA_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NA_3"
+		texturefile = "gfx/interface/WAG_africa/afr_NA_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NA_4"
+		texturefile = "gfx/interface/WAG_africa/afr_NA_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NA_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_NA_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NA_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_NA_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NE_0"
+		texturefile = "gfx/interface/WAG_africa/afr_NE_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NE_1"
+		texturefile = "gfx/interface/WAG_africa/afr_NE_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NE_2"
+		texturefile = "gfx/interface/WAG_africa/afr_NE_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NE_3"
+		texturefile = "gfx/interface/WAG_africa/afr_NE_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NE_4"
+		texturefile = "gfx/interface/WAG_africa/afr_NE_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NE_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_NE_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NE_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_NE_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NG_0"
+		texturefile = "gfx/interface/WAG_africa/afr_NG_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NG_1"
+		texturefile = "gfx/interface/WAG_africa/afr_NG_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NG_2"
+		texturefile = "gfx/interface/WAG_africa/afr_NG_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NG_3"
+		texturefile = "gfx/interface/WAG_africa/afr_NG_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NG_4"
+		texturefile = "gfx/interface/WAG_africa/afr_NG_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NG_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_NG_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_NG_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_NG_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_RW_0"
+		texturefile = "gfx/interface/WAG_africa/afr_RW_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_RW_1"
+		texturefile = "gfx/interface/WAG_africa/afr_RW_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_RW_2"
+		texturefile = "gfx/interface/WAG_africa/afr_RW_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_RW_3"
+		texturefile = "gfx/interface/WAG_africa/afr_RW_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_RW_4"
+		texturefile = "gfx/interface/WAG_africa/afr_RW_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_RW_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_RW_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_RW_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_RW_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SD_0"
+		texturefile = "gfx/interface/WAG_africa/afr_SD_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SD_1"
+		texturefile = "gfx/interface/WAG_africa/afr_SD_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SD_2"
+		texturefile = "gfx/interface/WAG_africa/afr_SD_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SD_3"
+		texturefile = "gfx/interface/WAG_africa/afr_SD_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SD_4"
+		texturefile = "gfx/interface/WAG_africa/afr_SD_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SD_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_SD_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SD_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_SD_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SL_0"
+		texturefile = "gfx/interface/WAG_africa/afr_SL_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SL_1"
+		texturefile = "gfx/interface/WAG_africa/afr_SL_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SL_2"
+		texturefile = "gfx/interface/WAG_africa/afr_SL_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SL_3"
+		texturefile = "gfx/interface/WAG_africa/afr_SL_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SL_4"
+		texturefile = "gfx/interface/WAG_africa/afr_SL_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SL_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_SL_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SL_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_SL_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SN_0"
+		texturefile = "gfx/interface/WAG_africa/afr_SN_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SN_1"
+		texturefile = "gfx/interface/WAG_africa/afr_SN_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SN_2"
+		texturefile = "gfx/interface/WAG_africa/afr_SN_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SN_3"
+		texturefile = "gfx/interface/WAG_africa/afr_SN_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SN_4"
+		texturefile = "gfx/interface/WAG_africa/afr_SN_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SN_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_SN_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SN_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_SN_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SO_0"
+		texturefile = "gfx/interface/WAG_africa/afr_SO_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SO_1"
+		texturefile = "gfx/interface/WAG_africa/afr_SO_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SO_2"
+		texturefile = "gfx/interface/WAG_africa/afr_SO_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SO_3"
+		texturefile = "gfx/interface/WAG_africa/afr_SO_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SO_4"
+		texturefile = "gfx/interface/WAG_africa/afr_SO_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SO_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_SO_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SO_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_SO_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SS_0"
+		texturefile = "gfx/interface/WAG_africa/afr_SS_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SS_1"
+		texturefile = "gfx/interface/WAG_africa/afr_SS_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SS_2"
+		texturefile = "gfx/interface/WAG_africa/afr_SS_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SS_3"
+		texturefile = "gfx/interface/WAG_africa/afr_SS_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SS_4"
+		texturefile = "gfx/interface/WAG_africa/afr_SS_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SS_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_SS_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SS_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_SS_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SZ_0"
+		texturefile = "gfx/interface/WAG_africa/afr_SZ_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SZ_1"
+		texturefile = "gfx/interface/WAG_africa/afr_SZ_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SZ_2"
+		texturefile = "gfx/interface/WAG_africa/afr_SZ_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SZ_3"
+		texturefile = "gfx/interface/WAG_africa/afr_SZ_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SZ_4"
+		texturefile = "gfx/interface/WAG_africa/afr_SZ_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SZ_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_SZ_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_SZ_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_SZ_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TD_0"
+		texturefile = "gfx/interface/WAG_africa/afr_TD_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TD_1"
+		texturefile = "gfx/interface/WAG_africa/afr_TD_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TD_2"
+		texturefile = "gfx/interface/WAG_africa/afr_TD_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TD_3"
+		texturefile = "gfx/interface/WAG_africa/afr_TD_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TD_4"
+		texturefile = "gfx/interface/WAG_africa/afr_TD_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TD_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_TD_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TD_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_TD_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TG_0"
+		texturefile = "gfx/interface/WAG_africa/afr_TG_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TG_1"
+		texturefile = "gfx/interface/WAG_africa/afr_TG_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TG_2"
+		texturefile = "gfx/interface/WAG_africa/afr_TG_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TG_3"
+		texturefile = "gfx/interface/WAG_africa/afr_TG_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TG_4"
+		texturefile = "gfx/interface/WAG_africa/afr_TG_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TG_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_TG_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TG_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_TG_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TN_0"
+		texturefile = "gfx/interface/WAG_africa/afr_TN_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TN_1"
+		texturefile = "gfx/interface/WAG_africa/afr_TN_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TN_2"
+		texturefile = "gfx/interface/WAG_africa/afr_TN_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TN_3"
+		texturefile = "gfx/interface/WAG_africa/afr_TN_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TN_4"
+		texturefile = "gfx/interface/WAG_africa/afr_TN_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TN_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_TN_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TN_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_TN_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TZ_0"
+		texturefile = "gfx/interface/WAG_africa/afr_TZ_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TZ_1"
+		texturefile = "gfx/interface/WAG_africa/afr_TZ_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TZ_2"
+		texturefile = "gfx/interface/WAG_africa/afr_TZ_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TZ_3"
+		texturefile = "gfx/interface/WAG_africa/afr_TZ_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TZ_4"
+		texturefile = "gfx/interface/WAG_africa/afr_TZ_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TZ_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_TZ_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_TZ_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_TZ_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_UG_0"
+		texturefile = "gfx/interface/WAG_africa/afr_UG_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_UG_1"
+		texturefile = "gfx/interface/WAG_africa/afr_UG_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_UG_2"
+		texturefile = "gfx/interface/WAG_africa/afr_UG_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_UG_3"
+		texturefile = "gfx/interface/WAG_africa/afr_UG_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_UG_4"
+		texturefile = "gfx/interface/WAG_africa/afr_UG_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_UG_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_UG_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_UG_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_UG_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZA_0"
+		texturefile = "gfx/interface/WAG_africa/afr_ZA_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZA_1"
+		texturefile = "gfx/interface/WAG_africa/afr_ZA_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZA_2"
+		texturefile = "gfx/interface/WAG_africa/afr_ZA_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZA_3"
+		texturefile = "gfx/interface/WAG_africa/afr_ZA_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZA_4"
+		texturefile = "gfx/interface/WAG_africa/afr_ZA_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZA_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_ZA_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZA_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_ZA_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZM_0"
+		texturefile = "gfx/interface/WAG_africa/afr_ZM_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZM_1"
+		texturefile = "gfx/interface/WAG_africa/afr_ZM_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZM_2"
+		texturefile = "gfx/interface/WAG_africa/afr_ZM_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZM_3"
+		texturefile = "gfx/interface/WAG_africa/afr_ZM_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZM_4"
+		texturefile = "gfx/interface/WAG_africa/afr_ZM_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZM_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_ZM_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZM_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_ZM_sel.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZW_0"
+		texturefile = "gfx/interface/WAG_africa/afr_ZW_0.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZW_1"
+		texturefile = "gfx/interface/WAG_africa/afr_ZW_1.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZW_2"
+		texturefile = "gfx/interface/WAG_africa/afr_ZW_2.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZW_3"
+		texturefile = "gfx/interface/WAG_africa/afr_ZW_3.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZW_4"
+		texturefile = "gfx/interface/WAG_africa/afr_ZW_4.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZW_cw"
+		texturefile = "gfx/interface/WAG_africa/afr_ZW_cw.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_africa_ZW_sel"
+		texturefile = "gfx/interface/WAG_africa/afr_ZW_sel.png"
 	}
 }

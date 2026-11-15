@@ -1,0 +1,1828 @@
+defined_text = {
+	name = SAC_africa_sel_name
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } }
+		localization_key = SAC_africa_name_AO
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } }
+		localization_key = SAC_africa_name_BF
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } }
+		localization_key = SAC_africa_name_BI
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } }
+		localization_key = SAC_africa_name_BJ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } }
+		localization_key = SAC_africa_name_BW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } }
+		localization_key = SAC_africa_name_CD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } }
+		localization_key = SAC_africa_name_CF
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } }
+		localization_key = SAC_africa_name_CG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } }
+		localization_key = SAC_africa_name_CI
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } }
+		localization_key = SAC_africa_name_CM
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } }
+		localization_key = SAC_africa_name_DJ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } }
+		localization_key = SAC_africa_name_DZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } }
+		localization_key = SAC_africa_name_EG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } }
+		localization_key = SAC_africa_name_EH
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } }
+		localization_key = SAC_africa_name_ER
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } }
+		localization_key = SAC_africa_name_ET
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } }
+		localization_key = SAC_africa_name_GA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } }
+		localization_key = SAC_africa_name_GH
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } }
+		localization_key = SAC_africa_name_GM
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } }
+		localization_key = SAC_africa_name_GN
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } }
+		localization_key = SAC_africa_name_GQ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } }
+		localization_key = SAC_africa_name_GW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } }
+		localization_key = SAC_africa_name_KE
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } }
+		localization_key = SAC_africa_name_LR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } }
+		localization_key = SAC_africa_name_LS
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } }
+		localization_key = SAC_africa_name_LY
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } }
+		localization_key = SAC_africa_name_MA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } }
+		localization_key = SAC_africa_name_MG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } }
+		localization_key = SAC_africa_name_ML
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } }
+		localization_key = SAC_africa_name_MR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } }
+		localization_key = SAC_africa_name_MW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } }
+		localization_key = SAC_africa_name_MZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } }
+		localization_key = SAC_africa_name_NA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } }
+		localization_key = SAC_africa_name_NE
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } }
+		localization_key = SAC_africa_name_NG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } }
+		localization_key = SAC_africa_name_RW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } }
+		localization_key = SAC_africa_name_SD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } }
+		localization_key = SAC_africa_name_SL
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } }
+		localization_key = SAC_africa_name_SN
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } }
+		localization_key = SAC_africa_name_SO
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } }
+		localization_key = SAC_africa_name_SS
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } }
+		localization_key = SAC_africa_name_SZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } }
+		localization_key = SAC_africa_name_TD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } }
+		localization_key = SAC_africa_name_TG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } }
+		localization_key = SAC_africa_name_TN
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } }
+		localization_key = SAC_africa_name_TZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } }
+		localization_key = SAC_africa_name_UG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } }
+		localization_key = SAC_africa_name_ZA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } }
+		localization_key = SAC_africa_name_ZM
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } }
+		localization_key = SAC_africa_name_ZW
+	}
+	text = {
+		localization_key = SAC_africa_name_none
+	}
+}
+defined_text = {
+	name = SAC_africa_sel_info
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } }
+		localization_key = SAC_africa_info_AO
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } }
+		localization_key = SAC_africa_info_BF
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } }
+		localization_key = SAC_africa_info_BI
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } }
+		localization_key = SAC_africa_info_BJ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } }
+		localization_key = SAC_africa_info_BW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } }
+		localization_key = SAC_africa_info_CD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } }
+		localization_key = SAC_africa_info_CF
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } }
+		localization_key = SAC_africa_info_CG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } }
+		localization_key = SAC_africa_info_CI
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } }
+		localization_key = SAC_africa_info_CM
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } }
+		localization_key = SAC_africa_info_DJ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } }
+		localization_key = SAC_africa_info_DZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } }
+		localization_key = SAC_africa_info_EG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } }
+		localization_key = SAC_africa_info_EH
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } }
+		localization_key = SAC_africa_info_ER
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } }
+		localization_key = SAC_africa_info_ET
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } }
+		localization_key = SAC_africa_info_GA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } }
+		localization_key = SAC_africa_info_GH
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } }
+		localization_key = SAC_africa_info_GM
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } }
+		localization_key = SAC_africa_info_GN
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } }
+		localization_key = SAC_africa_info_GQ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } }
+		localization_key = SAC_africa_info_GW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } }
+		localization_key = SAC_africa_info_KE
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } }
+		localization_key = SAC_africa_info_LR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } }
+		localization_key = SAC_africa_info_LS
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } }
+		localization_key = SAC_africa_info_LY
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } }
+		localization_key = SAC_africa_info_MA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } }
+		localization_key = SAC_africa_info_MG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } }
+		localization_key = SAC_africa_info_ML
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } }
+		localization_key = SAC_africa_info_MR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } }
+		localization_key = SAC_africa_info_MW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } }
+		localization_key = SAC_africa_info_MZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } }
+		localization_key = SAC_africa_info_NA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } }
+		localization_key = SAC_africa_info_NE
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } }
+		localization_key = SAC_africa_info_NG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } }
+		localization_key = SAC_africa_info_RW
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } }
+		localization_key = SAC_africa_info_SD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } }
+		localization_key = SAC_africa_info_SL
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } }
+		localization_key = SAC_africa_info_SN
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } }
+		localization_key = SAC_africa_info_SO
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } }
+		localization_key = SAC_africa_info_SS
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } }
+		localization_key = SAC_africa_info_SZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } }
+		localization_key = SAC_africa_info_TD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } }
+		localization_key = SAC_africa_info_TG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } }
+		localization_key = SAC_africa_info_TN
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } }
+		localization_key = SAC_africa_info_TZ
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } }
+		localization_key = SAC_africa_info_UG
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } }
+		localization_key = SAC_africa_info_ZA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } }
+		localization_key = SAC_africa_info_ZM
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } }
+		localization_key = SAC_africa_info_ZW
+	}
+	text = {
+		localization_key = SAC_africa_info_none
+	}
+}
+defined_text = {
+	name = SAC_africa_sel_status
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } NOT = { country_exists = ANG } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } SAC_africa_cw_AO = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } NOT = { country_exists = VOL } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } SAC_africa_cw_BF = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } NOT = { country_exists = BRD } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } SAC_africa_cw_BI = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } NOT = { country_exists = DAH } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } SAC_africa_cw_BJ = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } NOT = { country_exists = BOT } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } SAC_africa_cw_BW = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } NOT = { country_exists = COG } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } SAC_africa_cw_CD = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } NOT = { country_exists = CAR } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } SAC_africa_cw_CF = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } NOT = { country_exists = RCG } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } SAC_africa_cw_CG = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } NOT = { country_exists = IVO } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } SAC_africa_cw_CI = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } NOT = { country_exists = CMR } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } SAC_africa_cw_CM = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } NOT = { country_exists = DJI } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } SAC_africa_cw_DJ = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } NOT = { country_exists = ALG } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } SAC_africa_cw_DZ = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } NOT = { country_exists = EGY } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } SAC_africa_cw_EG = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } NOT = { country_exists = WES } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } SAC_africa_cw_EH = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } NOT = { country_exists = ERI } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } SAC_africa_cw_ER = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } NOT = { country_exists = ETH } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } SAC_africa_cw_ET = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } NOT = { country_exists = GAB } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } SAC_africa_cw_GA = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } NOT = { country_exists = GHA } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } SAC_africa_cw_GH = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } NOT = { country_exists = GAM } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } SAC_africa_cw_GM = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } NOT = { country_exists = GNA } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } SAC_africa_cw_GN = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } NOT = { country_exists = EQG } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } SAC_africa_cw_GQ = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } NOT = { country_exists = GNB } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } SAC_africa_cw_GW = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } NOT = { country_exists = KEN } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } SAC_africa_cw_KE = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } NOT = { country_exists = LIB } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } SAC_africa_cw_LR = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } NOT = { country_exists = LES } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } SAC_africa_cw_LS = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } NOT = { country_exists = LBA } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } SAC_africa_cw_LY = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } NOT = { country_exists = MOR } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } SAC_africa_cw_MA = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } NOT = { country_exists = MAD } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } SAC_africa_cw_MG = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } NOT = { country_exists = MLI } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } SAC_africa_cw_ML = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } NOT = { country_exists = MRT } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } SAC_africa_cw_MR = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } NOT = { country_exists = MLW } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } SAC_africa_cw_MW = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } NOT = { country_exists = MZB } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } SAC_africa_cw_MZ = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } NOT = { country_exists = NMB } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } SAC_africa_cw_NA = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } NOT = { country_exists = NGR } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } SAC_africa_cw_NE = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } NOT = { country_exists = NGA } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } SAC_africa_cw_NG = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } NOT = { country_exists = RWA } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } SAC_africa_cw_RW = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } NOT = { country_exists = SUD } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } SAC_africa_cw_SD = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } NOT = { country_exists = SIE } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } SAC_africa_cw_SL = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } NOT = { country_exists = SEN } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } SAC_africa_cw_SN = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } NOT = { country_exists = SOM } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } SAC_africa_cw_SO = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } NOT = { country_exists = SSD } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } SAC_africa_cw_SS = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } NOT = { country_exists = SWZ } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } SAC_africa_cw_SZ = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } NOT = { country_exists = CHA } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } SAC_africa_cw_TD = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } NOT = { country_exists = TOG } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } SAC_africa_cw_TG = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } NOT = { country_exists = TUN } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } SAC_africa_cw_TN = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } NOT = { country_exists = TZN } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } SAC_africa_cw_TZ = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } NOT = { country_exists = UGA } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } SAC_africa_cw_UG = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } NOT = { country_exists = SAF } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } SAC_africa_cw_ZA = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } NOT = { country_exists = ZAM } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } SAC_africa_cw_ZM = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } NOT = { country_exists = ZIM } }
+		localization_key = SAC_africa_status_gone
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } SAC_africa_cw_ZW = yes }
+		localization_key = SAC_africa_status_cw
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel > 0 } }
+		localization_key = SAC_africa_status_ok
+	}
+	text = {
+		localization_key = SAC_africa_empty
+	}
+}
+defined_text = {
+	name = SAC_africa_sel_lead
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } check_variable = { global.AFR_AO_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } check_variable = { global.AFR_AO_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } check_variable = { global.AFR_AO_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } check_variable = { global.AFR_AO_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 1 } check_variable = { global.AFR_AO_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } check_variable = { global.AFR_BF_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } check_variable = { global.AFR_BF_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } check_variable = { global.AFR_BF_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } check_variable = { global.AFR_BF_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 2 } check_variable = { global.AFR_BF_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } check_variable = { global.AFR_BI_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } check_variable = { global.AFR_BI_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } check_variable = { global.AFR_BI_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } check_variable = { global.AFR_BI_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 3 } check_variable = { global.AFR_BI_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } check_variable = { global.AFR_BJ_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } check_variable = { global.AFR_BJ_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } check_variable = { global.AFR_BJ_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } check_variable = { global.AFR_BJ_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 4 } check_variable = { global.AFR_BJ_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } check_variable = { global.AFR_BW_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } check_variable = { global.AFR_BW_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } check_variable = { global.AFR_BW_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } check_variable = { global.AFR_BW_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 5 } check_variable = { global.AFR_BW_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } check_variable = { global.AFR_CD_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } check_variable = { global.AFR_CD_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } check_variable = { global.AFR_CD_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } check_variable = { global.AFR_CD_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } check_variable = { global.AFR_CD_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } check_variable = { global.AFR_CF_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } check_variable = { global.AFR_CF_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } check_variable = { global.AFR_CF_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } check_variable = { global.AFR_CF_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } check_variable = { global.AFR_CF_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } check_variable = { global.AFR_CG_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } check_variable = { global.AFR_CG_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } check_variable = { global.AFR_CG_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } check_variable = { global.AFR_CG_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 8 } check_variable = { global.AFR_CG_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } check_variable = { global.AFR_CI_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } check_variable = { global.AFR_CI_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } check_variable = { global.AFR_CI_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } check_variable = { global.AFR_CI_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 9 } check_variable = { global.AFR_CI_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } check_variable = { global.AFR_CM_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } check_variable = { global.AFR_CM_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } check_variable = { global.AFR_CM_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } check_variable = { global.AFR_CM_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 10 } check_variable = { global.AFR_CM_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } check_variable = { global.AFR_DJ_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } check_variable = { global.AFR_DJ_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } check_variable = { global.AFR_DJ_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } check_variable = { global.AFR_DJ_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 11 } check_variable = { global.AFR_DJ_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } check_variable = { global.AFR_DZ_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } check_variable = { global.AFR_DZ_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } check_variable = { global.AFR_DZ_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } check_variable = { global.AFR_DZ_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 12 } check_variable = { global.AFR_DZ_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } check_variable = { global.AFR_EG_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } check_variable = { global.AFR_EG_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } check_variable = { global.AFR_EG_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } check_variable = { global.AFR_EG_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 13 } check_variable = { global.AFR_EG_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } check_variable = { global.AFR_EH_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } check_variable = { global.AFR_EH_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } check_variable = { global.AFR_EH_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } check_variable = { global.AFR_EH_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 14 } check_variable = { global.AFR_EH_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } check_variable = { global.AFR_ER_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } check_variable = { global.AFR_ER_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } check_variable = { global.AFR_ER_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } check_variable = { global.AFR_ER_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 15 } check_variable = { global.AFR_ER_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } check_variable = { global.AFR_ET_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } check_variable = { global.AFR_ET_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } check_variable = { global.AFR_ET_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } check_variable = { global.AFR_ET_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } check_variable = { global.AFR_ET_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } check_variable = { global.AFR_GA_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } check_variable = { global.AFR_GA_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } check_variable = { global.AFR_GA_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } check_variable = { global.AFR_GA_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 17 } check_variable = { global.AFR_GA_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } check_variable = { global.AFR_GH_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } check_variable = { global.AFR_GH_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } check_variable = { global.AFR_GH_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } check_variable = { global.AFR_GH_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 18 } check_variable = { global.AFR_GH_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } check_variable = { global.AFR_GM_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } check_variable = { global.AFR_GM_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } check_variable = { global.AFR_GM_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } check_variable = { global.AFR_GM_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 19 } check_variable = { global.AFR_GM_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } check_variable = { global.AFR_GN_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } check_variable = { global.AFR_GN_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } check_variable = { global.AFR_GN_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } check_variable = { global.AFR_GN_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 20 } check_variable = { global.AFR_GN_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } check_variable = { global.AFR_GQ_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } check_variable = { global.AFR_GQ_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } check_variable = { global.AFR_GQ_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } check_variable = { global.AFR_GQ_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 21 } check_variable = { global.AFR_GQ_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } check_variable = { global.AFR_GW_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } check_variable = { global.AFR_GW_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } check_variable = { global.AFR_GW_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } check_variable = { global.AFR_GW_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 22 } check_variable = { global.AFR_GW_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } check_variable = { global.AFR_KE_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } check_variable = { global.AFR_KE_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } check_variable = { global.AFR_KE_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } check_variable = { global.AFR_KE_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 23 } check_variable = { global.AFR_KE_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } check_variable = { global.AFR_LR_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } check_variable = { global.AFR_LR_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } check_variable = { global.AFR_LR_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } check_variable = { global.AFR_LR_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 24 } check_variable = { global.AFR_LR_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } check_variable = { global.AFR_LS_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } check_variable = { global.AFR_LS_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } check_variable = { global.AFR_LS_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } check_variable = { global.AFR_LS_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 25 } check_variable = { global.AFR_LS_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } check_variable = { global.AFR_LY_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } check_variable = { global.AFR_LY_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } check_variable = { global.AFR_LY_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } check_variable = { global.AFR_LY_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } check_variable = { global.AFR_LY_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } check_variable = { global.AFR_MA_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } check_variable = { global.AFR_MA_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } check_variable = { global.AFR_MA_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } check_variable = { global.AFR_MA_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 27 } check_variable = { global.AFR_MA_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } check_variable = { global.AFR_MG_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } check_variable = { global.AFR_MG_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } check_variable = { global.AFR_MG_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } check_variable = { global.AFR_MG_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 28 } check_variable = { global.AFR_MG_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } check_variable = { global.AFR_ML_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } check_variable = { global.AFR_ML_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } check_variable = { global.AFR_ML_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } check_variable = { global.AFR_ML_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } check_variable = { global.AFR_ML_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } check_variable = { global.AFR_MR_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } check_variable = { global.AFR_MR_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } check_variable = { global.AFR_MR_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } check_variable = { global.AFR_MR_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 30 } check_variable = { global.AFR_MR_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } check_variable = { global.AFR_MW_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } check_variable = { global.AFR_MW_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } check_variable = { global.AFR_MW_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } check_variable = { global.AFR_MW_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 31 } check_variable = { global.AFR_MW_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } check_variable = { global.AFR_MZ_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } check_variable = { global.AFR_MZ_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } check_variable = { global.AFR_MZ_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } check_variable = { global.AFR_MZ_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 32 } check_variable = { global.AFR_MZ_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } check_variable = { global.AFR_NA_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } check_variable = { global.AFR_NA_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } check_variable = { global.AFR_NA_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } check_variable = { global.AFR_NA_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 33 } check_variable = { global.AFR_NA_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } check_variable = { global.AFR_NE_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } check_variable = { global.AFR_NE_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } check_variable = { global.AFR_NE_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } check_variable = { global.AFR_NE_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 34 } check_variable = { global.AFR_NE_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } check_variable = { global.AFR_NG_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } check_variable = { global.AFR_NG_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } check_variable = { global.AFR_NG_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } check_variable = { global.AFR_NG_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } check_variable = { global.AFR_NG_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } check_variable = { global.AFR_RW_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } check_variable = { global.AFR_RW_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } check_variable = { global.AFR_RW_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } check_variable = { global.AFR_RW_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 36 } check_variable = { global.AFR_RW_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } check_variable = { global.AFR_SD_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } check_variable = { global.AFR_SD_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } check_variable = { global.AFR_SD_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } check_variable = { global.AFR_SD_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } check_variable = { global.AFR_SD_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } check_variable = { global.AFR_SL_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } check_variable = { global.AFR_SL_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } check_variable = { global.AFR_SL_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } check_variable = { global.AFR_SL_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 38 } check_variable = { global.AFR_SL_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } check_variable = { global.AFR_SN_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } check_variable = { global.AFR_SN_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } check_variable = { global.AFR_SN_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } check_variable = { global.AFR_SN_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 39 } check_variable = { global.AFR_SN_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } check_variable = { global.AFR_SO_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } check_variable = { global.AFR_SO_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } check_variable = { global.AFR_SO_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } check_variable = { global.AFR_SO_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } check_variable = { global.AFR_SO_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } check_variable = { global.AFR_SS_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } check_variable = { global.AFR_SS_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } check_variable = { global.AFR_SS_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } check_variable = { global.AFR_SS_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 41 } check_variable = { global.AFR_SS_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } check_variable = { global.AFR_SZ_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } check_variable = { global.AFR_SZ_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } check_variable = { global.AFR_SZ_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } check_variable = { global.AFR_SZ_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 42 } check_variable = { global.AFR_SZ_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } check_variable = { global.AFR_TD_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } check_variable = { global.AFR_TD_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } check_variable = { global.AFR_TD_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } check_variable = { global.AFR_TD_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 43 } check_variable = { global.AFR_TD_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } check_variable = { global.AFR_TG_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } check_variable = { global.AFR_TG_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } check_variable = { global.AFR_TG_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } check_variable = { global.AFR_TG_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 44 } check_variable = { global.AFR_TG_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } check_variable = { global.AFR_TN_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } check_variable = { global.AFR_TN_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } check_variable = { global.AFR_TN_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } check_variable = { global.AFR_TN_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 45 } check_variable = { global.AFR_TN_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } check_variable = { global.AFR_TZ_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } check_variable = { global.AFR_TZ_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } check_variable = { global.AFR_TZ_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } check_variable = { global.AFR_TZ_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 46 } check_variable = { global.AFR_TZ_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } check_variable = { global.AFR_UG_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } check_variable = { global.AFR_UG_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } check_variable = { global.AFR_UG_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } check_variable = { global.AFR_UG_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 47 } check_variable = { global.AFR_UG_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } check_variable = { global.AFR_ZA_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } check_variable = { global.AFR_ZA_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } check_variable = { global.AFR_ZA_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } check_variable = { global.AFR_ZA_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } check_variable = { global.AFR_ZA_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } check_variable = { global.AFR_ZM_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } check_variable = { global.AFR_ZM_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } check_variable = { global.AFR_ZM_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } check_variable = { global.AFR_ZM_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 49 } check_variable = { global.AFR_ZM_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } check_variable = { global.AFR_ZW_dom = 0 } }
+		localization_key = SAC_africa_lead_none
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } check_variable = { global.AFR_ZW_dom = 1 } }
+		localization_key = SAC_africa_lead_SOV
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } check_variable = { global.AFR_ZW_dom = 2 } }
+		localization_key = SAC_africa_lead_PRC
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } check_variable = { global.AFR_ZW_dom = 3 } }
+		localization_key = SAC_africa_lead_EUR
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 50 } check_variable = { global.AFR_ZW_dom = 4 } }
+		localization_key = SAC_africa_lead_USA
+	}
+	text = {
+		localization_key = SAC_africa_empty
+	}
+}

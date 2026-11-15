@@ -4,10 +4,7 @@ scripted_gui = {
 		window_name = "SAC_africa_button_window"
 		visible = { SAC_can_see_africa_panel = yes }
 		effects = {
-			SAC_africa_button_click = {
-				if = { limit = { has_country_flag = SAC_africa_panel_open } clr_country_flag = SAC_africa_panel_open }
-				else = { set_country_flag = SAC_africa_panel_open }
-			}
+			SAC_africa_button_click = { if = { limit = { has_country_flag = SAC_africa_panel_open } clr_country_flag = SAC_africa_panel_open } else = { set_country_flag = SAC_africa_panel_open } }
 		}
 	}
 
@@ -17,258 +14,652 @@ scripted_gui = {
 		visible = { SAC_can_see_africa_panel = yes has_country_flag = SAC_africa_panel_open }
 		effects = {
 			SAC_africa_close_click = { clr_country_flag = SAC_africa_panel_open }
+			SAC_africa_tab_inv_click = { set_variable = { AFR_tab = 1 } }
+			SAC_africa_tab_mil_click = { set_variable = { AFR_tab = 2 } }
+			afr_AO_0_click = { set_variable = { AFR_sel = 1 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_AO_1_click = { set_variable = { AFR_sel = 1 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_AO_2_click = { set_variable = { AFR_sel = 1 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_AO_3_click = { set_variable = { AFR_sel = 1 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_AO_4_click = { set_variable = { AFR_sel = 1 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BF_0_click = { set_variable = { AFR_sel = 2 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BF_1_click = { set_variable = { AFR_sel = 2 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BF_2_click = { set_variable = { AFR_sel = 2 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BF_3_click = { set_variable = { AFR_sel = 2 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BF_4_click = { set_variable = { AFR_sel = 2 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BI_0_click = { set_variable = { AFR_sel = 3 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BI_1_click = { set_variable = { AFR_sel = 3 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BI_2_click = { set_variable = { AFR_sel = 3 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BI_3_click = { set_variable = { AFR_sel = 3 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BI_4_click = { set_variable = { AFR_sel = 3 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BJ_0_click = { set_variable = { AFR_sel = 4 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BJ_1_click = { set_variable = { AFR_sel = 4 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BJ_2_click = { set_variable = { AFR_sel = 4 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BJ_3_click = { set_variable = { AFR_sel = 4 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BJ_4_click = { set_variable = { AFR_sel = 4 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BW_0_click = { set_variable = { AFR_sel = 5 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BW_1_click = { set_variable = { AFR_sel = 5 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BW_2_click = { set_variable = { AFR_sel = 5 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BW_3_click = { set_variable = { AFR_sel = 5 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_BW_4_click = { set_variable = { AFR_sel = 5 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CD_0_click = { set_variable = { AFR_sel = 6 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CD_1_click = { set_variable = { AFR_sel = 6 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CD_2_click = { set_variable = { AFR_sel = 6 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CD_3_click = { set_variable = { AFR_sel = 6 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CD_4_click = { set_variable = { AFR_sel = 6 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CF_0_click = { set_variable = { AFR_sel = 7 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CF_1_click = { set_variable = { AFR_sel = 7 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CF_2_click = { set_variable = { AFR_sel = 7 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CF_3_click = { set_variable = { AFR_sel = 7 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CF_4_click = { set_variable = { AFR_sel = 7 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CG_0_click = { set_variable = { AFR_sel = 8 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CG_1_click = { set_variable = { AFR_sel = 8 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CG_2_click = { set_variable = { AFR_sel = 8 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CG_3_click = { set_variable = { AFR_sel = 8 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CG_4_click = { set_variable = { AFR_sel = 8 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CI_0_click = { set_variable = { AFR_sel = 9 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CI_1_click = { set_variable = { AFR_sel = 9 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CI_2_click = { set_variable = { AFR_sel = 9 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CI_3_click = { set_variable = { AFR_sel = 9 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CI_4_click = { set_variable = { AFR_sel = 9 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CM_0_click = { set_variable = { AFR_sel = 10 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CM_1_click = { set_variable = { AFR_sel = 10 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CM_2_click = { set_variable = { AFR_sel = 10 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CM_3_click = { set_variable = { AFR_sel = 10 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_CM_4_click = { set_variable = { AFR_sel = 10 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DJ_0_click = { set_variable = { AFR_sel = 11 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DJ_1_click = { set_variable = { AFR_sel = 11 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DJ_2_click = { set_variable = { AFR_sel = 11 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DJ_3_click = { set_variable = { AFR_sel = 11 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DJ_4_click = { set_variable = { AFR_sel = 11 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DZ_0_click = { set_variable = { AFR_sel = 12 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DZ_1_click = { set_variable = { AFR_sel = 12 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DZ_2_click = { set_variable = { AFR_sel = 12 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DZ_3_click = { set_variable = { AFR_sel = 12 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_DZ_4_click = { set_variable = { AFR_sel = 12 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EG_0_click = { set_variable = { AFR_sel = 13 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EG_1_click = { set_variable = { AFR_sel = 13 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EG_2_click = { set_variable = { AFR_sel = 13 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EG_3_click = { set_variable = { AFR_sel = 13 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EG_4_click = { set_variable = { AFR_sel = 13 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EH_0_click = { set_variable = { AFR_sel = 14 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EH_1_click = { set_variable = { AFR_sel = 14 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EH_2_click = { set_variable = { AFR_sel = 14 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EH_3_click = { set_variable = { AFR_sel = 14 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_EH_4_click = { set_variable = { AFR_sel = 14 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ER_0_click = { set_variable = { AFR_sel = 15 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ER_1_click = { set_variable = { AFR_sel = 15 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ER_2_click = { set_variable = { AFR_sel = 15 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ER_3_click = { set_variable = { AFR_sel = 15 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ER_4_click = { set_variable = { AFR_sel = 15 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ET_0_click = { set_variable = { AFR_sel = 16 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ET_1_click = { set_variable = { AFR_sel = 16 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ET_2_click = { set_variable = { AFR_sel = 16 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ET_3_click = { set_variable = { AFR_sel = 16 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ET_4_click = { set_variable = { AFR_sel = 16 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GA_0_click = { set_variable = { AFR_sel = 17 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GA_1_click = { set_variable = { AFR_sel = 17 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GA_2_click = { set_variable = { AFR_sel = 17 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GA_3_click = { set_variable = { AFR_sel = 17 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GA_4_click = { set_variable = { AFR_sel = 17 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GH_0_click = { set_variable = { AFR_sel = 18 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GH_1_click = { set_variable = { AFR_sel = 18 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GH_2_click = { set_variable = { AFR_sel = 18 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GH_3_click = { set_variable = { AFR_sel = 18 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GH_4_click = { set_variable = { AFR_sel = 18 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GM_0_click = { set_variable = { AFR_sel = 19 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GM_1_click = { set_variable = { AFR_sel = 19 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GM_2_click = { set_variable = { AFR_sel = 19 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GM_3_click = { set_variable = { AFR_sel = 19 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GM_4_click = { set_variable = { AFR_sel = 19 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GN_0_click = { set_variable = { AFR_sel = 20 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GN_1_click = { set_variable = { AFR_sel = 20 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GN_2_click = { set_variable = { AFR_sel = 20 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GN_3_click = { set_variable = { AFR_sel = 20 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GN_4_click = { set_variable = { AFR_sel = 20 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GQ_0_click = { set_variable = { AFR_sel = 21 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GQ_1_click = { set_variable = { AFR_sel = 21 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GQ_2_click = { set_variable = { AFR_sel = 21 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GQ_3_click = { set_variable = { AFR_sel = 21 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GQ_4_click = { set_variable = { AFR_sel = 21 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GW_0_click = { set_variable = { AFR_sel = 22 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GW_1_click = { set_variable = { AFR_sel = 22 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GW_2_click = { set_variable = { AFR_sel = 22 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GW_3_click = { set_variable = { AFR_sel = 22 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_GW_4_click = { set_variable = { AFR_sel = 22 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_KE_0_click = { set_variable = { AFR_sel = 23 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_KE_1_click = { set_variable = { AFR_sel = 23 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_KE_2_click = { set_variable = { AFR_sel = 23 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_KE_3_click = { set_variable = { AFR_sel = 23 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_KE_4_click = { set_variable = { AFR_sel = 23 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LR_0_click = { set_variable = { AFR_sel = 24 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LR_1_click = { set_variable = { AFR_sel = 24 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LR_2_click = { set_variable = { AFR_sel = 24 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LR_3_click = { set_variable = { AFR_sel = 24 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LR_4_click = { set_variable = { AFR_sel = 24 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LS_0_click = { set_variable = { AFR_sel = 25 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LS_1_click = { set_variable = { AFR_sel = 25 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LS_2_click = { set_variable = { AFR_sel = 25 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LS_3_click = { set_variable = { AFR_sel = 25 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LS_4_click = { set_variable = { AFR_sel = 25 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LY_0_click = { set_variable = { AFR_sel = 26 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LY_1_click = { set_variable = { AFR_sel = 26 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LY_2_click = { set_variable = { AFR_sel = 26 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LY_3_click = { set_variable = { AFR_sel = 26 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_LY_4_click = { set_variable = { AFR_sel = 26 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MA_0_click = { set_variable = { AFR_sel = 27 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MA_1_click = { set_variable = { AFR_sel = 27 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MA_2_click = { set_variable = { AFR_sel = 27 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MA_3_click = { set_variable = { AFR_sel = 27 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MA_4_click = { set_variable = { AFR_sel = 27 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MG_0_click = { set_variable = { AFR_sel = 28 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MG_1_click = { set_variable = { AFR_sel = 28 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MG_2_click = { set_variable = { AFR_sel = 28 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MG_3_click = { set_variable = { AFR_sel = 28 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MG_4_click = { set_variable = { AFR_sel = 28 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ML_0_click = { set_variable = { AFR_sel = 29 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ML_1_click = { set_variable = { AFR_sel = 29 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ML_2_click = { set_variable = { AFR_sel = 29 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ML_3_click = { set_variable = { AFR_sel = 29 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ML_4_click = { set_variable = { AFR_sel = 29 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MR_0_click = { set_variable = { AFR_sel = 30 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MR_1_click = { set_variable = { AFR_sel = 30 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MR_2_click = { set_variable = { AFR_sel = 30 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MR_3_click = { set_variable = { AFR_sel = 30 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MR_4_click = { set_variable = { AFR_sel = 30 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MW_0_click = { set_variable = { AFR_sel = 31 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MW_1_click = { set_variable = { AFR_sel = 31 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MW_2_click = { set_variable = { AFR_sel = 31 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MW_3_click = { set_variable = { AFR_sel = 31 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MW_4_click = { set_variable = { AFR_sel = 31 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MZ_0_click = { set_variable = { AFR_sel = 32 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MZ_1_click = { set_variable = { AFR_sel = 32 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MZ_2_click = { set_variable = { AFR_sel = 32 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MZ_3_click = { set_variable = { AFR_sel = 32 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_MZ_4_click = { set_variable = { AFR_sel = 32 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NA_0_click = { set_variable = { AFR_sel = 33 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NA_1_click = { set_variable = { AFR_sel = 33 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NA_2_click = { set_variable = { AFR_sel = 33 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NA_3_click = { set_variable = { AFR_sel = 33 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NA_4_click = { set_variable = { AFR_sel = 33 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NE_0_click = { set_variable = { AFR_sel = 34 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NE_1_click = { set_variable = { AFR_sel = 34 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NE_2_click = { set_variable = { AFR_sel = 34 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NE_3_click = { set_variable = { AFR_sel = 34 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NE_4_click = { set_variable = { AFR_sel = 34 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NG_0_click = { set_variable = { AFR_sel = 35 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NG_1_click = { set_variable = { AFR_sel = 35 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NG_2_click = { set_variable = { AFR_sel = 35 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NG_3_click = { set_variable = { AFR_sel = 35 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_NG_4_click = { set_variable = { AFR_sel = 35 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_RW_0_click = { set_variable = { AFR_sel = 36 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_RW_1_click = { set_variable = { AFR_sel = 36 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_RW_2_click = { set_variable = { AFR_sel = 36 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_RW_3_click = { set_variable = { AFR_sel = 36 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_RW_4_click = { set_variable = { AFR_sel = 36 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SD_0_click = { set_variable = { AFR_sel = 37 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SD_1_click = { set_variable = { AFR_sel = 37 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SD_2_click = { set_variable = { AFR_sel = 37 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SD_3_click = { set_variable = { AFR_sel = 37 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SD_4_click = { set_variable = { AFR_sel = 37 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SL_0_click = { set_variable = { AFR_sel = 38 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SL_1_click = { set_variable = { AFR_sel = 38 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SL_2_click = { set_variable = { AFR_sel = 38 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SL_3_click = { set_variable = { AFR_sel = 38 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SL_4_click = { set_variable = { AFR_sel = 38 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SN_0_click = { set_variable = { AFR_sel = 39 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SN_1_click = { set_variable = { AFR_sel = 39 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SN_2_click = { set_variable = { AFR_sel = 39 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SN_3_click = { set_variable = { AFR_sel = 39 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SN_4_click = { set_variable = { AFR_sel = 39 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SO_0_click = { set_variable = { AFR_sel = 40 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SO_1_click = { set_variable = { AFR_sel = 40 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SO_2_click = { set_variable = { AFR_sel = 40 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SO_3_click = { set_variable = { AFR_sel = 40 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SO_4_click = { set_variable = { AFR_sel = 40 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SS_0_click = { set_variable = { AFR_sel = 41 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SS_1_click = { set_variable = { AFR_sel = 41 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SS_2_click = { set_variable = { AFR_sel = 41 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SS_3_click = { set_variable = { AFR_sel = 41 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SS_4_click = { set_variable = { AFR_sel = 41 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SZ_0_click = { set_variable = { AFR_sel = 42 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SZ_1_click = { set_variable = { AFR_sel = 42 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SZ_2_click = { set_variable = { AFR_sel = 42 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SZ_3_click = { set_variable = { AFR_sel = 42 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_SZ_4_click = { set_variable = { AFR_sel = 42 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TD_0_click = { set_variable = { AFR_sel = 43 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TD_1_click = { set_variable = { AFR_sel = 43 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TD_2_click = { set_variable = { AFR_sel = 43 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TD_3_click = { set_variable = { AFR_sel = 43 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TD_4_click = { set_variable = { AFR_sel = 43 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TG_0_click = { set_variable = { AFR_sel = 44 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TG_1_click = { set_variable = { AFR_sel = 44 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TG_2_click = { set_variable = { AFR_sel = 44 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TG_3_click = { set_variable = { AFR_sel = 44 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TG_4_click = { set_variable = { AFR_sel = 44 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TN_0_click = { set_variable = { AFR_sel = 45 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TN_1_click = { set_variable = { AFR_sel = 45 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TN_2_click = { set_variable = { AFR_sel = 45 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TN_3_click = { set_variable = { AFR_sel = 45 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TN_4_click = { set_variable = { AFR_sel = 45 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TZ_0_click = { set_variable = { AFR_sel = 46 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TZ_1_click = { set_variable = { AFR_sel = 46 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TZ_2_click = { set_variable = { AFR_sel = 46 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TZ_3_click = { set_variable = { AFR_sel = 46 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_TZ_4_click = { set_variable = { AFR_sel = 46 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_UG_0_click = { set_variable = { AFR_sel = 47 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_UG_1_click = { set_variable = { AFR_sel = 47 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_UG_2_click = { set_variable = { AFR_sel = 47 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_UG_3_click = { set_variable = { AFR_sel = 47 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_UG_4_click = { set_variable = { AFR_sel = 47 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZA_0_click = { set_variable = { AFR_sel = 48 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZA_1_click = { set_variable = { AFR_sel = 48 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZA_2_click = { set_variable = { AFR_sel = 48 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZA_3_click = { set_variable = { AFR_sel = 48 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZA_4_click = { set_variable = { AFR_sel = 48 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZM_0_click = { set_variable = { AFR_sel = 49 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZM_1_click = { set_variable = { AFR_sel = 49 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZM_2_click = { set_variable = { AFR_sel = 49 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZM_3_click = { set_variable = { AFR_sel = 49 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZM_4_click = { set_variable = { AFR_sel = 49 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZW_0_click = { set_variable = { AFR_sel = 50 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZW_1_click = { set_variable = { AFR_sel = 50 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZW_2_click = { set_variable = { AFR_sel = 50 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZW_3_click = { set_variable = { AFR_sel = 50 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			afr_ZW_4_click = { set_variable = { AFR_sel = 50 } if = { limit = { NOT = { check_variable = { AFR_tab > 0 } } } set_variable = { AFR_tab = 1 } } }
+			SAC_africa_act_infra_click = { if = { limit = { check_variable = { AFR_sel = 1 } SAC_afr_can_infra_AO = yes } SAC_afr_do_infra_AO = yes } if = { limit = { check_variable = { AFR_sel = 2 } SAC_afr_can_infra_BF = yes } SAC_afr_do_infra_BF = yes } if = { limit = { check_variable = { AFR_sel = 3 } SAC_afr_can_infra_BI = yes } SAC_afr_do_infra_BI = yes } if = { limit = { check_variable = { AFR_sel = 4 } SAC_afr_can_infra_BJ = yes } SAC_afr_do_infra_BJ = yes } if = { limit = { check_variable = { AFR_sel = 5 } SAC_afr_can_infra_BW = yes } SAC_afr_do_infra_BW = yes } if = { limit = { check_variable = { AFR_sel = 6 } SAC_afr_can_infra_CD = yes } SAC_afr_do_infra_CD = yes } if = { limit = { check_variable = { AFR_sel = 7 } SAC_afr_can_infra_CF = yes } SAC_afr_do_infra_CF = yes } if = { limit = { check_variable = { AFR_sel = 8 } SAC_afr_can_infra_CG = yes } SAC_afr_do_infra_CG = yes } if = { limit = { check_variable = { AFR_sel = 9 } SAC_afr_can_infra_CI = yes } SAC_afr_do_infra_CI = yes } if = { limit = { check_variable = { AFR_sel = 10 } SAC_afr_can_infra_CM = yes } SAC_afr_do_infra_CM = yes } if = { limit = { check_variable = { AFR_sel = 11 } SAC_afr_can_infra_DJ = yes } SAC_afr_do_infra_DJ = yes } if = { limit = { check_variable = { AFR_sel = 12 } SAC_afr_can_infra_DZ = yes } SAC_afr_do_infra_DZ = yes } if = { limit = { check_variable = { AFR_sel = 13 } SAC_afr_can_infra_EG = yes } SAC_afr_do_infra_EG = yes } if = { limit = { check_variable = { AFR_sel = 14 } SAC_afr_can_infra_EH = yes } SAC_afr_do_infra_EH = yes } if = { limit = { check_variable = { AFR_sel = 15 } SAC_afr_can_infra_ER = yes } SAC_afr_do_infra_ER = yes } if = { limit = { check_variable = { AFR_sel = 16 } SAC_afr_can_infra_ET = yes } SAC_afr_do_infra_ET = yes } if = { limit = { check_variable = { AFR_sel = 17 } SAC_afr_can_infra_GA = yes } SAC_afr_do_infra_GA = yes } if = { limit = { check_variable = { AFR_sel = 18 } SAC_afr_can_infra_GH = yes } SAC_afr_do_infra_GH = yes } if = { limit = { check_variable = { AFR_sel = 19 } SAC_afr_can_infra_GM = yes } SAC_afr_do_infra_GM = yes } if = { limit = { check_variable = { AFR_sel = 20 } SAC_afr_can_infra_GN = yes } SAC_afr_do_infra_GN = yes } if = { limit = { check_variable = { AFR_sel = 21 } SAC_afr_can_infra_GQ = yes } SAC_afr_do_infra_GQ = yes } if = { limit = { check_variable = { AFR_sel = 22 } SAC_afr_can_infra_GW = yes } SAC_afr_do_infra_GW = yes } if = { limit = { check_variable = { AFR_sel = 23 } SAC_afr_can_infra_KE = yes } SAC_afr_do_infra_KE = yes } if = { limit = { check_variable = { AFR_sel = 24 } SAC_afr_can_infra_LR = yes } SAC_afr_do_infra_LR = yes } if = { limit = { check_variable = { AFR_sel = 25 } SAC_afr_can_infra_LS = yes } SAC_afr_do_infra_LS = yes } if = { limit = { check_variable = { AFR_sel = 26 } SAC_afr_can_infra_LY = yes } SAC_afr_do_infra_LY = yes } if = { limit = { check_variable = { AFR_sel = 27 } SAC_afr_can_infra_MA = yes } SAC_afr_do_infra_MA = yes } if = { limit = { check_variable = { AFR_sel = 28 } SAC_afr_can_infra_MG = yes } SAC_afr_do_infra_MG = yes } if = { limit = { check_variable = { AFR_sel = 29 } SAC_afr_can_infra_ML = yes } SAC_afr_do_infra_ML = yes } if = { limit = { check_variable = { AFR_sel = 30 } SAC_afr_can_infra_MR = yes } SAC_afr_do_infra_MR = yes } if = { limit = { check_variable = { AFR_sel = 31 } SAC_afr_can_infra_MW = yes } SAC_afr_do_infra_MW = yes } if = { limit = { check_variable = { AFR_sel = 32 } SAC_afr_can_infra_MZ = yes } SAC_afr_do_infra_MZ = yes } if = { limit = { check_variable = { AFR_sel = 33 } SAC_afr_can_infra_NA = yes } SAC_afr_do_infra_NA = yes } if = { limit = { check_variable = { AFR_sel = 34 } SAC_afr_can_infra_NE = yes } SAC_afr_do_infra_NE = yes } if = { limit = { check_variable = { AFR_sel = 35 } SAC_afr_can_infra_NG = yes } SAC_afr_do_infra_NG = yes } if = { limit = { check_variable = { AFR_sel = 36 } SAC_afr_can_infra_RW = yes } SAC_afr_do_infra_RW = yes } if = { limit = { check_variable = { AFR_sel = 37 } SAC_afr_can_infra_SD = yes } SAC_afr_do_infra_SD = yes } if = { limit = { check_variable = { AFR_sel = 38 } SAC_afr_can_infra_SL = yes } SAC_afr_do_infra_SL = yes } if = { limit = { check_variable = { AFR_sel = 39 } SAC_afr_can_infra_SN = yes } SAC_afr_do_infra_SN = yes } if = { limit = { check_variable = { AFR_sel = 40 } SAC_afr_can_infra_SO = yes } SAC_afr_do_infra_SO = yes } if = { limit = { check_variable = { AFR_sel = 41 } SAC_afr_can_infra_SS = yes } SAC_afr_do_infra_SS = yes } if = { limit = { check_variable = { AFR_sel = 42 } SAC_afr_can_infra_SZ = yes } SAC_afr_do_infra_SZ = yes } if = { limit = { check_variable = { AFR_sel = 43 } SAC_afr_can_infra_TD = yes } SAC_afr_do_infra_TD = yes } if = { limit = { check_variable = { AFR_sel = 44 } SAC_afr_can_infra_TG = yes } SAC_afr_do_infra_TG = yes } if = { limit = { check_variable = { AFR_sel = 45 } SAC_afr_can_infra_TN = yes } SAC_afr_do_infra_TN = yes } if = { limit = { check_variable = { AFR_sel = 46 } SAC_afr_can_infra_TZ = yes } SAC_afr_do_infra_TZ = yes } if = { limit = { check_variable = { AFR_sel = 47 } SAC_afr_can_infra_UG = yes } SAC_afr_do_infra_UG = yes } if = { limit = { check_variable = { AFR_sel = 48 } SAC_afr_can_infra_ZA = yes } SAC_afr_do_infra_ZA = yes } if = { limit = { check_variable = { AFR_sel = 49 } SAC_afr_can_infra_ZM = yes } SAC_afr_do_infra_ZM = yes } if = { limit = { check_variable = { AFR_sel = 50 } SAC_afr_can_infra_ZW = yes } SAC_afr_do_infra_ZW = yes } }
+			SAC_africa_act_civ_click = { if = { limit = { check_variable = { AFR_sel = 1 } SAC_afr_can_civ_AO = yes } SAC_afr_do_civ_AO = yes } if = { limit = { check_variable = { AFR_sel = 2 } SAC_afr_can_civ_BF = yes } SAC_afr_do_civ_BF = yes } if = { limit = { check_variable = { AFR_sel = 3 } SAC_afr_can_civ_BI = yes } SAC_afr_do_civ_BI = yes } if = { limit = { check_variable = { AFR_sel = 4 } SAC_afr_can_civ_BJ = yes } SAC_afr_do_civ_BJ = yes } if = { limit = { check_variable = { AFR_sel = 5 } SAC_afr_can_civ_BW = yes } SAC_afr_do_civ_BW = yes } if = { limit = { check_variable = { AFR_sel = 6 } SAC_afr_can_civ_CD = yes } SAC_afr_do_civ_CD = yes } if = { limit = { check_variable = { AFR_sel = 7 } SAC_afr_can_civ_CF = yes } SAC_afr_do_civ_CF = yes } if = { limit = { check_variable = { AFR_sel = 8 } SAC_afr_can_civ_CG = yes } SAC_afr_do_civ_CG = yes } if = { limit = { check_variable = { AFR_sel = 9 } SAC_afr_can_civ_CI = yes } SAC_afr_do_civ_CI = yes } if = { limit = { check_variable = { AFR_sel = 10 } SAC_afr_can_civ_CM = yes } SAC_afr_do_civ_CM = yes } if = { limit = { check_variable = { AFR_sel = 11 } SAC_afr_can_civ_DJ = yes } SAC_afr_do_civ_DJ = yes } if = { limit = { check_variable = { AFR_sel = 12 } SAC_afr_can_civ_DZ = yes } SAC_afr_do_civ_DZ = yes } if = { limit = { check_variable = { AFR_sel = 13 } SAC_afr_can_civ_EG = yes } SAC_afr_do_civ_EG = yes } if = { limit = { check_variable = { AFR_sel = 14 } SAC_afr_can_civ_EH = yes } SAC_afr_do_civ_EH = yes } if = { limit = { check_variable = { AFR_sel = 15 } SAC_afr_can_civ_ER = yes } SAC_afr_do_civ_ER = yes } if = { limit = { check_variable = { AFR_sel = 16 } SAC_afr_can_civ_ET = yes } SAC_afr_do_civ_ET = yes } if = { limit = { check_variable = { AFR_sel = 17 } SAC_afr_can_civ_GA = yes } SAC_afr_do_civ_GA = yes } if = { limit = { check_variable = { AFR_sel = 18 } SAC_afr_can_civ_GH = yes } SAC_afr_do_civ_GH = yes } if = { limit = { check_variable = { AFR_sel = 19 } SAC_afr_can_civ_GM = yes } SAC_afr_do_civ_GM = yes } if = { limit = { check_variable = { AFR_sel = 20 } SAC_afr_can_civ_GN = yes } SAC_afr_do_civ_GN = yes } if = { limit = { check_variable = { AFR_sel = 21 } SAC_afr_can_civ_GQ = yes } SAC_afr_do_civ_GQ = yes } if = { limit = { check_variable = { AFR_sel = 22 } SAC_afr_can_civ_GW = yes } SAC_afr_do_civ_GW = yes } if = { limit = { check_variable = { AFR_sel = 23 } SAC_afr_can_civ_KE = yes } SAC_afr_do_civ_KE = yes } if = { limit = { check_variable = { AFR_sel = 24 } SAC_afr_can_civ_LR = yes } SAC_afr_do_civ_LR = yes } if = { limit = { check_variable = { AFR_sel = 25 } SAC_afr_can_civ_LS = yes } SAC_afr_do_civ_LS = yes } if = { limit = { check_variable = { AFR_sel = 26 } SAC_afr_can_civ_LY = yes } SAC_afr_do_civ_LY = yes } if = { limit = { check_variable = { AFR_sel = 27 } SAC_afr_can_civ_MA = yes } SAC_afr_do_civ_MA = yes } if = { limit = { check_variable = { AFR_sel = 28 } SAC_afr_can_civ_MG = yes } SAC_afr_do_civ_MG = yes } if = { limit = { check_variable = { AFR_sel = 29 } SAC_afr_can_civ_ML = yes } SAC_afr_do_civ_ML = yes } if = { limit = { check_variable = { AFR_sel = 30 } SAC_afr_can_civ_MR = yes } SAC_afr_do_civ_MR = yes } if = { limit = { check_variable = { AFR_sel = 31 } SAC_afr_can_civ_MW = yes } SAC_afr_do_civ_MW = yes } if = { limit = { check_variable = { AFR_sel = 32 } SAC_afr_can_civ_MZ = yes } SAC_afr_do_civ_MZ = yes } if = { limit = { check_variable = { AFR_sel = 33 } SAC_afr_can_civ_NA = yes } SAC_afr_do_civ_NA = yes } if = { limit = { check_variable = { AFR_sel = 34 } SAC_afr_can_civ_NE = yes } SAC_afr_do_civ_NE = yes } if = { limit = { check_variable = { AFR_sel = 35 } SAC_afr_can_civ_NG = yes } SAC_afr_do_civ_NG = yes } if = { limit = { check_variable = { AFR_sel = 36 } SAC_afr_can_civ_RW = yes } SAC_afr_do_civ_RW = yes } if = { limit = { check_variable = { AFR_sel = 37 } SAC_afr_can_civ_SD = yes } SAC_afr_do_civ_SD = yes } if = { limit = { check_variable = { AFR_sel = 38 } SAC_afr_can_civ_SL = yes } SAC_afr_do_civ_SL = yes } if = { limit = { check_variable = { AFR_sel = 39 } SAC_afr_can_civ_SN = yes } SAC_afr_do_civ_SN = yes } if = { limit = { check_variable = { AFR_sel = 40 } SAC_afr_can_civ_SO = yes } SAC_afr_do_civ_SO = yes } if = { limit = { check_variable = { AFR_sel = 41 } SAC_afr_can_civ_SS = yes } SAC_afr_do_civ_SS = yes } if = { limit = { check_variable = { AFR_sel = 42 } SAC_afr_can_civ_SZ = yes } SAC_afr_do_civ_SZ = yes } if = { limit = { check_variable = { AFR_sel = 43 } SAC_afr_can_civ_TD = yes } SAC_afr_do_civ_TD = yes } if = { limit = { check_variable = { AFR_sel = 44 } SAC_afr_can_civ_TG = yes } SAC_afr_do_civ_TG = yes } if = { limit = { check_variable = { AFR_sel = 45 } SAC_afr_can_civ_TN = yes } SAC_afr_do_civ_TN = yes } if = { limit = { check_variable = { AFR_sel = 46 } SAC_afr_can_civ_TZ = yes } SAC_afr_do_civ_TZ = yes } if = { limit = { check_variable = { AFR_sel = 47 } SAC_afr_can_civ_UG = yes } SAC_afr_do_civ_UG = yes } if = { limit = { check_variable = { AFR_sel = 48 } SAC_afr_can_civ_ZA = yes } SAC_afr_do_civ_ZA = yes } if = { limit = { check_variable = { AFR_sel = 49 } SAC_afr_can_civ_ZM = yes } SAC_afr_do_civ_ZM = yes } if = { limit = { check_variable = { AFR_sel = 50 } SAC_afr_can_civ_ZW = yes } SAC_afr_do_civ_ZW = yes } }
+			SAC_africa_act_power_click = { if = { limit = { check_variable = { AFR_sel = 1 } SAC_afr_can_power_AO = yes } SAC_afr_do_power_AO = yes } if = { limit = { check_variable = { AFR_sel = 2 } SAC_afr_can_power_BF = yes } SAC_afr_do_power_BF = yes } if = { limit = { check_variable = { AFR_sel = 3 } SAC_afr_can_power_BI = yes } SAC_afr_do_power_BI = yes } if = { limit = { check_variable = { AFR_sel = 4 } SAC_afr_can_power_BJ = yes } SAC_afr_do_power_BJ = yes } if = { limit = { check_variable = { AFR_sel = 5 } SAC_afr_can_power_BW = yes } SAC_afr_do_power_BW = yes } if = { limit = { check_variable = { AFR_sel = 6 } SAC_afr_can_power_CD = yes } SAC_afr_do_power_CD = yes } if = { limit = { check_variable = { AFR_sel = 7 } SAC_afr_can_power_CF = yes } SAC_afr_do_power_CF = yes } if = { limit = { check_variable = { AFR_sel = 8 } SAC_afr_can_power_CG = yes } SAC_afr_do_power_CG = yes } if = { limit = { check_variable = { AFR_sel = 9 } SAC_afr_can_power_CI = yes } SAC_afr_do_power_CI = yes } if = { limit = { check_variable = { AFR_sel = 10 } SAC_afr_can_power_CM = yes } SAC_afr_do_power_CM = yes } if = { limit = { check_variable = { AFR_sel = 11 } SAC_afr_can_power_DJ = yes } SAC_afr_do_power_DJ = yes } if = { limit = { check_variable = { AFR_sel = 12 } SAC_afr_can_power_DZ = yes } SAC_afr_do_power_DZ = yes } if = { limit = { check_variable = { AFR_sel = 13 } SAC_afr_can_power_EG = yes } SAC_afr_do_power_EG = yes } if = { limit = { check_variable = { AFR_sel = 14 } SAC_afr_can_power_EH = yes } SAC_afr_do_power_EH = yes } if = { limit = { check_variable = { AFR_sel = 15 } SAC_afr_can_power_ER = yes } SAC_afr_do_power_ER = yes } if = { limit = { check_variable = { AFR_sel = 16 } SAC_afr_can_power_ET = yes } SAC_afr_do_power_ET = yes } if = { limit = { check_variable = { AFR_sel = 17 } SAC_afr_can_power_GA = yes } SAC_afr_do_power_GA = yes } if = { limit = { check_variable = { AFR_sel = 18 } SAC_afr_can_power_GH = yes } SAC_afr_do_power_GH = yes } if = { limit = { check_variable = { AFR_sel = 19 } SAC_afr_can_power_GM = yes } SAC_afr_do_power_GM = yes } if = { limit = { check_variable = { AFR_sel = 20 } SAC_afr_can_power_GN = yes } SAC_afr_do_power_GN = yes } if = { limit = { check_variable = { AFR_sel = 21 } SAC_afr_can_power_GQ = yes } SAC_afr_do_power_GQ = yes } if = { limit = { check_variable = { AFR_sel = 22 } SAC_afr_can_power_GW = yes } SAC_afr_do_power_GW = yes } if = { limit = { check_variable = { AFR_sel = 23 } SAC_afr_can_power_KE = yes } SAC_afr_do_power_KE = yes } if = { limit = { check_variable = { AFR_sel = 24 } SAC_afr_can_power_LR = yes } SAC_afr_do_power_LR = yes } if = { limit = { check_variable = { AFR_sel = 25 } SAC_afr_can_power_LS = yes } SAC_afr_do_power_LS = yes } if = { limit = { check_variable = { AFR_sel = 26 } SAC_afr_can_power_LY = yes } SAC_afr_do_power_LY = yes } if = { limit = { check_variable = { AFR_sel = 27 } SAC_afr_can_power_MA = yes } SAC_afr_do_power_MA = yes } if = { limit = { check_variable = { AFR_sel = 28 } SAC_afr_can_power_MG = yes } SAC_afr_do_power_MG = yes } if = { limit = { check_variable = { AFR_sel = 29 } SAC_afr_can_power_ML = yes } SAC_afr_do_power_ML = yes } if = { limit = { check_variable = { AFR_sel = 30 } SAC_afr_can_power_MR = yes } SAC_afr_do_power_MR = yes } if = { limit = { check_variable = { AFR_sel = 31 } SAC_afr_can_power_MW = yes } SAC_afr_do_power_MW = yes } if = { limit = { check_variable = { AFR_sel = 32 } SAC_afr_can_power_MZ = yes } SAC_afr_do_power_MZ = yes } if = { limit = { check_variable = { AFR_sel = 33 } SAC_afr_can_power_NA = yes } SAC_afr_do_power_NA = yes } if = { limit = { check_variable = { AFR_sel = 34 } SAC_afr_can_power_NE = yes } SAC_afr_do_power_NE = yes } if = { limit = { check_variable = { AFR_sel = 35 } SAC_afr_can_power_NG = yes } SAC_afr_do_power_NG = yes } if = { limit = { check_variable = { AFR_sel = 36 } SAC_afr_can_power_RW = yes } SAC_afr_do_power_RW = yes } if = { limit = { check_variable = { AFR_sel = 37 } SAC_afr_can_power_SD = yes } SAC_afr_do_power_SD = yes } if = { limit = { check_variable = { AFR_sel = 38 } SAC_afr_can_power_SL = yes } SAC_afr_do_power_SL = yes } if = { limit = { check_variable = { AFR_sel = 39 } SAC_afr_can_power_SN = yes } SAC_afr_do_power_SN = yes } if = { limit = { check_variable = { AFR_sel = 40 } SAC_afr_can_power_SO = yes } SAC_afr_do_power_SO = yes } if = { limit = { check_variable = { AFR_sel = 41 } SAC_afr_can_power_SS = yes } SAC_afr_do_power_SS = yes } if = { limit = { check_variable = { AFR_sel = 42 } SAC_afr_can_power_SZ = yes } SAC_afr_do_power_SZ = yes } if = { limit = { check_variable = { AFR_sel = 43 } SAC_afr_can_power_TD = yes } SAC_afr_do_power_TD = yes } if = { limit = { check_variable = { AFR_sel = 44 } SAC_afr_can_power_TG = yes } SAC_afr_do_power_TG = yes } if = { limit = { check_variable = { AFR_sel = 45 } SAC_afr_can_power_TN = yes } SAC_afr_do_power_TN = yes } if = { limit = { check_variable = { AFR_sel = 46 } SAC_afr_can_power_TZ = yes } SAC_afr_do_power_TZ = yes } if = { limit = { check_variable = { AFR_sel = 47 } SAC_afr_can_power_UG = yes } SAC_afr_do_power_UG = yes } if = { limit = { check_variable = { AFR_sel = 48 } SAC_afr_can_power_ZA = yes } SAC_afr_do_power_ZA = yes } if = { limit = { check_variable = { AFR_sel = 49 } SAC_afr_can_power_ZM = yes } SAC_afr_do_power_ZM = yes } if = { limit = { check_variable = { AFR_sel = 50 } SAC_afr_can_power_ZW = yes } SAC_afr_do_power_ZW = yes } }
+			SAC_africa_act_arms_click = { if = { limit = { check_variable = { AFR_sel = 1 } SAC_afr_can_arms_AO = yes } SAC_afr_do_arms_AO = yes } if = { limit = { check_variable = { AFR_sel = 2 } SAC_afr_can_arms_BF = yes } SAC_afr_do_arms_BF = yes } if = { limit = { check_variable = { AFR_sel = 3 } SAC_afr_can_arms_BI = yes } SAC_afr_do_arms_BI = yes } if = { limit = { check_variable = { AFR_sel = 4 } SAC_afr_can_arms_BJ = yes } SAC_afr_do_arms_BJ = yes } if = { limit = { check_variable = { AFR_sel = 5 } SAC_afr_can_arms_BW = yes } SAC_afr_do_arms_BW = yes } if = { limit = { check_variable = { AFR_sel = 6 } SAC_afr_can_arms_CD = yes } SAC_afr_do_arms_CD = yes } if = { limit = { check_variable = { AFR_sel = 7 } SAC_afr_can_arms_CF = yes } SAC_afr_do_arms_CF = yes } if = { limit = { check_variable = { AFR_sel = 8 } SAC_afr_can_arms_CG = yes } SAC_afr_do_arms_CG = yes } if = { limit = { check_variable = { AFR_sel = 9 } SAC_afr_can_arms_CI = yes } SAC_afr_do_arms_CI = yes } if = { limit = { check_variable = { AFR_sel = 10 } SAC_afr_can_arms_CM = yes } SAC_afr_do_arms_CM = yes } if = { limit = { check_variable = { AFR_sel = 11 } SAC_afr_can_arms_DJ = yes } SAC_afr_do_arms_DJ = yes } if = { limit = { check_variable = { AFR_sel = 12 } SAC_afr_can_arms_DZ = yes } SAC_afr_do_arms_DZ = yes } if = { limit = { check_variable = { AFR_sel = 13 } SAC_afr_can_arms_EG = yes } SAC_afr_do_arms_EG = yes } if = { limit = { check_variable = { AFR_sel = 14 } SAC_afr_can_arms_EH = yes } SAC_afr_do_arms_EH = yes } if = { limit = { check_variable = { AFR_sel = 15 } SAC_afr_can_arms_ER = yes } SAC_afr_do_arms_ER = yes } if = { limit = { check_variable = { AFR_sel = 16 } SAC_afr_can_arms_ET = yes } SAC_afr_do_arms_ET = yes } if = { limit = { check_variable = { AFR_sel = 17 } SAC_afr_can_arms_GA = yes } SAC_afr_do_arms_GA = yes } if = { limit = { check_variable = { AFR_sel = 18 } SAC_afr_can_arms_GH = yes } SAC_afr_do_arms_GH = yes } if = { limit = { check_variable = { AFR_sel = 19 } SAC_afr_can_arms_GM = yes } SAC_afr_do_arms_GM = yes } if = { limit = { check_variable = { AFR_sel = 20 } SAC_afr_can_arms_GN = yes } SAC_afr_do_arms_GN = yes } if = { limit = { check_variable = { AFR_sel = 21 } SAC_afr_can_arms_GQ = yes } SAC_afr_do_arms_GQ = yes } if = { limit = { check_variable = { AFR_sel = 22 } SAC_afr_can_arms_GW = yes } SAC_afr_do_arms_GW = yes } if = { limit = { check_variable = { AFR_sel = 23 } SAC_afr_can_arms_KE = yes } SAC_afr_do_arms_KE = yes } if = { limit = { check_variable = { AFR_sel = 24 } SAC_afr_can_arms_LR = yes } SAC_afr_do_arms_LR = yes } if = { limit = { check_variable = { AFR_sel = 25 } SAC_afr_can_arms_LS = yes } SAC_afr_do_arms_LS = yes } if = { limit = { check_variable = { AFR_sel = 26 } SAC_afr_can_arms_LY = yes } SAC_afr_do_arms_LY = yes } if = { limit = { check_variable = { AFR_sel = 27 } SAC_afr_can_arms_MA = yes } SAC_afr_do_arms_MA = yes } if = { limit = { check_variable = { AFR_sel = 28 } SAC_afr_can_arms_MG = yes } SAC_afr_do_arms_MG = yes } if = { limit = { check_variable = { AFR_sel = 29 } SAC_afr_can_arms_ML = yes } SAC_afr_do_arms_ML = yes } if = { limit = { check_variable = { AFR_sel = 30 } SAC_afr_can_arms_MR = yes } SAC_afr_do_arms_MR = yes } if = { limit = { check_variable = { AFR_sel = 31 } SAC_afr_can_arms_MW = yes } SAC_afr_do_arms_MW = yes } if = { limit = { check_variable = { AFR_sel = 32 } SAC_afr_can_arms_MZ = yes } SAC_afr_do_arms_MZ = yes } if = { limit = { check_variable = { AFR_sel = 33 } SAC_afr_can_arms_NA = yes } SAC_afr_do_arms_NA = yes } if = { limit = { check_variable = { AFR_sel = 34 } SAC_afr_can_arms_NE = yes } SAC_afr_do_arms_NE = yes } if = { limit = { check_variable = { AFR_sel = 35 } SAC_afr_can_arms_NG = yes } SAC_afr_do_arms_NG = yes } if = { limit = { check_variable = { AFR_sel = 36 } SAC_afr_can_arms_RW = yes } SAC_afr_do_arms_RW = yes } if = { limit = { check_variable = { AFR_sel = 37 } SAC_afr_can_arms_SD = yes } SAC_afr_do_arms_SD = yes } if = { limit = { check_variable = { AFR_sel = 38 } SAC_afr_can_arms_SL = yes } SAC_afr_do_arms_SL = yes } if = { limit = { check_variable = { AFR_sel = 39 } SAC_afr_can_arms_SN = yes } SAC_afr_do_arms_SN = yes } if = { limit = { check_variable = { AFR_sel = 40 } SAC_afr_can_arms_SO = yes } SAC_afr_do_arms_SO = yes } if = { limit = { check_variable = { AFR_sel = 41 } SAC_afr_can_arms_SS = yes } SAC_afr_do_arms_SS = yes } if = { limit = { check_variable = { AFR_sel = 42 } SAC_afr_can_arms_SZ = yes } SAC_afr_do_arms_SZ = yes } if = { limit = { check_variable = { AFR_sel = 43 } SAC_afr_can_arms_TD = yes } SAC_afr_do_arms_TD = yes } if = { limit = { check_variable = { AFR_sel = 44 } SAC_afr_can_arms_TG = yes } SAC_afr_do_arms_TG = yes } if = { limit = { check_variable = { AFR_sel = 45 } SAC_afr_can_arms_TN = yes } SAC_afr_do_arms_TN = yes } if = { limit = { check_variable = { AFR_sel = 46 } SAC_afr_can_arms_TZ = yes } SAC_afr_do_arms_TZ = yes } if = { limit = { check_variable = { AFR_sel = 47 } SAC_afr_can_arms_UG = yes } SAC_afr_do_arms_UG = yes } if = { limit = { check_variable = { AFR_sel = 48 } SAC_afr_can_arms_ZA = yes } SAC_afr_do_arms_ZA = yes } if = { limit = { check_variable = { AFR_sel = 49 } SAC_afr_can_arms_ZM = yes } SAC_afr_do_arms_ZM = yes } if = { limit = { check_variable = { AFR_sel = 50 } SAC_afr_can_arms_ZW = yes } SAC_afr_do_arms_ZW = yes } }
+			SAC_africa_act_base_click = { if = { limit = { check_variable = { AFR_sel = 1 } SAC_afr_can_base_AO = yes } SAC_afr_do_base_AO = yes } if = { limit = { check_variable = { AFR_sel = 2 } SAC_afr_can_base_BF = yes } SAC_afr_do_base_BF = yes } if = { limit = { check_variable = { AFR_sel = 3 } SAC_afr_can_base_BI = yes } SAC_afr_do_base_BI = yes } if = { limit = { check_variable = { AFR_sel = 4 } SAC_afr_can_base_BJ = yes } SAC_afr_do_base_BJ = yes } if = { limit = { check_variable = { AFR_sel = 5 } SAC_afr_can_base_BW = yes } SAC_afr_do_base_BW = yes } if = { limit = { check_variable = { AFR_sel = 6 } SAC_afr_can_base_CD = yes } SAC_afr_do_base_CD = yes } if = { limit = { check_variable = { AFR_sel = 7 } SAC_afr_can_base_CF = yes } SAC_afr_do_base_CF = yes } if = { limit = { check_variable = { AFR_sel = 8 } SAC_afr_can_base_CG = yes } SAC_afr_do_base_CG = yes } if = { limit = { check_variable = { AFR_sel = 9 } SAC_afr_can_base_CI = yes } SAC_afr_do_base_CI = yes } if = { limit = { check_variable = { AFR_sel = 10 } SAC_afr_can_base_CM = yes } SAC_afr_do_base_CM = yes } if = { limit = { check_variable = { AFR_sel = 11 } SAC_afr_can_base_DJ = yes } SAC_afr_do_base_DJ = yes } if = { limit = { check_variable = { AFR_sel = 12 } SAC_afr_can_base_DZ = yes } SAC_afr_do_base_DZ = yes } if = { limit = { check_variable = { AFR_sel = 13 } SAC_afr_can_base_EG = yes } SAC_afr_do_base_EG = yes } if = { limit = { check_variable = { AFR_sel = 14 } SAC_afr_can_base_EH = yes } SAC_afr_do_base_EH = yes } if = { limit = { check_variable = { AFR_sel = 15 } SAC_afr_can_base_ER = yes } SAC_afr_do_base_ER = yes } if = { limit = { check_variable = { AFR_sel = 16 } SAC_afr_can_base_ET = yes } SAC_afr_do_base_ET = yes } if = { limit = { check_variable = { AFR_sel = 17 } SAC_afr_can_base_GA = yes } SAC_afr_do_base_GA = yes } if = { limit = { check_variable = { AFR_sel = 18 } SAC_afr_can_base_GH = yes } SAC_afr_do_base_GH = yes } if = { limit = { check_variable = { AFR_sel = 19 } SAC_afr_can_base_GM = yes } SAC_afr_do_base_GM = yes } if = { limit = { check_variable = { AFR_sel = 20 } SAC_afr_can_base_GN = yes } SAC_afr_do_base_GN = yes } if = { limit = { check_variable = { AFR_sel = 21 } SAC_afr_can_base_GQ = yes } SAC_afr_do_base_GQ = yes } if = { limit = { check_variable = { AFR_sel = 22 } SAC_afr_can_base_GW = yes } SAC_afr_do_base_GW = yes } if = { limit = { check_variable = { AFR_sel = 23 } SAC_afr_can_base_KE = yes } SAC_afr_do_base_KE = yes } if = { limit = { check_variable = { AFR_sel = 24 } SAC_afr_can_base_LR = yes } SAC_afr_do_base_LR = yes } if = { limit = { check_variable = { AFR_sel = 25 } SAC_afr_can_base_LS = yes } SAC_afr_do_base_LS = yes } if = { limit = { check_variable = { AFR_sel = 26 } SAC_afr_can_base_LY = yes } SAC_afr_do_base_LY = yes } if = { limit = { check_variable = { AFR_sel = 27 } SAC_afr_can_base_MA = yes } SAC_afr_do_base_MA = yes } if = { limit = { check_variable = { AFR_sel = 28 } SAC_afr_can_base_MG = yes } SAC_afr_do_base_MG = yes } if = { limit = { check_variable = { AFR_sel = 29 } SAC_afr_can_base_ML = yes } SAC_afr_do_base_ML = yes } if = { limit = { check_variable = { AFR_sel = 30 } SAC_afr_can_base_MR = yes } SAC_afr_do_base_MR = yes } if = { limit = { check_variable = { AFR_sel = 31 } SAC_afr_can_base_MW = yes } SAC_afr_do_base_MW = yes } if = { limit = { check_variable = { AFR_sel = 32 } SAC_afr_can_base_MZ = yes } SAC_afr_do_base_MZ = yes } if = { limit = { check_variable = { AFR_sel = 33 } SAC_afr_can_base_NA = yes } SAC_afr_do_base_NA = yes } if = { limit = { check_variable = { AFR_sel = 34 } SAC_afr_can_base_NE = yes } SAC_afr_do_base_NE = yes } if = { limit = { check_variable = { AFR_sel = 35 } SAC_afr_can_base_NG = yes } SAC_afr_do_base_NG = yes } if = { limit = { check_variable = { AFR_sel = 36 } SAC_afr_can_base_RW = yes } SAC_afr_do_base_RW = yes } if = { limit = { check_variable = { AFR_sel = 37 } SAC_afr_can_base_SD = yes } SAC_afr_do_base_SD = yes } if = { limit = { check_variable = { AFR_sel = 38 } SAC_afr_can_base_SL = yes } SAC_afr_do_base_SL = yes } if = { limit = { check_variable = { AFR_sel = 39 } SAC_afr_can_base_SN = yes } SAC_afr_do_base_SN = yes } if = { limit = { check_variable = { AFR_sel = 40 } SAC_afr_can_base_SO = yes } SAC_afr_do_base_SO = yes } if = { limit = { check_variable = { AFR_sel = 41 } SAC_afr_can_base_SS = yes } SAC_afr_do_base_SS = yes } if = { limit = { check_variable = { AFR_sel = 42 } SAC_afr_can_base_SZ = yes } SAC_afr_do_base_SZ = yes } if = { limit = { check_variable = { AFR_sel = 43 } SAC_afr_can_base_TD = yes } SAC_afr_do_base_TD = yes } if = { limit = { check_variable = { AFR_sel = 44 } SAC_afr_can_base_TG = yes } SAC_afr_do_base_TG = yes } if = { limit = { check_variable = { AFR_sel = 45 } SAC_afr_can_base_TN = yes } SAC_afr_do_base_TN = yes } if = { limit = { check_variable = { AFR_sel = 46 } SAC_afr_can_base_TZ = yes } SAC_afr_do_base_TZ = yes } if = { limit = { check_variable = { AFR_sel = 47 } SAC_afr_can_base_UG = yes } SAC_afr_do_base_UG = yes } if = { limit = { check_variable = { AFR_sel = 48 } SAC_afr_can_base_ZA = yes } SAC_afr_do_base_ZA = yes } if = { limit = { check_variable = { AFR_sel = 49 } SAC_afr_can_base_ZM = yes } SAC_afr_do_base_ZM = yes } if = { limit = { check_variable = { AFR_sel = 50 } SAC_afr_can_base_ZW = yes } SAC_afr_do_base_ZW = yes } }
+			SAC_africa_act_mil_click = { if = { limit = { check_variable = { AFR_sel = 1 } SAC_afr_can_mil_AO = yes } SAC_afr_do_mil_AO = yes } if = { limit = { check_variable = { AFR_sel = 2 } SAC_afr_can_mil_BF = yes } SAC_afr_do_mil_BF = yes } if = { limit = { check_variable = { AFR_sel = 3 } SAC_afr_can_mil_BI = yes } SAC_afr_do_mil_BI = yes } if = { limit = { check_variable = { AFR_sel = 4 } SAC_afr_can_mil_BJ = yes } SAC_afr_do_mil_BJ = yes } if = { limit = { check_variable = { AFR_sel = 5 } SAC_afr_can_mil_BW = yes } SAC_afr_do_mil_BW = yes } if = { limit = { check_variable = { AFR_sel = 6 } SAC_afr_can_mil_CD = yes } SAC_afr_do_mil_CD = yes } if = { limit = { check_variable = { AFR_sel = 7 } SAC_afr_can_mil_CF = yes } SAC_afr_do_mil_CF = yes } if = { limit = { check_variable = { AFR_sel = 8 } SAC_afr_can_mil_CG = yes } SAC_afr_do_mil_CG = yes } if = { limit = { check_variable = { AFR_sel = 9 } SAC_afr_can_mil_CI = yes } SAC_afr_do_mil_CI = yes } if = { limit = { check_variable = { AFR_sel = 10 } SAC_afr_can_mil_CM = yes } SAC_afr_do_mil_CM = yes } if = { limit = { check_variable = { AFR_sel = 11 } SAC_afr_can_mil_DJ = yes } SAC_afr_do_mil_DJ = yes } if = { limit = { check_variable = { AFR_sel = 12 } SAC_afr_can_mil_DZ = yes } SAC_afr_do_mil_DZ = yes } if = { limit = { check_variable = { AFR_sel = 13 } SAC_afr_can_mil_EG = yes } SAC_afr_do_mil_EG = yes } if = { limit = { check_variable = { AFR_sel = 14 } SAC_afr_can_mil_EH = yes } SAC_afr_do_mil_EH = yes } if = { limit = { check_variable = { AFR_sel = 15 } SAC_afr_can_mil_ER = yes } SAC_afr_do_mil_ER = yes } if = { limit = { check_variable = { AFR_sel = 16 } SAC_afr_can_mil_ET = yes } SAC_afr_do_mil_ET = yes } if = { limit = { check_variable = { AFR_sel = 17 } SAC_afr_can_mil_GA = yes } SAC_afr_do_mil_GA = yes } if = { limit = { check_variable = { AFR_sel = 18 } SAC_afr_can_mil_GH = yes } SAC_afr_do_mil_GH = yes } if = { limit = { check_variable = { AFR_sel = 19 } SAC_afr_can_mil_GM = yes } SAC_afr_do_mil_GM = yes } if = { limit = { check_variable = { AFR_sel = 20 } SAC_afr_can_mil_GN = yes } SAC_afr_do_mil_GN = yes } if = { limit = { check_variable = { AFR_sel = 21 } SAC_afr_can_mil_GQ = yes } SAC_afr_do_mil_GQ = yes } if = { limit = { check_variable = { AFR_sel = 22 } SAC_afr_can_mil_GW = yes } SAC_afr_do_mil_GW = yes } if = { limit = { check_variable = { AFR_sel = 23 } SAC_afr_can_mil_KE = yes } SAC_afr_do_mil_KE = yes } if = { limit = { check_variable = { AFR_sel = 24 } SAC_afr_can_mil_LR = yes } SAC_afr_do_mil_LR = yes } if = { limit = { check_variable = { AFR_sel = 25 } SAC_afr_can_mil_LS = yes } SAC_afr_do_mil_LS = yes } if = { limit = { check_variable = { AFR_sel = 26 } SAC_afr_can_mil_LY = yes } SAC_afr_do_mil_LY = yes } if = { limit = { check_variable = { AFR_sel = 27 } SAC_afr_can_mil_MA = yes } SAC_afr_do_mil_MA = yes } if = { limit = { check_variable = { AFR_sel = 28 } SAC_afr_can_mil_MG = yes } SAC_afr_do_mil_MG = yes } if = { limit = { check_variable = { AFR_sel = 29 } SAC_afr_can_mil_ML = yes } SAC_afr_do_mil_ML = yes } if = { limit = { check_variable = { AFR_sel = 30 } SAC_afr_can_mil_MR = yes } SAC_afr_do_mil_MR = yes } if = { limit = { check_variable = { AFR_sel = 31 } SAC_afr_can_mil_MW = yes } SAC_afr_do_mil_MW = yes } if = { limit = { check_variable = { AFR_sel = 32 } SAC_afr_can_mil_MZ = yes } SAC_afr_do_mil_MZ = yes } if = { limit = { check_variable = { AFR_sel = 33 } SAC_afr_can_mil_NA = yes } SAC_afr_do_mil_NA = yes } if = { limit = { check_variable = { AFR_sel = 34 } SAC_afr_can_mil_NE = yes } SAC_afr_do_mil_NE = yes } if = { limit = { check_variable = { AFR_sel = 35 } SAC_afr_can_mil_NG = yes } SAC_afr_do_mil_NG = yes } if = { limit = { check_variable = { AFR_sel = 36 } SAC_afr_can_mil_RW = yes } SAC_afr_do_mil_RW = yes } if = { limit = { check_variable = { AFR_sel = 37 } SAC_afr_can_mil_SD = yes } SAC_afr_do_mil_SD = yes } if = { limit = { check_variable = { AFR_sel = 38 } SAC_afr_can_mil_SL = yes } SAC_afr_do_mil_SL = yes } if = { limit = { check_variable = { AFR_sel = 39 } SAC_afr_can_mil_SN = yes } SAC_afr_do_mil_SN = yes } if = { limit = { check_variable = { AFR_sel = 40 } SAC_afr_can_mil_SO = yes } SAC_afr_do_mil_SO = yes } if = { limit = { check_variable = { AFR_sel = 41 } SAC_afr_can_mil_SS = yes } SAC_afr_do_mil_SS = yes } if = { limit = { check_variable = { AFR_sel = 42 } SAC_afr_can_mil_SZ = yes } SAC_afr_do_mil_SZ = yes } if = { limit = { check_variable = { AFR_sel = 43 } SAC_afr_can_mil_TD = yes } SAC_afr_do_mil_TD = yes } if = { limit = { check_variable = { AFR_sel = 44 } SAC_afr_can_mil_TG = yes } SAC_afr_do_mil_TG = yes } if = { limit = { check_variable = { AFR_sel = 45 } SAC_afr_can_mil_TN = yes } SAC_afr_do_mil_TN = yes } if = { limit = { check_variable = { AFR_sel = 46 } SAC_afr_can_mil_TZ = yes } SAC_afr_do_mil_TZ = yes } if = { limit = { check_variable = { AFR_sel = 47 } SAC_afr_can_mil_UG = yes } SAC_afr_do_mil_UG = yes } if = { limit = { check_variable = { AFR_sel = 48 } SAC_afr_can_mil_ZA = yes } SAC_afr_do_mil_ZA = yes } if = { limit = { check_variable = { AFR_sel = 49 } SAC_afr_can_mil_ZM = yes } SAC_afr_do_mil_ZM = yes } if = { limit = { check_variable = { AFR_sel = 50 } SAC_afr_can_mil_ZW = yes } SAC_afr_do_mil_ZW = yes } }
 		}
 		triggers = {
-			afr_ZA_0_visible = { check_variable = { global.AFR_ZA_dom = 0 } }
-			afr_ZA_1_visible = { check_variable = { global.AFR_ZA_dom = 1 } }
-			afr_ZA_2_visible = { check_variable = { global.AFR_ZA_dom = 2 } }
-			afr_ZA_3_visible = { check_variable = { global.AFR_ZA_dom = 3 } }
-			afr_ZA_4_visible = { check_variable = { global.AFR_ZA_dom = 4 } }
-			afr_DZ_0_visible = { check_variable = { global.AFR_DZ_dom = 0 } }
-			afr_DZ_1_visible = { check_variable = { global.AFR_DZ_dom = 1 } }
-			afr_DZ_2_visible = { check_variable = { global.AFR_DZ_dom = 2 } }
-			afr_DZ_3_visible = { check_variable = { global.AFR_DZ_dom = 3 } }
-			afr_DZ_4_visible = { check_variable = { global.AFR_DZ_dom = 4 } }
-			afr_CD_0_visible = { check_variable = { global.AFR_CD_dom = 0 } }
-			afr_CD_1_visible = { check_variable = { global.AFR_CD_dom = 1 } }
-			afr_CD_2_visible = { check_variable = { global.AFR_CD_dom = 2 } }
-			afr_CD_3_visible = { check_variable = { global.AFR_CD_dom = 3 } }
-			afr_CD_4_visible = { check_variable = { global.AFR_CD_dom = 4 } }
-			afr_ML_0_visible = { check_variable = { global.AFR_ML_dom = 0 } }
-			afr_ML_1_visible = { check_variable = { global.AFR_ML_dom = 1 } }
-			afr_ML_2_visible = { check_variable = { global.AFR_ML_dom = 2 } }
-			afr_ML_3_visible = { check_variable = { global.AFR_ML_dom = 3 } }
-			afr_ML_4_visible = { check_variable = { global.AFR_ML_dom = 4 } }
-			afr_MA_0_visible = { check_variable = { global.AFR_MA_dom = 0 } }
-			afr_MA_1_visible = { check_variable = { global.AFR_MA_dom = 1 } }
-			afr_MA_2_visible = { check_variable = { global.AFR_MA_dom = 2 } }
-			afr_MA_3_visible = { check_variable = { global.AFR_MA_dom = 3 } }
-			afr_MA_4_visible = { check_variable = { global.AFR_MA_dom = 4 } }
-			afr_SD_0_visible = { check_variable = { global.AFR_SD_dom = 0 } }
-			afr_SD_1_visible = { check_variable = { global.AFR_SD_dom = 1 } }
-			afr_SD_2_visible = { check_variable = { global.AFR_SD_dom = 2 } }
-			afr_SD_3_visible = { check_variable = { global.AFR_SD_dom = 3 } }
-			afr_SD_4_visible = { check_variable = { global.AFR_SD_dom = 4 } }
-			afr_LY_0_visible = { check_variable = { global.AFR_LY_dom = 0 } }
-			afr_LY_1_visible = { check_variable = { global.AFR_LY_dom = 1 } }
-			afr_LY_2_visible = { check_variable = { global.AFR_LY_dom = 2 } }
-			afr_LY_3_visible = { check_variable = { global.AFR_LY_dom = 3 } }
-			afr_LY_4_visible = { check_variable = { global.AFR_LY_dom = 4 } }
-			afr_NE_0_visible = { check_variable = { global.AFR_NE_dom = 0 } }
-			afr_NE_1_visible = { check_variable = { global.AFR_NE_dom = 1 } }
-			afr_NE_2_visible = { check_variable = { global.AFR_NE_dom = 2 } }
-			afr_NE_3_visible = { check_variable = { global.AFR_NE_dom = 3 } }
-			afr_NE_4_visible = { check_variable = { global.AFR_NE_dom = 4 } }
-			afr_MZ_0_visible = { check_variable = { global.AFR_MZ_dom = 0 } }
-			afr_MZ_1_visible = { check_variable = { global.AFR_MZ_dom = 1 } }
-			afr_MZ_2_visible = { check_variable = { global.AFR_MZ_dom = 2 } }
-			afr_MZ_3_visible = { check_variable = { global.AFR_MZ_dom = 3 } }
-			afr_MZ_4_visible = { check_variable = { global.AFR_MZ_dom = 4 } }
-			afr_ET_0_visible = { check_variable = { global.AFR_ET_dom = 0 } }
-			afr_ET_1_visible = { check_variable = { global.AFR_ET_dom = 1 } }
-			afr_ET_2_visible = { check_variable = { global.AFR_ET_dom = 2 } }
-			afr_ET_3_visible = { check_variable = { global.AFR_ET_dom = 3 } }
-			afr_ET_4_visible = { check_variable = { global.AFR_ET_dom = 4 } }
-			afr_TD_0_visible = { check_variable = { global.AFR_TD_dom = 0 } }
-			afr_TD_1_visible = { check_variable = { global.AFR_TD_dom = 1 } }
-			afr_TD_2_visible = { check_variable = { global.AFR_TD_dom = 2 } }
-			afr_TD_3_visible = { check_variable = { global.AFR_TD_dom = 3 } }
-			afr_TD_4_visible = { check_variable = { global.AFR_TD_dom = 4 } }
 			afr_AO_0_visible = { check_variable = { global.AFR_AO_dom = 0 } }
 			afr_AO_1_visible = { check_variable = { global.AFR_AO_dom = 1 } }
 			afr_AO_2_visible = { check_variable = { global.AFR_AO_dom = 2 } }
 			afr_AO_3_visible = { check_variable = { global.AFR_AO_dom = 3 } }
 			afr_AO_4_visible = { check_variable = { global.AFR_AO_dom = 4 } }
-			afr_NA_0_visible = { check_variable = { global.AFR_NA_dom = 0 } }
-			afr_NA_1_visible = { check_variable = { global.AFR_NA_dom = 1 } }
-			afr_NA_2_visible = { check_variable = { global.AFR_NA_dom = 2 } }
-			afr_NA_3_visible = { check_variable = { global.AFR_NA_dom = 3 } }
-			afr_NA_4_visible = { check_variable = { global.AFR_NA_dom = 4 } }
-			afr_MR_0_visible = { check_variable = { global.AFR_MR_dom = 0 } }
-			afr_MR_1_visible = { check_variable = { global.AFR_MR_dom = 1 } }
-			afr_MR_2_visible = { check_variable = { global.AFR_MR_dom = 2 } }
-			afr_MR_3_visible = { check_variable = { global.AFR_MR_dom = 3 } }
-			afr_MR_4_visible = { check_variable = { global.AFR_MR_dom = 4 } }
-			afr_SO_0_visible = { check_variable = { global.AFR_SO_dom = 0 } }
-			afr_SO_1_visible = { check_variable = { global.AFR_SO_dom = 1 } }
-			afr_SO_2_visible = { check_variable = { global.AFR_SO_dom = 2 } }
-			afr_SO_3_visible = { check_variable = { global.AFR_SO_dom = 3 } }
-			afr_SO_4_visible = { check_variable = { global.AFR_SO_dom = 4 } }
-			afr_EG_0_visible = { check_variable = { global.AFR_EG_dom = 0 } }
-			afr_EG_1_visible = { check_variable = { global.AFR_EG_dom = 1 } }
-			afr_EG_2_visible = { check_variable = { global.AFR_EG_dom = 2 } }
-			afr_EG_3_visible = { check_variable = { global.AFR_EG_dom = 3 } }
-			afr_EG_4_visible = { check_variable = { global.AFR_EG_dom = 4 } }
-			afr_TZ_0_visible = { check_variable = { global.AFR_TZ_dom = 0 } }
-			afr_TZ_1_visible = { check_variable = { global.AFR_TZ_dom = 1 } }
-			afr_TZ_2_visible = { check_variable = { global.AFR_TZ_dom = 2 } }
-			afr_TZ_3_visible = { check_variable = { global.AFR_TZ_dom = 3 } }
-			afr_TZ_4_visible = { check_variable = { global.AFR_TZ_dom = 4 } }
-			afr_ZM_0_visible = { check_variable = { global.AFR_ZM_dom = 0 } }
-			afr_ZM_1_visible = { check_variable = { global.AFR_ZM_dom = 1 } }
-			afr_ZM_2_visible = { check_variable = { global.AFR_ZM_dom = 2 } }
-			afr_ZM_3_visible = { check_variable = { global.AFR_ZM_dom = 3 } }
-			afr_ZM_4_visible = { check_variable = { global.AFR_ZM_dom = 4 } }
-			afr_NG_0_visible = { check_variable = { global.AFR_NG_dom = 0 } }
-			afr_NG_1_visible = { check_variable = { global.AFR_NG_dom = 1 } }
-			afr_NG_2_visible = { check_variable = { global.AFR_NG_dom = 2 } }
-			afr_NG_3_visible = { check_variable = { global.AFR_NG_dom = 3 } }
-			afr_NG_4_visible = { check_variable = { global.AFR_NG_dom = 4 } }
-			afr_CF_0_visible = { check_variable = { global.AFR_CF_dom = 0 } }
-			afr_CF_1_visible = { check_variable = { global.AFR_CF_dom = 1 } }
-			afr_CF_2_visible = { check_variable = { global.AFR_CF_dom = 2 } }
-			afr_CF_3_visible = { check_variable = { global.AFR_CF_dom = 3 } }
-			afr_CF_4_visible = { check_variable = { global.AFR_CF_dom = 4 } }
-			afr_SS_0_visible = { check_variable = { global.AFR_SS_dom = 0 } }
-			afr_SS_1_visible = { check_variable = { global.AFR_SS_dom = 1 } }
-			afr_SS_2_visible = { check_variable = { global.AFR_SS_dom = 2 } }
-			afr_SS_3_visible = { check_variable = { global.AFR_SS_dom = 3 } }
-			afr_SS_4_visible = { check_variable = { global.AFR_SS_dom = 4 } }
-			afr_MG_0_visible = { check_variable = { global.AFR_MG_dom = 0 } }
-			afr_MG_1_visible = { check_variable = { global.AFR_MG_dom = 1 } }
-			afr_MG_2_visible = { check_variable = { global.AFR_MG_dom = 2 } }
-			afr_MG_3_visible = { check_variable = { global.AFR_MG_dom = 3 } }
-			afr_MG_4_visible = { check_variable = { global.AFR_MG_dom = 4 } }
-			afr_CM_0_visible = { check_variable = { global.AFR_CM_dom = 0 } }
-			afr_CM_1_visible = { check_variable = { global.AFR_CM_dom = 1 } }
-			afr_CM_2_visible = { check_variable = { global.AFR_CM_dom = 2 } }
-			afr_CM_3_visible = { check_variable = { global.AFR_CM_dom = 3 } }
-			afr_CM_4_visible = { check_variable = { global.AFR_CM_dom = 4 } }
-			afr_BW_0_visible = { check_variable = { global.AFR_BW_dom = 0 } }
-			afr_BW_1_visible = { check_variable = { global.AFR_BW_dom = 1 } }
-			afr_BW_2_visible = { check_variable = { global.AFR_BW_dom = 2 } }
-			afr_BW_3_visible = { check_variable = { global.AFR_BW_dom = 3 } }
-			afr_BW_4_visible = { check_variable = { global.AFR_BW_dom = 4 } }
-			afr_KE_0_visible = { check_variable = { global.AFR_KE_dom = 0 } }
-			afr_KE_1_visible = { check_variable = { global.AFR_KE_dom = 1 } }
-			afr_KE_2_visible = { check_variable = { global.AFR_KE_dom = 2 } }
-			afr_KE_3_visible = { check_variable = { global.AFR_KE_dom = 3 } }
-			afr_KE_4_visible = { check_variable = { global.AFR_KE_dom = 4 } }
-			afr_CG_0_visible = { check_variable = { global.AFR_CG_dom = 0 } }
-			afr_CG_1_visible = { check_variable = { global.AFR_CG_dom = 1 } }
-			afr_CG_2_visible = { check_variable = { global.AFR_CG_dom = 2 } }
-			afr_CG_3_visible = { check_variable = { global.AFR_CG_dom = 3 } }
-			afr_CG_4_visible = { check_variable = { global.AFR_CG_dom = 4 } }
-			afr_EH_0_visible = { check_variable = { global.AFR_EH_dom = 0 } }
-			afr_EH_1_visible = { check_variable = { global.AFR_EH_dom = 1 } }
-			afr_EH_2_visible = { check_variable = { global.AFR_EH_dom = 2 } }
-			afr_EH_3_visible = { check_variable = { global.AFR_EH_dom = 3 } }
-			afr_EH_4_visible = { check_variable = { global.AFR_EH_dom = 4 } }
-			afr_ZW_0_visible = { check_variable = { global.AFR_ZW_dom = 0 } }
-			afr_ZW_1_visible = { check_variable = { global.AFR_ZW_dom = 1 } }
-			afr_ZW_2_visible = { check_variable = { global.AFR_ZW_dom = 2 } }
-			afr_ZW_3_visible = { check_variable = { global.AFR_ZW_dom = 3 } }
-			afr_ZW_4_visible = { check_variable = { global.AFR_ZW_dom = 4 } }
+			afr_AO_cw_visible = { SAC_africa_cw_AO = yes }
+			afr_AO_sel_visible = { check_variable = { AFR_sel = 1 } }
 			afr_BF_0_visible = { check_variable = { global.AFR_BF_dom = 0 } }
 			afr_BF_1_visible = { check_variable = { global.AFR_BF_dom = 1 } }
 			afr_BF_2_visible = { check_variable = { global.AFR_BF_dom = 2 } }
 			afr_BF_3_visible = { check_variable = { global.AFR_BF_dom = 3 } }
 			afr_BF_4_visible = { check_variable = { global.AFR_BF_dom = 4 } }
-			afr_GN_0_visible = { check_variable = { global.AFR_GN_dom = 0 } }
-			afr_GN_1_visible = { check_variable = { global.AFR_GN_dom = 1 } }
-			afr_GN_2_visible = { check_variable = { global.AFR_GN_dom = 2 } }
-			afr_GN_3_visible = { check_variable = { global.AFR_GN_dom = 3 } }
-			afr_GN_4_visible = { check_variable = { global.AFR_GN_dom = 4 } }
-			afr_CI_0_visible = { check_variable = { global.AFR_CI_dom = 0 } }
-			afr_CI_1_visible = { check_variable = { global.AFR_CI_dom = 1 } }
-			afr_CI_2_visible = { check_variable = { global.AFR_CI_dom = 2 } }
-			afr_CI_3_visible = { check_variable = { global.AFR_CI_dom = 3 } }
-			afr_CI_4_visible = { check_variable = { global.AFR_CI_dom = 4 } }
-			afr_ER_0_visible = { check_variable = { global.AFR_ER_dom = 0 } }
-			afr_ER_1_visible = { check_variable = { global.AFR_ER_dom = 1 } }
-			afr_ER_2_visible = { check_variable = { global.AFR_ER_dom = 2 } }
-			afr_ER_3_visible = { check_variable = { global.AFR_ER_dom = 3 } }
-			afr_ER_4_visible = { check_variable = { global.AFR_ER_dom = 4 } }
-			afr_GA_0_visible = { check_variable = { global.AFR_GA_dom = 0 } }
-			afr_GA_1_visible = { check_variable = { global.AFR_GA_dom = 1 } }
-			afr_GA_2_visible = { check_variable = { global.AFR_GA_dom = 2 } }
-			afr_GA_3_visible = { check_variable = { global.AFR_GA_dom = 3 } }
-			afr_GA_4_visible = { check_variable = { global.AFR_GA_dom = 4 } }
-			afr_UG_0_visible = { check_variable = { global.AFR_UG_dom = 0 } }
-			afr_UG_1_visible = { check_variable = { global.AFR_UG_dom = 1 } }
-			afr_UG_2_visible = { check_variable = { global.AFR_UG_dom = 2 } }
-			afr_UG_3_visible = { check_variable = { global.AFR_UG_dom = 3 } }
-			afr_UG_4_visible = { check_variable = { global.AFR_UG_dom = 4 } }
-			afr_TN_0_visible = { check_variable = { global.AFR_TN_dom = 0 } }
-			afr_TN_1_visible = { check_variable = { global.AFR_TN_dom = 1 } }
-			afr_TN_2_visible = { check_variable = { global.AFR_TN_dom = 2 } }
-			afr_TN_3_visible = { check_variable = { global.AFR_TN_dom = 3 } }
-			afr_TN_4_visible = { check_variable = { global.AFR_TN_dom = 4 } }
-			afr_GH_0_visible = { check_variable = { global.AFR_GH_dom = 0 } }
-			afr_GH_1_visible = { check_variable = { global.AFR_GH_dom = 1 } }
-			afr_GH_2_visible = { check_variable = { global.AFR_GH_dom = 2 } }
-			afr_GH_3_visible = { check_variable = { global.AFR_GH_dom = 3 } }
-			afr_GH_4_visible = { check_variable = { global.AFR_GH_dom = 4 } }
-			afr_SN_0_visible = { check_variable = { global.AFR_SN_dom = 0 } }
-			afr_SN_1_visible = { check_variable = { global.AFR_SN_dom = 1 } }
-			afr_SN_2_visible = { check_variable = { global.AFR_SN_dom = 2 } }
-			afr_SN_3_visible = { check_variable = { global.AFR_SN_dom = 3 } }
-			afr_SN_4_visible = { check_variable = { global.AFR_SN_dom = 4 } }
-			afr_MW_0_visible = { check_variable = { global.AFR_MW_dom = 0 } }
-			afr_MW_1_visible = { check_variable = { global.AFR_MW_dom = 1 } }
-			afr_MW_2_visible = { check_variable = { global.AFR_MW_dom = 2 } }
-			afr_MW_3_visible = { check_variable = { global.AFR_MW_dom = 3 } }
-			afr_MW_4_visible = { check_variable = { global.AFR_MW_dom = 4 } }
-			afr_BJ_0_visible = { check_variable = { global.AFR_BJ_dom = 0 } }
-			afr_BJ_1_visible = { check_variable = { global.AFR_BJ_dom = 1 } }
-			afr_BJ_2_visible = { check_variable = { global.AFR_BJ_dom = 2 } }
-			afr_BJ_3_visible = { check_variable = { global.AFR_BJ_dom = 3 } }
-			afr_BJ_4_visible = { check_variable = { global.AFR_BJ_dom = 4 } }
-			afr_LR_0_visible = { check_variable = { global.AFR_LR_dom = 0 } }
-			afr_LR_1_visible = { check_variable = { global.AFR_LR_dom = 1 } }
-			afr_LR_2_visible = { check_variable = { global.AFR_LR_dom = 2 } }
-			afr_LR_3_visible = { check_variable = { global.AFR_LR_dom = 3 } }
-			afr_LR_4_visible = { check_variable = { global.AFR_LR_dom = 4 } }
-			afr_TG_0_visible = { check_variable = { global.AFR_TG_dom = 0 } }
-			afr_TG_1_visible = { check_variable = { global.AFR_TG_dom = 1 } }
-			afr_TG_2_visible = { check_variable = { global.AFR_TG_dom = 2 } }
-			afr_TG_3_visible = { check_variable = { global.AFR_TG_dom = 3 } }
-			afr_TG_4_visible = { check_variable = { global.AFR_TG_dom = 4 } }
-			afr_SL_0_visible = { check_variable = { global.AFR_SL_dom = 0 } }
-			afr_SL_1_visible = { check_variable = { global.AFR_SL_dom = 1 } }
-			afr_SL_2_visible = { check_variable = { global.AFR_SL_dom = 2 } }
-			afr_SL_3_visible = { check_variable = { global.AFR_SL_dom = 3 } }
-			afr_SL_4_visible = { check_variable = { global.AFR_SL_dom = 4 } }
-			afr_GQ_0_visible = { check_variable = { global.AFR_GQ_dom = 0 } }
-			afr_GQ_1_visible = { check_variable = { global.AFR_GQ_dom = 1 } }
-			afr_GQ_2_visible = { check_variable = { global.AFR_GQ_dom = 2 } }
-			afr_GQ_3_visible = { check_variable = { global.AFR_GQ_dom = 3 } }
-			afr_GQ_4_visible = { check_variable = { global.AFR_GQ_dom = 4 } }
-			afr_GW_0_visible = { check_variable = { global.AFR_GW_dom = 0 } }
-			afr_GW_1_visible = { check_variable = { global.AFR_GW_dom = 1 } }
-			afr_GW_2_visible = { check_variable = { global.AFR_GW_dom = 2 } }
-			afr_GW_3_visible = { check_variable = { global.AFR_GW_dom = 3 } }
-			afr_GW_4_visible = { check_variable = { global.AFR_GW_dom = 4 } }
-			afr_LS_0_visible = { check_variable = { global.AFR_LS_dom = 0 } }
-			afr_LS_1_visible = { check_variable = { global.AFR_LS_dom = 1 } }
-			afr_LS_2_visible = { check_variable = { global.AFR_LS_dom = 2 } }
-			afr_LS_3_visible = { check_variable = { global.AFR_LS_dom = 3 } }
-			afr_LS_4_visible = { check_variable = { global.AFR_LS_dom = 4 } }
+			afr_BF_cw_visible = { SAC_africa_cw_BF = yes }
+			afr_BF_sel_visible = { check_variable = { AFR_sel = 2 } }
 			afr_BI_0_visible = { check_variable = { global.AFR_BI_dom = 0 } }
 			afr_BI_1_visible = { check_variable = { global.AFR_BI_dom = 1 } }
 			afr_BI_2_visible = { check_variable = { global.AFR_BI_dom = 2 } }
 			afr_BI_3_visible = { check_variable = { global.AFR_BI_dom = 3 } }
 			afr_BI_4_visible = { check_variable = { global.AFR_BI_dom = 4 } }
-			afr_RW_0_visible = { check_variable = { global.AFR_RW_dom = 0 } }
-			afr_RW_1_visible = { check_variable = { global.AFR_RW_dom = 1 } }
-			afr_RW_2_visible = { check_variable = { global.AFR_RW_dom = 2 } }
-			afr_RW_3_visible = { check_variable = { global.AFR_RW_dom = 3 } }
-			afr_RW_4_visible = { check_variable = { global.AFR_RW_dom = 4 } }
+			afr_BI_cw_visible = { SAC_africa_cw_BI = yes }
+			afr_BI_sel_visible = { check_variable = { AFR_sel = 3 } }
+			afr_BJ_0_visible = { check_variable = { global.AFR_BJ_dom = 0 } }
+			afr_BJ_1_visible = { check_variable = { global.AFR_BJ_dom = 1 } }
+			afr_BJ_2_visible = { check_variable = { global.AFR_BJ_dom = 2 } }
+			afr_BJ_3_visible = { check_variable = { global.AFR_BJ_dom = 3 } }
+			afr_BJ_4_visible = { check_variable = { global.AFR_BJ_dom = 4 } }
+			afr_BJ_cw_visible = { SAC_africa_cw_BJ = yes }
+			afr_BJ_sel_visible = { check_variable = { AFR_sel = 4 } }
+			afr_BW_0_visible = { check_variable = { global.AFR_BW_dom = 0 } }
+			afr_BW_1_visible = { check_variable = { global.AFR_BW_dom = 1 } }
+			afr_BW_2_visible = { check_variable = { global.AFR_BW_dom = 2 } }
+			afr_BW_3_visible = { check_variable = { global.AFR_BW_dom = 3 } }
+			afr_BW_4_visible = { check_variable = { global.AFR_BW_dom = 4 } }
+			afr_BW_cw_visible = { SAC_africa_cw_BW = yes }
+			afr_BW_sel_visible = { check_variable = { AFR_sel = 5 } }
+			afr_CD_0_visible = { check_variable = { global.AFR_CD_dom = 0 } }
+			afr_CD_1_visible = { check_variable = { global.AFR_CD_dom = 1 } }
+			afr_CD_2_visible = { check_variable = { global.AFR_CD_dom = 2 } }
+			afr_CD_3_visible = { check_variable = { global.AFR_CD_dom = 3 } }
+			afr_CD_4_visible = { check_variable = { global.AFR_CD_dom = 4 } }
+			afr_CD_cw_visible = { SAC_africa_cw_CD = yes }
+			afr_CD_sel_visible = { check_variable = { AFR_sel = 6 } }
+			afr_CF_0_visible = { check_variable = { global.AFR_CF_dom = 0 } }
+			afr_CF_1_visible = { check_variable = { global.AFR_CF_dom = 1 } }
+			afr_CF_2_visible = { check_variable = { global.AFR_CF_dom = 2 } }
+			afr_CF_3_visible = { check_variable = { global.AFR_CF_dom = 3 } }
+			afr_CF_4_visible = { check_variable = { global.AFR_CF_dom = 4 } }
+			afr_CF_cw_visible = { SAC_africa_cw_CF = yes }
+			afr_CF_sel_visible = { check_variable = { AFR_sel = 7 } }
+			afr_CG_0_visible = { check_variable = { global.AFR_CG_dom = 0 } }
+			afr_CG_1_visible = { check_variable = { global.AFR_CG_dom = 1 } }
+			afr_CG_2_visible = { check_variable = { global.AFR_CG_dom = 2 } }
+			afr_CG_3_visible = { check_variable = { global.AFR_CG_dom = 3 } }
+			afr_CG_4_visible = { check_variable = { global.AFR_CG_dom = 4 } }
+			afr_CG_cw_visible = { SAC_africa_cw_CG = yes }
+			afr_CG_sel_visible = { check_variable = { AFR_sel = 8 } }
+			afr_CI_0_visible = { check_variable = { global.AFR_CI_dom = 0 } }
+			afr_CI_1_visible = { check_variable = { global.AFR_CI_dom = 1 } }
+			afr_CI_2_visible = { check_variable = { global.AFR_CI_dom = 2 } }
+			afr_CI_3_visible = { check_variable = { global.AFR_CI_dom = 3 } }
+			afr_CI_4_visible = { check_variable = { global.AFR_CI_dom = 4 } }
+			afr_CI_cw_visible = { SAC_africa_cw_CI = yes }
+			afr_CI_sel_visible = { check_variable = { AFR_sel = 9 } }
+			afr_CM_0_visible = { check_variable = { global.AFR_CM_dom = 0 } }
+			afr_CM_1_visible = { check_variable = { global.AFR_CM_dom = 1 } }
+			afr_CM_2_visible = { check_variable = { global.AFR_CM_dom = 2 } }
+			afr_CM_3_visible = { check_variable = { global.AFR_CM_dom = 3 } }
+			afr_CM_4_visible = { check_variable = { global.AFR_CM_dom = 4 } }
+			afr_CM_cw_visible = { SAC_africa_cw_CM = yes }
+			afr_CM_sel_visible = { check_variable = { AFR_sel = 10 } }
 			afr_DJ_0_visible = { check_variable = { global.AFR_DJ_dom = 0 } }
 			afr_DJ_1_visible = { check_variable = { global.AFR_DJ_dom = 1 } }
 			afr_DJ_2_visible = { check_variable = { global.AFR_DJ_dom = 2 } }
 			afr_DJ_3_visible = { check_variable = { global.AFR_DJ_dom = 3 } }
 			afr_DJ_4_visible = { check_variable = { global.AFR_DJ_dom = 4 } }
+			afr_DJ_cw_visible = { SAC_africa_cw_DJ = yes }
+			afr_DJ_sel_visible = { check_variable = { AFR_sel = 11 } }
+			afr_DZ_0_visible = { check_variable = { global.AFR_DZ_dom = 0 } }
+			afr_DZ_1_visible = { check_variable = { global.AFR_DZ_dom = 1 } }
+			afr_DZ_2_visible = { check_variable = { global.AFR_DZ_dom = 2 } }
+			afr_DZ_3_visible = { check_variable = { global.AFR_DZ_dom = 3 } }
+			afr_DZ_4_visible = { check_variable = { global.AFR_DZ_dom = 4 } }
+			afr_DZ_cw_visible = { SAC_africa_cw_DZ = yes }
+			afr_DZ_sel_visible = { check_variable = { AFR_sel = 12 } }
+			afr_EG_0_visible = { check_variable = { global.AFR_EG_dom = 0 } }
+			afr_EG_1_visible = { check_variable = { global.AFR_EG_dom = 1 } }
+			afr_EG_2_visible = { check_variable = { global.AFR_EG_dom = 2 } }
+			afr_EG_3_visible = { check_variable = { global.AFR_EG_dom = 3 } }
+			afr_EG_4_visible = { check_variable = { global.AFR_EG_dom = 4 } }
+			afr_EG_cw_visible = { SAC_africa_cw_EG = yes }
+			afr_EG_sel_visible = { check_variable = { AFR_sel = 13 } }
+			afr_EH_0_visible = { check_variable = { global.AFR_EH_dom = 0 } }
+			afr_EH_1_visible = { check_variable = { global.AFR_EH_dom = 1 } }
+			afr_EH_2_visible = { check_variable = { global.AFR_EH_dom = 2 } }
+			afr_EH_3_visible = { check_variable = { global.AFR_EH_dom = 3 } }
+			afr_EH_4_visible = { check_variable = { global.AFR_EH_dom = 4 } }
+			afr_EH_cw_visible = { SAC_africa_cw_EH = yes }
+			afr_EH_sel_visible = { check_variable = { AFR_sel = 14 } }
+			afr_ER_0_visible = { check_variable = { global.AFR_ER_dom = 0 } }
+			afr_ER_1_visible = { check_variable = { global.AFR_ER_dom = 1 } }
+			afr_ER_2_visible = { check_variable = { global.AFR_ER_dom = 2 } }
+			afr_ER_3_visible = { check_variable = { global.AFR_ER_dom = 3 } }
+			afr_ER_4_visible = { check_variable = { global.AFR_ER_dom = 4 } }
+			afr_ER_cw_visible = { SAC_africa_cw_ER = yes }
+			afr_ER_sel_visible = { check_variable = { AFR_sel = 15 } }
+			afr_ET_0_visible = { check_variable = { global.AFR_ET_dom = 0 } }
+			afr_ET_1_visible = { check_variable = { global.AFR_ET_dom = 1 } }
+			afr_ET_2_visible = { check_variable = { global.AFR_ET_dom = 2 } }
+			afr_ET_3_visible = { check_variable = { global.AFR_ET_dom = 3 } }
+			afr_ET_4_visible = { check_variable = { global.AFR_ET_dom = 4 } }
+			afr_ET_cw_visible = { SAC_africa_cw_ET = yes }
+			afr_ET_sel_visible = { check_variable = { AFR_sel = 16 } }
+			afr_GA_0_visible = { check_variable = { global.AFR_GA_dom = 0 } }
+			afr_GA_1_visible = { check_variable = { global.AFR_GA_dom = 1 } }
+			afr_GA_2_visible = { check_variable = { global.AFR_GA_dom = 2 } }
+			afr_GA_3_visible = { check_variable = { global.AFR_GA_dom = 3 } }
+			afr_GA_4_visible = { check_variable = { global.AFR_GA_dom = 4 } }
+			afr_GA_cw_visible = { SAC_africa_cw_GA = yes }
+			afr_GA_sel_visible = { check_variable = { AFR_sel = 17 } }
+			afr_GH_0_visible = { check_variable = { global.AFR_GH_dom = 0 } }
+			afr_GH_1_visible = { check_variable = { global.AFR_GH_dom = 1 } }
+			afr_GH_2_visible = { check_variable = { global.AFR_GH_dom = 2 } }
+			afr_GH_3_visible = { check_variable = { global.AFR_GH_dom = 3 } }
+			afr_GH_4_visible = { check_variable = { global.AFR_GH_dom = 4 } }
+			afr_GH_cw_visible = { SAC_africa_cw_GH = yes }
+			afr_GH_sel_visible = { check_variable = { AFR_sel = 18 } }
 			afr_GM_0_visible = { check_variable = { global.AFR_GM_dom = 0 } }
 			afr_GM_1_visible = { check_variable = { global.AFR_GM_dom = 1 } }
 			afr_GM_2_visible = { check_variable = { global.AFR_GM_dom = 2 } }
 			afr_GM_3_visible = { check_variable = { global.AFR_GM_dom = 3 } }
 			afr_GM_4_visible = { check_variable = { global.AFR_GM_dom = 4 } }
+			afr_GM_cw_visible = { SAC_africa_cw_GM = yes }
+			afr_GM_sel_visible = { check_variable = { AFR_sel = 19 } }
+			afr_GN_0_visible = { check_variable = { global.AFR_GN_dom = 0 } }
+			afr_GN_1_visible = { check_variable = { global.AFR_GN_dom = 1 } }
+			afr_GN_2_visible = { check_variable = { global.AFR_GN_dom = 2 } }
+			afr_GN_3_visible = { check_variable = { global.AFR_GN_dom = 3 } }
+			afr_GN_4_visible = { check_variable = { global.AFR_GN_dom = 4 } }
+			afr_GN_cw_visible = { SAC_africa_cw_GN = yes }
+			afr_GN_sel_visible = { check_variable = { AFR_sel = 20 } }
+			afr_GQ_0_visible = { check_variable = { global.AFR_GQ_dom = 0 } }
+			afr_GQ_1_visible = { check_variable = { global.AFR_GQ_dom = 1 } }
+			afr_GQ_2_visible = { check_variable = { global.AFR_GQ_dom = 2 } }
+			afr_GQ_3_visible = { check_variable = { global.AFR_GQ_dom = 3 } }
+			afr_GQ_4_visible = { check_variable = { global.AFR_GQ_dom = 4 } }
+			afr_GQ_cw_visible = { SAC_africa_cw_GQ = yes }
+			afr_GQ_sel_visible = { check_variable = { AFR_sel = 21 } }
+			afr_GW_0_visible = { check_variable = { global.AFR_GW_dom = 0 } }
+			afr_GW_1_visible = { check_variable = { global.AFR_GW_dom = 1 } }
+			afr_GW_2_visible = { check_variable = { global.AFR_GW_dom = 2 } }
+			afr_GW_3_visible = { check_variable = { global.AFR_GW_dom = 3 } }
+			afr_GW_4_visible = { check_variable = { global.AFR_GW_dom = 4 } }
+			afr_GW_cw_visible = { SAC_africa_cw_GW = yes }
+			afr_GW_sel_visible = { check_variable = { AFR_sel = 22 } }
+			afr_KE_0_visible = { check_variable = { global.AFR_KE_dom = 0 } }
+			afr_KE_1_visible = { check_variable = { global.AFR_KE_dom = 1 } }
+			afr_KE_2_visible = { check_variable = { global.AFR_KE_dom = 2 } }
+			afr_KE_3_visible = { check_variable = { global.AFR_KE_dom = 3 } }
+			afr_KE_4_visible = { check_variable = { global.AFR_KE_dom = 4 } }
+			afr_KE_cw_visible = { SAC_africa_cw_KE = yes }
+			afr_KE_sel_visible = { check_variable = { AFR_sel = 23 } }
+			afr_LR_0_visible = { check_variable = { global.AFR_LR_dom = 0 } }
+			afr_LR_1_visible = { check_variable = { global.AFR_LR_dom = 1 } }
+			afr_LR_2_visible = { check_variable = { global.AFR_LR_dom = 2 } }
+			afr_LR_3_visible = { check_variable = { global.AFR_LR_dom = 3 } }
+			afr_LR_4_visible = { check_variable = { global.AFR_LR_dom = 4 } }
+			afr_LR_cw_visible = { SAC_africa_cw_LR = yes }
+			afr_LR_sel_visible = { check_variable = { AFR_sel = 24 } }
+			afr_LS_0_visible = { check_variable = { global.AFR_LS_dom = 0 } }
+			afr_LS_1_visible = { check_variable = { global.AFR_LS_dom = 1 } }
+			afr_LS_2_visible = { check_variable = { global.AFR_LS_dom = 2 } }
+			afr_LS_3_visible = { check_variable = { global.AFR_LS_dom = 3 } }
+			afr_LS_4_visible = { check_variable = { global.AFR_LS_dom = 4 } }
+			afr_LS_cw_visible = { SAC_africa_cw_LS = yes }
+			afr_LS_sel_visible = { check_variable = { AFR_sel = 25 } }
+			afr_LY_0_visible = { check_variable = { global.AFR_LY_dom = 0 } }
+			afr_LY_1_visible = { check_variable = { global.AFR_LY_dom = 1 } }
+			afr_LY_2_visible = { check_variable = { global.AFR_LY_dom = 2 } }
+			afr_LY_3_visible = { check_variable = { global.AFR_LY_dom = 3 } }
+			afr_LY_4_visible = { check_variable = { global.AFR_LY_dom = 4 } }
+			afr_LY_cw_visible = { SAC_africa_cw_LY = yes }
+			afr_LY_sel_visible = { check_variable = { AFR_sel = 26 } }
+			afr_MA_0_visible = { check_variable = { global.AFR_MA_dom = 0 } }
+			afr_MA_1_visible = { check_variable = { global.AFR_MA_dom = 1 } }
+			afr_MA_2_visible = { check_variable = { global.AFR_MA_dom = 2 } }
+			afr_MA_3_visible = { check_variable = { global.AFR_MA_dom = 3 } }
+			afr_MA_4_visible = { check_variable = { global.AFR_MA_dom = 4 } }
+			afr_MA_cw_visible = { SAC_africa_cw_MA = yes }
+			afr_MA_sel_visible = { check_variable = { AFR_sel = 27 } }
+			afr_MG_0_visible = { check_variable = { global.AFR_MG_dom = 0 } }
+			afr_MG_1_visible = { check_variable = { global.AFR_MG_dom = 1 } }
+			afr_MG_2_visible = { check_variable = { global.AFR_MG_dom = 2 } }
+			afr_MG_3_visible = { check_variable = { global.AFR_MG_dom = 3 } }
+			afr_MG_4_visible = { check_variable = { global.AFR_MG_dom = 4 } }
+			afr_MG_cw_visible = { SAC_africa_cw_MG = yes }
+			afr_MG_sel_visible = { check_variable = { AFR_sel = 28 } }
+			afr_ML_0_visible = { check_variable = { global.AFR_ML_dom = 0 } }
+			afr_ML_1_visible = { check_variable = { global.AFR_ML_dom = 1 } }
+			afr_ML_2_visible = { check_variable = { global.AFR_ML_dom = 2 } }
+			afr_ML_3_visible = { check_variable = { global.AFR_ML_dom = 3 } }
+			afr_ML_4_visible = { check_variable = { global.AFR_ML_dom = 4 } }
+			afr_ML_cw_visible = { SAC_africa_cw_ML = yes }
+			afr_ML_sel_visible = { check_variable = { AFR_sel = 29 } }
+			afr_MR_0_visible = { check_variable = { global.AFR_MR_dom = 0 } }
+			afr_MR_1_visible = { check_variable = { global.AFR_MR_dom = 1 } }
+			afr_MR_2_visible = { check_variable = { global.AFR_MR_dom = 2 } }
+			afr_MR_3_visible = { check_variable = { global.AFR_MR_dom = 3 } }
+			afr_MR_4_visible = { check_variable = { global.AFR_MR_dom = 4 } }
+			afr_MR_cw_visible = { SAC_africa_cw_MR = yes }
+			afr_MR_sel_visible = { check_variable = { AFR_sel = 30 } }
+			afr_MW_0_visible = { check_variable = { global.AFR_MW_dom = 0 } }
+			afr_MW_1_visible = { check_variable = { global.AFR_MW_dom = 1 } }
+			afr_MW_2_visible = { check_variable = { global.AFR_MW_dom = 2 } }
+			afr_MW_3_visible = { check_variable = { global.AFR_MW_dom = 3 } }
+			afr_MW_4_visible = { check_variable = { global.AFR_MW_dom = 4 } }
+			afr_MW_cw_visible = { SAC_africa_cw_MW = yes }
+			afr_MW_sel_visible = { check_variable = { AFR_sel = 31 } }
+			afr_MZ_0_visible = { check_variable = { global.AFR_MZ_dom = 0 } }
+			afr_MZ_1_visible = { check_variable = { global.AFR_MZ_dom = 1 } }
+			afr_MZ_2_visible = { check_variable = { global.AFR_MZ_dom = 2 } }
+			afr_MZ_3_visible = { check_variable = { global.AFR_MZ_dom = 3 } }
+			afr_MZ_4_visible = { check_variable = { global.AFR_MZ_dom = 4 } }
+			afr_MZ_cw_visible = { SAC_africa_cw_MZ = yes }
+			afr_MZ_sel_visible = { check_variable = { AFR_sel = 32 } }
+			afr_NA_0_visible = { check_variable = { global.AFR_NA_dom = 0 } }
+			afr_NA_1_visible = { check_variable = { global.AFR_NA_dom = 1 } }
+			afr_NA_2_visible = { check_variable = { global.AFR_NA_dom = 2 } }
+			afr_NA_3_visible = { check_variable = { global.AFR_NA_dom = 3 } }
+			afr_NA_4_visible = { check_variable = { global.AFR_NA_dom = 4 } }
+			afr_NA_cw_visible = { SAC_africa_cw_NA = yes }
+			afr_NA_sel_visible = { check_variable = { AFR_sel = 33 } }
+			afr_NE_0_visible = { check_variable = { global.AFR_NE_dom = 0 } }
+			afr_NE_1_visible = { check_variable = { global.AFR_NE_dom = 1 } }
+			afr_NE_2_visible = { check_variable = { global.AFR_NE_dom = 2 } }
+			afr_NE_3_visible = { check_variable = { global.AFR_NE_dom = 3 } }
+			afr_NE_4_visible = { check_variable = { global.AFR_NE_dom = 4 } }
+			afr_NE_cw_visible = { SAC_africa_cw_NE = yes }
+			afr_NE_sel_visible = { check_variable = { AFR_sel = 34 } }
+			afr_NG_0_visible = { check_variable = { global.AFR_NG_dom = 0 } }
+			afr_NG_1_visible = { check_variable = { global.AFR_NG_dom = 1 } }
+			afr_NG_2_visible = { check_variable = { global.AFR_NG_dom = 2 } }
+			afr_NG_3_visible = { check_variable = { global.AFR_NG_dom = 3 } }
+			afr_NG_4_visible = { check_variable = { global.AFR_NG_dom = 4 } }
+			afr_NG_cw_visible = { SAC_africa_cw_NG = yes }
+			afr_NG_sel_visible = { check_variable = { AFR_sel = 35 } }
+			afr_RW_0_visible = { check_variable = { global.AFR_RW_dom = 0 } }
+			afr_RW_1_visible = { check_variable = { global.AFR_RW_dom = 1 } }
+			afr_RW_2_visible = { check_variable = { global.AFR_RW_dom = 2 } }
+			afr_RW_3_visible = { check_variable = { global.AFR_RW_dom = 3 } }
+			afr_RW_4_visible = { check_variable = { global.AFR_RW_dom = 4 } }
+			afr_RW_cw_visible = { SAC_africa_cw_RW = yes }
+			afr_RW_sel_visible = { check_variable = { AFR_sel = 36 } }
+			afr_SD_0_visible = { check_variable = { global.AFR_SD_dom = 0 } }
+			afr_SD_1_visible = { check_variable = { global.AFR_SD_dom = 1 } }
+			afr_SD_2_visible = { check_variable = { global.AFR_SD_dom = 2 } }
+			afr_SD_3_visible = { check_variable = { global.AFR_SD_dom = 3 } }
+			afr_SD_4_visible = { check_variable = { global.AFR_SD_dom = 4 } }
+			afr_SD_cw_visible = { SAC_africa_cw_SD = yes }
+			afr_SD_sel_visible = { check_variable = { AFR_sel = 37 } }
+			afr_SL_0_visible = { check_variable = { global.AFR_SL_dom = 0 } }
+			afr_SL_1_visible = { check_variable = { global.AFR_SL_dom = 1 } }
+			afr_SL_2_visible = { check_variable = { global.AFR_SL_dom = 2 } }
+			afr_SL_3_visible = { check_variable = { global.AFR_SL_dom = 3 } }
+			afr_SL_4_visible = { check_variable = { global.AFR_SL_dom = 4 } }
+			afr_SL_cw_visible = { SAC_africa_cw_SL = yes }
+			afr_SL_sel_visible = { check_variable = { AFR_sel = 38 } }
+			afr_SN_0_visible = { check_variable = { global.AFR_SN_dom = 0 } }
+			afr_SN_1_visible = { check_variable = { global.AFR_SN_dom = 1 } }
+			afr_SN_2_visible = { check_variable = { global.AFR_SN_dom = 2 } }
+			afr_SN_3_visible = { check_variable = { global.AFR_SN_dom = 3 } }
+			afr_SN_4_visible = { check_variable = { global.AFR_SN_dom = 4 } }
+			afr_SN_cw_visible = { SAC_africa_cw_SN = yes }
+			afr_SN_sel_visible = { check_variable = { AFR_sel = 39 } }
+			afr_SO_0_visible = { check_variable = { global.AFR_SO_dom = 0 } }
+			afr_SO_1_visible = { check_variable = { global.AFR_SO_dom = 1 } }
+			afr_SO_2_visible = { check_variable = { global.AFR_SO_dom = 2 } }
+			afr_SO_3_visible = { check_variable = { global.AFR_SO_dom = 3 } }
+			afr_SO_4_visible = { check_variable = { global.AFR_SO_dom = 4 } }
+			afr_SO_cw_visible = { SAC_africa_cw_SO = yes }
+			afr_SO_sel_visible = { check_variable = { AFR_sel = 40 } }
+			afr_SS_0_visible = { check_variable = { global.AFR_SS_dom = 0 } }
+			afr_SS_1_visible = { check_variable = { global.AFR_SS_dom = 1 } }
+			afr_SS_2_visible = { check_variable = { global.AFR_SS_dom = 2 } }
+			afr_SS_3_visible = { check_variable = { global.AFR_SS_dom = 3 } }
+			afr_SS_4_visible = { check_variable = { global.AFR_SS_dom = 4 } }
+			afr_SS_cw_visible = { SAC_africa_cw_SS = yes }
+			afr_SS_sel_visible = { check_variable = { AFR_sel = 41 } }
 			afr_SZ_0_visible = { check_variable = { global.AFR_SZ_dom = 0 } }
 			afr_SZ_1_visible = { check_variable = { global.AFR_SZ_dom = 1 } }
 			afr_SZ_2_visible = { check_variable = { global.AFR_SZ_dom = 2 } }
 			afr_SZ_3_visible = { check_variable = { global.AFR_SZ_dom = 3 } }
 			afr_SZ_4_visible = { check_variable = { global.AFR_SZ_dom = 4 } }
+			afr_SZ_cw_visible = { SAC_africa_cw_SZ = yes }
+			afr_SZ_sel_visible = { check_variable = { AFR_sel = 42 } }
+			afr_TD_0_visible = { check_variable = { global.AFR_TD_dom = 0 } }
+			afr_TD_1_visible = { check_variable = { global.AFR_TD_dom = 1 } }
+			afr_TD_2_visible = { check_variable = { global.AFR_TD_dom = 2 } }
+			afr_TD_3_visible = { check_variable = { global.AFR_TD_dom = 3 } }
+			afr_TD_4_visible = { check_variable = { global.AFR_TD_dom = 4 } }
+			afr_TD_cw_visible = { SAC_africa_cw_TD = yes }
+			afr_TD_sel_visible = { check_variable = { AFR_sel = 43 } }
+			afr_TG_0_visible = { check_variable = { global.AFR_TG_dom = 0 } }
+			afr_TG_1_visible = { check_variable = { global.AFR_TG_dom = 1 } }
+			afr_TG_2_visible = { check_variable = { global.AFR_TG_dom = 2 } }
+			afr_TG_3_visible = { check_variable = { global.AFR_TG_dom = 3 } }
+			afr_TG_4_visible = { check_variable = { global.AFR_TG_dom = 4 } }
+			afr_TG_cw_visible = { SAC_africa_cw_TG = yes }
+			afr_TG_sel_visible = { check_variable = { AFR_sel = 44 } }
+			afr_TN_0_visible = { check_variable = { global.AFR_TN_dom = 0 } }
+			afr_TN_1_visible = { check_variable = { global.AFR_TN_dom = 1 } }
+			afr_TN_2_visible = { check_variable = { global.AFR_TN_dom = 2 } }
+			afr_TN_3_visible = { check_variable = { global.AFR_TN_dom = 3 } }
+			afr_TN_4_visible = { check_variable = { global.AFR_TN_dom = 4 } }
+			afr_TN_cw_visible = { SAC_africa_cw_TN = yes }
+			afr_TN_sel_visible = { check_variable = { AFR_sel = 45 } }
+			afr_TZ_0_visible = { check_variable = { global.AFR_TZ_dom = 0 } }
+			afr_TZ_1_visible = { check_variable = { global.AFR_TZ_dom = 1 } }
+			afr_TZ_2_visible = { check_variable = { global.AFR_TZ_dom = 2 } }
+			afr_TZ_3_visible = { check_variable = { global.AFR_TZ_dom = 3 } }
+			afr_TZ_4_visible = { check_variable = { global.AFR_TZ_dom = 4 } }
+			afr_TZ_cw_visible = { SAC_africa_cw_TZ = yes }
+			afr_TZ_sel_visible = { check_variable = { AFR_sel = 46 } }
+			afr_UG_0_visible = { check_variable = { global.AFR_UG_dom = 0 } }
+			afr_UG_1_visible = { check_variable = { global.AFR_UG_dom = 1 } }
+			afr_UG_2_visible = { check_variable = { global.AFR_UG_dom = 2 } }
+			afr_UG_3_visible = { check_variable = { global.AFR_UG_dom = 3 } }
+			afr_UG_4_visible = { check_variable = { global.AFR_UG_dom = 4 } }
+			afr_UG_cw_visible = { SAC_africa_cw_UG = yes }
+			afr_UG_sel_visible = { check_variable = { AFR_sel = 47 } }
+			afr_ZA_0_visible = { check_variable = { global.AFR_ZA_dom = 0 } }
+			afr_ZA_1_visible = { check_variable = { global.AFR_ZA_dom = 1 } }
+			afr_ZA_2_visible = { check_variable = { global.AFR_ZA_dom = 2 } }
+			afr_ZA_3_visible = { check_variable = { global.AFR_ZA_dom = 3 } }
+			afr_ZA_4_visible = { check_variable = { global.AFR_ZA_dom = 4 } }
+			afr_ZA_cw_visible = { SAC_africa_cw_ZA = yes }
+			afr_ZA_sel_visible = { check_variable = { AFR_sel = 48 } }
+			afr_ZM_0_visible = { check_variable = { global.AFR_ZM_dom = 0 } }
+			afr_ZM_1_visible = { check_variable = { global.AFR_ZM_dom = 1 } }
+			afr_ZM_2_visible = { check_variable = { global.AFR_ZM_dom = 2 } }
+			afr_ZM_3_visible = { check_variable = { global.AFR_ZM_dom = 3 } }
+			afr_ZM_4_visible = { check_variable = { global.AFR_ZM_dom = 4 } }
+			afr_ZM_cw_visible = { SAC_africa_cw_ZM = yes }
+			afr_ZM_sel_visible = { check_variable = { AFR_sel = 49 } }
+			afr_ZW_0_visible = { check_variable = { global.AFR_ZW_dom = 0 } }
+			afr_ZW_1_visible = { check_variable = { global.AFR_ZW_dom = 1 } }
+			afr_ZW_2_visible = { check_variable = { global.AFR_ZW_dom = 2 } }
+			afr_ZW_3_visible = { check_variable = { global.AFR_ZW_dom = 3 } }
+			afr_ZW_4_visible = { check_variable = { global.AFR_ZW_dom = 4 } }
+			afr_ZW_cw_visible = { SAC_africa_cw_ZW = yes }
+			afr_ZW_sel_visible = { check_variable = { AFR_sel = 50 } }
+			SAC_africa_tab_inv_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_tab_mil_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_tab_inv_text_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_tab_mil_text_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_infobox_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_sel_name_text_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_sel_status_text_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_sel_lead_text_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_sel_info_text_visible = { check_variable = { AFR_sel > 0 } }
+			SAC_africa_hint_select_visible = { NOT = { check_variable = { AFR_sel > 0 } } }
+			SAC_africa_tab_inv_active_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_tab_mil_active_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_infra_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_infra_title_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_infra_cost_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_infra_click_enabled = { OR = { AND = { check_variable = { AFR_sel = 1 } SAC_afr_can_infra_AO = yes } AND = { check_variable = { AFR_sel = 2 } SAC_afr_can_infra_BF = yes } AND = { check_variable = { AFR_sel = 3 } SAC_afr_can_infra_BI = yes } AND = { check_variable = { AFR_sel = 4 } SAC_afr_can_infra_BJ = yes } AND = { check_variable = { AFR_sel = 5 } SAC_afr_can_infra_BW = yes } AND = { check_variable = { AFR_sel = 6 } SAC_afr_can_infra_CD = yes } AND = { check_variable = { AFR_sel = 7 } SAC_afr_can_infra_CF = yes } AND = { check_variable = { AFR_sel = 8 } SAC_afr_can_infra_CG = yes } AND = { check_variable = { AFR_sel = 9 } SAC_afr_can_infra_CI = yes } AND = { check_variable = { AFR_sel = 10 } SAC_afr_can_infra_CM = yes } AND = { check_variable = { AFR_sel = 11 } SAC_afr_can_infra_DJ = yes } AND = { check_variable = { AFR_sel = 12 } SAC_afr_can_infra_DZ = yes } AND = { check_variable = { AFR_sel = 13 } SAC_afr_can_infra_EG = yes } AND = { check_variable = { AFR_sel = 14 } SAC_afr_can_infra_EH = yes } AND = { check_variable = { AFR_sel = 15 } SAC_afr_can_infra_ER = yes } AND = { check_variable = { AFR_sel = 16 } SAC_afr_can_infra_ET = yes } AND = { check_variable = { AFR_sel = 17 } SAC_afr_can_infra_GA = yes } AND = { check_variable = { AFR_sel = 18 } SAC_afr_can_infra_GH = yes } AND = { check_variable = { AFR_sel = 19 } SAC_afr_can_infra_GM = yes } AND = { check_variable = { AFR_sel = 20 } SAC_afr_can_infra_GN = yes } AND = { check_variable = { AFR_sel = 21 } SAC_afr_can_infra_GQ = yes } AND = { check_variable = { AFR_sel = 22 } SAC_afr_can_infra_GW = yes } AND = { check_variable = { AFR_sel = 23 } SAC_afr_can_infra_KE = yes } AND = { check_variable = { AFR_sel = 24 } SAC_afr_can_infra_LR = yes } AND = { check_variable = { AFR_sel = 25 } SAC_afr_can_infra_LS = yes } AND = { check_variable = { AFR_sel = 26 } SAC_afr_can_infra_LY = yes } AND = { check_variable = { AFR_sel = 27 } SAC_afr_can_infra_MA = yes } AND = { check_variable = { AFR_sel = 28 } SAC_afr_can_infra_MG = yes } AND = { check_variable = { AFR_sel = 29 } SAC_afr_can_infra_ML = yes } AND = { check_variable = { AFR_sel = 30 } SAC_afr_can_infra_MR = yes } AND = { check_variable = { AFR_sel = 31 } SAC_afr_can_infra_MW = yes } AND = { check_variable = { AFR_sel = 32 } SAC_afr_can_infra_MZ = yes } AND = { check_variable = { AFR_sel = 33 } SAC_afr_can_infra_NA = yes } AND = { check_variable = { AFR_sel = 34 } SAC_afr_can_infra_NE = yes } AND = { check_variable = { AFR_sel = 35 } SAC_afr_can_infra_NG = yes } AND = { check_variable = { AFR_sel = 36 } SAC_afr_can_infra_RW = yes } AND = { check_variable = { AFR_sel = 37 } SAC_afr_can_infra_SD = yes } AND = { check_variable = { AFR_sel = 38 } SAC_afr_can_infra_SL = yes } AND = { check_variable = { AFR_sel = 39 } SAC_afr_can_infra_SN = yes } AND = { check_variable = { AFR_sel = 40 } SAC_afr_can_infra_SO = yes } AND = { check_variable = { AFR_sel = 41 } SAC_afr_can_infra_SS = yes } AND = { check_variable = { AFR_sel = 42 } SAC_afr_can_infra_SZ = yes } AND = { check_variable = { AFR_sel = 43 } SAC_afr_can_infra_TD = yes } AND = { check_variable = { AFR_sel = 44 } SAC_afr_can_infra_TG = yes } AND = { check_variable = { AFR_sel = 45 } SAC_afr_can_infra_TN = yes } AND = { check_variable = { AFR_sel = 46 } SAC_afr_can_infra_TZ = yes } AND = { check_variable = { AFR_sel = 47 } SAC_afr_can_infra_UG = yes } AND = { check_variable = { AFR_sel = 48 } SAC_afr_can_infra_ZA = yes } AND = { check_variable = { AFR_sel = 49 } SAC_afr_can_infra_ZM = yes } AND = { check_variable = { AFR_sel = 50 } SAC_afr_can_infra_ZW = yes } } }
+			SAC_africa_act_civ_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_civ_title_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_civ_cost_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_civ_click_enabled = { OR = { AND = { check_variable = { AFR_sel = 1 } SAC_afr_can_civ_AO = yes } AND = { check_variable = { AFR_sel = 2 } SAC_afr_can_civ_BF = yes } AND = { check_variable = { AFR_sel = 3 } SAC_afr_can_civ_BI = yes } AND = { check_variable = { AFR_sel = 4 } SAC_afr_can_civ_BJ = yes } AND = { check_variable = { AFR_sel = 5 } SAC_afr_can_civ_BW = yes } AND = { check_variable = { AFR_sel = 6 } SAC_afr_can_civ_CD = yes } AND = { check_variable = { AFR_sel = 7 } SAC_afr_can_civ_CF = yes } AND = { check_variable = { AFR_sel = 8 } SAC_afr_can_civ_CG = yes } AND = { check_variable = { AFR_sel = 9 } SAC_afr_can_civ_CI = yes } AND = { check_variable = { AFR_sel = 10 } SAC_afr_can_civ_CM = yes } AND = { check_variable = { AFR_sel = 11 } SAC_afr_can_civ_DJ = yes } AND = { check_variable = { AFR_sel = 12 } SAC_afr_can_civ_DZ = yes } AND = { check_variable = { AFR_sel = 13 } SAC_afr_can_civ_EG = yes } AND = { check_variable = { AFR_sel = 14 } SAC_afr_can_civ_EH = yes } AND = { check_variable = { AFR_sel = 15 } SAC_afr_can_civ_ER = yes } AND = { check_variable = { AFR_sel = 16 } SAC_afr_can_civ_ET = yes } AND = { check_variable = { AFR_sel = 17 } SAC_afr_can_civ_GA = yes } AND = { check_variable = { AFR_sel = 18 } SAC_afr_can_civ_GH = yes } AND = { check_variable = { AFR_sel = 19 } SAC_afr_can_civ_GM = yes } AND = { check_variable = { AFR_sel = 20 } SAC_afr_can_civ_GN = yes } AND = { check_variable = { AFR_sel = 21 } SAC_afr_can_civ_GQ = yes } AND = { check_variable = { AFR_sel = 22 } SAC_afr_can_civ_GW = yes } AND = { check_variable = { AFR_sel = 23 } SAC_afr_can_civ_KE = yes } AND = { check_variable = { AFR_sel = 24 } SAC_afr_can_civ_LR = yes } AND = { check_variable = { AFR_sel = 25 } SAC_afr_can_civ_LS = yes } AND = { check_variable = { AFR_sel = 26 } SAC_afr_can_civ_LY = yes } AND = { check_variable = { AFR_sel = 27 } SAC_afr_can_civ_MA = yes } AND = { check_variable = { AFR_sel = 28 } SAC_afr_can_civ_MG = yes } AND = { check_variable = { AFR_sel = 29 } SAC_afr_can_civ_ML = yes } AND = { check_variable = { AFR_sel = 30 } SAC_afr_can_civ_MR = yes } AND = { check_variable = { AFR_sel = 31 } SAC_afr_can_civ_MW = yes } AND = { check_variable = { AFR_sel = 32 } SAC_afr_can_civ_MZ = yes } AND = { check_variable = { AFR_sel = 33 } SAC_afr_can_civ_NA = yes } AND = { check_variable = { AFR_sel = 34 } SAC_afr_can_civ_NE = yes } AND = { check_variable = { AFR_sel = 35 } SAC_afr_can_civ_NG = yes } AND = { check_variable = { AFR_sel = 36 } SAC_afr_can_civ_RW = yes } AND = { check_variable = { AFR_sel = 37 } SAC_afr_can_civ_SD = yes } AND = { check_variable = { AFR_sel = 38 } SAC_afr_can_civ_SL = yes } AND = { check_variable = { AFR_sel = 39 } SAC_afr_can_civ_SN = yes } AND = { check_variable = { AFR_sel = 40 } SAC_afr_can_civ_SO = yes } AND = { check_variable = { AFR_sel = 41 } SAC_afr_can_civ_SS = yes } AND = { check_variable = { AFR_sel = 42 } SAC_afr_can_civ_SZ = yes } AND = { check_variable = { AFR_sel = 43 } SAC_afr_can_civ_TD = yes } AND = { check_variable = { AFR_sel = 44 } SAC_afr_can_civ_TG = yes } AND = { check_variable = { AFR_sel = 45 } SAC_afr_can_civ_TN = yes } AND = { check_variable = { AFR_sel = 46 } SAC_afr_can_civ_TZ = yes } AND = { check_variable = { AFR_sel = 47 } SAC_afr_can_civ_UG = yes } AND = { check_variable = { AFR_sel = 48 } SAC_afr_can_civ_ZA = yes } AND = { check_variable = { AFR_sel = 49 } SAC_afr_can_civ_ZM = yes } AND = { check_variable = { AFR_sel = 50 } SAC_afr_can_civ_ZW = yes } } }
+			SAC_africa_act_power_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_power_title_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_power_cost_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } }
+			SAC_africa_act_power_click_enabled = { OR = { AND = { check_variable = { AFR_sel = 1 } SAC_afr_can_power_AO = yes } AND = { check_variable = { AFR_sel = 2 } SAC_afr_can_power_BF = yes } AND = { check_variable = { AFR_sel = 3 } SAC_afr_can_power_BI = yes } AND = { check_variable = { AFR_sel = 4 } SAC_afr_can_power_BJ = yes } AND = { check_variable = { AFR_sel = 5 } SAC_afr_can_power_BW = yes } AND = { check_variable = { AFR_sel = 6 } SAC_afr_can_power_CD = yes } AND = { check_variable = { AFR_sel = 7 } SAC_afr_can_power_CF = yes } AND = { check_variable = { AFR_sel = 8 } SAC_afr_can_power_CG = yes } AND = { check_variable = { AFR_sel = 9 } SAC_afr_can_power_CI = yes } AND = { check_variable = { AFR_sel = 10 } SAC_afr_can_power_CM = yes } AND = { check_variable = { AFR_sel = 11 } SAC_afr_can_power_DJ = yes } AND = { check_variable = { AFR_sel = 12 } SAC_afr_can_power_DZ = yes } AND = { check_variable = { AFR_sel = 13 } SAC_afr_can_power_EG = yes } AND = { check_variable = { AFR_sel = 14 } SAC_afr_can_power_EH = yes } AND = { check_variable = { AFR_sel = 15 } SAC_afr_can_power_ER = yes } AND = { check_variable = { AFR_sel = 16 } SAC_afr_can_power_ET = yes } AND = { check_variable = { AFR_sel = 17 } SAC_afr_can_power_GA = yes } AND = { check_variable = { AFR_sel = 18 } SAC_afr_can_power_GH = yes } AND = { check_variable = { AFR_sel = 19 } SAC_afr_can_power_GM = yes } AND = { check_variable = { AFR_sel = 20 } SAC_afr_can_power_GN = yes } AND = { check_variable = { AFR_sel = 21 } SAC_afr_can_power_GQ = yes } AND = { check_variable = { AFR_sel = 22 } SAC_afr_can_power_GW = yes } AND = { check_variable = { AFR_sel = 23 } SAC_afr_can_power_KE = yes } AND = { check_variable = { AFR_sel = 24 } SAC_afr_can_power_LR = yes } AND = { check_variable = { AFR_sel = 25 } SAC_afr_can_power_LS = yes } AND = { check_variable = { AFR_sel = 26 } SAC_afr_can_power_LY = yes } AND = { check_variable = { AFR_sel = 27 } SAC_afr_can_power_MA = yes } AND = { check_variable = { AFR_sel = 28 } SAC_afr_can_power_MG = yes } AND = { check_variable = { AFR_sel = 29 } SAC_afr_can_power_ML = yes } AND = { check_variable = { AFR_sel = 30 } SAC_afr_can_power_MR = yes } AND = { check_variable = { AFR_sel = 31 } SAC_afr_can_power_MW = yes } AND = { check_variable = { AFR_sel = 32 } SAC_afr_can_power_MZ = yes } AND = { check_variable = { AFR_sel = 33 } SAC_afr_can_power_NA = yes } AND = { check_variable = { AFR_sel = 34 } SAC_afr_can_power_NE = yes } AND = { check_variable = { AFR_sel = 35 } SAC_afr_can_power_NG = yes } AND = { check_variable = { AFR_sel = 36 } SAC_afr_can_power_RW = yes } AND = { check_variable = { AFR_sel = 37 } SAC_afr_can_power_SD = yes } AND = { check_variable = { AFR_sel = 38 } SAC_afr_can_power_SL = yes } AND = { check_variable = { AFR_sel = 39 } SAC_afr_can_power_SN = yes } AND = { check_variable = { AFR_sel = 40 } SAC_afr_can_power_SO = yes } AND = { check_variable = { AFR_sel = 41 } SAC_afr_can_power_SS = yes } AND = { check_variable = { AFR_sel = 42 } SAC_afr_can_power_SZ = yes } AND = { check_variable = { AFR_sel = 43 } SAC_afr_can_power_TD = yes } AND = { check_variable = { AFR_sel = 44 } SAC_afr_can_power_TG = yes } AND = { check_variable = { AFR_sel = 45 } SAC_afr_can_power_TN = yes } AND = { check_variable = { AFR_sel = 46 } SAC_afr_can_power_TZ = yes } AND = { check_variable = { AFR_sel = 47 } SAC_afr_can_power_UG = yes } AND = { check_variable = { AFR_sel = 48 } SAC_afr_can_power_ZA = yes } AND = { check_variable = { AFR_sel = 49 } SAC_afr_can_power_ZM = yes } AND = { check_variable = { AFR_sel = 50 } SAC_afr_can_power_ZW = yes } } }
+			SAC_africa_act_arms_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_arms_title_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_arms_cost_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_arms_click_enabled = { OR = { AND = { check_variable = { AFR_sel = 1 } SAC_afr_can_arms_AO = yes } AND = { check_variable = { AFR_sel = 2 } SAC_afr_can_arms_BF = yes } AND = { check_variable = { AFR_sel = 3 } SAC_afr_can_arms_BI = yes } AND = { check_variable = { AFR_sel = 4 } SAC_afr_can_arms_BJ = yes } AND = { check_variable = { AFR_sel = 5 } SAC_afr_can_arms_BW = yes } AND = { check_variable = { AFR_sel = 6 } SAC_afr_can_arms_CD = yes } AND = { check_variable = { AFR_sel = 7 } SAC_afr_can_arms_CF = yes } AND = { check_variable = { AFR_sel = 8 } SAC_afr_can_arms_CG = yes } AND = { check_variable = { AFR_sel = 9 } SAC_afr_can_arms_CI = yes } AND = { check_variable = { AFR_sel = 10 } SAC_afr_can_arms_CM = yes } AND = { check_variable = { AFR_sel = 11 } SAC_afr_can_arms_DJ = yes } AND = { check_variable = { AFR_sel = 12 } SAC_afr_can_arms_DZ = yes } AND = { check_variable = { AFR_sel = 13 } SAC_afr_can_arms_EG = yes } AND = { check_variable = { AFR_sel = 14 } SAC_afr_can_arms_EH = yes } AND = { check_variable = { AFR_sel = 15 } SAC_afr_can_arms_ER = yes } AND = { check_variable = { AFR_sel = 16 } SAC_afr_can_arms_ET = yes } AND = { check_variable = { AFR_sel = 17 } SAC_afr_can_arms_GA = yes } AND = { check_variable = { AFR_sel = 18 } SAC_afr_can_arms_GH = yes } AND = { check_variable = { AFR_sel = 19 } SAC_afr_can_arms_GM = yes } AND = { check_variable = { AFR_sel = 20 } SAC_afr_can_arms_GN = yes } AND = { check_variable = { AFR_sel = 21 } SAC_afr_can_arms_GQ = yes } AND = { check_variable = { AFR_sel = 22 } SAC_afr_can_arms_GW = yes } AND = { check_variable = { AFR_sel = 23 } SAC_afr_can_arms_KE = yes } AND = { check_variable = { AFR_sel = 24 } SAC_afr_can_arms_LR = yes } AND = { check_variable = { AFR_sel = 25 } SAC_afr_can_arms_LS = yes } AND = { check_variable = { AFR_sel = 26 } SAC_afr_can_arms_LY = yes } AND = { check_variable = { AFR_sel = 27 } SAC_afr_can_arms_MA = yes } AND = { check_variable = { AFR_sel = 28 } SAC_afr_can_arms_MG = yes } AND = { check_variable = { AFR_sel = 29 } SAC_afr_can_arms_ML = yes } AND = { check_variable = { AFR_sel = 30 } SAC_afr_can_arms_MR = yes } AND = { check_variable = { AFR_sel = 31 } SAC_afr_can_arms_MW = yes } AND = { check_variable = { AFR_sel = 32 } SAC_afr_can_arms_MZ = yes } AND = { check_variable = { AFR_sel = 33 } SAC_afr_can_arms_NA = yes } AND = { check_variable = { AFR_sel = 34 } SAC_afr_can_arms_NE = yes } AND = { check_variable = { AFR_sel = 35 } SAC_afr_can_arms_NG = yes } AND = { check_variable = { AFR_sel = 36 } SAC_afr_can_arms_RW = yes } AND = { check_variable = { AFR_sel = 37 } SAC_afr_can_arms_SD = yes } AND = { check_variable = { AFR_sel = 38 } SAC_afr_can_arms_SL = yes } AND = { check_variable = { AFR_sel = 39 } SAC_afr_can_arms_SN = yes } AND = { check_variable = { AFR_sel = 40 } SAC_afr_can_arms_SO = yes } AND = { check_variable = { AFR_sel = 41 } SAC_afr_can_arms_SS = yes } AND = { check_variable = { AFR_sel = 42 } SAC_afr_can_arms_SZ = yes } AND = { check_variable = { AFR_sel = 43 } SAC_afr_can_arms_TD = yes } AND = { check_variable = { AFR_sel = 44 } SAC_afr_can_arms_TG = yes } AND = { check_variable = { AFR_sel = 45 } SAC_afr_can_arms_TN = yes } AND = { check_variable = { AFR_sel = 46 } SAC_afr_can_arms_TZ = yes } AND = { check_variable = { AFR_sel = 47 } SAC_afr_can_arms_UG = yes } AND = { check_variable = { AFR_sel = 48 } SAC_afr_can_arms_ZA = yes } AND = { check_variable = { AFR_sel = 49 } SAC_afr_can_arms_ZM = yes } AND = { check_variable = { AFR_sel = 50 } SAC_afr_can_arms_ZW = yes } } }
+			SAC_africa_act_base_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_base_title_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_base_cost_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_base_click_enabled = { OR = { AND = { check_variable = { AFR_sel = 1 } SAC_afr_can_base_AO = yes } AND = { check_variable = { AFR_sel = 2 } SAC_afr_can_base_BF = yes } AND = { check_variable = { AFR_sel = 3 } SAC_afr_can_base_BI = yes } AND = { check_variable = { AFR_sel = 4 } SAC_afr_can_base_BJ = yes } AND = { check_variable = { AFR_sel = 5 } SAC_afr_can_base_BW = yes } AND = { check_variable = { AFR_sel = 6 } SAC_afr_can_base_CD = yes } AND = { check_variable = { AFR_sel = 7 } SAC_afr_can_base_CF = yes } AND = { check_variable = { AFR_sel = 8 } SAC_afr_can_base_CG = yes } AND = { check_variable = { AFR_sel = 9 } SAC_afr_can_base_CI = yes } AND = { check_variable = { AFR_sel = 10 } SAC_afr_can_base_CM = yes } AND = { check_variable = { AFR_sel = 11 } SAC_afr_can_base_DJ = yes } AND = { check_variable = { AFR_sel = 12 } SAC_afr_can_base_DZ = yes } AND = { check_variable = { AFR_sel = 13 } SAC_afr_can_base_EG = yes } AND = { check_variable = { AFR_sel = 14 } SAC_afr_can_base_EH = yes } AND = { check_variable = { AFR_sel = 15 } SAC_afr_can_base_ER = yes } AND = { check_variable = { AFR_sel = 16 } SAC_afr_can_base_ET = yes } AND = { check_variable = { AFR_sel = 17 } SAC_afr_can_base_GA = yes } AND = { check_variable = { AFR_sel = 18 } SAC_afr_can_base_GH = yes } AND = { check_variable = { AFR_sel = 19 } SAC_afr_can_base_GM = yes } AND = { check_variable = { AFR_sel = 20 } SAC_afr_can_base_GN = yes } AND = { check_variable = { AFR_sel = 21 } SAC_afr_can_base_GQ = yes } AND = { check_variable = { AFR_sel = 22 } SAC_afr_can_base_GW = yes } AND = { check_variable = { AFR_sel = 23 } SAC_afr_can_base_KE = yes } AND = { check_variable = { AFR_sel = 24 } SAC_afr_can_base_LR = yes } AND = { check_variable = { AFR_sel = 25 } SAC_afr_can_base_LS = yes } AND = { check_variable = { AFR_sel = 26 } SAC_afr_can_base_LY = yes } AND = { check_variable = { AFR_sel = 27 } SAC_afr_can_base_MA = yes } AND = { check_variable = { AFR_sel = 28 } SAC_afr_can_base_MG = yes } AND = { check_variable = { AFR_sel = 29 } SAC_afr_can_base_ML = yes } AND = { check_variable = { AFR_sel = 30 } SAC_afr_can_base_MR = yes } AND = { check_variable = { AFR_sel = 31 } SAC_afr_can_base_MW = yes } AND = { check_variable = { AFR_sel = 32 } SAC_afr_can_base_MZ = yes } AND = { check_variable = { AFR_sel = 33 } SAC_afr_can_base_NA = yes } AND = { check_variable = { AFR_sel = 34 } SAC_afr_can_base_NE = yes } AND = { check_variable = { AFR_sel = 35 } SAC_afr_can_base_NG = yes } AND = { check_variable = { AFR_sel = 36 } SAC_afr_can_base_RW = yes } AND = { check_variable = { AFR_sel = 37 } SAC_afr_can_base_SD = yes } AND = { check_variable = { AFR_sel = 38 } SAC_afr_can_base_SL = yes } AND = { check_variable = { AFR_sel = 39 } SAC_afr_can_base_SN = yes } AND = { check_variable = { AFR_sel = 40 } SAC_afr_can_base_SO = yes } AND = { check_variable = { AFR_sel = 41 } SAC_afr_can_base_SS = yes } AND = { check_variable = { AFR_sel = 42 } SAC_afr_can_base_SZ = yes } AND = { check_variable = { AFR_sel = 43 } SAC_afr_can_base_TD = yes } AND = { check_variable = { AFR_sel = 44 } SAC_afr_can_base_TG = yes } AND = { check_variable = { AFR_sel = 45 } SAC_afr_can_base_TN = yes } AND = { check_variable = { AFR_sel = 46 } SAC_afr_can_base_TZ = yes } AND = { check_variable = { AFR_sel = 47 } SAC_afr_can_base_UG = yes } AND = { check_variable = { AFR_sel = 48 } SAC_afr_can_base_ZA = yes } AND = { check_variable = { AFR_sel = 49 } SAC_afr_can_base_ZM = yes } AND = { check_variable = { AFR_sel = 50 } SAC_afr_can_base_ZW = yes } } }
+			SAC_africa_act_mil_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_mil_title_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_mil_cost_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
+			SAC_africa_act_mil_click_enabled = { OR = { AND = { check_variable = { AFR_sel = 1 } SAC_afr_can_mil_AO = yes } AND = { check_variable = { AFR_sel = 2 } SAC_afr_can_mil_BF = yes } AND = { check_variable = { AFR_sel = 3 } SAC_afr_can_mil_BI = yes } AND = { check_variable = { AFR_sel = 4 } SAC_afr_can_mil_BJ = yes } AND = { check_variable = { AFR_sel = 5 } SAC_afr_can_mil_BW = yes } AND = { check_variable = { AFR_sel = 6 } SAC_afr_can_mil_CD = yes } AND = { check_variable = { AFR_sel = 7 } SAC_afr_can_mil_CF = yes } AND = { check_variable = { AFR_sel = 8 } SAC_afr_can_mil_CG = yes } AND = { check_variable = { AFR_sel = 9 } SAC_afr_can_mil_CI = yes } AND = { check_variable = { AFR_sel = 10 } SAC_afr_can_mil_CM = yes } AND = { check_variable = { AFR_sel = 11 } SAC_afr_can_mil_DJ = yes } AND = { check_variable = { AFR_sel = 12 } SAC_afr_can_mil_DZ = yes } AND = { check_variable = { AFR_sel = 13 } SAC_afr_can_mil_EG = yes } AND = { check_variable = { AFR_sel = 14 } SAC_afr_can_mil_EH = yes } AND = { check_variable = { AFR_sel = 15 } SAC_afr_can_mil_ER = yes } AND = { check_variable = { AFR_sel = 16 } SAC_afr_can_mil_ET = yes } AND = { check_variable = { AFR_sel = 17 } SAC_afr_can_mil_GA = yes } AND = { check_variable = { AFR_sel = 18 } SAC_afr_can_mil_GH = yes } AND = { check_variable = { AFR_sel = 19 } SAC_afr_can_mil_GM = yes } AND = { check_variable = { AFR_sel = 20 } SAC_afr_can_mil_GN = yes } AND = { check_variable = { AFR_sel = 21 } SAC_afr_can_mil_GQ = yes } AND = { check_variable = { AFR_sel = 22 } SAC_afr_can_mil_GW = yes } AND = { check_variable = { AFR_sel = 23 } SAC_afr_can_mil_KE = yes } AND = { check_variable = { AFR_sel = 24 } SAC_afr_can_mil_LR = yes } AND = { check_variable = { AFR_sel = 25 } SAC_afr_can_mil_LS = yes } AND = { check_variable = { AFR_sel = 26 } SAC_afr_can_mil_LY = yes } AND = { check_variable = { AFR_sel = 27 } SAC_afr_can_mil_MA = yes } AND = { check_variable = { AFR_sel = 28 } SAC_afr_can_mil_MG = yes } AND = { check_variable = { AFR_sel = 29 } SAC_afr_can_mil_ML = yes } AND = { check_variable = { AFR_sel = 30 } SAC_afr_can_mil_MR = yes } AND = { check_variable = { AFR_sel = 31 } SAC_afr_can_mil_MW = yes } AND = { check_variable = { AFR_sel = 32 } SAC_afr_can_mil_MZ = yes } AND = { check_variable = { AFR_sel = 33 } SAC_afr_can_mil_NA = yes } AND = { check_variable = { AFR_sel = 34 } SAC_afr_can_mil_NE = yes } AND = { check_variable = { AFR_sel = 35 } SAC_afr_can_mil_NG = yes } AND = { check_variable = { AFR_sel = 36 } SAC_afr_can_mil_RW = yes } AND = { check_variable = { AFR_sel = 37 } SAC_afr_can_mil_SD = yes } AND = { check_variable = { AFR_sel = 38 } SAC_afr_can_mil_SL = yes } AND = { check_variable = { AFR_sel = 39 } SAC_afr_can_mil_SN = yes } AND = { check_variable = { AFR_sel = 40 } SAC_afr_can_mil_SO = yes } AND = { check_variable = { AFR_sel = 41 } SAC_afr_can_mil_SS = yes } AND = { check_variable = { AFR_sel = 42 } SAC_afr_can_mil_SZ = yes } AND = { check_variable = { AFR_sel = 43 } SAC_afr_can_mil_TD = yes } AND = { check_variable = { AFR_sel = 44 } SAC_afr_can_mil_TG = yes } AND = { check_variable = { AFR_sel = 45 } SAC_afr_can_mil_TN = yes } AND = { check_variable = { AFR_sel = 46 } SAC_afr_can_mil_TZ = yes } AND = { check_variable = { AFR_sel = 47 } SAC_afr_can_mil_UG = yes } AND = { check_variable = { AFR_sel = 48 } SAC_afr_can_mil_ZA = yes } AND = { check_variable = { AFR_sel = 49 } SAC_afr_can_mil_ZM = yes } AND = { check_variable = { AFR_sel = 50 } SAC_afr_can_mil_ZW = yes } } }
 		}
 	}
 }
