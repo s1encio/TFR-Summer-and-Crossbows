@@ -4,7 +4,7 @@ WAG_moscow_arms_category = {
 		original_tag = WAG
 	}
 	visible = {
-		has_completed_focus = WAG_organise_weapon_supply
+		OR = { has_completed_focus = WAG_organise_weapon_supply has_country_flag = WAG_done_WAG_organise_weapon_supply }
 	}
 	priority = 100
 }
@@ -15,7 +15,7 @@ WAG_ira_category = {
 		original_tag = WAG
 	}
 	visible = {
-		has_completed_focus = WAG_internet_research_agency
+		OR = { has_completed_focus = WAG_internet_research_agency has_country_flag = WAG_done_WAG_internet_research_agency }
 	}
 	priority = 99
 }

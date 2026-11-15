@@ -25,6 +25,12 @@ country_event = {
 
 	option = {
 		name = sac_wag.2.a
+		if = { limit = { has_completed_focus = WAG_orchestra } set_country_flag = WAG_done_WAG_orchestra }
+		if = { limit = { has_completed_focus = WAG_organise_weapon_supply } set_country_flag = WAG_done_WAG_organise_weapon_supply }
+		if = { limit = { has_completed_focus = WAG_request_aircraft_from_mod } set_country_flag = WAG_done_WAG_request_aircraft_from_mod }
+		if = { limit = { has_completed_focus = WAG_internet_research_agency } set_country_flag = WAG_done_WAG_internet_research_agency }
+		if = { limit = { has_completed_focus = WAG_import_oil_from_libya } set_country_flag = WAG_done_WAG_import_oil_from_libya }
+		if = { limit = { has_completed_focus = WAG_call_from_moscow } set_country_flag = WAG_done_WAG_call_from_moscow }
 		load_focus_tree = {
 			tree = WAG_car_focus_tree
 			keep_completed = yes

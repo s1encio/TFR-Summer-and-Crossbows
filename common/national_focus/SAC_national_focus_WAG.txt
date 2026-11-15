@@ -20,6 +20,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_country_flag = WAG_done_WAG_orchestra  # keeps decisions visible after the CAR tree loads
 			country_event = { id = sac_wag.1 }
 		}
 	}
@@ -34,6 +35,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_orchestra }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_country_flag = WAG_done_WAG_organise_weapon_supply  # keeps decisions visible after the CAR tree loads
 			custom_effect_tooltip = WAG_unlock_moscow_arms_tt
 		}
 	}
@@ -48,6 +50,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_orchestra }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_country_flag = WAG_done_WAG_internet_research_agency  # keeps decisions visible after the CAR tree loads
 			custom_effect_tooltip = WAG_unlock_ira_tt
 		}
 	}
@@ -62,6 +65,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_organise_weapon_supply }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_country_flag = WAG_done_WAG_request_aircraft_from_mod  # keeps decisions visible after the CAR tree loads
 			if = {
 				limit = { has_dlc = "By Blood Alone" }
 				add_equipment_to_stockpile = { type = small_plane_cas_airframe_1 variant_name = "Su-25" amount = 10 producer = SOV }
@@ -91,6 +95,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_internet_research_agency }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_country_flag = WAG_done_WAG_import_oil_from_libya  # keeps decisions visible after the CAR tree loads
 			1503 = {
 				add_resource = {
 					type = oil
@@ -111,6 +116,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_import_oil_from_libya }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_country_flag = WAG_done_WAG_call_from_moscow  # keeps decisions visible after the CAR tree loads
 			country_event = { id = sac_wag.2 }
 		}
 	}

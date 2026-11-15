@@ -815,7 +815,8 @@ SAC_africa_gain_ZW = {
 SAC_afr_do_infra_AO = {
 	add_political_power = -25
 	ANG = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_AO days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_AO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_AO = yes
 	ANG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -823,7 +824,8 @@ SAC_afr_do_infra_AO = {
 SAC_afr_do_infra_BF = {
 	add_political_power = -25
 	VOL = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_BF days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_BF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_BF = yes
 	VOL = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -831,7 +833,8 @@ SAC_afr_do_infra_BF = {
 SAC_afr_do_infra_BI = {
 	add_political_power = -25
 	BRD = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_BI days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_BI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_BI = yes
 	BRD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -839,7 +842,8 @@ SAC_afr_do_infra_BI = {
 SAC_afr_do_infra_BJ = {
 	add_political_power = -25
 	DAH = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_BJ days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_BJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_BJ = yes
 	DAH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -847,7 +851,8 @@ SAC_afr_do_infra_BJ = {
 SAC_afr_do_infra_BW = {
 	add_political_power = -25
 	BOT = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_BW days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_BW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_BW = yes
 	BOT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -855,7 +860,8 @@ SAC_afr_do_infra_BW = {
 SAC_afr_do_infra_CD = {
 	add_political_power = -25
 	COG = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_CD days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_CD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_CD = yes
 	COG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -863,7 +869,8 @@ SAC_afr_do_infra_CD = {
 SAC_afr_do_infra_CF = {
 	add_political_power = -25
 	CAR = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_CF days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_CF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_CF = yes
 	CAR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -871,7 +878,8 @@ SAC_afr_do_infra_CF = {
 SAC_afr_do_infra_CG = {
 	add_political_power = -25
 	RCG = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_CG days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_CG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_CG = yes
 	RCG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -879,7 +887,8 @@ SAC_afr_do_infra_CG = {
 SAC_afr_do_infra_CI = {
 	add_political_power = -25
 	IVO = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_CI days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_CI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_CI = yes
 	IVO = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -887,7 +896,8 @@ SAC_afr_do_infra_CI = {
 SAC_afr_do_infra_CM = {
 	add_political_power = -25
 	CMR = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_CM days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_CM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_CM = yes
 	CMR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -895,7 +905,8 @@ SAC_afr_do_infra_CM = {
 SAC_afr_do_infra_DJ = {
 	add_political_power = -25
 	DJI = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_DJ days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_DJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_DJ = yes
 	DJI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -903,7 +914,8 @@ SAC_afr_do_infra_DJ = {
 SAC_afr_do_infra_DZ = {
 	add_political_power = -25
 	ALG = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_DZ days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_DZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_DZ = yes
 	ALG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -911,7 +923,8 @@ SAC_afr_do_infra_DZ = {
 SAC_afr_do_infra_EG = {
 	add_political_power = -25
 	EGY = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_EG days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_EG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_EG = yes
 	EGY = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -919,7 +932,8 @@ SAC_afr_do_infra_EG = {
 SAC_afr_do_infra_EH = {
 	add_political_power = -25
 	WES = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_EH days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_EH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_EH = yes
 	WES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -927,7 +941,8 @@ SAC_afr_do_infra_EH = {
 SAC_afr_do_infra_ER = {
 	add_political_power = -25
 	ERI = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_ER days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_ER = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_ER = yes
 	ERI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -935,7 +950,8 @@ SAC_afr_do_infra_ER = {
 SAC_afr_do_infra_ET = {
 	add_political_power = -25
 	ETH = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_ET days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_ET = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_ET = yes
 	ETH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -943,7 +959,8 @@ SAC_afr_do_infra_ET = {
 SAC_afr_do_infra_GA = {
 	add_political_power = -25
 	GAB = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_GA days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_GA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_GA = yes
 	GAB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -951,7 +968,8 @@ SAC_afr_do_infra_GA = {
 SAC_afr_do_infra_GH = {
 	add_political_power = -25
 	GHA = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_GH days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_GH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_GH = yes
 	GHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -959,7 +977,8 @@ SAC_afr_do_infra_GH = {
 SAC_afr_do_infra_GM = {
 	add_political_power = -25
 	GAM = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_GM days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_GM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_GM = yes
 	GAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -967,7 +986,8 @@ SAC_afr_do_infra_GM = {
 SAC_afr_do_infra_GN = {
 	add_political_power = -25
 	GNA = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_GN days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_GN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_GN = yes
 	GNA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -975,7 +995,8 @@ SAC_afr_do_infra_GN = {
 SAC_afr_do_infra_GQ = {
 	add_political_power = -25
 	EQG = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_GQ days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_GQ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_GQ = yes
 	EQG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -983,7 +1004,8 @@ SAC_afr_do_infra_GQ = {
 SAC_afr_do_infra_GW = {
 	add_political_power = -25
 	GNB = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_GW days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_GW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_GW = yes
 	GNB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -991,7 +1013,8 @@ SAC_afr_do_infra_GW = {
 SAC_afr_do_infra_KE = {
 	add_political_power = -25
 	KEN = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_KE days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_KE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_KE = yes
 	KEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -999,7 +1022,8 @@ SAC_afr_do_infra_KE = {
 SAC_afr_do_infra_LR = {
 	add_political_power = -25
 	LIB = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_LR days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_LR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_LR = yes
 	LIB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1007,7 +1031,8 @@ SAC_afr_do_infra_LR = {
 SAC_afr_do_infra_LS = {
 	add_political_power = -25
 	LES = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_LS days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_LS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_LS = yes
 	LES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1015,7 +1040,8 @@ SAC_afr_do_infra_LS = {
 SAC_afr_do_infra_LY = {
 	add_political_power = -25
 	LBA = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_LY days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_LY = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_LY = yes
 	LBA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1023,7 +1049,8 @@ SAC_afr_do_infra_LY = {
 SAC_afr_do_infra_MA = {
 	add_political_power = -25
 	MOR = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_MA days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_MA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_MA = yes
 	MOR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1031,7 +1058,8 @@ SAC_afr_do_infra_MA = {
 SAC_afr_do_infra_MG = {
 	add_political_power = -25
 	MAD = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_MG days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_MG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_MG = yes
 	MAD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1039,7 +1067,8 @@ SAC_afr_do_infra_MG = {
 SAC_afr_do_infra_ML = {
 	add_political_power = -25
 	MLI = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_ML days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_ML = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_ML = yes
 	MLI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1047,7 +1076,8 @@ SAC_afr_do_infra_ML = {
 SAC_afr_do_infra_MR = {
 	add_political_power = -25
 	MRT = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_MR days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_MR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_MR = yes
 	MRT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1055,7 +1085,8 @@ SAC_afr_do_infra_MR = {
 SAC_afr_do_infra_MW = {
 	add_political_power = -25
 	MLW = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_MW days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_MW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_MW = yes
 	MLW = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1063,7 +1094,8 @@ SAC_afr_do_infra_MW = {
 SAC_afr_do_infra_MZ = {
 	add_political_power = -25
 	MZB = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_MZ days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_MZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_MZ = yes
 	MZB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1071,7 +1103,8 @@ SAC_afr_do_infra_MZ = {
 SAC_afr_do_infra_NA = {
 	add_political_power = -25
 	NMB = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_NA days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_NA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_NA = yes
 	NMB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1079,7 +1112,8 @@ SAC_afr_do_infra_NA = {
 SAC_afr_do_infra_NE = {
 	add_political_power = -25
 	NGR = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_NE days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_NE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_NE = yes
 	NGR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1087,7 +1121,8 @@ SAC_afr_do_infra_NE = {
 SAC_afr_do_infra_NG = {
 	add_political_power = -25
 	NGA = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_NG days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_NG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_NG = yes
 	NGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1095,7 +1130,8 @@ SAC_afr_do_infra_NG = {
 SAC_afr_do_infra_RW = {
 	add_political_power = -25
 	RWA = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_RW days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_RW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_RW = yes
 	RWA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1103,7 +1139,8 @@ SAC_afr_do_infra_RW = {
 SAC_afr_do_infra_SD = {
 	add_political_power = -25
 	SUD = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_SD days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_SD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_SD = yes
 	SUD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1111,7 +1148,8 @@ SAC_afr_do_infra_SD = {
 SAC_afr_do_infra_SL = {
 	add_political_power = -25
 	SIE = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_SL days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_SL = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_SL = yes
 	SIE = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1119,7 +1157,8 @@ SAC_afr_do_infra_SL = {
 SAC_afr_do_infra_SN = {
 	add_political_power = -25
 	SEN = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_SN days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_SN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_SN = yes
 	SEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1127,7 +1166,8 @@ SAC_afr_do_infra_SN = {
 SAC_afr_do_infra_SO = {
 	add_political_power = -25
 	SOM = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_SO days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_SO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_SO = yes
 	SOM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1135,7 +1175,8 @@ SAC_afr_do_infra_SO = {
 SAC_afr_do_infra_SS = {
 	add_political_power = -25
 	SSD = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_SS days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_SS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_SS = yes
 	SSD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1143,7 +1184,8 @@ SAC_afr_do_infra_SS = {
 SAC_afr_do_infra_SZ = {
 	add_political_power = -25
 	SWZ = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_SZ days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_SZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_SZ = yes
 	SWZ = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1151,7 +1193,8 @@ SAC_afr_do_infra_SZ = {
 SAC_afr_do_infra_TD = {
 	add_political_power = -25
 	CHA = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_TD days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_TD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_TD = yes
 	CHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1159,7 +1202,8 @@ SAC_afr_do_infra_TD = {
 SAC_afr_do_infra_TG = {
 	add_political_power = -25
 	TOG = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_TG days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_TG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_TG = yes
 	TOG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1167,7 +1211,8 @@ SAC_afr_do_infra_TG = {
 SAC_afr_do_infra_TN = {
 	add_political_power = -25
 	TUN = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_TN days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_TN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_TN = yes
 	TUN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1175,7 +1220,8 @@ SAC_afr_do_infra_TN = {
 SAC_afr_do_infra_TZ = {
 	add_political_power = -25
 	TZN = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_TZ days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_TZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_TZ = yes
 	TZN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1183,7 +1229,8 @@ SAC_afr_do_infra_TZ = {
 SAC_afr_do_infra_UG = {
 	add_political_power = -25
 	UGA = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_UG days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_UG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_UG = yes
 	UGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1191,7 +1238,8 @@ SAC_afr_do_infra_UG = {
 SAC_afr_do_infra_ZA = {
 	add_political_power = -25
 	SAF = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_ZA days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_ZA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_ZA = yes
 	SAF = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1199,7 +1247,8 @@ SAC_afr_do_infra_ZA = {
 SAC_afr_do_infra_ZM = {
 	add_political_power = -25
 	ZAM = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_ZM days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_ZM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_ZM = yes
 	ZAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1207,7 +1256,8 @@ SAC_afr_do_infra_ZM = {
 SAC_afr_do_infra_ZW = {
 	add_political_power = -25
 	ZIM = { if = { limit = { capital_scope = { infrastructure < 5 } } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } else = { random_owned_controlled_state = { limit = { infrastructure < 5 } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-	set_country_flag = { flag = SAC_afr_cd_infra_ZW days = 30 value = 1 }
+	set_variable = { AFR_cd_infra_ZW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 3 }
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1215,7 +1265,8 @@ SAC_afr_do_infra_ZW = {
 SAC_afr_do_civ_AO = {
 	add_political_power = -50
 	ANG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_AO days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_AO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_AO = yes
 	ANG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1223,7 +1274,8 @@ SAC_afr_do_civ_AO = {
 SAC_afr_do_civ_BF = {
 	add_political_power = -50
 	VOL = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_BF days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_BF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BF = yes
 	VOL = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1231,7 +1283,8 @@ SAC_afr_do_civ_BF = {
 SAC_afr_do_civ_BI = {
 	add_political_power = -50
 	BRD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_BI days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_BI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BI = yes
 	BRD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1239,7 +1292,8 @@ SAC_afr_do_civ_BI = {
 SAC_afr_do_civ_BJ = {
 	add_political_power = -50
 	DAH = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_BJ days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_BJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BJ = yes
 	DAH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1247,7 +1301,8 @@ SAC_afr_do_civ_BJ = {
 SAC_afr_do_civ_BW = {
 	add_political_power = -50
 	BOT = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_BW days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_BW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BW = yes
 	BOT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1255,7 +1310,8 @@ SAC_afr_do_civ_BW = {
 SAC_afr_do_civ_CD = {
 	add_political_power = -50
 	COG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_CD days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_CD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CD = yes
 	COG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1263,7 +1319,8 @@ SAC_afr_do_civ_CD = {
 SAC_afr_do_civ_CF = {
 	add_political_power = -50
 	CAR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_CF days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_CF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CF = yes
 	CAR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1271,7 +1328,8 @@ SAC_afr_do_civ_CF = {
 SAC_afr_do_civ_CG = {
 	add_political_power = -50
 	RCG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_CG days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_CG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CG = yes
 	RCG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1279,7 +1337,8 @@ SAC_afr_do_civ_CG = {
 SAC_afr_do_civ_CI = {
 	add_political_power = -50
 	IVO = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_CI days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_CI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CI = yes
 	IVO = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1287,7 +1346,8 @@ SAC_afr_do_civ_CI = {
 SAC_afr_do_civ_CM = {
 	add_political_power = -50
 	CMR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_CM days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_CM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CM = yes
 	CMR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1295,7 +1355,8 @@ SAC_afr_do_civ_CM = {
 SAC_afr_do_civ_DJ = {
 	add_political_power = -50
 	DJI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_DJ days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_DJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_DJ = yes
 	DJI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1303,7 +1364,8 @@ SAC_afr_do_civ_DJ = {
 SAC_afr_do_civ_DZ = {
 	add_political_power = -50
 	ALG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_DZ days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_DZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_DZ = yes
 	ALG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1311,7 +1373,8 @@ SAC_afr_do_civ_DZ = {
 SAC_afr_do_civ_EG = {
 	add_political_power = -50
 	EGY = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_EG days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_EG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_EG = yes
 	EGY = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1319,7 +1382,8 @@ SAC_afr_do_civ_EG = {
 SAC_afr_do_civ_EH = {
 	add_political_power = -50
 	WES = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_EH days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_EH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_EH = yes
 	WES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1327,7 +1391,8 @@ SAC_afr_do_civ_EH = {
 SAC_afr_do_civ_ER = {
 	add_political_power = -50
 	ERI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_ER days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_ER = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ER = yes
 	ERI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1335,7 +1400,8 @@ SAC_afr_do_civ_ER = {
 SAC_afr_do_civ_ET = {
 	add_political_power = -50
 	ETH = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_ET days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_ET = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ET = yes
 	ETH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1343,7 +1409,8 @@ SAC_afr_do_civ_ET = {
 SAC_afr_do_civ_GA = {
 	add_political_power = -50
 	GAB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_GA days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_GA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GA = yes
 	GAB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1351,7 +1418,8 @@ SAC_afr_do_civ_GA = {
 SAC_afr_do_civ_GH = {
 	add_political_power = -50
 	GHA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_GH days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_GH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GH = yes
 	GHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1359,7 +1427,8 @@ SAC_afr_do_civ_GH = {
 SAC_afr_do_civ_GM = {
 	add_political_power = -50
 	GAM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_GM days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_GM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GM = yes
 	GAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1367,7 +1436,8 @@ SAC_afr_do_civ_GM = {
 SAC_afr_do_civ_GN = {
 	add_political_power = -50
 	GNA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_GN days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_GN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GN = yes
 	GNA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1375,7 +1445,8 @@ SAC_afr_do_civ_GN = {
 SAC_afr_do_civ_GQ = {
 	add_political_power = -50
 	EQG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_GQ days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_GQ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GQ = yes
 	EQG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1383,7 +1454,8 @@ SAC_afr_do_civ_GQ = {
 SAC_afr_do_civ_GW = {
 	add_political_power = -50
 	GNB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_GW days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_GW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GW = yes
 	GNB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1391,7 +1463,8 @@ SAC_afr_do_civ_GW = {
 SAC_afr_do_civ_KE = {
 	add_political_power = -50
 	KEN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_KE days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_KE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_KE = yes
 	KEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1399,7 +1472,8 @@ SAC_afr_do_civ_KE = {
 SAC_afr_do_civ_LR = {
 	add_political_power = -50
 	LIB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_LR days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_LR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LR = yes
 	LIB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1407,7 +1481,8 @@ SAC_afr_do_civ_LR = {
 SAC_afr_do_civ_LS = {
 	add_political_power = -50
 	LES = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_LS days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_LS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LS = yes
 	LES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1415,7 +1490,8 @@ SAC_afr_do_civ_LS = {
 SAC_afr_do_civ_LY = {
 	add_political_power = -50
 	LBA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_LY days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_LY = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LY = yes
 	LBA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1423,7 +1499,8 @@ SAC_afr_do_civ_LY = {
 SAC_afr_do_civ_MA = {
 	add_political_power = -50
 	MOR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_MA days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_MA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MA = yes
 	MOR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1431,7 +1508,8 @@ SAC_afr_do_civ_MA = {
 SAC_afr_do_civ_MG = {
 	add_political_power = -50
 	MAD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_MG days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_MG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MG = yes
 	MAD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1439,7 +1517,8 @@ SAC_afr_do_civ_MG = {
 SAC_afr_do_civ_ML = {
 	add_political_power = -50
 	MLI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_ML days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_ML = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ML = yes
 	MLI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1447,7 +1526,8 @@ SAC_afr_do_civ_ML = {
 SAC_afr_do_civ_MR = {
 	add_political_power = -50
 	MRT = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_MR days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_MR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MR = yes
 	MRT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1455,7 +1535,8 @@ SAC_afr_do_civ_MR = {
 SAC_afr_do_civ_MW = {
 	add_political_power = -50
 	MLW = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_MW days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_MW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MW = yes
 	MLW = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1463,7 +1544,8 @@ SAC_afr_do_civ_MW = {
 SAC_afr_do_civ_MZ = {
 	add_political_power = -50
 	MZB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_MZ days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_MZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MZ = yes
 	MZB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1471,7 +1553,8 @@ SAC_afr_do_civ_MZ = {
 SAC_afr_do_civ_NA = {
 	add_political_power = -50
 	NMB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_NA days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_NA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NA = yes
 	NMB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1479,7 +1562,8 @@ SAC_afr_do_civ_NA = {
 SAC_afr_do_civ_NE = {
 	add_political_power = -50
 	NGR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_NE days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_NE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NE = yes
 	NGR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1487,7 +1571,8 @@ SAC_afr_do_civ_NE = {
 SAC_afr_do_civ_NG = {
 	add_political_power = -50
 	NGA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_NG days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_NG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NG = yes
 	NGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1495,7 +1580,8 @@ SAC_afr_do_civ_NG = {
 SAC_afr_do_civ_RW = {
 	add_political_power = -50
 	RWA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_RW days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_RW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_RW = yes
 	RWA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1503,7 +1589,8 @@ SAC_afr_do_civ_RW = {
 SAC_afr_do_civ_SD = {
 	add_political_power = -50
 	SUD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_SD days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_SD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SD = yes
 	SUD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1511,7 +1598,8 @@ SAC_afr_do_civ_SD = {
 SAC_afr_do_civ_SL = {
 	add_political_power = -50
 	SIE = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_SL days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_SL = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SL = yes
 	SIE = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1519,7 +1607,8 @@ SAC_afr_do_civ_SL = {
 SAC_afr_do_civ_SN = {
 	add_political_power = -50
 	SEN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_SN days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_SN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SN = yes
 	SEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1527,7 +1616,8 @@ SAC_afr_do_civ_SN = {
 SAC_afr_do_civ_SO = {
 	add_political_power = -50
 	SOM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_SO days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_SO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SO = yes
 	SOM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1535,7 +1625,8 @@ SAC_afr_do_civ_SO = {
 SAC_afr_do_civ_SS = {
 	add_political_power = -50
 	SSD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_SS days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_SS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SS = yes
 	SSD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1543,7 +1634,8 @@ SAC_afr_do_civ_SS = {
 SAC_afr_do_civ_SZ = {
 	add_political_power = -50
 	SWZ = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_SZ days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_SZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SZ = yes
 	SWZ = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1551,7 +1643,8 @@ SAC_afr_do_civ_SZ = {
 SAC_afr_do_civ_TD = {
 	add_political_power = -50
 	CHA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_TD days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_TD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TD = yes
 	CHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1559,7 +1652,8 @@ SAC_afr_do_civ_TD = {
 SAC_afr_do_civ_TG = {
 	add_political_power = -50
 	TOG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_TG days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_TG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TG = yes
 	TOG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1567,7 +1661,8 @@ SAC_afr_do_civ_TG = {
 SAC_afr_do_civ_TN = {
 	add_political_power = -50
 	TUN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_TN days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_TN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TN = yes
 	TUN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1575,7 +1670,8 @@ SAC_afr_do_civ_TN = {
 SAC_afr_do_civ_TZ = {
 	add_political_power = -50
 	TZN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_TZ days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_TZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TZ = yes
 	TZN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1583,7 +1679,8 @@ SAC_afr_do_civ_TZ = {
 SAC_afr_do_civ_UG = {
 	add_political_power = -50
 	UGA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_UG days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_UG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_UG = yes
 	UGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1591,7 +1688,8 @@ SAC_afr_do_civ_UG = {
 SAC_afr_do_civ_ZA = {
 	add_political_power = -50
 	SAF = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_ZA days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_ZA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZA = yes
 	SAF = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1599,7 +1697,8 @@ SAC_afr_do_civ_ZA = {
 SAC_afr_do_civ_ZM = {
 	add_political_power = -50
 	ZAM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_ZM days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_ZM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZM = yes
 	ZAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1607,7 +1706,8 @@ SAC_afr_do_civ_ZM = {
 SAC_afr_do_civ_ZW = {
 	add_political_power = -50
 	ZIM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = industrial_complex size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_civ_ZW days = 30 value = 1 }
+	set_variable = { AFR_cd_civ_ZW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1615,7 +1715,8 @@ SAC_afr_do_civ_ZW = {
 SAC_afr_do_power_AO = {
 	add_political_power = -50
 	ANG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_AO days = 30 value = 1 }
+	set_variable = { AFR_cd_power_AO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_AO = yes
 	ANG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1623,7 +1724,8 @@ SAC_afr_do_power_AO = {
 SAC_afr_do_power_BF = {
 	add_political_power = -50
 	VOL = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_BF days = 30 value = 1 }
+	set_variable = { AFR_cd_power_BF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BF = yes
 	VOL = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1631,7 +1733,8 @@ SAC_afr_do_power_BF = {
 SAC_afr_do_power_BI = {
 	add_political_power = -50
 	BRD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_BI days = 30 value = 1 }
+	set_variable = { AFR_cd_power_BI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BI = yes
 	BRD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1639,7 +1742,8 @@ SAC_afr_do_power_BI = {
 SAC_afr_do_power_BJ = {
 	add_political_power = -50
 	DAH = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_BJ days = 30 value = 1 }
+	set_variable = { AFR_cd_power_BJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BJ = yes
 	DAH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1647,7 +1751,8 @@ SAC_afr_do_power_BJ = {
 SAC_afr_do_power_BW = {
 	add_political_power = -50
 	BOT = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_BW days = 30 value = 1 }
+	set_variable = { AFR_cd_power_BW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BW = yes
 	BOT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1655,7 +1760,8 @@ SAC_afr_do_power_BW = {
 SAC_afr_do_power_CD = {
 	add_political_power = -50
 	COG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_CD days = 30 value = 1 }
+	set_variable = { AFR_cd_power_CD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CD = yes
 	COG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1663,7 +1769,8 @@ SAC_afr_do_power_CD = {
 SAC_afr_do_power_CF = {
 	add_political_power = -50
 	CAR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_CF days = 30 value = 1 }
+	set_variable = { AFR_cd_power_CF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CF = yes
 	CAR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1671,7 +1778,8 @@ SAC_afr_do_power_CF = {
 SAC_afr_do_power_CG = {
 	add_political_power = -50
 	RCG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_CG days = 30 value = 1 }
+	set_variable = { AFR_cd_power_CG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CG = yes
 	RCG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1679,7 +1787,8 @@ SAC_afr_do_power_CG = {
 SAC_afr_do_power_CI = {
 	add_political_power = -50
 	IVO = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_CI days = 30 value = 1 }
+	set_variable = { AFR_cd_power_CI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CI = yes
 	IVO = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1687,7 +1796,8 @@ SAC_afr_do_power_CI = {
 SAC_afr_do_power_CM = {
 	add_political_power = -50
 	CMR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_CM days = 30 value = 1 }
+	set_variable = { AFR_cd_power_CM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CM = yes
 	CMR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1695,7 +1805,8 @@ SAC_afr_do_power_CM = {
 SAC_afr_do_power_DJ = {
 	add_political_power = -50
 	DJI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_DJ days = 30 value = 1 }
+	set_variable = { AFR_cd_power_DJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_DJ = yes
 	DJI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1703,7 +1814,8 @@ SAC_afr_do_power_DJ = {
 SAC_afr_do_power_DZ = {
 	add_political_power = -50
 	ALG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_DZ days = 30 value = 1 }
+	set_variable = { AFR_cd_power_DZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_DZ = yes
 	ALG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1711,7 +1823,8 @@ SAC_afr_do_power_DZ = {
 SAC_afr_do_power_EG = {
 	add_political_power = -50
 	EGY = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_EG days = 30 value = 1 }
+	set_variable = { AFR_cd_power_EG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_EG = yes
 	EGY = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1719,7 +1832,8 @@ SAC_afr_do_power_EG = {
 SAC_afr_do_power_EH = {
 	add_political_power = -50
 	WES = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_EH days = 30 value = 1 }
+	set_variable = { AFR_cd_power_EH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_EH = yes
 	WES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1727,7 +1841,8 @@ SAC_afr_do_power_EH = {
 SAC_afr_do_power_ER = {
 	add_political_power = -50
 	ERI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_ER days = 30 value = 1 }
+	set_variable = { AFR_cd_power_ER = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ER = yes
 	ERI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1735,7 +1850,8 @@ SAC_afr_do_power_ER = {
 SAC_afr_do_power_ET = {
 	add_political_power = -50
 	ETH = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_ET days = 30 value = 1 }
+	set_variable = { AFR_cd_power_ET = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ET = yes
 	ETH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1743,7 +1859,8 @@ SAC_afr_do_power_ET = {
 SAC_afr_do_power_GA = {
 	add_political_power = -50
 	GAB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_GA days = 30 value = 1 }
+	set_variable = { AFR_cd_power_GA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GA = yes
 	GAB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1751,7 +1868,8 @@ SAC_afr_do_power_GA = {
 SAC_afr_do_power_GH = {
 	add_political_power = -50
 	GHA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_GH days = 30 value = 1 }
+	set_variable = { AFR_cd_power_GH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GH = yes
 	GHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1759,7 +1877,8 @@ SAC_afr_do_power_GH = {
 SAC_afr_do_power_GM = {
 	add_political_power = -50
 	GAM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_GM days = 30 value = 1 }
+	set_variable = { AFR_cd_power_GM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GM = yes
 	GAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1767,7 +1886,8 @@ SAC_afr_do_power_GM = {
 SAC_afr_do_power_GN = {
 	add_political_power = -50
 	GNA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_GN days = 30 value = 1 }
+	set_variable = { AFR_cd_power_GN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GN = yes
 	GNA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1775,7 +1895,8 @@ SAC_afr_do_power_GN = {
 SAC_afr_do_power_GQ = {
 	add_political_power = -50
 	EQG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_GQ days = 30 value = 1 }
+	set_variable = { AFR_cd_power_GQ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GQ = yes
 	EQG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1783,7 +1904,8 @@ SAC_afr_do_power_GQ = {
 SAC_afr_do_power_GW = {
 	add_political_power = -50
 	GNB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_GW days = 30 value = 1 }
+	set_variable = { AFR_cd_power_GW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GW = yes
 	GNB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1791,7 +1913,8 @@ SAC_afr_do_power_GW = {
 SAC_afr_do_power_KE = {
 	add_political_power = -50
 	KEN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_KE days = 30 value = 1 }
+	set_variable = { AFR_cd_power_KE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_KE = yes
 	KEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1799,7 +1922,8 @@ SAC_afr_do_power_KE = {
 SAC_afr_do_power_LR = {
 	add_political_power = -50
 	LIB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_LR days = 30 value = 1 }
+	set_variable = { AFR_cd_power_LR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LR = yes
 	LIB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1807,7 +1931,8 @@ SAC_afr_do_power_LR = {
 SAC_afr_do_power_LS = {
 	add_political_power = -50
 	LES = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_LS days = 30 value = 1 }
+	set_variable = { AFR_cd_power_LS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LS = yes
 	LES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1815,7 +1940,8 @@ SAC_afr_do_power_LS = {
 SAC_afr_do_power_LY = {
 	add_political_power = -50
 	LBA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_LY days = 30 value = 1 }
+	set_variable = { AFR_cd_power_LY = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LY = yes
 	LBA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1823,7 +1949,8 @@ SAC_afr_do_power_LY = {
 SAC_afr_do_power_MA = {
 	add_political_power = -50
 	MOR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_MA days = 30 value = 1 }
+	set_variable = { AFR_cd_power_MA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MA = yes
 	MOR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1831,7 +1958,8 @@ SAC_afr_do_power_MA = {
 SAC_afr_do_power_MG = {
 	add_political_power = -50
 	MAD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_MG days = 30 value = 1 }
+	set_variable = { AFR_cd_power_MG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MG = yes
 	MAD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1839,7 +1967,8 @@ SAC_afr_do_power_MG = {
 SAC_afr_do_power_ML = {
 	add_political_power = -50
 	MLI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_ML days = 30 value = 1 }
+	set_variable = { AFR_cd_power_ML = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ML = yes
 	MLI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1847,7 +1976,8 @@ SAC_afr_do_power_ML = {
 SAC_afr_do_power_MR = {
 	add_political_power = -50
 	MRT = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_MR days = 30 value = 1 }
+	set_variable = { AFR_cd_power_MR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MR = yes
 	MRT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1855,7 +1985,8 @@ SAC_afr_do_power_MR = {
 SAC_afr_do_power_MW = {
 	add_political_power = -50
 	MLW = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_MW days = 30 value = 1 }
+	set_variable = { AFR_cd_power_MW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MW = yes
 	MLW = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1863,7 +1994,8 @@ SAC_afr_do_power_MW = {
 SAC_afr_do_power_MZ = {
 	add_political_power = -50
 	MZB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_MZ days = 30 value = 1 }
+	set_variable = { AFR_cd_power_MZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MZ = yes
 	MZB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1871,7 +2003,8 @@ SAC_afr_do_power_MZ = {
 SAC_afr_do_power_NA = {
 	add_political_power = -50
 	NMB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_NA days = 30 value = 1 }
+	set_variable = { AFR_cd_power_NA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NA = yes
 	NMB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1879,7 +2012,8 @@ SAC_afr_do_power_NA = {
 SAC_afr_do_power_NE = {
 	add_political_power = -50
 	NGR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_NE days = 30 value = 1 }
+	set_variable = { AFR_cd_power_NE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NE = yes
 	NGR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1887,7 +2021,8 @@ SAC_afr_do_power_NE = {
 SAC_afr_do_power_NG = {
 	add_political_power = -50
 	NGA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_NG days = 30 value = 1 }
+	set_variable = { AFR_cd_power_NG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NG = yes
 	NGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1895,7 +2030,8 @@ SAC_afr_do_power_NG = {
 SAC_afr_do_power_RW = {
 	add_political_power = -50
 	RWA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_RW days = 30 value = 1 }
+	set_variable = { AFR_cd_power_RW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_RW = yes
 	RWA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1903,7 +2039,8 @@ SAC_afr_do_power_RW = {
 SAC_afr_do_power_SD = {
 	add_political_power = -50
 	SUD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_SD days = 30 value = 1 }
+	set_variable = { AFR_cd_power_SD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SD = yes
 	SUD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1911,7 +2048,8 @@ SAC_afr_do_power_SD = {
 SAC_afr_do_power_SL = {
 	add_political_power = -50
 	SIE = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_SL days = 30 value = 1 }
+	set_variable = { AFR_cd_power_SL = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SL = yes
 	SIE = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1919,7 +2057,8 @@ SAC_afr_do_power_SL = {
 SAC_afr_do_power_SN = {
 	add_political_power = -50
 	SEN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_SN days = 30 value = 1 }
+	set_variable = { AFR_cd_power_SN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SN = yes
 	SEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1927,7 +2066,8 @@ SAC_afr_do_power_SN = {
 SAC_afr_do_power_SO = {
 	add_political_power = -50
 	SOM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_SO days = 30 value = 1 }
+	set_variable = { AFR_cd_power_SO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SO = yes
 	SOM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1935,7 +2075,8 @@ SAC_afr_do_power_SO = {
 SAC_afr_do_power_SS = {
 	add_political_power = -50
 	SSD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_SS days = 30 value = 1 }
+	set_variable = { AFR_cd_power_SS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SS = yes
 	SSD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1943,7 +2084,8 @@ SAC_afr_do_power_SS = {
 SAC_afr_do_power_SZ = {
 	add_political_power = -50
 	SWZ = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_SZ days = 30 value = 1 }
+	set_variable = { AFR_cd_power_SZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SZ = yes
 	SWZ = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1951,7 +2093,8 @@ SAC_afr_do_power_SZ = {
 SAC_afr_do_power_TD = {
 	add_political_power = -50
 	CHA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_TD days = 30 value = 1 }
+	set_variable = { AFR_cd_power_TD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TD = yes
 	CHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1959,7 +2102,8 @@ SAC_afr_do_power_TD = {
 SAC_afr_do_power_TG = {
 	add_political_power = -50
 	TOG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_TG days = 30 value = 1 }
+	set_variable = { AFR_cd_power_TG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TG = yes
 	TOG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1967,7 +2111,8 @@ SAC_afr_do_power_TG = {
 SAC_afr_do_power_TN = {
 	add_political_power = -50
 	TUN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_TN days = 30 value = 1 }
+	set_variable = { AFR_cd_power_TN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TN = yes
 	TUN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1975,7 +2120,8 @@ SAC_afr_do_power_TN = {
 SAC_afr_do_power_TZ = {
 	add_political_power = -50
 	TZN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_TZ days = 30 value = 1 }
+	set_variable = { AFR_cd_power_TZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TZ = yes
 	TZN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1983,7 +2129,8 @@ SAC_afr_do_power_TZ = {
 SAC_afr_do_power_UG = {
 	add_political_power = -50
 	UGA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_UG days = 30 value = 1 }
+	set_variable = { AFR_cd_power_UG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_UG = yes
 	UGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1991,7 +2138,8 @@ SAC_afr_do_power_UG = {
 SAC_afr_do_power_ZA = {
 	add_political_power = -50
 	SAF = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_ZA days = 30 value = 1 }
+	set_variable = { AFR_cd_power_ZA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZA = yes
 	SAF = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -1999,7 +2147,8 @@ SAC_afr_do_power_ZA = {
 SAC_afr_do_power_ZM = {
 	add_political_power = -50
 	ZAM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_ZM days = 30 value = 1 }
+	set_variable = { AFR_cd_power_ZM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZM = yes
 	ZAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2007,7 +2156,8 @@ SAC_afr_do_power_ZM = {
 SAC_afr_do_power_ZW = {
 	add_political_power = -50
 	ZIM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = power_plant size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = power_plant level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_power_ZW days = 30 value = 1 }
+	set_variable = { AFR_cd_power_ZW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2015,7 +2165,8 @@ SAC_afr_do_power_ZW = {
 SAC_afr_do_arms_AO = {
 	add_political_power = -15
 	send_equipment = { target = ANG type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_AO days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_AO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_AO = yes
 	ANG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2023,7 +2174,8 @@ SAC_afr_do_arms_AO = {
 SAC_afr_do_arms_BF = {
 	add_political_power = -15
 	send_equipment = { target = VOL type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_BF days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_BF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_BF = yes
 	VOL = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2031,7 +2183,8 @@ SAC_afr_do_arms_BF = {
 SAC_afr_do_arms_BI = {
 	add_political_power = -15
 	send_equipment = { target = BRD type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_BI days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_BI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_BI = yes
 	BRD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2039,7 +2192,8 @@ SAC_afr_do_arms_BI = {
 SAC_afr_do_arms_BJ = {
 	add_political_power = -15
 	send_equipment = { target = DAH type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_BJ days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_BJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_BJ = yes
 	DAH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2047,7 +2201,8 @@ SAC_afr_do_arms_BJ = {
 SAC_afr_do_arms_BW = {
 	add_political_power = -15
 	send_equipment = { target = BOT type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_BW days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_BW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_BW = yes
 	BOT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2055,7 +2210,8 @@ SAC_afr_do_arms_BW = {
 SAC_afr_do_arms_CD = {
 	add_political_power = -15
 	send_equipment = { target = COG type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_CD days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_CD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_CD = yes
 	COG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2063,7 +2219,8 @@ SAC_afr_do_arms_CD = {
 SAC_afr_do_arms_CF = {
 	add_political_power = -15
 	send_equipment = { target = CAR type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_CF days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_CF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_CF = yes
 	CAR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2071,7 +2228,8 @@ SAC_afr_do_arms_CF = {
 SAC_afr_do_arms_CG = {
 	add_political_power = -15
 	send_equipment = { target = RCG type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_CG days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_CG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_CG = yes
 	RCG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2079,7 +2237,8 @@ SAC_afr_do_arms_CG = {
 SAC_afr_do_arms_CI = {
 	add_political_power = -15
 	send_equipment = { target = IVO type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_CI days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_CI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_CI = yes
 	IVO = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2087,7 +2246,8 @@ SAC_afr_do_arms_CI = {
 SAC_afr_do_arms_CM = {
 	add_political_power = -15
 	send_equipment = { target = CMR type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_CM days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_CM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_CM = yes
 	CMR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2095,7 +2255,8 @@ SAC_afr_do_arms_CM = {
 SAC_afr_do_arms_DJ = {
 	add_political_power = -15
 	send_equipment = { target = DJI type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_DJ days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_DJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_DJ = yes
 	DJI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2103,7 +2264,8 @@ SAC_afr_do_arms_DJ = {
 SAC_afr_do_arms_DZ = {
 	add_political_power = -15
 	send_equipment = { target = ALG type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_DZ days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_DZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_DZ = yes
 	ALG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2111,7 +2273,8 @@ SAC_afr_do_arms_DZ = {
 SAC_afr_do_arms_EG = {
 	add_political_power = -15
 	send_equipment = { target = EGY type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_EG days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_EG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_EG = yes
 	EGY = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2119,7 +2282,8 @@ SAC_afr_do_arms_EG = {
 SAC_afr_do_arms_EH = {
 	add_political_power = -15
 	send_equipment = { target = WES type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_EH days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_EH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_EH = yes
 	WES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2127,7 +2291,8 @@ SAC_afr_do_arms_EH = {
 SAC_afr_do_arms_ER = {
 	add_political_power = -15
 	send_equipment = { target = ERI type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_ER days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_ER = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_ER = yes
 	ERI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2135,7 +2300,8 @@ SAC_afr_do_arms_ER = {
 SAC_afr_do_arms_ET = {
 	add_political_power = -15
 	send_equipment = { target = ETH type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_ET days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_ET = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_ET = yes
 	ETH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2143,7 +2309,8 @@ SAC_afr_do_arms_ET = {
 SAC_afr_do_arms_GA = {
 	add_political_power = -15
 	send_equipment = { target = GAB type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_GA days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_GA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_GA = yes
 	GAB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2151,7 +2318,8 @@ SAC_afr_do_arms_GA = {
 SAC_afr_do_arms_GH = {
 	add_political_power = -15
 	send_equipment = { target = GHA type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_GH days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_GH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_GH = yes
 	GHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2159,7 +2327,8 @@ SAC_afr_do_arms_GH = {
 SAC_afr_do_arms_GM = {
 	add_political_power = -15
 	send_equipment = { target = GAM type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_GM days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_GM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_GM = yes
 	GAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2167,7 +2336,8 @@ SAC_afr_do_arms_GM = {
 SAC_afr_do_arms_GN = {
 	add_political_power = -15
 	send_equipment = { target = GNA type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_GN days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_GN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_GN = yes
 	GNA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2175,7 +2345,8 @@ SAC_afr_do_arms_GN = {
 SAC_afr_do_arms_GQ = {
 	add_political_power = -15
 	send_equipment = { target = EQG type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_GQ days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_GQ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_GQ = yes
 	EQG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2183,7 +2354,8 @@ SAC_afr_do_arms_GQ = {
 SAC_afr_do_arms_GW = {
 	add_political_power = -15
 	send_equipment = { target = GNB type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_GW days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_GW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_GW = yes
 	GNB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2191,7 +2363,8 @@ SAC_afr_do_arms_GW = {
 SAC_afr_do_arms_KE = {
 	add_political_power = -15
 	send_equipment = { target = KEN type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_KE days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_KE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_KE = yes
 	KEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2199,7 +2372,8 @@ SAC_afr_do_arms_KE = {
 SAC_afr_do_arms_LR = {
 	add_political_power = -15
 	send_equipment = { target = LIB type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_LR days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_LR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_LR = yes
 	LIB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2207,7 +2381,8 @@ SAC_afr_do_arms_LR = {
 SAC_afr_do_arms_LS = {
 	add_political_power = -15
 	send_equipment = { target = LES type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_LS days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_LS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_LS = yes
 	LES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2215,7 +2390,8 @@ SAC_afr_do_arms_LS = {
 SAC_afr_do_arms_LY = {
 	add_political_power = -15
 	send_equipment = { target = LBA type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_LY days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_LY = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_LY = yes
 	LBA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2223,7 +2399,8 @@ SAC_afr_do_arms_LY = {
 SAC_afr_do_arms_MA = {
 	add_political_power = -15
 	send_equipment = { target = MOR type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_MA days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_MA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_MA = yes
 	MOR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2231,7 +2408,8 @@ SAC_afr_do_arms_MA = {
 SAC_afr_do_arms_MG = {
 	add_political_power = -15
 	send_equipment = { target = MAD type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_MG days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_MG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_MG = yes
 	MAD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2239,7 +2417,8 @@ SAC_afr_do_arms_MG = {
 SAC_afr_do_arms_ML = {
 	add_political_power = -15
 	send_equipment = { target = MLI type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_ML days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_ML = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_ML = yes
 	MLI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2247,7 +2426,8 @@ SAC_afr_do_arms_ML = {
 SAC_afr_do_arms_MR = {
 	add_political_power = -15
 	send_equipment = { target = MRT type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_MR days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_MR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_MR = yes
 	MRT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2255,7 +2435,8 @@ SAC_afr_do_arms_MR = {
 SAC_afr_do_arms_MW = {
 	add_political_power = -15
 	send_equipment = { target = MLW type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_MW days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_MW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_MW = yes
 	MLW = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2263,7 +2444,8 @@ SAC_afr_do_arms_MW = {
 SAC_afr_do_arms_MZ = {
 	add_political_power = -15
 	send_equipment = { target = MZB type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_MZ days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_MZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_MZ = yes
 	MZB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2271,7 +2453,8 @@ SAC_afr_do_arms_MZ = {
 SAC_afr_do_arms_NA = {
 	add_political_power = -15
 	send_equipment = { target = NMB type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_NA days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_NA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_NA = yes
 	NMB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2279,7 +2462,8 @@ SAC_afr_do_arms_NA = {
 SAC_afr_do_arms_NE = {
 	add_political_power = -15
 	send_equipment = { target = NGR type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_NE days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_NE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_NE = yes
 	NGR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2287,7 +2471,8 @@ SAC_afr_do_arms_NE = {
 SAC_afr_do_arms_NG = {
 	add_political_power = -15
 	send_equipment = { target = NGA type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_NG days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_NG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_NG = yes
 	NGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2295,7 +2480,8 @@ SAC_afr_do_arms_NG = {
 SAC_afr_do_arms_RW = {
 	add_political_power = -15
 	send_equipment = { target = RWA type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_RW days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_RW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_RW = yes
 	RWA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2303,7 +2489,8 @@ SAC_afr_do_arms_RW = {
 SAC_afr_do_arms_SD = {
 	add_political_power = -15
 	send_equipment = { target = SUD type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_SD days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_SD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_SD = yes
 	SUD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2311,7 +2498,8 @@ SAC_afr_do_arms_SD = {
 SAC_afr_do_arms_SL = {
 	add_political_power = -15
 	send_equipment = { target = SIE type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_SL days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_SL = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_SL = yes
 	SIE = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2319,7 +2507,8 @@ SAC_afr_do_arms_SL = {
 SAC_afr_do_arms_SN = {
 	add_political_power = -15
 	send_equipment = { target = SEN type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_SN days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_SN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_SN = yes
 	SEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2327,7 +2516,8 @@ SAC_afr_do_arms_SN = {
 SAC_afr_do_arms_SO = {
 	add_political_power = -15
 	send_equipment = { target = SOM type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_SO days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_SO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_SO = yes
 	SOM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2335,7 +2525,8 @@ SAC_afr_do_arms_SO = {
 SAC_afr_do_arms_SS = {
 	add_political_power = -15
 	send_equipment = { target = SSD type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_SS days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_SS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_SS = yes
 	SSD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2343,7 +2534,8 @@ SAC_afr_do_arms_SS = {
 SAC_afr_do_arms_SZ = {
 	add_political_power = -15
 	send_equipment = { target = SWZ type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_SZ days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_SZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_SZ = yes
 	SWZ = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2351,7 +2543,8 @@ SAC_afr_do_arms_SZ = {
 SAC_afr_do_arms_TD = {
 	add_political_power = -15
 	send_equipment = { target = CHA type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_TD days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_TD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_TD = yes
 	CHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2359,7 +2552,8 @@ SAC_afr_do_arms_TD = {
 SAC_afr_do_arms_TG = {
 	add_political_power = -15
 	send_equipment = { target = TOG type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_TG days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_TG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_TG = yes
 	TOG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2367,7 +2561,8 @@ SAC_afr_do_arms_TG = {
 SAC_afr_do_arms_TN = {
 	add_political_power = -15
 	send_equipment = { target = TUN type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_TN days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_TN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_TN = yes
 	TUN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2375,7 +2570,8 @@ SAC_afr_do_arms_TN = {
 SAC_afr_do_arms_TZ = {
 	add_political_power = -15
 	send_equipment = { target = TZN type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_TZ days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_TZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_TZ = yes
 	TZN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2383,7 +2579,8 @@ SAC_afr_do_arms_TZ = {
 SAC_afr_do_arms_UG = {
 	add_political_power = -15
 	send_equipment = { target = UGA type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_UG days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_UG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_UG = yes
 	UGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2391,7 +2588,8 @@ SAC_afr_do_arms_UG = {
 SAC_afr_do_arms_ZA = {
 	add_political_power = -15
 	send_equipment = { target = SAF type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_ZA days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_ZA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_ZA = yes
 	SAF = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2399,7 +2597,8 @@ SAC_afr_do_arms_ZA = {
 SAC_afr_do_arms_ZM = {
 	add_political_power = -15
 	send_equipment = { target = ZAM type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_ZM days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_ZM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_ZM = yes
 	ZAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2407,7 +2606,8 @@ SAC_afr_do_arms_ZM = {
 SAC_afr_do_arms_ZW = {
 	add_political_power = -15
 	send_equipment = { target = ZIM type = infantry_equipment amount = 1000 }
-	set_country_flag = { flag = SAC_afr_cd_arms_ZW days = 30 value = 1 }
+	set_variable = { AFR_cd_arms_ZW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 4 }
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2415,7 +2615,8 @@ SAC_afr_do_arms_ZW = {
 SAC_afr_do_base_AO = {
 	add_political_power = -75
 	ANG = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_AO days = 30 value = 1 }
+	set_variable = { AFR_cd_base_AO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_AO = yes
 	ANG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2423,7 +2624,8 @@ SAC_afr_do_base_AO = {
 SAC_afr_do_base_BF = {
 	add_political_power = -75
 	VOL = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_BF days = 30 value = 1 }
+	set_variable = { AFR_cd_base_BF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_BF = yes
 	VOL = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2431,7 +2633,8 @@ SAC_afr_do_base_BF = {
 SAC_afr_do_base_BI = {
 	add_political_power = -75
 	BRD = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_BI days = 30 value = 1 }
+	set_variable = { AFR_cd_base_BI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_BI = yes
 	BRD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2439,7 +2642,8 @@ SAC_afr_do_base_BI = {
 SAC_afr_do_base_BJ = {
 	add_political_power = -75
 	DAH = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_BJ days = 30 value = 1 }
+	set_variable = { AFR_cd_base_BJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_BJ = yes
 	DAH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2447,7 +2651,8 @@ SAC_afr_do_base_BJ = {
 SAC_afr_do_base_BW = {
 	add_political_power = -75
 	BOT = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_BW days = 30 value = 1 }
+	set_variable = { AFR_cd_base_BW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_BW = yes
 	BOT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2455,7 +2660,8 @@ SAC_afr_do_base_BW = {
 SAC_afr_do_base_CD = {
 	add_political_power = -75
 	COG = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_CD days = 30 value = 1 }
+	set_variable = { AFR_cd_base_CD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_CD = yes
 	COG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2463,7 +2669,8 @@ SAC_afr_do_base_CD = {
 SAC_afr_do_base_CF = {
 	add_political_power = -75
 	CAR = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_CF days = 30 value = 1 }
+	set_variable = { AFR_cd_base_CF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_CF = yes
 	CAR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2471,7 +2678,8 @@ SAC_afr_do_base_CF = {
 SAC_afr_do_base_CG = {
 	add_political_power = -75
 	RCG = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_CG days = 30 value = 1 }
+	set_variable = { AFR_cd_base_CG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_CG = yes
 	RCG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2479,7 +2687,8 @@ SAC_afr_do_base_CG = {
 SAC_afr_do_base_CI = {
 	add_political_power = -75
 	IVO = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_CI days = 30 value = 1 }
+	set_variable = { AFR_cd_base_CI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_CI = yes
 	IVO = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2487,7 +2696,8 @@ SAC_afr_do_base_CI = {
 SAC_afr_do_base_CM = {
 	add_political_power = -75
 	CMR = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_CM days = 30 value = 1 }
+	set_variable = { AFR_cd_base_CM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_CM = yes
 	CMR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2495,7 +2705,8 @@ SAC_afr_do_base_CM = {
 SAC_afr_do_base_DJ = {
 	add_political_power = -75
 	DJI = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_DJ days = 30 value = 1 }
+	set_variable = { AFR_cd_base_DJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_DJ = yes
 	DJI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2503,7 +2714,8 @@ SAC_afr_do_base_DJ = {
 SAC_afr_do_base_DZ = {
 	add_political_power = -75
 	ALG = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_DZ days = 30 value = 1 }
+	set_variable = { AFR_cd_base_DZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_DZ = yes
 	ALG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2511,7 +2723,8 @@ SAC_afr_do_base_DZ = {
 SAC_afr_do_base_EG = {
 	add_political_power = -75
 	EGY = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_EG days = 30 value = 1 }
+	set_variable = { AFR_cd_base_EG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_EG = yes
 	EGY = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2519,7 +2732,8 @@ SAC_afr_do_base_EG = {
 SAC_afr_do_base_EH = {
 	add_political_power = -75
 	WES = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_EH days = 30 value = 1 }
+	set_variable = { AFR_cd_base_EH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_EH = yes
 	WES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2527,7 +2741,8 @@ SAC_afr_do_base_EH = {
 SAC_afr_do_base_ER = {
 	add_political_power = -75
 	ERI = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_ER days = 30 value = 1 }
+	set_variable = { AFR_cd_base_ER = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_ER = yes
 	ERI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2535,7 +2750,8 @@ SAC_afr_do_base_ER = {
 SAC_afr_do_base_ET = {
 	add_political_power = -75
 	ETH = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_ET days = 30 value = 1 }
+	set_variable = { AFR_cd_base_ET = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_ET = yes
 	ETH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2543,7 +2759,8 @@ SAC_afr_do_base_ET = {
 SAC_afr_do_base_GA = {
 	add_political_power = -75
 	GAB = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_GA days = 30 value = 1 }
+	set_variable = { AFR_cd_base_GA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_GA = yes
 	GAB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2551,7 +2768,8 @@ SAC_afr_do_base_GA = {
 SAC_afr_do_base_GH = {
 	add_political_power = -75
 	GHA = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_GH days = 30 value = 1 }
+	set_variable = { AFR_cd_base_GH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_GH = yes
 	GHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2559,7 +2777,8 @@ SAC_afr_do_base_GH = {
 SAC_afr_do_base_GM = {
 	add_political_power = -75
 	GAM = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_GM days = 30 value = 1 }
+	set_variable = { AFR_cd_base_GM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_GM = yes
 	GAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2567,7 +2786,8 @@ SAC_afr_do_base_GM = {
 SAC_afr_do_base_GN = {
 	add_political_power = -75
 	GNA = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_GN days = 30 value = 1 }
+	set_variable = { AFR_cd_base_GN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_GN = yes
 	GNA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2575,7 +2795,8 @@ SAC_afr_do_base_GN = {
 SAC_afr_do_base_GQ = {
 	add_political_power = -75
 	EQG = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_GQ days = 30 value = 1 }
+	set_variable = { AFR_cd_base_GQ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_GQ = yes
 	EQG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2583,7 +2804,8 @@ SAC_afr_do_base_GQ = {
 SAC_afr_do_base_GW = {
 	add_political_power = -75
 	GNB = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_GW days = 30 value = 1 }
+	set_variable = { AFR_cd_base_GW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_GW = yes
 	GNB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2591,7 +2813,8 @@ SAC_afr_do_base_GW = {
 SAC_afr_do_base_KE = {
 	add_political_power = -75
 	KEN = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_KE days = 30 value = 1 }
+	set_variable = { AFR_cd_base_KE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_KE = yes
 	KEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2599,7 +2822,8 @@ SAC_afr_do_base_KE = {
 SAC_afr_do_base_LR = {
 	add_political_power = -75
 	LIB = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_LR days = 30 value = 1 }
+	set_variable = { AFR_cd_base_LR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_LR = yes
 	LIB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2607,7 +2831,8 @@ SAC_afr_do_base_LR = {
 SAC_afr_do_base_LS = {
 	add_political_power = -75
 	LES = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_LS days = 30 value = 1 }
+	set_variable = { AFR_cd_base_LS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_LS = yes
 	LES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2615,7 +2840,8 @@ SAC_afr_do_base_LS = {
 SAC_afr_do_base_LY = {
 	add_political_power = -75
 	LBA = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_LY days = 30 value = 1 }
+	set_variable = { AFR_cd_base_LY = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_LY = yes
 	LBA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2623,7 +2849,8 @@ SAC_afr_do_base_LY = {
 SAC_afr_do_base_MA = {
 	add_political_power = -75
 	MOR = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_MA days = 30 value = 1 }
+	set_variable = { AFR_cd_base_MA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_MA = yes
 	MOR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2631,7 +2858,8 @@ SAC_afr_do_base_MA = {
 SAC_afr_do_base_MG = {
 	add_political_power = -75
 	MAD = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_MG days = 30 value = 1 }
+	set_variable = { AFR_cd_base_MG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_MG = yes
 	MAD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2639,7 +2867,8 @@ SAC_afr_do_base_MG = {
 SAC_afr_do_base_ML = {
 	add_political_power = -75
 	MLI = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_ML days = 30 value = 1 }
+	set_variable = { AFR_cd_base_ML = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_ML = yes
 	MLI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2647,7 +2876,8 @@ SAC_afr_do_base_ML = {
 SAC_afr_do_base_MR = {
 	add_political_power = -75
 	MRT = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_MR days = 30 value = 1 }
+	set_variable = { AFR_cd_base_MR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_MR = yes
 	MRT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2655,7 +2885,8 @@ SAC_afr_do_base_MR = {
 SAC_afr_do_base_MW = {
 	add_political_power = -75
 	MLW = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_MW days = 30 value = 1 }
+	set_variable = { AFR_cd_base_MW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_MW = yes
 	MLW = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2663,7 +2894,8 @@ SAC_afr_do_base_MW = {
 SAC_afr_do_base_MZ = {
 	add_political_power = -75
 	MZB = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_MZ days = 30 value = 1 }
+	set_variable = { AFR_cd_base_MZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_MZ = yes
 	MZB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2671,7 +2903,8 @@ SAC_afr_do_base_MZ = {
 SAC_afr_do_base_NA = {
 	add_political_power = -75
 	NMB = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_NA days = 30 value = 1 }
+	set_variable = { AFR_cd_base_NA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_NA = yes
 	NMB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2679,7 +2912,8 @@ SAC_afr_do_base_NA = {
 SAC_afr_do_base_NE = {
 	add_political_power = -75
 	NGR = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_NE days = 30 value = 1 }
+	set_variable = { AFR_cd_base_NE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_NE = yes
 	NGR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2687,7 +2921,8 @@ SAC_afr_do_base_NE = {
 SAC_afr_do_base_NG = {
 	add_political_power = -75
 	NGA = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_NG days = 30 value = 1 }
+	set_variable = { AFR_cd_base_NG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_NG = yes
 	NGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2695,7 +2930,8 @@ SAC_afr_do_base_NG = {
 SAC_afr_do_base_RW = {
 	add_political_power = -75
 	RWA = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_RW days = 30 value = 1 }
+	set_variable = { AFR_cd_base_RW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_RW = yes
 	RWA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2703,7 +2939,8 @@ SAC_afr_do_base_RW = {
 SAC_afr_do_base_SD = {
 	add_political_power = -75
 	SUD = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_SD days = 30 value = 1 }
+	set_variable = { AFR_cd_base_SD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_SD = yes
 	SUD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2711,7 +2948,8 @@ SAC_afr_do_base_SD = {
 SAC_afr_do_base_SL = {
 	add_political_power = -75
 	SIE = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_SL days = 30 value = 1 }
+	set_variable = { AFR_cd_base_SL = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_SL = yes
 	SIE = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2719,7 +2957,8 @@ SAC_afr_do_base_SL = {
 SAC_afr_do_base_SN = {
 	add_political_power = -75
 	SEN = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_SN days = 30 value = 1 }
+	set_variable = { AFR_cd_base_SN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_SN = yes
 	SEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2727,7 +2966,8 @@ SAC_afr_do_base_SN = {
 SAC_afr_do_base_SO = {
 	add_political_power = -75
 	SOM = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_SO days = 30 value = 1 }
+	set_variable = { AFR_cd_base_SO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_SO = yes
 	SOM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2735,7 +2975,8 @@ SAC_afr_do_base_SO = {
 SAC_afr_do_base_SS = {
 	add_political_power = -75
 	SSD = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_SS days = 30 value = 1 }
+	set_variable = { AFR_cd_base_SS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_SS = yes
 	SSD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2743,7 +2984,8 @@ SAC_afr_do_base_SS = {
 SAC_afr_do_base_SZ = {
 	add_political_power = -75
 	SWZ = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_SZ days = 30 value = 1 }
+	set_variable = { AFR_cd_base_SZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_SZ = yes
 	SWZ = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2751,7 +2993,8 @@ SAC_afr_do_base_SZ = {
 SAC_afr_do_base_TD = {
 	add_political_power = -75
 	CHA = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_TD days = 30 value = 1 }
+	set_variable = { AFR_cd_base_TD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_TD = yes
 	CHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2759,7 +3002,8 @@ SAC_afr_do_base_TD = {
 SAC_afr_do_base_TG = {
 	add_political_power = -75
 	TOG = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_TG days = 30 value = 1 }
+	set_variable = { AFR_cd_base_TG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_TG = yes
 	TOG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2767,7 +3011,8 @@ SAC_afr_do_base_TG = {
 SAC_afr_do_base_TN = {
 	add_political_power = -75
 	TUN = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_TN days = 30 value = 1 }
+	set_variable = { AFR_cd_base_TN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_TN = yes
 	TUN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2775,7 +3020,8 @@ SAC_afr_do_base_TN = {
 SAC_afr_do_base_TZ = {
 	add_political_power = -75
 	TZN = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_TZ days = 30 value = 1 }
+	set_variable = { AFR_cd_base_TZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_TZ = yes
 	TZN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2783,7 +3029,8 @@ SAC_afr_do_base_TZ = {
 SAC_afr_do_base_UG = {
 	add_political_power = -75
 	UGA = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_UG days = 30 value = 1 }
+	set_variable = { AFR_cd_base_UG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_UG = yes
 	UGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2791,7 +3038,8 @@ SAC_afr_do_base_UG = {
 SAC_afr_do_base_ZA = {
 	add_political_power = -75
 	SAF = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_ZA days = 30 value = 1 }
+	set_variable = { AFR_cd_base_ZA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_ZA = yes
 	SAF = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2799,7 +3047,8 @@ SAC_afr_do_base_ZA = {
 SAC_afr_do_base_ZM = {
 	add_political_power = -75
 	ZAM = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_ZM days = 30 value = 1 }
+	set_variable = { AFR_cd_base_ZM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_ZM = yes
 	ZAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2807,7 +3056,8 @@ SAC_afr_do_base_ZM = {
 SAC_afr_do_base_ZW = {
 	add_political_power = -75
 	ZIM = { capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_base_ZW days = 30 value = 1 }
+	set_variable = { AFR_cd_base_ZW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 8 }
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2815,7 +3065,8 @@ SAC_afr_do_base_ZW = {
 SAC_afr_do_mil_AO = {
 	add_political_power = -50
 	ANG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_AO days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_AO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_AO = yes
 	ANG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2823,7 +3074,8 @@ SAC_afr_do_mil_AO = {
 SAC_afr_do_mil_BF = {
 	add_political_power = -50
 	VOL = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_BF days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_BF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BF = yes
 	VOL = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2831,7 +3083,8 @@ SAC_afr_do_mil_BF = {
 SAC_afr_do_mil_BI = {
 	add_political_power = -50
 	BRD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_BI days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_BI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BI = yes
 	BRD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2839,7 +3092,8 @@ SAC_afr_do_mil_BI = {
 SAC_afr_do_mil_BJ = {
 	add_political_power = -50
 	DAH = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_BJ days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_BJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BJ = yes
 	DAH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2847,7 +3101,8 @@ SAC_afr_do_mil_BJ = {
 SAC_afr_do_mil_BW = {
 	add_political_power = -50
 	BOT = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_BW days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_BW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_BW = yes
 	BOT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2855,7 +3110,8 @@ SAC_afr_do_mil_BW = {
 SAC_afr_do_mil_CD = {
 	add_political_power = -50
 	COG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_CD days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_CD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CD = yes
 	COG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2863,7 +3119,8 @@ SAC_afr_do_mil_CD = {
 SAC_afr_do_mil_CF = {
 	add_political_power = -50
 	CAR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_CF days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_CF = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CF = yes
 	CAR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2871,7 +3128,8 @@ SAC_afr_do_mil_CF = {
 SAC_afr_do_mil_CG = {
 	add_political_power = -50
 	RCG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_CG days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_CG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CG = yes
 	RCG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2879,7 +3137,8 @@ SAC_afr_do_mil_CG = {
 SAC_afr_do_mil_CI = {
 	add_political_power = -50
 	IVO = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_CI days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_CI = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CI = yes
 	IVO = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2887,7 +3146,8 @@ SAC_afr_do_mil_CI = {
 SAC_afr_do_mil_CM = {
 	add_political_power = -50
 	CMR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_CM days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_CM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_CM = yes
 	CMR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2895,7 +3155,8 @@ SAC_afr_do_mil_CM = {
 SAC_afr_do_mil_DJ = {
 	add_political_power = -50
 	DJI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_DJ days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_DJ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_DJ = yes
 	DJI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2903,7 +3164,8 @@ SAC_afr_do_mil_DJ = {
 SAC_afr_do_mil_DZ = {
 	add_political_power = -50
 	ALG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_DZ days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_DZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_DZ = yes
 	ALG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2911,7 +3173,8 @@ SAC_afr_do_mil_DZ = {
 SAC_afr_do_mil_EG = {
 	add_political_power = -50
 	EGY = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_EG days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_EG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_EG = yes
 	EGY = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2919,7 +3182,8 @@ SAC_afr_do_mil_EG = {
 SAC_afr_do_mil_EH = {
 	add_political_power = -50
 	WES = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_EH days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_EH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_EH = yes
 	WES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2927,7 +3191,8 @@ SAC_afr_do_mil_EH = {
 SAC_afr_do_mil_ER = {
 	add_political_power = -50
 	ERI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_ER days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_ER = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ER = yes
 	ERI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2935,7 +3200,8 @@ SAC_afr_do_mil_ER = {
 SAC_afr_do_mil_ET = {
 	add_political_power = -50
 	ETH = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_ET days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_ET = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ET = yes
 	ETH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2943,7 +3209,8 @@ SAC_afr_do_mil_ET = {
 SAC_afr_do_mil_GA = {
 	add_political_power = -50
 	GAB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_GA days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_GA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GA = yes
 	GAB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2951,7 +3218,8 @@ SAC_afr_do_mil_GA = {
 SAC_afr_do_mil_GH = {
 	add_political_power = -50
 	GHA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_GH days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_GH = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GH = yes
 	GHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2959,7 +3227,8 @@ SAC_afr_do_mil_GH = {
 SAC_afr_do_mil_GM = {
 	add_political_power = -50
 	GAM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_GM days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_GM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GM = yes
 	GAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2967,7 +3236,8 @@ SAC_afr_do_mil_GM = {
 SAC_afr_do_mil_GN = {
 	add_political_power = -50
 	GNA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_GN days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_GN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GN = yes
 	GNA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2975,7 +3245,8 @@ SAC_afr_do_mil_GN = {
 SAC_afr_do_mil_GQ = {
 	add_political_power = -50
 	EQG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_GQ days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_GQ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GQ = yes
 	EQG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2983,7 +3254,8 @@ SAC_afr_do_mil_GQ = {
 SAC_afr_do_mil_GW = {
 	add_political_power = -50
 	GNB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_GW days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_GW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_GW = yes
 	GNB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2991,7 +3263,8 @@ SAC_afr_do_mil_GW = {
 SAC_afr_do_mil_KE = {
 	add_political_power = -50
 	KEN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_KE days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_KE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_KE = yes
 	KEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -2999,7 +3272,8 @@ SAC_afr_do_mil_KE = {
 SAC_afr_do_mil_LR = {
 	add_political_power = -50
 	LIB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_LR days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_LR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LR = yes
 	LIB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3007,7 +3281,8 @@ SAC_afr_do_mil_LR = {
 SAC_afr_do_mil_LS = {
 	add_political_power = -50
 	LES = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_LS days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_LS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LS = yes
 	LES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3015,7 +3290,8 @@ SAC_afr_do_mil_LS = {
 SAC_afr_do_mil_LY = {
 	add_political_power = -50
 	LBA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_LY days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_LY = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_LY = yes
 	LBA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3023,7 +3299,8 @@ SAC_afr_do_mil_LY = {
 SAC_afr_do_mil_MA = {
 	add_political_power = -50
 	MOR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_MA days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_MA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MA = yes
 	MOR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3031,7 +3308,8 @@ SAC_afr_do_mil_MA = {
 SAC_afr_do_mil_MG = {
 	add_political_power = -50
 	MAD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_MG days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_MG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MG = yes
 	MAD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3039,7 +3317,8 @@ SAC_afr_do_mil_MG = {
 SAC_afr_do_mil_ML = {
 	add_political_power = -50
 	MLI = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_ML days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_ML = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ML = yes
 	MLI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3047,7 +3326,8 @@ SAC_afr_do_mil_ML = {
 SAC_afr_do_mil_MR = {
 	add_political_power = -50
 	MRT = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_MR days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_MR = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MR = yes
 	MRT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3055,7 +3335,8 @@ SAC_afr_do_mil_MR = {
 SAC_afr_do_mil_MW = {
 	add_political_power = -50
 	MLW = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_MW days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_MW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MW = yes
 	MLW = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3063,7 +3344,8 @@ SAC_afr_do_mil_MW = {
 SAC_afr_do_mil_MZ = {
 	add_political_power = -50
 	MZB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_MZ days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_MZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_MZ = yes
 	MZB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3071,7 +3353,8 @@ SAC_afr_do_mil_MZ = {
 SAC_afr_do_mil_NA = {
 	add_political_power = -50
 	NMB = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_NA days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_NA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NA = yes
 	NMB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3079,7 +3362,8 @@ SAC_afr_do_mil_NA = {
 SAC_afr_do_mil_NE = {
 	add_political_power = -50
 	NGR = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_NE days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_NE = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NE = yes
 	NGR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3087,7 +3371,8 @@ SAC_afr_do_mil_NE = {
 SAC_afr_do_mil_NG = {
 	add_political_power = -50
 	NGA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_NG days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_NG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_NG = yes
 	NGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3095,7 +3380,8 @@ SAC_afr_do_mil_NG = {
 SAC_afr_do_mil_RW = {
 	add_political_power = -50
 	RWA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_RW days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_RW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_RW = yes
 	RWA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3103,7 +3389,8 @@ SAC_afr_do_mil_RW = {
 SAC_afr_do_mil_SD = {
 	add_political_power = -50
 	SUD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_SD days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_SD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SD = yes
 	SUD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3111,7 +3398,8 @@ SAC_afr_do_mil_SD = {
 SAC_afr_do_mil_SL = {
 	add_political_power = -50
 	SIE = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_SL days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_SL = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SL = yes
 	SIE = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3119,7 +3407,8 @@ SAC_afr_do_mil_SL = {
 SAC_afr_do_mil_SN = {
 	add_political_power = -50
 	SEN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_SN days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_SN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SN = yes
 	SEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3127,7 +3416,8 @@ SAC_afr_do_mil_SN = {
 SAC_afr_do_mil_SO = {
 	add_political_power = -50
 	SOM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_SO days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_SO = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SO = yes
 	SOM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3135,7 +3425,8 @@ SAC_afr_do_mil_SO = {
 SAC_afr_do_mil_SS = {
 	add_political_power = -50
 	SSD = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_SS days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_SS = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SS = yes
 	SSD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3143,7 +3434,8 @@ SAC_afr_do_mil_SS = {
 SAC_afr_do_mil_SZ = {
 	add_political_power = -50
 	SWZ = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_SZ days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_SZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_SZ = yes
 	SWZ = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3151,7 +3443,8 @@ SAC_afr_do_mil_SZ = {
 SAC_afr_do_mil_TD = {
 	add_political_power = -50
 	CHA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_TD days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_TD = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TD = yes
 	CHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3159,7 +3452,8 @@ SAC_afr_do_mil_TD = {
 SAC_afr_do_mil_TG = {
 	add_political_power = -50
 	TOG = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_TG days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_TG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TG = yes
 	TOG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3167,7 +3461,8 @@ SAC_afr_do_mil_TG = {
 SAC_afr_do_mil_TN = {
 	add_political_power = -50
 	TUN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_TN days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_TN = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TN = yes
 	TUN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3175,7 +3470,8 @@ SAC_afr_do_mil_TN = {
 SAC_afr_do_mil_TZ = {
 	add_political_power = -50
 	TZN = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_TZ days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_TZ = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_TZ = yes
 	TZN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3183,7 +3479,8 @@ SAC_afr_do_mil_TZ = {
 SAC_afr_do_mil_UG = {
 	add_political_power = -50
 	UGA = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_UG days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_UG = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_UG = yes
 	UGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3191,7 +3488,8 @@ SAC_afr_do_mil_UG = {
 SAC_afr_do_mil_ZA = {
 	add_political_power = -50
 	SAF = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_ZA days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_ZA = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZA = yes
 	SAF = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3199,7 +3497,8 @@ SAC_afr_do_mil_ZA = {
 SAC_afr_do_mil_ZM = {
 	add_political_power = -50
 	ZAM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_ZM days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_ZM = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZM = yes
 	ZAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3207,7 +3506,8 @@ SAC_afr_do_mil_ZM = {
 SAC_afr_do_mil_ZW = {
 	add_political_power = -50
 	ZIM = { capital_scope = { if = { limit = { NOT = { free_building_slots = { building = arms_factory size > 0 include_locked = no } } } add_extra_state_shared_building_slots = 1 } add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-	set_country_flag = { flag = SAC_afr_cd_mil_ZW days = 30 value = 1 }
+	set_variable = { AFR_cd_mil_ZW = 30 }
+	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 5 }
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
@@ -3663,4 +3963,9 @@ SAC_africa_build_sides_ZW = {
 		add_to_array = { AFR_sides = ZIM }
 		ZIM = { every_enemy_country = { limit = { OR = { is_neighbor_of = ZIM capital_scope = { is_on_continent = africa } any_controlled_state = { is_owned_by = ZIM } } } add_to_array = { ROOT.AFR_sides = THIS } } }
 	}
+}
+
+# Starts the daily cooldown countdown for ROOT (hidden event sac_afr.1 re-fires each day while a cooldown runs)
+SAC_africa_start_ticker = {
+	if = { limit = { NOT = { has_country_flag = SAC_afr_ticking } } set_country_flag = SAC_afr_ticking country_event = { id = sac_afr.1 days = 1 } }
 }
