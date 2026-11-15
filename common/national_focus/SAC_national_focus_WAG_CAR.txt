@@ -223,6 +223,8 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			country_event = { id = sac_wag.3 }
+			set_global_flag = SAC_africa_unlocked
+			custom_effect_tooltip = SAC_africa_unlock_tt
 		}
 	}
 

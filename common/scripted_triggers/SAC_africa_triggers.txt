@@ -1,5 +1,6 @@
-# Countries that can open the Africa panel
+# Countries that can open the Africa panel (only after Wagner completes 'Stabilise the Country')
 SAC_can_see_africa_panel = {
+	has_global_flag = SAC_africa_unlocked
 	OR = {
 		tag = WAG
 		tag = SOV
