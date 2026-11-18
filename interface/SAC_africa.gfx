@@ -68,6 +68,587 @@ spriteTypes = {
 		texturefile = "gfx/interface/WAG_africa/africa_mode_active.png"
 	}
 	SpriteType = {
+		name = "GFX_SAC_africa_cw_legend"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_legend.png"
+		noOfFrames = 6
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_660"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_660.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_778"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_778.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_779"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_779.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1504"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1504.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1505"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1505.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1506"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1506.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1507"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1507.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1508"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1508.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1509"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1509.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1510"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1510.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1511"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1511.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1512"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1512.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1513"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1513.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1514"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1514.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1515"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1515.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1516"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1516.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1517"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1517.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CF_1518"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CF_1518.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_273"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_273.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_448"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_448.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_449"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_449.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_450"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_450.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_451"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_451.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_661"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_661.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_662"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_662.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_663"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_663.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_907"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_907.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_1169"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_1169.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_LY_1325"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_LY_1325.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SO_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SO_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SO_269"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SO_269.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SO_559"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SO_559.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SO_807"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SO_807.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SO_955"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SO_955.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_271"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_271.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_674"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_674.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_866"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_866.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_867"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_867.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_1140"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_1140.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_1141"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_1141.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_1295"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_1295.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ET_1297"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ET_1297.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_295"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_295.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_538"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_538.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_718"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_718.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_862"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_862.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_863"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_863.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_864"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_864.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_865"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_865.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_1356"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_1356.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_1357"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_1357.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_1358"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_1358.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_1359"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_1359.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_1360"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_1360.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_1362"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_1362.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_CD_1363"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_CD_1363.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_549"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_549.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_551"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_551.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_761"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_761.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_763"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_763.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_798"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_798.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_1294"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_1294.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_1346"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_1346.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_1347"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_1347.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_1349"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_1349.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_SD_1350"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_SD_1350.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_275"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_275.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_681"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_681.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_719"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_719.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_818"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_818.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_819"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_819.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_1303"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_1303.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_1304"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_1304.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_1317"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_1317.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_1318"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_1318.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_1342"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_1342.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_1343"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_1343.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ZA_1376"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ZA_1376.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ML_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ML_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ML_744"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ML_744.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ML_745"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ML_745.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ML_746"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ML_746.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ML_1286"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ML_1286.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_ML_1287"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_ML_1287.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_bg"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_bg.png"
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_558"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_558.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_764"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_764.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_765"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_765.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_766"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_766.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_767"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_767.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_768"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_768.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_858"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_858.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
+		name = "GFX_SAC_cw_NG_859"
+		texturefile = "gfx/interface/WAG_africa/cw/cw_NG_859.png"
+		noOfFrames = 6
+		transparencecheck = yes
+	}
+	SpriteType = {
 		name = "GFX_SAC_africa_side_bg"
 		texturefile = "gfx/interface/WAG_africa/africa_side_bg.png"
 	}

@@ -913,3 +913,377 @@ SAC_afr_can_mil_UG = { country_exists = UGA NOT = { tag = UGA } NOT = { has_war_
 SAC_afr_can_mil_ZA = { country_exists = SAF NOT = { tag = SAF } NOT = { has_war_with = SAF } NOT = { check_variable = { AFR_cd_mil_ZA > 0 } } has_political_power > 49 SAF = { capital_scope = { is_controlled_by = SAF } } }
 SAC_afr_can_mil_ZM = { country_exists = ZAM NOT = { tag = ZAM } NOT = { has_war_with = ZAM } NOT = { check_variable = { AFR_cd_mil_ZM > 0 } } has_political_power > 49 ZAM = { capital_scope = { is_controlled_by = ZAM } } }
 SAC_afr_can_mil_ZW = { country_exists = ZIM NOT = { tag = ZIM } NOT = { has_war_with = ZIM } NOT = { check_variable = { AFR_cd_mil_ZW > 0 } } has_political_power > 49 ZIM = { capital_scope = { is_controlled_by = ZIM } } }
+
+# Civil war close-up map: active on the Civil War tab for countries with a state map
+SAC_africa_zoom_CF = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 7 } SAC_africa_cw_CF = yes }
+SAC_africa_zoom_LY = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 26 } SAC_africa_cw_LY = yes }
+SAC_africa_zoom_SO = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 40 } SAC_africa_cw_SO = yes }
+SAC_africa_zoom_ET = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 16 } SAC_africa_cw_ET = yes }
+SAC_africa_zoom_CD = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 6 } SAC_africa_cw_CD = yes }
+SAC_africa_zoom_SD = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 37 } SAC_africa_cw_SD = yes }
+SAC_africa_zoom_ZA = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 48 } SAC_africa_cw_ZA = yes }
+SAC_africa_zoom_ML = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 29 } SAC_africa_cw_ML = yes }
+SAC_africa_zoom_NG = { check_variable = { AFR_tab = 3 } check_variable = { AFR_sel = 35 } SAC_africa_cw_NG = yes }
+SAC_africa_zoom_active = { OR = { SAC_africa_zoom_CF = yes SAC_africa_zoom_LY = yes SAC_africa_zoom_SO = yes SAC_africa_zoom_ET = yes SAC_africa_zoom_CD = yes SAC_africa_zoom_SD = yes SAC_africa_zoom_ZA = yes SAC_africa_zoom_ML = yes SAC_africa_zoom_NG = yes } }
+
+# Which power backs whoever controls a state (backed side, or the power itself holds it)
+SAC_cw_back_660_SOV = { 660 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_660_PRC = { 660 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_660_EUR = { 660 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_660_USA = { 660 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_778_SOV = { 778 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_778_PRC = { 778 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_778_EUR = { 778 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_778_USA = { 778 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_779_SOV = { 779 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_779_PRC = { 779 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_779_EUR = { 779 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_779_USA = { 779 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1504_SOV = { 1504 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1504_PRC = { 1504 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1504_EUR = { 1504 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1504_USA = { 1504 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1505_SOV = { 1505 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1505_PRC = { 1505 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1505_EUR = { 1505 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1505_USA = { 1505 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1506_SOV = { 1506 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1506_PRC = { 1506 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1506_EUR = { 1506 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1506_USA = { 1506 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1507_SOV = { 1507 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1507_PRC = { 1507 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1507_EUR = { 1507 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1507_USA = { 1507 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1508_SOV = { 1508 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1508_PRC = { 1508 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1508_EUR = { 1508 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1508_USA = { 1508 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1509_SOV = { 1509 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1509_PRC = { 1509 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1509_EUR = { 1509 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1509_USA = { 1509 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1510_SOV = { 1510 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1510_PRC = { 1510 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1510_EUR = { 1510 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1510_USA = { 1510 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1511_SOV = { 1511 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1511_PRC = { 1511 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1511_EUR = { 1511 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1511_USA = { 1511 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1512_SOV = { 1512 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1512_PRC = { 1512 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1512_EUR = { 1512 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1512_USA = { 1512 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1513_SOV = { 1513 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1513_PRC = { 1513 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1513_EUR = { 1513 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1513_USA = { 1513 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1514_SOV = { 1514 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1514_PRC = { 1514 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1514_EUR = { 1514 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1514_USA = { 1514 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1515_SOV = { 1515 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1515_PRC = { 1515 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1515_EUR = { 1515 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1515_USA = { 1515 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1516_SOV = { 1516 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1516_PRC = { 1516 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1516_EUR = { 1516 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1516_USA = { 1516 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1517_SOV = { 1517 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1517_PRC = { 1517 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1517_EUR = { 1517 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1517_USA = { 1517 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_1518_SOV = { 1518 = { controller = { OR = { check_variable = { global.AFR_sup_CF_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1518_PRC = { 1518 = { controller = { OR = { check_variable = { global.AFR_sup_CF_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1518_EUR = { 1518 = { controller = { OR = { check_variable = { global.AFR_sup_CF_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1518_USA = { 1518 = { controller = { OR = { check_variable = { global.AFR_sup_CF_USA = THIS } tag = USA } } } }
+SAC_cw_back_273_SOV = { 273 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_273_PRC = { 273 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_273_EUR = { 273 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_273_USA = { 273 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_448_SOV = { 448 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_448_PRC = { 448 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_448_EUR = { 448 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_448_USA = { 448 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_449_SOV = { 449 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_449_PRC = { 449 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_449_EUR = { 449 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_449_USA = { 449 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_450_SOV = { 450 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_450_PRC = { 450 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_450_EUR = { 450 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_450_USA = { 450 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_451_SOV = { 451 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_451_PRC = { 451 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_451_EUR = { 451 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_451_USA = { 451 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_661_SOV = { 661 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_661_PRC = { 661 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_661_EUR = { 661 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_661_USA = { 661 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_662_SOV = { 662 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_662_PRC = { 662 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_662_EUR = { 662 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_662_USA = { 662 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_663_SOV = { 663 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_663_PRC = { 663 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_663_EUR = { 663 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_663_USA = { 663 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_907_SOV = { 907 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_907_PRC = { 907 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_907_EUR = { 907 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_907_USA = { 907 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_1169_SOV = { 1169 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1169_PRC = { 1169 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1169_EUR = { 1169 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1169_USA = { 1169 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_1325_SOV = { 1325 = { controller = { OR = { check_variable = { global.AFR_sup_LY_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1325_PRC = { 1325 = { controller = { OR = { check_variable = { global.AFR_sup_LY_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1325_EUR = { 1325 = { controller = { OR = { check_variable = { global.AFR_sup_LY_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1325_USA = { 1325 = { controller = { OR = { check_variable = { global.AFR_sup_LY_USA = THIS } tag = USA } } } }
+SAC_cw_back_269_SOV = { 269 = { controller = { OR = { check_variable = { global.AFR_sup_SO_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_269_PRC = { 269 = { controller = { OR = { check_variable = { global.AFR_sup_SO_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_269_EUR = { 269 = { controller = { OR = { check_variable = { global.AFR_sup_SO_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_269_USA = { 269 = { controller = { OR = { check_variable = { global.AFR_sup_SO_USA = THIS } tag = USA } } } }
+SAC_cw_back_559_SOV = { 559 = { controller = { OR = { check_variable = { global.AFR_sup_SO_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_559_PRC = { 559 = { controller = { OR = { check_variable = { global.AFR_sup_SO_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_559_EUR = { 559 = { controller = { OR = { check_variable = { global.AFR_sup_SO_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_559_USA = { 559 = { controller = { OR = { check_variable = { global.AFR_sup_SO_USA = THIS } tag = USA } } } }
+SAC_cw_back_807_SOV = { 807 = { controller = { OR = { check_variable = { global.AFR_sup_SO_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_807_PRC = { 807 = { controller = { OR = { check_variable = { global.AFR_sup_SO_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_807_EUR = { 807 = { controller = { OR = { check_variable = { global.AFR_sup_SO_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_807_USA = { 807 = { controller = { OR = { check_variable = { global.AFR_sup_SO_USA = THIS } tag = USA } } } }
+SAC_cw_back_955_SOV = { 955 = { controller = { OR = { check_variable = { global.AFR_sup_SO_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_955_PRC = { 955 = { controller = { OR = { check_variable = { global.AFR_sup_SO_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_955_EUR = { 955 = { controller = { OR = { check_variable = { global.AFR_sup_SO_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_955_USA = { 955 = { controller = { OR = { check_variable = { global.AFR_sup_SO_USA = THIS } tag = USA } } } }
+SAC_cw_back_271_SOV = { 271 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_271_PRC = { 271 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_271_EUR = { 271 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_271_USA = { 271 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_674_SOV = { 674 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_674_PRC = { 674 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_674_EUR = { 674 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_674_USA = { 674 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_866_SOV = { 866 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_866_PRC = { 866 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_866_EUR = { 866 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_866_USA = { 866 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_867_SOV = { 867 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_867_PRC = { 867 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_867_EUR = { 867 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_867_USA = { 867 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_1140_SOV = { 1140 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1140_PRC = { 1140 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1140_EUR = { 1140 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1140_USA = { 1140 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_1141_SOV = { 1141 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1141_PRC = { 1141 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1141_EUR = { 1141 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1141_USA = { 1141 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_1295_SOV = { 1295 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1295_PRC = { 1295 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1295_EUR = { 1295 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1295_USA = { 1295 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_1297_SOV = { 1297 = { controller = { OR = { check_variable = { global.AFR_sup_ET_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1297_PRC = { 1297 = { controller = { OR = { check_variable = { global.AFR_sup_ET_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1297_EUR = { 1297 = { controller = { OR = { check_variable = { global.AFR_sup_ET_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1297_USA = { 1297 = { controller = { OR = { check_variable = { global.AFR_sup_ET_USA = THIS } tag = USA } } } }
+SAC_cw_back_295_SOV = { 295 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_295_PRC = { 295 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_295_EUR = { 295 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_295_USA = { 295 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_538_SOV = { 538 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_538_PRC = { 538 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_538_EUR = { 538 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_538_USA = { 538 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_718_SOV = { 718 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_718_PRC = { 718 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_718_EUR = { 718 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_718_USA = { 718 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_862_SOV = { 862 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_862_PRC = { 862 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_862_EUR = { 862 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_862_USA = { 862 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_863_SOV = { 863 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_863_PRC = { 863 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_863_EUR = { 863 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_863_USA = { 863 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_864_SOV = { 864 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_864_PRC = { 864 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_864_EUR = { 864 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_864_USA = { 864 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_865_SOV = { 865 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_865_PRC = { 865 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_865_EUR = { 865 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_865_USA = { 865 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1356_SOV = { 1356 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1356_PRC = { 1356 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1356_EUR = { 1356 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1356_USA = { 1356 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1357_SOV = { 1357 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1357_PRC = { 1357 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1357_EUR = { 1357 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1357_USA = { 1357 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1358_SOV = { 1358 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1358_PRC = { 1358 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1358_EUR = { 1358 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1358_USA = { 1358 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1359_SOV = { 1359 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1359_PRC = { 1359 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1359_EUR = { 1359 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1359_USA = { 1359 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1360_SOV = { 1360 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1360_PRC = { 1360 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1360_EUR = { 1360 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1360_USA = { 1360 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1362_SOV = { 1362 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1362_PRC = { 1362 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1362_EUR = { 1362 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1362_USA = { 1362 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1363_SOV = { 1363 = { controller = { OR = { check_variable = { global.AFR_sup_CD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1363_PRC = { 1363 = { controller = { OR = { check_variable = { global.AFR_sup_CD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1363_EUR = { 1363 = { controller = { OR = { check_variable = { global.AFR_sup_CD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1363_USA = { 1363 = { controller = { OR = { check_variable = { global.AFR_sup_CD_USA = THIS } tag = USA } } } }
+SAC_cw_back_549_SOV = { 549 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_549_PRC = { 549 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_549_EUR = { 549 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_549_USA = { 549 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_551_SOV = { 551 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_551_PRC = { 551 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_551_EUR = { 551 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_551_USA = { 551 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_761_SOV = { 761 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_761_PRC = { 761 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_761_EUR = { 761 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_761_USA = { 761 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_763_SOV = { 763 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_763_PRC = { 763 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_763_EUR = { 763 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_763_USA = { 763 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_798_SOV = { 798 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_798_PRC = { 798 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_798_EUR = { 798 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_798_USA = { 798 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1294_SOV = { 1294 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1294_PRC = { 1294 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1294_EUR = { 1294 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1294_USA = { 1294 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1346_SOV = { 1346 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1346_PRC = { 1346 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1346_EUR = { 1346 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1346_USA = { 1346 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1347_SOV = { 1347 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1347_PRC = { 1347 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1347_EUR = { 1347 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1347_USA = { 1347 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1349_SOV = { 1349 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1349_PRC = { 1349 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1349_EUR = { 1349 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1349_USA = { 1349 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_1350_SOV = { 1350 = { controller = { OR = { check_variable = { global.AFR_sup_SD_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1350_PRC = { 1350 = { controller = { OR = { check_variable = { global.AFR_sup_SD_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1350_EUR = { 1350 = { controller = { OR = { check_variable = { global.AFR_sup_SD_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1350_USA = { 1350 = { controller = { OR = { check_variable = { global.AFR_sup_SD_USA = THIS } tag = USA } } } }
+SAC_cw_back_275_SOV = { 275 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_275_PRC = { 275 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_275_EUR = { 275 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_275_USA = { 275 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_681_SOV = { 681 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_681_PRC = { 681 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_681_EUR = { 681 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_681_USA = { 681 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_719_SOV = { 719 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_719_PRC = { 719 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_719_EUR = { 719 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_719_USA = { 719 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_818_SOV = { 818 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_818_PRC = { 818 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_818_EUR = { 818 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_818_USA = { 818 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_819_SOV = { 819 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_819_PRC = { 819 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_819_EUR = { 819 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_819_USA = { 819 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_1303_SOV = { 1303 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1303_PRC = { 1303 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1303_EUR = { 1303 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1303_USA = { 1303 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_1304_SOV = { 1304 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1304_PRC = { 1304 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1304_EUR = { 1304 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1304_USA = { 1304 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_1317_SOV = { 1317 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1317_PRC = { 1317 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1317_EUR = { 1317 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1317_USA = { 1317 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_1318_SOV = { 1318 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1318_PRC = { 1318 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1318_EUR = { 1318 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1318_USA = { 1318 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_1342_SOV = { 1342 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1342_PRC = { 1342 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1342_EUR = { 1342 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1342_USA = { 1342 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_1343_SOV = { 1343 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1343_PRC = { 1343 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1343_EUR = { 1343 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1343_USA = { 1343 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_1376_SOV = { 1376 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1376_PRC = { 1376 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1376_EUR = { 1376 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1376_USA = { 1376 = { controller = { OR = { check_variable = { global.AFR_sup_ZA_USA = THIS } tag = USA } } } }
+SAC_cw_back_744_SOV = { 744 = { controller = { OR = { check_variable = { global.AFR_sup_ML_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_744_PRC = { 744 = { controller = { OR = { check_variable = { global.AFR_sup_ML_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_744_EUR = { 744 = { controller = { OR = { check_variable = { global.AFR_sup_ML_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_744_USA = { 744 = { controller = { OR = { check_variable = { global.AFR_sup_ML_USA = THIS } tag = USA } } } }
+SAC_cw_back_745_SOV = { 745 = { controller = { OR = { check_variable = { global.AFR_sup_ML_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_745_PRC = { 745 = { controller = { OR = { check_variable = { global.AFR_sup_ML_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_745_EUR = { 745 = { controller = { OR = { check_variable = { global.AFR_sup_ML_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_745_USA = { 745 = { controller = { OR = { check_variable = { global.AFR_sup_ML_USA = THIS } tag = USA } } } }
+SAC_cw_back_746_SOV = { 746 = { controller = { OR = { check_variable = { global.AFR_sup_ML_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_746_PRC = { 746 = { controller = { OR = { check_variable = { global.AFR_sup_ML_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_746_EUR = { 746 = { controller = { OR = { check_variable = { global.AFR_sup_ML_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_746_USA = { 746 = { controller = { OR = { check_variable = { global.AFR_sup_ML_USA = THIS } tag = USA } } } }
+SAC_cw_back_1286_SOV = { 1286 = { controller = { OR = { check_variable = { global.AFR_sup_ML_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1286_PRC = { 1286 = { controller = { OR = { check_variable = { global.AFR_sup_ML_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1286_EUR = { 1286 = { controller = { OR = { check_variable = { global.AFR_sup_ML_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1286_USA = { 1286 = { controller = { OR = { check_variable = { global.AFR_sup_ML_USA = THIS } tag = USA } } } }
+SAC_cw_back_1287_SOV = { 1287 = { controller = { OR = { check_variable = { global.AFR_sup_ML_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_1287_PRC = { 1287 = { controller = { OR = { check_variable = { global.AFR_sup_ML_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_1287_EUR = { 1287 = { controller = { OR = { check_variable = { global.AFR_sup_ML_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_1287_USA = { 1287 = { controller = { OR = { check_variable = { global.AFR_sup_ML_USA = THIS } tag = USA } } } }
+SAC_cw_back_558_SOV = { 558 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_558_PRC = { 558 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_558_EUR = { 558 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_558_USA = { 558 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }
+SAC_cw_back_764_SOV = { 764 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_764_PRC = { 764 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_764_EUR = { 764 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_764_USA = { 764 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }
+SAC_cw_back_765_SOV = { 765 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_765_PRC = { 765 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_765_EUR = { 765 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_765_USA = { 765 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }
+SAC_cw_back_766_SOV = { 766 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_766_PRC = { 766 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_766_EUR = { 766 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_766_USA = { 766 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }
+SAC_cw_back_767_SOV = { 767 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_767_PRC = { 767 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_767_EUR = { 767 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_767_USA = { 767 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }
+SAC_cw_back_768_SOV = { 768 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_768_PRC = { 768 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_768_EUR = { 768 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_768_USA = { 768 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }
+SAC_cw_back_858_SOV = { 858 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_858_PRC = { 858 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_858_EUR = { 858 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_858_USA = { 858 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }
+SAC_cw_back_859_SOV = { 859 = { controller = { OR = { check_variable = { global.AFR_sup_NG_SOV = THIS } tag = SOV tag = WAG } } } }
+SAC_cw_back_859_PRC = { 859 = { controller = { OR = { check_variable = { global.AFR_sup_NG_PRC = THIS } tag = PRC } } } }
+SAC_cw_back_859_EUR = { 859 = { controller = { OR = { check_variable = { global.AFR_sup_NG_EUR = THIS } tag = FRA } } } }
+SAC_cw_back_859_USA = { 859 = { controller = { OR = { check_variable = { global.AFR_sup_NG_USA = THIS } tag = USA } } } }

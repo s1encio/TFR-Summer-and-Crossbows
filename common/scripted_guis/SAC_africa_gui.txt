@@ -15,6 +15,7 @@ scripted_gui = {
 		effects = {
 			SAC_africa_close_click = { clr_country_flag = SAC_africa_panel_open clear_array = AFR_sides }
 			SAC_africa_mode_inf_click = { set_variable = { AFR_mode = 0 } }
+			SAC_africa_cw_back_click = { set_variable = { AFR_tab = 1 } clear_array = AFR_sides }
 			SAC_africa_mode_res_click = { set_variable = { AFR_mode = 1 } }
 			SAC_africa_tab_inv_click = { set_variable = { AFR_tab = 1 } clear_array = AFR_sides }
 			SAC_africa_tab_mil_click = { set_variable = { AFR_tab = 2 } clear_array = AFR_sides }
@@ -680,42 +681,611 @@ scripted_gui = {
 			SAC_africa_act_mil_title_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
 			SAC_africa_act_mil_cost_visible = { check_variable = { AFR_sel > 0 } check_variable = { AFR_tab = 2 } }
 			SAC_africa_act_mil_click_enabled = { OR = { AND = { check_variable = { AFR_sel = 1 } SAC_afr_can_mil_AO = yes } AND = { check_variable = { AFR_sel = 2 } SAC_afr_can_mil_BF = yes } AND = { check_variable = { AFR_sel = 3 } SAC_afr_can_mil_BI = yes } AND = { check_variable = { AFR_sel = 4 } SAC_afr_can_mil_BJ = yes } AND = { check_variable = { AFR_sel = 5 } SAC_afr_can_mil_BW = yes } AND = { check_variable = { AFR_sel = 6 } SAC_afr_can_mil_CD = yes } AND = { check_variable = { AFR_sel = 7 } SAC_afr_can_mil_CF = yes } AND = { check_variable = { AFR_sel = 8 } SAC_afr_can_mil_CG = yes } AND = { check_variable = { AFR_sel = 9 } SAC_afr_can_mil_CI = yes } AND = { check_variable = { AFR_sel = 10 } SAC_afr_can_mil_CM = yes } AND = { check_variable = { AFR_sel = 11 } SAC_afr_can_mil_DJ = yes } AND = { check_variable = { AFR_sel = 12 } SAC_afr_can_mil_DZ = yes } AND = { check_variable = { AFR_sel = 13 } SAC_afr_can_mil_EG = yes } AND = { check_variable = { AFR_sel = 14 } SAC_afr_can_mil_EH = yes } AND = { check_variable = { AFR_sel = 15 } SAC_afr_can_mil_ER = yes } AND = { check_variable = { AFR_sel = 16 } SAC_afr_can_mil_ET = yes } AND = { check_variable = { AFR_sel = 17 } SAC_afr_can_mil_GA = yes } AND = { check_variable = { AFR_sel = 18 } SAC_afr_can_mil_GH = yes } AND = { check_variable = { AFR_sel = 19 } SAC_afr_can_mil_GM = yes } AND = { check_variable = { AFR_sel = 20 } SAC_afr_can_mil_GN = yes } AND = { check_variable = { AFR_sel = 21 } SAC_afr_can_mil_GQ = yes } AND = { check_variable = { AFR_sel = 22 } SAC_afr_can_mil_GW = yes } AND = { check_variable = { AFR_sel = 23 } SAC_afr_can_mil_KE = yes } AND = { check_variable = { AFR_sel = 24 } SAC_afr_can_mil_LR = yes } AND = { check_variable = { AFR_sel = 25 } SAC_afr_can_mil_LS = yes } AND = { check_variable = { AFR_sel = 26 } SAC_afr_can_mil_LY = yes } AND = { check_variable = { AFR_sel = 27 } SAC_afr_can_mil_MA = yes } AND = { check_variable = { AFR_sel = 28 } SAC_afr_can_mil_MG = yes } AND = { check_variable = { AFR_sel = 29 } SAC_afr_can_mil_ML = yes } AND = { check_variable = { AFR_sel = 30 } SAC_afr_can_mil_MR = yes } AND = { check_variable = { AFR_sel = 31 } SAC_afr_can_mil_MW = yes } AND = { check_variable = { AFR_sel = 32 } SAC_afr_can_mil_MZ = yes } AND = { check_variable = { AFR_sel = 33 } SAC_afr_can_mil_NA = yes } AND = { check_variable = { AFR_sel = 34 } SAC_afr_can_mil_NE = yes } AND = { check_variable = { AFR_sel = 35 } SAC_afr_can_mil_NG = yes } AND = { check_variable = { AFR_sel = 36 } SAC_afr_can_mil_RW = yes } AND = { check_variable = { AFR_sel = 37 } SAC_afr_can_mil_SD = yes } AND = { check_variable = { AFR_sel = 38 } SAC_afr_can_mil_SL = yes } AND = { check_variable = { AFR_sel = 39 } SAC_afr_can_mil_SN = yes } AND = { check_variable = { AFR_sel = 40 } SAC_afr_can_mil_SO = yes } AND = { check_variable = { AFR_sel = 41 } SAC_afr_can_mil_SS = yes } AND = { check_variable = { AFR_sel = 42 } SAC_afr_can_mil_SZ = yes } AND = { check_variable = { AFR_sel = 43 } SAC_afr_can_mil_TD = yes } AND = { check_variable = { AFR_sel = 44 } SAC_afr_can_mil_TG = yes } AND = { check_variable = { AFR_sel = 45 } SAC_afr_can_mil_TN = yes } AND = { check_variable = { AFR_sel = 46 } SAC_afr_can_mil_TZ = yes } AND = { check_variable = { AFR_sel = 47 } SAC_afr_can_mil_UG = yes } AND = { check_variable = { AFR_sel = 48 } SAC_afr_can_mil_ZA = yes } AND = { check_variable = { AFR_sel = 49 } SAC_afr_can_mil_ZM = yes } AND = { check_variable = { AFR_sel = 50 } SAC_afr_can_mil_ZW = yes } } }
-			SAC_africa_res_overlay_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_mode_inf_active_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_mode_res_active_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_leg_icon_0_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_text_0_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_icon_1_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_text_1_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_icon_2_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_text_2_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_icon_3_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_text_3_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_icon_4_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_text_4_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_icon_5_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_leg_text_5_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_hint_visible = { NOT = { check_variable = { AFR_mode = 1 } } }
-			SAC_africa_rleg_icon_0_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_0_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_1_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_1_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_2_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_2_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_3_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_3_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_4_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_4_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_5_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_5_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_6_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_6_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_7_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_7_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_8_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_8_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_icon_9_visible = { check_variable = { AFR_mode = 1 } }
-			SAC_africa_rleg_text_9_visible = { check_variable = { AFR_mode = 1 } }
+			SAC_africa_res_overlay_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_mode_inf_visible = { NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_mode_inf_text_visible = { NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_mode_res_visible = { NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_mode_res_text_visible = { NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_cw_back_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cw_back_text_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cw_title_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cw_hint_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_icon_0_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_icon_1_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_icon_2_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_icon_3_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_icon_4_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_icon_5_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_text_0_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_text_1_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_text_2_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_text_3_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_text_4_visible = { SAC_africa_zoom_active = yes }
+			SAC_africa_cleg_text_5_visible = { SAC_africa_zoom_active = yes }
+			SAC_cw_CF_bg_visible = { SAC_africa_zoom_CF = yes }
+			cw_CF_660_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_660_SOV = yes } NOT = { SAC_cw_back_660_PRC = yes } NOT = { SAC_cw_back_660_EUR = yes } NOT = { SAC_cw_back_660_USA = yes } 660 = { is_controlled_by = CAR } }
+			cw_CF_660_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_660_SOV = yes } NOT = { SAC_cw_back_660_PRC = yes } NOT = { SAC_cw_back_660_EUR = yes } NOT = { SAC_cw_back_660_USA = yes } NOT = { 660 = { is_controlled_by = CAR } } }
+			cw_CF_660_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_660_SOV = yes  }
+			cw_CF_660_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_660_PRC = yes NOT = { SAC_cw_back_660_SOV = yes } }
+			cw_CF_660_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_660_EUR = yes NOT = { SAC_cw_back_660_SOV = yes } NOT = { SAC_cw_back_660_PRC = yes } }
+			cw_CF_660_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_660_USA = yes NOT = { SAC_cw_back_660_SOV = yes } NOT = { SAC_cw_back_660_PRC = yes } NOT = { SAC_cw_back_660_EUR = yes } }
+			cw_CF_778_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_778_SOV = yes } NOT = { SAC_cw_back_778_PRC = yes } NOT = { SAC_cw_back_778_EUR = yes } NOT = { SAC_cw_back_778_USA = yes } 778 = { is_controlled_by = CAR } }
+			cw_CF_778_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_778_SOV = yes } NOT = { SAC_cw_back_778_PRC = yes } NOT = { SAC_cw_back_778_EUR = yes } NOT = { SAC_cw_back_778_USA = yes } NOT = { 778 = { is_controlled_by = CAR } } }
+			cw_CF_778_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_778_SOV = yes  }
+			cw_CF_778_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_778_PRC = yes NOT = { SAC_cw_back_778_SOV = yes } }
+			cw_CF_778_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_778_EUR = yes NOT = { SAC_cw_back_778_SOV = yes } NOT = { SAC_cw_back_778_PRC = yes } }
+			cw_CF_778_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_778_USA = yes NOT = { SAC_cw_back_778_SOV = yes } NOT = { SAC_cw_back_778_PRC = yes } NOT = { SAC_cw_back_778_EUR = yes } }
+			cw_CF_779_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_779_SOV = yes } NOT = { SAC_cw_back_779_PRC = yes } NOT = { SAC_cw_back_779_EUR = yes } NOT = { SAC_cw_back_779_USA = yes } 779 = { is_controlled_by = CAR } }
+			cw_CF_779_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_779_SOV = yes } NOT = { SAC_cw_back_779_PRC = yes } NOT = { SAC_cw_back_779_EUR = yes } NOT = { SAC_cw_back_779_USA = yes } NOT = { 779 = { is_controlled_by = CAR } } }
+			cw_CF_779_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_779_SOV = yes  }
+			cw_CF_779_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_779_PRC = yes NOT = { SAC_cw_back_779_SOV = yes } }
+			cw_CF_779_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_779_EUR = yes NOT = { SAC_cw_back_779_SOV = yes } NOT = { SAC_cw_back_779_PRC = yes } }
+			cw_CF_779_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_779_USA = yes NOT = { SAC_cw_back_779_SOV = yes } NOT = { SAC_cw_back_779_PRC = yes } NOT = { SAC_cw_back_779_EUR = yes } }
+			cw_CF_1504_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1504_SOV = yes } NOT = { SAC_cw_back_1504_PRC = yes } NOT = { SAC_cw_back_1504_EUR = yes } NOT = { SAC_cw_back_1504_USA = yes } 1504 = { is_controlled_by = CAR } }
+			cw_CF_1504_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1504_SOV = yes } NOT = { SAC_cw_back_1504_PRC = yes } NOT = { SAC_cw_back_1504_EUR = yes } NOT = { SAC_cw_back_1504_USA = yes } NOT = { 1504 = { is_controlled_by = CAR } } }
+			cw_CF_1504_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1504_SOV = yes  }
+			cw_CF_1504_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1504_PRC = yes NOT = { SAC_cw_back_1504_SOV = yes } }
+			cw_CF_1504_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1504_EUR = yes NOT = { SAC_cw_back_1504_SOV = yes } NOT = { SAC_cw_back_1504_PRC = yes } }
+			cw_CF_1504_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1504_USA = yes NOT = { SAC_cw_back_1504_SOV = yes } NOT = { SAC_cw_back_1504_PRC = yes } NOT = { SAC_cw_back_1504_EUR = yes } }
+			cw_CF_1505_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1505_SOV = yes } NOT = { SAC_cw_back_1505_PRC = yes } NOT = { SAC_cw_back_1505_EUR = yes } NOT = { SAC_cw_back_1505_USA = yes } 1505 = { is_controlled_by = CAR } }
+			cw_CF_1505_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1505_SOV = yes } NOT = { SAC_cw_back_1505_PRC = yes } NOT = { SAC_cw_back_1505_EUR = yes } NOT = { SAC_cw_back_1505_USA = yes } NOT = { 1505 = { is_controlled_by = CAR } } }
+			cw_CF_1505_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1505_SOV = yes  }
+			cw_CF_1505_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1505_PRC = yes NOT = { SAC_cw_back_1505_SOV = yes } }
+			cw_CF_1505_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1505_EUR = yes NOT = { SAC_cw_back_1505_SOV = yes } NOT = { SAC_cw_back_1505_PRC = yes } }
+			cw_CF_1505_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1505_USA = yes NOT = { SAC_cw_back_1505_SOV = yes } NOT = { SAC_cw_back_1505_PRC = yes } NOT = { SAC_cw_back_1505_EUR = yes } }
+			cw_CF_1506_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1506_SOV = yes } NOT = { SAC_cw_back_1506_PRC = yes } NOT = { SAC_cw_back_1506_EUR = yes } NOT = { SAC_cw_back_1506_USA = yes } 1506 = { is_controlled_by = CAR } }
+			cw_CF_1506_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1506_SOV = yes } NOT = { SAC_cw_back_1506_PRC = yes } NOT = { SAC_cw_back_1506_EUR = yes } NOT = { SAC_cw_back_1506_USA = yes } NOT = { 1506 = { is_controlled_by = CAR } } }
+			cw_CF_1506_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1506_SOV = yes  }
+			cw_CF_1506_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1506_PRC = yes NOT = { SAC_cw_back_1506_SOV = yes } }
+			cw_CF_1506_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1506_EUR = yes NOT = { SAC_cw_back_1506_SOV = yes } NOT = { SAC_cw_back_1506_PRC = yes } }
+			cw_CF_1506_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1506_USA = yes NOT = { SAC_cw_back_1506_SOV = yes } NOT = { SAC_cw_back_1506_PRC = yes } NOT = { SAC_cw_back_1506_EUR = yes } }
+			cw_CF_1507_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1507_SOV = yes } NOT = { SAC_cw_back_1507_PRC = yes } NOT = { SAC_cw_back_1507_EUR = yes } NOT = { SAC_cw_back_1507_USA = yes } 1507 = { is_controlled_by = CAR } }
+			cw_CF_1507_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1507_SOV = yes } NOT = { SAC_cw_back_1507_PRC = yes } NOT = { SAC_cw_back_1507_EUR = yes } NOT = { SAC_cw_back_1507_USA = yes } NOT = { 1507 = { is_controlled_by = CAR } } }
+			cw_CF_1507_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1507_SOV = yes  }
+			cw_CF_1507_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1507_PRC = yes NOT = { SAC_cw_back_1507_SOV = yes } }
+			cw_CF_1507_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1507_EUR = yes NOT = { SAC_cw_back_1507_SOV = yes } NOT = { SAC_cw_back_1507_PRC = yes } }
+			cw_CF_1507_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1507_USA = yes NOT = { SAC_cw_back_1507_SOV = yes } NOT = { SAC_cw_back_1507_PRC = yes } NOT = { SAC_cw_back_1507_EUR = yes } }
+			cw_CF_1508_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1508_SOV = yes } NOT = { SAC_cw_back_1508_PRC = yes } NOT = { SAC_cw_back_1508_EUR = yes } NOT = { SAC_cw_back_1508_USA = yes } 1508 = { is_controlled_by = CAR } }
+			cw_CF_1508_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1508_SOV = yes } NOT = { SAC_cw_back_1508_PRC = yes } NOT = { SAC_cw_back_1508_EUR = yes } NOT = { SAC_cw_back_1508_USA = yes } NOT = { 1508 = { is_controlled_by = CAR } } }
+			cw_CF_1508_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1508_SOV = yes  }
+			cw_CF_1508_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1508_PRC = yes NOT = { SAC_cw_back_1508_SOV = yes } }
+			cw_CF_1508_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1508_EUR = yes NOT = { SAC_cw_back_1508_SOV = yes } NOT = { SAC_cw_back_1508_PRC = yes } }
+			cw_CF_1508_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1508_USA = yes NOT = { SAC_cw_back_1508_SOV = yes } NOT = { SAC_cw_back_1508_PRC = yes } NOT = { SAC_cw_back_1508_EUR = yes } }
+			cw_CF_1509_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1509_SOV = yes } NOT = { SAC_cw_back_1509_PRC = yes } NOT = { SAC_cw_back_1509_EUR = yes } NOT = { SAC_cw_back_1509_USA = yes } 1509 = { is_controlled_by = CAR } }
+			cw_CF_1509_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1509_SOV = yes } NOT = { SAC_cw_back_1509_PRC = yes } NOT = { SAC_cw_back_1509_EUR = yes } NOT = { SAC_cw_back_1509_USA = yes } NOT = { 1509 = { is_controlled_by = CAR } } }
+			cw_CF_1509_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1509_SOV = yes  }
+			cw_CF_1509_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1509_PRC = yes NOT = { SAC_cw_back_1509_SOV = yes } }
+			cw_CF_1509_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1509_EUR = yes NOT = { SAC_cw_back_1509_SOV = yes } NOT = { SAC_cw_back_1509_PRC = yes } }
+			cw_CF_1509_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1509_USA = yes NOT = { SAC_cw_back_1509_SOV = yes } NOT = { SAC_cw_back_1509_PRC = yes } NOT = { SAC_cw_back_1509_EUR = yes } }
+			cw_CF_1510_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1510_SOV = yes } NOT = { SAC_cw_back_1510_PRC = yes } NOT = { SAC_cw_back_1510_EUR = yes } NOT = { SAC_cw_back_1510_USA = yes } 1510 = { is_controlled_by = CAR } }
+			cw_CF_1510_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1510_SOV = yes } NOT = { SAC_cw_back_1510_PRC = yes } NOT = { SAC_cw_back_1510_EUR = yes } NOT = { SAC_cw_back_1510_USA = yes } NOT = { 1510 = { is_controlled_by = CAR } } }
+			cw_CF_1510_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1510_SOV = yes  }
+			cw_CF_1510_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1510_PRC = yes NOT = { SAC_cw_back_1510_SOV = yes } }
+			cw_CF_1510_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1510_EUR = yes NOT = { SAC_cw_back_1510_SOV = yes } NOT = { SAC_cw_back_1510_PRC = yes } }
+			cw_CF_1510_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1510_USA = yes NOT = { SAC_cw_back_1510_SOV = yes } NOT = { SAC_cw_back_1510_PRC = yes } NOT = { SAC_cw_back_1510_EUR = yes } }
+			cw_CF_1511_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1511_SOV = yes } NOT = { SAC_cw_back_1511_PRC = yes } NOT = { SAC_cw_back_1511_EUR = yes } NOT = { SAC_cw_back_1511_USA = yes } 1511 = { is_controlled_by = CAR } }
+			cw_CF_1511_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1511_SOV = yes } NOT = { SAC_cw_back_1511_PRC = yes } NOT = { SAC_cw_back_1511_EUR = yes } NOT = { SAC_cw_back_1511_USA = yes } NOT = { 1511 = { is_controlled_by = CAR } } }
+			cw_CF_1511_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1511_SOV = yes  }
+			cw_CF_1511_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1511_PRC = yes NOT = { SAC_cw_back_1511_SOV = yes } }
+			cw_CF_1511_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1511_EUR = yes NOT = { SAC_cw_back_1511_SOV = yes } NOT = { SAC_cw_back_1511_PRC = yes } }
+			cw_CF_1511_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1511_USA = yes NOT = { SAC_cw_back_1511_SOV = yes } NOT = { SAC_cw_back_1511_PRC = yes } NOT = { SAC_cw_back_1511_EUR = yes } }
+			cw_CF_1512_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1512_SOV = yes } NOT = { SAC_cw_back_1512_PRC = yes } NOT = { SAC_cw_back_1512_EUR = yes } NOT = { SAC_cw_back_1512_USA = yes } 1512 = { is_controlled_by = CAR } }
+			cw_CF_1512_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1512_SOV = yes } NOT = { SAC_cw_back_1512_PRC = yes } NOT = { SAC_cw_back_1512_EUR = yes } NOT = { SAC_cw_back_1512_USA = yes } NOT = { 1512 = { is_controlled_by = CAR } } }
+			cw_CF_1512_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1512_SOV = yes  }
+			cw_CF_1512_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1512_PRC = yes NOT = { SAC_cw_back_1512_SOV = yes } }
+			cw_CF_1512_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1512_EUR = yes NOT = { SAC_cw_back_1512_SOV = yes } NOT = { SAC_cw_back_1512_PRC = yes } }
+			cw_CF_1512_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1512_USA = yes NOT = { SAC_cw_back_1512_SOV = yes } NOT = { SAC_cw_back_1512_PRC = yes } NOT = { SAC_cw_back_1512_EUR = yes } }
+			cw_CF_1513_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1513_SOV = yes } NOT = { SAC_cw_back_1513_PRC = yes } NOT = { SAC_cw_back_1513_EUR = yes } NOT = { SAC_cw_back_1513_USA = yes } 1513 = { is_controlled_by = CAR } }
+			cw_CF_1513_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1513_SOV = yes } NOT = { SAC_cw_back_1513_PRC = yes } NOT = { SAC_cw_back_1513_EUR = yes } NOT = { SAC_cw_back_1513_USA = yes } NOT = { 1513 = { is_controlled_by = CAR } } }
+			cw_CF_1513_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1513_SOV = yes  }
+			cw_CF_1513_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1513_PRC = yes NOT = { SAC_cw_back_1513_SOV = yes } }
+			cw_CF_1513_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1513_EUR = yes NOT = { SAC_cw_back_1513_SOV = yes } NOT = { SAC_cw_back_1513_PRC = yes } }
+			cw_CF_1513_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1513_USA = yes NOT = { SAC_cw_back_1513_SOV = yes } NOT = { SAC_cw_back_1513_PRC = yes } NOT = { SAC_cw_back_1513_EUR = yes } }
+			cw_CF_1514_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1514_SOV = yes } NOT = { SAC_cw_back_1514_PRC = yes } NOT = { SAC_cw_back_1514_EUR = yes } NOT = { SAC_cw_back_1514_USA = yes } 1514 = { is_controlled_by = CAR } }
+			cw_CF_1514_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1514_SOV = yes } NOT = { SAC_cw_back_1514_PRC = yes } NOT = { SAC_cw_back_1514_EUR = yes } NOT = { SAC_cw_back_1514_USA = yes } NOT = { 1514 = { is_controlled_by = CAR } } }
+			cw_CF_1514_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1514_SOV = yes  }
+			cw_CF_1514_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1514_PRC = yes NOT = { SAC_cw_back_1514_SOV = yes } }
+			cw_CF_1514_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1514_EUR = yes NOT = { SAC_cw_back_1514_SOV = yes } NOT = { SAC_cw_back_1514_PRC = yes } }
+			cw_CF_1514_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1514_USA = yes NOT = { SAC_cw_back_1514_SOV = yes } NOT = { SAC_cw_back_1514_PRC = yes } NOT = { SAC_cw_back_1514_EUR = yes } }
+			cw_CF_1515_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1515_SOV = yes } NOT = { SAC_cw_back_1515_PRC = yes } NOT = { SAC_cw_back_1515_EUR = yes } NOT = { SAC_cw_back_1515_USA = yes } 1515 = { is_controlled_by = CAR } }
+			cw_CF_1515_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1515_SOV = yes } NOT = { SAC_cw_back_1515_PRC = yes } NOT = { SAC_cw_back_1515_EUR = yes } NOT = { SAC_cw_back_1515_USA = yes } NOT = { 1515 = { is_controlled_by = CAR } } }
+			cw_CF_1515_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1515_SOV = yes  }
+			cw_CF_1515_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1515_PRC = yes NOT = { SAC_cw_back_1515_SOV = yes } }
+			cw_CF_1515_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1515_EUR = yes NOT = { SAC_cw_back_1515_SOV = yes } NOT = { SAC_cw_back_1515_PRC = yes } }
+			cw_CF_1515_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1515_USA = yes NOT = { SAC_cw_back_1515_SOV = yes } NOT = { SAC_cw_back_1515_PRC = yes } NOT = { SAC_cw_back_1515_EUR = yes } }
+			cw_CF_1516_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1516_SOV = yes } NOT = { SAC_cw_back_1516_PRC = yes } NOT = { SAC_cw_back_1516_EUR = yes } NOT = { SAC_cw_back_1516_USA = yes } 1516 = { is_controlled_by = CAR } }
+			cw_CF_1516_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1516_SOV = yes } NOT = { SAC_cw_back_1516_PRC = yes } NOT = { SAC_cw_back_1516_EUR = yes } NOT = { SAC_cw_back_1516_USA = yes } NOT = { 1516 = { is_controlled_by = CAR } } }
+			cw_CF_1516_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1516_SOV = yes  }
+			cw_CF_1516_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1516_PRC = yes NOT = { SAC_cw_back_1516_SOV = yes } }
+			cw_CF_1516_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1516_EUR = yes NOT = { SAC_cw_back_1516_SOV = yes } NOT = { SAC_cw_back_1516_PRC = yes } }
+			cw_CF_1516_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1516_USA = yes NOT = { SAC_cw_back_1516_SOV = yes } NOT = { SAC_cw_back_1516_PRC = yes } NOT = { SAC_cw_back_1516_EUR = yes } }
+			cw_CF_1517_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1517_SOV = yes } NOT = { SAC_cw_back_1517_PRC = yes } NOT = { SAC_cw_back_1517_EUR = yes } NOT = { SAC_cw_back_1517_USA = yes } 1517 = { is_controlled_by = CAR } }
+			cw_CF_1517_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1517_SOV = yes } NOT = { SAC_cw_back_1517_PRC = yes } NOT = { SAC_cw_back_1517_EUR = yes } NOT = { SAC_cw_back_1517_USA = yes } NOT = { 1517 = { is_controlled_by = CAR } } }
+			cw_CF_1517_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1517_SOV = yes  }
+			cw_CF_1517_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1517_PRC = yes NOT = { SAC_cw_back_1517_SOV = yes } }
+			cw_CF_1517_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1517_EUR = yes NOT = { SAC_cw_back_1517_SOV = yes } NOT = { SAC_cw_back_1517_PRC = yes } }
+			cw_CF_1517_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1517_USA = yes NOT = { SAC_cw_back_1517_SOV = yes } NOT = { SAC_cw_back_1517_PRC = yes } NOT = { SAC_cw_back_1517_EUR = yes } }
+			cw_CF_1518_0_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1518_SOV = yes } NOT = { SAC_cw_back_1518_PRC = yes } NOT = { SAC_cw_back_1518_EUR = yes } NOT = { SAC_cw_back_1518_USA = yes } 1518 = { is_controlled_by = CAR } }
+			cw_CF_1518_5_visible = { SAC_africa_zoom_CF = yes NOT = { SAC_cw_back_1518_SOV = yes } NOT = { SAC_cw_back_1518_PRC = yes } NOT = { SAC_cw_back_1518_EUR = yes } NOT = { SAC_cw_back_1518_USA = yes } NOT = { 1518 = { is_controlled_by = CAR } } }
+			cw_CF_1518_1_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1518_SOV = yes  }
+			cw_CF_1518_2_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1518_PRC = yes NOT = { SAC_cw_back_1518_SOV = yes } }
+			cw_CF_1518_3_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1518_EUR = yes NOT = { SAC_cw_back_1518_SOV = yes } NOT = { SAC_cw_back_1518_PRC = yes } }
+			cw_CF_1518_4_visible = { SAC_africa_zoom_CF = yes SAC_cw_back_1518_USA = yes NOT = { SAC_cw_back_1518_SOV = yes } NOT = { SAC_cw_back_1518_PRC = yes } NOT = { SAC_cw_back_1518_EUR = yes } }
+			SAC_cw_LY_bg_visible = { SAC_africa_zoom_LY = yes }
+			cw_LY_273_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_273_SOV = yes } NOT = { SAC_cw_back_273_PRC = yes } NOT = { SAC_cw_back_273_EUR = yes } NOT = { SAC_cw_back_273_USA = yes } 273 = { is_controlled_by = LBA } }
+			cw_LY_273_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_273_SOV = yes } NOT = { SAC_cw_back_273_PRC = yes } NOT = { SAC_cw_back_273_EUR = yes } NOT = { SAC_cw_back_273_USA = yes } NOT = { 273 = { is_controlled_by = LBA } } }
+			cw_LY_273_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_273_SOV = yes  }
+			cw_LY_273_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_273_PRC = yes NOT = { SAC_cw_back_273_SOV = yes } }
+			cw_LY_273_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_273_EUR = yes NOT = { SAC_cw_back_273_SOV = yes } NOT = { SAC_cw_back_273_PRC = yes } }
+			cw_LY_273_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_273_USA = yes NOT = { SAC_cw_back_273_SOV = yes } NOT = { SAC_cw_back_273_PRC = yes } NOT = { SAC_cw_back_273_EUR = yes } }
+			cw_LY_448_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_448_SOV = yes } NOT = { SAC_cw_back_448_PRC = yes } NOT = { SAC_cw_back_448_EUR = yes } NOT = { SAC_cw_back_448_USA = yes } 448 = { is_controlled_by = LBA } }
+			cw_LY_448_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_448_SOV = yes } NOT = { SAC_cw_back_448_PRC = yes } NOT = { SAC_cw_back_448_EUR = yes } NOT = { SAC_cw_back_448_USA = yes } NOT = { 448 = { is_controlled_by = LBA } } }
+			cw_LY_448_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_448_SOV = yes  }
+			cw_LY_448_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_448_PRC = yes NOT = { SAC_cw_back_448_SOV = yes } }
+			cw_LY_448_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_448_EUR = yes NOT = { SAC_cw_back_448_SOV = yes } NOT = { SAC_cw_back_448_PRC = yes } }
+			cw_LY_448_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_448_USA = yes NOT = { SAC_cw_back_448_SOV = yes } NOT = { SAC_cw_back_448_PRC = yes } NOT = { SAC_cw_back_448_EUR = yes } }
+			cw_LY_449_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_449_SOV = yes } NOT = { SAC_cw_back_449_PRC = yes } NOT = { SAC_cw_back_449_EUR = yes } NOT = { SAC_cw_back_449_USA = yes } 449 = { is_controlled_by = LBA } }
+			cw_LY_449_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_449_SOV = yes } NOT = { SAC_cw_back_449_PRC = yes } NOT = { SAC_cw_back_449_EUR = yes } NOT = { SAC_cw_back_449_USA = yes } NOT = { 449 = { is_controlled_by = LBA } } }
+			cw_LY_449_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_449_SOV = yes  }
+			cw_LY_449_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_449_PRC = yes NOT = { SAC_cw_back_449_SOV = yes } }
+			cw_LY_449_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_449_EUR = yes NOT = { SAC_cw_back_449_SOV = yes } NOT = { SAC_cw_back_449_PRC = yes } }
+			cw_LY_449_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_449_USA = yes NOT = { SAC_cw_back_449_SOV = yes } NOT = { SAC_cw_back_449_PRC = yes } NOT = { SAC_cw_back_449_EUR = yes } }
+			cw_LY_450_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_450_SOV = yes } NOT = { SAC_cw_back_450_PRC = yes } NOT = { SAC_cw_back_450_EUR = yes } NOT = { SAC_cw_back_450_USA = yes } 450 = { is_controlled_by = LBA } }
+			cw_LY_450_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_450_SOV = yes } NOT = { SAC_cw_back_450_PRC = yes } NOT = { SAC_cw_back_450_EUR = yes } NOT = { SAC_cw_back_450_USA = yes } NOT = { 450 = { is_controlled_by = LBA } } }
+			cw_LY_450_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_450_SOV = yes  }
+			cw_LY_450_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_450_PRC = yes NOT = { SAC_cw_back_450_SOV = yes } }
+			cw_LY_450_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_450_EUR = yes NOT = { SAC_cw_back_450_SOV = yes } NOT = { SAC_cw_back_450_PRC = yes } }
+			cw_LY_450_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_450_USA = yes NOT = { SAC_cw_back_450_SOV = yes } NOT = { SAC_cw_back_450_PRC = yes } NOT = { SAC_cw_back_450_EUR = yes } }
+			cw_LY_451_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_451_SOV = yes } NOT = { SAC_cw_back_451_PRC = yes } NOT = { SAC_cw_back_451_EUR = yes } NOT = { SAC_cw_back_451_USA = yes } 451 = { is_controlled_by = LBA } }
+			cw_LY_451_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_451_SOV = yes } NOT = { SAC_cw_back_451_PRC = yes } NOT = { SAC_cw_back_451_EUR = yes } NOT = { SAC_cw_back_451_USA = yes } NOT = { 451 = { is_controlled_by = LBA } } }
+			cw_LY_451_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_451_SOV = yes  }
+			cw_LY_451_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_451_PRC = yes NOT = { SAC_cw_back_451_SOV = yes } }
+			cw_LY_451_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_451_EUR = yes NOT = { SAC_cw_back_451_SOV = yes } NOT = { SAC_cw_back_451_PRC = yes } }
+			cw_LY_451_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_451_USA = yes NOT = { SAC_cw_back_451_SOV = yes } NOT = { SAC_cw_back_451_PRC = yes } NOT = { SAC_cw_back_451_EUR = yes } }
+			cw_LY_661_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_661_SOV = yes } NOT = { SAC_cw_back_661_PRC = yes } NOT = { SAC_cw_back_661_EUR = yes } NOT = { SAC_cw_back_661_USA = yes } 661 = { is_controlled_by = LBA } }
+			cw_LY_661_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_661_SOV = yes } NOT = { SAC_cw_back_661_PRC = yes } NOT = { SAC_cw_back_661_EUR = yes } NOT = { SAC_cw_back_661_USA = yes } NOT = { 661 = { is_controlled_by = LBA } } }
+			cw_LY_661_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_661_SOV = yes  }
+			cw_LY_661_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_661_PRC = yes NOT = { SAC_cw_back_661_SOV = yes } }
+			cw_LY_661_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_661_EUR = yes NOT = { SAC_cw_back_661_SOV = yes } NOT = { SAC_cw_back_661_PRC = yes } }
+			cw_LY_661_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_661_USA = yes NOT = { SAC_cw_back_661_SOV = yes } NOT = { SAC_cw_back_661_PRC = yes } NOT = { SAC_cw_back_661_EUR = yes } }
+			cw_LY_662_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_662_SOV = yes } NOT = { SAC_cw_back_662_PRC = yes } NOT = { SAC_cw_back_662_EUR = yes } NOT = { SAC_cw_back_662_USA = yes } 662 = { is_controlled_by = LBA } }
+			cw_LY_662_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_662_SOV = yes } NOT = { SAC_cw_back_662_PRC = yes } NOT = { SAC_cw_back_662_EUR = yes } NOT = { SAC_cw_back_662_USA = yes } NOT = { 662 = { is_controlled_by = LBA } } }
+			cw_LY_662_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_662_SOV = yes  }
+			cw_LY_662_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_662_PRC = yes NOT = { SAC_cw_back_662_SOV = yes } }
+			cw_LY_662_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_662_EUR = yes NOT = { SAC_cw_back_662_SOV = yes } NOT = { SAC_cw_back_662_PRC = yes } }
+			cw_LY_662_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_662_USA = yes NOT = { SAC_cw_back_662_SOV = yes } NOT = { SAC_cw_back_662_PRC = yes } NOT = { SAC_cw_back_662_EUR = yes } }
+			cw_LY_663_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_663_SOV = yes } NOT = { SAC_cw_back_663_PRC = yes } NOT = { SAC_cw_back_663_EUR = yes } NOT = { SAC_cw_back_663_USA = yes } 663 = { is_controlled_by = LBA } }
+			cw_LY_663_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_663_SOV = yes } NOT = { SAC_cw_back_663_PRC = yes } NOT = { SAC_cw_back_663_EUR = yes } NOT = { SAC_cw_back_663_USA = yes } NOT = { 663 = { is_controlled_by = LBA } } }
+			cw_LY_663_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_663_SOV = yes  }
+			cw_LY_663_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_663_PRC = yes NOT = { SAC_cw_back_663_SOV = yes } }
+			cw_LY_663_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_663_EUR = yes NOT = { SAC_cw_back_663_SOV = yes } NOT = { SAC_cw_back_663_PRC = yes } }
+			cw_LY_663_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_663_USA = yes NOT = { SAC_cw_back_663_SOV = yes } NOT = { SAC_cw_back_663_PRC = yes } NOT = { SAC_cw_back_663_EUR = yes } }
+			cw_LY_907_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_907_SOV = yes } NOT = { SAC_cw_back_907_PRC = yes } NOT = { SAC_cw_back_907_EUR = yes } NOT = { SAC_cw_back_907_USA = yes } 907 = { is_controlled_by = LBA } }
+			cw_LY_907_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_907_SOV = yes } NOT = { SAC_cw_back_907_PRC = yes } NOT = { SAC_cw_back_907_EUR = yes } NOT = { SAC_cw_back_907_USA = yes } NOT = { 907 = { is_controlled_by = LBA } } }
+			cw_LY_907_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_907_SOV = yes  }
+			cw_LY_907_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_907_PRC = yes NOT = { SAC_cw_back_907_SOV = yes } }
+			cw_LY_907_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_907_EUR = yes NOT = { SAC_cw_back_907_SOV = yes } NOT = { SAC_cw_back_907_PRC = yes } }
+			cw_LY_907_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_907_USA = yes NOT = { SAC_cw_back_907_SOV = yes } NOT = { SAC_cw_back_907_PRC = yes } NOT = { SAC_cw_back_907_EUR = yes } }
+			cw_LY_1169_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_1169_SOV = yes } NOT = { SAC_cw_back_1169_PRC = yes } NOT = { SAC_cw_back_1169_EUR = yes } NOT = { SAC_cw_back_1169_USA = yes } 1169 = { is_controlled_by = LBA } }
+			cw_LY_1169_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_1169_SOV = yes } NOT = { SAC_cw_back_1169_PRC = yes } NOT = { SAC_cw_back_1169_EUR = yes } NOT = { SAC_cw_back_1169_USA = yes } NOT = { 1169 = { is_controlled_by = LBA } } }
+			cw_LY_1169_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1169_SOV = yes  }
+			cw_LY_1169_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1169_PRC = yes NOT = { SAC_cw_back_1169_SOV = yes } }
+			cw_LY_1169_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1169_EUR = yes NOT = { SAC_cw_back_1169_SOV = yes } NOT = { SAC_cw_back_1169_PRC = yes } }
+			cw_LY_1169_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1169_USA = yes NOT = { SAC_cw_back_1169_SOV = yes } NOT = { SAC_cw_back_1169_PRC = yes } NOT = { SAC_cw_back_1169_EUR = yes } }
+			cw_LY_1325_0_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_1325_SOV = yes } NOT = { SAC_cw_back_1325_PRC = yes } NOT = { SAC_cw_back_1325_EUR = yes } NOT = { SAC_cw_back_1325_USA = yes } 1325 = { is_controlled_by = LBA } }
+			cw_LY_1325_5_visible = { SAC_africa_zoom_LY = yes NOT = { SAC_cw_back_1325_SOV = yes } NOT = { SAC_cw_back_1325_PRC = yes } NOT = { SAC_cw_back_1325_EUR = yes } NOT = { SAC_cw_back_1325_USA = yes } NOT = { 1325 = { is_controlled_by = LBA } } }
+			cw_LY_1325_1_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1325_SOV = yes  }
+			cw_LY_1325_2_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1325_PRC = yes NOT = { SAC_cw_back_1325_SOV = yes } }
+			cw_LY_1325_3_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1325_EUR = yes NOT = { SAC_cw_back_1325_SOV = yes } NOT = { SAC_cw_back_1325_PRC = yes } }
+			cw_LY_1325_4_visible = { SAC_africa_zoom_LY = yes SAC_cw_back_1325_USA = yes NOT = { SAC_cw_back_1325_SOV = yes } NOT = { SAC_cw_back_1325_PRC = yes } NOT = { SAC_cw_back_1325_EUR = yes } }
+			SAC_cw_SO_bg_visible = { SAC_africa_zoom_SO = yes }
+			cw_SO_269_0_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_269_SOV = yes } NOT = { SAC_cw_back_269_PRC = yes } NOT = { SAC_cw_back_269_EUR = yes } NOT = { SAC_cw_back_269_USA = yes } 269 = { is_controlled_by = SOM } }
+			cw_SO_269_5_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_269_SOV = yes } NOT = { SAC_cw_back_269_PRC = yes } NOT = { SAC_cw_back_269_EUR = yes } NOT = { SAC_cw_back_269_USA = yes } NOT = { 269 = { is_controlled_by = SOM } } }
+			cw_SO_269_1_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_269_SOV = yes  }
+			cw_SO_269_2_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_269_PRC = yes NOT = { SAC_cw_back_269_SOV = yes } }
+			cw_SO_269_3_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_269_EUR = yes NOT = { SAC_cw_back_269_SOV = yes } NOT = { SAC_cw_back_269_PRC = yes } }
+			cw_SO_269_4_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_269_USA = yes NOT = { SAC_cw_back_269_SOV = yes } NOT = { SAC_cw_back_269_PRC = yes } NOT = { SAC_cw_back_269_EUR = yes } }
+			cw_SO_559_0_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_559_SOV = yes } NOT = { SAC_cw_back_559_PRC = yes } NOT = { SAC_cw_back_559_EUR = yes } NOT = { SAC_cw_back_559_USA = yes } 559 = { is_controlled_by = SOM } }
+			cw_SO_559_5_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_559_SOV = yes } NOT = { SAC_cw_back_559_PRC = yes } NOT = { SAC_cw_back_559_EUR = yes } NOT = { SAC_cw_back_559_USA = yes } NOT = { 559 = { is_controlled_by = SOM } } }
+			cw_SO_559_1_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_559_SOV = yes  }
+			cw_SO_559_2_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_559_PRC = yes NOT = { SAC_cw_back_559_SOV = yes } }
+			cw_SO_559_3_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_559_EUR = yes NOT = { SAC_cw_back_559_SOV = yes } NOT = { SAC_cw_back_559_PRC = yes } }
+			cw_SO_559_4_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_559_USA = yes NOT = { SAC_cw_back_559_SOV = yes } NOT = { SAC_cw_back_559_PRC = yes } NOT = { SAC_cw_back_559_EUR = yes } }
+			cw_SO_807_0_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_807_SOV = yes } NOT = { SAC_cw_back_807_PRC = yes } NOT = { SAC_cw_back_807_EUR = yes } NOT = { SAC_cw_back_807_USA = yes } 807 = { is_controlled_by = SOM } }
+			cw_SO_807_5_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_807_SOV = yes } NOT = { SAC_cw_back_807_PRC = yes } NOT = { SAC_cw_back_807_EUR = yes } NOT = { SAC_cw_back_807_USA = yes } NOT = { 807 = { is_controlled_by = SOM } } }
+			cw_SO_807_1_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_807_SOV = yes  }
+			cw_SO_807_2_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_807_PRC = yes NOT = { SAC_cw_back_807_SOV = yes } }
+			cw_SO_807_3_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_807_EUR = yes NOT = { SAC_cw_back_807_SOV = yes } NOT = { SAC_cw_back_807_PRC = yes } }
+			cw_SO_807_4_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_807_USA = yes NOT = { SAC_cw_back_807_SOV = yes } NOT = { SAC_cw_back_807_PRC = yes } NOT = { SAC_cw_back_807_EUR = yes } }
+			cw_SO_955_0_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_955_SOV = yes } NOT = { SAC_cw_back_955_PRC = yes } NOT = { SAC_cw_back_955_EUR = yes } NOT = { SAC_cw_back_955_USA = yes } 955 = { is_controlled_by = SOM } }
+			cw_SO_955_5_visible = { SAC_africa_zoom_SO = yes NOT = { SAC_cw_back_955_SOV = yes } NOT = { SAC_cw_back_955_PRC = yes } NOT = { SAC_cw_back_955_EUR = yes } NOT = { SAC_cw_back_955_USA = yes } NOT = { 955 = { is_controlled_by = SOM } } }
+			cw_SO_955_1_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_955_SOV = yes  }
+			cw_SO_955_2_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_955_PRC = yes NOT = { SAC_cw_back_955_SOV = yes } }
+			cw_SO_955_3_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_955_EUR = yes NOT = { SAC_cw_back_955_SOV = yes } NOT = { SAC_cw_back_955_PRC = yes } }
+			cw_SO_955_4_visible = { SAC_africa_zoom_SO = yes SAC_cw_back_955_USA = yes NOT = { SAC_cw_back_955_SOV = yes } NOT = { SAC_cw_back_955_PRC = yes } NOT = { SAC_cw_back_955_EUR = yes } }
+			SAC_cw_ET_bg_visible = { SAC_africa_zoom_ET = yes }
+			cw_ET_271_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_271_SOV = yes } NOT = { SAC_cw_back_271_PRC = yes } NOT = { SAC_cw_back_271_EUR = yes } NOT = { SAC_cw_back_271_USA = yes } 271 = { is_controlled_by = ETH } }
+			cw_ET_271_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_271_SOV = yes } NOT = { SAC_cw_back_271_PRC = yes } NOT = { SAC_cw_back_271_EUR = yes } NOT = { SAC_cw_back_271_USA = yes } NOT = { 271 = { is_controlled_by = ETH } } }
+			cw_ET_271_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_271_SOV = yes  }
+			cw_ET_271_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_271_PRC = yes NOT = { SAC_cw_back_271_SOV = yes } }
+			cw_ET_271_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_271_EUR = yes NOT = { SAC_cw_back_271_SOV = yes } NOT = { SAC_cw_back_271_PRC = yes } }
+			cw_ET_271_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_271_USA = yes NOT = { SAC_cw_back_271_SOV = yes } NOT = { SAC_cw_back_271_PRC = yes } NOT = { SAC_cw_back_271_EUR = yes } }
+			cw_ET_674_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_674_SOV = yes } NOT = { SAC_cw_back_674_PRC = yes } NOT = { SAC_cw_back_674_EUR = yes } NOT = { SAC_cw_back_674_USA = yes } 674 = { is_controlled_by = ETH } }
+			cw_ET_674_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_674_SOV = yes } NOT = { SAC_cw_back_674_PRC = yes } NOT = { SAC_cw_back_674_EUR = yes } NOT = { SAC_cw_back_674_USA = yes } NOT = { 674 = { is_controlled_by = ETH } } }
+			cw_ET_674_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_674_SOV = yes  }
+			cw_ET_674_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_674_PRC = yes NOT = { SAC_cw_back_674_SOV = yes } }
+			cw_ET_674_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_674_EUR = yes NOT = { SAC_cw_back_674_SOV = yes } NOT = { SAC_cw_back_674_PRC = yes } }
+			cw_ET_674_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_674_USA = yes NOT = { SAC_cw_back_674_SOV = yes } NOT = { SAC_cw_back_674_PRC = yes } NOT = { SAC_cw_back_674_EUR = yes } }
+			cw_ET_866_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_866_SOV = yes } NOT = { SAC_cw_back_866_PRC = yes } NOT = { SAC_cw_back_866_EUR = yes } NOT = { SAC_cw_back_866_USA = yes } 866 = { is_controlled_by = ETH } }
+			cw_ET_866_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_866_SOV = yes } NOT = { SAC_cw_back_866_PRC = yes } NOT = { SAC_cw_back_866_EUR = yes } NOT = { SAC_cw_back_866_USA = yes } NOT = { 866 = { is_controlled_by = ETH } } }
+			cw_ET_866_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_866_SOV = yes  }
+			cw_ET_866_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_866_PRC = yes NOT = { SAC_cw_back_866_SOV = yes } }
+			cw_ET_866_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_866_EUR = yes NOT = { SAC_cw_back_866_SOV = yes } NOT = { SAC_cw_back_866_PRC = yes } }
+			cw_ET_866_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_866_USA = yes NOT = { SAC_cw_back_866_SOV = yes } NOT = { SAC_cw_back_866_PRC = yes } NOT = { SAC_cw_back_866_EUR = yes } }
+			cw_ET_867_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_867_SOV = yes } NOT = { SAC_cw_back_867_PRC = yes } NOT = { SAC_cw_back_867_EUR = yes } NOT = { SAC_cw_back_867_USA = yes } 867 = { is_controlled_by = ETH } }
+			cw_ET_867_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_867_SOV = yes } NOT = { SAC_cw_back_867_PRC = yes } NOT = { SAC_cw_back_867_EUR = yes } NOT = { SAC_cw_back_867_USA = yes } NOT = { 867 = { is_controlled_by = ETH } } }
+			cw_ET_867_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_867_SOV = yes  }
+			cw_ET_867_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_867_PRC = yes NOT = { SAC_cw_back_867_SOV = yes } }
+			cw_ET_867_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_867_EUR = yes NOT = { SAC_cw_back_867_SOV = yes } NOT = { SAC_cw_back_867_PRC = yes } }
+			cw_ET_867_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_867_USA = yes NOT = { SAC_cw_back_867_SOV = yes } NOT = { SAC_cw_back_867_PRC = yes } NOT = { SAC_cw_back_867_EUR = yes } }
+			cw_ET_1140_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1140_SOV = yes } NOT = { SAC_cw_back_1140_PRC = yes } NOT = { SAC_cw_back_1140_EUR = yes } NOT = { SAC_cw_back_1140_USA = yes } 1140 = { is_controlled_by = ETH } }
+			cw_ET_1140_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1140_SOV = yes } NOT = { SAC_cw_back_1140_PRC = yes } NOT = { SAC_cw_back_1140_EUR = yes } NOT = { SAC_cw_back_1140_USA = yes } NOT = { 1140 = { is_controlled_by = ETH } } }
+			cw_ET_1140_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1140_SOV = yes  }
+			cw_ET_1140_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1140_PRC = yes NOT = { SAC_cw_back_1140_SOV = yes } }
+			cw_ET_1140_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1140_EUR = yes NOT = { SAC_cw_back_1140_SOV = yes } NOT = { SAC_cw_back_1140_PRC = yes } }
+			cw_ET_1140_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1140_USA = yes NOT = { SAC_cw_back_1140_SOV = yes } NOT = { SAC_cw_back_1140_PRC = yes } NOT = { SAC_cw_back_1140_EUR = yes } }
+			cw_ET_1141_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1141_SOV = yes } NOT = { SAC_cw_back_1141_PRC = yes } NOT = { SAC_cw_back_1141_EUR = yes } NOT = { SAC_cw_back_1141_USA = yes } 1141 = { is_controlled_by = ETH } }
+			cw_ET_1141_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1141_SOV = yes } NOT = { SAC_cw_back_1141_PRC = yes } NOT = { SAC_cw_back_1141_EUR = yes } NOT = { SAC_cw_back_1141_USA = yes } NOT = { 1141 = { is_controlled_by = ETH } } }
+			cw_ET_1141_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1141_SOV = yes  }
+			cw_ET_1141_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1141_PRC = yes NOT = { SAC_cw_back_1141_SOV = yes } }
+			cw_ET_1141_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1141_EUR = yes NOT = { SAC_cw_back_1141_SOV = yes } NOT = { SAC_cw_back_1141_PRC = yes } }
+			cw_ET_1141_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1141_USA = yes NOT = { SAC_cw_back_1141_SOV = yes } NOT = { SAC_cw_back_1141_PRC = yes } NOT = { SAC_cw_back_1141_EUR = yes } }
+			cw_ET_1295_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1295_SOV = yes } NOT = { SAC_cw_back_1295_PRC = yes } NOT = { SAC_cw_back_1295_EUR = yes } NOT = { SAC_cw_back_1295_USA = yes } 1295 = { is_controlled_by = ETH } }
+			cw_ET_1295_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1295_SOV = yes } NOT = { SAC_cw_back_1295_PRC = yes } NOT = { SAC_cw_back_1295_EUR = yes } NOT = { SAC_cw_back_1295_USA = yes } NOT = { 1295 = { is_controlled_by = ETH } } }
+			cw_ET_1295_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1295_SOV = yes  }
+			cw_ET_1295_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1295_PRC = yes NOT = { SAC_cw_back_1295_SOV = yes } }
+			cw_ET_1295_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1295_EUR = yes NOT = { SAC_cw_back_1295_SOV = yes } NOT = { SAC_cw_back_1295_PRC = yes } }
+			cw_ET_1295_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1295_USA = yes NOT = { SAC_cw_back_1295_SOV = yes } NOT = { SAC_cw_back_1295_PRC = yes } NOT = { SAC_cw_back_1295_EUR = yes } }
+			cw_ET_1297_0_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1297_SOV = yes } NOT = { SAC_cw_back_1297_PRC = yes } NOT = { SAC_cw_back_1297_EUR = yes } NOT = { SAC_cw_back_1297_USA = yes } 1297 = { is_controlled_by = ETH } }
+			cw_ET_1297_5_visible = { SAC_africa_zoom_ET = yes NOT = { SAC_cw_back_1297_SOV = yes } NOT = { SAC_cw_back_1297_PRC = yes } NOT = { SAC_cw_back_1297_EUR = yes } NOT = { SAC_cw_back_1297_USA = yes } NOT = { 1297 = { is_controlled_by = ETH } } }
+			cw_ET_1297_1_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1297_SOV = yes  }
+			cw_ET_1297_2_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1297_PRC = yes NOT = { SAC_cw_back_1297_SOV = yes } }
+			cw_ET_1297_3_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1297_EUR = yes NOT = { SAC_cw_back_1297_SOV = yes } NOT = { SAC_cw_back_1297_PRC = yes } }
+			cw_ET_1297_4_visible = { SAC_africa_zoom_ET = yes SAC_cw_back_1297_USA = yes NOT = { SAC_cw_back_1297_SOV = yes } NOT = { SAC_cw_back_1297_PRC = yes } NOT = { SAC_cw_back_1297_EUR = yes } }
+			SAC_cw_CD_bg_visible = { SAC_africa_zoom_CD = yes }
+			cw_CD_295_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_295_SOV = yes } NOT = { SAC_cw_back_295_PRC = yes } NOT = { SAC_cw_back_295_EUR = yes } NOT = { SAC_cw_back_295_USA = yes } 295 = { is_controlled_by = COG } }
+			cw_CD_295_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_295_SOV = yes } NOT = { SAC_cw_back_295_PRC = yes } NOT = { SAC_cw_back_295_EUR = yes } NOT = { SAC_cw_back_295_USA = yes } NOT = { 295 = { is_controlled_by = COG } } }
+			cw_CD_295_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_295_SOV = yes  }
+			cw_CD_295_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_295_PRC = yes NOT = { SAC_cw_back_295_SOV = yes } }
+			cw_CD_295_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_295_EUR = yes NOT = { SAC_cw_back_295_SOV = yes } NOT = { SAC_cw_back_295_PRC = yes } }
+			cw_CD_295_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_295_USA = yes NOT = { SAC_cw_back_295_SOV = yes } NOT = { SAC_cw_back_295_PRC = yes } NOT = { SAC_cw_back_295_EUR = yes } }
+			cw_CD_538_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_538_SOV = yes } NOT = { SAC_cw_back_538_PRC = yes } NOT = { SAC_cw_back_538_EUR = yes } NOT = { SAC_cw_back_538_USA = yes } 538 = { is_controlled_by = COG } }
+			cw_CD_538_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_538_SOV = yes } NOT = { SAC_cw_back_538_PRC = yes } NOT = { SAC_cw_back_538_EUR = yes } NOT = { SAC_cw_back_538_USA = yes } NOT = { 538 = { is_controlled_by = COG } } }
+			cw_CD_538_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_538_SOV = yes  }
+			cw_CD_538_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_538_PRC = yes NOT = { SAC_cw_back_538_SOV = yes } }
+			cw_CD_538_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_538_EUR = yes NOT = { SAC_cw_back_538_SOV = yes } NOT = { SAC_cw_back_538_PRC = yes } }
+			cw_CD_538_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_538_USA = yes NOT = { SAC_cw_back_538_SOV = yes } NOT = { SAC_cw_back_538_PRC = yes } NOT = { SAC_cw_back_538_EUR = yes } }
+			cw_CD_718_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_718_SOV = yes } NOT = { SAC_cw_back_718_PRC = yes } NOT = { SAC_cw_back_718_EUR = yes } NOT = { SAC_cw_back_718_USA = yes } 718 = { is_controlled_by = COG } }
+			cw_CD_718_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_718_SOV = yes } NOT = { SAC_cw_back_718_PRC = yes } NOT = { SAC_cw_back_718_EUR = yes } NOT = { SAC_cw_back_718_USA = yes } NOT = { 718 = { is_controlled_by = COG } } }
+			cw_CD_718_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_718_SOV = yes  }
+			cw_CD_718_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_718_PRC = yes NOT = { SAC_cw_back_718_SOV = yes } }
+			cw_CD_718_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_718_EUR = yes NOT = { SAC_cw_back_718_SOV = yes } NOT = { SAC_cw_back_718_PRC = yes } }
+			cw_CD_718_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_718_USA = yes NOT = { SAC_cw_back_718_SOV = yes } NOT = { SAC_cw_back_718_PRC = yes } NOT = { SAC_cw_back_718_EUR = yes } }
+			cw_CD_862_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_862_SOV = yes } NOT = { SAC_cw_back_862_PRC = yes } NOT = { SAC_cw_back_862_EUR = yes } NOT = { SAC_cw_back_862_USA = yes } 862 = { is_controlled_by = COG } }
+			cw_CD_862_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_862_SOV = yes } NOT = { SAC_cw_back_862_PRC = yes } NOT = { SAC_cw_back_862_EUR = yes } NOT = { SAC_cw_back_862_USA = yes } NOT = { 862 = { is_controlled_by = COG } } }
+			cw_CD_862_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_862_SOV = yes  }
+			cw_CD_862_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_862_PRC = yes NOT = { SAC_cw_back_862_SOV = yes } }
+			cw_CD_862_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_862_EUR = yes NOT = { SAC_cw_back_862_SOV = yes } NOT = { SAC_cw_back_862_PRC = yes } }
+			cw_CD_862_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_862_USA = yes NOT = { SAC_cw_back_862_SOV = yes } NOT = { SAC_cw_back_862_PRC = yes } NOT = { SAC_cw_back_862_EUR = yes } }
+			cw_CD_863_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_863_SOV = yes } NOT = { SAC_cw_back_863_PRC = yes } NOT = { SAC_cw_back_863_EUR = yes } NOT = { SAC_cw_back_863_USA = yes } 863 = { is_controlled_by = COG } }
+			cw_CD_863_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_863_SOV = yes } NOT = { SAC_cw_back_863_PRC = yes } NOT = { SAC_cw_back_863_EUR = yes } NOT = { SAC_cw_back_863_USA = yes } NOT = { 863 = { is_controlled_by = COG } } }
+			cw_CD_863_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_863_SOV = yes  }
+			cw_CD_863_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_863_PRC = yes NOT = { SAC_cw_back_863_SOV = yes } }
+			cw_CD_863_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_863_EUR = yes NOT = { SAC_cw_back_863_SOV = yes } NOT = { SAC_cw_back_863_PRC = yes } }
+			cw_CD_863_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_863_USA = yes NOT = { SAC_cw_back_863_SOV = yes } NOT = { SAC_cw_back_863_PRC = yes } NOT = { SAC_cw_back_863_EUR = yes } }
+			cw_CD_864_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_864_SOV = yes } NOT = { SAC_cw_back_864_PRC = yes } NOT = { SAC_cw_back_864_EUR = yes } NOT = { SAC_cw_back_864_USA = yes } 864 = { is_controlled_by = COG } }
+			cw_CD_864_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_864_SOV = yes } NOT = { SAC_cw_back_864_PRC = yes } NOT = { SAC_cw_back_864_EUR = yes } NOT = { SAC_cw_back_864_USA = yes } NOT = { 864 = { is_controlled_by = COG } } }
+			cw_CD_864_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_864_SOV = yes  }
+			cw_CD_864_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_864_PRC = yes NOT = { SAC_cw_back_864_SOV = yes } }
+			cw_CD_864_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_864_EUR = yes NOT = { SAC_cw_back_864_SOV = yes } NOT = { SAC_cw_back_864_PRC = yes } }
+			cw_CD_864_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_864_USA = yes NOT = { SAC_cw_back_864_SOV = yes } NOT = { SAC_cw_back_864_PRC = yes } NOT = { SAC_cw_back_864_EUR = yes } }
+			cw_CD_865_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_865_SOV = yes } NOT = { SAC_cw_back_865_PRC = yes } NOT = { SAC_cw_back_865_EUR = yes } NOT = { SAC_cw_back_865_USA = yes } 865 = { is_controlled_by = COG } }
+			cw_CD_865_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_865_SOV = yes } NOT = { SAC_cw_back_865_PRC = yes } NOT = { SAC_cw_back_865_EUR = yes } NOT = { SAC_cw_back_865_USA = yes } NOT = { 865 = { is_controlled_by = COG } } }
+			cw_CD_865_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_865_SOV = yes  }
+			cw_CD_865_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_865_PRC = yes NOT = { SAC_cw_back_865_SOV = yes } }
+			cw_CD_865_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_865_EUR = yes NOT = { SAC_cw_back_865_SOV = yes } NOT = { SAC_cw_back_865_PRC = yes } }
+			cw_CD_865_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_865_USA = yes NOT = { SAC_cw_back_865_SOV = yes } NOT = { SAC_cw_back_865_PRC = yes } NOT = { SAC_cw_back_865_EUR = yes } }
+			cw_CD_1356_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1356_SOV = yes } NOT = { SAC_cw_back_1356_PRC = yes } NOT = { SAC_cw_back_1356_EUR = yes } NOT = { SAC_cw_back_1356_USA = yes } 1356 = { is_controlled_by = COG } }
+			cw_CD_1356_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1356_SOV = yes } NOT = { SAC_cw_back_1356_PRC = yes } NOT = { SAC_cw_back_1356_EUR = yes } NOT = { SAC_cw_back_1356_USA = yes } NOT = { 1356 = { is_controlled_by = COG } } }
+			cw_CD_1356_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1356_SOV = yes  }
+			cw_CD_1356_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1356_PRC = yes NOT = { SAC_cw_back_1356_SOV = yes } }
+			cw_CD_1356_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1356_EUR = yes NOT = { SAC_cw_back_1356_SOV = yes } NOT = { SAC_cw_back_1356_PRC = yes } }
+			cw_CD_1356_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1356_USA = yes NOT = { SAC_cw_back_1356_SOV = yes } NOT = { SAC_cw_back_1356_PRC = yes } NOT = { SAC_cw_back_1356_EUR = yes } }
+			cw_CD_1357_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1357_SOV = yes } NOT = { SAC_cw_back_1357_PRC = yes } NOT = { SAC_cw_back_1357_EUR = yes } NOT = { SAC_cw_back_1357_USA = yes } 1357 = { is_controlled_by = COG } }
+			cw_CD_1357_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1357_SOV = yes } NOT = { SAC_cw_back_1357_PRC = yes } NOT = { SAC_cw_back_1357_EUR = yes } NOT = { SAC_cw_back_1357_USA = yes } NOT = { 1357 = { is_controlled_by = COG } } }
+			cw_CD_1357_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1357_SOV = yes  }
+			cw_CD_1357_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1357_PRC = yes NOT = { SAC_cw_back_1357_SOV = yes } }
+			cw_CD_1357_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1357_EUR = yes NOT = { SAC_cw_back_1357_SOV = yes } NOT = { SAC_cw_back_1357_PRC = yes } }
+			cw_CD_1357_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1357_USA = yes NOT = { SAC_cw_back_1357_SOV = yes } NOT = { SAC_cw_back_1357_PRC = yes } NOT = { SAC_cw_back_1357_EUR = yes } }
+			cw_CD_1358_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1358_SOV = yes } NOT = { SAC_cw_back_1358_PRC = yes } NOT = { SAC_cw_back_1358_EUR = yes } NOT = { SAC_cw_back_1358_USA = yes } 1358 = { is_controlled_by = COG } }
+			cw_CD_1358_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1358_SOV = yes } NOT = { SAC_cw_back_1358_PRC = yes } NOT = { SAC_cw_back_1358_EUR = yes } NOT = { SAC_cw_back_1358_USA = yes } NOT = { 1358 = { is_controlled_by = COG } } }
+			cw_CD_1358_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1358_SOV = yes  }
+			cw_CD_1358_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1358_PRC = yes NOT = { SAC_cw_back_1358_SOV = yes } }
+			cw_CD_1358_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1358_EUR = yes NOT = { SAC_cw_back_1358_SOV = yes } NOT = { SAC_cw_back_1358_PRC = yes } }
+			cw_CD_1358_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1358_USA = yes NOT = { SAC_cw_back_1358_SOV = yes } NOT = { SAC_cw_back_1358_PRC = yes } NOT = { SAC_cw_back_1358_EUR = yes } }
+			cw_CD_1359_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1359_SOV = yes } NOT = { SAC_cw_back_1359_PRC = yes } NOT = { SAC_cw_back_1359_EUR = yes } NOT = { SAC_cw_back_1359_USA = yes } 1359 = { is_controlled_by = COG } }
+			cw_CD_1359_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1359_SOV = yes } NOT = { SAC_cw_back_1359_PRC = yes } NOT = { SAC_cw_back_1359_EUR = yes } NOT = { SAC_cw_back_1359_USA = yes } NOT = { 1359 = { is_controlled_by = COG } } }
+			cw_CD_1359_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1359_SOV = yes  }
+			cw_CD_1359_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1359_PRC = yes NOT = { SAC_cw_back_1359_SOV = yes } }
+			cw_CD_1359_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1359_EUR = yes NOT = { SAC_cw_back_1359_SOV = yes } NOT = { SAC_cw_back_1359_PRC = yes } }
+			cw_CD_1359_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1359_USA = yes NOT = { SAC_cw_back_1359_SOV = yes } NOT = { SAC_cw_back_1359_PRC = yes } NOT = { SAC_cw_back_1359_EUR = yes } }
+			cw_CD_1360_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1360_SOV = yes } NOT = { SAC_cw_back_1360_PRC = yes } NOT = { SAC_cw_back_1360_EUR = yes } NOT = { SAC_cw_back_1360_USA = yes } 1360 = { is_controlled_by = COG } }
+			cw_CD_1360_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1360_SOV = yes } NOT = { SAC_cw_back_1360_PRC = yes } NOT = { SAC_cw_back_1360_EUR = yes } NOT = { SAC_cw_back_1360_USA = yes } NOT = { 1360 = { is_controlled_by = COG } } }
+			cw_CD_1360_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1360_SOV = yes  }
+			cw_CD_1360_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1360_PRC = yes NOT = { SAC_cw_back_1360_SOV = yes } }
+			cw_CD_1360_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1360_EUR = yes NOT = { SAC_cw_back_1360_SOV = yes } NOT = { SAC_cw_back_1360_PRC = yes } }
+			cw_CD_1360_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1360_USA = yes NOT = { SAC_cw_back_1360_SOV = yes } NOT = { SAC_cw_back_1360_PRC = yes } NOT = { SAC_cw_back_1360_EUR = yes } }
+			cw_CD_1362_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1362_SOV = yes } NOT = { SAC_cw_back_1362_PRC = yes } NOT = { SAC_cw_back_1362_EUR = yes } NOT = { SAC_cw_back_1362_USA = yes } 1362 = { is_controlled_by = COG } }
+			cw_CD_1362_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1362_SOV = yes } NOT = { SAC_cw_back_1362_PRC = yes } NOT = { SAC_cw_back_1362_EUR = yes } NOT = { SAC_cw_back_1362_USA = yes } NOT = { 1362 = { is_controlled_by = COG } } }
+			cw_CD_1362_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1362_SOV = yes  }
+			cw_CD_1362_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1362_PRC = yes NOT = { SAC_cw_back_1362_SOV = yes } }
+			cw_CD_1362_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1362_EUR = yes NOT = { SAC_cw_back_1362_SOV = yes } NOT = { SAC_cw_back_1362_PRC = yes } }
+			cw_CD_1362_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1362_USA = yes NOT = { SAC_cw_back_1362_SOV = yes } NOT = { SAC_cw_back_1362_PRC = yes } NOT = { SAC_cw_back_1362_EUR = yes } }
+			cw_CD_1363_0_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1363_SOV = yes } NOT = { SAC_cw_back_1363_PRC = yes } NOT = { SAC_cw_back_1363_EUR = yes } NOT = { SAC_cw_back_1363_USA = yes } 1363 = { is_controlled_by = COG } }
+			cw_CD_1363_5_visible = { SAC_africa_zoom_CD = yes NOT = { SAC_cw_back_1363_SOV = yes } NOT = { SAC_cw_back_1363_PRC = yes } NOT = { SAC_cw_back_1363_EUR = yes } NOT = { SAC_cw_back_1363_USA = yes } NOT = { 1363 = { is_controlled_by = COG } } }
+			cw_CD_1363_1_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1363_SOV = yes  }
+			cw_CD_1363_2_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1363_PRC = yes NOT = { SAC_cw_back_1363_SOV = yes } }
+			cw_CD_1363_3_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1363_EUR = yes NOT = { SAC_cw_back_1363_SOV = yes } NOT = { SAC_cw_back_1363_PRC = yes } }
+			cw_CD_1363_4_visible = { SAC_africa_zoom_CD = yes SAC_cw_back_1363_USA = yes NOT = { SAC_cw_back_1363_SOV = yes } NOT = { SAC_cw_back_1363_PRC = yes } NOT = { SAC_cw_back_1363_EUR = yes } }
+			SAC_cw_SD_bg_visible = { SAC_africa_zoom_SD = yes }
+			cw_SD_549_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_549_SOV = yes } NOT = { SAC_cw_back_549_PRC = yes } NOT = { SAC_cw_back_549_EUR = yes } NOT = { SAC_cw_back_549_USA = yes } 549 = { is_controlled_by = SUD } }
+			cw_SD_549_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_549_SOV = yes } NOT = { SAC_cw_back_549_PRC = yes } NOT = { SAC_cw_back_549_EUR = yes } NOT = { SAC_cw_back_549_USA = yes } NOT = { 549 = { is_controlled_by = SUD } } }
+			cw_SD_549_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_549_SOV = yes  }
+			cw_SD_549_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_549_PRC = yes NOT = { SAC_cw_back_549_SOV = yes } }
+			cw_SD_549_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_549_EUR = yes NOT = { SAC_cw_back_549_SOV = yes } NOT = { SAC_cw_back_549_PRC = yes } }
+			cw_SD_549_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_549_USA = yes NOT = { SAC_cw_back_549_SOV = yes } NOT = { SAC_cw_back_549_PRC = yes } NOT = { SAC_cw_back_549_EUR = yes } }
+			cw_SD_551_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_551_SOV = yes } NOT = { SAC_cw_back_551_PRC = yes } NOT = { SAC_cw_back_551_EUR = yes } NOT = { SAC_cw_back_551_USA = yes } 551 = { is_controlled_by = SUD } }
+			cw_SD_551_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_551_SOV = yes } NOT = { SAC_cw_back_551_PRC = yes } NOT = { SAC_cw_back_551_EUR = yes } NOT = { SAC_cw_back_551_USA = yes } NOT = { 551 = { is_controlled_by = SUD } } }
+			cw_SD_551_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_551_SOV = yes  }
+			cw_SD_551_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_551_PRC = yes NOT = { SAC_cw_back_551_SOV = yes } }
+			cw_SD_551_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_551_EUR = yes NOT = { SAC_cw_back_551_SOV = yes } NOT = { SAC_cw_back_551_PRC = yes } }
+			cw_SD_551_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_551_USA = yes NOT = { SAC_cw_back_551_SOV = yes } NOT = { SAC_cw_back_551_PRC = yes } NOT = { SAC_cw_back_551_EUR = yes } }
+			cw_SD_761_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_761_SOV = yes } NOT = { SAC_cw_back_761_PRC = yes } NOT = { SAC_cw_back_761_EUR = yes } NOT = { SAC_cw_back_761_USA = yes } 761 = { is_controlled_by = SUD } }
+			cw_SD_761_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_761_SOV = yes } NOT = { SAC_cw_back_761_PRC = yes } NOT = { SAC_cw_back_761_EUR = yes } NOT = { SAC_cw_back_761_USA = yes } NOT = { 761 = { is_controlled_by = SUD } } }
+			cw_SD_761_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_761_SOV = yes  }
+			cw_SD_761_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_761_PRC = yes NOT = { SAC_cw_back_761_SOV = yes } }
+			cw_SD_761_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_761_EUR = yes NOT = { SAC_cw_back_761_SOV = yes } NOT = { SAC_cw_back_761_PRC = yes } }
+			cw_SD_761_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_761_USA = yes NOT = { SAC_cw_back_761_SOV = yes } NOT = { SAC_cw_back_761_PRC = yes } NOT = { SAC_cw_back_761_EUR = yes } }
+			cw_SD_763_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_763_SOV = yes } NOT = { SAC_cw_back_763_PRC = yes } NOT = { SAC_cw_back_763_EUR = yes } NOT = { SAC_cw_back_763_USA = yes } 763 = { is_controlled_by = SUD } }
+			cw_SD_763_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_763_SOV = yes } NOT = { SAC_cw_back_763_PRC = yes } NOT = { SAC_cw_back_763_EUR = yes } NOT = { SAC_cw_back_763_USA = yes } NOT = { 763 = { is_controlled_by = SUD } } }
+			cw_SD_763_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_763_SOV = yes  }
+			cw_SD_763_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_763_PRC = yes NOT = { SAC_cw_back_763_SOV = yes } }
+			cw_SD_763_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_763_EUR = yes NOT = { SAC_cw_back_763_SOV = yes } NOT = { SAC_cw_back_763_PRC = yes } }
+			cw_SD_763_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_763_USA = yes NOT = { SAC_cw_back_763_SOV = yes } NOT = { SAC_cw_back_763_PRC = yes } NOT = { SAC_cw_back_763_EUR = yes } }
+			cw_SD_798_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_798_SOV = yes } NOT = { SAC_cw_back_798_PRC = yes } NOT = { SAC_cw_back_798_EUR = yes } NOT = { SAC_cw_back_798_USA = yes } 798 = { is_controlled_by = SUD } }
+			cw_SD_798_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_798_SOV = yes } NOT = { SAC_cw_back_798_PRC = yes } NOT = { SAC_cw_back_798_EUR = yes } NOT = { SAC_cw_back_798_USA = yes } NOT = { 798 = { is_controlled_by = SUD } } }
+			cw_SD_798_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_798_SOV = yes  }
+			cw_SD_798_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_798_PRC = yes NOT = { SAC_cw_back_798_SOV = yes } }
+			cw_SD_798_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_798_EUR = yes NOT = { SAC_cw_back_798_SOV = yes } NOT = { SAC_cw_back_798_PRC = yes } }
+			cw_SD_798_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_798_USA = yes NOT = { SAC_cw_back_798_SOV = yes } NOT = { SAC_cw_back_798_PRC = yes } NOT = { SAC_cw_back_798_EUR = yes } }
+			cw_SD_1294_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1294_SOV = yes } NOT = { SAC_cw_back_1294_PRC = yes } NOT = { SAC_cw_back_1294_EUR = yes } NOT = { SAC_cw_back_1294_USA = yes } 1294 = { is_controlled_by = SUD } }
+			cw_SD_1294_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1294_SOV = yes } NOT = { SAC_cw_back_1294_PRC = yes } NOT = { SAC_cw_back_1294_EUR = yes } NOT = { SAC_cw_back_1294_USA = yes } NOT = { 1294 = { is_controlled_by = SUD } } }
+			cw_SD_1294_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1294_SOV = yes  }
+			cw_SD_1294_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1294_PRC = yes NOT = { SAC_cw_back_1294_SOV = yes } }
+			cw_SD_1294_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1294_EUR = yes NOT = { SAC_cw_back_1294_SOV = yes } NOT = { SAC_cw_back_1294_PRC = yes } }
+			cw_SD_1294_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1294_USA = yes NOT = { SAC_cw_back_1294_SOV = yes } NOT = { SAC_cw_back_1294_PRC = yes } NOT = { SAC_cw_back_1294_EUR = yes } }
+			cw_SD_1346_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1346_SOV = yes } NOT = { SAC_cw_back_1346_PRC = yes } NOT = { SAC_cw_back_1346_EUR = yes } NOT = { SAC_cw_back_1346_USA = yes } 1346 = { is_controlled_by = SUD } }
+			cw_SD_1346_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1346_SOV = yes } NOT = { SAC_cw_back_1346_PRC = yes } NOT = { SAC_cw_back_1346_EUR = yes } NOT = { SAC_cw_back_1346_USA = yes } NOT = { 1346 = { is_controlled_by = SUD } } }
+			cw_SD_1346_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1346_SOV = yes  }
+			cw_SD_1346_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1346_PRC = yes NOT = { SAC_cw_back_1346_SOV = yes } }
+			cw_SD_1346_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1346_EUR = yes NOT = { SAC_cw_back_1346_SOV = yes } NOT = { SAC_cw_back_1346_PRC = yes } }
+			cw_SD_1346_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1346_USA = yes NOT = { SAC_cw_back_1346_SOV = yes } NOT = { SAC_cw_back_1346_PRC = yes } NOT = { SAC_cw_back_1346_EUR = yes } }
+			cw_SD_1347_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1347_SOV = yes } NOT = { SAC_cw_back_1347_PRC = yes } NOT = { SAC_cw_back_1347_EUR = yes } NOT = { SAC_cw_back_1347_USA = yes } 1347 = { is_controlled_by = SUD } }
+			cw_SD_1347_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1347_SOV = yes } NOT = { SAC_cw_back_1347_PRC = yes } NOT = { SAC_cw_back_1347_EUR = yes } NOT = { SAC_cw_back_1347_USA = yes } NOT = { 1347 = { is_controlled_by = SUD } } }
+			cw_SD_1347_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1347_SOV = yes  }
+			cw_SD_1347_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1347_PRC = yes NOT = { SAC_cw_back_1347_SOV = yes } }
+			cw_SD_1347_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1347_EUR = yes NOT = { SAC_cw_back_1347_SOV = yes } NOT = { SAC_cw_back_1347_PRC = yes } }
+			cw_SD_1347_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1347_USA = yes NOT = { SAC_cw_back_1347_SOV = yes } NOT = { SAC_cw_back_1347_PRC = yes } NOT = { SAC_cw_back_1347_EUR = yes } }
+			cw_SD_1349_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1349_SOV = yes } NOT = { SAC_cw_back_1349_PRC = yes } NOT = { SAC_cw_back_1349_EUR = yes } NOT = { SAC_cw_back_1349_USA = yes } 1349 = { is_controlled_by = SUD } }
+			cw_SD_1349_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1349_SOV = yes } NOT = { SAC_cw_back_1349_PRC = yes } NOT = { SAC_cw_back_1349_EUR = yes } NOT = { SAC_cw_back_1349_USA = yes } NOT = { 1349 = { is_controlled_by = SUD } } }
+			cw_SD_1349_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1349_SOV = yes  }
+			cw_SD_1349_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1349_PRC = yes NOT = { SAC_cw_back_1349_SOV = yes } }
+			cw_SD_1349_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1349_EUR = yes NOT = { SAC_cw_back_1349_SOV = yes } NOT = { SAC_cw_back_1349_PRC = yes } }
+			cw_SD_1349_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1349_USA = yes NOT = { SAC_cw_back_1349_SOV = yes } NOT = { SAC_cw_back_1349_PRC = yes } NOT = { SAC_cw_back_1349_EUR = yes } }
+			cw_SD_1350_0_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1350_SOV = yes } NOT = { SAC_cw_back_1350_PRC = yes } NOT = { SAC_cw_back_1350_EUR = yes } NOT = { SAC_cw_back_1350_USA = yes } 1350 = { is_controlled_by = SUD } }
+			cw_SD_1350_5_visible = { SAC_africa_zoom_SD = yes NOT = { SAC_cw_back_1350_SOV = yes } NOT = { SAC_cw_back_1350_PRC = yes } NOT = { SAC_cw_back_1350_EUR = yes } NOT = { SAC_cw_back_1350_USA = yes } NOT = { 1350 = { is_controlled_by = SUD } } }
+			cw_SD_1350_1_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1350_SOV = yes  }
+			cw_SD_1350_2_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1350_PRC = yes NOT = { SAC_cw_back_1350_SOV = yes } }
+			cw_SD_1350_3_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1350_EUR = yes NOT = { SAC_cw_back_1350_SOV = yes } NOT = { SAC_cw_back_1350_PRC = yes } }
+			cw_SD_1350_4_visible = { SAC_africa_zoom_SD = yes SAC_cw_back_1350_USA = yes NOT = { SAC_cw_back_1350_SOV = yes } NOT = { SAC_cw_back_1350_PRC = yes } NOT = { SAC_cw_back_1350_EUR = yes } }
+			SAC_cw_ZA_bg_visible = { SAC_africa_zoom_ZA = yes }
+			cw_ZA_275_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_275_SOV = yes } NOT = { SAC_cw_back_275_PRC = yes } NOT = { SAC_cw_back_275_EUR = yes } NOT = { SAC_cw_back_275_USA = yes } 275 = { is_controlled_by = SAF } }
+			cw_ZA_275_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_275_SOV = yes } NOT = { SAC_cw_back_275_PRC = yes } NOT = { SAC_cw_back_275_EUR = yes } NOT = { SAC_cw_back_275_USA = yes } NOT = { 275 = { is_controlled_by = SAF } } }
+			cw_ZA_275_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_275_SOV = yes  }
+			cw_ZA_275_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_275_PRC = yes NOT = { SAC_cw_back_275_SOV = yes } }
+			cw_ZA_275_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_275_EUR = yes NOT = { SAC_cw_back_275_SOV = yes } NOT = { SAC_cw_back_275_PRC = yes } }
+			cw_ZA_275_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_275_USA = yes NOT = { SAC_cw_back_275_SOV = yes } NOT = { SAC_cw_back_275_PRC = yes } NOT = { SAC_cw_back_275_EUR = yes } }
+			cw_ZA_681_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_681_SOV = yes } NOT = { SAC_cw_back_681_PRC = yes } NOT = { SAC_cw_back_681_EUR = yes } NOT = { SAC_cw_back_681_USA = yes } 681 = { is_controlled_by = SAF } }
+			cw_ZA_681_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_681_SOV = yes } NOT = { SAC_cw_back_681_PRC = yes } NOT = { SAC_cw_back_681_EUR = yes } NOT = { SAC_cw_back_681_USA = yes } NOT = { 681 = { is_controlled_by = SAF } } }
+			cw_ZA_681_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_681_SOV = yes  }
+			cw_ZA_681_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_681_PRC = yes NOT = { SAC_cw_back_681_SOV = yes } }
+			cw_ZA_681_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_681_EUR = yes NOT = { SAC_cw_back_681_SOV = yes } NOT = { SAC_cw_back_681_PRC = yes } }
+			cw_ZA_681_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_681_USA = yes NOT = { SAC_cw_back_681_SOV = yes } NOT = { SAC_cw_back_681_PRC = yes } NOT = { SAC_cw_back_681_EUR = yes } }
+			cw_ZA_719_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_719_SOV = yes } NOT = { SAC_cw_back_719_PRC = yes } NOT = { SAC_cw_back_719_EUR = yes } NOT = { SAC_cw_back_719_USA = yes } 719 = { is_controlled_by = SAF } }
+			cw_ZA_719_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_719_SOV = yes } NOT = { SAC_cw_back_719_PRC = yes } NOT = { SAC_cw_back_719_EUR = yes } NOT = { SAC_cw_back_719_USA = yes } NOT = { 719 = { is_controlled_by = SAF } } }
+			cw_ZA_719_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_719_SOV = yes  }
+			cw_ZA_719_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_719_PRC = yes NOT = { SAC_cw_back_719_SOV = yes } }
+			cw_ZA_719_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_719_EUR = yes NOT = { SAC_cw_back_719_SOV = yes } NOT = { SAC_cw_back_719_PRC = yes } }
+			cw_ZA_719_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_719_USA = yes NOT = { SAC_cw_back_719_SOV = yes } NOT = { SAC_cw_back_719_PRC = yes } NOT = { SAC_cw_back_719_EUR = yes } }
+			cw_ZA_818_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_818_SOV = yes } NOT = { SAC_cw_back_818_PRC = yes } NOT = { SAC_cw_back_818_EUR = yes } NOT = { SAC_cw_back_818_USA = yes } 818 = { is_controlled_by = SAF } }
+			cw_ZA_818_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_818_SOV = yes } NOT = { SAC_cw_back_818_PRC = yes } NOT = { SAC_cw_back_818_EUR = yes } NOT = { SAC_cw_back_818_USA = yes } NOT = { 818 = { is_controlled_by = SAF } } }
+			cw_ZA_818_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_818_SOV = yes  }
+			cw_ZA_818_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_818_PRC = yes NOT = { SAC_cw_back_818_SOV = yes } }
+			cw_ZA_818_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_818_EUR = yes NOT = { SAC_cw_back_818_SOV = yes } NOT = { SAC_cw_back_818_PRC = yes } }
+			cw_ZA_818_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_818_USA = yes NOT = { SAC_cw_back_818_SOV = yes } NOT = { SAC_cw_back_818_PRC = yes } NOT = { SAC_cw_back_818_EUR = yes } }
+			cw_ZA_819_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_819_SOV = yes } NOT = { SAC_cw_back_819_PRC = yes } NOT = { SAC_cw_back_819_EUR = yes } NOT = { SAC_cw_back_819_USA = yes } 819 = { is_controlled_by = SAF } }
+			cw_ZA_819_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_819_SOV = yes } NOT = { SAC_cw_back_819_PRC = yes } NOT = { SAC_cw_back_819_EUR = yes } NOT = { SAC_cw_back_819_USA = yes } NOT = { 819 = { is_controlled_by = SAF } } }
+			cw_ZA_819_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_819_SOV = yes  }
+			cw_ZA_819_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_819_PRC = yes NOT = { SAC_cw_back_819_SOV = yes } }
+			cw_ZA_819_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_819_EUR = yes NOT = { SAC_cw_back_819_SOV = yes } NOT = { SAC_cw_back_819_PRC = yes } }
+			cw_ZA_819_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_819_USA = yes NOT = { SAC_cw_back_819_SOV = yes } NOT = { SAC_cw_back_819_PRC = yes } NOT = { SAC_cw_back_819_EUR = yes } }
+			cw_ZA_1303_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1303_SOV = yes } NOT = { SAC_cw_back_1303_PRC = yes } NOT = { SAC_cw_back_1303_EUR = yes } NOT = { SAC_cw_back_1303_USA = yes } 1303 = { is_controlled_by = SAF } }
+			cw_ZA_1303_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1303_SOV = yes } NOT = { SAC_cw_back_1303_PRC = yes } NOT = { SAC_cw_back_1303_EUR = yes } NOT = { SAC_cw_back_1303_USA = yes } NOT = { 1303 = { is_controlled_by = SAF } } }
+			cw_ZA_1303_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1303_SOV = yes  }
+			cw_ZA_1303_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1303_PRC = yes NOT = { SAC_cw_back_1303_SOV = yes } }
+			cw_ZA_1303_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1303_EUR = yes NOT = { SAC_cw_back_1303_SOV = yes } NOT = { SAC_cw_back_1303_PRC = yes } }
+			cw_ZA_1303_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1303_USA = yes NOT = { SAC_cw_back_1303_SOV = yes } NOT = { SAC_cw_back_1303_PRC = yes } NOT = { SAC_cw_back_1303_EUR = yes } }
+			cw_ZA_1304_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1304_SOV = yes } NOT = { SAC_cw_back_1304_PRC = yes } NOT = { SAC_cw_back_1304_EUR = yes } NOT = { SAC_cw_back_1304_USA = yes } 1304 = { is_controlled_by = SAF } }
+			cw_ZA_1304_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1304_SOV = yes } NOT = { SAC_cw_back_1304_PRC = yes } NOT = { SAC_cw_back_1304_EUR = yes } NOT = { SAC_cw_back_1304_USA = yes } NOT = { 1304 = { is_controlled_by = SAF } } }
+			cw_ZA_1304_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1304_SOV = yes  }
+			cw_ZA_1304_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1304_PRC = yes NOT = { SAC_cw_back_1304_SOV = yes } }
+			cw_ZA_1304_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1304_EUR = yes NOT = { SAC_cw_back_1304_SOV = yes } NOT = { SAC_cw_back_1304_PRC = yes } }
+			cw_ZA_1304_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1304_USA = yes NOT = { SAC_cw_back_1304_SOV = yes } NOT = { SAC_cw_back_1304_PRC = yes } NOT = { SAC_cw_back_1304_EUR = yes } }
+			cw_ZA_1317_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1317_SOV = yes } NOT = { SAC_cw_back_1317_PRC = yes } NOT = { SAC_cw_back_1317_EUR = yes } NOT = { SAC_cw_back_1317_USA = yes } 1317 = { is_controlled_by = SAF } }
+			cw_ZA_1317_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1317_SOV = yes } NOT = { SAC_cw_back_1317_PRC = yes } NOT = { SAC_cw_back_1317_EUR = yes } NOT = { SAC_cw_back_1317_USA = yes } NOT = { 1317 = { is_controlled_by = SAF } } }
+			cw_ZA_1317_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1317_SOV = yes  }
+			cw_ZA_1317_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1317_PRC = yes NOT = { SAC_cw_back_1317_SOV = yes } }
+			cw_ZA_1317_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1317_EUR = yes NOT = { SAC_cw_back_1317_SOV = yes } NOT = { SAC_cw_back_1317_PRC = yes } }
+			cw_ZA_1317_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1317_USA = yes NOT = { SAC_cw_back_1317_SOV = yes } NOT = { SAC_cw_back_1317_PRC = yes } NOT = { SAC_cw_back_1317_EUR = yes } }
+			cw_ZA_1318_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1318_SOV = yes } NOT = { SAC_cw_back_1318_PRC = yes } NOT = { SAC_cw_back_1318_EUR = yes } NOT = { SAC_cw_back_1318_USA = yes } 1318 = { is_controlled_by = SAF } }
+			cw_ZA_1318_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1318_SOV = yes } NOT = { SAC_cw_back_1318_PRC = yes } NOT = { SAC_cw_back_1318_EUR = yes } NOT = { SAC_cw_back_1318_USA = yes } NOT = { 1318 = { is_controlled_by = SAF } } }
+			cw_ZA_1318_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1318_SOV = yes  }
+			cw_ZA_1318_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1318_PRC = yes NOT = { SAC_cw_back_1318_SOV = yes } }
+			cw_ZA_1318_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1318_EUR = yes NOT = { SAC_cw_back_1318_SOV = yes } NOT = { SAC_cw_back_1318_PRC = yes } }
+			cw_ZA_1318_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1318_USA = yes NOT = { SAC_cw_back_1318_SOV = yes } NOT = { SAC_cw_back_1318_PRC = yes } NOT = { SAC_cw_back_1318_EUR = yes } }
+			cw_ZA_1342_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1342_SOV = yes } NOT = { SAC_cw_back_1342_PRC = yes } NOT = { SAC_cw_back_1342_EUR = yes } NOT = { SAC_cw_back_1342_USA = yes } 1342 = { is_controlled_by = SAF } }
+			cw_ZA_1342_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1342_SOV = yes } NOT = { SAC_cw_back_1342_PRC = yes } NOT = { SAC_cw_back_1342_EUR = yes } NOT = { SAC_cw_back_1342_USA = yes } NOT = { 1342 = { is_controlled_by = SAF } } }
+			cw_ZA_1342_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1342_SOV = yes  }
+			cw_ZA_1342_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1342_PRC = yes NOT = { SAC_cw_back_1342_SOV = yes } }
+			cw_ZA_1342_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1342_EUR = yes NOT = { SAC_cw_back_1342_SOV = yes } NOT = { SAC_cw_back_1342_PRC = yes } }
+			cw_ZA_1342_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1342_USA = yes NOT = { SAC_cw_back_1342_SOV = yes } NOT = { SAC_cw_back_1342_PRC = yes } NOT = { SAC_cw_back_1342_EUR = yes } }
+			cw_ZA_1343_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1343_SOV = yes } NOT = { SAC_cw_back_1343_PRC = yes } NOT = { SAC_cw_back_1343_EUR = yes } NOT = { SAC_cw_back_1343_USA = yes } 1343 = { is_controlled_by = SAF } }
+			cw_ZA_1343_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1343_SOV = yes } NOT = { SAC_cw_back_1343_PRC = yes } NOT = { SAC_cw_back_1343_EUR = yes } NOT = { SAC_cw_back_1343_USA = yes } NOT = { 1343 = { is_controlled_by = SAF } } }
+			cw_ZA_1343_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1343_SOV = yes  }
+			cw_ZA_1343_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1343_PRC = yes NOT = { SAC_cw_back_1343_SOV = yes } }
+			cw_ZA_1343_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1343_EUR = yes NOT = { SAC_cw_back_1343_SOV = yes } NOT = { SAC_cw_back_1343_PRC = yes } }
+			cw_ZA_1343_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1343_USA = yes NOT = { SAC_cw_back_1343_SOV = yes } NOT = { SAC_cw_back_1343_PRC = yes } NOT = { SAC_cw_back_1343_EUR = yes } }
+			cw_ZA_1376_0_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1376_SOV = yes } NOT = { SAC_cw_back_1376_PRC = yes } NOT = { SAC_cw_back_1376_EUR = yes } NOT = { SAC_cw_back_1376_USA = yes } 1376 = { is_controlled_by = SAF } }
+			cw_ZA_1376_5_visible = { SAC_africa_zoom_ZA = yes NOT = { SAC_cw_back_1376_SOV = yes } NOT = { SAC_cw_back_1376_PRC = yes } NOT = { SAC_cw_back_1376_EUR = yes } NOT = { SAC_cw_back_1376_USA = yes } NOT = { 1376 = { is_controlled_by = SAF } } }
+			cw_ZA_1376_1_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1376_SOV = yes  }
+			cw_ZA_1376_2_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1376_PRC = yes NOT = { SAC_cw_back_1376_SOV = yes } }
+			cw_ZA_1376_3_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1376_EUR = yes NOT = { SAC_cw_back_1376_SOV = yes } NOT = { SAC_cw_back_1376_PRC = yes } }
+			cw_ZA_1376_4_visible = { SAC_africa_zoom_ZA = yes SAC_cw_back_1376_USA = yes NOT = { SAC_cw_back_1376_SOV = yes } NOT = { SAC_cw_back_1376_PRC = yes } NOT = { SAC_cw_back_1376_EUR = yes } }
+			SAC_cw_ML_bg_visible = { SAC_africa_zoom_ML = yes }
+			cw_ML_744_0_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_744_SOV = yes } NOT = { SAC_cw_back_744_PRC = yes } NOT = { SAC_cw_back_744_EUR = yes } NOT = { SAC_cw_back_744_USA = yes } 744 = { is_controlled_by = MLI } }
+			cw_ML_744_5_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_744_SOV = yes } NOT = { SAC_cw_back_744_PRC = yes } NOT = { SAC_cw_back_744_EUR = yes } NOT = { SAC_cw_back_744_USA = yes } NOT = { 744 = { is_controlled_by = MLI } } }
+			cw_ML_744_1_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_744_SOV = yes  }
+			cw_ML_744_2_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_744_PRC = yes NOT = { SAC_cw_back_744_SOV = yes } }
+			cw_ML_744_3_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_744_EUR = yes NOT = { SAC_cw_back_744_SOV = yes } NOT = { SAC_cw_back_744_PRC = yes } }
+			cw_ML_744_4_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_744_USA = yes NOT = { SAC_cw_back_744_SOV = yes } NOT = { SAC_cw_back_744_PRC = yes } NOT = { SAC_cw_back_744_EUR = yes } }
+			cw_ML_745_0_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_745_SOV = yes } NOT = { SAC_cw_back_745_PRC = yes } NOT = { SAC_cw_back_745_EUR = yes } NOT = { SAC_cw_back_745_USA = yes } 745 = { is_controlled_by = MLI } }
+			cw_ML_745_5_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_745_SOV = yes } NOT = { SAC_cw_back_745_PRC = yes } NOT = { SAC_cw_back_745_EUR = yes } NOT = { SAC_cw_back_745_USA = yes } NOT = { 745 = { is_controlled_by = MLI } } }
+			cw_ML_745_1_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_745_SOV = yes  }
+			cw_ML_745_2_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_745_PRC = yes NOT = { SAC_cw_back_745_SOV = yes } }
+			cw_ML_745_3_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_745_EUR = yes NOT = { SAC_cw_back_745_SOV = yes } NOT = { SAC_cw_back_745_PRC = yes } }
+			cw_ML_745_4_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_745_USA = yes NOT = { SAC_cw_back_745_SOV = yes } NOT = { SAC_cw_back_745_PRC = yes } NOT = { SAC_cw_back_745_EUR = yes } }
+			cw_ML_746_0_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_746_SOV = yes } NOT = { SAC_cw_back_746_PRC = yes } NOT = { SAC_cw_back_746_EUR = yes } NOT = { SAC_cw_back_746_USA = yes } 746 = { is_controlled_by = MLI } }
+			cw_ML_746_5_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_746_SOV = yes } NOT = { SAC_cw_back_746_PRC = yes } NOT = { SAC_cw_back_746_EUR = yes } NOT = { SAC_cw_back_746_USA = yes } NOT = { 746 = { is_controlled_by = MLI } } }
+			cw_ML_746_1_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_746_SOV = yes  }
+			cw_ML_746_2_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_746_PRC = yes NOT = { SAC_cw_back_746_SOV = yes } }
+			cw_ML_746_3_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_746_EUR = yes NOT = { SAC_cw_back_746_SOV = yes } NOT = { SAC_cw_back_746_PRC = yes } }
+			cw_ML_746_4_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_746_USA = yes NOT = { SAC_cw_back_746_SOV = yes } NOT = { SAC_cw_back_746_PRC = yes } NOT = { SAC_cw_back_746_EUR = yes } }
+			cw_ML_1286_0_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_1286_SOV = yes } NOT = { SAC_cw_back_1286_PRC = yes } NOT = { SAC_cw_back_1286_EUR = yes } NOT = { SAC_cw_back_1286_USA = yes } 1286 = { is_controlled_by = MLI } }
+			cw_ML_1286_5_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_1286_SOV = yes } NOT = { SAC_cw_back_1286_PRC = yes } NOT = { SAC_cw_back_1286_EUR = yes } NOT = { SAC_cw_back_1286_USA = yes } NOT = { 1286 = { is_controlled_by = MLI } } }
+			cw_ML_1286_1_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1286_SOV = yes  }
+			cw_ML_1286_2_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1286_PRC = yes NOT = { SAC_cw_back_1286_SOV = yes } }
+			cw_ML_1286_3_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1286_EUR = yes NOT = { SAC_cw_back_1286_SOV = yes } NOT = { SAC_cw_back_1286_PRC = yes } }
+			cw_ML_1286_4_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1286_USA = yes NOT = { SAC_cw_back_1286_SOV = yes } NOT = { SAC_cw_back_1286_PRC = yes } NOT = { SAC_cw_back_1286_EUR = yes } }
+			cw_ML_1287_0_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_1287_SOV = yes } NOT = { SAC_cw_back_1287_PRC = yes } NOT = { SAC_cw_back_1287_EUR = yes } NOT = { SAC_cw_back_1287_USA = yes } 1287 = { is_controlled_by = MLI } }
+			cw_ML_1287_5_visible = { SAC_africa_zoom_ML = yes NOT = { SAC_cw_back_1287_SOV = yes } NOT = { SAC_cw_back_1287_PRC = yes } NOT = { SAC_cw_back_1287_EUR = yes } NOT = { SAC_cw_back_1287_USA = yes } NOT = { 1287 = { is_controlled_by = MLI } } }
+			cw_ML_1287_1_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1287_SOV = yes  }
+			cw_ML_1287_2_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1287_PRC = yes NOT = { SAC_cw_back_1287_SOV = yes } }
+			cw_ML_1287_3_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1287_EUR = yes NOT = { SAC_cw_back_1287_SOV = yes } NOT = { SAC_cw_back_1287_PRC = yes } }
+			cw_ML_1287_4_visible = { SAC_africa_zoom_ML = yes SAC_cw_back_1287_USA = yes NOT = { SAC_cw_back_1287_SOV = yes } NOT = { SAC_cw_back_1287_PRC = yes } NOT = { SAC_cw_back_1287_EUR = yes } }
+			SAC_cw_NG_bg_visible = { SAC_africa_zoom_NG = yes }
+			cw_NG_558_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_558_SOV = yes } NOT = { SAC_cw_back_558_PRC = yes } NOT = { SAC_cw_back_558_EUR = yes } NOT = { SAC_cw_back_558_USA = yes } 558 = { is_controlled_by = NGA } }
+			cw_NG_558_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_558_SOV = yes } NOT = { SAC_cw_back_558_PRC = yes } NOT = { SAC_cw_back_558_EUR = yes } NOT = { SAC_cw_back_558_USA = yes } NOT = { 558 = { is_controlled_by = NGA } } }
+			cw_NG_558_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_558_SOV = yes  }
+			cw_NG_558_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_558_PRC = yes NOT = { SAC_cw_back_558_SOV = yes } }
+			cw_NG_558_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_558_EUR = yes NOT = { SAC_cw_back_558_SOV = yes } NOT = { SAC_cw_back_558_PRC = yes } }
+			cw_NG_558_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_558_USA = yes NOT = { SAC_cw_back_558_SOV = yes } NOT = { SAC_cw_back_558_PRC = yes } NOT = { SAC_cw_back_558_EUR = yes } }
+			cw_NG_764_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_764_SOV = yes } NOT = { SAC_cw_back_764_PRC = yes } NOT = { SAC_cw_back_764_EUR = yes } NOT = { SAC_cw_back_764_USA = yes } 764 = { is_controlled_by = NGA } }
+			cw_NG_764_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_764_SOV = yes } NOT = { SAC_cw_back_764_PRC = yes } NOT = { SAC_cw_back_764_EUR = yes } NOT = { SAC_cw_back_764_USA = yes } NOT = { 764 = { is_controlled_by = NGA } } }
+			cw_NG_764_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_764_SOV = yes  }
+			cw_NG_764_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_764_PRC = yes NOT = { SAC_cw_back_764_SOV = yes } }
+			cw_NG_764_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_764_EUR = yes NOT = { SAC_cw_back_764_SOV = yes } NOT = { SAC_cw_back_764_PRC = yes } }
+			cw_NG_764_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_764_USA = yes NOT = { SAC_cw_back_764_SOV = yes } NOT = { SAC_cw_back_764_PRC = yes } NOT = { SAC_cw_back_764_EUR = yes } }
+			cw_NG_765_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_765_SOV = yes } NOT = { SAC_cw_back_765_PRC = yes } NOT = { SAC_cw_back_765_EUR = yes } NOT = { SAC_cw_back_765_USA = yes } 765 = { is_controlled_by = NGA } }
+			cw_NG_765_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_765_SOV = yes } NOT = { SAC_cw_back_765_PRC = yes } NOT = { SAC_cw_back_765_EUR = yes } NOT = { SAC_cw_back_765_USA = yes } NOT = { 765 = { is_controlled_by = NGA } } }
+			cw_NG_765_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_765_SOV = yes  }
+			cw_NG_765_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_765_PRC = yes NOT = { SAC_cw_back_765_SOV = yes } }
+			cw_NG_765_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_765_EUR = yes NOT = { SAC_cw_back_765_SOV = yes } NOT = { SAC_cw_back_765_PRC = yes } }
+			cw_NG_765_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_765_USA = yes NOT = { SAC_cw_back_765_SOV = yes } NOT = { SAC_cw_back_765_PRC = yes } NOT = { SAC_cw_back_765_EUR = yes } }
+			cw_NG_766_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_766_SOV = yes } NOT = { SAC_cw_back_766_PRC = yes } NOT = { SAC_cw_back_766_EUR = yes } NOT = { SAC_cw_back_766_USA = yes } 766 = { is_controlled_by = NGA } }
+			cw_NG_766_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_766_SOV = yes } NOT = { SAC_cw_back_766_PRC = yes } NOT = { SAC_cw_back_766_EUR = yes } NOT = { SAC_cw_back_766_USA = yes } NOT = { 766 = { is_controlled_by = NGA } } }
+			cw_NG_766_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_766_SOV = yes  }
+			cw_NG_766_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_766_PRC = yes NOT = { SAC_cw_back_766_SOV = yes } }
+			cw_NG_766_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_766_EUR = yes NOT = { SAC_cw_back_766_SOV = yes } NOT = { SAC_cw_back_766_PRC = yes } }
+			cw_NG_766_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_766_USA = yes NOT = { SAC_cw_back_766_SOV = yes } NOT = { SAC_cw_back_766_PRC = yes } NOT = { SAC_cw_back_766_EUR = yes } }
+			cw_NG_767_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_767_SOV = yes } NOT = { SAC_cw_back_767_PRC = yes } NOT = { SAC_cw_back_767_EUR = yes } NOT = { SAC_cw_back_767_USA = yes } 767 = { is_controlled_by = NGA } }
+			cw_NG_767_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_767_SOV = yes } NOT = { SAC_cw_back_767_PRC = yes } NOT = { SAC_cw_back_767_EUR = yes } NOT = { SAC_cw_back_767_USA = yes } NOT = { 767 = { is_controlled_by = NGA } } }
+			cw_NG_767_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_767_SOV = yes  }
+			cw_NG_767_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_767_PRC = yes NOT = { SAC_cw_back_767_SOV = yes } }
+			cw_NG_767_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_767_EUR = yes NOT = { SAC_cw_back_767_SOV = yes } NOT = { SAC_cw_back_767_PRC = yes } }
+			cw_NG_767_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_767_USA = yes NOT = { SAC_cw_back_767_SOV = yes } NOT = { SAC_cw_back_767_PRC = yes } NOT = { SAC_cw_back_767_EUR = yes } }
+			cw_NG_768_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_768_SOV = yes } NOT = { SAC_cw_back_768_PRC = yes } NOT = { SAC_cw_back_768_EUR = yes } NOT = { SAC_cw_back_768_USA = yes } 768 = { is_controlled_by = NGA } }
+			cw_NG_768_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_768_SOV = yes } NOT = { SAC_cw_back_768_PRC = yes } NOT = { SAC_cw_back_768_EUR = yes } NOT = { SAC_cw_back_768_USA = yes } NOT = { 768 = { is_controlled_by = NGA } } }
+			cw_NG_768_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_768_SOV = yes  }
+			cw_NG_768_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_768_PRC = yes NOT = { SAC_cw_back_768_SOV = yes } }
+			cw_NG_768_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_768_EUR = yes NOT = { SAC_cw_back_768_SOV = yes } NOT = { SAC_cw_back_768_PRC = yes } }
+			cw_NG_768_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_768_USA = yes NOT = { SAC_cw_back_768_SOV = yes } NOT = { SAC_cw_back_768_PRC = yes } NOT = { SAC_cw_back_768_EUR = yes } }
+			cw_NG_858_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_858_SOV = yes } NOT = { SAC_cw_back_858_PRC = yes } NOT = { SAC_cw_back_858_EUR = yes } NOT = { SAC_cw_back_858_USA = yes } 858 = { is_controlled_by = NGA } }
+			cw_NG_858_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_858_SOV = yes } NOT = { SAC_cw_back_858_PRC = yes } NOT = { SAC_cw_back_858_EUR = yes } NOT = { SAC_cw_back_858_USA = yes } NOT = { 858 = { is_controlled_by = NGA } } }
+			cw_NG_858_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_858_SOV = yes  }
+			cw_NG_858_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_858_PRC = yes NOT = { SAC_cw_back_858_SOV = yes } }
+			cw_NG_858_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_858_EUR = yes NOT = { SAC_cw_back_858_SOV = yes } NOT = { SAC_cw_back_858_PRC = yes } }
+			cw_NG_858_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_858_USA = yes NOT = { SAC_cw_back_858_SOV = yes } NOT = { SAC_cw_back_858_PRC = yes } NOT = { SAC_cw_back_858_EUR = yes } }
+			cw_NG_859_0_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_859_SOV = yes } NOT = { SAC_cw_back_859_PRC = yes } NOT = { SAC_cw_back_859_EUR = yes } NOT = { SAC_cw_back_859_USA = yes } 859 = { is_controlled_by = NGA } }
+			cw_NG_859_5_visible = { SAC_africa_zoom_NG = yes NOT = { SAC_cw_back_859_SOV = yes } NOT = { SAC_cw_back_859_PRC = yes } NOT = { SAC_cw_back_859_EUR = yes } NOT = { SAC_cw_back_859_USA = yes } NOT = { 859 = { is_controlled_by = NGA } } }
+			cw_NG_859_1_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_859_SOV = yes  }
+			cw_NG_859_2_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_859_PRC = yes NOT = { SAC_cw_back_859_SOV = yes } }
+			cw_NG_859_3_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_859_EUR = yes NOT = { SAC_cw_back_859_SOV = yes } NOT = { SAC_cw_back_859_PRC = yes } }
+			cw_NG_859_4_visible = { SAC_africa_zoom_NG = yes SAC_cw_back_859_USA = yes NOT = { SAC_cw_back_859_SOV = yes } NOT = { SAC_cw_back_859_PRC = yes } NOT = { SAC_cw_back_859_EUR = yes } }
+			SAC_africa_mode_inf_active_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_mode_res_active_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_icon_0_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_text_0_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_icon_1_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_text_1_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_icon_2_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_text_2_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_icon_3_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_text_3_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_icon_4_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_text_4_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_icon_5_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_leg_text_5_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_hint_visible = { NOT = { check_variable = { AFR_mode = 1 } } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_0_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_0_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_1_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_1_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_2_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_2_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_3_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_3_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_4_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_4_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_5_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_5_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_6_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_6_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_7_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_7_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_8_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_8_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_icon_9_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
+			SAC_africa_rleg_text_9_visible = { check_variable = { AFR_mode = 1 } NOT = { SAC_africa_zoom_active = yes } }
 			SAC_africa_act_infra_cdov_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } NOT = { check_variable = { AFR_tab = 3 } } OR = { AND = { check_variable = { AFR_sel = 1 } check_variable = { AFR_cd_infra_AO > 0 } } AND = { check_variable = { AFR_sel = 2 } check_variable = { AFR_cd_infra_BF > 0 } } AND = { check_variable = { AFR_sel = 3 } check_variable = { AFR_cd_infra_BI > 0 } } AND = { check_variable = { AFR_sel = 4 } check_variable = { AFR_cd_infra_BJ > 0 } } AND = { check_variable = { AFR_sel = 5 } check_variable = { AFR_cd_infra_BW > 0 } } AND = { check_variable = { AFR_sel = 6 } check_variable = { AFR_cd_infra_CD > 0 } } AND = { check_variable = { AFR_sel = 7 } check_variable = { AFR_cd_infra_CF > 0 } } AND = { check_variable = { AFR_sel = 8 } check_variable = { AFR_cd_infra_CG > 0 } } AND = { check_variable = { AFR_sel = 9 } check_variable = { AFR_cd_infra_CI > 0 } } AND = { check_variable = { AFR_sel = 10 } check_variable = { AFR_cd_infra_CM > 0 } } AND = { check_variable = { AFR_sel = 11 } check_variable = { AFR_cd_infra_DJ > 0 } } AND = { check_variable = { AFR_sel = 12 } check_variable = { AFR_cd_infra_DZ > 0 } } AND = { check_variable = { AFR_sel = 13 } check_variable = { AFR_cd_infra_EG > 0 } } AND = { check_variable = { AFR_sel = 14 } check_variable = { AFR_cd_infra_EH > 0 } } AND = { check_variable = { AFR_sel = 15 } check_variable = { AFR_cd_infra_ER > 0 } } AND = { check_variable = { AFR_sel = 16 } check_variable = { AFR_cd_infra_ET > 0 } } AND = { check_variable = { AFR_sel = 17 } check_variable = { AFR_cd_infra_GA > 0 } } AND = { check_variable = { AFR_sel = 18 } check_variable = { AFR_cd_infra_GH > 0 } } AND = { check_variable = { AFR_sel = 19 } check_variable = { AFR_cd_infra_GM > 0 } } AND = { check_variable = { AFR_sel = 20 } check_variable = { AFR_cd_infra_GN > 0 } } AND = { check_variable = { AFR_sel = 21 } check_variable = { AFR_cd_infra_GQ > 0 } } AND = { check_variable = { AFR_sel = 22 } check_variable = { AFR_cd_infra_GW > 0 } } AND = { check_variable = { AFR_sel = 23 } check_variable = { AFR_cd_infra_KE > 0 } } AND = { check_variable = { AFR_sel = 24 } check_variable = { AFR_cd_infra_LR > 0 } } AND = { check_variable = { AFR_sel = 25 } check_variable = { AFR_cd_infra_LS > 0 } } AND = { check_variable = { AFR_sel = 26 } check_variable = { AFR_cd_infra_LY > 0 } } AND = { check_variable = { AFR_sel = 27 } check_variable = { AFR_cd_infra_MA > 0 } } AND = { check_variable = { AFR_sel = 28 } check_variable = { AFR_cd_infra_MG > 0 } } AND = { check_variable = { AFR_sel = 29 } check_variable = { AFR_cd_infra_ML > 0 } } AND = { check_variable = { AFR_sel = 30 } check_variable = { AFR_cd_infra_MR > 0 } } AND = { check_variable = { AFR_sel = 31 } check_variable = { AFR_cd_infra_MW > 0 } } AND = { check_variable = { AFR_sel = 32 } check_variable = { AFR_cd_infra_MZ > 0 } } AND = { check_variable = { AFR_sel = 33 } check_variable = { AFR_cd_infra_NA > 0 } } AND = { check_variable = { AFR_sel = 34 } check_variable = { AFR_cd_infra_NE > 0 } } AND = { check_variable = { AFR_sel = 35 } check_variable = { AFR_cd_infra_NG > 0 } } AND = { check_variable = { AFR_sel = 36 } check_variable = { AFR_cd_infra_RW > 0 } } AND = { check_variable = { AFR_sel = 37 } check_variable = { AFR_cd_infra_SD > 0 } } AND = { check_variable = { AFR_sel = 38 } check_variable = { AFR_cd_infra_SL > 0 } } AND = { check_variable = { AFR_sel = 39 } check_variable = { AFR_cd_infra_SN > 0 } } AND = { check_variable = { AFR_sel = 40 } check_variable = { AFR_cd_infra_SO > 0 } } AND = { check_variable = { AFR_sel = 41 } check_variable = { AFR_cd_infra_SS > 0 } } AND = { check_variable = { AFR_sel = 42 } check_variable = { AFR_cd_infra_SZ > 0 } } AND = { check_variable = { AFR_sel = 43 } check_variable = { AFR_cd_infra_TD > 0 } } AND = { check_variable = { AFR_sel = 44 } check_variable = { AFR_cd_infra_TG > 0 } } AND = { check_variable = { AFR_sel = 45 } check_variable = { AFR_cd_infra_TN > 0 } } AND = { check_variable = { AFR_sel = 46 } check_variable = { AFR_cd_infra_TZ > 0 } } AND = { check_variable = { AFR_sel = 47 } check_variable = { AFR_cd_infra_UG > 0 } } AND = { check_variable = { AFR_sel = 48 } check_variable = { AFR_cd_infra_ZA > 0 } } AND = { check_variable = { AFR_sel = 49 } check_variable = { AFR_cd_infra_ZM > 0 } } AND = { check_variable = { AFR_sel = 50 } check_variable = { AFR_cd_infra_ZW > 0 } } } }
 			SAC_africa_act_infra_cdtxt_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } NOT = { check_variable = { AFR_tab = 3 } } OR = { AND = { check_variable = { AFR_sel = 1 } check_variable = { AFR_cd_infra_AO > 0 } } AND = { check_variable = { AFR_sel = 2 } check_variable = { AFR_cd_infra_BF > 0 } } AND = { check_variable = { AFR_sel = 3 } check_variable = { AFR_cd_infra_BI > 0 } } AND = { check_variable = { AFR_sel = 4 } check_variable = { AFR_cd_infra_BJ > 0 } } AND = { check_variable = { AFR_sel = 5 } check_variable = { AFR_cd_infra_BW > 0 } } AND = { check_variable = { AFR_sel = 6 } check_variable = { AFR_cd_infra_CD > 0 } } AND = { check_variable = { AFR_sel = 7 } check_variable = { AFR_cd_infra_CF > 0 } } AND = { check_variable = { AFR_sel = 8 } check_variable = { AFR_cd_infra_CG > 0 } } AND = { check_variable = { AFR_sel = 9 } check_variable = { AFR_cd_infra_CI > 0 } } AND = { check_variable = { AFR_sel = 10 } check_variable = { AFR_cd_infra_CM > 0 } } AND = { check_variable = { AFR_sel = 11 } check_variable = { AFR_cd_infra_DJ > 0 } } AND = { check_variable = { AFR_sel = 12 } check_variable = { AFR_cd_infra_DZ > 0 } } AND = { check_variable = { AFR_sel = 13 } check_variable = { AFR_cd_infra_EG > 0 } } AND = { check_variable = { AFR_sel = 14 } check_variable = { AFR_cd_infra_EH > 0 } } AND = { check_variable = { AFR_sel = 15 } check_variable = { AFR_cd_infra_ER > 0 } } AND = { check_variable = { AFR_sel = 16 } check_variable = { AFR_cd_infra_ET > 0 } } AND = { check_variable = { AFR_sel = 17 } check_variable = { AFR_cd_infra_GA > 0 } } AND = { check_variable = { AFR_sel = 18 } check_variable = { AFR_cd_infra_GH > 0 } } AND = { check_variable = { AFR_sel = 19 } check_variable = { AFR_cd_infra_GM > 0 } } AND = { check_variable = { AFR_sel = 20 } check_variable = { AFR_cd_infra_GN > 0 } } AND = { check_variable = { AFR_sel = 21 } check_variable = { AFR_cd_infra_GQ > 0 } } AND = { check_variable = { AFR_sel = 22 } check_variable = { AFR_cd_infra_GW > 0 } } AND = { check_variable = { AFR_sel = 23 } check_variable = { AFR_cd_infra_KE > 0 } } AND = { check_variable = { AFR_sel = 24 } check_variable = { AFR_cd_infra_LR > 0 } } AND = { check_variable = { AFR_sel = 25 } check_variable = { AFR_cd_infra_LS > 0 } } AND = { check_variable = { AFR_sel = 26 } check_variable = { AFR_cd_infra_LY > 0 } } AND = { check_variable = { AFR_sel = 27 } check_variable = { AFR_cd_infra_MA > 0 } } AND = { check_variable = { AFR_sel = 28 } check_variable = { AFR_cd_infra_MG > 0 } } AND = { check_variable = { AFR_sel = 29 } check_variable = { AFR_cd_infra_ML > 0 } } AND = { check_variable = { AFR_sel = 30 } check_variable = { AFR_cd_infra_MR > 0 } } AND = { check_variable = { AFR_sel = 31 } check_variable = { AFR_cd_infra_MW > 0 } } AND = { check_variable = { AFR_sel = 32 } check_variable = { AFR_cd_infra_MZ > 0 } } AND = { check_variable = { AFR_sel = 33 } check_variable = { AFR_cd_infra_NA > 0 } } AND = { check_variable = { AFR_sel = 34 } check_variable = { AFR_cd_infra_NE > 0 } } AND = { check_variable = { AFR_sel = 35 } check_variable = { AFR_cd_infra_NG > 0 } } AND = { check_variable = { AFR_sel = 36 } check_variable = { AFR_cd_infra_RW > 0 } } AND = { check_variable = { AFR_sel = 37 } check_variable = { AFR_cd_infra_SD > 0 } } AND = { check_variable = { AFR_sel = 38 } check_variable = { AFR_cd_infra_SL > 0 } } AND = { check_variable = { AFR_sel = 39 } check_variable = { AFR_cd_infra_SN > 0 } } AND = { check_variable = { AFR_sel = 40 } check_variable = { AFR_cd_infra_SO > 0 } } AND = { check_variable = { AFR_sel = 41 } check_variable = { AFR_cd_infra_SS > 0 } } AND = { check_variable = { AFR_sel = 42 } check_variable = { AFR_cd_infra_SZ > 0 } } AND = { check_variable = { AFR_sel = 43 } check_variable = { AFR_cd_infra_TD > 0 } } AND = { check_variable = { AFR_sel = 44 } check_variable = { AFR_cd_infra_TG > 0 } } AND = { check_variable = { AFR_sel = 45 } check_variable = { AFR_cd_infra_TN > 0 } } AND = { check_variable = { AFR_sel = 46 } check_variable = { AFR_cd_infra_TZ > 0 } } AND = { check_variable = { AFR_sel = 47 } check_variable = { AFR_cd_infra_UG > 0 } } AND = { check_variable = { AFR_sel = 48 } check_variable = { AFR_cd_infra_ZA > 0 } } AND = { check_variable = { AFR_sel = 49 } check_variable = { AFR_cd_infra_ZM > 0 } } AND = { check_variable = { AFR_sel = 50 } check_variable = { AFR_cd_infra_ZW > 0 } } } }
 			SAC_africa_act_civ_cdov_visible = { check_variable = { AFR_sel > 0 } NOT = { check_variable = { AFR_tab = 2 } } NOT = { check_variable = { AFR_tab = 3 } } OR = { AND = { check_variable = { AFR_sel = 1 } check_variable = { AFR_cd_civ_AO > 0 } } AND = { check_variable = { AFR_sel = 2 } check_variable = { AFR_cd_civ_BF > 0 } } AND = { check_variable = { AFR_sel = 3 } check_variable = { AFR_cd_civ_BI > 0 } } AND = { check_variable = { AFR_sel = 4 } check_variable = { AFR_cd_civ_BJ > 0 } } AND = { check_variable = { AFR_sel = 5 } check_variable = { AFR_cd_civ_BW > 0 } } AND = { check_variable = { AFR_sel = 6 } check_variable = { AFR_cd_civ_CD > 0 } } AND = { check_variable = { AFR_sel = 7 } check_variable = { AFR_cd_civ_CF > 0 } } AND = { check_variable = { AFR_sel = 8 } check_variable = { AFR_cd_civ_CG > 0 } } AND = { check_variable = { AFR_sel = 9 } check_variable = { AFR_cd_civ_CI > 0 } } AND = { check_variable = { AFR_sel = 10 } check_variable = { AFR_cd_civ_CM > 0 } } AND = { check_variable = { AFR_sel = 11 } check_variable = { AFR_cd_civ_DJ > 0 } } AND = { check_variable = { AFR_sel = 12 } check_variable = { AFR_cd_civ_DZ > 0 } } AND = { check_variable = { AFR_sel = 13 } check_variable = { AFR_cd_civ_EG > 0 } } AND = { check_variable = { AFR_sel = 14 } check_variable = { AFR_cd_civ_EH > 0 } } AND = { check_variable = { AFR_sel = 15 } check_variable = { AFR_cd_civ_ER > 0 } } AND = { check_variable = { AFR_sel = 16 } check_variable = { AFR_cd_civ_ET > 0 } } AND = { check_variable = { AFR_sel = 17 } check_variable = { AFR_cd_civ_GA > 0 } } AND = { check_variable = { AFR_sel = 18 } check_variable = { AFR_cd_civ_GH > 0 } } AND = { check_variable = { AFR_sel = 19 } check_variable = { AFR_cd_civ_GM > 0 } } AND = { check_variable = { AFR_sel = 20 } check_variable = { AFR_cd_civ_GN > 0 } } AND = { check_variable = { AFR_sel = 21 } check_variable = { AFR_cd_civ_GQ > 0 } } AND = { check_variable = { AFR_sel = 22 } check_variable = { AFR_cd_civ_GW > 0 } } AND = { check_variable = { AFR_sel = 23 } check_variable = { AFR_cd_civ_KE > 0 } } AND = { check_variable = { AFR_sel = 24 } check_variable = { AFR_cd_civ_LR > 0 } } AND = { check_variable = { AFR_sel = 25 } check_variable = { AFR_cd_civ_LS > 0 } } AND = { check_variable = { AFR_sel = 26 } check_variable = { AFR_cd_civ_LY > 0 } } AND = { check_variable = { AFR_sel = 27 } check_variable = { AFR_cd_civ_MA > 0 } } AND = { check_variable = { AFR_sel = 28 } check_variable = { AFR_cd_civ_MG > 0 } } AND = { check_variable = { AFR_sel = 29 } check_variable = { AFR_cd_civ_ML > 0 } } AND = { check_variable = { AFR_sel = 30 } check_variable = { AFR_cd_civ_MR > 0 } } AND = { check_variable = { AFR_sel = 31 } check_variable = { AFR_cd_civ_MW > 0 } } AND = { check_variable = { AFR_sel = 32 } check_variable = { AFR_cd_civ_MZ > 0 } } AND = { check_variable = { AFR_sel = 33 } check_variable = { AFR_cd_civ_NA > 0 } } AND = { check_variable = { AFR_sel = 34 } check_variable = { AFR_cd_civ_NE > 0 } } AND = { check_variable = { AFR_sel = 35 } check_variable = { AFR_cd_civ_NG > 0 } } AND = { check_variable = { AFR_sel = 36 } check_variable = { AFR_cd_civ_RW > 0 } } AND = { check_variable = { AFR_sel = 37 } check_variable = { AFR_cd_civ_SD > 0 } } AND = { check_variable = { AFR_sel = 38 } check_variable = { AFR_cd_civ_SL > 0 } } AND = { check_variable = { AFR_sel = 39 } check_variable = { AFR_cd_civ_SN > 0 } } AND = { check_variable = { AFR_sel = 40 } check_variable = { AFR_cd_civ_SO > 0 } } AND = { check_variable = { AFR_sel = 41 } check_variable = { AFR_cd_civ_SS > 0 } } AND = { check_variable = { AFR_sel = 42 } check_variable = { AFR_cd_civ_SZ > 0 } } AND = { check_variable = { AFR_sel = 43 } check_variable = { AFR_cd_civ_TD > 0 } } AND = { check_variable = { AFR_sel = 44 } check_variable = { AFR_cd_civ_TG > 0 } } AND = { check_variable = { AFR_sel = 45 } check_variable = { AFR_cd_civ_TN > 0 } } AND = { check_variable = { AFR_sel = 46 } check_variable = { AFR_cd_civ_TZ > 0 } } AND = { check_variable = { AFR_sel = 47 } check_variable = { AFR_cd_civ_UG > 0 } } AND = { check_variable = { AFR_sel = 48 } check_variable = { AFR_cd_civ_ZA > 0 } } AND = { check_variable = { AFR_sel = 49 } check_variable = { AFR_cd_civ_ZM > 0 } } AND = { check_variable = { AFR_sel = 50 } check_variable = { AFR_cd_civ_ZW > 0 } } } }

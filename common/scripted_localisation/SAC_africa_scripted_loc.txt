@@ -4505,6 +4505,2388 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SAC_africa_cw_title
+	text = {
+		trigger = { check_variable = { AFR_sel = 7 } }
+		localization_key = SAC_africa_cw_title_CF
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 26 } }
+		localization_key = SAC_africa_cw_title_LY
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 40 } }
+		localization_key = SAC_africa_cw_title_SO
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 16 } }
+		localization_key = SAC_africa_cw_title_ET
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 6 } }
+		localization_key = SAC_africa_cw_title_CD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 37 } }
+		localization_key = SAC_africa_cw_title_SD
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 48 } }
+		localization_key = SAC_africa_cw_title_ZA
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 29 } }
+		localization_key = SAC_africa_cw_title_ML
+	}
+	text = {
+		trigger = { check_variable = { AFR_sel = 35 } }
+		localization_key = SAC_africa_cw_title_NG
+	}
+	text = {
+		localization_key = SAC_africa_empty
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_660
+	text = {
+		trigger = { SAC_cw_back_660_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_660_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_660_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_660_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 660 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_778
+	text = {
+		trigger = { SAC_cw_back_778_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_778_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_778_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_778_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 778 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_779
+	text = {
+		trigger = { SAC_cw_back_779_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_779_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_779_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_779_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 779 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1504
+	text = {
+		trigger = { SAC_cw_back_1504_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1504_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1504_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1504_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1504 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1505
+	text = {
+		trigger = { SAC_cw_back_1505_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1505_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1505_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1505_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1505 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1506
+	text = {
+		trigger = { SAC_cw_back_1506_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1506_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1506_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1506_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1506 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1507
+	text = {
+		trigger = { SAC_cw_back_1507_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1507_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1507_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1507_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1507 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1508
+	text = {
+		trigger = { SAC_cw_back_1508_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1508_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1508_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1508_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1508 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1509
+	text = {
+		trigger = { SAC_cw_back_1509_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1509_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1509_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1509_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1509 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1510
+	text = {
+		trigger = { SAC_cw_back_1510_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1510_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1510_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1510_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1510 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1511
+	text = {
+		trigger = { SAC_cw_back_1511_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1511_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1511_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1511_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1511 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1512
+	text = {
+		trigger = { SAC_cw_back_1512_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1512_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1512_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1512_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1512 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1513
+	text = {
+		trigger = { SAC_cw_back_1513_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1513_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1513_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1513_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1513 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1514
+	text = {
+		trigger = { SAC_cw_back_1514_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1514_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1514_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1514_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1514 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1515
+	text = {
+		trigger = { SAC_cw_back_1515_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1515_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1515_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1515_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1515 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1516
+	text = {
+		trigger = { SAC_cw_back_1516_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1516_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1516_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1516_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1516 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1517
+	text = {
+		trigger = { SAC_cw_back_1517_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1517_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1517_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1517_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1517 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1518
+	text = {
+		trigger = { SAC_cw_back_1518_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1518_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1518_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1518_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1518 = { is_controlled_by = CAR } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_273
+	text = {
+		trigger = { SAC_cw_back_273_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_273_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_273_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_273_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 273 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_448
+	text = {
+		trigger = { SAC_cw_back_448_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_448_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_448_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_448_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 448 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_449
+	text = {
+		trigger = { SAC_cw_back_449_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_449_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_449_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_449_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 449 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_450
+	text = {
+		trigger = { SAC_cw_back_450_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_450_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_450_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_450_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 450 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_451
+	text = {
+		trigger = { SAC_cw_back_451_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_451_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_451_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_451_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 451 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_661
+	text = {
+		trigger = { SAC_cw_back_661_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_661_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_661_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_661_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 661 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_662
+	text = {
+		trigger = { SAC_cw_back_662_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_662_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_662_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_662_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 662 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_663
+	text = {
+		trigger = { SAC_cw_back_663_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_663_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_663_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_663_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 663 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_907
+	text = {
+		trigger = { SAC_cw_back_907_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_907_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_907_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_907_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 907 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1169
+	text = {
+		trigger = { SAC_cw_back_1169_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1169_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1169_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1169_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1169 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1325
+	text = {
+		trigger = { SAC_cw_back_1325_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1325_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1325_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1325_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1325 = { is_controlled_by = LBA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_269
+	text = {
+		trigger = { SAC_cw_back_269_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_269_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_269_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_269_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 269 = { is_controlled_by = SOM } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_559
+	text = {
+		trigger = { SAC_cw_back_559_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_559_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_559_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_559_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 559 = { is_controlled_by = SOM } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_807
+	text = {
+		trigger = { SAC_cw_back_807_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_807_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_807_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_807_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 807 = { is_controlled_by = SOM } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_955
+	text = {
+		trigger = { SAC_cw_back_955_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_955_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_955_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_955_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 955 = { is_controlled_by = SOM } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_271
+	text = {
+		trigger = { SAC_cw_back_271_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_271_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_271_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_271_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 271 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_674
+	text = {
+		trigger = { SAC_cw_back_674_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_674_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_674_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_674_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 674 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_866
+	text = {
+		trigger = { SAC_cw_back_866_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_866_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_866_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_866_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 866 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_867
+	text = {
+		trigger = { SAC_cw_back_867_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_867_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_867_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_867_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 867 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1140
+	text = {
+		trigger = { SAC_cw_back_1140_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1140_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1140_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1140_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1140 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1141
+	text = {
+		trigger = { SAC_cw_back_1141_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1141_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1141_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1141_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1141 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1295
+	text = {
+		trigger = { SAC_cw_back_1295_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1295_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1295_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1295_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1295 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1297
+	text = {
+		trigger = { SAC_cw_back_1297_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1297_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1297_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1297_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1297 = { is_controlled_by = ETH } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_295
+	text = {
+		trigger = { SAC_cw_back_295_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_295_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_295_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_295_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 295 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_538
+	text = {
+		trigger = { SAC_cw_back_538_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_538_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_538_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_538_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 538 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_718
+	text = {
+		trigger = { SAC_cw_back_718_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_718_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_718_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_718_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 718 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_862
+	text = {
+		trigger = { SAC_cw_back_862_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_862_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_862_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_862_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 862 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_863
+	text = {
+		trigger = { SAC_cw_back_863_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_863_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_863_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_863_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 863 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_864
+	text = {
+		trigger = { SAC_cw_back_864_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_864_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_864_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_864_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 864 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_865
+	text = {
+		trigger = { SAC_cw_back_865_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_865_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_865_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_865_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 865 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1356
+	text = {
+		trigger = { SAC_cw_back_1356_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1356_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1356_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1356_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1356 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1357
+	text = {
+		trigger = { SAC_cw_back_1357_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1357_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1357_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1357_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1357 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1358
+	text = {
+		trigger = { SAC_cw_back_1358_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1358_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1358_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1358_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1358 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1359
+	text = {
+		trigger = { SAC_cw_back_1359_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1359_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1359_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1359_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1359 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1360
+	text = {
+		trigger = { SAC_cw_back_1360_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1360_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1360_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1360_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1360 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1362
+	text = {
+		trigger = { SAC_cw_back_1362_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1362_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1362_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1362_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1362 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1363
+	text = {
+		trigger = { SAC_cw_back_1363_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1363_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1363_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1363_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1363 = { is_controlled_by = COG } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_549
+	text = {
+		trigger = { SAC_cw_back_549_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_549_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_549_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_549_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 549 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_551
+	text = {
+		trigger = { SAC_cw_back_551_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_551_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_551_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_551_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 551 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_761
+	text = {
+		trigger = { SAC_cw_back_761_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_761_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_761_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_761_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 761 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_763
+	text = {
+		trigger = { SAC_cw_back_763_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_763_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_763_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_763_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 763 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_798
+	text = {
+		trigger = { SAC_cw_back_798_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_798_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_798_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_798_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 798 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1294
+	text = {
+		trigger = { SAC_cw_back_1294_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1294_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1294_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1294_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1294 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1346
+	text = {
+		trigger = { SAC_cw_back_1346_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1346_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1346_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1346_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1346 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1347
+	text = {
+		trigger = { SAC_cw_back_1347_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1347_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1347_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1347_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1347 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1349
+	text = {
+		trigger = { SAC_cw_back_1349_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1349_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1349_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1349_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1349 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1350
+	text = {
+		trigger = { SAC_cw_back_1350_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1350_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1350_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1350_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1350 = { is_controlled_by = SUD } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_275
+	text = {
+		trigger = { SAC_cw_back_275_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_275_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_275_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_275_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 275 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_681
+	text = {
+		trigger = { SAC_cw_back_681_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_681_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_681_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_681_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 681 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_719
+	text = {
+		trigger = { SAC_cw_back_719_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_719_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_719_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_719_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 719 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_818
+	text = {
+		trigger = { SAC_cw_back_818_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_818_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_818_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_818_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 818 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_819
+	text = {
+		trigger = { SAC_cw_back_819_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_819_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_819_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_819_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 819 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1303
+	text = {
+		trigger = { SAC_cw_back_1303_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1303_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1303_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1303_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1303 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1304
+	text = {
+		trigger = { SAC_cw_back_1304_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1304_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1304_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1304_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1304 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1317
+	text = {
+		trigger = { SAC_cw_back_1317_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1317_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1317_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1317_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1317 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1318
+	text = {
+		trigger = { SAC_cw_back_1318_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1318_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1318_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1318_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1318 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1342
+	text = {
+		trigger = { SAC_cw_back_1342_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1342_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1342_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1342_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1342 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1343
+	text = {
+		trigger = { SAC_cw_back_1343_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1343_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1343_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1343_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1343 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1376
+	text = {
+		trigger = { SAC_cw_back_1376_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1376_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1376_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1376_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1376 = { is_controlled_by = SAF } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_744
+	text = {
+		trigger = { SAC_cw_back_744_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_744_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_744_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_744_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 744 = { is_controlled_by = MLI } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_745
+	text = {
+		trigger = { SAC_cw_back_745_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_745_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_745_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_745_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 745 = { is_controlled_by = MLI } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_746
+	text = {
+		trigger = { SAC_cw_back_746_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_746_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_746_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_746_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 746 = { is_controlled_by = MLI } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1286
+	text = {
+		trigger = { SAC_cw_back_1286_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1286_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1286_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1286_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1286 = { is_controlled_by = MLI } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_1287
+	text = {
+		trigger = { SAC_cw_back_1287_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_1287_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_1287_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_1287_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 1287 = { is_controlled_by = MLI } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_558
+	text = {
+		trigger = { SAC_cw_back_558_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_558_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_558_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_558_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 558 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_764
+	text = {
+		trigger = { SAC_cw_back_764_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_764_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_764_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_764_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 764 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_765
+	text = {
+		trigger = { SAC_cw_back_765_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_765_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_765_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_765_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 765 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_766
+	text = {
+		trigger = { SAC_cw_back_766_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_766_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_766_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_766_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 766 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_767
+	text = {
+		trigger = { SAC_cw_back_767_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_767_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_767_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_767_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 767 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_768
+	text = {
+		trigger = { SAC_cw_back_768_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_768_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_768_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_768_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 768 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_858
+	text = {
+		trigger = { SAC_cw_back_858_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_858_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_858_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_858_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 858 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
+	name = SAC_cw_ctrl_859
+	text = {
+		trigger = { SAC_cw_back_859_SOV = yes }
+		localization_key = SAC_cw_held_SOV
+	}
+	text = {
+		trigger = { SAC_cw_back_859_PRC = yes }
+		localization_key = SAC_cw_held_PRC
+	}
+	text = {
+		trigger = { SAC_cw_back_859_EUR = yes }
+		localization_key = SAC_cw_held_EUR
+	}
+	text = {
+		trigger = { SAC_cw_back_859_USA = yes }
+		localization_key = SAC_cw_held_USA
+	}
+	text = {
+		trigger = { 859 = { is_controlled_by = NGA } }
+		localization_key = SAC_cw_held_gov
+	}
+	text = {
+		localization_key = SAC_cw_held_opp
+	}
+}
+defined_text = {
 	name = SAC_africa_sup_hint
 	text = {
 		trigger = { check_variable = { AFR_sel = 1 } check_variable = { AFR_cd_sup_AO > 0 } }
