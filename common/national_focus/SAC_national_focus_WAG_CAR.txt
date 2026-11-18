@@ -1,4 +1,4 @@
-# Wagner in the Central African Republic.
+﻿# Wagner in the Central African Republic.
 # Not picked at game start: loaded when Wagner clicks OK on the "A Call from Moscow" event (sac_wag.2).
 focus_tree = {
 	id = WAG_car_focus_tree
@@ -33,6 +33,28 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			custom_effect_tooltip = WAG_unlock_car_war_tt
+			# Coalition with the CAR government; disbanded by on_weekly_WAG once the war with the CPC is over
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
+			create_faction = WAG_car_coalition
+			if = {
+				limit = { country_exists = CAR }
+				CAR = {
+					if = {
+						limit = { is_in_faction = yes }
+						leave_faction = yes
+					}
+				}
+				add_to_faction = CAR
+			}
+			if = {
+				limit = { country_exists = CPC }
+				declare_war_on = { target = CPC type = annex_everything }
+			}
+			set_country_flag = WAG_car_coalition
+			custom_effect_tooltip = WAG_car_coalition_tt
 		}
 	}
 
@@ -206,7 +228,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_car_sudan_participation }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = WAG_counter_sabotage
+			add_timed_idea = { idea = WAG_counter_sabotage days = 90 }
 		}
 	}
 

@@ -47,7 +47,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SAC_africa_res_icons"
 		texturefile = "gfx/interface/WAG_africa/africa_res_icons.png"
-		noOfFrames = 10
+		noOfFrames = 6
 	}
 	SpriteType = {
 		name = "GFX_SAC_africa_cd_overlay"

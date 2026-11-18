@@ -1,4 +1,4 @@
-add_namespace = sac_wag
+﻿add_namespace = sac_wag
 
 # Orchestra (focus WAG_orchestra): background on the company
 country_event = {
@@ -65,9 +65,23 @@ country_event = {
 	option = {
 		name = sac_wag.10.a
 		ai_chance = { factor = 70 }
+		# Real expeditionary force: the divisions are OWNED by Sudan (owner = SUD)
+		# but created in the CAR scope, so the CAR government controls them.
 		if = {
 			limit = { country_exists = CAR }
+			division_template = {
+				name = "Sudanese Expeditionary Brigade"
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
 			CAR = {
+				# same template on the CAR side, in case the game looks it up in the controller
 				division_template = {
 					name = "Sudanese Expeditionary Brigade"
 					regiments = {
@@ -79,17 +93,20 @@ country_event = {
 						engineer = { x = 0 y = 0 }
 					}
 				}
-				capital_scope = {
-					create_unit = {
-						division = "name = \"Sudanese Expeditionary Brigade 1\" division_template = \"Sudanese Expeditionary Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CAR
-					}
-					create_unit = {
-						division = "name = \"Sudanese Expeditionary Brigade 2\" division_template = \"Sudanese Expeditionary Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
-						owner = CAR
-					}
+				create_unit = {
+					division = "name = \"Sudanese Expeditionary Brigade 1\" division_template = \"Sudanese Expeditionary Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = SUD
+					prioritize_location = 12830
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"Sudanese Expeditionary Brigade 2\" division_template = \"Sudanese Expeditionary Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = SUD
+					prioritize_location = 12830
+					allow_spawning_on_enemy_provs = no
 				}
 			}
+			custom_effect_tooltip = sac_wag.10.a_tt
 		}
 		FROM = { country_event = { id = sac_wag.11 days = 1 } }
 	}
