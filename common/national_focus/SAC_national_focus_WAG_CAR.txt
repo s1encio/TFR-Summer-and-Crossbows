@@ -228,7 +228,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_car_sudan_participation }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = WAG_counter_sabotage days = 90 }
+			add_timed_idea = { idea = WAG_counter_sabotage days = 30 }
 		}
 	}
 

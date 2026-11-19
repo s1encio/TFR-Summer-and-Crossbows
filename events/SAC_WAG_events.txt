@@ -14,7 +14,7 @@ country_event = {
 	}
 }
 
-# A Call from Moscow (focus WAG_call_from_moscow) - text to be written later
+# A Call from Moscow: fired by sac_wag.21 after the Mali coup; completes the focus and loads the CAR tree
 country_event = {
 	id = sac_wag.2
 	title = sac_wag.2.t
@@ -25,6 +25,11 @@ country_event = {
 
 	option = {
 		name = sac_wag.2.a
+		if = {
+			limit = { NOT = { has_completed_focus = WAG_call_from_moscow } }
+			complete_national_focus = WAG_call_from_moscow
+		}
+		set_country_flag = WAG_done_WAG_call_from_moscow
 		if = { limit = { has_completed_focus = WAG_orchestra } set_country_flag = WAG_done_WAG_orchestra }
 		if = { limit = { has_completed_focus = WAG_organise_weapon_supply } set_country_flag = WAG_done_WAG_organise_weapon_supply }
 		if = { limit = { has_completed_focus = WAG_request_aircraft_from_mod } set_country_flag = WAG_done_WAG_request_aircraft_from_mod }
@@ -139,74 +144,265 @@ country_event = {
 	option = { name = sac_wag.12.a }
 }
 
-# Mali coup (TFR event mali.1 sets MLI_Civil_war_flag): the rebel coalition in the CAR
-# receives three new divisions. Hidden, fires once, a day or so after the coup.
+# Mali coup (TFR event mali.1 sets MLI_Civil_war_flag).
+# Step 1: Wagner notices the coup and schedules step 2 one to two weeks later.
 country_event = {
 	id = sac_wag.20
 	hidden = yes
 	fire_only_once = yes
 
 	trigger = {
-		tag = CPC
+		tag = WAG
 		country_exists = MLI
 		MLI = { has_country_flag = MLI_Civil_war_flag }
+		NOT = { has_completed_focus = WAG_call_from_moscow }
 	}
 
 	mean_time_to_happen = { days = 1 }
 
 	immediate = {
-		division_template = {
-			name = "Coalition Assault Group"
-			regiments = {
-				special_forces = { x = 0 y = 0 }
-				special_forces = { x = 0 y = 1 }
-				infantry = { x = 1 y = 0 }
-				infantry = { x = 1 y = 1 }
-			}
-			support = {
-				anti_tank = { x = 0 y = 0 }
-				anti_air = { x = 0 y = 1 }
-				artillery = { x = 0 y = 2 }
-			}
-		}
+		country_event = { id = sac_wag.21 days = 7 random_days = 7 }
+	}
+}
+
+# Step 2: four divisions of foreign mercenaries with French equipment appear with the
+# rebel coalition (CPC) in the CAR, then Moscow calls Wagner (sac_wag.2).
+country_event = {
+	id = sac_wag.21
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
 		if = {
-			limit = { capital_scope = { is_controlled_by = ROOT } }
-			capital_scope = {
-				create_unit = {
-					division = "name = \"Coalition Assault Group 1\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-					allow_spawning_on_enemy_provs = no
-					owner = ROOT
+			limit = { country_exists = CPC }
+			CPC = {
+				division_template = {
+					name = "Foreign Volunteer Group"
+					regiments = {
+						SAC_merc_infantry = { x = 0 y = 0 }
+						SAC_merc_infantry = { x = 0 y = 1 }
+						SAC_merc_infantry = { x = 1 y = 0 }
+						SAC_merc_infantry = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+					}
 				}
-				create_unit = {
-					division = "name = \"Coalition Assault Group 2\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-					allow_spawning_on_enemy_provs = no
-					owner = ROOT
+				# spawn in the first CPC-held state, starting in the north-east (Vakaga)
+				if = {
+					limit = { 1517 = { is_controlled_by = CPC } }
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15103
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15103
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15103
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15103
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
 				}
-				create_unit = {
-					division = "name = \"Coalition Assault Group 3\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-					allow_spawning_on_enemy_provs = no
-					owner = ROOT
+				else_if = {
+					limit = { 1516 = { is_controlled_by = CPC } }
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15101
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15101
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15101
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15101
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+				}
+				else_if = {
+					limit = { 1515 = { is_controlled_by = CPC } }
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 5084
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 5084
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 5084
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 5084
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+				}
+				else_if = {
+					limit = { 779 = { is_controlled_by = CPC } }
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15090
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15090
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15090
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15090
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+				}
+				else_if = {
+					limit = { 1510 = { is_controlled_by = CPC } }
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15087
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15087
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15087
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15087
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+				}
+				else_if = {
+					limit = { 1509 = { is_controlled_by = CPC } }
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 8078
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 8078
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 8078
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 8078
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+				}
+				else_if = {
+					limit = { 660 = { is_controlled_by = CPC } }
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15093
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15093
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15093
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						prioritize_location = 15093
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+				}
+				else = {
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 1\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 2\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 3\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
+					create_unit = {
+						division = "name = \"Foreign Volunteer Group 4\" division_template = \"Foreign Volunteer Group\" start_experience_factor = 0.7 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_3 = { owner = \"FRA\" } support_equipment_1 = { owner = \"FRA\" } }"
+						allow_spawning_on_enemy_provs = no
+						owner = CPC
+					}
 				}
 			}
 		}
-		else = {
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Coalition Assault Group 1\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-					allow_spawning_on_enemy_provs = no
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"Coalition Assault Group 2\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-					allow_spawning_on_enemy_provs = no
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"Coalition Assault Group 3\" division_template = \"Coalition Assault Group\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
-					allow_spawning_on_enemy_provs = no
-					owner = ROOT
-				}
-			}
-		}
+		country_event = { id = sac_wag.2 days = 1 }
 	}
 }

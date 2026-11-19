@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = WAG_focus_tree
 
 	country = {
@@ -114,10 +114,16 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = WAG_request_aircraft_from_mod }
 		prerequisite = { focus = WAG_import_oil_from_libya }
+		# Cannot be taken by hand: completed by the "A Call from Moscow" event after the Mali coup
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_call_from_moscow_avail_tt
+				always = no
+			}
+		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			set_country_flag = WAG_done_WAG_call_from_moscow  # keeps decisions visible after the CAR tree loads
-			country_event = { id = sac_wag.2 }
 		}
 	}
 

@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		WAG_private_military_company = {
 			picture = WAG_private_military_company
@@ -68,9 +68,7 @@ ideas = {
 			picture = SOV_counter_extremist_divison_idea
 			allowed = { original_tag = WAG }
 			removal_cost = -1
-			targeted_modifier = { tag = FRA attack_bonus_against = 0.15 }
-			targeted_modifier = { tag = FAF attack_bonus_against = 0.15 }
-			targeted_modifier = { tag = FPR attack_bonus_against = 0.15 }
+			targeted_modifier = { tag = CPC attack_bonus_against = 0.20 }
 		}
 	}
 }
