@@ -187,7 +187,7 @@ focus_tree = {
 
 	focus = {
 		id = WAG_car_train_local_soldiers
-		icon = GFX_goal_unknown  # placeholder, real icon later
+		icon = GFX_focus_WAG_car_train_local_soldiers
 		relative_position_id = WAG_car_operation_aibolit
 		x = 2
 		y = 1
