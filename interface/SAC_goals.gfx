@@ -51,4 +51,8 @@ spriteTypes = {
 		name = "GFX_focus_WAG_car_fortify_capital"
 		texturefile = "gfx/interface/goals/WAG/WAG_car_fortify_capital.png"
 	}
+	SpriteType = {
+		name = "GFX_focus_WAG_car_psychological_warfare"
+		texturefile = "gfx/interface/goals/WAG/WAG_car_psychological_warfare.png"
+	}
 }
