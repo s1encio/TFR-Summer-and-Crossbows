@@ -70,5 +70,27 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = { tag = CPC attack_bonus_against = 0.20 }
 		}
+
+		# Russian House in Bangui: given to the CAR government
+		WAG_car_russian_house_idea = {
+			picture = SOV_new_russian_world_idea
+			allowed = { original_tag = CAR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+			}
+		}
+
+		# Secure the Mines: Wagner guards the gold and diamond sites
+		WAG_mining_concessions = {
+			picture = generic_production_bonus
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				consumer_goods_factor = -0.05
+			}
+		}
 	}
 }

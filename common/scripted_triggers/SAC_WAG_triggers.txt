@@ -1,0 +1,9 @@
+# CAR civil war is over: Operation Aibolit was launched and neither Wagner nor the CAR is still at war with the CPC
+WAG_car_civil_war_over = {
+	has_completed_focus = WAG_car_operation_aibolit
+	NOT = { has_war_with = CPC }
+	OR = {
+		NOT = { country_exists = CAR }
+		CAR = { NOT = { has_war_with = CPC } }
+	}
+}

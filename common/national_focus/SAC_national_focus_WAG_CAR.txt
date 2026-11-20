@@ -242,11 +242,131 @@ focus_tree = {
 		prerequisite = { focus = WAG_car_sam_sites }
 		prerequisite = { focus = WAG_car_psychological_warfare }
 		prerequisite = { focus = WAG_car_fight_saboteurs }
+		# Cannot be taken by hand: completed automatically (on_weekly_WAG) once the civil war is over
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_car_stabilise_avail_tt
+				always = no
+			}
+		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			country_event = { id = sac_wag.3 }
 			set_global_flag = SAC_africa_unlocked
 			custom_effect_tooltip = SAC_africa_unlock_tt
+		}
+	}
+
+	# ---------- after the civil war ----------
+	focus = {
+		id = WAG_car_humanitarian_aid
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_stabilise_country
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_stabilise_country }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_car_civil_war_over_tt
+				WAG_car_civil_war_over = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CAR = { add_stability = 0.10 }
+			set_temp_variable = { afr_gain = 10 }
+			SAC_africa_gain_CF = yes
+			custom_effect_tooltip = WAG_car_influence_10_tt
+		}
+	}
+
+	focus = {
+		id = WAG_car_bangui_trials
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_stabilise_country
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_stabilise_country }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_car_civil_war_over_tt
+				WAG_car_civil_war_over = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CAR = {
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = WAG_car_russian_house
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_humanitarian_aid
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_humanitarian_aid }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_car_civil_war_over_tt
+				WAG_car_civil_war_over = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			CAR = { add_ideas = WAG_car_russian_house_idea }
+			set_temp_variable = { afr_gain = 15 }
+			SAC_africa_gain_CF = yes
+			custom_effect_tooltip = WAG_car_influence_15_tt
+		}
+	}
+
+	focus = {
+		id = WAG_car_secure_mines
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_bangui_trials
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = WAG_car_bangui_trials }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_car_civil_war_over_tt
+				WAG_car_civil_war_over = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = WAG_mining_concessions
+		}
+	}
+
+	focus = {
+		id = WAG_car_a_problem
+		icon = GFX_goal_unknown  # placeholder, real icon later
+		relative_position_id = WAG_car_stabilise_country
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = WAG_car_russian_house }
+		prerequisite = { focus = WAG_car_secure_mines }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_car_civil_war_over_tt
+				WAG_car_civil_war_over = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = WAG_car_a_problem  # hook for the next part of the story
+			custom_effect_tooltip = WAG_car_a_problem_tt
 		}
 	}
 

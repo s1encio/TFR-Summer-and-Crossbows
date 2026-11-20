@@ -88,3 +88,7 @@
  sac_wag.12.t: "Sudan Refuses"
  sac_wag.12.d: "Sudan has declined to send troops to the Central African Republic."
  sac_wag.12.a: "We will manage without them."
+ WAG_car_russian_house_idea: "Russian House in Bangui"
+ WAG_car_russian_house_idea_desc: "The Russian cultural centre in Bangui wins friends for Moscow, one language course at a time."
+ WAG_mining_concessions: "Mining Concessions"
+ WAG_mining_concessions_desc: "Our men guard the gold and diamond fields of the Central African Republic and take a share of everything mined there."

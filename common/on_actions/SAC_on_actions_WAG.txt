@@ -14,6 +14,15 @@ on_actions = {
 		effect = {
 			# Mali coup watcher: sac_wag.20 checks the trigger and starts the mercenary / Moscow chain
 			country_event = sac_wag.20
+			# Stabilise the Country completes itself once the CAR civil war is over
+			if = {
+				limit = {
+					has_focus_tree = WAG_car_focus_tree
+					NOT = { has_completed_focus = WAG_car_stabilise_country }
+					WAG_car_civil_war_over = yes
+				}
+				complete_national_focus = WAG_car_stabilise_country
+			}
 			if = {
 				limit = {
 					has_country_flag = WAG_car_coalition
