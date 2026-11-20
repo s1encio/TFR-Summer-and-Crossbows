@@ -1,4 +1,4 @@
-﻿on_actions = {
+on_actions = {
 	# Private Military Company spirit: +300 manpower every month
 	on_monthly_WAG = {
 		effect = {

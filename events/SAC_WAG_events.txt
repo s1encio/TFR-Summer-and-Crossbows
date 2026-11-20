@@ -1,4 +1,4 @@
-﻿add_namespace = sac_wag
+add_namespace = sac_wag
 
 # Orchestra (focus WAG_orchestra): background on the company
 country_event = {
@@ -185,11 +185,12 @@ country_event = {
 			CPC = {
 				division_template = {
 					name = "Foreign Volunteer Group"
+					override_model = FRA_special_forces_entity
 					regiments = {
-						SAC_merc_infantry = { x = 0 y = 0 }
-						SAC_merc_infantry = { x = 0 y = 1 }
-						SAC_merc_infantry = { x = 1 y = 0 }
-						SAC_merc_infantry = { x = 1 y = 1 }
+						special_forces = { x = 0 y = 0 }
+						special_forces = { x = 0 y = 1 }
+						special_forces = { x = 1 y = 0 }
+						special_forces = { x = 1 y = 1 }
 					}
 					support = {
 						recon = { x = 0 y = 0 }

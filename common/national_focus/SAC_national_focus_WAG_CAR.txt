@@ -1,4 +1,4 @@
-﻿# Wagner in the Central African Republic.
+# Wagner in the Central African Republic.
 # Not picked at game start: loaded when Wagner clicks OK on the "A Call from Moscow" event (sac_wag.2).
 focus_tree = {
 	id = WAG_car_focus_tree

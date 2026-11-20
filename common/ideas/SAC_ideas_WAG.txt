@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	country = {
 		WAG_private_military_company = {
 			picture = WAG_private_military_company
