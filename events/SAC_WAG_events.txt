@@ -397,3 +397,127 @@ country_event = {
 		country_event = { id = sac_wag.2 days = 1 }
 	}
 }
+
+# ---------- "A Problem" (focus WAG_car_a_problem) ----------
+# 1. The government in Bangui is corrupt and ineffective
+country_event = {
+	id = sac_wag.30
+	title = sac_wag.30.t
+	desc = sac_wag.30.d
+	picture = GFX_SOV_busted_corruption
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wag.30.a
+		custom_effect_tooltip = sac_wag.30.a_tt
+		country_event = { id = sac_wag.31 days = 5 }
+	}
+}
+
+# 2. The coup
+country_event = {
+	id = sac_wag.31
+	title = sac_wag.31.t
+	desc = sac_wag.31.d
+	picture = GFX_Tunisia_coup
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wag.31.a
+		if = {
+			limit = { country_exists = CAR }
+			CAR = {
+				set_politics = {
+					ruling_party = nationalist
+					elections_allowed = no
+				}
+				add_stability = -0.10
+			}
+		}
+		country_event = { id = sac_wag.32 days = 2 }
+	}
+}
+
+# 3. Who rules the Central African Republic now?
+country_event = {
+	id = sac_wag.32
+	title = sac_wag.32.t
+	desc = sac_wag.32.d
+	picture = GFX_SOV_wagner_africa
+	is_triggered_only = yes
+
+	# Wagner takes over: the whole CAR becomes Wagner territory
+	option = {
+		name = sac_wag.32.a
+		ai_chance = { factor = 50 }
+		if = {
+			limit = { country_exists = CAR }
+			annex_country = { target = CAR transfer_troops = yes }
+		}
+		set_country_flag = WAG_rules_car
+	}
+
+	# Let Moscow choose the new leader
+	option = {
+		name = sac_wag.32.b
+		ai_chance = { factor = 50 }
+		if = {
+			limit = { country_exists = SOV }
+			SOV = { country_event = { id = sac_wag.33 days = 1 } }
+		}
+		else = {
+			# no Moscow to ask: the army takes over
+			CAR = {
+				recruit_character = CAR_SAC_general_ngakola
+				promote_character = CAR_SAC_general_ngakola
+			}
+		}
+		set_country_flag = WAG_moscow_chose_car
+	}
+}
+
+# 4. Moscow picks the new leader (fired for SOV)
+country_event = {
+	id = sac_wag.33
+	title = sac_wag.33.t
+	desc = sac_wag.33.d
+	picture = GFX_SOV_kremlin_1
+	is_triggered_only = yes
+
+	# The general
+	option = {
+		name = sac_wag.33.a
+		ai_chance = { factor = 60 }
+		CAR = {
+			recruit_character = CAR_SAC_general_ngakola
+			promote_character = CAR_SAC_general_ngakola
+			add_stability = 0.10
+		}
+		WAG = { country_event = { id = sac_wag.34 days = 1 } }
+	}
+
+	# The politician
+	option = {
+		name = sac_wag.33.b
+		ai_chance = { factor = 40 }
+		CAR = {
+			recruit_character = CAR_SAC_mokpem
+			promote_character = CAR_SAC_mokpem
+			add_political_power = 100
+		}
+		WAG = { country_event = { id = sac_wag.34 days = 1 } }
+	}
+}
+
+# 5. Wagner hears Moscow's choice
+country_event = {
+	id = sac_wag.34
+	title = sac_wag.34.t
+	desc = sac_wag.34.d
+	picture = GFX_SOV_kremlin_1
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wag.34.a
+	}
+}

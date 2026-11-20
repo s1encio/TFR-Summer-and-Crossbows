@@ -365,8 +365,8 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_country_flag = WAG_car_a_problem  # hook for the next part of the story
-			custom_effect_tooltip = WAG_car_a_problem_tt
+			set_country_flag = WAG_car_a_problem
+			country_event = { id = sac_wag.30 }
 		}
 	}
 

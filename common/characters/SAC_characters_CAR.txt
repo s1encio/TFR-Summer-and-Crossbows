@@ -1,0 +1,17 @@
+# Fictional candidates Moscow can install in Bangui (sac_wag.33). No portraits yet: the game shows a generic one.
+characters = {
+	CAR_SAC_general_ngakola = {
+		name = CAR_SAC_general_ngakola
+		country_leader = {
+			ideology = military_junta
+			traits = { }
+		}
+	}
+	CAR_SAC_mokpem = {
+		name = CAR_SAC_mokpem
+		country_leader = {
+			ideology = radical_nationalism
+			traits = { }
+		}
+	}
+}
