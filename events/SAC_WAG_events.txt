@@ -144,7 +144,9 @@ country_event = {
 	option = { name = sac_wag.12.a }
 }
 
-# Mali coup (TFR event mali.1 sets MLI_Civil_war_flag).
+# Mali coup = TFR event mali.9 ("2020 Coup", fired ~day 232 from TFR on_startup).
+# It sets no flag, so we detect it by its result: Goita in power / nationalist military government.
+# (mali.1 is NOT the coup: it is the war with the Islamic State in the Sahel.)
 # Step 1: Wagner notices the coup and schedules step 2 one to two weeks later.
 country_event = {
 	id = sac_wag.20
@@ -154,7 +156,12 @@ country_event = {
 	trigger = {
 		tag = WAG
 		country_exists = MLI
-		MLI = { has_country_flag = MLI_Civil_war_flag }
+		MLI = {
+			OR = {
+				has_country_leader = { character = MLI_Assimi_Goita_char ruling_only = yes }
+				has_government = nationalist
+			}
+		}
 		NOT = { has_completed_focus = WAG_call_from_moscow }
 	}
 
