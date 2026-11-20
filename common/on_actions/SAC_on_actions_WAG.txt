@@ -12,6 +12,8 @@ on_actions = {
 	# Operation Aibolit coalition: dismantled once the war against the CPC is over
 	on_weekly_WAG = {
 		effect = {
+			# Mali coup watcher: sac_wag.20 checks the trigger and starts the mercenary / Moscow chain
+			country_event = sac_wag.20
 			if = {
 				limit = {
 					has_country_flag = WAG_car_coalition

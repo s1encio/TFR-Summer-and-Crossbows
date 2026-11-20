@@ -165,7 +165,7 @@ country_event = {
 		NOT = { has_completed_focus = WAG_call_from_moscow }
 	}
 
-	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes  # fired every week by on_weekly_WAG (SAC_on_actions_WAG.txt)
 
 	immediate = {
 		country_event = { id = sac_wag.21 days = 7 random_days = 7 }
