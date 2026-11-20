@@ -1,0 +1,52 @@
+# Summer and Crossbows: all TFR Central African Republic events removed (a new CAR is planned).
+# Same IDs kept as empty hidden events so anything in TFR that still fires them does nothing.
+add_namespace = car
+
+country_event = {
+	id = car.1
+	hidden = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = car.2
+	hidden = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = car.3
+	hidden = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = car.4
+	hidden = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = car.5
+	hidden = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = car.6
+	hidden = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = car.7
+	hidden = yes
+	is_triggered_only = yes
+}
+
+country_event = {
+	id = car.8
+	hidden = yes
+	is_triggered_only = yes
+}
+

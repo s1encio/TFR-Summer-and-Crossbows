@@ -1,0 +1,22 @@
+on_actions = {
+	# Remove TFR's "Wagner Mercenaries" spirit (SOV_wagner_mercs) from every country
+	on_startup = {
+		effect = {
+			random_country = {
+				every_country = {
+					limit = { has_idea = SOV_wagner_mercs }
+					remove_ideas = SOV_wagner_mercs
+				}
+			}
+		}
+	}
+	# ... and again every week, in case a TFR event or decision gives it later
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { has_idea = SOV_wagner_mercs }
+				remove_ideas = SOV_wagner_mercs
+			}
+		}
+	}
+}
