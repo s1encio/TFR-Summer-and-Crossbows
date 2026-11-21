@@ -92,5 +92,27 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+
+		# Starting spirit: Wagner fought in Syria 2015-2017 (icon: placeholder for now)
+		WAG_veterans_of_syria = {
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.25
+				training_time_army_factor = -0.15
+				army_attack_factor = 0.10
+			}
+		}
+
+		# Starting spirit: weapons, fuel and money all come from Russia (icon: placeholder for now)
+		WAG_dependent_on_moscow = {
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.15
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
 	}
 }

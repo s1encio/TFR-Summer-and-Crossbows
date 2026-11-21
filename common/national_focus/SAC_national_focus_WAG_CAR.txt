@@ -254,6 +254,9 @@ focus_tree = {
 			country_event = { id = sac_wag.3 }
 			set_global_flag = SAC_africa_unlocked
 			custom_effect_tooltip = SAC_africa_unlock_tt
+			WAG_update_african_contracts = yes
+			add_dynamic_modifier = { modifier = WAG_african_contracts }
+			custom_effect_tooltip = WAG_african_contracts_tt
 		}
 	}
 

@@ -98,6 +98,8 @@ set_popularities = {
 add_ideas = {
 	WAG_private_military_company
 	WAG_best_in_hell
+	WAG_veterans_of_syria
+	WAG_dependent_on_moscow
 }
 
 recruit_character = WAG_yevgeny_prigozhin

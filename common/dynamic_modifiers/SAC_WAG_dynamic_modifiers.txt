@@ -1,0 +1,6 @@
+# African Contracts: +0.05 political power per day for every African country where Russian influence is above 50
+# (variable WAG_african_contracts_pp is updated monthly by WAG_update_african_contracts)
+WAG_african_contracts = {
+	enable = { always = yes }
+	political_power_gain = WAG_african_contracts_pp
+}

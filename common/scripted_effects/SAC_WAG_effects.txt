@@ -1,0 +1,56 @@
+# Counts the African countries with Russian influence above 50 (Africa panel) for the African Contracts modifier
+WAG_update_african_contracts = {
+	set_variable = { WAG_african_contracts_count = 0 }
+	if = { limit = { check_variable = { global.AFR_DZ_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_AO_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_BJ_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_BW_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_BF_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_BI_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_CM_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_CF_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_TD_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_CG_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_CI_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_CD_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_DJ_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_EG_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_GQ_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_ER_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_ET_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_GA_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_GM_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_GH_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_GN_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_GW_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_KE_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_LS_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_LR_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_LY_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_MG_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_MW_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_ML_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_MR_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_MA_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_MZ_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_NA_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_NE_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_NG_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_RW_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_SN_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_SL_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_SO_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_ZA_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_SS_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_SD_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_SZ_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_TZ_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_TG_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_TN_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_UG_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_EH_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_ZM_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	if = { limit = { check_variable = { global.AFR_ZW_SOV > 50 } } add_to_variable = { WAG_african_contracts_count = 1 } }
+	set_variable = { WAG_african_contracts_pp = WAG_african_contracts_count }
+	multiply_variable = { WAG_african_contracts_pp = 0.05 }
+}
