@@ -13,4 +13,26 @@ on_actions = {
 			}
 		}
 	}
+	# When the USA is gone, its African influence is split equally between the other powers (once).
+	# If the USA comes back later, the check is armed again.
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = SAC_africa_init_v2
+					NOT = { country_exists = USA }
+					NOT = { has_global_flag = SAC_africa_usa_gone }
+				}
+				set_global_flag = SAC_africa_usa_gone
+				SAC_africa_usa_split = yes
+			}
+			else_if = {
+				limit = {
+					has_global_flag = SAC_africa_usa_gone
+					country_exists = USA
+				}
+				clr_global_flag = SAC_africa_usa_gone
+			}
+		}
+	}
 }

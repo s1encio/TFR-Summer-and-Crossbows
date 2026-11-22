@@ -8,7 +8,7 @@
  SAC_africa_leg_EUR:0 "Europe"
  SAC_africa_leg_USA:0 "USA"
  SAC_africa_leg_cw:0 "Civil war"
- SAC_africa_hint:0 "§gClick a country to invest or send military aid.§!"
+ SAC_africa_hint:0 "§gClick a country to see who has influence there, invest or send military aid.§!"
  SAC_africa_hint_select:0 "§gSelect a country on the map.§!"
  SAC_africa_empty:0 ""
  SAC_africa_name_none:0 ""
