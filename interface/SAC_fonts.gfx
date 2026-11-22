@@ -1,0 +1,14 @@
+	bitmapfonts = {
+
+		bitmapfont = {
+			name = "SAC_neon_22"
+			path = "gfx/fonts/VCR01_22_glow"
+			color = 0xffff70ff
+		}
+
+		bitmapfont = {
+			name = "SAC_neon_24"
+			path = "gfx/fonts/VCR01_24_glow"
+			color = 0xffff70ff
+		}
+	}
