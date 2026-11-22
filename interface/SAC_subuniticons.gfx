@@ -1,0 +1,3 @@
+spriteTypes = {
+	spriteType = { name = "GFX_unit_SAC_fpv_company_icon_medium" textureFile = "gfx/interface/counters/divisions_large/support_unit_signal_company_icon.dds" noOfFrames = 2 }
+}

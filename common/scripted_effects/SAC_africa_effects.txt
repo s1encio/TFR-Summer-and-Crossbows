@@ -3512,6 +3512,456 @@ SAC_afr_do_mil_ZW = {
 	SAC_africa_gain_ZW = yes
 	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
 }
+SAC_afr_do_legion_AO = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_AO = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_AO = yes
+	ANG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_BF = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_BF = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_BF = yes
+	VOL = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_BI = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_BI = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_BI = yes
+	BRD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_BJ = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_BJ = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_BJ = yes
+	DAH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_BW = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_BW = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_BW = yes
+	BOT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_CD = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_CD = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_CD = yes
+	COG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_CF = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_CF = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_CF = yes
+	CAR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_CG = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_CG = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_CG = yes
+	RCG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_CI = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_CI = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_CI = yes
+	IVO = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_CM = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_CM = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_CM = yes
+	CMR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_DJ = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_DJ = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_DJ = yes
+	DJI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_DZ = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_DZ = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_DZ = yes
+	ALG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_EG = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_EG = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_EG = yes
+	EGY = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_EH = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_EH = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_EH = yes
+	WES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_ER = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_ER = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_ER = yes
+	ERI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_ET = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_ET = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_ET = yes
+	ETH = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_GA = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_GA = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_GA = yes
+	GAB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_GH = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_GH = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_GH = yes
+	GHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_GM = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_GM = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_GM = yes
+	GAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_GN = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_GN = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_GN = yes
+	GNA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_GQ = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_GQ = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_GQ = yes
+	EQG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_GW = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_GW = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_GW = yes
+	GNB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_KE = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_KE = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_KE = yes
+	KEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_LR = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_LR = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_LR = yes
+	LIB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_LS = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_LS = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_LS = yes
+	LES = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_LY = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_LY = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_LY = yes
+	LBA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_MA = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_MA = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_MA = yes
+	MOR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_MG = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_MG = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_MG = yes
+	MAD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_ML = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_ML = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_ML = yes
+	MLI = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_MR = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_MR = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_MR = yes
+	MRT = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_MW = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_MW = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_MW = yes
+	MLW = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_MZ = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_MZ = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_MZ = yes
+	MZB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_NA = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_NA = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_NA = yes
+	NMB = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_NE = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_NE = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_NE = yes
+	NGR = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_NG = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_NG = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_NG = yes
+	NGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_RW = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_RW = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_RW = yes
+	RWA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_SD = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_SD = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_SD = yes
+	SUD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_SL = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_SL = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_SL = yes
+	SIE = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_SN = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_SN = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_SN = yes
+	SEN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_SO = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_SO = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_SO = yes
+	SOM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_SS = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_SS = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_SS = yes
+	SSD = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_SZ = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_SZ = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_SZ = yes
+	SWZ = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_TD = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_TD = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_TD = yes
+	CHA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_TG = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_TG = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_TG = yes
+	TOG = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_TN = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_TN = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_TN = yes
+	TUN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_TZ = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_TZ = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_TZ = yes
+	TZN = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_UG = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_UG = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_UG = yes
+	UGA = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_ZA = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_ZA = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_ZA = yes
+	SAF = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_ZM = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_ZM = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_ZM = yes
+	ZAM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
+SAC_afr_do_legion_ZW = {
+	add_political_power = -50
+	1503 = { create_unit = { division = "division_template = \"Foreign Legionnaires\" start_experience_factor = 0.3 start_equipment_factor = 1.0" owner = ROOT allow_spawning_on_enemy_provs = no } }
+	set_variable = { AFR_cd_legion_ZW = 30 }
+	SAC_africa_start_ticker = yes
+	set_temp_variable = { afr_gain = 3 }
+	SAC_africa_gain_ZW = yes
+	ZIM = { add_opinion_modifier = { target = ROOT modifier = SAC_africa_aid_opinion } }
+}
 
 # Civil war sides: the government plus every enemy fighting it (neighbours, African enemies, or occupiers). Stored on ROOT.
 SAC_africa_build_sides_AO = {

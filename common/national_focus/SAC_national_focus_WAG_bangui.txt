@@ -764,7 +764,11 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			set_country_flag = WAG_storm_in_europe
-			custom_effect_tooltip = WAG_bng_storm_tt
+			if = { limit = { has_completed_focus = WAG_car_transport_troops } set_country_flag = WAG_done_WAG_car_transport_troops }
+			load_focus_tree = {
+				tree = WAG_europe_focus_tree
+				keep_completed = yes
+			}
 		}
 	}
 }

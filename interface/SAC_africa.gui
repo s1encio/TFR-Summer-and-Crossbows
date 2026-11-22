@@ -1067,6 +1067,11 @@ guiTypes = {
 		instantTextBoxType = { name = "SAC_africa_act_mil_cost" position = { x = 577 y = 458 } font = "VCR02_12" text = "[SAC_africa_cost_mil]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_mil_cdov" position = { x = 565 y = 430 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_mil_cdtxt" position = { x = 565 y = 445 } font = "Electro_20" text = "[SAC_africa_cdbig_mil]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		buttonType = { name = "SAC_africa_act_legion" position = { x = 565 y = 490 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_legion_tt" clicksound = click_default }
+		instantTextBoxType = { name = "SAC_africa_act_legion_title" position = { x = 577 y = 497 } font = "Electro_20" text = "SAC_africa_act_legion" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_legion_cost" position = { x = 577 y = 518 } font = "VCR02_12" text = "[SAC_africa_cost_legion]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
+		iconType = { name = "SAC_africa_act_legion_cdov" position = { x = 565 y = 490 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_legion_cdtxt" position = { x = 565 y = 505 } font = "Electro_20" text = "[SAC_africa_cdbig_legion]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
 	}
 
 	containerWindowType = {

@@ -604,3 +604,289 @@ WAG_airlift_category = {
 		}
 	}
 }
+
+# ---------- War in Europe: prisoner recruitment (focus Recruit Prisoners) ----------
+WAG_prisoner_category = {
+	WAG_prisoners_north_caucasus = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_moscow = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_northwest = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_central = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_south = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_volga = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_urals = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_siberia = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+	WAG_prisoners_far_east = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_re_enable = 60
+		available = { 1503 = { is_controlled_by = ROOT } }
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			add_stability = -0.01
+			1503 = {
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "division_template = \"Prisoner Assault Battalion\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+		}
+	}
+}
+
+# ---------- War in Europe: sabotage behind enemy lines (focus Sabotage in Their Backlines) ----------
+WAG_sabotage_category = {
+	WAG_sabotage_military = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 50
+		days_re_enable = 30
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+				any_controlled_state = { arms_factory > 0 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			FROM = {
+				random_controlled_state = {
+					limit = { arms_factory > 0 }
+					damage_building = { type = arms_factory damage = 1 }
+				}
+			}
+		}
+	}
+	WAG_sabotage_civilian = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 50
+		days_re_enable = 30
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+				any_controlled_state = { industrial_complex > 0 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			FROM = {
+				random_controlled_state = {
+					limit = { industrial_complex > 0 }
+					damage_building = { type = industrial_complex damage = 1 }
+				}
+			}
+		}
+	}
+	WAG_sabotage_airbase = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 50
+		days_re_enable = 30
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+				any_controlled_state = { air_base > 0 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			FROM = {
+				random_controlled_state = {
+					limit = { air_base > 0 }
+					damage_building = { type = air_base damage = 1 }
+				}
+			}
+		}
+	}
+	WAG_sabotage_sam = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 50
+		days_re_enable = 30
+		target_trigger = {
+			FROM = {
+				has_war_with = ROOT
+				any_controlled_state = { anti_air_building > 0 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			FROM = {
+				random_controlled_state = {
+					limit = { anti_air_building > 0 }
+					damage_building = { type = anti_air_building damage = 1 }
+				}
+			}
+		}
+	}
+}
