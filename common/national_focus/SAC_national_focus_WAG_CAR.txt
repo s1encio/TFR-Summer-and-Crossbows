@@ -18,7 +18,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			# effects later
+			custom_effect_tooltip = WAG_unlock_airlift_tt
 		}
 	}
 
@@ -54,14 +54,6 @@ focus_tree = {
 				declare_war_on = { target = CPC type = annex_everything }
 			}
 			set_country_flag = WAG_car_coalition
-			if = {
-				limit = { country_exists = CAR CAR = { has_idea = SAC_bush_war } }
-				CAR = { remove_ideas = SAC_bush_war }
-			}
-			if = {
-				limit = { country_exists = CPC CPC = { has_idea = SAC_bush_war } }
-				CPC = { remove_ideas = SAC_bush_war }
-			}
 			custom_effect_tooltip = WAG_car_coalition_tt
 		}
 	}

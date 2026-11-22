@@ -1,0 +1,19 @@
+### Air OOB: CPC airbase in Ouaka (state 660), By Blood Alone ###
+air_wings = {
+	660 = {
+		# Mirage 2000
+		small_plane_cas_airframe_0 = {
+			owner = "CPC"
+			amount = 10
+			version_name = "Mirage 2000"
+		}
+	}
+	660 = {
+		# Mirage F1
+		small_plane_cas_airframe_0 = {
+			owner = "CPC"
+			amount = 15
+			version_name = "Mirage F1"
+		}
+	}
+}

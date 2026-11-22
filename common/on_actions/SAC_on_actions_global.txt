@@ -20,18 +20,13 @@ on_actions = {
 		}
 	}
 
-	# CAR civil war: weaken both sides (SAC_bush_war) and strengthen the CPC with 8 extra divisions,
+	# CAR civil war: strengthen the CPC with 8 extra divisions,
 	# so the war is still going when Wagner arrives (TFR gives the CAR 7 divisions incl. armour, the CPC only 5)
 	on_startup = {
 		effect = {
 			if = {
-				limit = { country_exists = CAR }
-				CAR = { add_ideas = SAC_bush_war }
-			}
-			if = {
 				limit = { country_exists = CPC }
 				CPC = {
-					add_ideas = SAC_bush_war
 					division_template = {
 						name = "Rebel Column"
 						regiments = {
@@ -95,6 +90,17 @@ on_actions = {
 						}
 					}
 				}
+			}
+		}
+	}
+
+	# A Call from Moscow: French-equipped mercenaries appear with the CPC on ~24 June 2020 (sac_wag.21),
+	# and Moscow calls Wagner 7 days later, on 1 July 2020 (sac_wag.2)
+	on_startup = {
+		effect = {
+			if = {
+				limit = { country_exists = WAG }
+				WAG = { country_event = { id = sac_wag.21 days = 175 } }
 			}
 		}
 	}

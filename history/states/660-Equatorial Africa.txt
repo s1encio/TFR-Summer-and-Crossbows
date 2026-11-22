@@ -11,6 +11,7 @@ state={
 		victory_points = { 15093 2 }
 		buildings = {
 			infrastructure = 1
+			air_base = 2		# CPC airbase near the Congo border (Summer and Crossbows)
 		}
 		CAR = {
 			set_province_controller = 15094

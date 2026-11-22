@@ -30,3 +30,14 @@ WAG_car_war_category = {
 	}
 	priority = 101
 }
+
+WAG_airlift_category = {
+	icon = GFX_decision_category_military_operation
+	allowed = {
+		original_tag = WAG
+	}
+	visible = {
+		has_completed_focus = WAG_car_transport_troops
+	}
+	priority = 102
+}
