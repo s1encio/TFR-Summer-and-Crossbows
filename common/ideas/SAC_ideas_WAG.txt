@@ -115,5 +115,72 @@ ideas = {
 			}
 		}
 
+		# ---------- Bangui Administration tree (WAG_bangui_focus_tree) ----------
+		WAG_bng_chiefs_idea = {
+			picture = SOV_new_russian_world_idea
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { stability_factor = 0.10 political_power_gain = 0.10 compliance_growth = 0.10 }
+		}
+		WAG_bng_direct_rule_idea = {
+			picture = SOV_counter_extremist_divison_idea
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { conscription_factor = 0.20 war_support_factor = 0.10 stability_factor = -0.05 }
+		}
+		WAG_bng_governorate_idea = {
+			picture = SOV_counter_extremist_divison_idea
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { stability_factor = 0.15 political_power_gain = 0.25 compliance_growth = 0.10 }
+		}
+		WAG_bng_self_sufficient_idea = {
+			picture = generic_production_bonus
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { production_factory_max_efficiency_factor = 0.10 consumer_goods_factor = -0.05 }
+		}
+		WAG_bng_academy_idea = {
+			picture = UKR_russia_trained_security_force_idea
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { training_time_army_factor = -0.15 experience_gain_army_factor = 0.15 }
+		}
+		WAG_bng_brigades_idea = {
+			picture = WAG_best_in_hell
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.10 }
+		}
+		WAG_private_army = {
+			picture = WAG_private_military_company
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.30
+				surrender_limit = 1.0
+				war_support_factor = 0.50
+				stability_factor = 0.25
+				send_volunteers_tension = -1.0
+				send_volunteer_size = 100
+				send_volunteer_divisions_required = -1.0
+				air_volunteer_cap = 1000
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				custom_modifier_tooltip = WAG_pmc_manpower_tt
+			}
+		}
+		WAG_bng_prove_worth_idea = {
+			picture = WAG_best_in_hell
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.05 experience_gain_army_factor = 0.10 }
+		}
+		WAG_bng_neutral_idea = {
+			picture = SOV_new_russian_world_idea
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.20 stability_factor = 0.05 }
+		}
 	}
 }

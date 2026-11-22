@@ -442,6 +442,13 @@ country_event = {
 			annex_country = { target = CAR transfer_troops = yes }
 		}
 		set_country_flag = WAG_rules_car
+		# keep the CAR-tree decision tabs visible after the tree switch
+		if = { limit = { has_completed_focus = WAG_car_transport_troops } set_country_flag = WAG_done_WAG_car_transport_troops }
+		if = { limit = { has_completed_focus = WAG_car_operation_aibolit } set_country_flag = WAG_done_WAG_car_operation_aibolit }
+		load_focus_tree = {
+			tree = WAG_bangui_focus_tree
+			keep_completed = yes
+		}
 	}
 
 	# Let Moscow choose the new leader

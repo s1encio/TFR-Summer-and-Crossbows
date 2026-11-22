@@ -26,7 +26,7 @@ WAG_car_war_category = {
 		original_tag = WAG
 	}
 	visible = {
-		has_completed_focus = WAG_car_operation_aibolit
+		OR = { has_completed_focus = WAG_car_operation_aibolit has_country_flag = WAG_done_WAG_car_operation_aibolit }
 	}
 	priority = 101
 }
@@ -37,7 +37,7 @@ WAG_airlift_category = {
 		original_tag = WAG
 	}
 	visible = {
-		has_completed_focus = WAG_car_transport_troops
+		OR = { has_completed_focus = WAG_car_transport_troops has_country_flag = WAG_done_WAG_car_transport_troops }
 	}
 	priority = 102
 }

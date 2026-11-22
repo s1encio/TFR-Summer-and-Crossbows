@@ -7,3 +7,12 @@ WAG_car_civil_war_over = {
 		CAR = { NOT = { has_war_with = CPC } }
 	}
 }
+
+# Bangui Administration tree: Wagner is not at war with any African country
+WAG_bng_no_african_war = {
+	NOT = {
+		any_enemy_country = {
+			capital_scope = { is_on_continent = africa }
+		}
+	}
+}

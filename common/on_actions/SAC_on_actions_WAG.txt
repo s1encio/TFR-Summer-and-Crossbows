@@ -17,6 +17,15 @@ on_actions = {
 	# Operation Aibolit coalition: dismantled once the war against the CPC is over
 	on_weekly_WAG = {
 		effect = {
+			# The Storm in Europe completes itself when the First European War begins
+			if = {
+				limit = {
+					has_focus_tree = WAG_bangui_focus_tree
+					has_global_flag = SOV_nato_war_begins_global
+					NOT = { has_completed_focus = WAG_bng_storm }
+				}
+				complete_national_focus = WAG_bng_storm
+			}
 			# Stabilise the Country completes itself once the CAR civil war is over
 			if = {
 				limit = {
