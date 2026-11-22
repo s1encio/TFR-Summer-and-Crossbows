@@ -403,6 +403,24 @@ country_event = {
 				add_stability = -0.10
 			}
 		}
+		# Back into the CSTO (Russia's faction) after the coup
+		if = {
+			limit = {
+				country_exists = SOV
+				SOV = { is_faction_leader = yes }
+				NOT = { is_in_faction_with = SOV }
+			}
+			if = {
+				limit = { is_faction_leader = yes }
+				dismantle_faction = yes
+			}
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
+			SOV = { add_to_faction = ROOT }
+			custom_effect_tooltip = sac_wag.31.csto_tt
+		}
 		country_event = { id = sac_wag.32 days = 2 }
 	}
 }
