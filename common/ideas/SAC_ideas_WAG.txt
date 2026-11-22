@@ -116,7 +116,7 @@ ideas = {
 		}
 
 		# CAR civil war stalemate: both sides fight badly so the war lasts until Wagner arrives
-		# Given at game start to CAR and CPC; CAR loses it when Operation Aibolit is completed.
+		# Given at game start to CAR and CPC; both lose it when Operation Aibolit is completed.
 		SAC_bush_war = {
 			picture = disorganized_army
 			allowed = { OR = { original_tag = CAR original_tag = CPC } }
