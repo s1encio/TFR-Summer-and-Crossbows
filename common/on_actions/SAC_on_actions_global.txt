@@ -19,4 +19,74 @@ on_actions = {
 			}
 		}
 	}
+
+	# CAR civil war: weaken both sides (SAC_bush_war) and give each a few poor militia divisions,
+	# so the war is still going when Wagner arrives
+	on_startup = {
+		effect = {
+			if = {
+				limit = { country_exists = CAR }
+				CAR = {
+					add_ideas = SAC_bush_war
+				division_template = {
+					name = "Militia Band"
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 1 y = 0 }
+					}
+				}
+					capital_scope = {
+					create_unit = {
+						division = "name = \"CAR Militia Band 1\" division_template = \"Militia Band\" start_experience_factor = 0 start_equipment_factor = 0.6"
+						owner = CAR
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"CAR Militia Band 2\" division_template = \"Militia Band\" start_experience_factor = 0 start_equipment_factor = 0.6"
+						owner = CAR
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"CAR Militia Band 3\" division_template = \"Militia Band\" start_experience_factor = 0 start_equipment_factor = 0.6"
+						owner = CAR
+						allow_spawning_on_enemy_provs = no
+					}
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = CPC }
+				CPC = {
+					add_ideas = SAC_bush_war
+				division_template = {
+					name = "Militia Band"
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 1 y = 0 }
+					}
+				}
+					random_owned_state = {
+						limit = { is_controlled_by = CPC }
+					create_unit = {
+						division = "name = \"CPC Militia Band 1\" division_template = \"Militia Band\" start_experience_factor = 0 start_equipment_factor = 0.6"
+						owner = CPC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"CPC Militia Band 2\" division_template = \"Militia Band\" start_experience_factor = 0 start_equipment_factor = 0.6"
+						owner = CPC
+						allow_spawning_on_enemy_provs = no
+					}
+					create_unit = {
+						division = "name = \"CPC Militia Band 3\" division_template = \"Militia Band\" start_experience_factor = 0 start_equipment_factor = 0.6"
+						owner = CPC
+						allow_spawning_on_enemy_provs = no
+					}
+					}
+				}
+			}
+		}
+	}
 }

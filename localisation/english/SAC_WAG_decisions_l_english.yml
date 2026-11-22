@@ -119,3 +119,5 @@
  WAG_african_contracts: "African Contracts"
  WAG_african_contracts_desc: "Every African government that turns to Russia is another contract for us: security, training, mining rights. The more friends Moscow has on the continent, the stronger we become.\n\nCountries with Russian influence above 50: §Y[?WAG_african_contracts_count|0]§!"
  WAG_african_contracts_tt: "Gain the §YAfrican Contracts§! modifier: §G+0.05§! political power per day for every African country where §YRussian influence§! is above §Y50§! (updated monthly)."
+ SAC_bush_war: "Bush War"
+ SAC_bush_war_desc: "There are no front lines in this war, only roads, villages and ambushes. Poorly trained, poorly paid and poorly supplied, neither side can land a decisive blow, and the fighting drags on from one rainy season to the next."
