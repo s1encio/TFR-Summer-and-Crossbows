@@ -39,7 +39,7 @@
  WAG_ew_repeat_desc: "Our grandfathers marched to Berlin. We have not forgotten how."
 
  WAG_ew_prisoners_tt: "Unlocks the §YPrisoner Recruitment§! decisions: recruit §YPrisoner Assault Battalions§! from every region of Russia."
- WAG_ew_foreign_tt: "Unlocks §YRecruit Legionnaires§! in the §YAfrica§! panel (Military tab): in African countries where §RRussian influence§! is §Y50§! or more, a light §YForeign Legionnaires§! division can be recruited in §YMolkino§!."
+ WAG_ew_foreign_tt: "Unlocks §YRecruit Legionnaires§! in the §YAfrica§! panel (Military tab): in African countries where §RRussian influence§! is §Y50§! or more, a light §YForeign Legionnaires§! division can be recruited in §YMolkino§!.\nAlso unlocks §YHire American Volunteers§!: one American volunteer division."
  WAG_ew_fpv_tt: "Unlocks the §YFPV Strike Drone Company§! support company and adds it to the §YPMC Wagner§! template."
  WAG_ew_sabotage_tt: "Unlocks the §YSabotage Behind Enemy Lines§! decisions: damage enemy military factories, civilian factories, air bases or air defence (£pol_power §Y50§!, cooldown §Y30 days§!)."
  WAG_ew_six_weeks_idea: "Six Weeks to the Front"
@@ -84,3 +84,7 @@
  WAG_sabotage_airbase_desc: "Damage an air base somewhere behind the lines of [FROM.GetNameDef]."
  WAG_sabotage_sam: "Sabotage An air defence site in [FROM.GetName]"
  WAG_sabotage_sam_desc: "Damage an air defence site somewhere behind the lines of [FROM.GetNameDef]."
+ WAG_foreign_legion_category: "Foreign Legionnaires"
+ WAG_foreign_legion_category_desc: "Volunteers from all over the world want to fight under our flag."
+ WAG_hire_american_volunteers: "Hire American Volunteers"
+ WAG_hire_american_volunteers_desc: "A group of American volunteers, veterans of their own army, has offered its services. One §YAmerican Volunteer Division§! with American equipment will arrive in Molkino. Only one such division can be hired."

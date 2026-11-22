@@ -55,3 +55,10 @@ WAG_sabotage_category = {
 	visible = { has_country_flag = WAG_sabotage_ops }
 	priority = 104
 }
+
+WAG_foreign_legion_category = {
+	icon = GFX_decision_category_military_operation
+	allowed = { original_tag = WAG }
+	visible = { has_country_flag = WAG_foreign_legion }
+	priority = 105
+}
