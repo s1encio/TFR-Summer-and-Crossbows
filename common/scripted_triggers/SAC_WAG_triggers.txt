@@ -8,10 +8,11 @@ WAG_car_civil_war_over = {
 	}
 }
 
-# Bangui Administration tree: Wagner is not at war with any African country
+# Bangui Administration tree: Wagner is not at war with any African country (a war with Chad is allowed)
 WAG_bng_no_african_war = {
 	NOT = {
 		any_enemy_country = {
+			NOT = { original_tag = CHA }
 			capital_scope = { is_on_continent = africa }
 		}
 	}
