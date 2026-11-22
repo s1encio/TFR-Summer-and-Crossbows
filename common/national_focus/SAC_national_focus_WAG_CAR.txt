@@ -15,7 +15,7 @@ focus_tree = {
 		icon = GFX_focus_WAG_car_transport_troops
 		x = 12
 		y = 0
-		cost = 5
+		cost = 1  # 7 days
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			custom_effect_tooltip = WAG_unlock_airlift_tt
