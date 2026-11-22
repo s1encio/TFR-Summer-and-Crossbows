@@ -28,7 +28,7 @@ focus_tree = {
 		relative_position_id = WAG_car_transport_troops
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_transport_troops }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -64,7 +64,7 @@ focus_tree = {
 		relative_position_id = WAG_car_operation_aibolit
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_operation_aibolit }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -80,7 +80,7 @@ focus_tree = {
 		relative_position_id = WAG_car_expand_wagner
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		available = { has_full_control_of_state = 1518 }
 		prerequisite = { focus = WAG_car_expand_wagner }
 		ai_will_do = { factor = 1 }
@@ -107,7 +107,7 @@ focus_tree = {
 		relative_position_id = WAG_car_lancet_drone
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		available = { has_full_control_of_state = 1518 }
 		prerequisite = { focus = WAG_car_lancet_drone }
 		ai_will_do = { factor = 1 }
@@ -135,7 +135,7 @@ focus_tree = {
 		relative_position_id = WAG_car_operation_aibolit
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_operation_aibolit }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -156,7 +156,7 @@ focus_tree = {
 		relative_position_id = WAG_car_strike_chad_logistics
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_strike_chad_logistics }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -177,7 +177,7 @@ focus_tree = {
 		relative_position_id = WAG_car_fortify_capital
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_fortify_capital }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -191,7 +191,7 @@ focus_tree = {
 		relative_position_id = WAG_car_operation_aibolit
 		x = 2
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_operation_aibolit }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -208,13 +208,35 @@ focus_tree = {
 		relative_position_id = WAG_car_train_local_soldiers
 		x = 0
 		y = 1
-		cost = 5
-		available = { country_exists = SUD }
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_train_local_soldiers }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			custom_effect_tooltip = WAG_ask_sudan_tt
-			SUD = { country_event = { id = sac_wag.10 days = 2 } }
+			# Sudanese volunteers join Wagner directly (no request to Sudan any more)
+			division_template = {
+				name = "Sudanese Volunteer Brigade"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			1518 = {
+				create_unit = {
+					division = "name = \"Sudanese Volunteer Brigade 1\" division_template = \"Sudanese Volunteer Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SUD\" } support_equipment_1 = { owner = \"SUD\" } }"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+				create_unit = {
+					division = "name = \"Sudanese Volunteer Brigade 2\" division_template = \"Sudanese Volunteer Brigade\" start_experience_factor = 0.4 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_2 = { owner = \"SUD\" } support_equipment_1 = { owner = \"SUD\" } }"
+					owner = ROOT
+					allow_spawning_on_enemy_provs = no
+				}
+			}
+			custom_effect_tooltip = WAG_sudan_volunteers_tt
 		}
 	}
 
@@ -224,7 +246,7 @@ focus_tree = {
 		relative_position_id = WAG_car_sudan_participation
 		x = 0
 		y = 1
-		cost = 5
+		cost = 3.58  # 25 days
 		prerequisite = { focus = WAG_car_sudan_participation }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -347,6 +369,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			add_political_power = 100
 			add_ideas = WAG_mining_concessions
 		}
 	}

@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/WAG_africa/africa_map.png"
 	}
 	SpriteType = {
+		name = "GFX_SAC_africa_panel_bg"
+		texturefile = "gfx/interface/WAG_africa/africa_panel_bg.png"
+	}
+	SpriteType = {
 		name = "GFX_SAC_africa_button"
 		texturefile = "gfx/interface/WAG_africa/africa_button.png"
 		noOfFrames = 3

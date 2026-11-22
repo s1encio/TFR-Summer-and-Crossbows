@@ -443,7 +443,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAG_bng_recruit
+		id = WAG_bng_mil_factories
 		icon = GFX_goal_unknown  # placeholder
 		x = 12
 		y = 2
@@ -457,7 +457,10 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_manpower = 10000
+			778 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+			}
 		}
 	}
 
@@ -468,7 +471,7 @@ focus_tree = {
 		y = 3
 		cost = 7
 		prerequisite = { focus = WAG_bng_general_staff }
-		prerequisite = { focus = WAG_bng_recruit }
+		prerequisite = { focus = WAG_bng_mil_factories }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = WAG_bng_no_war_tt
@@ -623,7 +626,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { country_exists = CHA }
-				create_wargoal = { type = annex_everything target = CHA }
+				create_wargoal = { type = puppet_wargoal_focus target = CHA }
 			}
 		}
 	}

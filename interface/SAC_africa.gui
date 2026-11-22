@@ -18,8 +18,8 @@ guiTypes = {
 		show_sound = menu_open_window
 		hide_sound = menu_close_window
 		clipping = no
-		background = { name = "SAC_africa_bg" quadTextureSprite = "GFX_tiled_bg" }
-		instantTextBoxType = { name = "SAC_africa_title" position = { x = 0 y = 16 } font = "Electro_20" text = "SAC_africa_title" maxWidth = 866 maxHeight = 28 format = centre }
+		background = { name = "SAC_africa_bg" spriteType = "GFX_SAC_africa_panel_bg" }
+		instantTextBoxType = { name = "SAC_africa_title" position = { x = 0 y = 16 } font = "VCR01_24_glow" text = "SAC_africa_title" maxWidth = 866 maxHeight = 30 format = centre }
 		buttonType = { name = "SAC_africa_close" position = { x = -44 y = 12 } spriteType = "GFX_NV_btn_close" clicksound = click_close pdx_tooltip = "CLOSE" orientation = UPPER_RIGHT }
 		iconType = { name = "SAC_africa_map" position = { x = 20 y = 56 } spriteType = "GFX_SAC_africa_map" }
 		# South Africa
@@ -1003,7 +1003,7 @@ guiTypes = {
 		iconType = { name = "cw_NG_859_3" position = { x = 84 y = 234 } quadTextureSprite = "GFX_SAC_cw_NG_859" frame = 4 pdx_tooltip = "SAC_cw_tt_859" }
 		iconType = { name = "cw_NG_859_4" position = { x = 84 y = 234 } quadTextureSprite = "GFX_SAC_cw_NG_859" frame = 5 pdx_tooltip = "SAC_cw_tt_859" }
 		iconType = { name = "cw_NG_859_5" position = { x = 84 y = 234 } quadTextureSprite = "GFX_SAC_cw_NG_859" frame = 6 pdx_tooltip = "SAC_cw_tt_859" }
-		instantTextBoxType = { name = "SAC_africa_cw_title" position = { x = 20 y = 66 } font = "Electro_20" text = "[SAC_africa_cw_title]" maxWidth = 518 maxHeight = 26 format = centre }
+		instantTextBoxType = { name = "SAC_africa_cw_title" position = { x = 20 y = 66 } font = "VCR02_16" text = "[SAC_africa_cw_title]" maxWidth = 518 maxHeight = 24 format = centre }
 		buttonType = { name = "SAC_africa_cw_back" position = { x = 28 y = 554 } quadTextureSprite = "GFX_SAC_africa_mode_btn" pdx_tooltip = "SAC_africa_cw_back_tt" clicksound = click_default }
 		instantTextBoxType = { name = "SAC_africa_cw_back_text" position = { x = 28 y = 560 } font = "VCR02_12" text = "SAC_africa_cw_back" maxWidth = 110 maxHeight = 18 format = centre alwaystransparent = yes }
 		iconType = { name = "SAC_africa_cleg_icon_0" position = { x = 20 y = 601 } quadTextureSprite = "GFX_SAC_africa_cw_legend" frame = 1 }
@@ -1019,9 +1019,9 @@ guiTypes = {
 		iconType = { name = "SAC_africa_cleg_icon_5" position = { x = 440 y = 601 } quadTextureSprite = "GFX_SAC_africa_cw_legend" frame = 6 }
 		instantTextBoxType = { name = "SAC_africa_cleg_text_5" position = { x = 460 y = 600 } font = "VCR02_12" text = "SAC_africa_cleg_opp" maxWidth = 90 maxHeight = 18 }
 		instantTextBoxType = { name = "SAC_africa_cw_hint" position = { x = 20 y = 626 } font = "VCR02_12" text = "SAC_africa_cw_hint" maxWidth = 518 maxHeight = 18 format = centre }
-		instantTextBoxType = { name = "SAC_africa_hint_select" position = { x = 556 y = 256 } font = "Electro_20" text = "SAC_africa_hint_select" maxWidth = 290 maxHeight = 60 format = centre }
+		instantTextBoxType = { name = "SAC_africa_hint_select" position = { x = 556 y = 256 } font = "VCR02_16" text = "SAC_africa_hint_select" maxWidth = 290 maxHeight = 60 format = centre }
 		iconType = { name = "SAC_africa_infobox" position = { x = 556 y = 56 } spriteType = "GFX_SAC_africa_infobox" }
-		instantTextBoxType = { name = "SAC_africa_sel_name_text" position = { x = 568 y = 66 } font = "Electro_20" text = "[SAC_africa_sel_name]" maxWidth = 266 maxHeight = 28 }
+		instantTextBoxType = { name = "SAC_africa_sel_name_text" position = { x = 568 y = 66 } font = "VCR01_24_glow" text = "[SAC_africa_sel_name]" maxWidth = 266 maxHeight = 30 }
 		instantTextBoxType = { name = "SAC_africa_sel_status_text" position = { x = 568 y = 98 } font = "VCR02_12" text = "[SAC_africa_sel_status]" maxWidth = 266 maxHeight = 18 }
 		instantTextBoxType = { name = "SAC_africa_sel_lead_text" position = { x = 568 y = 118 } font = "VCR02_12" text = "[SAC_africa_sel_lead]" maxWidth = 266 maxHeight = 18 }
 		instantTextBoxType = { name = "SAC_africa_sel_res_text" position = { x = 568 y = 212 } font = "VCR02_12" text = "[SAC_africa_sel_res]" maxWidth = 266 maxHeight = 36 }
@@ -1038,40 +1038,40 @@ guiTypes = {
 		instantTextBoxType = { name = "SAC_africa_sides_hint" position = { x = 565 y = 306 } font = "VCR02_12" text = "[SAC_africa_sup_hint]" maxWidth = 272 maxHeight = 18 }
 		gridboxType = { name = "SAC_africa_sides_grid" position = { x = 565 y = 328 } size = { width = 272 height = 320 } slotsize = { width = 272 height = 68 } max_slots_horizontal = 1 add_horizontal = no }
 		buttonType = { name = "SAC_africa_act_infra" position = { x = 565 y = 310 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_infra_tt" clicksound = click_default }
-		instantTextBoxType = { name = "SAC_africa_act_infra_title" position = { x = 577 y = 317 } font = "Electro_20" text = "SAC_africa_act_infra" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_infra_title" position = { x = 577 y = 317 } font = "VCR01_18_glow" text = "SAC_africa_act_infra" maxWidth = 250 maxHeight = 30 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_infra_cost" position = { x = 577 y = 338 } font = "VCR02_12" text = "[SAC_africa_cost_infra]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_infra_cdov" position = { x = 565 y = 310 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_act_infra_cdtxt" position = { x = 565 y = 325 } font = "Electro_20" text = "[SAC_africa_cdbig_infra]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_infra_cdtxt" position = { x = 565 y = 325 } font = "VCR02_16" text = "[SAC_africa_cdbig_infra]" maxWidth = 272 maxHeight = 22 format = centre alwaystransparent = yes }
 		buttonType = { name = "SAC_africa_act_civ" position = { x = 565 y = 370 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_civ_tt" clicksound = click_default }
-		instantTextBoxType = { name = "SAC_africa_act_civ_title" position = { x = 577 y = 377 } font = "Electro_20" text = "SAC_africa_act_civ" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_civ_title" position = { x = 577 y = 377 } font = "VCR01_18_glow" text = "SAC_africa_act_civ" maxWidth = 250 maxHeight = 30 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_civ_cost" position = { x = 577 y = 398 } font = "VCR02_12" text = "[SAC_africa_cost_civ]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_civ_cdov" position = { x = 565 y = 370 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_act_civ_cdtxt" position = { x = 565 y = 385 } font = "Electro_20" text = "[SAC_africa_cdbig_civ]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_civ_cdtxt" position = { x = 565 y = 385 } font = "VCR02_16" text = "[SAC_africa_cdbig_civ]" maxWidth = 272 maxHeight = 22 format = centre alwaystransparent = yes }
 		buttonType = { name = "SAC_africa_act_power" position = { x = 565 y = 430 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_power_tt" clicksound = click_default }
-		instantTextBoxType = { name = "SAC_africa_act_power_title" position = { x = 577 y = 437 } font = "Electro_20" text = "SAC_africa_act_power" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_power_title" position = { x = 577 y = 437 } font = "VCR01_18_glow" text = "SAC_africa_act_power" maxWidth = 250 maxHeight = 30 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_power_cost" position = { x = 577 y = 458 } font = "VCR02_12" text = "[SAC_africa_cost_power]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_power_cdov" position = { x = 565 y = 430 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_act_power_cdtxt" position = { x = 565 y = 445 } font = "Electro_20" text = "[SAC_africa_cdbig_power]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_power_cdtxt" position = { x = 565 y = 445 } font = "VCR02_16" text = "[SAC_africa_cdbig_power]" maxWidth = 272 maxHeight = 22 format = centre alwaystransparent = yes }
 		buttonType = { name = "SAC_africa_act_arms" position = { x = 565 y = 310 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_arms_tt" clicksound = click_default }
-		instantTextBoxType = { name = "SAC_africa_act_arms_title" position = { x = 577 y = 317 } font = "Electro_20" text = "SAC_africa_act_arms" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_arms_title" position = { x = 577 y = 317 } font = "VCR01_18_glow" text = "SAC_africa_act_arms" maxWidth = 250 maxHeight = 30 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_arms_cost" position = { x = 577 y = 338 } font = "VCR02_12" text = "[SAC_africa_cost_arms]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_arms_cdov" position = { x = 565 y = 310 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_act_arms_cdtxt" position = { x = 565 y = 325 } font = "Electro_20" text = "[SAC_africa_cdbig_arms]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_arms_cdtxt" position = { x = 565 y = 325 } font = "VCR02_16" text = "[SAC_africa_cdbig_arms]" maxWidth = 272 maxHeight = 22 format = centre alwaystransparent = yes }
 		buttonType = { name = "SAC_africa_act_base" position = { x = 565 y = 370 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_base_tt" clicksound = click_default }
-		instantTextBoxType = { name = "SAC_africa_act_base_title" position = { x = 577 y = 377 } font = "Electro_20" text = "SAC_africa_act_base" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_base_title" position = { x = 577 y = 377 } font = "VCR01_18_glow" text = "SAC_africa_act_base" maxWidth = 250 maxHeight = 30 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_base_cost" position = { x = 577 y = 398 } font = "VCR02_12" text = "[SAC_africa_cost_base]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_base_cdov" position = { x = 565 y = 370 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_act_base_cdtxt" position = { x = 565 y = 385 } font = "Electro_20" text = "[SAC_africa_cdbig_base]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_base_cdtxt" position = { x = 565 y = 385 } font = "VCR02_16" text = "[SAC_africa_cdbig_base]" maxWidth = 272 maxHeight = 22 format = centre alwaystransparent = yes }
 		buttonType = { name = "SAC_africa_act_mil" position = { x = 565 y = 430 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_mil_tt" clicksound = click_default }
-		instantTextBoxType = { name = "SAC_africa_act_mil_title" position = { x = 577 y = 437 } font = "Electro_20" text = "SAC_africa_act_mil" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_mil_title" position = { x = 577 y = 437 } font = "VCR01_18_glow" text = "SAC_africa_act_mil" maxWidth = 250 maxHeight = 30 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_mil_cost" position = { x = 577 y = 458 } font = "VCR02_12" text = "[SAC_africa_cost_mil]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_mil_cdov" position = { x = 565 y = 430 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_act_mil_cdtxt" position = { x = 565 y = 445 } font = "Electro_20" text = "[SAC_africa_cdbig_mil]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_mil_cdtxt" position = { x = 565 y = 445 } font = "VCR02_16" text = "[SAC_africa_cdbig_mil]" maxWidth = 272 maxHeight = 22 format = centre alwaystransparent = yes }
 		buttonType = { name = "SAC_africa_act_legion" position = { x = 565 y = 490 } quadTextureSprite = "GFX_SAC_africa_action" pdx_tooltip = "SAC_africa_act_legion_tt" clicksound = click_default }
-		instantTextBoxType = { name = "SAC_africa_act_legion_title" position = { x = 577 y = 497 } font = "Electro_20" text = "SAC_africa_act_legion" maxWidth = 250 maxHeight = 26 alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_legion_title" position = { x = 577 y = 497 } font = "VCR01_18_glow" text = "SAC_africa_act_legion" maxWidth = 250 maxHeight = 30 alwaystransparent = yes }
 		instantTextBoxType = { name = "SAC_africa_act_legion_cost" position = { x = 577 y = 518 } font = "VCR02_12" text = "[SAC_africa_cost_legion]" maxWidth = 250 maxHeight = 18 alwaystransparent = yes }
 		iconType = { name = "SAC_africa_act_legion_cdov" position = { x = 565 y = 490 } spriteType = "GFX_SAC_africa_cd_overlay" alwaystransparent = yes }
-		instantTextBoxType = { name = "SAC_africa_act_legion_cdtxt" position = { x = 565 y = 505 } font = "Electro_20" text = "[SAC_africa_cdbig_legion]" maxWidth = 272 maxHeight = 26 format = centre alwaystransparent = yes }
+		instantTextBoxType = { name = "SAC_africa_act_legion_cdtxt" position = { x = 565 y = 505 } font = "VCR02_16" text = "[SAC_africa_cdbig_legion]" maxWidth = 272 maxHeight = 22 format = centre alwaystransparent = yes }
 	}
 
 	containerWindowType = {

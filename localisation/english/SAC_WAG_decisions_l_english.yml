@@ -56,6 +56,7 @@
  WAG_expand_wagner_tt: "Two elite, fully equipped divisions, §YPMC Wagner 2§! and §YPMC Wagner 3§!, arrive at the Wagner Airbase."
  WAG_unlock_car_disinfo_tt: "Unlocks §YDisinformation in Central Africa§! and §YEncourage Rebel Defections§! in the §YInternet Research Agency§! decisions."
  WAG_ask_sudan_tt: "§YSudan§! will decide whether to send troops to support the Central African government."
+ WAG_sudan_volunteers_tt: "Two §YSudanese Volunteer Brigades§! with Sudanese equipment join us at the §YWagner Airbase§!."
  WAG_car_war_category: "War in the CAR"
  WAG_car_war_category_desc: "Wagner operations in the Central African Republic."
  WAG_car_airlift_supplies: "Airlift Supplies to Bangui"
