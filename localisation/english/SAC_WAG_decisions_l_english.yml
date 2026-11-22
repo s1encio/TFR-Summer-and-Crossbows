@@ -123,8 +123,10 @@
  WAG_airlift_category_desc: "Our transport planes connect the training base at Molkino with our airbase in the Central African Republic."
  WAG_airlift_to_car: "Airlift Troops to the CAR"
  WAG_airlift_to_car_desc: "Fly all our divisions in Molkino to the Wagner Airbase in the Central African Republic."
- WAG_airlift_to_car_tt: "All our divisions in §YMolkino§! are flown to the §YWagner Airbase§! in the Central African Republic.\n§gThey arrive fully equipped as veteran §YPMC Wagner§g divisions (custom templates become PMC Wagner).§!"
+ WAG_airlift_to_car_tt: "Every division we have standing in §YMolkino§! is flown to the §YWagner Airbase§! in the Central African Republic and arrives instantly, unchanged.
+§gTo send only some divisions, move just those to Molkino first.§!"
  WAG_airlift_to_molkino: "Airlift Troops to Molkino"
  WAG_airlift_to_molkino_desc: "Fly all our divisions at the Wagner Airbase back home to Molkino."
- WAG_airlift_to_molkino_tt: "All our divisions at the §YWagner Airbase§! are flown back to §YMolkino§!.\n§gThey arrive fully equipped as veteran §YPMC Wagner§g divisions (custom templates become PMC Wagner).§!"
+ WAG_airlift_to_molkino_tt: "Every division we have standing at the §YWagner Airbase§! is flown back to §YMolkino§! and arrives instantly, unchanged.
+§gTo send only some divisions, move just those to the airbase first.§!"
  WAG_unlock_airlift_tt: "Unlocks the §YAir Bridge to Bangui§! decisions: fly divisions between §YMolkino§! and the §YWagner Airbase§! in the CAR."
