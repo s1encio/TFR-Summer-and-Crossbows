@@ -317,11 +317,10 @@ focus_tree = {
 	focus = {
 		id = WAG_bng_russian_investors
 		icon = GFX_goal_unknown  # placeholder
-		x = 6
+		x = 7
 		y = 5
 		cost = 5
 		prerequisite = { focus = WAG_bng_free_zone }
-		mutually_exclusive = { focus = WAG_bng_chinese_credit }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = WAG_bng_no_war_tt
@@ -340,37 +339,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAG_bng_chinese_credit
-		icon = GFX_goal_unknown  # placeholder
-		x = 8
-		y = 5
-		cost = 5
-		prerequisite = { focus = WAG_bng_free_zone }
-		mutually_exclusive = { focus = WAG_bng_russian_investors }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = WAG_bng_no_war_tt
-				WAG_bng_no_african_war = yes
-			}
-		}
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			778 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
-			}
-			add_to_variable = { global.AFR_CF_PRC = 10 }
-			custom_effect_tooltip = WAG_bng_china_influence_tt
-		}
-	}
-
-	focus = {
 		id = WAG_bng_self_sufficient
 		icon = GFX_goal_unknown  # placeholder
 		x = 7
 		y = 6
 		cost = 7
-		prerequisite = { focus = WAG_bng_russian_investors focus = WAG_bng_chinese_credit }
+		prerequisite = { focus = WAG_bng_russian_investors }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = WAG_bng_no_war_tt

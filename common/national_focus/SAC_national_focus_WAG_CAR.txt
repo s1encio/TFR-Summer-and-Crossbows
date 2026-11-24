@@ -28,7 +28,7 @@ focus_tree = {
 		relative_position_id = WAG_car_transport_troops
 		x = 0
 		y = 1
-		cost = 3.58  # 25 days
+		cost = 1  # 7 days
 		prerequisite = { focus = WAG_car_transport_troops }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -371,6 +371,10 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_ideas = WAG_mining_concessions
+			if = {
+				limit = { country_exists = SOV }
+				SOV = { add_ideas = SAC_SOV_central_african_gold }
+			}
 		}
 	}
 

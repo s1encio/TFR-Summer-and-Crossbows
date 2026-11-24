@@ -93,6 +93,17 @@ ideas = {
 			}
 		}
 
+		# Russia's share of the CAR mines secured by Wagner (Secure the Mines)
+		SAC_SOV_central_african_gold = {
+			picture = generic_production_bonus
+			allowed = { original_tag = SOV }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_factory_max_efficiency_factor = 0.02
+			}
+		}
+
 		# Starting spirit: Wagner fought in Syria 2015-2017 (icon: placeholder for now)
 		WAG_veterans_of_syria = {
 			allowed = { original_tag = WAG }
