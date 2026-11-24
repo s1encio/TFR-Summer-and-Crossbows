@@ -242,6 +242,15 @@ ideas = {
 				heat_attrition_factor = -0.15
 			}
 		}
+		WAG_ew_drone_warfare_idea = {
+			picture = generic_army_support
+			allowed = { original_tag = WAG }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.10
+				breakthrough_factor = 0.05
+			}
+		}
 		WAG_we_can_repeat = {
 			picture = SOV_new_russian_world_idea
 			allowed = { original_tag = WAG }

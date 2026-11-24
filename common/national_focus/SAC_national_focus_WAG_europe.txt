@@ -317,14 +317,7 @@ focus_tree = {
 		prerequisite = { focus = WAG_ew_spotters }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_technology = { SAC_fpv_strike_drones = 1 }
-			add_units_to_division_template = {
-				template_name = "PMC Wagner"
-				support = {
-					SAC_fpv_company = 4
-				}
-			}
-			custom_effect_tooltip = WAG_ew_fpv_tt
+			add_ideas = WAG_ew_drone_warfare_idea
 		}
 	}
 
