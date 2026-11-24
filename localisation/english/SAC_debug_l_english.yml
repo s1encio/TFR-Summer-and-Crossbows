@@ -1,0 +1,12 @@
+﻿l_english:
+ sac_test.1.t: "Summer and Crossbows: Test Menu"
+ sac_test.1.d: "Debug options for testing. Pick one; open the menu again with the console command §Yevent sac_test.1§!.\n\nKremlin relations: §Y[?WAG_kremlin_rel|0]§!   Readiness: §Y[?WAG_mutiny_ready|0]§!   Suspicion: §R[?WAG_kremlin_susp|0]§!"
+ sac_test.1.a: "Kremlin relations 80 (favour)"
+ sac_test.1.b: "Kremlin relations 20 (distrust)"
+ sac_test.1.c: "Africa: unlock panel, Russia 35 in Algeria, 65 in Sudan, 85 in Mali, +500 PP"
+ sac_test.1.d: "Africa: USA is gone, split its influence"
+ sac_test.1.e: "Russia wins the European War"
+ sac_test.1.f: "Russia loses the European War"
+ sac_test.1.g: "Mutiny: readiness 100, suspicion 0"
+ sac_test.1.h: "Mutiny: suspicion 99"
+ sac_test.1.z: "Close"

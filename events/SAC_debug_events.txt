@@ -1,0 +1,65 @@
+add_namespace = sac_test
+
+# Test menu for Summer and Crossbows. Open it from the console while playing Wagner:  event sac_test.1
+# Never fires on its own.
+country_event = {
+	id = sac_test.1
+	title = sac_test.1.t
+	desc = sac_test.1.d
+	picture = GFX_SOV_kremlin_1
+	is_triggered_only = yes
+
+	option = {	# Kremlin relations 80
+		name = sac_test.1.a
+		if = { limit = { NOT = { has_country_flag = WAG_krel_init } } WAG_kremlin_init = yes }
+		set_variable = { WAG_kremlin_rel = 80 }
+		WAG_kremlin_update = yes
+	}
+	option = {	# Kremlin relations 20
+		name = sac_test.1.b
+		if = { limit = { NOT = { has_country_flag = WAG_krel_init } } WAG_kremlin_init = yes }
+		set_variable = { WAG_kremlin_rel = 20 }
+		WAG_kremlin_update = yes
+	}
+	option = {	# Africa panel: unlock + influence for the Russia slot
+		name = sac_test.1.c
+		set_global_flag = SAC_africa_unlocked
+		set_variable = { global.AFR_DZ_SOV = 35 }
+		set_variable = { global.AFR_SD_SOV = 65 }
+		set_variable = { global.AFR_ML_SOV = 85 }
+		SAC_africa_recalc = yes
+		SAC_africa_thresholds_SD = yes
+		SAC_africa_thresholds_ML = yes
+		add_political_power = 500
+	}
+	option = {	# USA gone: split its influence
+		name = sac_test.1.d
+		SAC_africa_usa_split = yes
+	}
+	option = {	# Russia wins the European War
+		name = sac_test.1.e
+		set_country_flag = WAG_rules_car
+		set_global_flag = SOV_first_nato_war_victory
+		country_event = { id = sac_wpw.40 }
+	}
+	option = {	# Russia loses the European War
+		name = sac_test.1.f
+		set_country_flag = WAG_rules_car
+		set_global_flag = nato_nato_won_nato_war
+		country_event = { id = sac_wpw.50 }
+	}
+	option = {	# Mutiny: readiness 100, suspicion 0
+		name = sac_test.1.g
+		set_country_flag = WAG_mutiny_prep
+		set_variable = { WAG_mutiny_ready = 100 }
+		set_variable = { WAG_kremlin_susp = 0 }
+	}
+	option = {	# Mutiny: suspicion 99 (Kremlin strikes at the next month)
+		name = sac_test.1.h
+		set_country_flag = WAG_mutiny_prep
+		set_variable = { WAG_kremlin_susp = 99 }
+	}
+	option = {	# Close
+		name = sac_test.1.z
+	}
+}
