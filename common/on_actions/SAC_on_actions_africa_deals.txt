@@ -1,0 +1,7 @@
+on_actions = {
+	on_monthly_WAG = { effect = { SAC_africa_monthly_deals = yes } }
+	on_monthly_SOV = { effect = { SAC_africa_monthly_deals = yes } }
+	on_monthly_PRC = { effect = { SAC_africa_monthly_deals = yes } }
+	on_monthly_FRA = { effect = { SAC_africa_monthly_deals = yes } }
+	on_monthly_USA = { effect = { SAC_africa_monthly_deals = yes } }
+}

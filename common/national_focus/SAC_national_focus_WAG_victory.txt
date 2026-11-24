@@ -43,6 +43,9 @@ focus_tree = {
 		prerequisite = { focus = WAG_vic_spoils }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = 10 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_plus_10
 			add_war_support = 0.10
 			add_political_power = 100
 		}
@@ -161,6 +164,9 @@ focus_tree = {
 		mutually_exclusive = { focus = WAG_vic_independent }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = 25 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_plus_25
 			add_ideas = WAG_vic_africa_corps_idea
 			add_political_power = 100
 			if = { limit = { is_subject = yes } add_autonomy_ratio = { value = -0.20 localization = WAG_bng_autonomy_loc } }
@@ -177,6 +183,9 @@ focus_tree = {
 		mutually_exclusive = { focus = WAG_vic_africa_corps }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = -25 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_minus_25
 			add_ideas = WAG_vic_independent_idea
 			set_country_flag = WAG_stayed_independent
 			if = { limit = { is_subject = yes } add_autonomy_ratio = { value = 0.25 localization = WAG_bng_autonomy_loc } }

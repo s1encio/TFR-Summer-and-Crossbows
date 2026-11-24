@@ -1,0 +1,10 @@
+WAG_kremlin_category = {
+	icon = GFX_decision_category_generic_propaganda
+	allowed = { original_tag = WAG }
+	visible = {
+		country_exists = SOV
+		NOT = { has_global_flag = WAG_mutiny_failed }
+		NOT = { has_global_flag = WAG_mutiny_won }
+	}
+	priority = 98
+}

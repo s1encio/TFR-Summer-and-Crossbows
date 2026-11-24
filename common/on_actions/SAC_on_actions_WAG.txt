@@ -11,6 +11,8 @@ on_actions = {
 				limit = { has_idea = WAG_private_military_company }
 				add_manpower = 300
 			}
+			# Kremlin relations: drift toward 50 and update the favour / distrust modifiers
+			WAG_kremlin_monthly = yes
 			# Mutiny preparations: Kremlin suspicion grows every month; at 100 the Kremlin strikes first
 			if = {
 				limit = {

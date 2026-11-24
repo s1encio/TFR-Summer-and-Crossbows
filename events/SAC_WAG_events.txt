@@ -442,6 +442,9 @@ country_event = {
 			annex_country = { target = CAR transfer_troops = yes }
 		}
 		set_country_flag = WAG_rules_car
+		set_temp_variable = { krel = -10 }
+		WAG_kremlin_add = yes
+		custom_effect_tooltip = WAG_krel_minus_10
 		# keep the CAR-tree decision tabs visible after the tree switch
 		if = { limit = { has_completed_focus = WAG_car_transport_troops } set_country_flag = WAG_done_WAG_car_transport_troops }
 		if = { limit = { has_completed_focus = WAG_car_operation_aibolit } set_country_flag = WAG_done_WAG_car_operation_aibolit }
@@ -467,6 +470,9 @@ country_event = {
 			}
 		}
 		set_country_flag = WAG_moscow_chose_car
+		set_temp_variable = { krel = 10 }
+		WAG_kremlin_add = yes
+		custom_effect_tooltip = WAG_krel_plus_10
 	}
 }
 

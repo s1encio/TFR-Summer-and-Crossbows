@@ -54,7 +54,7 @@
  WAG_vic_superpower_idea: "The Private Superpower"
  WAG_btr_bitter_idea: "Bitterness in the Ranks"
  WAG_btr_outcasts_idea: "Enemies of the Kremlin"
- WAG_btr_unlock_tt: "Unlocks the §YMarch of Justice§! decisions: raise §YReadiness§! for the mutiny while keeping §RKremlin suspicion§! below 100.\nSuspicion rises by §R3§! every month. If it reaches §R100§!, the Kremlin strikes first and the mutiny fails."
+ WAG_btr_unlock_tt: "Unlocks the §YMarch of Justice§! decisions: raise §YReadiness§! for the mutiny while keeping §RKremlin suspicion§! below 100.\nStarting suspicion is §Y(100 - Kremlin relations) / 2§!. Suspicion rises by §R3§! every month. If it reaches §R100§!, the Kremlin strikes first and the mutiny fails."
  WAG_btr_boys_home_tt: "All our divisions at the §YWagner Airbase§! are flown to §YMolkino§!."
  WAG_btr_march_avail_tt: "Mutiny §YReadiness§! is at least §Y50§!."
  WAG_mutiny_category: "The March of Justice"

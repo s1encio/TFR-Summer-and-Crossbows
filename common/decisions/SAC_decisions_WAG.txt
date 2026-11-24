@@ -472,6 +472,9 @@ WAG_ira_category = {
 		}
 
 		complete_effect = {
+			set_temp_variable = { krel = 3 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_plus_3
 			SOV = {
 				add_popularity = {
 					ideology = authoritarian_democrat

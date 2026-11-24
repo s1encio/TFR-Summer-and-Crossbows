@@ -1,0 +1,33 @@
+# ---------- Kremlin relations (WAG_kremlin_rel, 0-100) ----------
+# Usage: set_temp_variable = { krel = 10 } WAG_kremlin_add = yes   (negative values lower relations)
+WAG_kremlin_add = {
+	if = { limit = { NOT = { has_country_flag = WAG_krel_init } } WAG_kremlin_init = yes }
+	add_to_variable = { WAG_kremlin_rel = krel }
+	WAG_kremlin_update = yes
+}
+WAG_kremlin_init = {
+	set_country_flag = WAG_krel_init
+	set_variable = { WAG_kremlin_rel = 50 }
+}
+# Clamp, and switch the favour / distrust modifiers
+WAG_kremlin_update = {
+	clamp_variable = { var = WAG_kremlin_rel min = 0 max = 100 }
+	if = { limit = { check_variable = { WAG_kremlin_rel > 69 } NOT = { has_dynamic_modifier = { modifier = WAG_kremlin_favour } } } add_dynamic_modifier = { modifier = WAG_kremlin_favour } }
+	if = { limit = { check_variable = { WAG_kremlin_rel < 70 } has_dynamic_modifier = { modifier = WAG_kremlin_favour } } remove_dynamic_modifier = { modifier = WAG_kremlin_favour } }
+	if = { limit = { check_variable = { WAG_kremlin_rel < 30 } NOT = { has_dynamic_modifier = { modifier = WAG_kremlin_distrust } } } add_dynamic_modifier = { modifier = WAG_kremlin_distrust } }
+	if = { limit = { check_variable = { WAG_kremlin_rel > 29 } has_dynamic_modifier = { modifier = WAG_kremlin_distrust } } remove_dynamic_modifier = { modifier = WAG_kremlin_distrust } }
+}
+# Monthly: drift 1 point back toward 50; ends after the mutiny (either way)
+WAG_kremlin_monthly = {
+	if = { limit = { NOT = { has_country_flag = WAG_krel_init } } WAG_kremlin_init = yes }
+	if = {
+		limit = { OR = { has_global_flag = WAG_mutiny_failed has_global_flag = WAG_mutiny_won } }
+		if = { limit = { has_dynamic_modifier = { modifier = WAG_kremlin_favour } } remove_dynamic_modifier = { modifier = WAG_kremlin_favour } }
+		if = { limit = { has_dynamic_modifier = { modifier = WAG_kremlin_distrust } } remove_dynamic_modifier = { modifier = WAG_kremlin_distrust } }
+	}
+	else = {
+		if = { limit = { check_variable = { WAG_kremlin_rel > 50 } } subtract_from_variable = { WAG_kremlin_rel = 1 } }
+		else_if = { limit = { check_variable = { WAG_kremlin_rel < 50 } } add_to_variable = { WAG_kremlin_rel = 1 } }
+		WAG_kremlin_update = yes
+	}
+}

@@ -4,3 +4,18 @@ WAG_african_contracts = {
 	enable = { always = yes }
 	political_power_gain = WAG_african_contracts_pp
 }
+
+# Kremlin relations 70+: Moscow trusts us
+WAG_kremlin_favour = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_political_support
+	political_power_gain = 0.15
+	production_speed_buildings_factor = 0.05
+}
+# Kremlin relations below 30: Moscow distrusts us
+WAG_kremlin_distrust = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_political_support
+	political_power_gain = -0.15
+	stability_factor = -0.05
+}

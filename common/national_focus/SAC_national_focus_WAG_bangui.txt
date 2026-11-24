@@ -537,6 +537,9 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = 5 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_plus_5
 			add_political_power = 50
 		}
 	}
@@ -557,6 +560,9 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = 10 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_plus_10
 			add_ideas = WAG_bng_prove_worth_idea
 			if = { limit = { is_subject = yes } add_autonomy_ratio = { value = 0.15 localization = WAG_bng_autonomy_loc } }
 		}
@@ -578,6 +584,9 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = -10 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_minus_10
 			add_political_power = -50
 			if = { limit = { is_subject = yes } add_autonomy_ratio = { value = 0.25 localization = WAG_bng_autonomy_loc } }
 		}
@@ -638,6 +647,9 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = -5 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_minus_5
 			add_political_power = 75
 			add_war_support = 0.05
 		}
@@ -659,6 +671,9 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			set_temp_variable = { krel = -5 }
+			WAG_kremlin_add = yes
+			custom_effect_tooltip = WAG_krel_minus_5
 			add_command_power = 50
 			set_country_flag = WAG_army_friends
 			custom_effect_tooltip = WAG_bng_army_friends_tt

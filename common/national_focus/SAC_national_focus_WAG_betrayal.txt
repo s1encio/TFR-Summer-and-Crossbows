@@ -47,7 +47,10 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = WAG_mutiny_prep
 			set_variable = { WAG_mutiny_ready = 0 }
-			set_variable = { WAG_kremlin_susp = 10 }
+			if = { limit = { NOT = { has_country_flag = WAG_krel_init } } WAG_kremlin_init = yes }
+			set_variable = { WAG_kremlin_susp = 100 }
+			subtract_from_variable = { WAG_kremlin_susp = WAG_kremlin_rel }
+			divide_variable = { WAG_kremlin_susp = 2 }
 			if = { limit = { has_country_flag = WAG_army_friends } add_to_variable = { WAG_mutiny_ready = 10 } }
 			custom_effect_tooltip = WAG_btr_unlock_tt
 		}
