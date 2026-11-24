@@ -1,0 +1,60 @@
+# Wagner post-war effects (Summer and Crossbows)
+
+# Keep the mutiny bars between 0 and 100
+WAG_mutiny_clamp = {
+	clamp_variable = { var = WAG_mutiny_ready min = 0 max = 100 }
+	clamp_variable = { var = WAG_kremlin_susp min = 0 max = 100 }
+}
+
+# Make peace with whoever Wagner is still fighting in Europe once Russia's war is over
+WAG_end_european_war = {
+	every_country = {
+		limit = {
+			has_war_with = ROOT
+			capital_scope = { is_on_continent = europe }
+		}
+		ROOT = { white_peace = PREV }
+	}
+}
+
+# The March of Justice succeeded: Wagner takes Russia
+WAG_mutiny_success_effects = {
+	set_global_flag = WAG_mutiny_won
+	custom_effect_tooltip = WAG_mutiny_success_tt
+	if = {
+		limit = { country_exists = SOV }
+		# TFR's own "Prigozhin wins" event: Russia gets TFR's Wagner focus tree
+		SOV = { country_event = { id = russia.446 } }
+		# the player now plays Russia
+		SOV = { change_tag_from = ROOT }
+		# Wagner merges into Russia and the CAR becomes a puppet (one day later, after the switch)
+		SOV = { country_event = { id = sac_wpw.63 days = 1 } }
+	}
+}
+
+# The March of Justice failed (or the Kremlin struck first)
+WAG_mutiny_failure_effects = {
+	set_global_flag = WAG_mutiny_failed
+	custom_effect_tooltip = WAG_mutiny_failure_tt
+	# our men in Molkino escape to the CAR before the base is handed over
+	if = {
+		limit = { 1503 = { is_owned_by = ROOT } }
+		1503 = { teleport_armies = { limit = { tag = ROOT } to_state = 1518 } }
+		if = { limit = { country_exists = SOV } SOV = { transfer_state = 1503 } }
+	}
+	if = {
+		limit = { owns_state = 778 }
+		set_capital = { state = 778 }
+	}
+	if = { limit = { has_idea = WAG_bng_spb_hq_idea } remove_ideas = WAG_bng_spb_hq_idea }
+	clr_country_flag = WAG_has_spb_hq
+	if = {
+		limit = { country_exists = SOV is_subject_of = SOV }
+		SOV = { end_puppet = ROOT }
+	}
+	if = {
+		limit = { is_in_faction = yes is_faction_leader = no }
+		leave_faction = yes
+	}
+	add_ideas = WAG_btr_outcasts_idea
+}

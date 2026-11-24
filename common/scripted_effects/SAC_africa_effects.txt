@@ -773,350 +773,350 @@ SAC_africa_usa_split = {
 
 # Add temp variable afr_gain to the acting power (ROOT) in a country, capped at 100
 SAC_africa_gain_AO = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_AO_SOV value = afr_gain } clamp_variable = { var = global.AFR_AO_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_AO_SOV value = afr_gain } clamp_variable = { var = global.AFR_AO_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_AO_PRC value = afr_gain } clamp_variable = { var = global.AFR_AO_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_AO_EUR value = afr_gain } clamp_variable = { var = global.AFR_AO_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_AO_USA value = afr_gain } clamp_variable = { var = global.AFR_AO_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_BF = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_BF_SOV value = afr_gain } clamp_variable = { var = global.AFR_BF_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_BF_SOV value = afr_gain } clamp_variable = { var = global.AFR_BF_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_BF_PRC value = afr_gain } clamp_variable = { var = global.AFR_BF_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_BF_EUR value = afr_gain } clamp_variable = { var = global.AFR_BF_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_BF_USA value = afr_gain } clamp_variable = { var = global.AFR_BF_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_BI = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_BI_SOV value = afr_gain } clamp_variable = { var = global.AFR_BI_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_BI_SOV value = afr_gain } clamp_variable = { var = global.AFR_BI_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_BI_PRC value = afr_gain } clamp_variable = { var = global.AFR_BI_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_BI_EUR value = afr_gain } clamp_variable = { var = global.AFR_BI_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_BI_USA value = afr_gain } clamp_variable = { var = global.AFR_BI_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_BJ = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_BJ_SOV value = afr_gain } clamp_variable = { var = global.AFR_BJ_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_BJ_SOV value = afr_gain } clamp_variable = { var = global.AFR_BJ_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_BJ_PRC value = afr_gain } clamp_variable = { var = global.AFR_BJ_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_BJ_EUR value = afr_gain } clamp_variable = { var = global.AFR_BJ_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_BJ_USA value = afr_gain } clamp_variable = { var = global.AFR_BJ_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_BW = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_BW_SOV value = afr_gain } clamp_variable = { var = global.AFR_BW_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_BW_SOV value = afr_gain } clamp_variable = { var = global.AFR_BW_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_BW_PRC value = afr_gain } clamp_variable = { var = global.AFR_BW_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_BW_EUR value = afr_gain } clamp_variable = { var = global.AFR_BW_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_BW_USA value = afr_gain } clamp_variable = { var = global.AFR_BW_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_CD = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_CD_SOV value = afr_gain } clamp_variable = { var = global.AFR_CD_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_CD_SOV value = afr_gain } clamp_variable = { var = global.AFR_CD_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_CD_PRC value = afr_gain } clamp_variable = { var = global.AFR_CD_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_CD_EUR value = afr_gain } clamp_variable = { var = global.AFR_CD_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_CD_USA value = afr_gain } clamp_variable = { var = global.AFR_CD_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_CF = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_CF_SOV value = afr_gain } clamp_variable = { var = global.AFR_CF_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_CF_SOV value = afr_gain } clamp_variable = { var = global.AFR_CF_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_CF_PRC value = afr_gain } clamp_variable = { var = global.AFR_CF_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_CF_EUR value = afr_gain } clamp_variable = { var = global.AFR_CF_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_CF_USA value = afr_gain } clamp_variable = { var = global.AFR_CF_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_CG = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_CG_SOV value = afr_gain } clamp_variable = { var = global.AFR_CG_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_CG_SOV value = afr_gain } clamp_variable = { var = global.AFR_CG_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_CG_PRC value = afr_gain } clamp_variable = { var = global.AFR_CG_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_CG_EUR value = afr_gain } clamp_variable = { var = global.AFR_CG_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_CG_USA value = afr_gain } clamp_variable = { var = global.AFR_CG_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_CI = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_CI_SOV value = afr_gain } clamp_variable = { var = global.AFR_CI_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_CI_SOV value = afr_gain } clamp_variable = { var = global.AFR_CI_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_CI_PRC value = afr_gain } clamp_variable = { var = global.AFR_CI_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_CI_EUR value = afr_gain } clamp_variable = { var = global.AFR_CI_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_CI_USA value = afr_gain } clamp_variable = { var = global.AFR_CI_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_CM = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_CM_SOV value = afr_gain } clamp_variable = { var = global.AFR_CM_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_CM_SOV value = afr_gain } clamp_variable = { var = global.AFR_CM_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_CM_PRC value = afr_gain } clamp_variable = { var = global.AFR_CM_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_CM_EUR value = afr_gain } clamp_variable = { var = global.AFR_CM_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_CM_USA value = afr_gain } clamp_variable = { var = global.AFR_CM_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_DJ = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_DJ_SOV value = afr_gain } clamp_variable = { var = global.AFR_DJ_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_DJ_SOV value = afr_gain } clamp_variable = { var = global.AFR_DJ_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_DJ_PRC value = afr_gain } clamp_variable = { var = global.AFR_DJ_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_DJ_EUR value = afr_gain } clamp_variable = { var = global.AFR_DJ_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_DJ_USA value = afr_gain } clamp_variable = { var = global.AFR_DJ_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_DZ = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_DZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_DZ_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_DZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_DZ_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_DZ_PRC value = afr_gain } clamp_variable = { var = global.AFR_DZ_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_DZ_EUR value = afr_gain } clamp_variable = { var = global.AFR_DZ_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_DZ_USA value = afr_gain } clamp_variable = { var = global.AFR_DZ_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_EG = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_EG_SOV value = afr_gain } clamp_variable = { var = global.AFR_EG_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_EG_SOV value = afr_gain } clamp_variable = { var = global.AFR_EG_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_EG_PRC value = afr_gain } clamp_variable = { var = global.AFR_EG_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_EG_EUR value = afr_gain } clamp_variable = { var = global.AFR_EG_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_EG_USA value = afr_gain } clamp_variable = { var = global.AFR_EG_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_EH = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_EH_SOV value = afr_gain } clamp_variable = { var = global.AFR_EH_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_EH_SOV value = afr_gain } clamp_variable = { var = global.AFR_EH_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_EH_PRC value = afr_gain } clamp_variable = { var = global.AFR_EH_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_EH_EUR value = afr_gain } clamp_variable = { var = global.AFR_EH_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_EH_USA value = afr_gain } clamp_variable = { var = global.AFR_EH_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_ER = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_ER_SOV value = afr_gain } clamp_variable = { var = global.AFR_ER_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_ER_SOV value = afr_gain } clamp_variable = { var = global.AFR_ER_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_ER_PRC value = afr_gain } clamp_variable = { var = global.AFR_ER_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_ER_EUR value = afr_gain } clamp_variable = { var = global.AFR_ER_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_ER_USA value = afr_gain } clamp_variable = { var = global.AFR_ER_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_ET = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_ET_SOV value = afr_gain } clamp_variable = { var = global.AFR_ET_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_ET_SOV value = afr_gain } clamp_variable = { var = global.AFR_ET_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_ET_PRC value = afr_gain } clamp_variable = { var = global.AFR_ET_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_ET_EUR value = afr_gain } clamp_variable = { var = global.AFR_ET_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_ET_USA value = afr_gain } clamp_variable = { var = global.AFR_ET_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_GA = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_GA_SOV value = afr_gain } clamp_variable = { var = global.AFR_GA_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_GA_SOV value = afr_gain } clamp_variable = { var = global.AFR_GA_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_GA_PRC value = afr_gain } clamp_variable = { var = global.AFR_GA_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_GA_EUR value = afr_gain } clamp_variable = { var = global.AFR_GA_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_GA_USA value = afr_gain } clamp_variable = { var = global.AFR_GA_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_GH = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_GH_SOV value = afr_gain } clamp_variable = { var = global.AFR_GH_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_GH_SOV value = afr_gain } clamp_variable = { var = global.AFR_GH_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_GH_PRC value = afr_gain } clamp_variable = { var = global.AFR_GH_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_GH_EUR value = afr_gain } clamp_variable = { var = global.AFR_GH_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_GH_USA value = afr_gain } clamp_variable = { var = global.AFR_GH_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_GM = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_GM_SOV value = afr_gain } clamp_variable = { var = global.AFR_GM_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_GM_SOV value = afr_gain } clamp_variable = { var = global.AFR_GM_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_GM_PRC value = afr_gain } clamp_variable = { var = global.AFR_GM_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_GM_EUR value = afr_gain } clamp_variable = { var = global.AFR_GM_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_GM_USA value = afr_gain } clamp_variable = { var = global.AFR_GM_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_GN = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_GN_SOV value = afr_gain } clamp_variable = { var = global.AFR_GN_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_GN_SOV value = afr_gain } clamp_variable = { var = global.AFR_GN_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_GN_PRC value = afr_gain } clamp_variable = { var = global.AFR_GN_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_GN_EUR value = afr_gain } clamp_variable = { var = global.AFR_GN_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_GN_USA value = afr_gain } clamp_variable = { var = global.AFR_GN_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_GQ = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_GQ_SOV value = afr_gain } clamp_variable = { var = global.AFR_GQ_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_GQ_SOV value = afr_gain } clamp_variable = { var = global.AFR_GQ_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_GQ_PRC value = afr_gain } clamp_variable = { var = global.AFR_GQ_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_GQ_EUR value = afr_gain } clamp_variable = { var = global.AFR_GQ_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_GQ_USA value = afr_gain } clamp_variable = { var = global.AFR_GQ_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_GW = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_GW_SOV value = afr_gain } clamp_variable = { var = global.AFR_GW_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_GW_SOV value = afr_gain } clamp_variable = { var = global.AFR_GW_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_GW_PRC value = afr_gain } clamp_variable = { var = global.AFR_GW_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_GW_EUR value = afr_gain } clamp_variable = { var = global.AFR_GW_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_GW_USA value = afr_gain } clamp_variable = { var = global.AFR_GW_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_KE = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_KE_SOV value = afr_gain } clamp_variable = { var = global.AFR_KE_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_KE_SOV value = afr_gain } clamp_variable = { var = global.AFR_KE_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_KE_PRC value = afr_gain } clamp_variable = { var = global.AFR_KE_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_KE_EUR value = afr_gain } clamp_variable = { var = global.AFR_KE_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_KE_USA value = afr_gain } clamp_variable = { var = global.AFR_KE_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_LR = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_LR_SOV value = afr_gain } clamp_variable = { var = global.AFR_LR_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_LR_SOV value = afr_gain } clamp_variable = { var = global.AFR_LR_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_LR_PRC value = afr_gain } clamp_variable = { var = global.AFR_LR_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_LR_EUR value = afr_gain } clamp_variable = { var = global.AFR_LR_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_LR_USA value = afr_gain } clamp_variable = { var = global.AFR_LR_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_LS = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_LS_SOV value = afr_gain } clamp_variable = { var = global.AFR_LS_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_LS_SOV value = afr_gain } clamp_variable = { var = global.AFR_LS_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_LS_PRC value = afr_gain } clamp_variable = { var = global.AFR_LS_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_LS_EUR value = afr_gain } clamp_variable = { var = global.AFR_LS_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_LS_USA value = afr_gain } clamp_variable = { var = global.AFR_LS_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_LY = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_LY_SOV value = afr_gain } clamp_variable = { var = global.AFR_LY_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_LY_SOV value = afr_gain } clamp_variable = { var = global.AFR_LY_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_LY_PRC value = afr_gain } clamp_variable = { var = global.AFR_LY_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_LY_EUR value = afr_gain } clamp_variable = { var = global.AFR_LY_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_LY_USA value = afr_gain } clamp_variable = { var = global.AFR_LY_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_MA = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_MA_SOV value = afr_gain } clamp_variable = { var = global.AFR_MA_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_MA_SOV value = afr_gain } clamp_variable = { var = global.AFR_MA_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_MA_PRC value = afr_gain } clamp_variable = { var = global.AFR_MA_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_MA_EUR value = afr_gain } clamp_variable = { var = global.AFR_MA_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_MA_USA value = afr_gain } clamp_variable = { var = global.AFR_MA_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_MG = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_MG_SOV value = afr_gain } clamp_variable = { var = global.AFR_MG_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_MG_SOV value = afr_gain } clamp_variable = { var = global.AFR_MG_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_MG_PRC value = afr_gain } clamp_variable = { var = global.AFR_MG_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_MG_EUR value = afr_gain } clamp_variable = { var = global.AFR_MG_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_MG_USA value = afr_gain } clamp_variable = { var = global.AFR_MG_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_ML = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_ML_SOV value = afr_gain } clamp_variable = { var = global.AFR_ML_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_ML_SOV value = afr_gain } clamp_variable = { var = global.AFR_ML_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_ML_PRC value = afr_gain } clamp_variable = { var = global.AFR_ML_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_ML_EUR value = afr_gain } clamp_variable = { var = global.AFR_ML_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_ML_USA value = afr_gain } clamp_variable = { var = global.AFR_ML_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_MR = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_MR_SOV value = afr_gain } clamp_variable = { var = global.AFR_MR_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_MR_SOV value = afr_gain } clamp_variable = { var = global.AFR_MR_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_MR_PRC value = afr_gain } clamp_variable = { var = global.AFR_MR_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_MR_EUR value = afr_gain } clamp_variable = { var = global.AFR_MR_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_MR_USA value = afr_gain } clamp_variable = { var = global.AFR_MR_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_MW = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_MW_SOV value = afr_gain } clamp_variable = { var = global.AFR_MW_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_MW_SOV value = afr_gain } clamp_variable = { var = global.AFR_MW_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_MW_PRC value = afr_gain } clamp_variable = { var = global.AFR_MW_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_MW_EUR value = afr_gain } clamp_variable = { var = global.AFR_MW_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_MW_USA value = afr_gain } clamp_variable = { var = global.AFR_MW_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_MZ = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_MZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_MZ_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_MZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_MZ_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_MZ_PRC value = afr_gain } clamp_variable = { var = global.AFR_MZ_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_MZ_EUR value = afr_gain } clamp_variable = { var = global.AFR_MZ_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_MZ_USA value = afr_gain } clamp_variable = { var = global.AFR_MZ_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_NA = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_NA_SOV value = afr_gain } clamp_variable = { var = global.AFR_NA_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_NA_SOV value = afr_gain } clamp_variable = { var = global.AFR_NA_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_NA_PRC value = afr_gain } clamp_variable = { var = global.AFR_NA_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_NA_EUR value = afr_gain } clamp_variable = { var = global.AFR_NA_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_NA_USA value = afr_gain } clamp_variable = { var = global.AFR_NA_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_NE = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_NE_SOV value = afr_gain } clamp_variable = { var = global.AFR_NE_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_NE_SOV value = afr_gain } clamp_variable = { var = global.AFR_NE_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_NE_PRC value = afr_gain } clamp_variable = { var = global.AFR_NE_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_NE_EUR value = afr_gain } clamp_variable = { var = global.AFR_NE_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_NE_USA value = afr_gain } clamp_variable = { var = global.AFR_NE_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_NG = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_NG_SOV value = afr_gain } clamp_variable = { var = global.AFR_NG_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_NG_SOV value = afr_gain } clamp_variable = { var = global.AFR_NG_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_NG_PRC value = afr_gain } clamp_variable = { var = global.AFR_NG_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_NG_EUR value = afr_gain } clamp_variable = { var = global.AFR_NG_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_NG_USA value = afr_gain } clamp_variable = { var = global.AFR_NG_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_RW = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_RW_SOV value = afr_gain } clamp_variable = { var = global.AFR_RW_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_RW_SOV value = afr_gain } clamp_variable = { var = global.AFR_RW_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_RW_PRC value = afr_gain } clamp_variable = { var = global.AFR_RW_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_RW_EUR value = afr_gain } clamp_variable = { var = global.AFR_RW_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_RW_USA value = afr_gain } clamp_variable = { var = global.AFR_RW_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_SD = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_SD_SOV value = afr_gain } clamp_variable = { var = global.AFR_SD_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_SD_SOV value = afr_gain } clamp_variable = { var = global.AFR_SD_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_SD_PRC value = afr_gain } clamp_variable = { var = global.AFR_SD_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_SD_EUR value = afr_gain } clamp_variable = { var = global.AFR_SD_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_SD_USA value = afr_gain } clamp_variable = { var = global.AFR_SD_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_SL = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_SL_SOV value = afr_gain } clamp_variable = { var = global.AFR_SL_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_SL_SOV value = afr_gain } clamp_variable = { var = global.AFR_SL_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_SL_PRC value = afr_gain } clamp_variable = { var = global.AFR_SL_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_SL_EUR value = afr_gain } clamp_variable = { var = global.AFR_SL_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_SL_USA value = afr_gain } clamp_variable = { var = global.AFR_SL_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_SN = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_SN_SOV value = afr_gain } clamp_variable = { var = global.AFR_SN_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_SN_SOV value = afr_gain } clamp_variable = { var = global.AFR_SN_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_SN_PRC value = afr_gain } clamp_variable = { var = global.AFR_SN_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_SN_EUR value = afr_gain } clamp_variable = { var = global.AFR_SN_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_SN_USA value = afr_gain } clamp_variable = { var = global.AFR_SN_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_SO = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_SO_SOV value = afr_gain } clamp_variable = { var = global.AFR_SO_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_SO_SOV value = afr_gain } clamp_variable = { var = global.AFR_SO_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_SO_PRC value = afr_gain } clamp_variable = { var = global.AFR_SO_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_SO_EUR value = afr_gain } clamp_variable = { var = global.AFR_SO_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_SO_USA value = afr_gain } clamp_variable = { var = global.AFR_SO_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_SS = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_SS_SOV value = afr_gain } clamp_variable = { var = global.AFR_SS_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_SS_SOV value = afr_gain } clamp_variable = { var = global.AFR_SS_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_SS_PRC value = afr_gain } clamp_variable = { var = global.AFR_SS_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_SS_EUR value = afr_gain } clamp_variable = { var = global.AFR_SS_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_SS_USA value = afr_gain } clamp_variable = { var = global.AFR_SS_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_SZ = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_SZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_SZ_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_SZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_SZ_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_SZ_PRC value = afr_gain } clamp_variable = { var = global.AFR_SZ_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_SZ_EUR value = afr_gain } clamp_variable = { var = global.AFR_SZ_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_SZ_USA value = afr_gain } clamp_variable = { var = global.AFR_SZ_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_TD = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_TD_SOV value = afr_gain } clamp_variable = { var = global.AFR_TD_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_TD_SOV value = afr_gain } clamp_variable = { var = global.AFR_TD_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_TD_PRC value = afr_gain } clamp_variable = { var = global.AFR_TD_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_TD_EUR value = afr_gain } clamp_variable = { var = global.AFR_TD_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_TD_USA value = afr_gain } clamp_variable = { var = global.AFR_TD_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_TG = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_TG_SOV value = afr_gain } clamp_variable = { var = global.AFR_TG_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_TG_SOV value = afr_gain } clamp_variable = { var = global.AFR_TG_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_TG_PRC value = afr_gain } clamp_variable = { var = global.AFR_TG_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_TG_EUR value = afr_gain } clamp_variable = { var = global.AFR_TG_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_TG_USA value = afr_gain } clamp_variable = { var = global.AFR_TG_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_TN = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_TN_SOV value = afr_gain } clamp_variable = { var = global.AFR_TN_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_TN_SOV value = afr_gain } clamp_variable = { var = global.AFR_TN_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_TN_PRC value = afr_gain } clamp_variable = { var = global.AFR_TN_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_TN_EUR value = afr_gain } clamp_variable = { var = global.AFR_TN_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_TN_USA value = afr_gain } clamp_variable = { var = global.AFR_TN_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_TZ = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_TZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_TZ_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_TZ_SOV value = afr_gain } clamp_variable = { var = global.AFR_TZ_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_TZ_PRC value = afr_gain } clamp_variable = { var = global.AFR_TZ_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_TZ_EUR value = afr_gain } clamp_variable = { var = global.AFR_TZ_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_TZ_USA value = afr_gain } clamp_variable = { var = global.AFR_TZ_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_UG = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_UG_SOV value = afr_gain } clamp_variable = { var = global.AFR_UG_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_UG_SOV value = afr_gain } clamp_variable = { var = global.AFR_UG_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_UG_PRC value = afr_gain } clamp_variable = { var = global.AFR_UG_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_UG_EUR value = afr_gain } clamp_variable = { var = global.AFR_UG_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_UG_USA value = afr_gain } clamp_variable = { var = global.AFR_UG_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_ZA = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_ZA_SOV value = afr_gain } clamp_variable = { var = global.AFR_ZA_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_ZA_SOV value = afr_gain } clamp_variable = { var = global.AFR_ZA_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_ZA_PRC value = afr_gain } clamp_variable = { var = global.AFR_ZA_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_ZA_EUR value = afr_gain } clamp_variable = { var = global.AFR_ZA_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_ZA_USA value = afr_gain } clamp_variable = { var = global.AFR_ZA_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_ZM = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_ZM_SOV value = afr_gain } clamp_variable = { var = global.AFR_ZM_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_ZM_SOV value = afr_gain } clamp_variable = { var = global.AFR_ZM_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_ZM_PRC value = afr_gain } clamp_variable = { var = global.AFR_ZM_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_ZM_EUR value = afr_gain } clamp_variable = { var = global.AFR_ZM_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_ZM_USA value = afr_gain } clamp_variable = { var = global.AFR_ZM_USA min = 0 max = 100 } }
 	SAC_africa_recalc = yes
 }
 SAC_africa_gain_ZW = {
-	if = { limit = { OR = { tag = SOV tag = WAG } } add_to_variable = { var = global.AFR_ZW_SOV value = afr_gain } clamp_variable = { var = global.AFR_ZW_SOV min = 0 max = 100 } }
+	if = { limit = { OR = { tag = WAG AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } } } } add_to_variable = { var = global.AFR_ZW_SOV value = afr_gain } clamp_variable = { var = global.AFR_ZW_SOV min = 0 max = 100 } }
 	if = { limit = { OR = { tag = PRC } } add_to_variable = { var = global.AFR_ZW_PRC value = afr_gain } clamp_variable = { var = global.AFR_ZW_PRC min = 0 max = 100 } }
 	if = { limit = { OR = { tag = FRA } } add_to_variable = { var = global.AFR_ZW_EUR value = afr_gain } clamp_variable = { var = global.AFR_ZW_EUR min = 0 max = 100 } }
 	if = { limit = { OR = { tag = USA } } add_to_variable = { var = global.AFR_ZW_USA value = afr_gain } clamp_variable = { var = global.AFR_ZW_USA min = 0 max = 100 } }

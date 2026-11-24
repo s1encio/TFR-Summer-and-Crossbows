@@ -5,6 +5,7 @@ WAG_moscow_arms_category = {
 	}
 	visible = {
 		OR = { has_completed_focus = WAG_organise_weapon_supply has_country_flag = WAG_done_WAG_organise_weapon_supply }
+		NOT = { has_global_flag = WAG_mutiny_failed }	# Moscow cut all ties after the failed mutiny
 	}
 	priority = 100
 }

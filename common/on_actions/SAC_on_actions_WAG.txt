@@ -11,12 +11,44 @@ on_actions = {
 				limit = { has_idea = WAG_private_military_company }
 				add_manpower = 300
 			}
+			# Mutiny preparations: Kremlin suspicion grows every month; at 100 the Kremlin strikes first
+			if = {
+				limit = {
+					has_country_flag = WAG_mutiny_prep
+					NOT = { has_country_flag = WAG_mutiny_done }
+				}
+				add_to_variable = { WAG_kremlin_susp = 3 }
+				WAG_mutiny_clamp = yes
+				if = {
+					limit = { check_variable = { WAG_kremlin_susp > 99 } }
+					country_event = { id = sac_wpw.64 }
+				}
+			}
 		}
 	}
 
 	# Operation Aibolit coalition: dismantled once the war against the CPC is over
 	on_weekly_WAG = {
 		effect = {
+			# The First European War is over: victory or defeat tree (only once Wagner rules the CAR)
+			if = {
+				limit = {
+					has_country_flag = WAG_rules_car
+					NOT = { has_country_flag = WAG_postwar_tree }
+					OR = {
+						has_global_flag = SOV_first_nato_war_victory
+						has_global_flag = nato_nato_won_nato_war
+					}
+				}
+				set_country_flag = WAG_postwar_tree
+				if = {
+					limit = { has_global_flag = SOV_first_nato_war_victory }
+					country_event = { id = sac_wpw.40 days = 1 }
+				}
+				else = {
+					country_event = { id = sac_wpw.50 days = 1 }
+				}
+			}
 			# The Storm in Europe completes itself when the First European War begins
 			if = {
 				limit = {

@@ -3,7 +3,7 @@ SAC_can_see_africa_panel = {
 	has_global_flag = SAC_africa_unlocked
 	OR = {
 		tag = WAG
-		tag = SOV
+		AND = { tag = SOV NOT = { has_global_flag = WAG_mutiny_failed } }
 		tag = PRC
 		tag = FRA
 		tag = USA

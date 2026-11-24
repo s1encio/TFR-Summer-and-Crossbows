@@ -28,300 +28,350 @@ guiTypes = {
 		buttonType = { name = "afr_ZA_2" position = { x = 273 y = 487 } quadTextureSprite = "GFX_SAC_africa_ZA_2" pdx_tooltip = "SAC_africa_ZA_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZA_3" position = { x = 273 y = 487 } quadTextureSprite = "GFX_SAC_africa_ZA_3" pdx_tooltip = "SAC_africa_ZA_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZA_4" position = { x = 273 y = 487 } quadTextureSprite = "GFX_SAC_africa_ZA_4" pdx_tooltip = "SAC_africa_ZA_tt" clicksound = click_default }
+		buttonType = { name = "afr_ZA_5" position = { x = 273 y = 487 } quadTextureSprite = "GFX_SAC_africa_ZA_5" pdx_tooltip = "SAC_africa_ZA_tt" clicksound = click_default }
 		# Algeria
 		buttonType = { name = "afr_DZ_0" position = { x = 92 y = 60 } quadTextureSprite = "GFX_SAC_africa_DZ_0" pdx_tooltip = "SAC_africa_DZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DZ_1" position = { x = 92 y = 60 } quadTextureSprite = "GFX_SAC_africa_DZ_1" pdx_tooltip = "SAC_africa_DZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DZ_2" position = { x = 92 y = 60 } quadTextureSprite = "GFX_SAC_africa_DZ_2" pdx_tooltip = "SAC_africa_DZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DZ_3" position = { x = 92 y = 60 } quadTextureSprite = "GFX_SAC_africa_DZ_3" pdx_tooltip = "SAC_africa_DZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DZ_4" position = { x = 92 y = 60 } quadTextureSprite = "GFX_SAC_africa_DZ_4" pdx_tooltip = "SAC_africa_DZ_tt" clicksound = click_default }
+		buttonType = { name = "afr_DZ_5" position = { x = 92 y = 60 } quadTextureSprite = "GFX_SAC_africa_DZ_5" pdx_tooltip = "SAC_africa_DZ_tt" clicksound = click_default }
 		# DR Congo
 		buttonType = { name = "afr_CD_0" position = { x = 242 y = 289 } quadTextureSprite = "GFX_SAC_africa_CD_0" pdx_tooltip = "SAC_africa_CD_tt" clicksound = click_default }
 		buttonType = { name = "afr_CD_1" position = { x = 242 y = 289 } quadTextureSprite = "GFX_SAC_africa_CD_1" pdx_tooltip = "SAC_africa_CD_tt" clicksound = click_default }
 		buttonType = { name = "afr_CD_2" position = { x = 242 y = 289 } quadTextureSprite = "GFX_SAC_africa_CD_2" pdx_tooltip = "SAC_africa_CD_tt" clicksound = click_default }
 		buttonType = { name = "afr_CD_3" position = { x = 242 y = 289 } quadTextureSprite = "GFX_SAC_africa_CD_3" pdx_tooltip = "SAC_africa_CD_tt" clicksound = click_default }
 		buttonType = { name = "afr_CD_4" position = { x = 242 y = 289 } quadTextureSprite = "GFX_SAC_africa_CD_4" pdx_tooltip = "SAC_africa_CD_tt" clicksound = click_default }
+		buttonType = { name = "afr_CD_5" position = { x = 242 y = 289 } quadTextureSprite = "GFX_SAC_africa_CD_5" pdx_tooltip = "SAC_africa_CD_tt" clicksound = click_default }
 		# Mali
 		buttonType = { name = "afr_ML_0" position = { x = 66 y = 147 } quadTextureSprite = "GFX_SAC_africa_ML_0" pdx_tooltip = "SAC_africa_ML_tt" clicksound = click_default }
 		buttonType = { name = "afr_ML_1" position = { x = 66 y = 147 } quadTextureSprite = "GFX_SAC_africa_ML_1" pdx_tooltip = "SAC_africa_ML_tt" clicksound = click_default }
 		buttonType = { name = "afr_ML_2" position = { x = 66 y = 147 } quadTextureSprite = "GFX_SAC_africa_ML_2" pdx_tooltip = "SAC_africa_ML_tt" clicksound = click_default }
 		buttonType = { name = "afr_ML_3" position = { x = 66 y = 147 } quadTextureSprite = "GFX_SAC_africa_ML_3" pdx_tooltip = "SAC_africa_ML_tt" clicksound = click_default }
 		buttonType = { name = "afr_ML_4" position = { x = 66 y = 147 } quadTextureSprite = "GFX_SAC_africa_ML_4" pdx_tooltip = "SAC_africa_ML_tt" clicksound = click_default }
+		buttonType = { name = "afr_ML_5" position = { x = 66 y = 147 } quadTextureSprite = "GFX_SAC_africa_ML_5" pdx_tooltip = "SAC_africa_ML_tt" clicksound = click_default }
 		# Morocco
 		buttonType = { name = "afr_MA_0" position = { x = 32 y = 68 } quadTextureSprite = "GFX_SAC_africa_MA_0" pdx_tooltip = "SAC_africa_MA_tt" clicksound = click_default }
 		buttonType = { name = "afr_MA_1" position = { x = 32 y = 68 } quadTextureSprite = "GFX_SAC_africa_MA_1" pdx_tooltip = "SAC_africa_MA_tt" clicksound = click_default }
 		buttonType = { name = "afr_MA_2" position = { x = 32 y = 68 } quadTextureSprite = "GFX_SAC_africa_MA_2" pdx_tooltip = "SAC_africa_MA_tt" clicksound = click_default }
 		buttonType = { name = "afr_MA_3" position = { x = 32 y = 68 } quadTextureSprite = "GFX_SAC_africa_MA_3" pdx_tooltip = "SAC_africa_MA_tt" clicksound = click_default }
 		buttonType = { name = "afr_MA_4" position = { x = 32 y = 68 } quadTextureSprite = "GFX_SAC_africa_MA_4" pdx_tooltip = "SAC_africa_MA_tt" clicksound = click_default }
+		buttonType = { name = "afr_MA_5" position = { x = 32 y = 68 } quadTextureSprite = "GFX_SAC_africa_MA_5" pdx_tooltip = "SAC_africa_MA_tt" clicksound = click_default }
 		# Sudan
 		buttonType = { name = "afr_SD_0" position = { x = 311 y = 167 } quadTextureSprite = "GFX_SAC_africa_SD_0" pdx_tooltip = "SAC_africa_SD_tt" clicksound = click_default }
 		buttonType = { name = "afr_SD_1" position = { x = 311 y = 167 } quadTextureSprite = "GFX_SAC_africa_SD_1" pdx_tooltip = "SAC_africa_SD_tt" clicksound = click_default }
 		buttonType = { name = "afr_SD_2" position = { x = 311 y = 167 } quadTextureSprite = "GFX_SAC_africa_SD_2" pdx_tooltip = "SAC_africa_SD_tt" clicksound = click_default }
 		buttonType = { name = "afr_SD_3" position = { x = 311 y = 167 } quadTextureSprite = "GFX_SAC_africa_SD_3" pdx_tooltip = "SAC_africa_SD_tt" clicksound = click_default }
 		buttonType = { name = "afr_SD_4" position = { x = 311 y = 167 } quadTextureSprite = "GFX_SAC_africa_SD_4" pdx_tooltip = "SAC_africa_SD_tt" clicksound = click_default }
+		buttonType = { name = "afr_SD_5" position = { x = 311 y = 167 } quadTextureSprite = "GFX_SAC_africa_SD_5" pdx_tooltip = "SAC_africa_SD_tt" clicksound = click_default }
 		# Libya
 		buttonType = { name = "afr_LY_0" position = { x = 221 y = 88 } quadTextureSprite = "GFX_SAC_africa_LY_0" pdx_tooltip = "SAC_africa_LY_tt" clicksound = click_default }
 		buttonType = { name = "afr_LY_1" position = { x = 221 y = 88 } quadTextureSprite = "GFX_SAC_africa_LY_1" pdx_tooltip = "SAC_africa_LY_tt" clicksound = click_default }
 		buttonType = { name = "afr_LY_2" position = { x = 221 y = 88 } quadTextureSprite = "GFX_SAC_africa_LY_2" pdx_tooltip = "SAC_africa_LY_tt" clicksound = click_default }
 		buttonType = { name = "afr_LY_3" position = { x = 221 y = 88 } quadTextureSprite = "GFX_SAC_africa_LY_3" pdx_tooltip = "SAC_africa_LY_tt" clicksound = click_default }
 		buttonType = { name = "afr_LY_4" position = { x = 221 y = 88 } quadTextureSprite = "GFX_SAC_africa_LY_4" pdx_tooltip = "SAC_africa_LY_tt" clicksound = click_default }
+		buttonType = { name = "afr_LY_5" position = { x = 221 y = 88 } quadTextureSprite = "GFX_SAC_africa_LY_5" pdx_tooltip = "SAC_africa_LY_tt" clicksound = click_default }
 		# Niger
 		buttonType = { name = "afr_NE_0" position = { x = 155 y = 158 } quadTextureSprite = "GFX_SAC_africa_NE_0" pdx_tooltip = "SAC_africa_NE_tt" clicksound = click_default }
 		buttonType = { name = "afr_NE_1" position = { x = 155 y = 158 } quadTextureSprite = "GFX_SAC_africa_NE_1" pdx_tooltip = "SAC_africa_NE_tt" clicksound = click_default }
 		buttonType = { name = "afr_NE_2" position = { x = 155 y = 158 } quadTextureSprite = "GFX_SAC_africa_NE_2" pdx_tooltip = "SAC_africa_NE_tt" clicksound = click_default }
 		buttonType = { name = "afr_NE_3" position = { x = 155 y = 158 } quadTextureSprite = "GFX_SAC_africa_NE_3" pdx_tooltip = "SAC_africa_NE_tt" clicksound = click_default }
 		buttonType = { name = "afr_NE_4" position = { x = 155 y = 158 } quadTextureSprite = "GFX_SAC_africa_NE_4" pdx_tooltip = "SAC_africa_NE_tt" clicksound = click_default }
+		buttonType = { name = "afr_NE_5" position = { x = 155 y = 158 } quadTextureSprite = "GFX_SAC_africa_NE_5" pdx_tooltip = "SAC_africa_NE_tt" clicksound = click_default }
 		# Mozambique
 		buttonType = { name = "afr_MZ_0" position = { x = 372 y = 402 } quadTextureSprite = "GFX_SAC_africa_MZ_0" pdx_tooltip = "SAC_africa_MZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_MZ_1" position = { x = 372 y = 402 } quadTextureSprite = "GFX_SAC_africa_MZ_1" pdx_tooltip = "SAC_africa_MZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_MZ_2" position = { x = 372 y = 402 } quadTextureSprite = "GFX_SAC_africa_MZ_2" pdx_tooltip = "SAC_africa_MZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_MZ_3" position = { x = 372 y = 402 } quadTextureSprite = "GFX_SAC_africa_MZ_3" pdx_tooltip = "SAC_africa_MZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_MZ_4" position = { x = 372 y = 402 } quadTextureSprite = "GFX_SAC_africa_MZ_4" pdx_tooltip = "SAC_africa_MZ_tt" clicksound = click_default }
+		buttonType = { name = "afr_MZ_5" position = { x = 372 y = 402 } quadTextureSprite = "GFX_SAC_africa_MZ_5" pdx_tooltip = "SAC_africa_MZ_tt" clicksound = click_default }
 		# Ethiopia
 		buttonType = { name = "afr_ET_0" position = { x = 392 y = 220 } quadTextureSprite = "GFX_SAC_africa_ET_0" pdx_tooltip = "SAC_africa_ET_tt" clicksound = click_default }
 		buttonType = { name = "afr_ET_1" position = { x = 392 y = 220 } quadTextureSprite = "GFX_SAC_africa_ET_1" pdx_tooltip = "SAC_africa_ET_tt" clicksound = click_default }
 		buttonType = { name = "afr_ET_2" position = { x = 392 y = 220 } quadTextureSprite = "GFX_SAC_africa_ET_2" pdx_tooltip = "SAC_africa_ET_tt" clicksound = click_default }
 		buttonType = { name = "afr_ET_3" position = { x = 392 y = 220 } quadTextureSprite = "GFX_SAC_africa_ET_3" pdx_tooltip = "SAC_africa_ET_tt" clicksound = click_default }
 		buttonType = { name = "afr_ET_4" position = { x = 392 y = 220 } quadTextureSprite = "GFX_SAC_africa_ET_4" pdx_tooltip = "SAC_africa_ET_tt" clicksound = click_default }
+		buttonType = { name = "afr_ET_5" position = { x = 392 y = 220 } quadTextureSprite = "GFX_SAC_africa_ET_5" pdx_tooltip = "SAC_africa_ET_tt" clicksound = click_default }
 		# Chad
 		buttonType = { name = "afr_TD_0" position = { x = 251 y = 158 } quadTextureSprite = "GFX_SAC_africa_TD_0" pdx_tooltip = "SAC_africa_TD_tt" clicksound = click_default }
 		buttonType = { name = "afr_TD_1" position = { x = 251 y = 158 } quadTextureSprite = "GFX_SAC_africa_TD_1" pdx_tooltip = "SAC_africa_TD_tt" clicksound = click_default }
 		buttonType = { name = "afr_TD_2" position = { x = 251 y = 158 } quadTextureSprite = "GFX_SAC_africa_TD_2" pdx_tooltip = "SAC_africa_TD_tt" clicksound = click_default }
 		buttonType = { name = "afr_TD_3" position = { x = 251 y = 158 } quadTextureSprite = "GFX_SAC_africa_TD_3" pdx_tooltip = "SAC_africa_TD_tt" clicksound = click_default }
 		buttonType = { name = "afr_TD_4" position = { x = 251 y = 158 } quadTextureSprite = "GFX_SAC_africa_TD_4" pdx_tooltip = "SAC_africa_TD_tt" clicksound = click_default }
+		buttonType = { name = "afr_TD_5" position = { x = 251 y = 158 } quadTextureSprite = "GFX_SAC_africa_TD_5" pdx_tooltip = "SAC_africa_TD_tt" clicksound = click_default }
 		# Angola
 		buttonType = { name = "afr_AO_0" position = { x = 239 y = 359 } quadTextureSprite = "GFX_SAC_africa_AO_0" pdx_tooltip = "SAC_africa_AO_tt" clicksound = click_default }
 		buttonType = { name = "afr_AO_1" position = { x = 239 y = 359 } quadTextureSprite = "GFX_SAC_africa_AO_1" pdx_tooltip = "SAC_africa_AO_tt" clicksound = click_default }
 		buttonType = { name = "afr_AO_2" position = { x = 239 y = 359 } quadTextureSprite = "GFX_SAC_africa_AO_2" pdx_tooltip = "SAC_africa_AO_tt" clicksound = click_default }
 		buttonType = { name = "afr_AO_3" position = { x = 239 y = 359 } quadTextureSprite = "GFX_SAC_africa_AO_3" pdx_tooltip = "SAC_africa_AO_tt" clicksound = click_default }
 		buttonType = { name = "afr_AO_4" position = { x = 239 y = 359 } quadTextureSprite = "GFX_SAC_africa_AO_4" pdx_tooltip = "SAC_africa_AO_tt" clicksound = click_default }
+		buttonType = { name = "afr_AO_5" position = { x = 239 y = 359 } quadTextureSprite = "GFX_SAC_africa_AO_5" pdx_tooltip = "SAC_africa_AO_tt" clicksound = click_default }
 		# Namibia
 		buttonType = { name = "afr_NA_0" position = { x = 239 y = 449 } quadTextureSprite = "GFX_SAC_africa_NA_0" pdx_tooltip = "SAC_africa_NA_tt" clicksound = click_default }
 		buttonType = { name = "afr_NA_1" position = { x = 239 y = 449 } quadTextureSprite = "GFX_SAC_africa_NA_1" pdx_tooltip = "SAC_africa_NA_tt" clicksound = click_default }
 		buttonType = { name = "afr_NA_2" position = { x = 239 y = 449 } quadTextureSprite = "GFX_SAC_africa_NA_2" pdx_tooltip = "SAC_africa_NA_tt" clicksound = click_default }
 		buttonType = { name = "afr_NA_3" position = { x = 239 y = 449 } quadTextureSprite = "GFX_SAC_africa_NA_3" pdx_tooltip = "SAC_africa_NA_tt" clicksound = click_default }
 		buttonType = { name = "afr_NA_4" position = { x = 239 y = 449 } quadTextureSprite = "GFX_SAC_africa_NA_4" pdx_tooltip = "SAC_africa_NA_tt" clicksound = click_default }
+		buttonType = { name = "afr_NA_5" position = { x = 239 y = 449 } quadTextureSprite = "GFX_SAC_africa_NA_5" pdx_tooltip = "SAC_africa_NA_tt" clicksound = click_default }
 		# Mauritania
 		buttonType = { name = "afr_MR_0" position = { x = 31 y = 131 } quadTextureSprite = "GFX_SAC_africa_MR_0" pdx_tooltip = "SAC_africa_MR_tt" clicksound = click_default }
 		buttonType = { name = "afr_MR_1" position = { x = 31 y = 131 } quadTextureSprite = "GFX_SAC_africa_MR_1" pdx_tooltip = "SAC_africa_MR_tt" clicksound = click_default }
 		buttonType = { name = "afr_MR_2" position = { x = 31 y = 131 } quadTextureSprite = "GFX_SAC_africa_MR_2" pdx_tooltip = "SAC_africa_MR_tt" clicksound = click_default }
 		buttonType = { name = "afr_MR_3" position = { x = 31 y = 131 } quadTextureSprite = "GFX_SAC_africa_MR_3" pdx_tooltip = "SAC_africa_MR_tt" clicksound = click_default }
 		buttonType = { name = "afr_MR_4" position = { x = 31 y = 131 } quadTextureSprite = "GFX_SAC_africa_MR_4" pdx_tooltip = "SAC_africa_MR_tt" clicksound = click_default }
+		buttonType = { name = "afr_MR_5" position = { x = 31 y = 131 } quadTextureSprite = "GFX_SAC_africa_MR_5" pdx_tooltip = "SAC_africa_MR_tt" clicksound = click_default }
 		# Somalia
 		buttonType = { name = "afr_SO_0" position = { x = 449 y = 241 } quadTextureSprite = "GFX_SAC_africa_SO_0" pdx_tooltip = "SAC_africa_SO_tt" clicksound = click_default }
 		buttonType = { name = "afr_SO_1" position = { x = 449 y = 241 } quadTextureSprite = "GFX_SAC_africa_SO_1" pdx_tooltip = "SAC_africa_SO_tt" clicksound = click_default }
 		buttonType = { name = "afr_SO_2" position = { x = 449 y = 241 } quadTextureSprite = "GFX_SAC_africa_SO_2" pdx_tooltip = "SAC_africa_SO_tt" clicksound = click_default }
 		buttonType = { name = "afr_SO_3" position = { x = 449 y = 241 } quadTextureSprite = "GFX_SAC_africa_SO_3" pdx_tooltip = "SAC_africa_SO_tt" clicksound = click_default }
 		buttonType = { name = "afr_SO_4" position = { x = 449 y = 241 } quadTextureSprite = "GFX_SAC_africa_SO_4" pdx_tooltip = "SAC_africa_SO_tt" clicksound = click_default }
+		buttonType = { name = "afr_SO_5" position = { x = 449 y = 241 } quadTextureSprite = "GFX_SAC_africa_SO_5" pdx_tooltip = "SAC_africa_SO_tt" clicksound = click_default }
 		# Tanzania
 		buttonType = { name = "afr_TZ_0" position = { x = 365 y = 334 } quadTextureSprite = "GFX_SAC_africa_TZ_0" pdx_tooltip = "SAC_africa_TZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_TZ_1" position = { x = 365 y = 334 } quadTextureSprite = "GFX_SAC_africa_TZ_1" pdx_tooltip = "SAC_africa_TZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_TZ_2" position = { x = 365 y = 334 } quadTextureSprite = "GFX_SAC_africa_TZ_2" pdx_tooltip = "SAC_africa_TZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_TZ_3" position = { x = 365 y = 334 } quadTextureSprite = "GFX_SAC_africa_TZ_3" pdx_tooltip = "SAC_africa_TZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_TZ_4" position = { x = 365 y = 334 } quadTextureSprite = "GFX_SAC_africa_TZ_4" pdx_tooltip = "SAC_africa_TZ_tt" clicksound = click_default }
+		buttonType = { name = "afr_TZ_5" position = { x = 365 y = 334 } quadTextureSprite = "GFX_SAC_africa_TZ_5" pdx_tooltip = "SAC_africa_TZ_tt" clicksound = click_default }
 		# Egypt
 		buttonType = { name = "afr_EG_0" position = { x = 332 y = 99 } quadTextureSprite = "GFX_SAC_africa_EG_0" pdx_tooltip = "SAC_africa_EG_tt" clicksound = click_default }
 		buttonType = { name = "afr_EG_1" position = { x = 332 y = 99 } quadTextureSprite = "GFX_SAC_africa_EG_1" pdx_tooltip = "SAC_africa_EG_tt" clicksound = click_default }
 		buttonType = { name = "afr_EG_2" position = { x = 332 y = 99 } quadTextureSprite = "GFX_SAC_africa_EG_2" pdx_tooltip = "SAC_africa_EG_tt" clicksound = click_default }
 		buttonType = { name = "afr_EG_3" position = { x = 332 y = 99 } quadTextureSprite = "GFX_SAC_africa_EG_3" pdx_tooltip = "SAC_africa_EG_tt" clicksound = click_default }
 		buttonType = { name = "afr_EG_4" position = { x = 332 y = 99 } quadTextureSprite = "GFX_SAC_africa_EG_4" pdx_tooltip = "SAC_africa_EG_tt" clicksound = click_default }
+		buttonType = { name = "afr_EG_5" position = { x = 332 y = 99 } quadTextureSprite = "GFX_SAC_africa_EG_5" pdx_tooltip = "SAC_africa_EG_tt" clicksound = click_default }
 		# Zambia
 		buttonType = { name = "afr_ZM_0" position = { x = 313 y = 386 } quadTextureSprite = "GFX_SAC_africa_ZM_0" pdx_tooltip = "SAC_africa_ZM_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZM_1" position = { x = 313 y = 386 } quadTextureSprite = "GFX_SAC_africa_ZM_1" pdx_tooltip = "SAC_africa_ZM_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZM_2" position = { x = 313 y = 386 } quadTextureSprite = "GFX_SAC_africa_ZM_2" pdx_tooltip = "SAC_africa_ZM_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZM_3" position = { x = 313 y = 386 } quadTextureSprite = "GFX_SAC_africa_ZM_3" pdx_tooltip = "SAC_africa_ZM_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZM_4" position = { x = 313 y = 386 } quadTextureSprite = "GFX_SAC_africa_ZM_4" pdx_tooltip = "SAC_africa_ZM_tt" clicksound = click_default }
+		buttonType = { name = "afr_ZM_5" position = { x = 313 y = 386 } quadTextureSprite = "GFX_SAC_africa_ZM_5" pdx_tooltip = "SAC_africa_ZM_tt" clicksound = click_default }
 		# Central African Republic
 		buttonType = { name = "afr_CF_0" position = { x = 258 y = 248 } quadTextureSprite = "GFX_SAC_africa_CF_0" pdx_tooltip = "SAC_africa_CF_tt" clicksound = click_default }
 		buttonType = { name = "afr_CF_1" position = { x = 258 y = 248 } quadTextureSprite = "GFX_SAC_africa_CF_1" pdx_tooltip = "SAC_africa_CF_tt" clicksound = click_default }
 		buttonType = { name = "afr_CF_2" position = { x = 258 y = 248 } quadTextureSprite = "GFX_SAC_africa_CF_2" pdx_tooltip = "SAC_africa_CF_tt" clicksound = click_default }
 		buttonType = { name = "afr_CF_3" position = { x = 258 y = 248 } quadTextureSprite = "GFX_SAC_africa_CF_3" pdx_tooltip = "SAC_africa_CF_tt" clicksound = click_default }
 		buttonType = { name = "afr_CF_4" position = { x = 258 y = 248 } quadTextureSprite = "GFX_SAC_africa_CF_4" pdx_tooltip = "SAC_africa_CF_tt" clicksound = click_default }
+		buttonType = { name = "afr_CF_5" position = { x = 258 y = 248 } quadTextureSprite = "GFX_SAC_africa_CF_5" pdx_tooltip = "SAC_africa_CF_tt" clicksound = click_default }
 		# Nigeria
 		buttonType = { name = "afr_NG_0" position = { x = 174 y = 227 } quadTextureSprite = "GFX_SAC_africa_NG_0" pdx_tooltip = "SAC_africa_NG_tt" clicksound = click_default }
 		buttonType = { name = "afr_NG_1" position = { x = 174 y = 227 } quadTextureSprite = "GFX_SAC_africa_NG_1" pdx_tooltip = "SAC_africa_NG_tt" clicksound = click_default }
 		buttonType = { name = "afr_NG_2" position = { x = 174 y = 227 } quadTextureSprite = "GFX_SAC_africa_NG_2" pdx_tooltip = "SAC_africa_NG_tt" clicksound = click_default }
 		buttonType = { name = "afr_NG_3" position = { x = 174 y = 227 } quadTextureSprite = "GFX_SAC_africa_NG_3" pdx_tooltip = "SAC_africa_NG_tt" clicksound = click_default }
 		buttonType = { name = "afr_NG_4" position = { x = 174 y = 227 } quadTextureSprite = "GFX_SAC_africa_NG_4" pdx_tooltip = "SAC_africa_NG_tt" clicksound = click_default }
+		buttonType = { name = "afr_NG_5" position = { x = 174 y = 227 } quadTextureSprite = "GFX_SAC_africa_NG_5" pdx_tooltip = "SAC_africa_NG_tt" clicksound = click_default }
 		# Madagascar
 		buttonType = { name = "afr_MG_0" position = { x = 466 y = 414 } quadTextureSprite = "GFX_SAC_africa_MG_0" pdx_tooltip = "SAC_africa_MG_tt" clicksound = click_default }
 		buttonType = { name = "afr_MG_1" position = { x = 466 y = 414 } quadTextureSprite = "GFX_SAC_africa_MG_1" pdx_tooltip = "SAC_africa_MG_tt" clicksound = click_default }
 		buttonType = { name = "afr_MG_2" position = { x = 466 y = 414 } quadTextureSprite = "GFX_SAC_africa_MG_2" pdx_tooltip = "SAC_africa_MG_tt" clicksound = click_default }
 		buttonType = { name = "afr_MG_3" position = { x = 466 y = 414 } quadTextureSprite = "GFX_SAC_africa_MG_3" pdx_tooltip = "SAC_africa_MG_tt" clicksound = click_default }
 		buttonType = { name = "afr_MG_4" position = { x = 466 y = 414 } quadTextureSprite = "GFX_SAC_africa_MG_4" pdx_tooltip = "SAC_africa_MG_tt" clicksound = click_default }
+		buttonType = { name = "afr_MG_5" position = { x = 466 y = 414 } quadTextureSprite = "GFX_SAC_africa_MG_5" pdx_tooltip = "SAC_africa_MG_tt" clicksound = click_default }
 		# South Sudan
 		buttonType = { name = "afr_SS_0" position = { x = 328 y = 239 } quadTextureSprite = "GFX_SAC_africa_SS_0" pdx_tooltip = "SAC_africa_SS_tt" clicksound = click_default }
 		buttonType = { name = "afr_SS_1" position = { x = 328 y = 239 } quadTextureSprite = "GFX_SAC_africa_SS_1" pdx_tooltip = "SAC_africa_SS_tt" clicksound = click_default }
 		buttonType = { name = "afr_SS_2" position = { x = 328 y = 239 } quadTextureSprite = "GFX_SAC_africa_SS_2" pdx_tooltip = "SAC_africa_SS_tt" clicksound = click_default }
 		buttonType = { name = "afr_SS_3" position = { x = 328 y = 239 } quadTextureSprite = "GFX_SAC_africa_SS_3" pdx_tooltip = "SAC_africa_SS_tt" clicksound = click_default }
 		buttonType = { name = "afr_SS_4" position = { x = 328 y = 239 } quadTextureSprite = "GFX_SAC_africa_SS_4" pdx_tooltip = "SAC_africa_SS_tt" clicksound = click_default }
+		buttonType = { name = "afr_SS_5" position = { x = 328 y = 239 } quadTextureSprite = "GFX_SAC_africa_SS_5" pdx_tooltip = "SAC_africa_SS_tt" clicksound = click_default }
 		# Cameroon
 		buttonType = { name = "afr_CM_0" position = { x = 216 y = 233 } quadTextureSprite = "GFX_SAC_africa_CM_0" pdx_tooltip = "SAC_africa_CM_tt" clicksound = click_default }
 		buttonType = { name = "afr_CM_1" position = { x = 216 y = 233 } quadTextureSprite = "GFX_SAC_africa_CM_1" pdx_tooltip = "SAC_africa_CM_tt" clicksound = click_default }
 		buttonType = { name = "afr_CM_2" position = { x = 216 y = 233 } quadTextureSprite = "GFX_SAC_africa_CM_2" pdx_tooltip = "SAC_africa_CM_tt" clicksound = click_default }
 		buttonType = { name = "afr_CM_3" position = { x = 216 y = 233 } quadTextureSprite = "GFX_SAC_africa_CM_3" pdx_tooltip = "SAC_africa_CM_tt" clicksound = click_default }
 		buttonType = { name = "afr_CM_4" position = { x = 216 y = 233 } quadTextureSprite = "GFX_SAC_africa_CM_4" pdx_tooltip = "SAC_africa_CM_tt" clicksound = click_default }
+		buttonType = { name = "afr_CM_5" position = { x = 216 y = 233 } quadTextureSprite = "GFX_SAC_africa_CM_5" pdx_tooltip = "SAC_africa_CM_tt" clicksound = click_default }
 		# Botswana
 		buttonType = { name = "afr_BW_0" position = { x = 298 y = 455 } quadTextureSprite = "GFX_SAC_africa_BW_0" pdx_tooltip = "SAC_africa_BW_tt" clicksound = click_default }
 		buttonType = { name = "afr_BW_1" position = { x = 298 y = 455 } quadTextureSprite = "GFX_SAC_africa_BW_1" pdx_tooltip = "SAC_africa_BW_tt" clicksound = click_default }
 		buttonType = { name = "afr_BW_2" position = { x = 298 y = 455 } quadTextureSprite = "GFX_SAC_africa_BW_2" pdx_tooltip = "SAC_africa_BW_tt" clicksound = click_default }
 		buttonType = { name = "afr_BW_3" position = { x = 298 y = 455 } quadTextureSprite = "GFX_SAC_africa_BW_3" pdx_tooltip = "SAC_africa_BW_tt" clicksound = click_default }
 		buttonType = { name = "afr_BW_4" position = { x = 298 y = 455 } quadTextureSprite = "GFX_SAC_africa_BW_4" pdx_tooltip = "SAC_africa_BW_tt" clicksound = click_default }
+		buttonType = { name = "afr_BW_5" position = { x = 298 y = 455 } quadTextureSprite = "GFX_SAC_africa_BW_5" pdx_tooltip = "SAC_africa_BW_tt" clicksound = click_default }
 		# Kenya
 		buttonType = { name = "afr_KE_0" position = { x = 398 y = 288 } quadTextureSprite = "GFX_SAC_africa_KE_0" pdx_tooltip = "SAC_africa_KE_tt" clicksound = click_default }
 		buttonType = { name = "afr_KE_1" position = { x = 398 y = 288 } quadTextureSprite = "GFX_SAC_africa_KE_1" pdx_tooltip = "SAC_africa_KE_tt" clicksound = click_default }
 		buttonType = { name = "afr_KE_2" position = { x = 398 y = 288 } quadTextureSprite = "GFX_SAC_africa_KE_2" pdx_tooltip = "SAC_africa_KE_tt" clicksound = click_default }
 		buttonType = { name = "afr_KE_3" position = { x = 398 y = 288 } quadTextureSprite = "GFX_SAC_africa_KE_3" pdx_tooltip = "SAC_africa_KE_tt" clicksound = click_default }
 		buttonType = { name = "afr_KE_4" position = { x = 398 y = 288 } quadTextureSprite = "GFX_SAC_africa_KE_4" pdx_tooltip = "SAC_africa_KE_tt" clicksound = click_default }
+		buttonType = { name = "afr_KE_5" position = { x = 398 y = 288 } quadTextureSprite = "GFX_SAC_africa_KE_5" pdx_tooltip = "SAC_africa_KE_tt" clicksound = click_default }
 		# Republic of the Congo
 		buttonType = { name = "afr_CG_0" position = { x = 234 y = 301 } quadTextureSprite = "GFX_SAC_africa_CG_0" pdx_tooltip = "SAC_africa_CG_tt" clicksound = click_default }
 		buttonType = { name = "afr_CG_1" position = { x = 234 y = 301 } quadTextureSprite = "GFX_SAC_africa_CG_1" pdx_tooltip = "SAC_africa_CG_tt" clicksound = click_default }
 		buttonType = { name = "afr_CG_2" position = { x = 234 y = 301 } quadTextureSprite = "GFX_SAC_africa_CG_2" pdx_tooltip = "SAC_africa_CG_tt" clicksound = click_default }
 		buttonType = { name = "afr_CG_3" position = { x = 234 y = 301 } quadTextureSprite = "GFX_SAC_africa_CG_3" pdx_tooltip = "SAC_africa_CG_tt" clicksound = click_default }
 		buttonType = { name = "afr_CG_4" position = { x = 234 y = 301 } quadTextureSprite = "GFX_SAC_africa_CG_4" pdx_tooltip = "SAC_africa_CG_tt" clicksound = click_default }
+		buttonType = { name = "afr_CG_5" position = { x = 234 y = 301 } quadTextureSprite = "GFX_SAC_africa_CG_5" pdx_tooltip = "SAC_africa_CG_tt" clicksound = click_default }
 		# Western Sahara
 		buttonType = { name = "afr_EH_0" position = { x = 31 y = 128 } quadTextureSprite = "GFX_SAC_africa_EH_0" pdx_tooltip = "SAC_africa_EH_tt" clicksound = click_default }
 		buttonType = { name = "afr_EH_1" position = { x = 31 y = 128 } quadTextureSprite = "GFX_SAC_africa_EH_1" pdx_tooltip = "SAC_africa_EH_tt" clicksound = click_default }
 		buttonType = { name = "afr_EH_2" position = { x = 31 y = 128 } quadTextureSprite = "GFX_SAC_africa_EH_2" pdx_tooltip = "SAC_africa_EH_tt" clicksound = click_default }
 		buttonType = { name = "afr_EH_3" position = { x = 31 y = 128 } quadTextureSprite = "GFX_SAC_africa_EH_3" pdx_tooltip = "SAC_africa_EH_tt" clicksound = click_default }
 		buttonType = { name = "afr_EH_4" position = { x = 31 y = 128 } quadTextureSprite = "GFX_SAC_africa_EH_4" pdx_tooltip = "SAC_africa_EH_tt" clicksound = click_default }
+		buttonType = { name = "afr_EH_5" position = { x = 31 y = 128 } quadTextureSprite = "GFX_SAC_africa_EH_5" pdx_tooltip = "SAC_africa_EH_tt" clicksound = click_default }
 		# Zimbabwe
 		buttonType = { name = "afr_ZW_0" position = { x = 336 y = 440 } quadTextureSprite = "GFX_SAC_africa_ZW_0" pdx_tooltip = "SAC_africa_ZW_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZW_1" position = { x = 336 y = 440 } quadTextureSprite = "GFX_SAC_africa_ZW_1" pdx_tooltip = "SAC_africa_ZW_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZW_2" position = { x = 336 y = 440 } quadTextureSprite = "GFX_SAC_africa_ZW_2" pdx_tooltip = "SAC_africa_ZW_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZW_3" position = { x = 336 y = 440 } quadTextureSprite = "GFX_SAC_africa_ZW_3" pdx_tooltip = "SAC_africa_ZW_tt" clicksound = click_default }
 		buttonType = { name = "afr_ZW_4" position = { x = 336 y = 440 } quadTextureSprite = "GFX_SAC_africa_ZW_4" pdx_tooltip = "SAC_africa_ZW_tt" clicksound = click_default }
+		buttonType = { name = "afr_ZW_5" position = { x = 336 y = 440 } quadTextureSprite = "GFX_SAC_africa_ZW_5" pdx_tooltip = "SAC_africa_ZW_tt" clicksound = click_default }
 		# Burkina Faso
 		buttonType = { name = "afr_BF_0" position = { x = 115 y = 219 } quadTextureSprite = "GFX_SAC_africa_BF_0" pdx_tooltip = "SAC_africa_BF_tt" clicksound = click_default }
 		buttonType = { name = "afr_BF_1" position = { x = 115 y = 219 } quadTextureSprite = "GFX_SAC_africa_BF_1" pdx_tooltip = "SAC_africa_BF_tt" clicksound = click_default }
 		buttonType = { name = "afr_BF_2" position = { x = 115 y = 219 } quadTextureSprite = "GFX_SAC_africa_BF_2" pdx_tooltip = "SAC_africa_BF_tt" clicksound = click_default }
 		buttonType = { name = "afr_BF_3" position = { x = 115 y = 219 } quadTextureSprite = "GFX_SAC_africa_BF_3" pdx_tooltip = "SAC_africa_BF_tt" clicksound = click_default }
 		buttonType = { name = "afr_BF_4" position = { x = 115 y = 219 } quadTextureSprite = "GFX_SAC_africa_BF_4" pdx_tooltip = "SAC_africa_BF_tt" clicksound = click_default }
+		buttonType = { name = "afr_BF_5" position = { x = 115 y = 219 } quadTextureSprite = "GFX_SAC_africa_BF_5" pdx_tooltip = "SAC_africa_BF_tt" clicksound = click_default }
 		# Guinea
 		buttonType = { name = "afr_GN_0" position = { x = 46 y = 236 } quadTextureSprite = "GFX_SAC_africa_GN_0" pdx_tooltip = "SAC_africa_GN_tt" clicksound = click_default }
 		buttonType = { name = "afr_GN_1" position = { x = 46 y = 236 } quadTextureSprite = "GFX_SAC_africa_GN_1" pdx_tooltip = "SAC_africa_GN_tt" clicksound = click_default }
 		buttonType = { name = "afr_GN_2" position = { x = 46 y = 236 } quadTextureSprite = "GFX_SAC_africa_GN_2" pdx_tooltip = "SAC_africa_GN_tt" clicksound = click_default }
 		buttonType = { name = "afr_GN_3" position = { x = 46 y = 236 } quadTextureSprite = "GFX_SAC_africa_GN_3" pdx_tooltip = "SAC_africa_GN_tt" clicksound = click_default }
 		buttonType = { name = "afr_GN_4" position = { x = 46 y = 236 } quadTextureSprite = "GFX_SAC_africa_GN_4" pdx_tooltip = "SAC_africa_GN_tt" clicksound = click_default }
+		buttonType = { name = "afr_GN_5" position = { x = 46 y = 236 } quadTextureSprite = "GFX_SAC_africa_GN_5" pdx_tooltip = "SAC_africa_GN_tt" clicksound = click_default }
 		# Côte d'Ivoire
 		buttonType = { name = "afr_CI_0" position = { x = 92 y = 250 } quadTextureSprite = "GFX_SAC_africa_CI_0" pdx_tooltip = "SAC_africa_CI_tt" clicksound = click_default }
 		buttonType = { name = "afr_CI_1" position = { x = 92 y = 250 } quadTextureSprite = "GFX_SAC_africa_CI_1" pdx_tooltip = "SAC_africa_CI_tt" clicksound = click_default }
 		buttonType = { name = "afr_CI_2" position = { x = 92 y = 250 } quadTextureSprite = "GFX_SAC_africa_CI_2" pdx_tooltip = "SAC_africa_CI_tt" clicksound = click_default }
 		buttonType = { name = "afr_CI_3" position = { x = 92 y = 250 } quadTextureSprite = "GFX_SAC_africa_CI_3" pdx_tooltip = "SAC_africa_CI_tt" clicksound = click_default }
 		buttonType = { name = "afr_CI_4" position = { x = 92 y = 250 } quadTextureSprite = "GFX_SAC_africa_CI_4" pdx_tooltip = "SAC_africa_CI_tt" clicksound = click_default }
+		buttonType = { name = "afr_CI_5" position = { x = 92 y = 250 } quadTextureSprite = "GFX_SAC_africa_CI_5" pdx_tooltip = "SAC_africa_CI_tt" clicksound = click_default }
 		# Eritrea
 		buttonType = { name = "afr_ER_0" position = { x = 417 y = 197 } quadTextureSprite = "GFX_SAC_africa_ER_0" pdx_tooltip = "SAC_africa_ER_tt" clicksound = click_default }
 		buttonType = { name = "afr_ER_1" position = { x = 417 y = 197 } quadTextureSprite = "GFX_SAC_africa_ER_1" pdx_tooltip = "SAC_africa_ER_tt" clicksound = click_default }
 		buttonType = { name = "afr_ER_2" position = { x = 417 y = 197 } quadTextureSprite = "GFX_SAC_africa_ER_2" pdx_tooltip = "SAC_africa_ER_tt" clicksound = click_default }
 		buttonType = { name = "afr_ER_3" position = { x = 417 y = 197 } quadTextureSprite = "GFX_SAC_africa_ER_3" pdx_tooltip = "SAC_africa_ER_tt" clicksound = click_default }
 		buttonType = { name = "afr_ER_4" position = { x = 417 y = 197 } quadTextureSprite = "GFX_SAC_africa_ER_4" pdx_tooltip = "SAC_africa_ER_tt" clicksound = click_default }
+		buttonType = { name = "afr_ER_5" position = { x = 417 y = 197 } quadTextureSprite = "GFX_SAC_africa_ER_5" pdx_tooltip = "SAC_africa_ER_tt" clicksound = click_default }
 		# Gabon
 		buttonType = { name = "afr_GA_0" position = { x = 217 y = 311 } quadTextureSprite = "GFX_SAC_africa_GA_0" pdx_tooltip = "SAC_africa_GA_tt" clicksound = click_default }
 		buttonType = { name = "afr_GA_1" position = { x = 217 y = 311 } quadTextureSprite = "GFX_SAC_africa_GA_1" pdx_tooltip = "SAC_africa_GA_tt" clicksound = click_default }
 		buttonType = { name = "afr_GA_2" position = { x = 217 y = 311 } quadTextureSprite = "GFX_SAC_africa_GA_2" pdx_tooltip = "SAC_africa_GA_tt" clicksound = click_default }
 		buttonType = { name = "afr_GA_3" position = { x = 217 y = 311 } quadTextureSprite = "GFX_SAC_africa_GA_3" pdx_tooltip = "SAC_africa_GA_tt" clicksound = click_default }
 		buttonType = { name = "afr_GA_4" position = { x = 217 y = 311 } quadTextureSprite = "GFX_SAC_africa_GA_4" pdx_tooltip = "SAC_africa_GA_tt" clicksound = click_default }
+		buttonType = { name = "afr_GA_5" position = { x = 217 y = 311 } quadTextureSprite = "GFX_SAC_africa_GA_5" pdx_tooltip = "SAC_africa_GA_tt" clicksound = click_default }
 		# Uganda
 		buttonType = { name = "afr_UG_0" position = { x = 367 y = 297 } quadTextureSprite = "GFX_SAC_africa_UG_0" pdx_tooltip = "SAC_africa_UG_tt" clicksound = click_default }
 		buttonType = { name = "afr_UG_1" position = { x = 367 y = 297 } quadTextureSprite = "GFX_SAC_africa_UG_1" pdx_tooltip = "SAC_africa_UG_tt" clicksound = click_default }
 		buttonType = { name = "afr_UG_2" position = { x = 367 y = 297 } quadTextureSprite = "GFX_SAC_africa_UG_2" pdx_tooltip = "SAC_africa_UG_tt" clicksound = click_default }
 		buttonType = { name = "afr_UG_3" position = { x = 367 y = 297 } quadTextureSprite = "GFX_SAC_africa_UG_3" pdx_tooltip = "SAC_africa_UG_tt" clicksound = click_default }
 		buttonType = { name = "afr_UG_4" position = { x = 367 y = 297 } quadTextureSprite = "GFX_SAC_africa_UG_4" pdx_tooltip = "SAC_africa_UG_tt" clicksound = click_default }
+		buttonType = { name = "afr_UG_5" position = { x = 367 y = 297 } quadTextureSprite = "GFX_SAC_africa_UG_5" pdx_tooltip = "SAC_africa_UG_tt" clicksound = click_default }
 		# Tunisia
 		buttonType = { name = "afr_TN_0" position = { x = 208 y = 58 } quadTextureSprite = "GFX_SAC_africa_TN_0" pdx_tooltip = "SAC_africa_TN_tt" clicksound = click_default }
 		buttonType = { name = "afr_TN_1" position = { x = 208 y = 58 } quadTextureSprite = "GFX_SAC_africa_TN_1" pdx_tooltip = "SAC_africa_TN_tt" clicksound = click_default }
 		buttonType = { name = "afr_TN_2" position = { x = 208 y = 58 } quadTextureSprite = "GFX_SAC_africa_TN_2" pdx_tooltip = "SAC_africa_TN_tt" clicksound = click_default }
 		buttonType = { name = "afr_TN_3" position = { x = 208 y = 58 } quadTextureSprite = "GFX_SAC_africa_TN_3" pdx_tooltip = "SAC_africa_TN_tt" clicksound = click_default }
 		buttonType = { name = "afr_TN_4" position = { x = 208 y = 58 } quadTextureSprite = "GFX_SAC_africa_TN_4" pdx_tooltip = "SAC_africa_TN_tt" clicksound = click_default }
+		buttonType = { name = "afr_TN_5" position = { x = 208 y = 58 } quadTextureSprite = "GFX_SAC_africa_TN_5" pdx_tooltip = "SAC_africa_TN_tt" clicksound = click_default }
 		# Ghana
 		buttonType = { name = "afr_GH_0" position = { x = 131 y = 247 } quadTextureSprite = "GFX_SAC_africa_GH_0" pdx_tooltip = "SAC_africa_GH_tt" clicksound = click_default }
 		buttonType = { name = "afr_GH_1" position = { x = 131 y = 247 } quadTextureSprite = "GFX_SAC_africa_GH_1" pdx_tooltip = "SAC_africa_GH_tt" clicksound = click_default }
 		buttonType = { name = "afr_GH_2" position = { x = 131 y = 247 } quadTextureSprite = "GFX_SAC_africa_GH_2" pdx_tooltip = "SAC_africa_GH_tt" clicksound = click_default }
 		buttonType = { name = "afr_GH_3" position = { x = 131 y = 247 } quadTextureSprite = "GFX_SAC_africa_GH_3" pdx_tooltip = "SAC_africa_GH_tt" clicksound = click_default }
 		buttonType = { name = "afr_GH_4" position = { x = 131 y = 247 } quadTextureSprite = "GFX_SAC_africa_GH_4" pdx_tooltip = "SAC_africa_GH_tt" clicksound = click_default }
+		buttonType = { name = "afr_GH_5" position = { x = 131 y = 247 } quadTextureSprite = "GFX_SAC_africa_GH_5" pdx_tooltip = "SAC_africa_GH_tt" clicksound = click_default }
 		# Senegal
 		buttonType = { name = "afr_SN_0" position = { x = 28 y = 207 } quadTextureSprite = "GFX_SAC_africa_SN_0" pdx_tooltip = "SAC_africa_SN_tt" clicksound = click_default }
 		buttonType = { name = "afr_SN_1" position = { x = 28 y = 207 } quadTextureSprite = "GFX_SAC_africa_SN_1" pdx_tooltip = "SAC_africa_SN_tt" clicksound = click_default }
 		buttonType = { name = "afr_SN_2" position = { x = 28 y = 207 } quadTextureSprite = "GFX_SAC_africa_SN_2" pdx_tooltip = "SAC_africa_SN_tt" clicksound = click_default }
 		buttonType = { name = "afr_SN_3" position = { x = 28 y = 207 } quadTextureSprite = "GFX_SAC_africa_SN_3" pdx_tooltip = "SAC_africa_SN_tt" clicksound = click_default }
 		buttonType = { name = "afr_SN_4" position = { x = 28 y = 207 } quadTextureSprite = "GFX_SAC_africa_SN_4" pdx_tooltip = "SAC_africa_SN_tt" clicksound = click_default }
+		buttonType = { name = "afr_SN_5" position = { x = 28 y = 207 } quadTextureSprite = "GFX_SAC_africa_SN_5" pdx_tooltip = "SAC_africa_SN_tt" clicksound = click_default }
 		# Malawi
 		buttonType = { name = "afr_MW_0" position = { x = 390 y = 395 } quadTextureSprite = "GFX_SAC_africa_MW_0" pdx_tooltip = "SAC_africa_MW_tt" clicksound = click_default }
 		buttonType = { name = "afr_MW_1" position = { x = 390 y = 395 } quadTextureSprite = "GFX_SAC_africa_MW_1" pdx_tooltip = "SAC_africa_MW_tt" clicksound = click_default }
 		buttonType = { name = "afr_MW_2" position = { x = 390 y = 395 } quadTextureSprite = "GFX_SAC_africa_MW_2" pdx_tooltip = "SAC_africa_MW_tt" clicksound = click_default }
 		buttonType = { name = "afr_MW_3" position = { x = 390 y = 395 } quadTextureSprite = "GFX_SAC_africa_MW_3" pdx_tooltip = "SAC_africa_MW_tt" clicksound = click_default }
 		buttonType = { name = "afr_MW_4" position = { x = 390 y = 395 } quadTextureSprite = "GFX_SAC_africa_MW_4" pdx_tooltip = "SAC_africa_MW_tt" clicksound = click_default }
+		buttonType = { name = "afr_MW_5" position = { x = 390 y = 395 } quadTextureSprite = "GFX_SAC_africa_MW_5" pdx_tooltip = "SAC_africa_MW_tt" clicksound = click_default }
 		# Benin
 		buttonType = { name = "afr_BJ_0" position = { x = 160 y = 238 } quadTextureSprite = "GFX_SAC_africa_BJ_0" pdx_tooltip = "SAC_africa_BJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_BJ_1" position = { x = 160 y = 238 } quadTextureSprite = "GFX_SAC_africa_BJ_1" pdx_tooltip = "SAC_africa_BJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_BJ_2" position = { x = 160 y = 238 } quadTextureSprite = "GFX_SAC_africa_BJ_2" pdx_tooltip = "SAC_africa_BJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_BJ_3" position = { x = 160 y = 238 } quadTextureSprite = "GFX_SAC_africa_BJ_3" pdx_tooltip = "SAC_africa_BJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_BJ_4" position = { x = 160 y = 238 } quadTextureSprite = "GFX_SAC_africa_BJ_4" pdx_tooltip = "SAC_africa_BJ_tt" clicksound = click_default }
+		buttonType = { name = "afr_BJ_5" position = { x = 160 y = 238 } quadTextureSprite = "GFX_SAC_africa_BJ_5" pdx_tooltip = "SAC_africa_BJ_tt" clicksound = click_default }
 		# Liberia
 		buttonType = { name = "afr_LR_0" position = { x = 71 y = 266 } quadTextureSprite = "GFX_SAC_africa_LR_0" pdx_tooltip = "SAC_africa_LR_tt" clicksound = click_default }
 		buttonType = { name = "afr_LR_1" position = { x = 71 y = 266 } quadTextureSprite = "GFX_SAC_africa_LR_1" pdx_tooltip = "SAC_africa_LR_tt" clicksound = click_default }
 		buttonType = { name = "afr_LR_2" position = { x = 71 y = 266 } quadTextureSprite = "GFX_SAC_africa_LR_2" pdx_tooltip = "SAC_africa_LR_tt" clicksound = click_default }
 		buttonType = { name = "afr_LR_3" position = { x = 71 y = 266 } quadTextureSprite = "GFX_SAC_africa_LR_3" pdx_tooltip = "SAC_africa_LR_tt" clicksound = click_default }
 		buttonType = { name = "afr_LR_4" position = { x = 71 y = 266 } quadTextureSprite = "GFX_SAC_africa_LR_4" pdx_tooltip = "SAC_africa_LR_tt" clicksound = click_default }
+		buttonType = { name = "afr_LR_5" position = { x = 71 y = 266 } quadTextureSprite = "GFX_SAC_africa_LR_5" pdx_tooltip = "SAC_africa_LR_tt" clicksound = click_default }
 		# Togo
 		buttonType = { name = "afr_TG_0" position = { x = 154 y = 247 } quadTextureSprite = "GFX_SAC_africa_TG_0" pdx_tooltip = "SAC_africa_TG_tt" clicksound = click_default }
 		buttonType = { name = "afr_TG_1" position = { x = 154 y = 247 } quadTextureSprite = "GFX_SAC_africa_TG_1" pdx_tooltip = "SAC_africa_TG_tt" clicksound = click_default }
 		buttonType = { name = "afr_TG_2" position = { x = 154 y = 247 } quadTextureSprite = "GFX_SAC_africa_TG_2" pdx_tooltip = "SAC_africa_TG_tt" clicksound = click_default }
 		buttonType = { name = "afr_TG_3" position = { x = 154 y = 247 } quadTextureSprite = "GFX_SAC_africa_TG_3" pdx_tooltip = "SAC_africa_TG_tt" clicksound = click_default }
 		buttonType = { name = "afr_TG_4" position = { x = 154 y = 247 } quadTextureSprite = "GFX_SAC_africa_TG_4" pdx_tooltip = "SAC_africa_TG_tt" clicksound = click_default }
+		buttonType = { name = "afr_TG_5" position = { x = 154 y = 247 } quadTextureSprite = "GFX_SAC_africa_TG_5" pdx_tooltip = "SAC_africa_TG_tt" clicksound = click_default }
 		# Sierra Leone
 		buttonType = { name = "afr_SL_0" position = { x = 59 y = 255 } quadTextureSprite = "GFX_SAC_africa_SL_0" pdx_tooltip = "SAC_africa_SL_tt" clicksound = click_default }
 		buttonType = { name = "afr_SL_1" position = { x = 59 y = 255 } quadTextureSprite = "GFX_SAC_africa_SL_1" pdx_tooltip = "SAC_africa_SL_tt" clicksound = click_default }
 		buttonType = { name = "afr_SL_2" position = { x = 59 y = 255 } quadTextureSprite = "GFX_SAC_africa_SL_2" pdx_tooltip = "SAC_africa_SL_tt" clicksound = click_default }
 		buttonType = { name = "afr_SL_3" position = { x = 59 y = 255 } quadTextureSprite = "GFX_SAC_africa_SL_3" pdx_tooltip = "SAC_africa_SL_tt" clicksound = click_default }
 		buttonType = { name = "afr_SL_4" position = { x = 59 y = 255 } quadTextureSprite = "GFX_SAC_africa_SL_4" pdx_tooltip = "SAC_africa_SL_tt" clicksound = click_default }
+		buttonType = { name = "afr_SL_5" position = { x = 59 y = 255 } quadTextureSprite = "GFX_SAC_africa_SL_5" pdx_tooltip = "SAC_africa_SL_tt" clicksound = click_default }
 		# Equatorial Guinea
 		buttonType = { name = "afr_GQ_0" position = { x = 215 y = 300 } quadTextureSprite = "GFX_SAC_africa_GQ_0" pdx_tooltip = "SAC_africa_GQ_tt" clicksound = click_default }
 		buttonType = { name = "afr_GQ_1" position = { x = 215 y = 300 } quadTextureSprite = "GFX_SAC_africa_GQ_1" pdx_tooltip = "SAC_africa_GQ_tt" clicksound = click_default }
 		buttonType = { name = "afr_GQ_2" position = { x = 215 y = 300 } quadTextureSprite = "GFX_SAC_africa_GQ_2" pdx_tooltip = "SAC_africa_GQ_tt" clicksound = click_default }
 		buttonType = { name = "afr_GQ_3" position = { x = 215 y = 300 } quadTextureSprite = "GFX_SAC_africa_GQ_3" pdx_tooltip = "SAC_africa_GQ_tt" clicksound = click_default }
 		buttonType = { name = "afr_GQ_4" position = { x = 215 y = 300 } quadTextureSprite = "GFX_SAC_africa_GQ_4" pdx_tooltip = "SAC_africa_GQ_tt" clicksound = click_default }
+		buttonType = { name = "afr_GQ_5" position = { x = 215 y = 300 } quadTextureSprite = "GFX_SAC_africa_GQ_5" pdx_tooltip = "SAC_africa_GQ_tt" clicksound = click_default }
 		# Guinea-Bissau
 		buttonType = { name = "afr_GW_0" position = { x = 34 y = 236 } quadTextureSprite = "GFX_SAC_africa_GW_0" pdx_tooltip = "SAC_africa_GW_tt" clicksound = click_default }
 		buttonType = { name = "afr_GW_1" position = { x = 34 y = 236 } quadTextureSprite = "GFX_SAC_africa_GW_1" pdx_tooltip = "SAC_africa_GW_tt" clicksound = click_default }
 		buttonType = { name = "afr_GW_2" position = { x = 34 y = 236 } quadTextureSprite = "GFX_SAC_africa_GW_2" pdx_tooltip = "SAC_africa_GW_tt" clicksound = click_default }
 		buttonType = { name = "afr_GW_3" position = { x = 34 y = 236 } quadTextureSprite = "GFX_SAC_africa_GW_3" pdx_tooltip = "SAC_africa_GW_tt" clicksound = click_default }
 		buttonType = { name = "afr_GW_4" position = { x = 34 y = 236 } quadTextureSprite = "GFX_SAC_africa_GW_4" pdx_tooltip = "SAC_africa_GW_tt" clicksound = click_default }
+		buttonType = { name = "afr_GW_5" position = { x = 34 y = 236 } quadTextureSprite = "GFX_SAC_africa_GW_5" pdx_tooltip = "SAC_africa_GW_tt" clicksound = click_default }
 		# Lesotho
 		buttonType = { name = "afr_LS_0" position = { x = 349 y = 533 } quadTextureSprite = "GFX_SAC_africa_LS_0" pdx_tooltip = "SAC_africa_LS_tt" clicksound = click_default }
 		buttonType = { name = "afr_LS_1" position = { x = 349 y = 533 } quadTextureSprite = "GFX_SAC_africa_LS_1" pdx_tooltip = "SAC_africa_LS_tt" clicksound = click_default }
 		buttonType = { name = "afr_LS_2" position = { x = 349 y = 533 } quadTextureSprite = "GFX_SAC_africa_LS_2" pdx_tooltip = "SAC_africa_LS_tt" clicksound = click_default }
 		buttonType = { name = "afr_LS_3" position = { x = 349 y = 533 } quadTextureSprite = "GFX_SAC_africa_LS_3" pdx_tooltip = "SAC_africa_LS_tt" clicksound = click_default }
 		buttonType = { name = "afr_LS_4" position = { x = 349 y = 533 } quadTextureSprite = "GFX_SAC_africa_LS_4" pdx_tooltip = "SAC_africa_LS_tt" clicksound = click_default }
+		buttonType = { name = "afr_LS_5" position = { x = 349 y = 533 } quadTextureSprite = "GFX_SAC_africa_LS_5" pdx_tooltip = "SAC_africa_LS_tt" clicksound = click_default }
 		# Burundi
 		buttonType = { name = "afr_BI_0" position = { x = 363 y = 344 } quadTextureSprite = "GFX_SAC_africa_BI_0" pdx_tooltip = "SAC_africa_BI_tt" clicksound = click_default }
 		buttonType = { name = "afr_BI_1" position = { x = 363 y = 344 } quadTextureSprite = "GFX_SAC_africa_BI_1" pdx_tooltip = "SAC_africa_BI_tt" clicksound = click_default }
 		buttonType = { name = "afr_BI_2" position = { x = 363 y = 344 } quadTextureSprite = "GFX_SAC_africa_BI_2" pdx_tooltip = "SAC_africa_BI_tt" clicksound = click_default }
 		buttonType = { name = "afr_BI_3" position = { x = 363 y = 344 } quadTextureSprite = "GFX_SAC_africa_BI_3" pdx_tooltip = "SAC_africa_BI_tt" clicksound = click_default }
 		buttonType = { name = "afr_BI_4" position = { x = 363 y = 344 } quadTextureSprite = "GFX_SAC_africa_BI_4" pdx_tooltip = "SAC_africa_BI_tt" clicksound = click_default }
+		buttonType = { name = "afr_BI_5" position = { x = 363 y = 344 } quadTextureSprite = "GFX_SAC_africa_BI_5" pdx_tooltip = "SAC_africa_BI_tt" clicksound = click_default }
 		# Rwanda
 		buttonType = { name = "afr_RW_0" position = { x = 362 y = 335 } quadTextureSprite = "GFX_SAC_africa_RW_0" pdx_tooltip = "SAC_africa_RW_tt" clicksound = click_default }
 		buttonType = { name = "afr_RW_1" position = { x = 362 y = 335 } quadTextureSprite = "GFX_SAC_africa_RW_1" pdx_tooltip = "SAC_africa_RW_tt" clicksound = click_default }
 		buttonType = { name = "afr_RW_2" position = { x = 362 y = 335 } quadTextureSprite = "GFX_SAC_africa_RW_2" pdx_tooltip = "SAC_africa_RW_tt" clicksound = click_default }
 		buttonType = { name = "afr_RW_3" position = { x = 362 y = 335 } quadTextureSprite = "GFX_SAC_africa_RW_3" pdx_tooltip = "SAC_africa_RW_tt" clicksound = click_default }
 		buttonType = { name = "afr_RW_4" position = { x = 362 y = 335 } quadTextureSprite = "GFX_SAC_africa_RW_4" pdx_tooltip = "SAC_africa_RW_tt" clicksound = click_default }
+		buttonType = { name = "afr_RW_5" position = { x = 362 y = 335 } quadTextureSprite = "GFX_SAC_africa_RW_5" pdx_tooltip = "SAC_africa_RW_tt" clicksound = click_default }
 		# Djibouti
 		buttonType = { name = "afr_DJ_0" position = { x = 455 y = 236 } quadTextureSprite = "GFX_SAC_africa_DJ_0" pdx_tooltip = "SAC_africa_DJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DJ_1" position = { x = 455 y = 236 } quadTextureSprite = "GFX_SAC_africa_DJ_1" pdx_tooltip = "SAC_africa_DJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DJ_2" position = { x = 455 y = 236 } quadTextureSprite = "GFX_SAC_africa_DJ_2" pdx_tooltip = "SAC_africa_DJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DJ_3" position = { x = 455 y = 236 } quadTextureSprite = "GFX_SAC_africa_DJ_3" pdx_tooltip = "SAC_africa_DJ_tt" clicksound = click_default }
 		buttonType = { name = "afr_DJ_4" position = { x = 455 y = 236 } quadTextureSprite = "GFX_SAC_africa_DJ_4" pdx_tooltip = "SAC_africa_DJ_tt" clicksound = click_default }
+		buttonType = { name = "afr_DJ_5" position = { x = 455 y = 236 } quadTextureSprite = "GFX_SAC_africa_DJ_5" pdx_tooltip = "SAC_africa_DJ_tt" clicksound = click_default }
 		# The Gambia
 		buttonType = { name = "afr_GM_0" position = { x = 33 y = 228 } quadTextureSprite = "GFX_SAC_africa_GM_0" pdx_tooltip = "SAC_africa_GM_tt" clicksound = click_default }
 		buttonType = { name = "afr_GM_1" position = { x = 33 y = 228 } quadTextureSprite = "GFX_SAC_africa_GM_1" pdx_tooltip = "SAC_africa_GM_tt" clicksound = click_default }
 		buttonType = { name = "afr_GM_2" position = { x = 33 y = 228 } quadTextureSprite = "GFX_SAC_africa_GM_2" pdx_tooltip = "SAC_africa_GM_tt" clicksound = click_default }
 		buttonType = { name = "afr_GM_3" position = { x = 33 y = 228 } quadTextureSprite = "GFX_SAC_africa_GM_3" pdx_tooltip = "SAC_africa_GM_tt" clicksound = click_default }
 		buttonType = { name = "afr_GM_4" position = { x = 33 y = 228 } quadTextureSprite = "GFX_SAC_africa_GM_4" pdx_tooltip = "SAC_africa_GM_tt" clicksound = click_default }
+		buttonType = { name = "afr_GM_5" position = { x = 33 y = 228 } quadTextureSprite = "GFX_SAC_africa_GM_5" pdx_tooltip = "SAC_africa_GM_tt" clicksound = click_default }
 		# Eswatini
 		buttonType = { name = "afr_SZ_0" position = { x = 376 y = 512 } quadTextureSprite = "GFX_SAC_africa_SZ_0" pdx_tooltip = "SAC_africa_SZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_SZ_1" position = { x = 376 y = 512 } quadTextureSprite = "GFX_SAC_africa_SZ_1" pdx_tooltip = "SAC_africa_SZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_SZ_2" position = { x = 376 y = 512 } quadTextureSprite = "GFX_SAC_africa_SZ_2" pdx_tooltip = "SAC_africa_SZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_SZ_3" position = { x = 376 y = 512 } quadTextureSprite = "GFX_SAC_africa_SZ_3" pdx_tooltip = "SAC_africa_SZ_tt" clicksound = click_default }
 		buttonType = { name = "afr_SZ_4" position = { x = 376 y = 512 } quadTextureSprite = "GFX_SAC_africa_SZ_4" pdx_tooltip = "SAC_africa_SZ_tt" clicksound = click_default }
+		buttonType = { name = "afr_SZ_5" position = { x = 376 y = 512 } quadTextureSprite = "GFX_SAC_africa_SZ_5" pdx_tooltip = "SAC_africa_SZ_tt" clicksound = click_default }
 		iconType = { name = "afr_ZA_cw" position = { x = 273 y = 487 } spriteType = "GFX_SAC_africa_ZA_cw" alwaystransparent = yes }
 		iconType = { name = "afr_DZ_cw" position = { x = 92 y = 60 } spriteType = "GFX_SAC_africa_DZ_cw" alwaystransparent = yes }
 		iconType = { name = "afr_CD_cw" position = { x = 242 y = 289 } spriteType = "GFX_SAC_africa_CD_cw" alwaystransparent = yes }
@@ -444,6 +494,7 @@ guiTypes = {
 		iconType = { name = "SAC_africa_leg_icon_0" position = { x = 20 y = 601 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 1 }
 		instantTextBoxType = { name = "SAC_africa_leg_text_0" position = { x = 40 y = 600 } font = "VCR02_12" text = "SAC_africa_leg_none" maxWidth = 110 maxHeight = 18 }
 		iconType = { name = "SAC_africa_leg_icon_1" position = { x = 115 y = 601 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 2 }
+		iconType = { name = "SAC_africa_leg_icon_wag" position = { x = 115 y = 601 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 7 }
 		instantTextBoxType = { name = "SAC_africa_leg_text_1" position = { x = 135 y = 600 } font = "VCR02_12" text = "SAC_africa_leg_SOV" maxWidth = 110 maxHeight = 18 }
 		iconType = { name = "SAC_africa_leg_icon_2" position = { x = 200 y = 601 } quadTextureSprite = "GFX_SAC_africa_legend" frame = 3 }
 		instantTextBoxType = { name = "SAC_africa_leg_text_2" position = { x = 220 y = 600 } font = "VCR02_12" text = "SAC_africa_leg_PRC" maxWidth = 110 maxHeight = 18 }

@@ -584,29 +584,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = WAG_bng_ndjamena
-		icon = GFX_goal_unknown  # placeholder
-		x = 15
-		y = 3
-		cost = 5
-		prerequisite = { focus = WAG_bng_prove_worth focus = WAG_bng_bargain }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = WAG_bng_no_war_tt
-				WAG_bng_no_african_war = yes
-			}
-		}
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			if = {
-				limit = { country_exists = CHA }
-				create_wargoal = { type = puppet_wargoal_focus target = CHA }
-			}
-		}
-	}
-
-	focus = {
-		id = WAG_bng_darfur
+		id = WAG_bng_spb_hq
 		icon = GFX_goal_unknown  # placeholder
 		x = 17
 		y = 3
@@ -620,67 +598,19 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_temp_variable = { afr_gain = 10 }
-			SAC_africa_gain_SD = yes
-			add_political_power = 50
+			add_ideas = WAG_bng_spb_hq_idea
+			set_country_flag = WAG_has_spb_hq
+			custom_effect_tooltip = WAG_bng_spb_hq_tt
 		}
 	}
 
 	focus = {
-		id = WAG_bng_benghazi
-		icon = GFX_goal_unknown  # placeholder
-		x = 19
-		y = 3
-		cost = 5
-		prerequisite = { focus = WAG_bng_prove_worth focus = WAG_bng_bargain }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = WAG_bng_no_war_tt
-				WAG_bng_no_african_war = yes
-			}
-		}
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			set_temp_variable = { afr_gain = 10 }
-			SAC_africa_gain_LY = yes
-			add_equipment_to_stockpile = { type = support_equipment amount = 200 }
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = WAG_bng_sahel_advisors
-		icon = GFX_goal_unknown  # placeholder
-		x = 17
-		y = 4
-		cost = 7
-		prerequisite = { focus = WAG_bng_ndjamena }
-		prerequisite = { focus = WAG_bng_darfur }
-		prerequisite = { focus = WAG_bng_benghazi }
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = WAG_bng_no_war_tt
-				WAG_bng_no_african_war = yes
-			}
-		}
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			set_temp_variable = { afr_gain = 5 }
-			SAC_africa_gain_ML = yes
-			set_temp_variable = { afr_gain = 5 }
-			SAC_africa_gain_BF = yes
-			set_temp_variable = { afr_gain = 5 }
-			SAC_africa_gain_NE = yes
-		}
-	}
-
-	focus = {
-		id = WAG_bng_train_burkina
+		id = WAG_bng_recruit_offices
 		icon = GFX_goal_unknown  # placeholder
 		x = 16
-		y = 5
+		y = 4
 		cost = 5
-		prerequisite = { focus = WAG_bng_sahel_advisors }
+		prerequisite = { focus = WAG_bng_spb_hq }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = WAG_bng_no_war_tt
@@ -689,23 +619,17 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_temp_variable = { afr_gain = 10 }
-			SAC_africa_gain_BF = yes
-			if = {
-				limit = { country_exists = VOL }
-				VOL = { army_experience = 25 add_war_support = 0.05 }
-			}
-			add_political_power = 50
+			add_manpower = 8000
 		}
 	}
 
 	focus = {
-		id = WAG_bng_train_mali
+		id = WAG_bng_own_media
 		icon = GFX_goal_unknown  # placeholder
 		x = 18
-		y = 5
+		y = 4
 		cost = 5
-		prerequisite = { focus = WAG_bng_sahel_advisors }
+		prerequisite = { focus = WAG_bng_spb_hq }
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = WAG_bng_no_war_tt
@@ -714,13 +638,30 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_temp_variable = { afr_gain = 10 }
-			SAC_africa_gain_ML = yes
-			if = {
-				limit = { country_exists = MLI }
-				MLI = { army_experience = 25 add_war_support = 0.05 }
+			add_political_power = 75
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = WAG_bng_army_friends
+		icon = GFX_goal_unknown  # placeholder
+		x = 17
+		y = 5
+		cost = 7
+		prerequisite = { focus = WAG_bng_recruit_offices }
+		prerequisite = { focus = WAG_bng_own_media }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = WAG_bng_no_war_tt
+				WAG_bng_no_african_war = yes
 			}
-			add_political_power = 50
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_command_power = 50
+			set_country_flag = WAG_army_friends
+			custom_effect_tooltip = WAG_bng_army_friends_tt
 		}
 	}
 
@@ -730,7 +671,7 @@ focus_tree = {
 		x = 9
 		y = 7
 		cost = 10
-		prerequisite = { focus = WAG_bng_governorate focus = WAG_bng_self_sufficient focus = WAG_bng_private_army focus = WAG_bng_train_burkina focus = WAG_bng_train_mali }
+		prerequisite = { focus = WAG_bng_governorate focus = WAG_bng_self_sufficient focus = WAG_bng_private_army focus = WAG_bng_army_friends }
 		# completes itself when the First European War begins (on_weekly_WAG)
 		available = {
 			custom_trigger_tooltip = {

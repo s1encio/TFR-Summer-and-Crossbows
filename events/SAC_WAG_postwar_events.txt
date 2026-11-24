@@ -1,0 +1,128 @@
+add_namespace = sac_wpw
+
+# ---------- Russia won the First European War ----------
+country_event = {
+	id = sac_wpw.40
+	title = sac_wpw.40.t
+	desc = sac_wpw.40.d
+	picture = GFX_SOV_wagner_flags
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wpw.40.a
+		WAG_end_european_war = yes
+		load_focus_tree = { tree = WAG_victory_focus_tree keep_completed = no }
+	}
+}
+
+# ---------- Russia lost the First European War ----------
+country_event = {
+	id = sac_wpw.50
+	title = sac_wpw.50.t
+	desc = sac_wpw.50.d
+	picture = GFX_SOV_kremlin_1
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wpw.50.a
+		WAG_end_european_war = yes
+		load_focus_tree = { tree = WAG_betrayal_focus_tree keep_completed = no }
+	}
+}
+
+# ---------- The March of Justice (focus WAG_btr_march) ----------
+country_event = {
+	id = sac_wpw.60
+	title = sac_wpw.60.t
+	desc = sac_wpw.60.d
+	picture = GFX_SOV_wagner_putsch_1
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = WAG_mutiny_done
+			set_temp_variable_to_random = { var = WAG_mutiny_roll min = 0 max = 100 integer = yes }
+			if = {
+				limit = { check_variable = { WAG_mutiny_roll < WAG_mutiny_ready } }
+				set_country_flag = WAG_mutiny_will_win
+			}
+		}
+	}
+
+	option = {
+		name = sac_wpw.60.a
+		custom_effect_tooltip = WAG_mutiny_chance_tt
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = WAG_mutiny_will_win }
+				country_event = { id = sac_wpw.61 days = 3 }
+			}
+			else = {
+				country_event = { id = sac_wpw.62 days = 3 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sac_wpw.61
+	title = sac_wpw.61.t
+	desc = sac_wpw.61.d
+	picture = GFX_SOV_wagner_putsch_3
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wpw.61.a
+		WAG_mutiny_success_effects = yes
+	}
+}
+
+country_event = {
+	id = sac_wpw.62
+	title = sac_wpw.62.t
+	desc = sac_wpw.62.d
+	picture = GFX_SOV_wagner_putsch_2
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wpw.62.a
+		WAG_mutiny_failure_effects = yes
+	}
+}
+
+# Russia (now played by the former Wagner player) absorbs Wagner; the CAR becomes a puppet
+country_event = {
+	id = sac_wpw.63
+	title = sac_wpw.63.t
+	desc = sac_wpw.63.d
+	picture = GFX_SOV_wagner_flags
+	is_triggered_only = yes
+
+	option = {
+		name = sac_wpw.63.a
+		if = {
+			limit = { country_exists = WAG }
+			annex_country = { target = WAG transfer_troops = yes }
+		}
+		if = {
+			limit = { NOT = { country_exists = CAR } }
+			release_puppet = CAR
+		}
+	}
+}
+
+# Kremlin suspicion reached 100: they strike first
+country_event = {
+	id = sac_wpw.64
+	title = sac_wpw.64.t
+	desc = sac_wpw.64.d
+	picture = GFX_SOV_kremlin_1
+	is_triggered_only = yes
+
+	immediate = { hidden_effect = { set_country_flag = WAG_mutiny_done } }
+
+	option = {
+		name = sac_wpw.64.a
+		WAG_mutiny_failure_effects = yes
+	}
+}

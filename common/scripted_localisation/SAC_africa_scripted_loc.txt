@@ -7504,3 +7504,23 @@ defined_text = {
 		localization_key = SAC_africa_sides_hint
 	}
 }
+defined_text = {
+	name = SAC_afr_ru_name
+	text = {
+		trigger = { has_global_flag = WAG_mutiny_failed }
+		localization_key = SAC_afr_ru_name_wag
+	}
+	text = {
+		localization_key = SAC_afr_ru_name_ru
+	}
+}
+defined_text = {
+	name = SAC_afr_ru_leg
+	text = {
+		trigger = { has_global_flag = WAG_mutiny_failed }
+		localization_key = SAC_afr_ru_leg_wag
+	}
+	text = {
+		localization_key = SAC_afr_ru_leg_ru
+	}
+}
