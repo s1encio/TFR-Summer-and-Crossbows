@@ -1,0 +1,24 @@
+add_namespace = sac_news
+
+# World news: Wagner takes power in the CAR (fired by sac_wag.32, option "Wagner takes power")
+news_event = {
+	id = sac_news.1
+	title = sac_news.1.t
+	desc = sac_news.1.d
+	picture = GFX_wagner_coup
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sac_news.1.a
+		trigger = { tag = WAG }
+	}
+	option = {
+		name = sac_news.1.b
+		trigger = { tag = SOV }
+	}
+	option = {
+		name = sac_news.1.c
+		trigger = { NOT = { tag = WAG tag = SOV } }
+	}
+}

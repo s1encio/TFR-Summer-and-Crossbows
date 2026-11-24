@@ -1229,13 +1229,7 @@ SAC_africa_thresholds_CD = {
 	}
 }
 SAC_africa_thresholds_CF = {
-	if = { limit = { country_exists = CAR NOT = { tag = CAR } NOT = { has_war_with = CAR } SAC_afr_inf_CF_60 = yes } CAR = { give_military_access = ROOT } }
-	if = {
-		limit = { country_exists = CAR NOT = { tag = CAR } NOT = { has_war_with = CAR } SAC_afr_inf_CF_80 = yes CAR = { is_subject = no is_major = no has_war = no } }
-		if = { limit = { tag = WAG country_exists = SOV is_subject_of = SOV } SOV = { puppet = CAR } }
-		else = { puppet = CAR }
-		custom_effect_tooltip = SAC_africa_puppet_tt
-	}
+	# nothing
 }
 SAC_africa_thresholds_CG = {
 	if = { limit = { country_exists = RCG NOT = { tag = RCG } NOT = { has_war_with = RCG } SAC_afr_inf_CG_60 = yes } RCG = { give_military_access = ROOT } }
@@ -1631,6 +1625,18 @@ SAC_africa_monthly_deals = {
 		var:AFR_deal_state_AO = { add_resource = { type = oil amount = -38 } }
 		set_variable = { AFR_deal_AO = 0 }
 	}
+	if = { limit = { check_variable = { AFR_deal_BF > 0 } }
+		if = { limit = { country_exists = VOL SAC_afr_inf_BF_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_BF = 0 } }
+	}
+	if = { limit = { check_variable = { AFR_deal_BI > 0 } }
+		if = { limit = { country_exists = BRD SAC_afr_inf_BI_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_BI = 0 } }
+	}
+	if = { limit = { check_variable = { AFR_deal_BJ > 0 } }
+		if = { limit = { country_exists = DAH SAC_afr_inf_BJ_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_BJ = 0 } }
+	}
 	if = { limit = { check_variable = { AFR_deal_BW > 0 } NOT = { AND = { country_exists = BOT SAC_afr_inf_BW_30 = yes } } }
 		var:AFR_deal_state_BW = { add_resource = { type = chromium amount = -1 } add_resource = { type = steel amount = -1 } }
 		set_variable = { AFR_deal_BW = 0 }
@@ -1638,6 +1644,10 @@ SAC_africa_monthly_deals = {
 	if = { limit = { check_variable = { AFR_deal_CD > 0 } NOT = { AND = { country_exists = COG SAC_afr_inf_CD_30 = yes } } }
 		var:AFR_deal_state_CD = { add_resource = { type = tungsten amount = -18 } add_resource = { type = oil amount = -1 } add_resource = { type = steel amount = -1 } }
 		set_variable = { AFR_deal_CD = 0 }
+	}
+	if = { limit = { check_variable = { AFR_deal_CF > 0 } }
+		if = { limit = { country_exists = CAR SAC_afr_inf_CF_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_CF = 0 } }
 	}
 	if = { limit = { check_variable = { AFR_deal_CG > 0 } NOT = { AND = { country_exists = RCG SAC_afr_inf_CG_30 = yes } } }
 		var:AFR_deal_state_CG = { add_resource = { type = oil amount = -8 } }
@@ -1651,6 +1661,10 @@ SAC_africa_monthly_deals = {
 		var:AFR_deal_state_CM = { add_resource = { type = oil amount = -2 } add_resource = { type = aluminium amount = -1 } }
 		set_variable = { AFR_deal_CM = 0 }
 	}
+	if = { limit = { check_variable = { AFR_deal_DJ > 0 } }
+		if = { limit = { country_exists = DJI SAC_afr_inf_DJ_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_DJ = 0 } }
+	}
 	if = { limit = { check_variable = { AFR_deal_DZ > 0 } NOT = { AND = { country_exists = ALG SAC_afr_inf_DZ_30 = yes } } }
 		var:AFR_deal_state_DZ = { add_resource = { type = oil amount = -29 } }
 		set_variable = { AFR_deal_DZ = 0 }
@@ -1658,6 +1672,14 @@ SAC_africa_monthly_deals = {
 	if = { limit = { check_variable = { AFR_deal_EG > 0 } NOT = { AND = { country_exists = EGY SAC_afr_inf_EG_30 = yes } } }
 		var:AFR_deal_state_EG = { add_resource = { type = steel amount = -6 } add_resource = { type = oil amount = -12 } }
 		set_variable = { AFR_deal_EG = 0 }
+	}
+	if = { limit = { check_variable = { AFR_deal_EH > 0 } }
+		if = { limit = { country_exists = WES SAC_afr_inf_EH_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_EH = 0 } }
+	}
+	if = { limit = { check_variable = { AFR_deal_ER > 0 } }
+		if = { limit = { country_exists = ERI SAC_afr_inf_ER_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_ER = 0 } }
 	}
 	if = { limit = { check_variable = { AFR_deal_ET > 0 } NOT = { AND = { country_exists = ETH SAC_afr_inf_ET_30 = yes } } }
 		var:AFR_deal_state_ET = { add_resource = { type = steel amount = -3 } add_resource = { type = aluminium amount = -1 } }
@@ -1671,6 +1693,10 @@ SAC_africa_monthly_deals = {
 		var:AFR_deal_state_GH = { add_resource = { type = aluminium amount = -2 } add_resource = { type = rubber amount = -2 } add_resource = { type = oil amount = -2 } }
 		set_variable = { AFR_deal_GH = 0 }
 	}
+	if = { limit = { check_variable = { AFR_deal_GM > 0 } }
+		if = { limit = { country_exists = GAM SAC_afr_inf_GM_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_GM = 0 } }
+	}
 	if = { limit = { check_variable = { AFR_deal_GN > 0 } NOT = { AND = { country_exists = GNA SAC_afr_inf_GN_30 = yes } } }
 		var:AFR_deal_state_GN = { add_resource = { type = rubber amount = -2 } }
 		set_variable = { AFR_deal_GN = 0 }
@@ -1679,6 +1705,10 @@ SAC_africa_monthly_deals = {
 		var:AFR_deal_state_GQ = { add_resource = { type = oil amount = -6 } }
 		set_variable = { AFR_deal_GQ = 0 }
 	}
+	if = { limit = { check_variable = { AFR_deal_GW > 0 } }
+		if = { limit = { country_exists = GNB SAC_afr_inf_GW_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_GW = 0 } }
+	}
 	if = { limit = { check_variable = { AFR_deal_KE > 0 } NOT = { AND = { country_exists = KEN SAC_afr_inf_KE_30 = yes } } }
 		var:AFR_deal_state_KE = { add_resource = { type = steel amount = -1 } }
 		set_variable = { AFR_deal_KE = 0 }
@@ -1686,6 +1716,10 @@ SAC_africa_monthly_deals = {
 	if = { limit = { check_variable = { AFR_deal_LR > 0 } NOT = { AND = { country_exists = LIB SAC_afr_inf_LR_30 = yes } } }
 		var:AFR_deal_state_LR = { add_resource = { type = rubber amount = -3 } }
 		set_variable = { AFR_deal_LR = 0 }
+	}
+	if = { limit = { check_variable = { AFR_deal_LS > 0 } }
+		if = { limit = { country_exists = LES SAC_afr_inf_LS_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_LS = 0 } }
 	}
 	if = { limit = { check_variable = { AFR_deal_LY > 0 } NOT = { AND = { country_exists = LBA SAC_afr_inf_LY_30 = yes } } }
 		var:AFR_deal_state_LY = { add_resource = { type = oil amount = -13 } }
@@ -1699,9 +1733,17 @@ SAC_africa_monthly_deals = {
 		var:AFR_deal_state_MG = { add_resource = { type = chromium amount = -2 } }
 		set_variable = { AFR_deal_MG = 0 }
 	}
+	if = { limit = { check_variable = { AFR_deal_ML > 0 } }
+		if = { limit = { country_exists = MLI SAC_afr_inf_ML_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_ML = 0 } }
+	}
 	if = { limit = { check_variable = { AFR_deal_MR > 0 } NOT = { AND = { country_exists = MRT SAC_afr_inf_MR_30 = yes } } }
 		var:AFR_deal_state_MR = { add_resource = { type = oil amount = -1 } add_resource = { type = steel amount = -2 } }
 		set_variable = { AFR_deal_MR = 0 }
+	}
+	if = { limit = { check_variable = { AFR_deal_MW > 0 } }
+		if = { limit = { country_exists = MLW SAC_afr_inf_MW_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_MW = 0 } }
 	}
 	if = { limit = { check_variable = { AFR_deal_MZ > 0 } NOT = { AND = { country_exists = MZB SAC_afr_inf_MZ_30 = yes } } }
 		var:AFR_deal_state_MZ = { add_resource = { type = aluminium amount = -15 } }
@@ -1731,13 +1773,29 @@ SAC_africa_monthly_deals = {
 		var:AFR_deal_state_SL = { add_resource = { type = rubber amount = -2 } }
 		set_variable = { AFR_deal_SL = 0 }
 	}
+	if = { limit = { check_variable = { AFR_deal_SN > 0 } }
+		if = { limit = { country_exists = SEN SAC_afr_inf_SN_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_SN = 0 } }
+	}
+	if = { limit = { check_variable = { AFR_deal_SO > 0 } }
+		if = { limit = { country_exists = SOM SAC_afr_inf_SO_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_SO = 0 } }
+	}
 	if = { limit = { check_variable = { AFR_deal_SS > 0 } NOT = { AND = { country_exists = SSD SAC_afr_inf_SS_30 = yes } } }
 		var:AFR_deal_state_SS = { add_resource = { type = steel amount = -2 } add_resource = { type = oil amount = -3 } }
 		set_variable = { AFR_deal_SS = 0 }
 	}
+	if = { limit = { check_variable = { AFR_deal_SZ > 0 } }
+		if = { limit = { country_exists = SWZ SAC_afr_inf_SZ_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_SZ = 0 } }
+	}
 	if = { limit = { check_variable = { AFR_deal_TD > 0 } NOT = { AND = { country_exists = CHA SAC_afr_inf_TD_30 = yes } } }
 		var:AFR_deal_state_TD = { add_resource = { type = oil amount = -3 } }
 		set_variable = { AFR_deal_TD = 0 }
+	}
+	if = { limit = { check_variable = { AFR_deal_TG > 0 } }
+		if = { limit = { country_exists = TOG SAC_afr_inf_TG_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_TG = 0 } }
 	}
 	if = { limit = { check_variable = { AFR_deal_TN > 0 } NOT = { AND = { country_exists = TUN SAC_afr_inf_TN_30 = yes } } }
 		var:AFR_deal_state_TN = { add_resource = { type = oil amount = -1 } }
@@ -1754,6 +1812,10 @@ SAC_africa_monthly_deals = {
 	if = { limit = { check_variable = { AFR_deal_ZA > 0 } NOT = { AND = { country_exists = SAF SAC_afr_inf_ZA_30 = yes } } }
 		var:AFR_deal_state_ZA = { add_resource = { type = chromium amount = -362 } add_resource = { type = aluminium amount = -13 } add_resource = { type = steel amount = -21 } }
 		set_variable = { AFR_deal_ZA = 0 }
+	}
+	if = { limit = { check_variable = { AFR_deal_ZM > 0 } }
+		if = { limit = { country_exists = ZAM SAC_afr_inf_ZM_30 = yes } add_political_power = 10 }
+		else = { set_variable = { AFR_deal_ZM = 0 } }
 	}
 	if = { limit = { check_variable = { AFR_deal_ZW > 0 } NOT = { AND = { country_exists = ZIM SAC_afr_inf_ZW_30 = yes } } }
 		var:AFR_deal_state_ZW = { add_resource = { type = chromium amount = -7 } }
@@ -4922,7 +4984,7 @@ SAC_afr_do_deal_AO = {
 }
 SAC_afr_do_deal_BF = {
 	add_political_power = -50
-	set_variable = { AFR_deal_BF = 1 } set_variable = { AFR_deal_state_BF = capital } capital_scope = {  }
+	set_variable = { AFR_deal_BF = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_BF = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -4931,7 +4993,7 @@ SAC_afr_do_deal_BF = {
 }
 SAC_afr_do_deal_BI = {
 	add_political_power = -50
-	set_variable = { AFR_deal_BI = 1 } set_variable = { AFR_deal_state_BI = capital } capital_scope = {  }
+	set_variable = { AFR_deal_BI = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_BI = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -4940,7 +5002,7 @@ SAC_afr_do_deal_BI = {
 }
 SAC_afr_do_deal_BJ = {
 	add_political_power = -50
-	set_variable = { AFR_deal_BJ = 1 } set_variable = { AFR_deal_state_BJ = capital } capital_scope = {  }
+	set_variable = { AFR_deal_BJ = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_BJ = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -4967,7 +5029,7 @@ SAC_afr_do_deal_CD = {
 }
 SAC_afr_do_deal_CF = {
 	add_political_power = -50
-	set_variable = { AFR_deal_CF = 1 } set_variable = { AFR_deal_state_CF = capital } capital_scope = {  }
+	set_variable = { AFR_deal_CF = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_CF = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5003,7 +5065,7 @@ SAC_afr_do_deal_CM = {
 }
 SAC_afr_do_deal_DJ = {
 	add_political_power = -50
-	set_variable = { AFR_deal_DJ = 1 } set_variable = { AFR_deal_state_DJ = capital } capital_scope = {  }
+	set_variable = { AFR_deal_DJ = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_DJ = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5030,7 +5092,7 @@ SAC_afr_do_deal_EG = {
 }
 SAC_afr_do_deal_EH = {
 	add_political_power = -50
-	set_variable = { AFR_deal_EH = 1 } set_variable = { AFR_deal_state_EH = capital } capital_scope = {  }
+	set_variable = { AFR_deal_EH = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_EH = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5039,7 +5101,7 @@ SAC_afr_do_deal_EH = {
 }
 SAC_afr_do_deal_ER = {
 	add_political_power = -50
-	set_variable = { AFR_deal_ER = 1 } set_variable = { AFR_deal_state_ER = capital } capital_scope = {  }
+	set_variable = { AFR_deal_ER = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_ER = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5075,7 +5137,7 @@ SAC_afr_do_deal_GH = {
 }
 SAC_afr_do_deal_GM = {
 	add_political_power = -50
-	set_variable = { AFR_deal_GM = 1 } set_variable = { AFR_deal_state_GM = capital } capital_scope = {  }
+	set_variable = { AFR_deal_GM = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_GM = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5102,7 +5164,7 @@ SAC_afr_do_deal_GQ = {
 }
 SAC_afr_do_deal_GW = {
 	add_political_power = -50
-	set_variable = { AFR_deal_GW = 1 } set_variable = { AFR_deal_state_GW = capital } capital_scope = {  }
+	set_variable = { AFR_deal_GW = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_GW = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5129,7 +5191,7 @@ SAC_afr_do_deal_LR = {
 }
 SAC_afr_do_deal_LS = {
 	add_political_power = -50
-	set_variable = { AFR_deal_LS = 1 } set_variable = { AFR_deal_state_LS = capital } capital_scope = {  }
+	set_variable = { AFR_deal_LS = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_LS = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5165,7 +5227,7 @@ SAC_afr_do_deal_MG = {
 }
 SAC_afr_do_deal_ML = {
 	add_political_power = -50
-	set_variable = { AFR_deal_ML = 1 } set_variable = { AFR_deal_state_ML = capital } capital_scope = {  }
+	set_variable = { AFR_deal_ML = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_ML = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5183,7 +5245,7 @@ SAC_afr_do_deal_MR = {
 }
 SAC_afr_do_deal_MW = {
 	add_political_power = -50
-	set_variable = { AFR_deal_MW = 1 } set_variable = { AFR_deal_state_MW = capital } capital_scope = {  }
+	set_variable = { AFR_deal_MW = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_MW = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5255,7 +5317,7 @@ SAC_afr_do_deal_SL = {
 }
 SAC_afr_do_deal_SN = {
 	add_political_power = -50
-	set_variable = { AFR_deal_SN = 1 } set_variable = { AFR_deal_state_SN = capital } capital_scope = {  }
+	set_variable = { AFR_deal_SN = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_SN = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5264,7 +5326,7 @@ SAC_afr_do_deal_SN = {
 }
 SAC_afr_do_deal_SO = {
 	add_political_power = -50
-	set_variable = { AFR_deal_SO = 1 } set_variable = { AFR_deal_state_SO = capital } capital_scope = {  }
+	set_variable = { AFR_deal_SO = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_SO = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5282,7 +5344,7 @@ SAC_afr_do_deal_SS = {
 }
 SAC_afr_do_deal_SZ = {
 	add_political_power = -50
-	set_variable = { AFR_deal_SZ = 1 } set_variable = { AFR_deal_state_SZ = capital } capital_scope = {  }
+	set_variable = { AFR_deal_SZ = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_SZ = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5300,7 +5362,7 @@ SAC_afr_do_deal_TD = {
 }
 SAC_afr_do_deal_TG = {
 	add_political_power = -50
-	set_variable = { AFR_deal_TG = 1 } set_variable = { AFR_deal_state_TG = capital } capital_scope = {  }
+	set_variable = { AFR_deal_TG = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_TG = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }
@@ -5345,7 +5407,7 @@ SAC_afr_do_deal_ZA = {
 }
 SAC_afr_do_deal_ZM = {
 	add_political_power = -50
-	set_variable = { AFR_deal_ZM = 1 } set_variable = { AFR_deal_state_ZM = capital } capital_scope = {  }
+	set_variable = { AFR_deal_ZM = 1 } custom_effect_tooltip = SAC_africa_deal_pp_tt
 	set_variable = { AFR_cd_deal_ZM = 30 }
 	SAC_africa_start_ticker = yes
 	set_temp_variable = { afr_gain = 2 }

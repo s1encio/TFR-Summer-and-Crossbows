@@ -441,6 +441,7 @@ country_event = {
 			limit = { country_exists = CAR }
 			annex_country = { target = CAR transfer_troops = yes }
 		}
+		news_event = { id = sac_news.1 hours = 6 }
 		set_country_flag = WAG_rules_car
 		set_temp_variable = { krel = -10 }
 		WAG_kremlin_add = yes

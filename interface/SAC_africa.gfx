@@ -14,6 +14,12 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	SpriteType = {
+		name = "GFX_SAC_africa_help"
+		texturefile = "gfx/interface/WAG_africa/africa_help.png"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	SpriteType = {
 		name = "GFX_SAC_africa_legend"
 		texturefile = "gfx/interface/WAG_africa/africa_legend.png"
 		noOfFrames = 7
